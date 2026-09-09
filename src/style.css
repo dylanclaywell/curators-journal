@@ -1,0 +1,225 @@
+@import 'tailwindcss';
+
+/*
+ * StageScape — "Quest Journal" art direction.
+ *
+ * Diegetic: the rail looks like it belongs to the game. Parchment ground,
+ * beveled panels (light top/left, dark bottom/right, exactly as OSRS draws
+ * them), and the quest journal's own red / amber / green state colors — a
+ * code every player already reads without being taught it.
+ *
+ * Fonts are self-hosted, not fetched. This runs on an iPad that drops wifi,
+ * and a webfont request that fails takes the whole visual identity with it.
+ */
+
+@font-face {
+  font-family: 'Alegreya Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/alegreya-sans-400-latin.woff2') format('woff2');
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Alegreya Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/alegreya-sans-700-latin.woff2') format('woff2');
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'IM Fell English';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/im-fell-english-400-latin.woff2') format('woff2');
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215;
+}
+
+@theme {
+  /* Parchment: the page the journal is written on. */
+  --color-parchment: #d8cca3;
+  --color-parchment-2: #cbbd8f;
+  --color-parchment-3: #c2b58c;
+
+  /* Bevel pair. Every raised or inset edge is drawn from these two. */
+  --color-bevel-lt: #efe6c8;
+  --color-bevel-dk: #6e6244;
+
+  /* Oak: headers, buttons, the tab bar. */
+  --color-brown: #3e2f1c;
+  --color-brown-lt: #57432a;
+  --color-brown-dk: #1a1309;
+
+  /* Ground outside the frame — visible only at the safe-area edges. */
+  --color-ground: #241c12;
+
+  --color-ink: #2a2418;
+  --color-ink-soft: #5e5340;
+  --color-gold: #ffc53d;
+
+  /* Quest state. Borrowed from the in-game journal, tempered for parchment:
+     the game's pure hues vibrate against a warm ground. */
+  --color-todo: #9e2b20;
+  --color-doing: #8a6612;
+  --color-done: #2f6b2a;
+
+  --font-display: 'IM Fell English', Georgia, 'Times New Roman', serif;
+  --font-body: 'Alegreya Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-ground);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.4;
+  /* Docked in Stage Manager, iOS rubber-band scrolling reads as the whole
+     panel coming loose. Pin it. */
+  overscroll-behavior: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*
+ * Touch first. This is operated with a thumb on glass, in a narrow rail,
+ * usually one-handed while the other hand is on the game.
+ */
+
+/* Every interactive element clears 44px and opts out of the 300ms tap delay. */
+.tap {
+  min-height: 44px;
+  touch-action: manipulation;
+}
+
+/*
+ * The rail is its own containment context, so panels and chrome respond to the
+ * rail's width rather than the viewport's. Stage Manager resizes to arbitrary
+ * widths, and on a phone-sized window the viewport and the rail are the same
+ * thing — querying the container is correct in both cases.
+ */
+.rail-shell {
+  container: rail / inline-size;
+}
+
+/*
+ * Tab bar sizing is the one place panel count and rail width collide. Three
+ * stages, in order of how cramped things get:
+ *
+ *   1. roomy      — icon over label
+ *   2. under 22rem or 4+ tabs — icon only, label moves to the accessible name
+ *   3. genuinely out of room  — the strip scrolls horizontally
+ *
+ * Tabs may shrink but never below 52px, which keeps the 44px touch target
+ * intact with padding to spare; past that the overflow scrolls instead of
+ * crushing them.
+ */
+.tab-strip {
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+}
+.tab-strip::-webkit-scrollbar {
+  display: none;
+}
+.tab {
+  flex: 1 1 0;
+  min-width: 52px;
+}
+
+@container rail (max-width: 22rem) {
+  .tab-label {
+    display: none;
+  }
+}
+
+/* Four or more tabs can't carry labels in a rail at any width we target. */
+.tab-strip:has(.tab:nth-child(4)) .tab-label {
+  display: none;
+}
+
+/* The game's own affordance: raised by default, pressed on touch.
+   `:active` carries this, not `:hover` — touch has no hover state, and a
+   hover-only press effect is invisible on the device this is built for. */
+.bevel {
+  border-top: 2px solid var(--color-bevel-lt);
+  border-left: 2px solid var(--color-bevel-lt);
+  border-right: 2px solid var(--color-bevel-dk);
+  border-bottom: 2px solid var(--color-bevel-dk);
+}
+.bevel-in {
+  border-top: 2px solid var(--color-bevel-dk);
+  border-left: 2px solid var(--color-bevel-dk);
+  border-right: 2px solid var(--color-bevel-lt);
+  border-bottom: 2px solid var(--color-bevel-lt);
+}
+
+/* Oak-toned bevel, for buttons and tabs sitting on brown. */
+.bevel-oak {
+  border-top: 2px solid var(--color-brown-lt);
+  border-left: 2px solid var(--color-brown-lt);
+  border-right: 2px solid var(--color-brown-dk);
+  border-bottom: 2px solid var(--color-brown-dk);
+}
+.bevel-oak-in {
+  border-top: 2px solid var(--color-brown-dk);
+  border-left: 2px solid var(--color-brown-dk);
+  border-right: 2px solid var(--color-brown-lt);
+  border-bottom: 2px solid var(--color-brown-lt);
+}
+
+/* Pressed state, driven by touch. Hover is an enhancement, gated so it never
+   fires as a sticky state on a touch device. */
+.pressable:active {
+  border-top-color: var(--color-brown-dk);
+  border-left-color: var(--color-brown-dk);
+  border-right-color: var(--color-brown-lt);
+  border-bottom-color: var(--color-brown-lt);
+}
+@media (hover: hover) {
+  .pressable:hover {
+    background-color: var(--color-brown-lt);
+  }
+}
+
+/* RuneScape's most recognisable typographic signature: a hard 1px black
+   shadow under light text on oak. Only ever used on the brown surfaces —
+   on parchment it reads as a printing error. */
+.engraved {
+  text-shadow: 1px 1px 0 #000;
+}
+
+/* Levels, XP and prices line up in columns; proportional digits jitter as
+   they change and make a glanceable panel unreadable. */
+.nums {
+  font-variant-numeric: tabular-nums;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
