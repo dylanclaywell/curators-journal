@@ -3,6 +3,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
+import { cloudflare } from '@cloudflare/vite-plugin'
 import pkg from './package.json' with { type: 'json' }
 
 export default defineConfig({
@@ -10,6 +11,7 @@ export default defineConfig({
     __APP_VERSION__: JSON.stringify(pkg.version),
   },
   plugins: [
+    cloudflare(),
     vue(),
     tailwindcss(),
     VitePWA({

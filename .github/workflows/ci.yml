@@ -16,8 +16,8 @@ jobs:
           cache: npm
       - run: npm ci
 
-      # Both projects must type-check: the app (vue-tsc) and the Pages
-      # Functions (their own tsconfig, workers-types).
+      # Both projects must type-check: the app (vue-tsc) and the Worker
+      # (tsconfig.worker.json, workers-types).
       - name: Type-check
         run: npm run typecheck
 

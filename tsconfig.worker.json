@@ -11,5 +11,5 @@
     "types": ["@cloudflare/workers-types"],
     "lib": ["ESNext"]
   },
-  "include": ["**/*.ts", "../src/lib/**/*.ts"]
+  "include": ["src/worker/**/*.ts", "src/lib/**/*.ts"]
 }

@@ -1,0 +1,19 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "stagescape",
+  "compatibility_date": "2026-09-09",
+  "main": "./src/worker/index.ts",
+  "assets": {
+    // No `directory` here on purpose: @cloudflare/vite-plugin generates a
+    // wrangler.json at build time and populates it from the client build
+    // output. Setting it by hand fights the plugin.
+    //
+    // Deep links (/quests, /stats, /about) are served the SPA shell instead
+    // of a 404. This replaces the `_redirects` file a Pages deploy needs.
+    "not_found_handling": "single-page-application",
+    "binding": "ASSETS",
+    // Only /api/* invokes the Worker. Browser navigations are served straight
+    // from assets without waking it, which is both correct here and cheaper.
+    "run_worker_first": ["/api/*"],
+  },
+}

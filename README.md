@@ -32,15 +32,15 @@ a JSON export in settings as a second safety net.
 
 ```bash
 npm install
-npm run dev      # Vite + HMR. /api/* returns 404 — no Cloudflare runtime here.
-npm run dev:cf   # wrangler proxy on :8788. HMR *and* working /api Functions.
+npm run dev      # Vite + HMR, with the Worker running in workerd. /api/* works.
 ```
 
-Use `dev:cf` whenever you're touching anything that fetches. The first request
-may 502 for a second while Vite boots — reload.
+One dev server does everything — the Cloudflare Vite plugin runs the Worker in
+the real Workers runtime alongside HMR, so `/api/*` behaves in development the
+way it will in production.
 
 ```bash
-npm run typecheck   # app + Functions, both must pass
+npm run typecheck   # app + Worker, both must pass
 npm run lint
 npm run format
 npm run build
@@ -48,10 +48,13 @@ npm run build
 
 ## How it's built
 
-Vue 3 + TypeScript, Pinia, Tailwind v4, `vite-plugin-pwa`. Deployed to
-Cloudflare Pages, with Pages Functions proxying the third-party APIs that can't
-be called from a browser — the hiscores endpoint sends no CORS headers, and the
-wiki APIs want a descriptive `User-Agent`, which browsers refuse to set.
+Vue 3 + TypeScript, Pinia, Tailwind v4, `vite-plugin-pwa`.
+
+Deployed to Cloudflare Workers with Static Assets. A small Worker proxies the
+third-party APIs that can't be called from a browser — the hiscores endpoint
+sends no CORS headers, and the wiki APIs want a descriptive `User-Agent`, which
+browsers refuse to set. Only `/api/*` reaches the Worker; everything else is
+served straight from static assets.
 
 Quest requirement data is generated from the OSRS Wiki into a committed
 `src/data/quests.json` rather than queried live, so the app stays useful with no

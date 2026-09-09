@@ -10,5 +10,8 @@
     "resolveJsonModule": true
   },
   "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
-  "exclude": ["src/**/__tests__/*"]
+  // src/worker is a different runtime with different globals — it type-checks
+  // separately against tsconfig.worker.json and workers-types. Leaving it in
+  // here makes the app project fail on `Fetcher` and `ExportedHandler`.
+  "exclude": ["src/**/__tests__/*", "src/worker/**"]
 }
