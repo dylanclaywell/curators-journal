@@ -7,10 +7,13 @@
  */
 
 /**
- * The 23 skills in OSRS hiscore column order. The hiscores response leads with
- * an "Overall" row before these, which is handled separately — Overall is a
- * derived total, not a skill, and treating it as one leaks into every UI that
- * iterates skills.
+ * The 24 skills in OSRS hiscore column order, verified against a live
+ * index_lite.json response. The response leads with an "Overall" row before
+ * these, which is handled separately — Overall is a derived total, not a skill,
+ * and treating it as one leaks into every UI that iterates skills.
+ *
+ * Order is the response's own id order, but the parser matches by name rather
+ * than position so a skill inserted mid-list can't silently shift everything.
  */
 export const SKILL_NAMES = [
   'Attack',
@@ -36,6 +39,7 @@ export const SKILL_NAMES = [
   'Runecraft',
   'Hunter',
   'Construction',
+  'Sailing',
 ] as const
 
 export type SkillName = (typeof SKILL_NAMES)[number]
@@ -68,7 +72,13 @@ export interface ActivityEntry {
 }
 
 export interface HiscoresSnapshot {
+  /** What we asked for, normalized. Use this as a lookup/persistence key. */
   username: string
+  /**
+   * Canonical capitalization as Jagex spells it, from the response's own `name`
+   * field. Display this rather than whatever the user typed.
+   */
+  displayName: string
   accountType: AccountType
   /** Epoch ms the data was fetched. Drives the "as of" label when offline. */
   fetchedAt: number

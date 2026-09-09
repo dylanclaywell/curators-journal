@@ -12,6 +12,8 @@
  * src/lib, so there is one implementation of any given transform.
  */
 
+import { handleHiscores } from './routes/hiscores'
+
 export interface Env {
   ASSETS: Fetcher
 }
@@ -24,7 +26,7 @@ function notFound(pathname: string): Response {
 }
 
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const url = new URL(request.url)
 
     if (!url.pathname.startsWith('/api/')) {
@@ -33,7 +35,11 @@ export default {
       return env.ASSETS.fetch(request)
     }
 
-    // Phase 2 registers /api/hiscores here.
-    return notFound(url.pathname)
+    switch (url.pathname) {
+      case '/api/hiscores':
+        return handleHiscores(request, ctx)
+      default:
+        return notFound(url.pathname)
+    }
   },
 } satisfies ExportedHandler<Env>
