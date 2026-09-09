@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img"
+     aria-label="StageScape">
+  <rect width="512" height="512" rx="112" fill="#3E2F1C" />
+  <!-- The journal page, beveled as the game draws its panels. -->
+  <rect x="112" y="92" width="288" height="328" fill="#D8CCA3" />
+  <path d="M112 92h288v10H122v318h-10V92Z" fill="#EFE6C8" />
+  <path d="M400 92v328H112v-10h278V92h10Z" fill="#6E6244" />
+  <!-- Quest entries. -->
+  <rect x="150" y="146" width="212" height="26" rx="4" fill="#5E5340" />
+  <rect x="150" y="212" width="212" height="26" rx="4" fill="#5E5340" />
+  <rect x="150" y="278" width="128" height="26" rx="4" fill="#5E5340" />
+  <!-- Completed. -->
+  <path d="m265 356 30 30 62-62 26 26-88 88-56-56 26-26Z" fill="#2F6B2A" />
+</svg>

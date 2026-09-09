@@ -1,0 +1,21 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  # Conventional-commit driven versioning. Opens/updates a release PR; merging
+  # it tags a release and writes the changelog. Deployment is not gated on this
+  # — Cloudflare Pages builds every push to main off the repo connection.
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: googleapis/release-please-action@v4
+        with:
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
