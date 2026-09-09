@@ -96,8 +96,9 @@ body {
 }
 
 /*
- * Touch first. This is operated with a thumb on glass, in a narrow rail,
- * usually one-handed while the other hand is on the game.
+ * Touch first, in every form factor: docked along the bottom of a portrait
+ * iPad, on a phone as a second screen, or full screen. Operated with a thumb
+ * on glass, often one-handed while the other hand is on the game.
  */
 
 /* Every interactive element clears 44px and opts out of the 300ms tap delay. */
@@ -107,10 +108,15 @@ body {
 }
 
 /*
- * The rail is its own containment context, so panels and chrome respond to the
- * rail's width rather than the viewport's. Stage Manager resizes to arbitrary
- * widths, and on a phone-sized window the viewport and the rail are the same
- * thing — querying the container is correct in both cases.
+ * The shell is its own containment context, so panels respond to the space
+ * they're given rather than to the viewport. That's what lets one panel work
+ * both docked along the bottom of a portrait iPad (wide and shallow) and on a
+ * phone (375px and tall) without knowing which it's in.
+ *
+ * Note this is `inline-size`: width only. Telling the docked case apart from
+ * full screen needs height or aspect ratio — a portrait iPad is ~820px wide
+ * either way — and that will need `container-type: size` or a viewport query
+ * on the shell itself.
  */
 .rail-shell {
   container: rail / inline-size;
@@ -121,7 +127,7 @@ body {
  * stages, in order of how cramped things get:
  *
  *   1. roomy      — icon over label
- *   2. under 22rem or 4+ tabs — icon only, label moves to the accessible name
+ *   2. under 22rem or 5+ tabs — icon only, label moves to the accessible name
  *   3. genuinely out of room  — the strip scrolls horizontally
  *
  * Tabs may shrink but never below 52px, which keeps the 44px touch target
@@ -148,8 +154,9 @@ body {
   }
 }
 
-/* Four or more tabs can't carry labels in a rail at any width we target. */
-.tab-strip:has(.tab:nth-child(4)) .tab-label {
+/* Five or more tabs can't carry labels at the 375px floor: a label needs
+   roughly 76px, so four fit and six do not. */
+.tab-strip:has(.tab:nth-child(5)) .tab-label {
   display: none;
 }
 

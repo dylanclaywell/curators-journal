@@ -9,10 +9,13 @@ const activePanel = computed(() => panelById(String(route.meta.panelId ?? '')))
 </script>
 
 <template>
-  <!-- The rail: a fixed-height column that never scrolls as a whole. Only the
-       panel body scrolls, so the header and tab bar stay put while the game
-       keeps the rest of the screen. The beveled frame is the direction's
-       signature — light on the top/left, dark on the bottom/right. -->
+  <!-- The shell: a full-height column that never scrolls as a whole. Only the
+       panel body scrolls, so the header and tab bar stay put however the window
+       is sized. The beveled frame is the direction's signature — light on the
+       top/left, dark on the bottom/right.
+
+       This is still the tall-and-narrow arrangement. The wide-and-shallow
+       docked case wants the tabs in a left strip instead; see CLAUDE.md. -->
   <div
     class="rail-shell bevel flex h-full flex-col overflow-hidden bg-parchment"
   >

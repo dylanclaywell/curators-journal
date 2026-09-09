@@ -4,12 +4,39 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-StageScape is an OSRS companion PWA shaped like a **docked rail** — it runs in
-Stage Manager beside the game on an iPad, narrow and always visible. It pulls
-live hiscores and combines them with locally-tracked quest completions to answer
-"what can I actually start right now," then builds a dependency-ordered quest
-queue. Deployed to Cloudflare Workers with Static Assets; third-party API calls
-go through the Worker.
+StageScape is an OSRS companion PWA. It combines live hiscores with
+locally-tracked quest completions to answer "what can I actually start right
+now," then builds a dependency-ordered quest queue. Deployed to Cloudflare
+Workers with Static Assets; third-party API calls go through the Worker.
+
+## Form factors — measured on device, not assumed
+
+There is no single target size. Three real cases, all served by one codebase:
+
+| Case                         | Shape            | Role                                            |
+| ---------------------------- | ---------------- | ----------------------------------------------- |
+| Portrait iPad, docked bottom | wide + shallow   | The working side-by-side. OSRS above, us below. |
+| Phone, or a narrow window    | 375px wide, tall | Companion-on-a-second-screen                    |
+| Full screen                  | large            | What you get when you swap to it                |
+
+**Landscape side-by-side does not work — don't reintroduce it.** OSRS offers
+only two window sizes (fullscreen and slightly smaller), and our 375px minimum
+window width doesn't fit beside either, so Stage Manager overlaps rather than
+tiles. The minimum window _height_ is larger still, which also rules out sitting
+in OSRS's letterbox band. Portrait with StageScape docked along the bottom is
+the arrangement that works.
+
+Two consequences worth holding onto:
+
+- **The app is swapped to, not watched.** So UI state must survive being
+  backgrounded — iOS suspends and eventually kills backgrounded PWAs. Active
+  panel, scroll position, current quest and current step all need to persist, or
+  swapping back costs enough that the app stops getting used. This is a core
+  requirement, not polish.
+- **Wide-and-shallow is a first-class layout, not a degraded one.** Vertical
+  space is the scarce resource in the docked case, which is the opposite of the
+  narrow case. A bottom tab bar that costs 12% of the height there is a bad
+  trade; tabs likely belong in a left icon strip when short and wide.
 
 ## Commands
 
@@ -91,8 +118,8 @@ query. Regenerate deliberately; never fetch it at runtime.
 
 ### Art direction: "Quest Journal"
 
-Diegetic. The rail should look like it belongs to the game, not like a dashboard
-that happens to be about it.
+Diegetic. It should look like it belongs to the game, not like a dashboard that
+happens to be about it.
 
 - **Parchment ground, oak chrome.** Panel bodies are `parchment`; headers,
   buttons and the tab bar are `brown`.
@@ -115,9 +142,9 @@ that happens to be about it.
 
 ### Touch first
 
-The design target is a ~340–420px rail operated by a thumb on glass, usually
-one-handed while the other hand is on the game. This is not a desktop layout
-that also happens to work on tablets.
+Every case above is a touchscreen operated with a thumb, often one-handed while
+the other hand is on the game. This is not a desktop layout that also happens to
+work on tablets.
 
 - **Every interactive element gets `.tap`** (44px floor plus `touch-action:
 manipulation`). No exceptions, including icon-only buttons.
@@ -128,14 +155,18 @@ manipulation`). No exceptions, including icon-only buttons.
   fact.
 - Base font size is 16px. Don't go below it for body text or inputs; iOS zooms
   the viewport when focusing an input under 16px.
-- **Use container queries, not viewport breakpoints.** Stage Manager windows
-  resize to arbitrary widths, so viewport media queries lie. The rail root
-  (`.rail-shell`) is a named container (`rail`), so query it:
+- **Panel content uses container queries**, not viewport breakpoints — panels
+  should respond to the space they're given, which is what makes one panel work
+  in a bottom dock and on a phone. `.rail-shell` is a named container (`rail`):
   `@container rail (max-width: …)`.
-- **320px is the design floor.** iPad's compact-multitasking width has long
-  been 320pt. Stage Manager's exact minimum varies by model and iPadOS version,
-  so don't hardcode assumptions — the About panel reports the live window size
-  if you need to check a real device.
+- **The shell itself may use the viewport**, because the shell _is_ the window.
+  Distinguishing the docked case from full screen needs height or aspect ratio,
+  not width — a portrait iPad is ~820px wide whether it's full height or docked
+  along the bottom. Don't try to tell them apart by width; it can't be done.
+- **375px is the measured floor**, on both Safari and the installed PWA. The
+  22rem container rule still earns its place as insurance (an iPhone SE 1st gen
+  really is 320pt), but nothing on an iPad will trigger it. The About panel
+  reports live window size — measure rather than assume.
 
 ### The tab bar degrades in three stages
 
@@ -143,10 +174,18 @@ Panel count and rail width collide here, and the plugin system will make panel
 count unbounded. Don't "fix" a cramped tab bar by shrinking targets:
 
 1. Roomy — icon over label.
-2. Under 22rem, **or** four or more tabs — icon only. The label moves to
+2. Under 22rem, **or** five or more tabs — icon only. The label moves to
    `aria-label`, so a tab that drops its text keeps its meaning.
 3. Genuinely out of room — the strip scrolls horizontally. Tabs shrink to a
    52px floor and then overflow rather than crushing further.
+
+The count threshold is a crude proxy — the real constraint is the longest label,
+not how many there are. At the 375px floor a label needs ~76px, so four fit and
+six don't. Revisit it against real labels rather than trusting the number.
+
+Open work: in the wide-and-shallow docked case this bar is the wrong shape
+entirely, since it spends scarce vertical space to save abundant horizontal
+space. A left icon strip is the likely answer there.
 
 ### Icons
 

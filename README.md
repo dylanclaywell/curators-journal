@@ -1,7 +1,8 @@
 # StageScape
 
-An Old School RuneScape companion that runs as a **docked rail** — a narrow,
-always-visible PWA panel sitting beside the game in iPad Stage Manager.
+An Old School RuneScape companion PWA that sits alongside the game — docked
+along the bottom of a portrait iPad, on a phone as a second screen, or full
+screen when you swap to it.
 
 Not a wiki browser and not an overlay. It answers one question well: _what can I
 actually do next?_
@@ -23,10 +24,14 @@ required, so seeding your history takes a few taps rather than 150.
 
 ## Install
 
-Open the site in Safari on iPad and **Share → Add to Home Screen**. Installing
-matters for more than the icon: Safari evicts storage for non-installed sites
-after about a week idle, and your quest completions live in that storage. There's
-a JSON export in settings as a second safety net.
+Open the site in Safari on iPad or iPhone and **Share → Add to Home Screen**.
+Installing matters for more than the icon: Safari evicts storage for
+non-installed sites after about a week idle, and your quest completions live in
+that storage. There's a JSON export in settings as a second safety net.
+
+To run it beside the game, put the iPad in **portrait** and dock StageScape along
+the bottom. Landscape doesn't work — OSRS only offers two window sizes and
+neither leaves room for a second window, so they overlap instead of tiling.
 
 ## Development
 

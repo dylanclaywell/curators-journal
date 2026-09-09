@@ -7,8 +7,11 @@ const route = useRoute()
 </script>
 
 <template>
-  <!-- Bottom-anchored: in a docked rail the bottom edge is where the thumb
-       already is, and it keeps the tabs clear of the iPad status bar.
+  <!-- Bottom-anchored: in a tall window the bottom edge is where the thumb
+       already is, and it keeps the tabs clear of the iPad status bar. In the
+       wide-and-shallow docked case this is the wrong shape — it spends scarce
+       vertical space to save abundant horizontal space — and should become a
+       left icon strip. Not built yet.
 
        The active tab is set by binding one class, not by RouterLink's
        `active-class`: `text-gold` and a base `text-parchment-3` are both plain
