@@ -273,6 +273,84 @@ against the live game rather than the wiki checking itself. Extracting them mean
 parsing Java. **Read NOTICE.md and settle attribution before using any of it**;
 mixing in another project's curated data belongs there deliberately.
 
+## Phase 4: the engine and the queue
+
+### Two panels, not one
+
+**Queue** and **Quests** are separate panels, because they answer different
+questions on different rhythms. The queue is "what am I doing next" — short,
+ordered, returned to repeatedly mid-session, and the reason the app gets swapped
+to. Quests is "what's out there / tell me about this one" — browsing, searching
+and filtering 214 entries, done occasionally and at length.
+
+Folding both into one panel costs either a mode toggle (vertical space, the
+scarce resource in the docked case) or scrolling past the queue to browse — and
+the docked case is exactly where the queue matters most.
+
+Consequences worth holding onto:
+
+- **Four tabs is the label limit.** `.tab-strip:has(.tab:nth-child(5))` already
+  drops every label at five, so Queue · Quests · Stats · About keeps its labels
+  and the banked prices panel would silently flip the bar to icon-only. That's
+  self-enforcing, not a thing to remember — but decide whether prices eventually
+  earns a tab or lives inside Stats.
+- **Icons:** `scroll` for Queue, `openBook` for Quests. Both game-icons, and
+  distinguishable at 20px, which matters once labels go. Note the row then mixes
+  two packs — game-icons on the 512 grid beside Phosphor's `chart` and `gear` on
+  256 — so check the four together on device.
+- **Quest detail is a full-panel view with a back button**, not an overlay.
+  Reachable from both panels. In the docked case there may be ~200px of height,
+  where a modal is unusable.
+
+### Two things the engine settled
+
+**Quest progress is three-state: `todo` / `doing` / `done`.** Not a checkbox.
+This looked like art direction — the tokens borrowed from the in-game journal —
+but it turns out to be load-bearing: 14 prerequisites need the earlier quest only
+_started_, and a boolean cannot represent that without guessing in one direction.
+`src/lib/quests.ts` satisfies a "started" prerequisite with `doing` or `done`,
+and marks it `uncertain` when there's no record at all — a caveat to show, never
+a reason to call a quest blocked.
+
+**The queue is curated, and therefore precious.** You pick goals and the plan
+works backwards through prerequisites; it is not all 214 quests ordered, which
+would be a firehose rather than a plan. So the chosen goals are **hand-entered,
+unrecoverable user data** in the same category as completions: IndexedDB, and in
+the export. Not component state.
+
+### The engine's one rule
+
+`src/lib/quests.ts` is conservative in exactly one direction: **when the data
+doesn't say, never claim a quest is out of reach.** A wrong "you can start this"
+is visible and self-correcting — you open the quest and find out. A wrong
+"blocked" hides a quest you could have done, and you never learn it was hidden.
+
+That's why unknown `requiredToStart` doesn't block, a missing skill level reports
+`have: null` for the UI to render as _unknown_ rather than _too low_, and
+`combatLevel()` returns `null` instead of computing a low level from absent data.
+
+Measured against the real dataset: 73 of 214 startable on a fresh account (49 of
+those finishable as-is), a 36-step plan for Dragon Slayer II from nothing, no
+ordering violations, and the same goals always produce the same plan — which
+matters because the plan is persisted and returned to.
+
+### Slices
+
+| Slice | Contents                                                          |
+| ----- | ----------------------------------------------------------------- |
+| 4a    | **done** — `src/lib/quests.ts`: eligibility, plan ordering        |
+| 4b    | Quest store: dataset load, three-state progress, persist + export |
+| 4c    | Quests panel: list, search, filters, add to queue                 |
+| 4d    | Quest detail: full-panel, from either panel                       |
+| 4e    | Queue panel: goals, expansion, ordering, reorder and remove       |
+| 4f    | Move refresh-on-resume from `StatsView` to the shell              |
+
+Load the dataset with a **dynamic import** so its 106 KB stays out of the initial
+bundle — the same reason localForage is behind a lazy panel. And note the id
+risk: ids derive from wiki titles, so a page rename orphans a completion. The
+dataset keeps the title, so a rename is detectable; `--check` should call an id
+change a breaking diff rather than a routine one.
+
 ## Open questions
 
 1. **How often do the hiscores actually recompute?** Unmeasured, and it's the
