@@ -1,0 +1,7284 @@
+{
+  "generatedAt": "2026-09-10",
+  "sources": [
+    "https://oldschool.runescape.wiki/ (quest pages, CC BY-NC-SA 3.0)",
+    "https://oldschool.runescape.wiki/w/Module:Questreq/data (cross-check)"
+  ],
+  "quests": [
+    {
+      "id": "a-kingdom-divided",
+      "name": "A Kingdom Divided",
+      "difficulty": "Experienced",
+      "length": "Long",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Great Kourend",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 54,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Crafting",
+            "level": 38,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Herblore",
+            "level": 50,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Magic",
+            "level": 35,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Mining",
+            "level": 42,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Thieving",
+            "level": 52,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Woodcutting",
+            "level": 52,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "tale-of-the-righteous",
+            "completion": "finished"
+          },
+          {
+            "id": "the-ascent-of-arceuus",
+            "completion": "finished"
+          },
+          {
+            "id": "the-depths-of-despair",
+            "completion": "finished"
+          },
+          {
+            "id": "the-forsaken-tower",
+            "completion": "finished"
+          },
+          {
+            "id": "the-queen-of-thieves",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "The above quests all require the following quests to be completed:"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/A_Kingdom_Divided"
+    },
+    {
+      "id": "a-night-at-the-theatre",
+      "name": "A Night at the Theatre",
+      "difficulty": "Master",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": [
+          {
+            "id": "a-taste-of-hope",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/A_Night_at_the_Theatre"
+    },
+    {
+      "id": "a-porcine-of-interest",
+      "name": "A Porcine of Interest",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/A_Porcine_of_Interest"
+    },
+    {
+      "id": "a-ruff-situation",
+      "name": "A Ruff Situation",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Crafting",
+            "level": 15,
+            "boostable": null,
+            "requiredToStart": null
+          }
+        ],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/A_Ruff_Situation"
+    },
+    {
+      "id": "a-souls-bane",
+      "name": "A Soul's Bane",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [
+        "The ability to defeat level 45+ enemies."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/A_Soul's_Bane"
+    },
+    {
+      "id": "a-tail-of-two-cats",
+      "name": "A Tail of Two Cats",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Dragonkin",
+      "requirements": {
+        "skills": [],
+        "quests": [
+          {
+            "id": "icthlarins-little-helper",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/A_Tail_of_Two_Cats"
+    },
+    {
+      "id": "a-taste-of-hope",
+      "name": "A Taste of Hope",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Myreque",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 45,
+            "boostable": false,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Attack",
+            "level": 40,
+            "boostable": false,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Crafting",
+            "level": 48,
+            "boostable": false,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Herblore",
+            "level": 40,
+            "boostable": false,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Slayer",
+            "level": 38,
+            "boostable": false,
+            "requiredToStart": null
+          }
+        ],
+        "quests": [
+          {
+            "id": "darkness-of-hallowvale",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/A_Taste_of_Hope"
+    },
+    {
+      "id": "alfred-grimhands-barcrawl",
+      "name": "Alfred Grimhand's Barcrawl",
+      "difficulty": null,
+      "length": "Medium",
+      "questPoints": 0,
+      "members": true,
+      "miniquest": true,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Alfred_Grimhand's_Barcrawl"
+    },
+    {
+      "id": "animal-magnetism",
+      "name": "Animal Magnetism",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Crafting",
+            "level": 19,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Ranged",
+            "level": 30,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Slayer",
+            "level": 18,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Woodcutting",
+            "level": 35,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "ernest-the-chicken",
+            "completion": "finished"
+          },
+          {
+            "id": "priest-in-peril",
+            "completion": "finished"
+          },
+          {
+            "id": "the-restless-ghost",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Animal_Magnetism"
+    },
+    {
+      "id": "another-slice-of-h-a-m",
+      "name": "Another Slice of H.A.M.",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Dorgeshuun",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Attack",
+            "level": 15,
+            "boostable": false,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Prayer",
+            "level": 25,
+            "boostable": false,
+            "requiredToStart": null
+          }
+        ],
+        "quests": [
+          {
+            "id": "death-to-the-dorgeshuun",
+            "completion": "finished"
+          },
+          {
+            "id": "the-dig-site",
+            "completion": "finished"
+          },
+          {
+            "id": "the-giant-dwarf",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "The ability to defeat a level 64 (using any combat style) and two level 30 enemies using either Ranged or Magic."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Another_Slice_of_H.A.M."
+    },
+    {
+      "id": "architectural-alliance",
+      "name": "Architectural Alliance",
+      "difficulty": "Experienced",
+      "length": "Long",
+      "questPoints": 0,
+      "members": true,
+      "miniquest": true,
+      "group": "Great Kourend",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Mining",
+            "level": 42,
+            "boostable": null,
+            "requiredToStart": null
+          }
+        ],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Architectural_Alliance"
+    },
+    {
+      "id": "at-first-light",
+      "name": "At First Light",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Construction",
+            "level": 27,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Herblore",
+            "level": 30,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Hunter",
+            "level": 46,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "children-of-the-sun",
+            "completion": "finished"
+          },
+          {
+            "id": "eagles-peak",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/At_First_Light"
+    },
+    {
+      "id": "barbarian-training",
+      "name": "Barbarian Training",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": 0,
+      "members": true,
+      "miniquest": true,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 15,
+            "boostable": false,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Crafting",
+            "level": 11,
+            "boostable": false,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Farming",
+            "level": 15,
+            "boostable": false,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Firemaking",
+            "level": 35,
+            "boostable": false,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Fishing",
+            "level": 55,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Herblore",
+            "level": 4,
+            "boostable": false,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Smithing",
+            "level": 5,
+            "boostable": false,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Strength",
+            "level": 35,
+            "boostable": false,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "tai-bwo-wannai-trio",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Barbarian_Training"
+    },
+    {
+      "id": "bear-your-soul",
+      "name": "Bear Your Soul",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 0,
+      "members": true,
+      "miniquest": true,
+      "group": "Great Kourend",
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Bear_Your_Soul"
+    },
+    {
+      "id": "below-ice-mountain",
+      "name": "Below Ice Mountain",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": 1,
+      "members": false,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": [],
+        "questPoints": 16
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Below_Ice_Mountain"
+    },
+    {
+      "id": "beneath-cursed-sands",
+      "name": "Beneath Cursed Sands",
+      "difficulty": "Master",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Kharidian",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 62,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Crafting",
+            "level": 55,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Firemaking",
+            "level": 55,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "contact",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Beneath_Cursed_Sands"
+    },
+    {
+      "id": "between-a-rock",
+      "name": "Between a Rock...",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Defence",
+            "level": 30,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Mining",
+            "level": 40,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Smithing",
+            "level": 50,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "dwarf-cannon",
+            "completion": "finished"
+          },
+          {
+            "id": "fishing-contest",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "The ability to defeat a level 75-125 enemy (depends on how much gold you mine)"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Between_a_Rock..."
+    },
+    {
+      "id": "big-chompy-bird-hunting",
+      "name": "Big Chompy Bird Hunting",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Cooking",
+            "level": 30,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Fletching",
+            "level": 5,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Ranged",
+            "level": 30,
+            "boostable": false,
+            "requiredToStart": false
+          }
+        ],
+        "quests": []
+      },
+      "notes": [
+        "The ability to defend against level 64 wolves and level 53 ogres"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Big_Chompy_Bird_Hunting"
+    },
+    {
+      "id": "biohazard",
+      "name": "Biohazard",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": 3,
+      "members": true,
+      "miniquest": false,
+      "group": "Elf",
+      "requirements": {
+        "skills": [],
+        "quests": [
+          {
+            "id": "plague-city",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Biohazard"
+    },
+    {
+      "id": "black-knights-fortress",
+      "name": "Black Knights' Fortress",
+      "difficulty": "Intermediate",
+      "length": "Very Short",
+      "questPoints": 3,
+      "members": false,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": [],
+        "questPoints": 12
+      },
+      "notes": [
+        "The ability to evade level 33 Black Knights"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Black_Knights'_Fortress"
+    },
+    {
+      "id": "bone-voyage",
+      "name": "Bone Voyage",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": [
+          {
+            "id": "the-dig-site",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "100 Kudos"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Bone_Voyage"
+    },
+    {
+      "id": "cabin-fever",
+      "name": "Cabin Fever",
+      "difficulty": "Experienced",
+      "length": "Short",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Pirate",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 42,
+            "boostable": false,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Crafting",
+            "level": 45,
+            "boostable": false,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Ranged",
+            "level": 40,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Smithing",
+            "level": 50,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "pirates-treasure",
+            "completion": "finished"
+          },
+          {
+            "id": "rum-deal",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Cabin_Fever"
+    },
+    {
+      "id": "children-of-the-sun",
+      "name": "Children of the Sun",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Twilight Emissaries",
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Children_of_the_Sun"
+    },
+    {
+      "id": "client-of-kourend",
+      "name": "Client of Kourend",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Great Kourend",
+      "requirements": {
+        "skills": [],
+        "quests": [
+          {
+            "id": "x-marks-the-spot",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Client_of_Kourend"
+    },
+    {
+      "id": "clock-tower",
+      "name": "Clock Tower",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [
+        "The ability to run past level 53 Ogres"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Clock_Tower"
+    },
+    {
+      "id": "cold-war",
+      "name": "Cold War",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Penguin",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 30,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Construction",
+            "level": 34,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Crafting",
+            "level": 30,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Hunter",
+            "level": 10,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Thieving",
+            "level": 15,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": []
+      },
+      "notes": [
+        "Access to a crafting table 3"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Cold_War"
+    },
+    {
+      "id": "contact",
+      "name": "Contact!",
+      "difficulty": "Experienced",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Kharidian",
+      "requirements": {
+        "skills": [],
+        "quests": [
+          {
+            "id": "icthlarins-little-helper",
+            "completion": "finished"
+          },
+          {
+            "id": "prince-ali-rescue",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Contact!"
+    },
+    {
+      "id": "cooks-assistant",
+      "name": "Cook's Assistant",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": 1,
+      "members": false,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Cook's_Assistant"
+    },
+    {
+      "id": "crab-quest",
+      "name": "Crab Quest",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Fishing",
+            "level": 30,
+            "boostable": null,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Sailing",
+            "level": 40,
+            "boostable": null,
+            "requiredToStart": null
+          }
+        ],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Crab_Quest"
+    },
+    {
+      "id": "creature-of-fenkenstrain",
+      "name": "Creature of Fenkenstrain",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Crafting",
+            "level": 20,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Thieving",
+            "level": 25,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "priest-in-peril",
+            "completion": "finished"
+          },
+          {
+            "id": "the-restless-ghost",
+            "completion": "started"
+          }
+        ]
+      },
+      "notes": [
+        "Able to defeat a level 51 monster and run past level 72 monsters"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Creature_of_Fenkenstrain"
+    },
+    {
+      "id": "current-affairs",
+      "name": "Current Affairs",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Fishing",
+            "level": 10,
+            "boostable": null,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Sailing",
+            "level": 22,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "pandemonium",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Current_Affairs"
+    },
+    {
+      "id": "curse-of-the-empty-lord",
+      "name": "Curse of the Empty Lord",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": 0,
+      "members": true,
+      "miniquest": true,
+      "group": "Mahjarrat",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Prayer",
+            "level": 31,
+            "boostable": false,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Thieving",
+            "level": 53,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "desert-treasure-i",
+            "completion": "started"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Curse_of_the_Empty_Lord"
+    },
+    {
+      "id": "daddys-home",
+      "name": "Daddy's Home",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": 0,
+      "members": true,
+      "miniquest": true,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Daddy's_Home"
+    },
+    {
+      "id": "darkness-of-hallowvale",
+      "name": "Darkness of Hallowvale",
+      "difficulty": "Experienced",
+      "length": "Long",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Myreque",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 26,
+            "boostable": true,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Construction",
+            "level": 5,
+            "boostable": true,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Crafting",
+            "level": 32,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Magic",
+            "level": 33,
+            "boostable": true,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Mining",
+            "level": 20,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Strength",
+            "level": 40,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Thieving",
+            "level": 22,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "in-aid-of-the-myreque",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "The ability to withstand several melee attacks from a level 169 enemy."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Darkness_of_Hallowvale"
+    },
+    {
+      "id": "death-on-the-isle",
+      "name": "Death on the Isle",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 32,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Thieving",
+            "level": 34,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "children-of-the-sun",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Death_on_the_Isle"
+    },
+    {
+      "id": "death-plateau",
+      "name": "Death Plateau",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Troll",
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Death_Plateau"
+    },
+    {
+      "id": "death-to-the-dorgeshuun",
+      "name": "Death to the Dorgeshuun",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Dorgeshuun",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 23,
+            "boostable": true,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Thieving",
+            "level": 23,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "the-lost-tribe",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "The ability to defeat a level 50 enemy with Melee or Magic"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Death_to_the_Dorgeshuun"
+    },
+    {
+      "id": "defender-of-varrock",
+      "name": "Defender of Varrock",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Mahjarrat",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Hunter",
+            "level": 52,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Smithing",
+            "level": 55,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "below-ice-mountain",
+            "completion": "finished"
+          },
+          {
+            "id": "demon-slayer",
+            "completion": "finished"
+          },
+          {
+            "id": "family-crest",
+            "completion": "finished"
+          },
+          {
+            "id": "garden-of-tranquillity",
+            "completion": "finished"
+          },
+          {
+            "id": "romeo-and-juliet",
+            "completion": "finished"
+          },
+          {
+            "id": "shield-of-arrav",
+            "completion": "finished"
+          },
+          {
+            "id": "temple-of-ikov",
+            "completion": "finished"
+          },
+          {
+            "id": "what-lies-below",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Defender_of_Varrock"
+    },
+    {
+      "id": "demon-slayer",
+      "name": "Demon Slayer",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": 3,
+      "members": false,
+      "miniquest": false,
+      "group": "Demon Slayer",
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [
+        "The ability to defeat a level 27 demon aided by three level 20 Dark wizards and two level 7 Dark wizards using the Silverlight in melee."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Demon_Slayer"
+    },
+    {
+      "id": "desert-treasure-i",
+      "name": "Desert Treasure I",
+      "difficulty": "Master",
+      "length": "Long",
+      "questPoints": 3,
+      "members": true,
+      "miniquest": false,
+      "group": "Mahjarrat",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Firemaking",
+            "level": 50,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Magic",
+            "level": 50,
+            "boostable": false,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Slayer",
+            "level": 10,
+            "boostable": false,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Thieving",
+            "level": 53,
+            "boostable": false,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "priest-in-peril",
+            "completion": "finished"
+          },
+          {
+            "id": "temple-of-ikov",
+            "completion": "finished"
+          },
+          {
+            "id": "the-dig-site",
+            "completion": "finished"
+          },
+          {
+            "id": "the-tourist-trap",
+            "completion": "finished"
+          },
+          {
+            "id": "troll-stronghold",
+            "completion": "finished"
+          },
+          {
+            "id": "waterfall-quest",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "Access to Morytania Graveyard"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Desert_Treasure_I"
+    },
+    {
+      "id": "desert-treasure-ii-the-fallen-empire",
+      "name": "Desert Treasure II - The Fallen Empire",
+      "difficulty": "Grandmaster",
+      "length": "Very Long",
+      "questPoints": 5,
+      "members": true,
+      "miniquest": false,
+      "group": "Mahjarrat",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Construction",
+            "level": 60,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Firemaking",
+            "level": 75,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Herblore",
+            "level": 62,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Magic",
+            "level": 75,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Runecraft",
+            "level": 60,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Thieving",
+            "level": 70,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "below-ice-mountain",
+            "completion": "finished"
+          },
+          {
+            "id": "desert-treasure-i",
+            "completion": "finished"
+          },
+          {
+            "id": "enakhras-lament",
+            "completion": "finished"
+          },
+          {
+            "id": "his-faithful-servants",
+            "completion": "finished"
+          },
+          {
+            "id": "secrets-of-the-north",
+            "completion": "finished"
+          },
+          {
+            "id": "temple-of-the-eye",
+            "completion": "finished"
+          },
+          {
+            "id": "the-garden-of-death",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Desert_Treasure_II_-_The_Fallen_Empire"
+    },
+    {
+      "id": "devious-minds",
+      "name": "Devious Minds",
+      "difficulty": "Experienced",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Mahjarrat",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Fletching",
+            "level": 50,
+            "boostable": true,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Runecraft",
+            "level": 50,
+            "boostable": false,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Smithing",
+            "level": 65,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "dorics-quest",
+            "completion": "finished"
+          },
+          {
+            "id": "troll-stronghold",
+            "completion": "finished"
+          },
+          {
+            "id": "wanted",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Devious_Minds"
+    },
+    {
+      "id": "dorics-quest",
+      "name": "Doric's Quest",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": 1,
+      "members": false,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Doric's_Quest"
+    },
+    {
+      "id": "dragon-slayer-i",
+      "name": "Dragon Slayer I",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": false,
+      "miniquest": false,
+      "group": "Dragonkin",
+      "requirements": {
+        "skills": [],
+        "quests": [],
+        "questPoints": 32
+      },
+      "notes": [
+        "The ability to defeat a level 83 dragon"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Dragon_Slayer_I"
+    },
+    {
+      "id": "dragon-slayer-ii",
+      "name": "Dragon Slayer II",
+      "difficulty": "Grandmaster",
+      "length": "Very Long",
+      "questPoints": 5,
+      "members": true,
+      "miniquest": false,
+      "group": "Dragonkin",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 60,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Construction",
+            "level": 50,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Crafting",
+            "level": 62,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Hitpoints",
+            "level": 50,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Magic",
+            "level": 75,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Mining",
+            "level": 68,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Smithing",
+            "level": 70,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Thieving",
+            "level": 60,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "a-tail-of-two-cats",
+            "completion": "finished"
+          },
+          {
+            "id": "animal-magnetism",
+            "completion": "finished"
+          },
+          {
+            "id": "barbarian-training",
+            "completion": "started"
+          },
+          {
+            "id": "bone-voyage",
+            "completion": "finished"
+          },
+          {
+            "id": "client-of-kourend",
+            "completion": "finished"
+          },
+          {
+            "id": "dream-mentor",
+            "completion": "finished"
+          },
+          {
+            "id": "ghosts-ahoy",
+            "completion": "finished"
+          },
+          {
+            "id": "legends-quest",
+            "completion": "finished"
+          }
+        ],
+        "questPoints": 200
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Dragon_Slayer_II"
+    },
+    {
+      "id": "dream-mentor",
+      "name": "Dream Mentor",
+      "difficulty": "Master",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": [
+          {
+            "id": "eadgars-ruse",
+            "completion": "finished"
+          },
+          {
+            "id": "lunar-diplomacy",
+            "completion": "finished"
+          }
+        ],
+        "combatLevel": 85
+      },
+      "notes": [
+        "The ability to defeat 4 powerful monsters without the use of prayer"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Dream_Mentor"
+    },
+    {
+      "id": "druidic-ritual",
+      "name": "Druidic Ritual",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": 4,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Druidic_Ritual"
+    },
+    {
+      "id": "dwarf-cannon",
+      "name": "Dwarf Cannon",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Dwarf_Cannon"
+    },
+    {
+      "id": "eadgars-ruse",
+      "name": "Eadgar's Ruse",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Troll",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Herblore",
+            "level": 31,
+            "boostable": true,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "druidic-ritual",
+            "completion": "finished"
+          },
+          {
+            "id": "troll-stronghold",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Eadgar's_Ruse"
+    },
+    {
+      "id": "eagles-peak",
+      "name": "Eagles' Peak",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Hunter",
+            "level": 27,
+            "boostable": true,
+            "requiredToStart": true
+          }
+        ],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Eagles'_Peak"
+    },
+    {
+      "id": "elemental-workshop-i",
+      "name": "Elemental Workshop I",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Elemental Workshop",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Crafting",
+            "level": 20,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Mining",
+            "level": 20,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Smithing",
+            "level": 20,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Elemental_Workshop_I"
+    },
+    {
+      "id": "elemental-workshop-ii",
+      "name": "Elemental Workshop II",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Elemental Workshop",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Magic",
+            "level": 20,
+            "boostable": true,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Smithing",
+            "level": 30,
+            "boostable": true,
+            "requiredToStart": null
+          }
+        ],
+        "quests": [
+          {
+            "id": "elemental-workshop-i",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Elemental_Workshop_II"
+    },
+    {
+      "id": "enakhras-lament",
+      "name": "Enakhra's Lament",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Mahjarrat",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Crafting",
+            "level": 50,
+            "boostable": false,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Firemaking",
+            "level": 45,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Magic",
+            "level": 39,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Prayer",
+            "level": 43,
+            "boostable": false,
+            "requiredToStart": false
+          }
+        ],
+        "quests": []
+      },
+      "notes": [
+        "Must be on the standard spellbook"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Enakhra's_Lament"
+    },
+    {
+      "id": "enlightened-journey",
+      "name": "Enlightened Journey",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Crafting",
+            "level": 36,
+            "boostable": true,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Farming",
+            "level": 30,
+            "boostable": true,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Firemaking",
+            "level": 20,
+            "boostable": true,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [],
+        "questPoints": 20
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Enlightened_Journey"
+    },
+    {
+      "id": "enter-the-abyss",
+      "name": "Enter the Abyss",
+      "difficulty": null,
+      "length": "Very Short",
+      "questPoints": 0,
+      "members": true,
+      "miniquest": true,
+      "group": "Order of Wizards",
+      "requirements": {
+        "skills": [],
+        "quests": [
+          {
+            "id": "rune-mysteries",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Enter_the_Abyss"
+    },
+    {
+      "id": "ernest-the-chicken",
+      "name": "Ernest the Chicken",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": 4,
+      "members": false,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [
+        "The ability to defend from a level 22 Skeleton."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Ernest_the_Chicken"
+    },
+    {
+      "id": "ethically-acquired-antiquities",
+      "name": "Ethically Acquired Antiquities",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Thieving",
+            "level": 25,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "children-of-the-sun",
+            "completion": "finished"
+          },
+          {
+            "id": "shield-of-arrav",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Ethically_Acquired_Antiquities"
+    },
+    {
+      "id": "fairytale-i-growing-pains",
+      "name": "Fairytale I - Growing Pains",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Fairytale",
+      "requirements": {
+        "skills": [],
+        "quests": [
+          {
+            "id": "lost-city",
+            "completion": "finished"
+          },
+          {
+            "id": "nature-spirit",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "The ability to defeat a level 111 Tanglefoot with limited weaponry"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Fairytale_I_-_Growing_Pains"
+    },
+    {
+      "id": "fairytale-ii-cure-a-queen",
+      "name": "Fairytale II - Cure a Queen",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Fairytale",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Farming",
+            "level": 49,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Herblore",
+            "level": 57,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Thieving",
+            "level": 40,
+            "boostable": false,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "fairytale-i-growing-pains",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Fairytale_II_-_Cure_a_Queen"
+    },
+    {
+      "id": "fallen-from-grace",
+      "name": "Fallen From Grace",
+      "difficulty": "Experienced",
+      "length": "Short",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Crafting",
+            "level": 60,
+            "boostable": false,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Mining",
+            "level": 53,
+            "boostable": false,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Runecraft",
+            "level": 47,
+            "boostable": false,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Sailing",
+            "level": 62,
+            "boostable": false,
+            "requiredToStart": null
+          }
+        ],
+        "quests": [
+          {
+            "id": "pandemonium",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Fallen_From_Grace"
+    },
+    {
+      "id": "family-crest",
+      "name": "Family Crest",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Crafting",
+            "level": 40,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Magic",
+            "level": 59,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Mining",
+            "level": 40,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Smithing",
+            "level": 40,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": []
+      },
+      "notes": [
+        "The ability to defeat a level 170 demon (can be safespotted)"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Family_Crest"
+    },
+    {
+      "id": "family-pest",
+      "name": "Family Pest",
+      "difficulty": null,
+      "length": "Short",
+      "questPoints": 0,
+      "members": true,
+      "miniquest": true,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": [
+          {
+            "id": "family-crest",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Family_Pest"
+    },
+    {
+      "id": "fight-arena",
+      "name": "Fight Arena",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Mahjarrat",
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [
+        "The ability to defeat level 44, 63 and 137 enemies (all can be safespotted)"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Fight_Arena"
+    },
+    {
+      "id": "fishing-contest",
+      "name": "Fishing Contest",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Fishing",
+            "level": 10,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Fishing_Contest"
+    },
+    {
+      "id": "forgettable-tale",
+      "name": "Forgettable Tale...",
+      "difficulty": "Intermediate",
+      "length": "Long",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Red Axe",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Cooking",
+            "level": 22,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Farming",
+            "level": 17,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "fishing-contest",
+            "completion": "finished"
+          },
+          {
+            "id": "the-giant-dwarf",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Forgettable_Tale..."
+    },
+    {
+      "id": "garden-of-tranquillity",
+      "name": "Garden of Tranquillity",
+      "difficulty": "Intermediate",
+      "length": "Long",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Farming",
+            "level": 25,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "creature-of-fenkenstrain",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Garden_of_Tranquillity"
+    },
+    {
+      "id": "gertrudes-cat",
+      "name": "Gertrude's Cat",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Gertrude's_Cat"
+    },
+    {
+      "id": "getting-ahead",
+      "name": "Getting Ahead",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Twisted Tales",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Construction",
+            "level": 26,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Crafting",
+            "level": 30,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Getting_Ahead"
+    },
+    {
+      "id": "ghosts-ahoy",
+      "name": "Ghosts Ahoy",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 25,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Cooking",
+            "level": 20,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "priest-in-peril",
+            "completion": "finished"
+          },
+          {
+            "id": "the-restless-ghost",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Ghosts_Ahoy"
+    },
+    {
+      "id": "goblin-diplomacy",
+      "name": "Goblin Diplomacy",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": 5,
+      "members": false,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Goblin_Diplomacy"
+    },
+    {
+      "id": "grim-tales",
+      "name": "Grim Tales",
+      "difficulty": "Master",
+      "length": "Medium",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 59,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Farming",
+            "level": 45,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Herblore",
+            "level": 52,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Thieving",
+            "level": 58,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Woodcutting",
+            "level": 71,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "witchs-house",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "Ability to defeat a level 138 cloud giant—Glod"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Grim_Tales"
+    },
+    {
+      "id": "haunted-mine",
+      "name": "Haunted Mine",
+      "difficulty": "Experienced",
+      "length": "Short",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Crafting",
+            "level": 35,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "priest-in-peril",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "The ability to defeat a level 95 enemy",
+        "Access to Abandoned Mine"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Haunted_Mine"
+    },
+    {
+      "id": "hazeel-cult",
+      "name": "Hazeel Cult",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Mahjarrat",
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [
+        "Able to defeat a level 13 cultist (this applies only if you're taking Ceril's side)"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Hazeel_Cult"
+    },
+    {
+      "id": "heroes-quest",
+      "name": "Heroes' Quest",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Cooking",
+            "level": 53,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Fishing",
+            "level": 53,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Herblore",
+            "level": 25,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Mining",
+            "level": 50,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "dragon-slayer-i",
+            "completion": "finished"
+          },
+          {
+            "id": "lost-city",
+            "completion": "finished"
+          },
+          {
+            "id": "merlins-crystal",
+            "completion": "finished"
+          },
+          {
+            "id": "shield-of-arrav",
+            "completion": "finished"
+          }
+        ],
+        "questPoints": 55
+      },
+      "notes": [
+        "A partner"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Heroes'_Quest"
+    },
+    {
+      "id": "his-faithful-servants",
+      "name": "His Faithful Servants",
+      "difficulty": "Experienced",
+      "length": "Very Short",
+      "questPoints": 0,
+      "members": true,
+      "miniquest": true,
+      "group": "Mahjarrat",
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [
+        "Priest in Peril"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/His_Faithful_Servants"
+    },
+    {
+      "id": "holy-grail",
+      "name": "Holy Grail",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Camelot",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Attack",
+            "level": 20,
+            "boostable": false,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "merlins-crystal",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "Must be able to defeat a level 120 Black Knight Titan (can be safespotted or flinched)"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Holy_Grail"
+    },
+    {
+      "id": "hopespears-will",
+      "name": "Hopespear's Will",
+      "difficulty": "Master",
+      "length": "Short",
+      "questPoints": 0,
+      "members": true,
+      "miniquest": true,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Prayer",
+            "level": 50,
+            "boostable": false,
+            "requiredToStart": null
+          }
+        ],
+        "quests": [
+          {
+            "id": "desert-treasure-i",
+            "completion": "finished"
+          },
+          {
+            "id": "fairytale-ii-cure-a-queen",
+            "completion": "finished"
+          },
+          {
+            "id": "land-of-the-goblins",
+            "completion": "finished"
+          },
+          {
+            "id": "the-restless-ghost",
+            "completion": "started"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Hopespear's_Will"
+    },
+    {
+      "id": "horror-from-the-deep",
+      "name": "Horror from the Deep",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 35,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "alfred-grimhands-barcrawl",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Horror_from_the_Deep"
+    },
+    {
+      "id": "icthlarins-little-helper",
+      "name": "Icthlarin's Little Helper",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Kharidian",
+      "requirements": {
+        "skills": [],
+        "quests": [
+          {
+            "id": "gertrudes-cat",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "The ability to defeat a level 91 monster."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Icthlarin's_Little_Helper"
+    },
+    {
+      "id": "imp-catcher",
+      "name": "Imp Catcher",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": 1,
+      "members": false,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Imp_Catcher"
+    },
+    {
+      "id": "in-aid-of-the-myreque",
+      "name": "In Aid of the Myreque",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Myreque",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 25,
+            "boostable": true,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Crafting",
+            "level": 25,
+            "boostable": false,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Magic",
+            "level": 7,
+            "boostable": true,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Mining",
+            "level": 15,
+            "boostable": false,
+            "requiredToStart": null
+          }
+        ],
+        "quests": [
+          {
+            "id": "in-search-of-the-myreque",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/In_Aid_of_the_Myreque"
+    },
+    {
+      "id": "in-search-of-knowledge",
+      "name": "In Search of Knowledge",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": 0,
+      "members": true,
+      "miniquest": true,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [
+        "None - but a high combat level is recommended."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/In_Search_of_Knowledge"
+    },
+    {
+      "id": "in-search-of-the-myreque",
+      "name": "In Search of the Myreque",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Myreque",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 25,
+            "boostable": true,
+            "requiredToStart": null
+          }
+        ],
+        "quests": [
+          {
+            "id": "nature-spirit",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "The ability to defeat a level 97 foe (safespottable)"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/In_Search_of_the_Myreque"
+    },
+    {
+      "id": "into-the-tombs",
+      "name": "Into the Tombs",
+      "difficulty": "Master",
+      "length": "Medium",
+      "questPoints": 0,
+      "members": true,
+      "miniquest": true,
+      "group": "Kharidian",
+      "requirements": {
+        "skills": [],
+        "quests": [
+          {
+            "id": "beneath-cursed-sands",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Into_the_Tombs"
+    },
+    {
+      "id": "jungle-potion",
+      "name": "Jungle Potion",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Herblore",
+            "level": 3,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "druidic-ritual",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "The ability to defend against level 53 Jogres and level 46 Harpie Bug Swarms."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Jungle_Potion"
+    },
+    {
+      "id": "kings-ransom",
+      "name": "King's Ransom",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Camelot",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Defence",
+            "level": 65,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Magic",
+            "level": 45,
+            "boostable": false,
+            "requiredToStart": null
+          }
+        ],
+        "quests": [
+          {
+            "id": "black-knights-fortress",
+            "completion": "finished"
+          },
+          {
+            "id": "holy-grail",
+            "completion": "finished"
+          },
+          {
+            "id": "murder-mystery",
+            "completion": "finished"
+          },
+          {
+            "id": "one-small-favour",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/King's_Ransom"
+    },
+    {
+      "id": "lair-of-tarn-razorlor",
+      "name": "Lair of Tarn Razorlor",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": 0,
+      "members": true,
+      "miniquest": true,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Slayer",
+            "level": 40,
+            "boostable": false,
+            "requiredToStart": null
+          }
+        ],
+        "quests": []
+      },
+      "notes": [
+        "The Haunted Mine quest is required to access Tarn's Lair."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Lair_of_Tarn_Razorlor"
+    },
+    {
+      "id": "land-of-the-goblins",
+      "name": "Land of the Goblins",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Dorgeshuun",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 38,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Fishing",
+            "level": 40,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Herblore",
+            "level": 48,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Thieving",
+            "level": 45,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "another-slice-of-h-a-m",
+            "completion": "finished"
+          },
+          {
+            "id": "fishing-contest",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Land_of_the_Goblins"
+    },
+    {
+      "id": "learning-the-ropes",
+      "name": "Learning the Ropes",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": 1,
+      "members": false,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Learning_the_Ropes"
+    },
+    {
+      "id": "legends-quest",
+      "name": "Legends' Quest",
+      "difficulty": "Master",
+      "length": "Long",
+      "questPoints": 4,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 50,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Crafting",
+            "level": 50,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Herblore",
+            "level": 45,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Magic",
+            "level": 56,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Mining",
+            "level": 52,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Prayer",
+            "level": 42,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Smithing",
+            "level": 50,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Strength",
+            "level": 50,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Thieving",
+            "level": 50,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Woodcutting",
+            "level": 50,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "family-crest",
+            "completion": "finished"
+          },
+          {
+            "id": "heroes-quest",
+            "completion": "finished"
+          },
+          {
+            "id": "shilo-village",
+            "completion": "finished"
+          },
+          {
+            "id": "underground-pass",
+            "completion": "finished"
+          },
+          {
+            "id": "waterfall-quest",
+            "completion": "finished"
+          }
+        ],
+        "questPoints": 107
+      },
+      "notes": [
+        "The ability to defeat a level 187 demon"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Legends'_Quest"
+    },
+    {
+      "id": "lost-city",
+      "name": "Lost City",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 3,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Crafting",
+            "level": 31,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Woodcutting",
+            "level": 36,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": []
+      },
+      "notes": [
+        "Ability to kill a level 101 Tree spirit with limited armour and weapons."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Lost_City"
+    },
+    {
+      "id": "lunar-diplomacy",
+      "name": "Lunar Diplomacy",
+      "difficulty": "Experienced",
+      "length": "Long",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Fremennik",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Crafting",
+            "level": 61,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Defence",
+            "level": 40,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Firemaking",
+            "level": 49,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Herblore",
+            "level": 5,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Magic",
+            "level": 65,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Mining",
+            "level": 60,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Woodcutting",
+            "level": 55,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "lost-city",
+            "completion": "finished"
+          },
+          {
+            "id": "rune-mysteries",
+            "completion": "finished"
+          },
+          {
+            "id": "shilo-village",
+            "completion": "finished"
+          },
+          {
+            "id": "the-fremennik-trials",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "The ability to kill multiple level 111 monsters.",
+        "Access to each of the elemental runic altars (Air, Fire, Water, Earth)"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Lunar_Diplomacy"
+    },
+    {
+      "id": "mage-arena-i",
+      "name": "Mage Arena I",
+      "difficulty": "Experienced",
+      "length": "Short",
+      "questPoints": 0,
+      "members": true,
+      "miniquest": true,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Magic",
+            "level": 60,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Mage_Arena_I"
+    },
+    {
+      "id": "mage-arena-ii",
+      "name": "Mage Arena II",
+      "difficulty": "Master",
+      "length": "Medium",
+      "questPoints": 0,
+      "members": true,
+      "miniquest": true,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Magic",
+            "level": 75,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "mage-arena-i",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "Cast Claws of Guthix, Flames of Zamorak, and Saradomin Strike each 100 times inside the Mage Arena."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Mage_Arena_II"
+    },
+    {
+      "id": "making-friends-with-my-arm",
+      "name": "Making Friends with My Arm",
+      "difficulty": "Master",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Troll",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 68,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Construction",
+            "level": 35,
+            "boostable": true,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Firemaking",
+            "level": 66,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Mining",
+            "level": 72,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "cold-war",
+            "completion": "finished"
+          },
+          {
+            "id": "my-arms-big-adventure",
+            "completion": "finished"
+          },
+          {
+            "id": "romeo-and-juliet",
+            "completion": "finished"
+          },
+          {
+            "id": "swan-song",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "It is beneficial to have a higher Agility level."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Making_Friends_with_My_Arm"
+    },
+    {
+      "id": "making-history",
+      "name": "Making History",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 3,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": [
+          {
+            "id": "priest-in-peril",
+            "completion": "finished"
+          },
+          {
+            "id": "the-restless-ghost",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Making_History"
+    },
+    {
+      "id": "meat-and-greet",
+      "name": "Meat and Greet",
+      "difficulty": "Experienced",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": [
+          {
+            "id": "children-of-the-sun",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Meat_and_Greet"
+    },
+    {
+      "id": "merlins-crystal",
+      "name": "Merlin's Crystal",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 6,
+      "members": true,
+      "miniquest": false,
+      "group": "Camelot",
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [
+        "Must be able to defeat a level 39 enemy. You do not need to have an Attack level of 20 to free Merlin, you can 'Use' Excalibur on the crystal to free him."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Merlin's_Crystal"
+    },
+    {
+      "id": "misthalin-mystery",
+      "name": "Misthalin Mystery",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": 1,
+      "members": false,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Misthalin_Mystery"
+    },
+    {
+      "id": "monkey-madness-i",
+      "name": "Monkey Madness I",
+      "difficulty": "Master",
+      "length": "Long",
+      "questPoints": 3,
+      "members": true,
+      "miniquest": false,
+      "group": "Gnome",
+      "requirements": {
+        "skills": [],
+        "quests": [
+          {
+            "id": "the-grand-tree",
+            "completion": "finished"
+          },
+          {
+            "id": "tree-gnome-village",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "The ability to defeat a level 195 Jungle Demon"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Monkey_Madness_I"
+    },
+    {
+      "id": "monkey-madness-ii",
+      "name": "Monkey Madness II",
+      "difficulty": "Grandmaster",
+      "length": "Very Long",
+      "questPoints": 4,
+      "members": true,
+      "miniquest": false,
+      "group": "Gnome",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 55,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Crafting",
+            "level": 70,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Firemaking",
+            "level": 60,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Hunter",
+            "level": 60,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Slayer",
+            "level": 69,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Thieving",
+            "level": 55,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "enlightened-journey",
+            "completion": "finished"
+          },
+          {
+            "id": "recipe-for-disaster-freeing-king-awowogei",
+            "completion": "finished"
+          },
+          {
+            "id": "the-eyes-of-glouphrie",
+            "completion": "finished"
+          },
+          {
+            "id": "troll-stronghold",
+            "completion": "finished"
+          },
+          {
+            "id": "watchtower",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Monkey_Madness_II"
+    },
+    {
+      "id": "monks-friend",
+      "name": "Monk's Friend",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [
+        "The ability to run past two level 14 thieves, and one level 26."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Monk's_Friend"
+    },
+    {
+      "id": "mountain-daughter",
+      "name": "Mountain Daughter",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 20,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": []
+      },
+      "notes": [
+        "The ability to defeat a level 70 monster (can be safespotted)"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Mountain_Daughter"
+    },
+    {
+      "id": "mournings-end-part-i",
+      "name": "Mourning's End Part I",
+      "difficulty": "Master",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Elf",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Ranged",
+            "level": 60,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Thieving",
+            "level": 50,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "big-chompy-bird-hunting",
+            "completion": "finished"
+          },
+          {
+            "id": "roving-elves",
+            "completion": "finished"
+          },
+          {
+            "id": "sheep-herder",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "The ability to defeat a level 11 enemy with your combat stats set to 20 each."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Mourning's_End_Part_I"
+    },
+    {
+      "id": "mournings-end-part-ii",
+      "name": "Mourning's End Part II",
+      "difficulty": "Master",
+      "length": "Long",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Elf",
+      "requirements": {
+        "skills": [],
+        "quests": [
+          {
+            "id": "mournings-end-part-i",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Mourning's_End_Part_II"
+    },
+    {
+      "id": "murder-mystery",
+      "name": "Murder Mystery",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": 3,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Murder_Mystery"
+    },
+    {
+      "id": "my-arms-big-adventure",
+      "name": "My Arm's Big Adventure",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Troll",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Farming",
+            "level": 29,
+            "boostable": true,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Woodcutting",
+            "level": 10,
+            "boostable": false,
+            "requiredToStart": null
+          }
+        ],
+        "quests": [
+          {
+            "id": "eadgars-ruse",
+            "completion": "finished"
+          },
+          {
+            "id": "jungle-potion",
+            "completion": "finished"
+          },
+          {
+            "id": "the-feud",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "At least 60% favour in the Tai Bwo Wannai Cleanup minigame before starting this quest - this will be subtracted from the total favour",
+        "Requires Medium Karamja Diary"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/My_Arm's_Big_Adventure"
+    },
+    {
+      "id": "nature-spirit",
+      "name": "Nature Spirit",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": [
+          {
+            "id": "priest-in-peril",
+            "completion": "finished"
+          },
+          {
+            "id": "the-restless-ghost",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Nature_Spirit"
+    },
+    {
+      "id": "observatory-quest",
+      "name": "Observatory Quest",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Observatory_Quest"
+    },
+    {
+      "id": "olafs-quest",
+      "name": "Olaf's Quest",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Firemaking",
+            "level": 40,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Woodcutting",
+            "level": 50,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "the-fremennik-trials",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "The ability to defeat a level 100 monster"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Olaf's_Quest"
+    },
+    {
+      "id": "one-small-favour",
+      "name": "One Small Favour",
+      "difficulty": "Experienced",
+      "length": "Long",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 36,
+            "boostable": true,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Crafting",
+            "level": 25,
+            "boostable": true,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Herblore",
+            "level": 18,
+            "boostable": true,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Smithing",
+            "level": 30,
+            "boostable": true,
+            "requiredToStart": null
+          }
+        ],
+        "quests": [
+          {
+            "id": "rune-mysteries",
+            "completion": "finished"
+          },
+          {
+            "id": "shilo-village",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/One_Small_Favour"
+    },
+    {
+      "id": "pandemonium",
+      "name": "Pandemonium",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Pandemonium"
+    },
+    {
+      "id": "perilous-moons",
+      "name": "Perilous Moons",
+      "difficulty": "Master",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Construction",
+            "level": 10,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Fishing",
+            "level": 20,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Hunter",
+            "level": 20,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Runecraft",
+            "level": 20,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Slayer",
+            "level": 48,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "twilights-promise",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Perilous_Moons"
+    },
+    {
+      "id": "pirates-treasure",
+      "name": "Pirate's Treasure",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": 2,
+      "members": false,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [
+        "Able to defeat or run away from a Combat level 4 gardener."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Pirate's_Treasure"
+    },
+    {
+      "id": "plague-city",
+      "name": "Plague City",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Elf",
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Plague_City"
+    },
+    {
+      "id": "priest-in-peril",
+      "name": "Priest in Peril",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Priest_in_Peril"
+    },
+    {
+      "id": "prince-ali-rescue",
+      "name": "Prince Ali Rescue",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": 3,
+      "members": false,
+      "miniquest": false,
+      "group": "Kharidian",
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [
+        "The ability to get past aggressive combat level 26 jail guards."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Prince_Ali_Rescue"
+    },
+    {
+      "id": "prying-times",
+      "name": "Prying Times",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Sailing",
+            "level": 12,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Smithing",
+            "level": 30,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "pandemonium",
+            "completion": "finished"
+          },
+          {
+            "id": "the-knights-sword",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "One open port task slot"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Prying_Times"
+    },
+    {
+      "id": "rag-and-bone-man-i",
+      "name": "Rag and Bone Man I",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Rag and Bone Man",
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Rag_and_Bone_Man_I"
+    },
+    {
+      "id": "rag-and-bone-man-ii",
+      "name": "Rag and Bone Man II",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Rag and Bone Man",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Defence",
+            "level": 20,
+            "boostable": false,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Slayer",
+            "level": 40,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "creature-of-fenkenstrain",
+            "completion": "started"
+          },
+          {
+            "id": "rag-and-bone-man-i",
+            "completion": "finished"
+          },
+          {
+            "id": "skippy-and-the-mogres",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "The ability to kill several high-level monsters"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Rag_and_Bone_Man_II"
+    },
+    {
+      "id": "ratcatchers",
+      "name": "Ratcatchers",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": [
+          {
+            "id": "icthlarins-little-helper",
+            "completion": "finished"
+          },
+          {
+            "id": "the-giant-dwarf",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "Access to Keldagrim"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Ratcatchers"
+    },
+    {
+      "id": "recipe-for-disaster-another-cooks-quest",
+      "name": "Another Cook's Quest",
+      "difficulty": "Special",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Recipe for Disaster",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Cooking",
+            "level": 10,
+            "boostable": false,
+            "requiredToStart": null
+          }
+        ],
+        "quests": [
+          {
+            "id": "cooks-assistant",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Recipe_for_Disaster%2FAnother_Cook's_Quest"
+    },
+    {
+      "id": "recipe-for-disaster-defeating-the-culinaromancer",
+      "name": "Defeating the Culinaromancer",
+      "difficulty": "Special",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Recipe for Disaster",
+      "requirements": {
+        "skills": [],
+        "quests": [
+          {
+            "id": "desert-treasure-i",
+            "completion": "finished"
+          },
+          {
+            "id": "horror-from-the-deep",
+            "completion": "finished"
+          },
+          {
+            "id": "recipe-for-disaster-freeing-evil-dave",
+            "completion": "finished"
+          },
+          {
+            "id": "recipe-for-disaster-freeing-king-awowogei",
+            "completion": "finished"
+          },
+          {
+            "id": "recipe-for-disaster-freeing-pirate-pete",
+            "completion": "finished"
+          },
+          {
+            "id": "recipe-for-disaster-freeing-sir-amik-varze",
+            "completion": "finished"
+          },
+          {
+            "id": "recipe-for-disaster-freeing-skrach-uglogwee",
+            "completion": "finished"
+          },
+          {
+            "id": "recipe-for-disaster-freeing-the-goblin-generals",
+            "completion": "finished"
+          },
+          {
+            "id": "recipe-for-disaster-freeing-the-lumbridge-guide",
+            "completion": "finished"
+          },
+          {
+            "id": "recipe-for-disaster-freeing-the-mountain-dwarf",
+            "completion": "finished"
+          }
+        ],
+        "questPoints": 175
+      },
+      "notes": [
+        "The ability to defeat all enemies without Prayer"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Recipe_for_Disaster%2FDefeating_the_Culinaromancer"
+    },
+    {
+      "id": "recipe-for-disaster-freeing-evil-dave",
+      "name": "Freeing Evil Dave",
+      "difficulty": "Special",
+      "length": "Medium",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Recipe for Disaster",
+      "requirements": {
+        "skills": [],
+        "quests": [
+          {
+            "id": "gertrudes-cat",
+            "completion": "finished"
+          },
+          {
+            "id": "recipe-for-disaster-another-cooks-quest",
+            "completion": "finished"
+          },
+          {
+            "id": "shadow-of-the-storm",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Recipe_for_Disaster%2FFreeing_Evil_Dave"
+    },
+    {
+      "id": "recipe-for-disaster-freeing-king-awowogei",
+      "name": "Freeing King Awowogei",
+      "difficulty": "Special",
+      "length": "Long",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Recipe for Disaster",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 48,
+            "boostable": false,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Cooking",
+            "level": 70,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "monkey-madness-i",
+            "completion": "finished"
+          },
+          {
+            "id": "recipe-for-disaster-another-cooks-quest",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "The ability to defeat a level 84 Big Snake"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Recipe_for_Disaster%2FFreeing_King_Awowogei"
+    },
+    {
+      "id": "recipe-for-disaster-freeing-pirate-pete",
+      "name": "Freeing Pirate Pete",
+      "difficulty": "Special",
+      "length": "Medium",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Recipe for Disaster",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Cooking",
+            "level": 31,
+            "boostable": true,
+            "requiredToStart": null
+          }
+        ],
+        "quests": [
+          {
+            "id": "recipe-for-disaster-another-cooks-quest",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "The ability to defeat 5 level 30 monsters."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Recipe_for_Disaster%2FFreeing_Pirate_Pete"
+    },
+    {
+      "id": "recipe-for-disaster-freeing-sir-amik-varze",
+      "name": "Freeing Sir Amik Varze",
+      "difficulty": "Special",
+      "length": "Medium",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Recipe for Disaster",
+      "requirements": {
+        "skills": [],
+        "quests": [
+          {
+            "id": "family-crest",
+            "completion": "finished"
+          },
+          {
+            "id": "heroes-quest",
+            "completion": "finished"
+          },
+          {
+            "id": "legends-quest",
+            "completion": "started"
+          },
+          {
+            "id": "recipe-for-disaster-another-cooks-quest",
+            "completion": "finished"
+          },
+          {
+            "id": "shilo-village",
+            "completion": "finished"
+          },
+          {
+            "id": "underground-pass",
+            "completion": "finished"
+          },
+          {
+            "id": "waterfall-quest",
+            "completion": "finished"
+          }
+        ],
+        "questPoints": 107
+      },
+      "notes": [
+        "Access to the Kharazi Jungle",
+        "The ability to defeat a level 227 Black dragon"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Recipe_for_Disaster%2FFreeing_Sir_Amik_Varze"
+    },
+    {
+      "id": "recipe-for-disaster-freeing-skrach-uglogwee",
+      "name": "Freeing Skrach Uglogwee",
+      "difficulty": "Special",
+      "length": "Medium",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Recipe for Disaster",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Cooking",
+            "level": 41,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Firemaking",
+            "level": 20,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "big-chompy-bird-hunting",
+            "completion": "finished"
+          },
+          {
+            "id": "recipe-for-disaster-another-cooks-quest",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Recipe_for_Disaster%2FFreeing_Skrach_Uglogwee"
+    },
+    {
+      "id": "recipe-for-disaster-freeing-the-goblin-generals",
+      "name": "Freeing the Goblin generals",
+      "difficulty": "Special",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Recipe for Disaster",
+      "requirements": {
+        "skills": [],
+        "quests": [
+          {
+            "id": "goblin-diplomacy",
+            "completion": "finished"
+          },
+          {
+            "id": "recipe-for-disaster-another-cooks-quest",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Recipe_for_Disaster%2FFreeing_the_Goblin_generals"
+    },
+    {
+      "id": "recipe-for-disaster-freeing-the-lumbridge-guide",
+      "name": "Freeing the Lumbridge Guide",
+      "difficulty": "Special",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Recipe for Disaster",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Cooking",
+            "level": 40,
+            "boostable": true,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "big-chompy-bird-hunting",
+            "completion": "finished"
+          },
+          {
+            "id": "biohazard",
+            "completion": "finished"
+          },
+          {
+            "id": "demon-slayer",
+            "completion": "finished"
+          },
+          {
+            "id": "murder-mystery",
+            "completion": "finished"
+          },
+          {
+            "id": "nature-spirit",
+            "completion": "finished"
+          },
+          {
+            "id": "recipe-for-disaster-another-cooks-quest",
+            "completion": "finished"
+          },
+          {
+            "id": "witchs-house",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Recipe_for_Disaster%2FFreeing_the_Lumbridge_Guide"
+    },
+    {
+      "id": "recipe-for-disaster-freeing-the-mountain-dwarf",
+      "name": "Freeing the Mountain Dwarf",
+      "difficulty": "Special",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Recipe for Disaster",
+      "requirements": {
+        "skills": [],
+        "quests": [
+          {
+            "id": "fishing-contest",
+            "completion": "finished"
+          },
+          {
+            "id": "recipe-for-disaster-another-cooks-quest",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "The ability to defeat a level 13 icefiend if you don't have the ice gloves."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Recipe_for_Disaster%2FFreeing_the_Mountain_Dwarf"
+    },
+    {
+      "id": "recruitment-drive",
+      "name": "Recruitment Drive",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Temple Knight",
+      "requirements": {
+        "skills": [],
+        "quests": [
+          {
+            "id": "black-knights-fortress",
+            "completion": "finished"
+          },
+          {
+            "id": "druidic-ritual",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Recruitment_Drive"
+    },
+    {
+      "id": "regicide",
+      "name": "Regicide",
+      "difficulty": "Experienced",
+      "length": "Long",
+      "questPoints": 3,
+      "members": true,
+      "miniquest": false,
+      "group": "Elf",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 56,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Crafting",
+            "level": 10,
+            "boostable": false,
+            "requiredToStart": null
+          }
+        ],
+        "quests": [
+          {
+            "id": "underground-pass",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "The ability to defeat a level 110 Tyras guard (can be safespotted)"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Regicide"
+    },
+    {
+      "id": "romeo-and-juliet",
+      "name": "Romeo & Juliet",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": 5,
+      "members": false,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Romeo_%26_Juliet"
+    },
+    {
+      "id": "roving-elves",
+      "name": "Roving Elves",
+      "difficulty": "Experienced",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Elf",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 56,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "regicide",
+            "completion": "finished"
+          },
+          {
+            "id": "waterfall-quest",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "The ability to defeat a level 84 enemy unarmed, with heavy restrictions"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Roving_Elves"
+    },
+    {
+      "id": "royal-trouble",
+      "name": "Royal Trouble",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Miscellania",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 40,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Slayer",
+            "level": 40,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "throne-of-miscellania",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Royal_Trouble"
+    },
+    {
+      "id": "rum-deal",
+      "name": "Rum Deal",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Pirate",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Crafting",
+            "level": 42,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Farming",
+            "level": 40,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Fishing",
+            "level": 50,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Prayer",
+            "level": 47,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Slayer",
+            "level": 42,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "priest-in-peril",
+            "completion": "finished"
+          },
+          {
+            "id": "zogre-flesh-eaters",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "The ability to kill a combat level 150 monster (can be safespotted)"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Rum_Deal"
+    },
+    {
+      "id": "rune-mysteries",
+      "name": "Rune Mysteries",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": 1,
+      "members": false,
+      "miniquest": false,
+      "group": "Order of Wizards",
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Rune_Mysteries"
+    },
+    {
+      "id": "scorpion-catcher",
+      "name": "Scorpion Catcher",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Prayer",
+            "level": 31,
+            "boostable": false,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "alfred-grimhands-barcrawl",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "The ability to run past level 172 black demons and level 64 poison spiders"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Scorpion_Catcher"
+    },
+    {
+      "id": "scrambled",
+      "name": "Scrambled!",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Construction",
+            "level": 38,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Cooking",
+            "level": 36,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Smithing",
+            "level": 35,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "children-of-the-sun",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Scrambled!"
+    },
+    {
+      "id": "sea-slug",
+      "name": "Sea Slug",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Temple Knight",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Firemaking",
+            "level": 30,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Sea_Slug"
+    },
+    {
+      "id": "secrets-of-the-north",
+      "name": "Secrets of the North",
+      "difficulty": "Master",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Mahjarrat",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 69,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Hunter",
+            "level": 56,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Thieving",
+            "level": 64,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "desert-treasure-i",
+            "completion": "started"
+          },
+          {
+            "id": "devious-minds",
+            "completion": "finished"
+          },
+          {
+            "id": "hazeel-cult",
+            "completion": "finished"
+          },
+          {
+            "id": "making-friends-with-my-arm",
+            "completion": "finished"
+          },
+          {
+            "id": "the-generals-shadow",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Secrets_of_the_North"
+    },
+    {
+      "id": "shades-of-mortton",
+      "name": "Shades of Mort'ton",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 3,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Crafting",
+            "level": 20,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Firemaking",
+            "level": 5,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Herblore",
+            "level": 15,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "priest-in-peril",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "Must be able to defeat 5 level-40 Loar Shades.",
+        "Must be able to survive an onslaught when rebuilding the Temple (Being surrounded by many players makes this much easier).",
+        "Access to Mort'ton"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Shades_of_Mort'ton"
+    },
+    {
+      "id": "shadow-of-the-storm",
+      "name": "Shadow of the Storm",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Demon Slayer",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Crafting",
+            "level": 30,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "demon-slayer",
+            "completion": "finished"
+          },
+          {
+            "id": "the-golem",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "The ability to defeat a level 100 demon"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Shadow_of_the_Storm"
+    },
+    {
+      "id": "shadows-of-custodia",
+      "name": "Shadows of Custodia",
+      "difficulty": "Experienced",
+      "length": "Short",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Construction",
+            "level": 41,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Fishing",
+            "level": 45,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Hunter",
+            "level": 36,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Slayer",
+            "level": 54,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "children-of-the-sun",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Shadows_of_Custodia"
+    },
+    {
+      "id": "sheep-herder",
+      "name": "Sheep Herder",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": 4,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Sheep_Herder"
+    },
+    {
+      "id": "sheep-shearer",
+      "name": "Sheep Shearer",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": 1,
+      "members": false,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Sheep_Shearer"
+    },
+    {
+      "id": "shield-of-arrav",
+      "name": "Shield of Arrav",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": 1,
+      "members": false,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [
+        "A trustworthy friend or partner. Players can join the official chat-channel \"OSRS SOA\" to look for a partner."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Shield_of_Arrav"
+    },
+    {
+      "id": "shilo-village",
+      "name": "Shilo Village",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 32,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Crafting",
+            "level": 20,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "jungle-potion",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "Must be able to defend from many Undead ones (level 61-73) and able to defeat three monsters that are about level 90."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Shilo_Village"
+    },
+    {
+      "id": "sins-of-the-father",
+      "name": "Sins of the Father",
+      "difficulty": "Master",
+      "length": "Long",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Myreque",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 52,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Attack",
+            "level": 50,
+            "boostable": false,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Crafting",
+            "level": 56,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Fletching",
+            "level": 60,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Magic",
+            "level": 49,
+            "boostable": false,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Slayer",
+            "level": 50,
+            "boostable": false,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Woodcutting",
+            "level": 62,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "a-taste-of-hope",
+            "completion": "finished"
+          },
+          {
+            "id": "vampyre-slayer",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Sins_of_the_Father"
+    },
+    {
+      "id": "skippy-and-the-mogres",
+      "name": "Skippy and the Mogres",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": 0,
+      "members": true,
+      "miniquest": true,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Cooking",
+            "level": 20,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Skippy_and_the_Mogres"
+    },
+    {
+      "id": "sleeping-giants",
+      "name": "Sleeping Giants",
+      "difficulty": "Intermediate",
+      "length": "Very Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Smithing",
+            "level": 15,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Sleeping_Giants"
+    },
+    {
+      "id": "song-of-the-elves",
+      "name": "Song of the Elves",
+      "difficulty": "Grandmaster",
+      "length": "Very Long",
+      "questPoints": 4,
+      "members": true,
+      "miniquest": false,
+      "group": "Elf",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 70,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Construction",
+            "level": 70,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Farming",
+            "level": 70,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Herblore",
+            "level": 70,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Hunter",
+            "level": 70,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Mining",
+            "level": 70,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Smithing",
+            "level": 70,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Woodcutting",
+            "level": 70,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "druidic-ritual",
+            "completion": "finished"
+          },
+          {
+            "id": "making-history",
+            "completion": "finished"
+          },
+          {
+            "id": "mournings-end-part-ii",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Song_of_the_Elves"
+    },
+    {
+      "id": "spirits-of-the-elid",
+      "name": "Spirits of the Elid",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Magic",
+            "level": 33,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Mining",
+            "level": 37,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Ranged",
+            "level": 37,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Thieving",
+            "level": 37,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": []
+      },
+      "notes": [
+        "Ability to defeat three level 75 golems"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Spirits_of_the_Elid"
+    },
+    {
+      "id": "swan-song",
+      "name": "Swan Song",
+      "difficulty": "Master",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Cooking",
+            "level": 62,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Crafting",
+            "level": 40,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Firemaking",
+            "level": 42,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Fishing",
+            "level": 62,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Magic",
+            "level": 66,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Smithing",
+            "level": 45,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "garden-of-tranquillity",
+            "completion": "finished"
+          },
+          {
+            "id": "one-small-favour",
+            "completion": "finished"
+          }
+        ],
+        "questPoints": 100
+      },
+      "notes": [
+        "The ability to defeat a combat level 170 monster, which is able to use Magic, Melee and can drain Prayer."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Swan_Song"
+    },
+    {
+      "id": "tai-bwo-wannai-trio",
+      "name": "Tai Bwo Wannai Trio",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 15,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Cooking",
+            "level": 30,
+            "boostable": false,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Fishing",
+            "level": 5,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "jungle-potion",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Tai_Bwo_Wannai_Trio"
+    },
+    {
+      "id": "tale-of-the-righteous",
+      "name": "Tale of the Righteous",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Great Kourend, #3E",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Mining",
+            "level": 10,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Strength",
+            "level": 16,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "client-of-kourend",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Tale_of_the_Righteous"
+    },
+    {
+      "id": "tears-of-guthix",
+      "name": "Tears of Guthix",
+      "difficulty": "Intermediate",
+      "length": "Very Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Crafting",
+            "level": 20,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Firemaking",
+            "level": 49,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Mining",
+            "level": 20,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [],
+        "questPoints": 43
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Tears_of_Guthix"
+    },
+    {
+      "id": "temple-of-ikov",
+      "name": "Temple of Ikov",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Mahjarrat",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Ranged",
+            "level": 40,
+            "boostable": false,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Thieving",
+            "level": 42,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": []
+      },
+      "notes": [
+        "The ability to defeat a level 84 enemy with Ranged"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Temple_of_Ikov"
+    },
+    {
+      "id": "temple-of-the-eye",
+      "name": "Temple of the Eye",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Order of Wizards",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Runecraft",
+            "level": 10,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "enter-the-abyss",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Temple_of_the_Eye"
+    },
+    {
+      "id": "the-ascent-of-arceuus",
+      "name": "The Ascent of Arceuus",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Great Kourend, #3C",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Hunter",
+            "level": 12,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "client-of-kourend",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Ascent_of_Arceuus"
+    },
+    {
+      "id": "the-blood-moon-rises",
+      "name": "The Blood Moon Rises",
+      "difficulty": "Grandmaster",
+      "length": "Very Long",
+      "questPoints": 4,
+      "members": true,
+      "miniquest": false,
+      "group": "Myreque",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Cooking",
+            "level": 72,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Crafting",
+            "level": 64,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Fletching",
+            "level": 70,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Herblore",
+            "level": 64,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Hunter",
+            "level": 65,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Magic",
+            "level": 57,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Mining",
+            "level": 66,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Slayer",
+            "level": 74,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Smithing",
+            "level": 72,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Woodcutting",
+            "level": 74,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "a-night-at-the-theatre",
+            "completion": "finished"
+          },
+          {
+            "id": "sins-of-the-father",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Blood_Moon_Rises"
+    },
+    {
+      "id": "the-corsair-curse",
+      "name": "The Corsair Curse",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 2,
+      "members": false,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Corsair_Curse"
+    },
+    {
+      "id": "the-curse-of-arrav",
+      "name": "The Curse of Arrav",
+      "difficulty": "Master",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Mahjarrat",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 61,
+            "boostable": false,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Mining",
+            "level": 64,
+            "boostable": false,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Ranged",
+            "level": 62,
+            "boostable": false,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Slayer",
+            "level": 37,
+            "boostable": null,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Strength",
+            "level": 58,
+            "boostable": false,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Thieving",
+            "level": 62,
+            "boostable": false,
+            "requiredToStart": null
+          }
+        ],
+        "quests": [
+          {
+            "id": "defender-of-varrock",
+            "completion": "finished"
+          },
+          {
+            "id": "troll-romance",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Curse_of_Arrav"
+    },
+    {
+      "id": "the-depths-of-despair",
+      "name": "The Depths of Despair",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Great Kourend, #3B",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 18,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "client-of-kourend",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "Ability to kill a level 36 Sand Snake"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Depths_of_Despair"
+    },
+    {
+      "id": "the-dig-site",
+      "name": "The Dig Site",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Mahjarrat",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 10,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Herblore",
+            "level": 10,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Thieving",
+            "level": 25,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Dig_Site"
+    },
+    {
+      "id": "the-enchanted-key",
+      "name": "The Enchanted Key",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": 0,
+      "members": true,
+      "miniquest": true,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [
+        "Finished Making History"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Enchanted_Key"
+    },
+    {
+      "id": "the-eyes-of-glouphrie",
+      "name": "The Eyes of Glouphrie",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Gnome",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Construction",
+            "level": 5,
+            "boostable": false,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Magic",
+            "level": 46,
+            "boostable": false,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "the-grand-tree",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Eyes_of_Glouphrie"
+    },
+    {
+      "id": "the-feud",
+      "name": "The Feud",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Thieving",
+            "level": 30,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": []
+      },
+      "notes": [
+        "The ability to kill a level 70 bandit and a level 75 Menaphite (both can be safespotted)."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Feud"
+    },
+    {
+      "id": "the-final-dawn",
+      "name": "The Final Dawn",
+      "difficulty": "Master",
+      "length": "Long",
+      "questPoints": 3,
+      "members": true,
+      "miniquest": false,
+      "group": "Twilight Emissaries",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Fletching",
+            "level": 52,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Runecraft",
+            "level": 52,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Thieving",
+            "level": 66,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "perilous-moons",
+            "completion": "finished"
+          },
+          {
+            "id": "the-heart-of-darkness",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Final_Dawn"
+    },
+    {
+      "id": "the-forsaken-tower",
+      "name": "The Forsaken Tower",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Great Kourend, #3D",
+      "requirements": {
+        "skills": [],
+        "quests": [
+          {
+            "id": "client-of-kourend",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Forsaken_Tower"
+    },
+    {
+      "id": "the-fremennik-exiles",
+      "name": "The Fremennik Exiles",
+      "difficulty": "Master",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Fremennik",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Crafting",
+            "level": 65,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Fishing",
+            "level": 60,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Mining",
+            "level": 60,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Runecraft",
+            "level": 55,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Slayer",
+            "level": 60,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Smithing",
+            "level": 60,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "heroes-quest",
+            "completion": "finished"
+          },
+          {
+            "id": "lunar-diplomacy",
+            "completion": "finished"
+          },
+          {
+            "id": "mountain-daughter",
+            "completion": "finished"
+          },
+          {
+            "id": "the-fremennik-isles",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Fremennik_Exiles"
+    },
+    {
+      "id": "the-fremennik-isles",
+      "name": "The Fremennik Isles",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Fremennik",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Construction",
+            "level": 20,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "the-fremennik-trials",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "The ability to kill a level 122 Troll King (Damage can be reduced) and, separately, 10 rock throwing ice trolls in a multicombat area."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Fremennik_Isles"
+    },
+    {
+      "id": "the-fremennik-trials",
+      "name": "The Fremennik Trials",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": 3,
+      "members": true,
+      "miniquest": false,
+      "group": "Fremennik",
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [
+        "Ability to defeat a level-69 Draugen",
+        "Ability to defeat a fairly strong warrior without armour, weapons, or spells"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Fremennik_Trials"
+    },
+    {
+      "id": "the-frozen-door",
+      "name": "The Frozen Door",
+      "difficulty": "Master",
+      "length": "Short",
+      "questPoints": 0,
+      "members": true,
+      "miniquest": true,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 70,
+            "boostable": false,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Hitpoints",
+            "level": 70,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Ranged",
+            "level": 70,
+            "boostable": false,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Strength",
+            "level": 70,
+            "boostable": false,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "desert-treasure-i",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Frozen_Door"
+    },
+    {
+      "id": "the-garden-of-death",
+      "name": "The Garden of Death",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Twisted Tales",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Farming",
+            "level": 20,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Garden_of_Death"
+    },
+    {
+      "id": "the-generals-shadow",
+      "name": "The General's Shadow",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": 0,
+      "members": true,
+      "miniquest": true,
+      "group": "Mahjarrat",
+      "requirements": {
+        "skills": [],
+        "quests": [
+          {
+            "id": "desert-treasure-i",
+            "completion": "started"
+          }
+        ]
+      },
+      "notes": [
+        "Curse of the Empty Lord, for full ghostly robes",
+        "Fight Arena"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_General's_Shadow"
+    },
+    {
+      "id": "the-giant-dwarf",
+      "name": "The Giant Dwarf",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Red Axe",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Crafting",
+            "level": 12,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Firemaking",
+            "level": 16,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Magic",
+            "level": 33,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Thieving",
+            "level": 14,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Giant_Dwarf"
+    },
+    {
+      "id": "the-golem",
+      "name": "The Golem",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Crafting",
+            "level": 20,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Thieving",
+            "level": 25,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Golem"
+    },
+    {
+      "id": "the-grand-tree",
+      "name": "The Grand Tree",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": 5,
+      "members": true,
+      "miniquest": false,
+      "group": "Gnome",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 25,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": []
+      },
+      "notes": [
+        "The ability to defeat a level 172 Black demon (safespottable for Ranged and Magic or melee using a halberd)."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Grand_Tree"
+    },
+    {
+      "id": "the-graveyard",
+      "name": "The Graveyard",
+      "difficulty": "Master",
+      "length": null,
+      "questPoints": 3,
+      "members": true,
+      "miniquest": false,
+      "group": "Fremennik",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 65,
+            "boostable": null,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Fletching",
+            "level": 54,
+            "boostable": null,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Sailing",
+            "level": 65,
+            "boostable": null,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Woodcutting",
+            "level": 56,
+            "boostable": null,
+            "requiredToStart": null
+          }
+        ],
+        "quests": [
+          {
+            "id": "olafs-quest",
+            "completion": "finished"
+          },
+          {
+            "id": "pandemonium",
+            "completion": "finished"
+          },
+          {
+            "id": "the-fremennik-exiles",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Graveyard"
+    },
+    {
+      "id": "the-great-brain-robbery",
+      "name": "The Great Brain Robbery",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Pirate",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Construction",
+            "level": 30,
+            "boostable": false,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Crafting",
+            "level": 16,
+            "boostable": false,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Prayer",
+            "level": 50,
+            "boostable": false,
+            "requiredToStart": null
+          }
+        ],
+        "quests": [
+          {
+            "id": "cabin-fever",
+            "completion": "finished"
+          },
+          {
+            "id": "creature-of-fenkenstrain",
+            "completion": "finished"
+          },
+          {
+            "id": "recipe-for-disaster-freeing-pirate-pete",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "Access to a player-owned house workshop and crafting table or the Grand Exchange",
+        "Be able to kill a level 190 monster that can disable Prayers (can be safespotted without taking damage)."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Great_Brain_Robbery"
+    },
+    {
+      "id": "the-hand-in-the-sand",
+      "name": "The Hand in the Sand",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Crafting",
+            "level": 49,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Thieving",
+            "level": 17,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Hand_in_the_Sand"
+    },
+    {
+      "id": "the-heart-of-darkness",
+      "name": "The Heart of Darkness",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Twilight Emissaries",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 46,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Mining",
+            "level": 55,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Slayer",
+            "level": 48,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Thieving",
+            "level": 48,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "twilights-promise",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Heart_of_Darkness"
+    },
+    {
+      "id": "the-ides-of-milk",
+      "name": "The Ides of Milk",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": 1,
+      "members": false,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Ides_of_Milk"
+    },
+    {
+      "id": "the-knights-sword",
+      "name": "The Knight's Sword",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 1,
+      "members": false,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Mining",
+            "level": 10,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": []
+      },
+      "notes": [
+        "The ability to run from level 57 ice warriors and level 53 ice giants could help."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Knight's_Sword"
+    },
+    {
+      "id": "the-lost-tribe",
+      "name": "The Lost Tribe",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Dorgeshuun",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 13,
+            "boostable": true,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Mining",
+            "level": 17,
+            "boostable": true,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Thieving",
+            "level": 13,
+            "boostable": true,
+            "requiredToStart": null
+          }
+        ],
+        "quests": [
+          {
+            "id": "goblin-diplomacy",
+            "completion": "finished"
+          },
+          {
+            "id": "rune-mysteries",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Lost_Tribe"
+    },
+    {
+      "id": "the-path-of-glouphrie",
+      "name": "The Path of Glouphrie",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Gnome",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 45,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Ranged",
+            "level": 47,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Slayer",
+            "level": 56,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Strength",
+            "level": 60,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Thieving",
+            "level": 56,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "the-eyes-of-glouphrie",
+            "completion": "finished"
+          },
+          {
+            "id": "tree-gnome-village",
+            "completion": "finished"
+          },
+          {
+            "id": "waterfall-quest",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Path_of_Glouphrie"
+    },
+    {
+      "id": "the-queen-of-thieves",
+      "name": "The Queen of Thieves",
+      "difficulty": "Intermediate",
+      "length": "Very Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Great Kourend, #3A",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Thieving",
+            "level": 20,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "client-of-kourend",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Queen_of_Thieves"
+    },
+    {
+      "id": "the-red-reef",
+      "name": "The Red Reef",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Tortugan",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Sailing",
+            "level": 52,
+            "boostable": false,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Smithing",
+            "level": 48,
+            "boostable": false,
+            "requiredToStart": null
+          }
+        ],
+        "quests": [
+          {
+            "id": "troubled-tortugans",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Red_Reef"
+    },
+    {
+      "id": "the-restless-ghost",
+      "name": "The Restless Ghost",
+      "difficulty": "Novice",
+      "length": "Short",
+      "questPoints": 1,
+      "members": false,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [
+        "Capable of killing or running away from a combat level 13 skeleton."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Restless_Ghost"
+    },
+    {
+      "id": "the-ribbiting-tale-of-a-lily-pad-labour-dispute",
+      "name": "The Ribbiting Tale of a Lily Pad Labour Dispute",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Woodcutting",
+            "level": 15,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "children-of-the-sun",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Ribbiting_Tale_of_a_Lily_Pad_Labour_Dispute"
+    },
+    {
+      "id": "the-slug-menace",
+      "name": "The Slug Menace",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Temple Knight",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Crafting",
+            "level": 30,
+            "boostable": false,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Runecraft",
+            "level": 30,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Slayer",
+            "level": 30,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Thieving",
+            "level": 30,
+            "boostable": false,
+            "requiredToStart": null
+          }
+        ],
+        "quests": [
+          {
+            "id": "sea-slug",
+            "completion": "finished"
+          },
+          {
+            "id": "wanted",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "The ability to defeat a level 62 enemy with Melee.",
+        "You must have the Commorb in your inventory to start the quest."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Slug_Menace"
+    },
+    {
+      "id": "the-tourist-trap",
+      "name": "The Tourist Trap",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Fletching",
+            "level": 10,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Smithing",
+            "level": 20,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": []
+      },
+      "notes": [
+        "The ability to defeat a level 47 enemy"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Tourist_Trap"
+    },
+    {
+      "id": "throne-of-miscellania",
+      "name": "Throne of Miscellania",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Miscellania",
+      "requirements": {
+        "skills": [],
+        "quests": [
+          {
+            "id": "heroes-quest",
+            "completion": "finished"
+          },
+          {
+            "id": "the-fremennik-trials",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Throne_of_Miscellania"
+    },
+    {
+      "id": "tower-of-life",
+      "name": "Tower of Life",
+      "difficulty": "Novice",
+      "length": "Medium",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Construction",
+            "level": 10,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Tower_of_Life"
+    },
+    {
+      "id": "tree-gnome-village",
+      "name": "Tree Gnome Village",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": "Gnome",
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [
+        "The ability to defeat a level 112 Khazard warlord"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Tree_Gnome_Village"
+    },
+    {
+      "id": "tribal-totem",
+      "name": "Tribal Totem",
+      "difficulty": "Intermediate",
+      "length": "Very Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Thieving",
+            "level": 21,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Tribal_Totem"
+    },
+    {
+      "id": "troll-romance",
+      "name": "Troll Romance",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 2,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 28,
+            "boostable": true,
+            "requiredToStart": null
+          }
+        ],
+        "quests": [
+          {
+            "id": "troll-stronghold",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "The ability to defeat a level 113 troll"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Troll_Romance"
+    },
+    {
+      "id": "troll-stronghold",
+      "name": "Troll Stronghold",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Troll",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 15,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": [
+          {
+            "id": "death-plateau",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "The ability to defeat a level 113 Troll General (can be safespotted)"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Troll_Stronghold"
+    },
+    {
+      "id": "troubled-tortugans",
+      "name": "Troubled Tortugans",
+      "difficulty": "Experienced",
+      "length": "Medium",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Tortugan",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Construction",
+            "level": 48,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Crafting",
+            "level": 34,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Hunter",
+            "level": 45,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Sailing",
+            "level": 45,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Slayer",
+            "level": 51,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Woodcutting",
+            "level": 40,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "pandemonium",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Troubled_Tortugans"
+    },
+    {
+      "id": "twilights-promise",
+      "name": "Twilight's Promise",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Twilight Emissaries",
+      "requirements": {
+        "skills": [],
+        "quests": [
+          {
+            "id": "children-of-the-sun",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Twilight's_Promise"
+    },
+    {
+      "id": "underground-pass",
+      "name": "Underground Pass",
+      "difficulty": "Experienced",
+      "length": "Long",
+      "questPoints": 5,
+      "members": true,
+      "miniquest": false,
+      "group": "Elf",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Ranged",
+            "level": 25,
+            "boostable": true,
+            "requiredToStart": null
+          }
+        ],
+        "quests": [
+          {
+            "id": "biohazard",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Underground_Pass"
+    },
+    {
+      "id": "vale-totems-miniquest",
+      "name": "Vale Totems",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": 0,
+      "members": true,
+      "miniquest": true,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Fletching",
+            "level": 20,
+            "boostable": null,
+            "requiredToStart": null
+          }
+        ],
+        "quests": []
+      },
+      "notes": [
+        "Completions of the following quests:",
+        "Children of the Sun"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Vale_Totems_(miniquest)"
+    },
+    {
+      "id": "vampyre-slayer",
+      "name": "Vampyre Slayer",
+      "difficulty": "Intermediate",
+      "length": "Very Short",
+      "questPoints": 3,
+      "members": false,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [
+        "Able to defeat a combat level 34 vampyre with a very high health recovery rate."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Vampyre_Slayer"
+    },
+    {
+      "id": "wanted",
+      "name": "Wanted!",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": "Temple Knight",
+      "requirements": {
+        "skills": [],
+        "quests": [
+          {
+            "id": "enter-the-abyss",
+            "completion": "finished"
+          },
+          {
+            "id": "priest-in-peril",
+            "completion": "finished"
+          },
+          {
+            "id": "recruitment-drive",
+            "completion": "finished"
+          },
+          {
+            "id": "the-lost-tribe",
+            "completion": "finished"
+          }
+        ],
+        "questPoints": 32
+      },
+      "notes": [
+        "The ability to defeat a level 32 Black Knight."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Wanted!"
+    },
+    {
+      "id": "watchtower",
+      "name": "Watchtower",
+      "difficulty": "Intermediate",
+      "length": "Medium",
+      "questPoints": 4,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 25,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Herblore",
+            "level": 14,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Magic",
+            "level": 14,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Mining",
+            "level": 40,
+            "boostable": true,
+            "requiredToStart": false
+          },
+          {
+            "skill": "Thieving",
+            "level": 15,
+            "boostable": true,
+            "requiredToStart": false
+          }
+        ],
+        "quests": []
+      },
+      "notes": [
+        "The ability to defeat a level 68 Ogre and run past level 111 Blue dragons"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Watchtower"
+    },
+    {
+      "id": "waterfall-quest",
+      "name": "Waterfall Quest",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [
+        "The ability to withstand and evade attacks from level 86 Fire Giants and level 84 Moss Guardian without any equipment."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Waterfall_Quest"
+    },
+    {
+      "id": "what-lies-below",
+      "name": "What Lies Below",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Runecraft",
+            "level": 35,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "rune-mysteries",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/What_Lies_Below"
+    },
+    {
+      "id": "while-guthix-sleeps",
+      "name": "While Guthix Sleeps",
+      "difficulty": "Grandmaster",
+      "length": "Very Long",
+      "questPoints": 5,
+      "members": true,
+      "miniquest": false,
+      "group": "Mahjarrat",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 66,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Farming",
+            "level": 65,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Firemaking",
+            "level": 49,
+            "boostable": null,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Herblore",
+            "level": 65,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Hunter",
+            "level": 62,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Magic",
+            "level": 67,
+            "boostable": false,
+            "requiredToStart": true
+          },
+          {
+            "skill": "Thieving",
+            "level": 72,
+            "boostable": false,
+            "requiredToStart": true
+          }
+        ],
+        "quests": [
+          {
+            "id": "a-tail-of-two-cats",
+            "completion": "finished"
+          },
+          {
+            "id": "defender-of-varrock",
+            "completion": "finished"
+          },
+          {
+            "id": "dream-mentor",
+            "completion": "finished"
+          },
+          {
+            "id": "fight-arena",
+            "completion": "finished"
+          },
+          {
+            "id": "nature-spirit",
+            "completion": "finished"
+          },
+          {
+            "id": "tears-of-guthix",
+            "completion": "finished"
+          },
+          {
+            "id": "temple-of-the-eye",
+            "completion": "finished"
+          },
+          {
+            "id": "the-hand-in-the-sand",
+            "completion": "finished"
+          },
+          {
+            "id": "the-path-of-glouphrie",
+            "completion": "finished"
+          },
+          {
+            "id": "wanted",
+            "completion": "finished"
+          }
+        ],
+        "questPoints": 180
+      },
+      "notes": [
+        "Ability to enter the Warriors' Guild (the sum of your Attack and Strength must be at or above 130; OR Attack 99, OR Strength 99)"
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/While_Guthix_Sleeps"
+    },
+    {
+      "id": "witchs-house",
+      "name": "Witch's House",
+      "difficulty": "Intermediate",
+      "length": "Very Short",
+      "questPoints": 4,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [
+        "The ability to defeat 4 monsters from level 19 to 53 without a break."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Witch's_House"
+    },
+    {
+      "id": "witchs-potion",
+      "name": "Witch's Potion",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": 1,
+      "members": false,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Witch's_Potion"
+    },
+    {
+      "id": "x-marks-the-spot",
+      "name": "X Marks the Spot",
+      "difficulty": "Novice",
+      "length": "Very Short",
+      "questPoints": 1,
+      "members": false,
+      "miniquest": false,
+      "group": "Great Kourend",
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/X_Marks_the_Spot"
+    },
+    {
+      "id": "zogre-flesh-eaters",
+      "name": "Zogre Flesh Eaters",
+      "difficulty": "Intermediate",
+      "length": "Short",
+      "questPoints": 1,
+      "members": true,
+      "miniquest": false,
+      "group": null,
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Herblore",
+            "level": 8,
+            "boostable": true,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Ranged",
+            "level": 30,
+            "boostable": false,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Smithing",
+            "level": 4,
+            "boostable": true,
+            "requiredToStart": null
+          }
+        ],
+        "quests": [
+          {
+            "id": "big-chompy-bird-hunting",
+            "completion": "finished"
+          },
+          {
+            "id": "jungle-potion",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [
+        "You must be able to defeat a level 111 enemy."
+      ],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Zogre_Flesh_Eaters"
+    }
+  ]
+}

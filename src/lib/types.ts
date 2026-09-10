@@ -105,8 +105,8 @@ export type HiscoresResult =
 
 /**
  * "Special" is real, not a fallback: every Recipe for Disaster page uses it.
- * Three miniquest pages report a numeric difficulty instead of a word — the
- * generator corrects those rather than widening this union.
+ * The union stays closed to the six values the wiki's own template documents,
+ * so a page carrying anything else is reported as a defect, not absorbed.
  */
 export type QuestDifficulty =
   | 'Novice'
@@ -153,29 +153,30 @@ export interface QuestPrerequisite {
 }
 
 /**
- * Barbarian Assault gives a level per role rather than one number, and only
- * Elite Kandarin Diary needs them. Kept because dropping a requirement is
- * exactly the failure this app can't afford.
+ * Only quest points and combat level are templated on quest pages, so only
+ * they can be checked. The other non-skill requirements the wiki records —
+ * Varrock Museum kudos for Bone Voyage, Barbarian Assault role levels — appear
+ * as prose and land in `Quest.notes`, displayed rather than computed. No field
+ * here that the generator cannot populate.
  */
-export type BarbarianAssaultRole =
-  'Attacker' | 'Collector' | 'Defender' | 'Healer'
-
 export interface QuestRequirements {
   skills: SkillRequirement[]
   quests: QuestPrerequisite[]
   /** Total quest points. 13 quests gate on this, up to 200 for Dragon Slayer II. */
   questPoints?: number
   combatLevel?: number
-  /** Varrock Museum kudos. Only Bone Voyage, which needs 100. */
-  kudos?: number
-  barbarianAssault?: { role: BarbarianAssaultRole; level: number }[]
 }
 
 export interface Quest {
   /** Slug, e.g. "cooks-assistant". Stable across dataset regenerations. */
   id: string
   name: string
-  difficulty: QuestDifficulty
+  /**
+   * `null` when the page does not state a valid one. Three miniquest pages
+   * carry a number instead of a word, which the template forbids; the
+   * generator reports them rather than guessing a mapping.
+   */
+  difficulty: QuestDifficulty | null
   length: QuestLength | null
   /** Quest points awarded. 0 for miniquests, which award none. */
   questPoints: number

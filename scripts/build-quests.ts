@@ -13,15 +13,16 @@
  *      `.cache/wiki/pages.json`.  (done)
  *   2. Parse templates and requirements to `.cache/wiki/parsed.json`, and
  *      report anything that didn't reduce cleanly.  (done)
- *   3. Cross-check against `Module:Questreq/data` and validate the graph.
- *   4. Emit `src/data/quests.json`.
+ *   3. Cross-check against `Module:Questreq/data` and validate the graph.  (done)
+ *   4. Emit `src/data/quests.json` plus a revision-id lock beside it.  (done)
  *
  * Unlike `fetch-skill-icons.mjs`, this **fails loud**. A missing icon degrades
  * to a hidden image; a missing quest silently removes it from the queue, which
  * is the app's whole purpose. Never emit a partial dataset.
  *
  *   npm run build:quests            # uses the cache when present
- *   npm run build:quests -- --refresh
+ *   npm run build:quests -- --refresh   # re-fetch, ignoring the cache
+ *   npm run build:quests -- --check     # is the committed dataset stale?
  */
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { fileURLToPath } from 'node:url'
@@ -29,7 +30,14 @@ import { fileURLToPath } from 'node:url'
 // The app's own types, so the generator cannot drift from the shapes the
 // client consumes. Node needs the explicit extension when stripping types.
 import { SKILL_NAMES } from '../src/lib/types.ts'
-import type { SkillName, SkillRequirement } from '../src/lib/types.ts'
+import type {
+  Quest,
+  QuestDataset,
+  QuestDifficulty,
+  QuestLength,
+  SkillName,
+  SkillRequirement,
+} from '../src/lib/types.ts'
 
 const root = fileURLToPath(new URL('..', import.meta.url))
 const cacheDir = `${root}.cache/wiki`
@@ -526,6 +534,8 @@ const GROUP_PREFIXES = ['Recipe for Disaster/']
 interface ParsedPage {
   id: string
   title: string
+  /** Carried through so the emitted lock records what we actually parsed. */
+  revisionId: number
   name: string
   kind: QuestKind
   difficulty: string | null
@@ -585,6 +595,7 @@ function parsePage(page: CachedPage): ParsedPage {
   return {
     id: slugify(page.title),
     title: page.title,
+    revisionId: page.revisionId,
     // Subpage titles carry the parent; the infobox name is what to display.
     name: plainText(infobox.name ?? '') || page.title,
     kind: page.kind,
@@ -976,8 +987,168 @@ function parseAll(cache: WikiCache) {
   return { parsed, unresolved }
 }
 
+/* -------------------------------------------- stage 4: emit and stay honest */
+
+const dataDir = `${root}src/data`
+
+/**
+ * Revision ids of the pages the committed dataset was built from, written
+ * beside it. Not part of `quests.json`: the app never needs 214 revision
+ * numbers, and there's no reason to ship them to the client.
+ */
+interface SourceLock {
+  generatedAt: string
+  /** Wiki title -> revision id the dataset was generated from. */
+  revisions: Record<string, number>
+}
+
+function toDataset(parsed: ParsedPage[]): {
+  dataset: QuestDataset
+  lock: SourceLock
+} {
+  const idByTitle = new Map(parsed.map((p) => [p.title, p.id]))
+
+  // Sorted by id so the committed JSON diffs cleanly when regenerated. An
+  // unstable order would make every refresh look like a rewrite.
+  const ordered = [...parsed].sort((a, b) => a.id.localeCompare(b.id))
+
+  const quests: Quest[] = ordered.map((page) => ({
+    id: page.id,
+    name: page.name,
+    difficulty: page.difficulty as QuestDifficulty | null,
+    length: page.length as QuestLength | null,
+    questPoints: page.questPoints,
+    members: page.members,
+    miniquest: page.kind === 'miniquest',
+    group: page.group,
+    requirements: {
+      skills: [...page.requirements.skills].sort(
+        (a, b) => a.skill.localeCompare(b.skill) || a.level - b.level,
+      ),
+      quests: page.requirements.quests
+        .map((prereq) => ({
+          id: idByTitle.get(prereq.title)!,
+          completion: prereq.completion,
+        }))
+        .sort((a, b) => a.id.localeCompare(b.id)),
+      ...(page.requirements.questPoints !== undefined
+        ? { questPoints: page.requirements.questPoints }
+        : {}),
+      ...(page.requirements.combatLevel !== undefined
+        ? { combatLevel: page.requirements.combatLevel }
+        : {}),
+    },
+    notes: page.requirements.notes,
+    wikiUrl: page.wikiUrl,
+  }))
+
+  // Last guard before the dataset is written: every prerequisite must resolve
+  // to a quest in this same file, or the queue will reference a quest that
+  // doesn't exist and the user's completions can never satisfy it.
+  const ids = new Set(quests.map((q) => q.id))
+  for (const quest of quests) {
+    for (const prereq of quest.requirements.quests) {
+      if (!prereq.id || !ids.has(prereq.id)) {
+        throw new Error(
+          `${quest.name}: prerequisite "${prereq.id}" is not in the dataset`,
+        )
+      }
+    }
+  }
+
+  const generatedAt = new Date().toISOString().slice(0, 10)
+  return {
+    dataset: {
+      generatedAt,
+      sources: [
+        'https://oldschool.runescape.wiki/ (quest pages, CC BY-NC-SA 3.0)',
+        `https://oldschool.runescape.wiki/w/${QUESTREQ_MODULE.replace(/ /g, '_')} (cross-check)`,
+      ],
+      quests,
+    },
+    lock: {
+      generatedAt,
+      revisions: Object.fromEntries(
+        [...parsed]
+          .sort((a, b) => a.title.localeCompare(b.title))
+          .map((p) => [p.title, p.revisionId]),
+      ),
+    },
+  }
+}
+
+/**
+ * Compares the committed dataset against the live wiki without downloading any
+ * page content — inventory plus revision ids only, so roughly seven small
+ * requests. Cheap enough to run on a schedule, which is the point: the wiki
+ * gained two quests this month and nothing would otherwise tell us.
+ */
+async function checkForDrift(): Promise<number> {
+  const lock = JSON.parse(
+    await readFile(`${dataDir}/quests.sources.json`, 'utf8'),
+  ) as SourceLock
+
+  const liveTitles: string[] = []
+  for (const template of Object.values(INVENTORY_TEMPLATES)) {
+    liveTitles.push(...(await pagesEmbedding(template)))
+  }
+
+  const known = new Set(Object.keys(lock.revisions))
+  const live = new Set(liveTitles.filter((t) => !EXCLUDED_PAGES.has(t)))
+
+  const added = [...live].filter((t) => !known.has(t))
+  const removed = [...known].filter((t) => !live.has(t))
+
+  // Revision ids without content: prop=revisions with rvprop=ids only.
+  const changed: string[] = []
+  const titles = [...live].filter((t) => known.has(t))
+  for (let i = 0; i < titles.length; i += BATCH_SIZE) {
+    const body = (await api({
+      action: 'query',
+      prop: 'revisions',
+      rvprop: 'ids',
+      titles: titles.slice(i, i + BATCH_SIZE).join('|'),
+    })) as {
+      query?: { pages?: { title: string; revisions?: { revid: number }[] }[] }
+    }
+
+    for (const page of body.query?.pages ?? []) {
+      const live = page.revisions?.[0]?.revid
+      const recorded = lock.revisions[page.title]
+      if (live !== undefined && recorded && live !== recorded)
+        changed.push(page.title)
+    }
+  }
+
+  console.log(`\ncommitted dataset generated ${lock.generatedAt}`)
+  console.log(`  quests added upstream:   ${added.length}`)
+  for (const t of added) console.log(`    + ${t}`)
+  console.log(`  quests removed upstream: ${removed.length}`)
+  for (const t of removed) console.log(`    - ${t}`)
+  console.log(`  pages edited since:      ${changed.length}`)
+  for (const t of changed.slice(0, 20)) console.log(`    ~ ${t}`)
+  if (changed.length > 20)
+    console.log(`    ... and ${changed.length - 20} more`)
+
+  const drifted = added.length + removed.length + changed.length
+  if (drifted) {
+    console.log(`\nthe dataset is behind the wiki. Regenerate with:`)
+    console.log(`  npm run build:quests -- --refresh`)
+  } else {
+    console.log('\nthe dataset matches the wiki.')
+  }
+  return drifted
+}
+
 async function main() {
   const refresh = process.argv.includes('--refresh')
+
+  // --check compares the committed dataset against the live wiki and exits
+  // non-zero on drift, so a scheduled job can notice new quests for us.
+  if (process.argv.includes('--check')) {
+    process.exitCode = (await checkForDrift()) > 0 ? 1 : 0
+    return
+  }
 
   let cache = refresh ? null : await readCache()
   if (cache) {
@@ -1017,7 +1188,24 @@ async function main() {
   assertAcyclic(parsed)
   crossCheck(parsed, await loadQuestreq(refresh))
 
-  console.log('\nstage 3 of 4 complete. Emitting the dataset is next.')
+  const { dataset, lock } = toDataset(parsed)
+  await mkdir(dataDir, { recursive: true })
+  // Pretty-printed on purpose: this file is committed and reviewed by hand,
+  // and Vite minifies it into the bundle anyway, so readability is free.
+  await writeFile(
+    `${dataDir}/quests.json`,
+    `${JSON.stringify(dataset, null, 2)}\n`,
+  )
+  await writeFile(
+    `${dataDir}/quests.sources.json`,
+    `${JSON.stringify(lock, null, 2)}\n`,
+  )
+
+  const size = (JSON.stringify(dataset).length / 1024).toFixed(0)
+  console.log(
+    `\nwrote src/data/quests.json — ${dataset.quests.length} quests, ${size} KB minified`,
+  )
+  console.log('wrote src/data/quests.sources.json (revision ids, not shipped)')
 }
 
 main().catch((error: unknown) => {

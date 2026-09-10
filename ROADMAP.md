@@ -12,22 +12,25 @@ licensing lives in [NOTICE.md](NOTICE.md).
 **0.2.0 is deployed** at <https://stagescape.infinitebit.workers.dev>.
 
 The stats half works end to end: hiscores lookup through the Worker, cached
-offline-first, a skills grid that reflows from 320px to docked width. The quest
-half — the actual point of the app — is not built yet.
+offline-first, a skills grid that reflows from 320px to docked width.
+
+The quest **dataset** now exists too — 214 quests generated from the wiki and
+committed. The quest **engine and UI** — the actual point of the app — are not
+built yet, and nothing reads `quests.json` so far.
 
 ## Phases
 
-| Phase                           | State | Notes                                                                     |
-| ------------------------------- | ----- | ------------------------------------------------------------------------- |
-| 0 — Scaffold                    | done  | Vue 3 + TS, Tailwind v4, PWA, Workers + Static Assets, CI, release-please |
-| 1 — Shell                       | done  | Panel registry, generated routes, tab bar, About panel                    |
-| 2 — Hiscores                    | done  | 2a route + parser · 2b store + persistence · 2c skills grid               |
-| **3 — Quest dataset**           | doing | Generator stages 1–3 done (fetch · parse · cross-check); 4 emits the JSON |
-| 4 — Quest engine and queue      | —     | Eligibility resolution, prerequisite expansion, the queue UI              |
-| Later — ironman requirements    | —     | Currently dropped entirely; see below                                     |
-| Later — prices panel            | —     | `prices.runescape.wiki`, same Worker-proxy shape                          |
-| Later — wide-and-shallow layout | —     | Tabs to a left strip when short and wide; see CLAUDE.md                   |
-| Later — plugin manifests        | —     | The panel registry is already the seam                                    |
+| Phase                           | State | Notes                                                                        |
+| ------------------------------- | ----- | ---------------------------------------------------------------------------- |
+| 0 — Scaffold                    | done  | Vue 3 + TS, Tailwind v4, PWA, Workers + Static Assets, CI, release-please    |
+| 1 — Shell                       | done  | Panel registry, generated routes, tab bar, About panel                       |
+| 2 — Hiscores                    | done  | 2a route + parser · 2b store + persistence · 2c skills grid                  |
+| 3 — Quest dataset               | done  | 214 quests committed; `build:quests` fetches · parses · cross-checks · emits |
+| **4 — Quest engine and queue**  | next  | Eligibility resolution, prerequisite expansion, the queue UI                 |
+| Later — ironman requirements    | —     | Currently dropped entirely; see below                                        |
+| Later — prices panel            | —     | `prices.runescape.wiki`, same Worker-proxy shape                             |
+| Later — wide-and-shallow layout | —     | Tabs to a left strip when short and wide; see CLAUDE.md                      |
+| Later — plugin manifests        | —     | The panel registry is already the seam                                       |
 
 ## Phase 3: the quest dataset
 
@@ -49,7 +52,7 @@ Of the three candidates:
    sub-tasks. Using it silently omits ~10% of quests, biased toward the ones a
    player is most likely to be looking at.
 
-### How the generator should work
+### How the generator works
 
 The wiki's own quest lists are DPL-generated from per-page templates, so those
 templates are upstream of every list page. `list=embeddedin` gives the complete
@@ -82,14 +85,14 @@ Requirements are templated rather than prose, which is what makes this viable:
 ```
 
 **Nesting under the header is transitive expansion**, so direct prerequisites
-are the shallowest tier — a clean rule, and the parse yields 396 skill
-requirements and 261 direct edges.
+are the shallowest tier — a clean rule. The parse yields **381 skill
+requirements, 276 direct edges and 99 notes** across 214 quests.
 
-Validation stays as planned: every prerequisite id resolves, and the graph is
-acyclic. Keep `Module:Questreq/data` as an **independent second opinion** and
-report disagreements for hand-correction — the two sources are maintained by
-different people in different formats, which is exactly what makes the diff
-worth reading.
+Validation is enforced, not aspirational: every prerequisite id must resolve or
+generation fails, and the graph is checked acyclic (deepest chain 8, Song of the
+Elves) because the queue cannot be ordered otherwise. `Module:Questreq/data` is an
+**independent second opinion** whose disagreements are informational — see below
+for which side wins and why.
 
 ### Two findings that change `src/lib/types.ts`
 
@@ -152,6 +155,29 @@ never as a dependency.
 Bonus: the ~52 unparsed lines that looked like the worst of the job were **all on
 the parent page**. Dropping it removes nearly all of them, so this decision makes
 the generator simpler rather than adding a special case.
+
+### Staleness: `--check`, and the job that should run it
+
+The wiki moves without telling us — two quests were added this month. Nothing in
+`npm run build` touches the wiki, deliberately: `.cache/wiki/` is developer-local
+and gitignored, `src/data/quests.json` is committed, and regeneration is a manual
+step with a reviewable diff. So the wiki changing can't break a build or alter
+the app. It can only make the committed dataset quietly wrong.
+
+`npm run build:quests -- --check` is the answer. It compares the committed
+dataset against the live wiki using **only the inventory and revision ids, no
+page content** — about seven small requests — and exits non-zero on drift,
+reporting quests added, removed, or edited since generation. Revision ids live in
+`src/data/quests.sources.json`, committed beside the dataset and never shipped to
+the client.
+
+It works: minutes after the first dataset was written, `--check` flagged that
+`A Ruff Situation` had been edited.
+
+**Still to do: a scheduled job that runs it.** A weekly GitHub Action opening an
+issue on drift turns "hope someone remembers" into a notification, while keeping
+regeneration a deliberate human step. Note open question 5 — the deploy job has
+no `workflow_dispatch` — so give this one a manual trigger from the start.
 
 ### When the two sources disagree, the page wins
 
