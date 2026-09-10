@@ -35,6 +35,13 @@ const ICONS = [
   ['hourglass', 'src/assets/icons/hourglass.svg', 'game-icons'],
   ['padlock', 'src/assets/icons/padlock.svg', 'game-icons'],
   ['openBook', 'src/assets/icons/open-book.svg', 'game-icons'],
+  // Tab icons come from game-icons even where Phosphor has an equivalent: the
+  // tab bar is the app's identity and the four sit together at 20px, so they
+  // need one drawing style. Phosphor stays for chrome inside panels.
+  ['progression', 'src/assets/icons/progression.svg', 'game-icons'],
+  // Key is `cog`, file is game-icons' `big-gear`: Lorc's `cog` is too airy at
+  // 20px, and Phosphor's `gear` stays reserved for chrome inside panels.
+  ['cog', 'src/assets/icons/big-gear.svg', 'game-icons'],
   [
     'chart',
     'node_modules/@phosphor-icons/core/assets/bold/chart-bar-bold.svg',

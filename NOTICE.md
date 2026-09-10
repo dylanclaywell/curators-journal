@@ -100,12 +100,14 @@ content is licensed **CC BY-NC-SA 3.0**.
 [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/), which requires
 attribution.
 
-| Icon              | Author |
-| ----------------- | ------ |
-| `scroll-unfurled` | Lorc   |
-| `hourglass`       | Lorc   |
-| `padlock`         | Lorc   |
-| `open-book`       | Lorc   |
+| Icon              | Author      |
+| ----------------- | ----------- |
+| `scroll-unfurled` | Lorc        |
+| `hourglass`       | Lorc        |
+| `padlock`         | Lorc        |
+| `open-book`       | Lorc        |
+| `progression`     | Delapouite  |
+| `big-gear`        | DarkZaitzev |
 
 **[Phosphor Icons](https://phosphoricons.com)** — licensed MIT. Used:
 `chart-bar`, `check`, `gear`, `arrow-square-out`, `magnifying-glass`, `plus`,
