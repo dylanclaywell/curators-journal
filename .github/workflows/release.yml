@@ -3,6 +3,11 @@ name: Release
 on:
   push:
     branches: [main]
+  # Manual re-run, so a failed deploy doesn't need another release to retry.
+  # Prefer dispatching against the release **tag** rather than `main`: the
+  # dropdown accepts either, and a tag keeps the deployed `__APP_VERSION__`
+  # matching the code, which is the whole reason deploys are release-gated.
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -30,17 +35,27 @@ jobs:
   # we deployed every push, the running app would advertise a version that
   # doesn't match its code — and that readout is what we use to measure the
   # window on a real device, so it has to be trustworthy.
+  # A manual dispatch bypasses the release gate deliberately — that is what
+  # makes a failed deploy retryable. release-please still runs first on a
+  # dispatch, where it simply re-syncs its release PR and reports no release.
   deploy:
     needs: release-please
-    if: ${{ needs.release-please.outputs.release_created == 'true' }}
+    if: >-
+      ${{ needs.release-please.outputs.release_created == 'true'
+      || github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
 
+      # Node comes from .nvmrc so CI and local dev cannot drift apart. 22 is a
+      # floor wrangler sets, not a preference: wrangler 4.130 and miniflare 5
+      # both declare engines >=22.0.0, and that arrived inside the existing ^4
+      # range — so an older pin here breaks the deploy with nothing in the repo
+      # having changed. That is exactly how it broke.
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version-file: .nvmrc
           cache: npm
       - run: npm ci
 

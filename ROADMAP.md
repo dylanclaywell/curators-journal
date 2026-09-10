@@ -364,11 +364,28 @@ change a breaking diff rather than a routine one.
    suspect if an ironman lookup fails.
 3. **Never tested docked on the device** since the skills grid landed. The
    layout numbers came from a desktop browser at forced widths.
-4. **The automated deploy is unproven.** The first release deployed manually;
-   the CI path was fixed afterwards. The next release exercises it, and a
-   permissions gap would show as a 403 naming the missing scope.
-5. **No `workflow_dispatch` on the deploy job**, so a failed deploy can't be
-   retried without cutting a release — which is exactly what happened once.
+4. **The automated deploy ran and failed — cause found, fix unverified.** It
+   broke on Node: CI pinned 20 from the original Pages scaffold, while wrangler
+   4.130 and miniflare 5 declare `engines: node >=22`. That floor moved _inside_
+   the existing `^4.112.0` range, so `npm ci` brought it in with nothing in the
+   repo changing — and local dev on 22.20 never saw it. Node now comes from
+   `.nvmrc`, but that fix is untested until a release exercises it. A
+   permissions gap would still show as a 403 naming the missing scope.
+
+   Related correction: **Workers Builds was never connected.** Every deploy is
+   GitHub Actions or the CLI. CLAUDE.md and this file both claimed
+   git-connected builds; that came from a migration checkpoint recording it as
+   an intended next step, and it was never done.
+
+5. ~~No `workflow_dispatch` on the deploy job.~~ **Fixed.** A manual dispatch
+   now bypasses the release gate, so a failed deploy is retryable without
+   cutting a release — the trap this hit twice.
+
+   **Dispatch against the release _tag_, not `main`.** The dropdown accepts
+   either, and the gate exists because the About panel advertises
+   `__APP_VERSION__` from `package.json`, which only the release PR bumps.
+   Deploying `main` manually would ship a build whose version readout is ahead
+   of its tag — and that readout is what device measurements rely on.
 
 ## Decisions whose reasoning isn't in the code
 
