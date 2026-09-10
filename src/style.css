@@ -154,6 +154,23 @@ body {
 .tab {
   flex: 1 1 0;
   min-width: 52px;
+  /*
+   * Deliberately taller than the 44px `.tap` floor. At the 375px floor four
+   * tabs are ~88px wide, so the old 44px made each one a 2:1 sliver — the
+   * thumb had half as much to aim at vertically as horizontally, on the app's
+   * primary navigation.
+   *
+   * This does cost height in the docked case, which is the one place height is
+   * scarce (see CLAUDE.md). Accepted knowingly: the answer there is the left
+   * icon strip, where a squarer target is free because horizontal space is
+   * abundant. The 24px icon is deliberately not scaled up to fill this box:
+   * the surrounding space is wanted as breathing room.
+   *
+   * If the dock proves too tight before the left strip lands, gate this on a
+   * short-viewport media query — the shell may use the viewport, and height is
+   * the only thing that distinguishes docked from full screen.
+   */
+  min-height: 64px;
 }
 
 @container rail (max-width: 22rem) {

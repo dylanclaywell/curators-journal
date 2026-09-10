@@ -30,14 +30,22 @@ const route = useRoute()
       :key="panel.id"
       :to="panel.path"
       :aria-label="panel.title"
-      class="tab tap pressable engraved flex flex-col items-center justify-center gap-0.5 text-[13px] font-bold no-underline"
+      class="tab tap pressable engraved flex flex-col items-center justify-center gap-1 text-sm font-bold no-underline"
       :class="
         route.path === panel.path
           ? 'bevel-oak-in bg-brown text-gold'
           : 'bevel-oak bg-brown-lt text-parchment-3'
       "
     >
-      <AppIcon :name="panel.icon" :size="20" />
+      <!-- 24px, not 20: game-icons are drawn on a 512 grid for large display,
+           so they gain more from the extra pixels than an interface-sized
+           glyph would, and this is the size that carries the whole meaning
+           once labels drop at five tabs.
+
+           Deliberately not scaled to fill the 64px tab. The space left around
+           the icon and label is the point — it reads as breathing room, and a
+           28px glyph filled the box at the cost of looking crowded. -->
+      <AppIcon :name="panel.icon" :size="24" />
       <span class="tab-label">{{ panel.title }}</span>
     </RouterLink>
   </nav>
