@@ -22,8 +22,9 @@ half — the actual point of the app — is not built yet.
 | 0 — Scaffold                    | done  | Vue 3 + TS, Tailwind v4, PWA, Workers + Static Assets, CI, release-please |
 | 1 — Shell                       | done  | Panel registry, generated routes, tab bar, About panel                    |
 | 2 — Hiscores                    | done  | 2a route + parser · 2b store + persistence · 2c skills grid               |
-| **3 — Quest dataset**           | next  | Source spike **done** — see below. Generator not written yet.             |
+| **3 — Quest dataset**           | doing | Generator stages 1–3 done (fetch · parse · cross-check); 4 emits the JSON |
 | 4 — Quest engine and queue      | —     | Eligibility resolution, prerequisite expansion, the queue UI              |
+| Later — ironman requirements    | —     | Currently dropped entirely; see below                                     |
 | Later — prices panel            | —     | `prices.runescape.wiki`, same Worker-proxy shape                          |
 | Later — wide-and-shallow layout | —     | Tabs to a left strip when short and wide; see CLAUDE.md                   |
 | Later — plugin manifests        | —     | The panel registry is already the seam                                    |
@@ -151,6 +152,46 @@ never as a dependency.
 Bonus: the ~52 unparsed lines that looked like the worst of the job were **all on
 the parent page**. Dropping it removes nearly all of them, so this decision makes
 the generator simpler rather than adding a special case.
+
+### When the two sources disagree, the page wins
+
+**Decided.** The quest page is authoritative; `Module:Questreq/data` is
+informational and **never blocks generation.**
+
+The cross-check surfaces ~7 genuine disagreements — Watchtower Magic 14 (page)
+vs 15 (module), Elemental Workshop I Mining 20 vs 30, The Knight's Sword Mining
+10 vs 15. Only the live game settles them, and adjudicating would mean the
+dataset can't be regenerated until someone logs in.
+
+Deferring to the page is the right default for a reason beyond convenience: the
+page is what a player sees when they check the wiki themselves. Matching it means
+the app never contradicts the source the player would consult. Being right in the
+abstract while disagreeing with the wiki would be worse than being wrong the same
+way the wiki is.
+
+So the cross-check's real value is **finding bugs in our parser**, not refereeing
+the sources — and it has earned its place there. It caught four parse bugs by
+flagging missing edges, including a line on While Guthix Sleeps reading "Attack +
+Strength ≥ 130, OR Attack 99, OR Strength 99" that the parser had reduced to a
+flat 99 Attack requirement. Lines naming several skills are now notes, not
+requirements: ambiguity must degrade to prose, never to false certainty.
+
+### Ironman requirements are dropped, knowingly
+
+Quest pages keep ironman-specific requirements in a separate `ironman` param, and
+the generator doesn't parse it. `Module:Questreq/data` flags 20 of them, so the
+scale is known: Animal Magnetism needs Prayer 31 on an ironman and the dataset
+says nothing of the sort.
+
+This matters more than it looks, because the app already supports ironman
+hiscores and stores account type in settings — so for those players the dataset
+is quietly incomplete, which is this project's least favourite failure shape.
+
+Deferred rather than dismissed. Two costs to weigh when it comes up: it needs a
+type change (an `ironmanOnly` flag on `SkillRequirement`, or a parallel list),
+and the `ironman` param is far prosier than `requirements` — mostly "a method to
+obtain X" trees — so it may only partly reduce to structured data. The honest
+interim position is to say so in the UI rather than imply completeness.
 
 ### The messy tail, all bounded
 

@@ -326,6 +326,9 @@ function slugify(title: string): string {
 /** Strips wiki markup so a note reads as plain prose in the UI. */
 function plainText(wikitext: string): string {
   return wikitext
+    .replace(/<!--[\s\S]*?-->/g, '') // editor notes, e.g. "DO NOT ADD 30 FIREMAKING"
+    .replace(/<ref[^>]*\/>/g, '')
+    .replace(/<ref[^>]*>([\s\S]*?)<\/ref>/g, ' ($1)') // keep the caveat, drop the markup
     .replace(/\[\[[^\]|]*\|([^\]]*)\]\]/g, '$1') // [[Target|label]] -> label
     .replace(/\[\[([^\]]*)\]\]/g, '$1') // [[Target]] -> Target
     .replace(/\{\{SCP\|([^|}]+)\|(\d+)[^}]*\}\}/gi, '$1 $2') // {{SCP|Agility|62}} -> Agility 62
@@ -404,6 +407,18 @@ function parseRequirements(raw: string | undefined): ParsedRequirements {
       continue
     }
 
+    /**
+     * A line naming several skills is a disjunction, not a requirement:
+     * While Guthix Sleeps wants "Attack + Strength >= 130, OR Attack 99, OR
+     * Strength 99". Taking the first one would demand 99 Attack outright.
+     * Ambiguity becomes a visible note rather than false certainty.
+     */
+    const scpCount = (content.match(/\{\{SCP\|/gi) ?? []).length
+    if (scpCount > 1) {
+      result.notes.push(plainText(content))
+      continue
+    }
+
     // Skill and pseudo-skill requirements.
     const scp = content.match(/\{\{SCP\|([^|}]+)\|(\d+)/i)
     if (scp) {
@@ -444,12 +459,16 @@ function parseRequirements(raw: string | undefined): ParsedRequirements {
     // inline "Completion of [[X]]" / "Started [[X]]".
     const link = content.match(/\[\[([^\]|#]+)/)
     const inHeaderTier = headerDepth !== null && depth === headerDepth + 1
+    // The wiki writes an inline prerequisite five different ways.
     const inlineCompletion =
-      /^(completion of|started|must have completed)\b/i.test(content)
+      /^(partial completion of|completion of|completed|started|must have completed)\b/i.test(
+        content,
+      )
 
     if (link && (inHeaderTier || inlineCompletion)) {
-      // "Started X" and "Started X up until ..." only need the quest begun.
-      const started = /^started\b/i.test(content)
+      // "Started X", "Partial completion of X" and "X up until ..." all mean
+      // the prerequisite need only be begun, not finished.
+      const started = /^(started|partial completion of)\b/i.test(content)
       result.quests.push({
         title: link[1].trim(),
         completion: started ? 'started' : 'finished',
@@ -580,6 +599,299 @@ function parsePage(page: CachedPage): ParsedPage {
   }
 }
 
+/* ----------------------------------- stage 3: cross-check and validation */
+
+const QUESTREQ_MODULE = 'Module:Questreq/data'
+
+interface LuaEntry {
+  quests: { title: string; completion: 'finished' | 'started' }[]
+  skills: { name: string; level: number; flags: string[] }[]
+}
+
+/**
+ * Parses `Module:Questreq/data` — a hand-maintained Lua table backing
+ * `Template:Questreq`. It is NOT the dataset's source: it runs behind the
+ * canonical page list and carries non-quests. It is kept as an independent
+ * second opinion, because it's maintained by different people in a different
+ * format, so the two disagreeing is a signal worth reading.
+ *
+ * When they disagree, **the page wins and generation continues** — the page is
+ * what a player sees if they check the wiki themselves, so matching it keeps the
+ * app from contradicting the source they'd consult. This check exists to find
+ * bugs in our parser, not to referee the two sources.
+ *
+ * Tokenized rather than parsed by indentation: the file mixes tabs and spaces,
+ * and an indentation-based parser silently reads only a fraction of it.
+ */
+function parseQuestreq(source: string): Map<string, LuaEntry> {
+  const body = source.slice(source.indexOf('local questReqs'))
+  const BACKSLASH = String.fromCharCode(92)
+
+  type Token =
+    { t: 'str'; v: string } | { t: 'num'; v: number } | { t: '{' | '}' }
+  const toks: Token[] = []
+
+  for (let i = 0; i < body.length; i++) {
+    const c = body[i]
+    if (c === "'") {
+      let s = ''
+      for (i++; i < body.length && body[i] !== "'"; i++) {
+        if (body[i] === BACKSLASH) {
+          s += body[++i]
+          continue
+        }
+        s += body[i]
+      }
+      toks.push({ t: 'str', v: s })
+      continue
+    }
+    // Skip comments: the file opens with a template example in a block comment.
+    if (c === '-' && body[i + 1] === '-') {
+      while (i < body.length && body[i] !== '\n') i++
+      continue
+    }
+    if (c >= '0' && c <= '9') {
+      let n = ''
+      while (i < body.length && body[i] >= '0' && body[i] <= '9') n += body[i++]
+      i--
+      toks.push({ t: 'num', v: Number(n) })
+      continue
+    }
+    if (c === '{' || c === '}') toks.push({ t: c })
+  }
+
+  const entries = new Map<string, LuaEntry>()
+  let p = 0
+  if (toks[p]?.t !== '{')
+    throw new Error(`${QUESTREQ_MODULE}: expected a root table`)
+  p++
+
+  while (p < toks.length && toks[p].t !== '}') {
+    const nameTok = toks[p++]
+    if (nameTok.t !== 'str')
+      throw new Error(`${QUESTREQ_MODULE}: expected a quest name`)
+    if (toks[p++].t !== '{')
+      throw new Error(`${QUESTREQ_MODULE}: expected a table for ${nameTok.v}`)
+
+    const entry: LuaEntry = { quests: [], skills: [] }
+    while (p < toks.length && toks[p].t !== '}') {
+      const sectionTok = toks[p++]
+      if (sectionTok.t !== 'str')
+        throw new Error(`${QUESTREQ_MODULE}: expected a section name`)
+      if (toks[p++].t !== '{')
+        throw new Error(`${QUESTREQ_MODULE}: expected a section table`)
+
+      while (p < toks.length && toks[p].t !== '}') {
+        if (sectionTok.v === 'quests') {
+          const tok = toks[p++]
+          if (tok.t !== 'str') continue
+          // "Started:X" means the prerequisite need only be begun. One entry
+          // also carries a trailing space ("Watchtower ").
+          const started = tok.v.startsWith('Started:')
+          entries.set(nameTok.v, entry)
+          entry.quests.push({
+            title: tok.v.replace(/^Started:/, '').trim(),
+            completion: started ? 'started' : 'finished',
+          })
+        } else {
+          if (toks[p++].t !== '{')
+            throw new Error(`${QUESTREQ_MODULE}: expected a skill tuple`)
+          const skillTok = toks[p++]
+          const levelTok = toks[p++]
+          if (skillTok.t !== 'str' || levelTok.t !== 'num') {
+            throw new Error(
+              `${QUESTREQ_MODULE}: malformed skill tuple in ${nameTok.v}`,
+            )
+          }
+          const flags: string[] = []
+          while (p < toks.length && toks[p].t !== '}') {
+            const flagTok = toks[p++]
+            if (flagTok.t === 'str') flags.push(flagTok.v)
+          }
+          p++
+          entry.skills.push({ name: skillTok.v, level: levelTok.v, flags })
+        }
+      }
+      p++
+    }
+    p++
+    entries.set(nameTok.v, entry)
+  }
+
+  return entries
+}
+
+async function loadQuestreq(refresh: boolean): Promise<Map<string, LuaEntry>> {
+  const path = `${cacheDir}/questreq.lua`
+
+  let source: string | null = refresh
+    ? null
+    : await readFile(path, 'utf8').catch(() => null)
+  if (source === null) {
+    const body = (await api({
+      action: 'query',
+      prop: 'revisions',
+      rvprop: 'content',
+      rvslots: 'main',
+      titles: QUESTREQ_MODULE,
+    })) as {
+      query?: {
+        pages?: { revisions?: { slots?: { main?: { content?: string } } }[] }[]
+      }
+    }
+    source =
+      body.query?.pages?.[0]?.revisions?.[0]?.slots?.main?.content ?? null
+    if (!source) throw new Error(`could not read ${QUESTREQ_MODULE}`)
+    await mkdir(cacheDir, { recursive: true })
+    await writeFile(path, source)
+  }
+  return parseQuestreq(source)
+}
+
+/**
+ * Confirms the prerequisite graph can actually be ordered. A cycle makes the
+ * dependency-ordered queue — the app's whole point — impossible to build, so
+ * this is a hard failure rather than a warning.
+ */
+function assertAcyclic(parsed: ParsedPage[]) {
+  const byId = new Map(parsed.map((p) => [p.id, p]))
+  const state = new Map<string, 1 | 2>()
+  const cycles: string[] = []
+
+  const visit = (id: string, path: string[]) => {
+    if (state.get(id) === 2) return
+    if (state.get(id) === 1) {
+      cycles.push([...path, id].join(' -> '))
+      return
+    }
+    state.set(id, 1)
+    for (const prereq of byId.get(id)?.requirements.quests ?? []) {
+      const target = parsed.find((p) => p.title === prereq.title)
+      if (target) visit(target.id, [...path, id])
+    }
+    state.set(id, 2)
+  }
+  for (const page of parsed) visit(page.id, [])
+
+  if (cycles.length) {
+    throw new Error(
+      `prerequisite cycle(s) found, queue cannot be ordered:\n  ${cycles.join('\n  ')}`,
+    )
+  }
+
+  // Longest chain, as a sanity check that the graph has real depth.
+  const depths = new Map<string, number>()
+  const depth = (id: string): number => {
+    const cached = depths.get(id)
+    if (cached !== undefined) return cached
+    depths.set(id, 1)
+    const prereqs = byId.get(id)?.requirements.quests ?? []
+    const value =
+      1 +
+      Math.max(
+        0,
+        ...prereqs.map((prereq) => {
+          const target = parsed.find((p) => p.title === prereq.title)
+          return target ? depth(target.id) : 0
+        }),
+      )
+    depths.set(id, value)
+    return value
+  }
+  const deepest = parsed
+    .map((p) => ({ name: p.name, d: depth(p.id) }))
+    .sort((a, b) => b.d - a.d)[0]
+
+  console.log(
+    `\ngraph is acyclic; deepest chain is ${deepest.d} (${deepest.name})`,
+  )
+}
+
+/** Compares the page parse against the Lua module and reports disagreements. */
+function crossCheck(parsed: ParsedPage[], lua: Map<string, LuaEntry>) {
+  const byTitle = new Map(parsed.map((p) => [p.title, p]))
+  const SKILL_DISAGREEMENTS: string[] = []
+  const ironmanOnly: string[] = []
+  const QUEST_DISAGREEMENTS: string[] = []
+
+  let compared = 0
+  for (const [name, entry] of lua) {
+    const page = byTitle.get(name)
+    // Entries with no page are the module's non-quests: achievement diaries,
+    // Tutorial Island, Barbarian Training sub-tasks.
+    if (!page) continue
+    compared++
+
+    const ours = new Map(
+      page.requirements.skills.map((s) => [s.skill, s.level]),
+    )
+    const theirs = new Map(
+      entry.skills
+        .filter((s) => SKILL_SET.has(s.name))
+        .map((s) => [s.name, s] as const),
+    )
+    for (const [skill, theirSkill] of theirs) {
+      const mine = ours.get(skill as SkillName)
+      if (mine === undefined) {
+        // The module flags requirements that only apply to ironman accounts,
+        // which the page keeps in a separate `ironman` param we don't parse.
+        // Counted apart so real disagreements aren't buried in them.
+        if (theirSkill.flags.includes('ironman'))
+          ironmanOnly.push(`${name}: ${skill} ${theirSkill.level}`)
+        else
+          SKILL_DISAGREEMENTS.push(
+            `${name}: we miss ${skill} ${theirSkill.level}`,
+          )
+      } else if (mine !== theirSkill.level) {
+        SKILL_DISAGREEMENTS.push(
+          `${name}: ${skill} ours ${mine} vs theirs ${theirSkill.level}`,
+        )
+      }
+    }
+    for (const [skill, level] of ours) {
+      if (!theirs.has(skill))
+        SKILL_DISAGREEMENTS.push(`${name}: only we have ${skill} ${level}`)
+    }
+
+    const ourQuests = new Set(page.requirements.quests.map((q) => q.title))
+    const theirQuests = new Set(entry.quests.map((q) => q.title))
+    for (const q of theirQuests) {
+      if (!ourQuests.has(q) && byTitle.has(q))
+        QUEST_DISAGREEMENTS.push(`${name}: we miss "${q}"`)
+    }
+    for (const q of ourQuests) {
+      if (!theirQuests.has(q))
+        QUEST_DISAGREEMENTS.push(`${name}: only we have "${q}"`)
+    }
+  }
+
+  const onlyInPages = parsed.filter((p) => !lua.has(p.title))
+  console.log(`\ncross-check against ${QUESTREQ_MODULE} (informational only):`)
+  console.log(`  compared ${compared} entries present in both`)
+  console.log(
+    `  ${onlyInPages.length} pages absent from the module (it runs behind; expected)`,
+  )
+  console.log(
+    `  ironman-only requirements the module has and pages keep elsewhere: ${ironmanOnly.length}`,
+  )
+  console.log(`  skill disagreements: ${SKILL_DISAGREEMENTS.length}`)
+  console.log(`  prerequisite disagreements: ${QUEST_DISAGREEMENTS.length}`)
+
+  for (const line of [...SKILL_DISAGREEMENTS, ...QUEST_DISAGREEMENTS].slice(
+    0,
+    40,
+  )) {
+    console.log(`    ${line}`)
+  }
+  const total = SKILL_DISAGREEMENTS.length + QUEST_DISAGREEMENTS.length
+  if (total > 40) console.log(`    ... and ${total - 40} more`)
+
+  return {
+    skillDisagreements: SKILL_DISAGREEMENTS,
+    questDisagreements: QUEST_DISAGREEMENTS,
+  }
+}
+
 /** Stage 2: parse every cached page and report what didn't reduce cleanly. */
 function parseAll(cache: WikiCache) {
   const pages = cache.pages.filter((p) => !EXCLUDED_PAGES.has(p.title))
@@ -701,7 +1013,11 @@ async function main() {
   const { parsed } = parseAll(cache)
   await writeFile(`${cacheDir}/parsed.json`, JSON.stringify(parsed, null, 1))
   console.log(`\nwrote .cache/wiki/parsed.json for inspection`)
-  console.log('stage 2 of 4 complete. Cross-check and validation are next.')
+
+  assertAcyclic(parsed)
+  crossCheck(parsed, await loadQuestreq(refresh))
+
+  console.log('\nstage 3 of 4 complete. Emitting the dataset is next.')
 }
 
 main().catch((error: unknown) => {
