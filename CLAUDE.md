@@ -9,6 +9,16 @@ locally-tracked quest completions to answer "what can I actually start right
 now," then builds a dependency-ordered quest queue. Deployed to Cloudflare
 Workers with Static Assets; third-party API calls go through the Worker.
 
+**Read [ROADMAP.md](ROADMAP.md) before starting work.** It carries what's done,
+what's next, the open questions, and the decisions whose reasoning isn't visible
+in the code — including why the hiscores come from Jagex rather than Wise Old
+Man, and why the cache TTL is the only freshness knob. [NOTICE.md](NOTICE.md)
+covers third-party licensing, which is more load-bearing here than usual.
+
+`.memories/` holds goldfish checkpoints: a fuller decision log including dead
+ends. They're plain markdown, so read them directly if the MCP server isn't
+available. ROADMAP.md is the summary and wins if they disagree.
+
 ## Form factors — measured on device, not assumed
 
 There is no single target size. Three real cases, all served by one codebase:
