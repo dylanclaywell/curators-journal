@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/dylanclaywell/stagescape/compare/stagescape-v0.3.0...stagescape-v0.3.1) (2026-09-10)
+
+
+### Bug Fixes
+
+* **ci:** pin node from .nvmrc, since wrangler now requires 22 ([1041c0f](https://github.com/dylanclaywell/stagescape/commit/1041c0fe6286232387cccd2277fcccda3bda6e0d))
+
 ## [0.3.0](https://github.com/dylanclaywell/stagescape/compare/stagescape-v0.2.0...stagescape-v0.3.0) (2026-09-10)
 
 
