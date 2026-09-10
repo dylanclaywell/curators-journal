@@ -73,6 +73,14 @@
 
   --font-display: 'IM Fell English', Georgia, 'Times New Roman', serif;
   --font-body: 'Alegreya Sans', 'Helvetica Neue', Arial, sans-serif;
+  /*
+   * For usernames, and anywhere else a character has to be read exactly rather
+   * than fluently. OSRS names are full of l / 1 / I / | collisions that a
+   * humanist sans renders near-identically — a lowercase L and a pipe are
+   * indistinguishable in most body faces. System mono, so nothing downloads.
+   */
+  --font-mono:
+    ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
 }
 
 html,

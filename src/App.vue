@@ -1,11 +1,33 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
 import TabBar from '@/components/TabBar.vue'
 import { panelById } from '@/panels/registry'
+import { useHiscoresStore } from '@/stores/hiscores'
 
 const route = useRoute()
 const activePanel = computed(() => panelById(String(route.meta.panelId ?? '')))
+
+/**
+ * Revalidate on resume, at the app level rather than per panel: coming back to
+ * the foreground is an app event, and levels feed the quest queue too — not
+ * just the stats panel.
+ *
+ * If resume proves unreliable on an installed iPad PWA, `pageshow` is the other
+ * event to try; `visibilitychange` is the one that should fire.
+ */
+const hiscores = useHiscoresStore()
+
+function onVisibilityChange() {
+  if (document.visibilityState === 'visible') void hiscores.refreshIfStale()
+}
+
+onMounted(() =>
+  document.addEventListener('visibilitychange', onVisibilityChange),
+)
+onUnmounted(() =>
+  document.removeEventListener('visibilitychange', onVisibilityChange),
+)
 </script>
 
 <template>

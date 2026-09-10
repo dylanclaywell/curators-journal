@@ -88,7 +88,13 @@ export interface HiscoresSnapshot {
 }
 
 export type HiscoresError =
-  'not_found' | 'invalid_username' | 'upstream_error' | 'timeout' | 'too_large'
+  | 'not_found'
+  | 'invalid_username'
+  | 'upstream_error'
+  | 'timeout'
+  | 'too_large'
+  /** Client-only: the request never left the device. The Worker never sends this. */
+  | 'offline'
 
 /** Discriminated result so callers must handle failure explicitly. */
 export type HiscoresResult =

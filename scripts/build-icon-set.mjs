@@ -65,6 +65,13 @@ const ICONS = [
     'node_modules/@phosphor-icons/core/assets/bold/plus-bold.svg',
     'phosphor',
   ],
+  // Solid rather than stroked: a filled triangle is the shape OSRS uses for
+  // dropdown and scroll arrows, and it holds up better at 14px than a caret.
+  [
+    'caretDown',
+    'node_modules/@phosphor-icons/core/assets/fill/caret-down-fill.svg',
+    'phosphor',
+  ],
 ]
 
 /** Pulls the viewBox and every path `d` out of one SVG file. */
