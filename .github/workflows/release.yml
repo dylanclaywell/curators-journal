@@ -44,15 +44,20 @@ jobs:
           cache: npm
       - run: npm ci
 
-      # Built as its own step rather than through the action's `preCommands`, so
-      # the skill-icon fetch, vue-tsc and vite build fail visibly and separately
-      # from the deploy itself.
+      # Its own step, so the skill-icon fetch, vue-tsc and vite build fail
+      # visibly and separately from the deploy itself. It also writes
+      # .wrangler/deploy/config.json, which points wrangler at the generated
+      # dist/stagescape/wrangler.json.
       - name: Build
         run: npm run build
 
+      # Deliberately not cloudflare/wrangler-action: it installs its own pinned
+      # wrangler (3.90.0), which collides with the 4.x this project and
+      # @cloudflare/vite-plugin require — an ERESOLVE failure. Calling the
+      # project's own wrangler is both simpler and the version that was
+      # actually tested. Auth comes from the environment.
       - name: Deploy to Cloudflare Workers
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: deploy
+        run: npx wrangler deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
