@@ -10,12 +10,49 @@ permissions:
 
 jobs:
   # Conventional-commit driven versioning. Opens/updates a release PR; merging
-  # it tags a release and writes the changelog. Deployment is not gated on this
-  # — Cloudflare Pages builds every push to main off the repo connection.
+  # it tags a release and flips release_created, which gates the deploy below.
   release-please:
     runs-on: ubuntu-latest
+    outputs:
+      release_created: ${{ steps.release.outputs.release_created }}
+      tag_name: ${{ steps.release.outputs.tag_name }}
     steps:
       - uses: googleapis/release-please-action@v4
+        id: release
         with:
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
+
+  # Production deploys happen on release, not on every push to main.
+  #
+  # That isn't ceremony: the About panel reports __APP_VERSION__, injected from
+  # package.json, and release-please only bumps that file in the release PR. If
+  # we deployed every push, the running app would advertise a version that
+  # doesn't match its code — and that readout is what we use to measure the
+  # window on a real device, so it has to be trustworthy.
+  deploy:
+    needs: release-please
+    if: ${{ needs.release-please.outputs.release_created == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+
+      # Built as its own step rather than through the action's `preCommands`, so
+      # the skill-icon fetch, vue-tsc and vite build fail visibly and separately
+      # from the deploy itself.
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to Cloudflare Workers
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy
