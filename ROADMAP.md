@@ -22,7 +22,7 @@ half — the actual point of the app — is not built yet.
 | 0 — Scaffold                    | done  | Vue 3 + TS, Tailwind v4, PWA, Workers + Static Assets, CI, release-please |
 | 1 — Shell                       | done  | Panel registry, generated routes, tab bar, About panel                    |
 | 2 — Hiscores                    | done  | 2a route + parser · 2b store + persistence · 2c skills grid               |
-| **3 — Quest dataset**           | next  | See below. The biggest remaining unknown.                                 |
+| **3 — Quest dataset**           | next  | Source spike **done** — see below. Generator not written yet.             |
 | 4 — Quest engine and queue      | —     | Eligibility resolution, prerequisite expansion, the queue UI              |
 | Later — prices panel            | —     | `prices.runescape.wiki`, same Worker-proxy shape                          |
 | Later — wide-and-shallow layout | —     | Tabs to a left strip when short and wide; see CLAUDE.md                   |
@@ -30,25 +30,181 @@ half — the actual point of the app — is not built yet.
 
 ## Phase 3: the quest dataset
 
-Start with a **spike, not code.** There is no quest API; requirements have to
-come from the OSRS Wiki, and there are at least three candidate sources that
-differ a lot in how parseable they are:
+The source spike is **done**. Verdict: **per-quest-page templates are the
+source; `Module:Questreq/data` is a cross-check, not the source.**
 
-1. A Cargo table (queryable, if one covers quest requirements)
-2. The tabular `Quests/Skill requirements` style pages
-3. A Lua module backing the wiki's requirement trees
+Of the three candidates:
 
-Find which is most complete and stable before writing a generator.
+1. **Cargo — impossible.** Neither Cargo nor SMW is installed on
+   `oldschool.runescape.wiki`; there is no `action=cargoquery`. Don't spend time
+   here again.
+2. **Per-page templates — chosen.** Complete, canonical, and better structured
+   than "parse the prose" implies.
+3. **`Module:Questreq/data` — rejected as the source.** Well-formed and acyclic,
+   but **21 entries behind the canonical quest list**, and the gap is exactly the
+   newest content (The Final Dawn, Sleeping Giants, Beneath Cursed Sands, Land of
+   the Goblins, the Sailing-era batch). It also carries 18 entries that aren't
+   quests — the 8 achievement diaries, Tutorial Island, Barbarian Training
+   sub-tasks. Using it silently omits ~10% of quests, biased toward the ones a
+   player is most likely to be looking at.
 
-Then `scripts/build-quests.ts` → a **committed** `src/data/quests.json`, with
-validation that every prerequisite id resolves and the graph is acyclic. Static
-and committed because the app must work offline and a diffable, hand-correctable
-dataset beats a fragile live query. The `Quest` / `QuestDataset` shapes are
-already sketched in `src/lib/types.ts`.
+### How the generator should work
 
-Budget for this being messier than the hiscores were. Two precedents: the
+The wiki's own quest lists are DPL-generated from per-page templates, so those
+templates are upstream of every list page. `list=embeddedin` gives the complete
+inventory and a free quest/miniquest split:
+
+| Query                                   | Yield     |
+| --------------------------------------- | --------- |
+| `embeddedin=Template:Infobox Quest`     | 196 pages |
+| `embeddedin=Template:Infobox Miniquest` | 20 pages  |
+
+Full wikitext for all 216 pages costs **5 batched requests** (50 titles each,
+`prop=revisions&rvslots=main`). Extract template params by brace matching:
+
+- `Infobox Quest` → name, number, members
+- `Quest details` → difficulty, length, requirements
+- `Quest rewards` → `qp`
+
+215/216 carry both difficulty and `qp` (the exception is
+`Recipe for Disaster/Full guide`, a guide page, not a quest). 19 pages have no
+requirements block at all — those are the genuinely requirement-free early
+quests, and the Lua module agrees.
+
+Requirements are templated rather than prose, which is what makes this viable:
+
+```
+*{{SCP|Agility|62|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*Completion of the following quests:
+**[[Contact!]]
+***[[Prince Ali Rescue]]      <- transitive, ignore
+```
+
+**Nesting under the header is transitive expansion**, so direct prerequisites
+are the shallowest tier — a clean rule, and the parse yields 396 skill
+requirements and 261 direct edges.
+
+Validation stays as planned: every prerequisite id resolves, and the graph is
+acyclic. Keep `Module:Questreq/data` as an **independent second opinion** and
+report disagreements for hand-correction — the two sources are maintained by
+different people in different formats, which is exactly what makes the diff
+worth reading.
+
+### Two findings that change `src/lib/types.ts`
+
+The `Quest` / `QuestRequirements` sketches need amending before the generator:
+
+- **`{{Questreqstart|yes/no}}` distinguishes "required to start" from "required
+  to finish."** That is precisely the question this app exists to answer, and the
+  wiki already encodes it per requirement. Add `requiredToStart`. It's annotated
+  on 322/415 requirement lines, and `boostable` on 384/415 — so both need an
+  explicit **unknown** state, not a `false` default that fabricates certainty.
+- **~96 requirement lines are irreducibly free prose** — "The ability to defeat a
+  level 83 dragon", "Access to Mort'ton". So **eligibility can never be fully
+  computed from levels**, and these must survive as displayable notes. Without
+  them the app will confidently call a quest startable when it isn't, which is
+  the same failure mode that ruled out Wise Old Man.
+
+Non-skill requirement kinds are a small closed set worth typing rather than
+dropping: quest points (14), combat level (1), Kudos (1), and Barbarian Assault
+role levels (4).
+
+**`requiredToStart` annotates; it does not gate.** A quest you can start now but
+can't finish without another 20 Agility shows as _available_, with the
+finish-requirement marked — it isn't filtered out of the queue. Two reasons:
+the app's stated question is "what can I start right now," and annotating fails
+safe. A wrong annotation is visible and ignorable; wrong gating hides a quest you
+could have started, and you'd never know it was hidden.
+
+Deliberately provisional — the call was made without having used the queue on the
+device yet, and the docked case may argue for filtering when vertical space is
+scarce. Revisit once it's real; the data carries the distinction either way, so
+this is an engine decision, not a dataset one.
+
+### Recipe for Disaster: the subquests are the entries, the parent is a label
+
+**Decided.** RFD has 12 pages in the inventory: a parent, ten subquests, and a
+`/Full guide` walkthrough. Take the **ten subquests as first-class quests**, drop
+the parent as a completable entry, and drop `/Full guide` entirely.
+
+Three reasons, most decisive first:
+
+1. **Monkey Madness II requires `Recipe for Disaster/Freeing King Awowogei`
+   specifically**, not RFD as a whole. A composite entry would force us to claim
+   MM2 needs all ten subquests — telling the player a quest is blocked when it's
+   actually startable. Same invisible-wrongness that ruled out Wise Old Man.
+2. **The subquests are already a clean graph:** all eight middle ones require
+   `Another Cook's Quest`; `Defeating the Culinaromancer` requires all eight.
+   Bundling discards exactly the structure the queue exists to order.
+3. **The parent double-counts quest points.** It reports `qp=10` and the union of
+   all 14 skill requirements; the subpages carry 1 point each. Counting both
+   yields 20. That's load-bearing — 13 quests gate on total quest points,
+   including Dragon Slayer II (200) and While Guthix Sleeps (180), so inflated
+   points would wrongly unlock the top tier.
+
+Keep `"Recipe for Disaster"` as a **display group** on each subquest so the UI can
+render one collapsible row of ten, which is how the in-game journal shows it.
+`Infobox Quest` also has a `series` field, so the same grouping generalizes to
+the Elf and Desert Treasure series later — but treat series as display only,
+never as a dependency.
+
+Bonus: the ~52 unparsed lines that looked like the worst of the job were **all on
+the parent page**. Dropping it removes nearly all of them, so this decision makes
+the generator simpler rather than adding a special case.
+
+### The messy tail, all bounded
+
+- Four one-off header phrasings ("Must have completed the following quests:") —
+  a small regex widening.
+- Three miniquest pages yield a numeric `difficulty` (Alfred Grimhand's
+  Barcrawl, Enter the Abyss, Family Pest).
+- Two prereq links need normalizing: an underscore in an RFD subpage link, and a
+  Karamja diary reference.
+- `Module:Questreq/data` itself has **mixed tab and space indentation**, so any
+  parser for it must be brace-based, not indentation-based. It also carries a
+  `'boosted'` typo for `'boostable'` and a `'Watchtower '` with a trailing space.
+
+Static and committed because the app must work offline and a diffable,
+hand-correctable dataset beats a fragile live query.
+
+Budget for this still being messier than the hiscores were. Two precedents: the
 hiscores response gained a 24th skill (Sailing) with no announcement, and the
 wiki's "freely downloadable" icons turned out not to be licensed to us.
+
+### Prior art: RuneLite's Quest Helper
+
+Worth knowing, because it looks like it solves our problem and doesn't.
+
+**It reads your quest _progress_ from the running game, not requirements.** Every
+quest has a server-side progress value; the plugin reads it directly
+(`quest.getState(client)` → not started / in progress / finished, plus a step
+number). Exact, free, instantly current.
+
+**Its requirements are entirely hand-written.** The repo has 1,075 files, 728 of
+them Java, and **zero data files** — no JSON, no CSV, nothing wiki-generated.
+Requirements are literal code per quest (`new SkillRequirement(Skill.SLAYER, 18)`),
+across 462 quest classes.
+
+Two things follow:
+
+- **Hand-entered completions here are structural, not a shortcoming.** Quest
+  Helper gets state free only because it runs _inside the client_. We can't:
+  hiscores don't expose quest state, the Fan Content Policy §6.1.2 forbids
+  third-party clients, and the whole premise is a second screen where a desktop
+  client plugin isn't running. Nobody gets requirements free; progress is the only
+  part the game gives away. This is why export/import is load-bearing.
+- **Their choice to hand-write is evidence about scope, not about the wiki.** They
+  need per-step items, dialogue and tile locations, which no wiki field carries;
+  once you're writing that, hardcoding requirements alongside is free. It costs
+  them a code release per new quest. Our need is just requirements for ordering a
+  queue — the part the wiki does structure. So wiki data supports a **planning**
+  tool; a **guided walkthrough** would be a far bigger lift.
+
+Banked, not adopted: it's BSD-2-Clause and actively maintained, so those
+hand-curated requirements would make a strong third cross-check — validated
+against the live game rather than the wiki checking itself. Extracting them means
+parsing Java. **Read NOTICE.md and settle attribution before using any of it**;
+mixing in another project's curated data belongs there deliberately.
 
 ## Open questions
 
