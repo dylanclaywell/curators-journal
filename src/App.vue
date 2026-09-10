@@ -1,33 +1,25 @@
 <script setup lang="ts">
-import { computed, onMounted, onUnmounted } from 'vue'
+import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import TabBar from '@/components/TabBar.vue'
 import { panelById } from '@/panels/registry'
-import { useHiscoresStore } from '@/stores/hiscores'
 
 const route = useRoute()
 const activePanel = computed(() => panelById(String(route.meta.panelId ?? '')))
 
-/**
- * Revalidate on resume, at the app level rather than per panel: coming back to
- * the foreground is an app event, and levels feed the quest queue too — not
- * just the stats panel.
+/*
+ * Refresh-on-resume deliberately does NOT live here — see StatsView.
  *
- * If resume proves unreliable on an installed iPad PWA, `pageshow` is the other
- * event to try; `visibilitychange` is the one that should fire.
+ * It was here, on the reasoning that resuming is an app-level event and the
+ * quest queue will want levels too. Two things were wrong with that. Importing
+ * the hiscores store from the shell dragged localForage into the initial bundle
+ * (~11 KB gzipped), and the handler was inert anywhere but Stats anyway, since
+ * only StatsView seeds the snapshot that `refreshIfStale` needs.
+ *
+ * When Phase 4 gives the quest panel a real use for levels, this moves back up
+ * here — but the store needs to hydrate itself first, or it will be just as
+ * inert as it was. Keep the import dynamic when it does.
  */
-const hiscores = useHiscoresStore()
-
-function onVisibilityChange() {
-  if (document.visibilityState === 'visible') void hiscores.refreshIfStale()
-}
-
-onMounted(() =>
-  document.addEventListener('visibilitychange', onVisibilityChange),
-)
-onUnmounted(() =>
-  document.removeEventListener('visibilitychange', onVisibilityChange),
-)
 </script>
 
 <template>

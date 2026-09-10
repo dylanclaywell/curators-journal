@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue'
+import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
 import AppIcon from '@/components/AppIcon.vue'
 import { MAX_LEVEL, xpToNextLevel } from '@/lib/hiscores'
 import { useHiscoresStore } from '@/stores/hiscores'
@@ -70,6 +70,28 @@ function cancelEdit() {
   editing.value = false
   draft.value = settings.username
 }
+
+/**
+ * Revalidate when the app comes back to the foreground. iOS keeps a
+ * backgrounded PWA alive, so a swap back doesn't remount anything and the
+ * mount-time load above won't fire again.
+ *
+ * Scoped to this panel rather than the shell: `refreshIfStale` needs a snapshot
+ * to refresh, and this view is the only thing that seeds one — an app-level
+ * listener did nothing on the other panels while still costing them the store's
+ * chunk. Move it up once the quest panel needs levels *and* the store hydrates
+ * itself.
+ */
+function onVisibilityChange() {
+  if (document.visibilityState === 'visible') void hiscores.refreshIfStale()
+}
+
+onMounted(() =>
+  document.addEventListener('visibilitychange', onVisibilityChange),
+)
+onUnmounted(() =>
+  document.removeEventListener('visibilitychange', onVisibilityChange),
+)
 
 const accountLabel = computed(
   () =>
