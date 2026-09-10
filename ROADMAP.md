@@ -9,7 +9,8 @@ licensing lives in [NOTICE.md](NOTICE.md).
 
 ## Status
 
-**0.2.0 is deployed** at <https://stagescape.infinitebit.workers.dev>.
+**0.3.1 is deployed** at <https://stagescape.infinitebit.workers.dev>, and the
+CI deploy path is now proven — see open question 4.
 
 The stats half works end to end: hiscores lookup through the Worker, cached
 offline-first, a skills grid that reflows from 320px to docked width.
@@ -362,15 +363,34 @@ change a breaking diff rather than a routine one.
    `HISCORE_MODULES` follow Jagex's naming convention but are untested, and a
    wrong module name returns 404 exactly like an unknown player. First thing to
    suspect if an ironman lookup fails.
-3. **Never tested docked on the device** since the skills grid landed. The
-   layout numbers came from a desktop browser at forced widths.
-4. **The automated deploy ran and failed — cause found, fix unverified.** It
-   broke on Node: CI pinned 20 from the original Pages scaffold, while wrangler
-   4.130 and miniflare 5 declare `engines: node >=22`. That floor moved _inside_
-   the existing `^4.112.0` range, so `npm ci` brought it in with nothing in the
-   repo changing — and local dev on 22.20 never saw it. Node now comes from
-   `.nvmrc`, but that fix is untested until a release exercises it. A
-   permissions gap would still show as a 403 naming the missing scope.
+3. ~~Never tested docked on the device.~~ **Ran on the iPad at 0.3.x.** It
+   holds up, and it turned up three things a desktop browser at forced widths
+   could never have shown:
+
+   - **iPadOS puts its own window menu over the top-left** in windowed mode,
+     which covered the title. The title is centred now — and a left-aligned
+     back button in the quest detail view would land under that same menu.
+   - **Mobile Safari rubber-bands the document** whatever `overscroll-behavior`
+     says. The body background was a darker brown used nowhere else, so a pull
+     exposed a colour the app never otherwise shows; it is now the same oak as
+     the chrome and the `theme-color`.
+   - **Manual refresh has no home in a PWA** — no address bar to pull. Hence
+     pull-to-refresh.
+
+   Still unmeasured: the tab bar is ~74px of a docked strip. The About panel
+   reports live window size, so that number is now obtainable.
+
+4. ~~The automated deploy is unproven.~~ **Closed — it works.** 0.3.0's deploy
+   failed and 0.3.1's succeeded once the fix landed, so the CI path is now
+   exercised end to end rather than assumed.
+
+   It broke on Node: CI pinned 20 from the original Pages scaffold, while
+   wrangler 4.130 and miniflare 5 declare `engines: node >=22`. That floor
+   moved _inside_ the existing `^4.112.0` range, so `npm ci` brought it in with
+   nothing in the repo changing — and local dev on 22.20 never saw it. **Worth
+   generalising:** a caret range can import a new toolchain requirement, so the
+   next unexplained CI break is worth checking against `engines` before
+   anything else.
 
    Related correction: **Workers Builds was never connected.** Every deploy is
    GitHub Actions or the CLI. CLAUDE.md and this file both claimed

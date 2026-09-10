@@ -58,9 +58,6 @@
   --color-brown-lt: #57432a;
   --color-brown-dk: #1a1309;
 
-  /* Ground outside the frame — visible only at the safe-area edges. */
-  --color-ground: #241c12;
-
   --color-ink: #2a2418;
   --color-ink-soft: #5e5340;
   --color-gold: #ffc53d;
@@ -91,13 +88,30 @@ body,
 
 body {
   margin: 0;
-  background: var(--color-ground);
+  /*
+   * Oak, matching the header, the tab bar and the `theme-color` in index.html.
+   *
+   * This is what mobile Safari reveals when you overscroll, and it used to be
+   * a darker brown that appeared nowhere else in the UI — so a rubber-band
+   * pull exposed a colour the app never otherwise shows. Painting it the same
+   * oak as the adjacent chrome makes the overscroll gutter invisible at both
+   * edges. Keep it in step with `theme-color` if either changes.
+   */
+  background: var(--color-brown);
   color: var(--color-ink);
   font-family: var(--font-body);
   font-size: 16px;
   line-height: 1.4;
-  /* Docked in Stage Manager, iOS rubber-band scrolling reads as the whole
-     panel coming loose. Pin it. */
+  /*
+   * Stops scroll *chaining*, so reaching the end of a panel doesn't start
+   * scrolling something behind it.
+   *
+   * It does NOT stop the rubber-band: mobile Safari bounces the document
+   * whatever this says, which is measured behaviour on the device, not a
+   * guess. Two things follow — the body background above has to be a colour
+   * the app is happy to show (hence oak), and pull-to-refresh has to be a
+   * custom gesture, since the native bounce fires no event to hook.
+   */
   overscroll-behavior: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: 100%;
