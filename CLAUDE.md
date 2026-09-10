@@ -57,7 +57,12 @@ No test framework is configured.
 ## Working agreement
 
 - **Committing:** You may commit, but only after explicitly asking "OK to commit?" and
-  receiving explicit approval. Never commit without that back-and-forth.
+  receiving explicit approval. Never commit without that back-and-forth. This applies to
+  **every** commit — approval for one is not approval for the next, and small follow-up
+  fixes during a debugging loop are exactly where this gets forgotten.
+- **Pushing:** Ask first, separately. Approval to commit is not approval to push. If a
+  push is rejected because the remote moved, say so and ask — don't resolve it and retry.
+  (Rebasing local `main` onto `origin/main` to resolve such a divergence is fine.)
 - **Commit messages:** Conventional Commits format (release-please reads them). Body is
   one paragraph at most (omit it when the subject says enough). Do NOT append
   "Co-Authored-By: Claude" or any trailer.
