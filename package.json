@@ -16,7 +16,8 @@
     "build:icons": "node scripts/build-icons.mjs",
     "build:icon-set": "node scripts/build-icon-set.mjs",
     "deploy": "npm run build && wrangler deploy",
-    "fetch:skill-icons": "node scripts/fetch-skill-icons.mjs"
+    "fetch:skill-icons": "node scripts/fetch-skill-icons.mjs",
+    "build:quests": "node --experimental-strip-types scripts/build-quests.ts"
   },
   "dependencies": {
     "localforage": "^1.10.0",

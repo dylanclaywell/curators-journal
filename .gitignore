@@ -13,3 +13,6 @@ dist-ssr
 
 # Jagex skill icons, fetched at build time. Not ours to redistribute — see NOTICE.md
 public/skill-icons/
+
+# Wiki responses cached by scripts/build-quests.ts, refetchable at will
+.cache
