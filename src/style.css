@@ -249,6 +249,12 @@ body {
   }
 }
 
+/* Jagex's skill icons are 23–25px pixel art. Downscaling them with smooth
+   interpolation turns them to mush, so keep the pixels hard. */
+.skill-icon {
+  image-rendering: pixelated;
+}
+
 /* Progress to the next level. Two pixels: present when you look for it,
    invisible when you're reading levels. */
 .skill-bar {

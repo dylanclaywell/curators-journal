@@ -204,7 +204,11 @@ it. Add an entry to that script's `ICONS` list and re-run
   meaning as a filled shape. Path length is a decent proxy — under ~600 chars
   on the 512 grid usually means strokes, not mass. Always check a new glyph at
   20px before adopting it.
-- Do **not** ship Jagex's own skill icons or item sprites. See Licensing.
+- **Skill icons are Jagex's own**, fetched at build time into the gitignored
+  `public/skill-icons/` by `scripts/build-icon-set.mjs`'s sibling
+  `fetch-skill-icons.mjs`. Rendered as `<img>` with `image-rendering: pixelated`
+  (they are 23–25px pixel art; smooth downscaling ruins them). Read NOTICE.md
+  before adding any further Jagex asset.
 
 ## Licensing
 
@@ -218,13 +222,18 @@ it. Add an entry to that script's `ICONS` list and re-run
 - §6.1.2 forbids third-party _clients_. StageScape reads public hiscores over
   HTTP and never touches the game client, so it isn't one — keep it that way.
 - Embedding Jagex sprites in a third-party tool is **not addressed** by the
-  policy, and the OSRS Wiki's copyright page doesn't cover game images either.
-  We sidestep the question: fantasy silhouettes from game-icons stand in for
-  skill icons.
+  policy — a genuine gap. We use the real skill icons anyway, as a considered
+  decision: near-universal fan practice, low practical risk for a personal
+  non-commercial tool carrying the §8.1 notice. **Full reasoning and its limits
+  are in NOTICE.md — read it before adding another Jagex asset or before
+  monetising anything.**
+- Jagex assets are **never committed**. `public/skill-icons/` is gitignored and
+  repopulated at build time, so the repo redistributes nothing.
 - Distributing fan content under the policy grants Jagex a broad, irrevocable,
   sub-licensable licence to it. Known and accepted.
 - Fonts are OFL; game-icons is CC BY 3.0 (attribution required); Phosphor is
-  MIT. Credits live in the README.
+  MIT. All third-party attribution lives in **NOTICE.md**, kept separate from
+  any licence covering our own code.
 
 ## Deploy notes
 

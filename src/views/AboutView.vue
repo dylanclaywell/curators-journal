@@ -90,6 +90,7 @@ onUnmounted(() => {
       <ul
         class="m-0 flex list-none flex-col gap-1 p-0 text-[15px] text-ink-soft"
       >
+        <li>Skill icons are Jagex's, via the OSRS Wiki</li>
         <li>Quest and skill data from the OSRS Wiki, CC BY-NC-SA 3.0</li>
         <li>Icons from game-icons.net, CC BY 3.0, and Phosphor, MIT</li>
         <li>IM Fell English and Alegreya Sans, SIL Open Font License</li>

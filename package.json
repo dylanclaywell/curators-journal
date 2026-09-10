@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc -b && vite build",
+    "build": "npm run fetch:skill-icons && vue-tsc -b && vite build",
     "preview": "npm run build && vite preview",
     "lint": "eslint . --fix",
     "lint:check": "eslint .",
@@ -14,7 +14,8 @@
     "typecheck": "vue-tsc -b --noEmit && tsc --noEmit -p tsconfig.worker.json",
     "build:icons": "node scripts/build-icons.mjs",
     "build:icon-set": "node scripts/build-icon-set.mjs",
-    "deploy": "npm run build && wrangler deploy"
+    "deploy": "npm run build && wrangler deploy",
+    "fetch:skill-icons": "node scripts/fetch-skill-icons.mjs"
   },
   "dependencies": {
     "localforage": "^1.10.0",

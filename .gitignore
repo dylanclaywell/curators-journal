@@ -10,3 +10,6 @@ dist-ssr
 *.log
 .vscode/*
 !.vscode/extensions.json
+
+# Jagex skill icons, fetched at build time. Not ours to redistribute — see NOTICE.md
+public/skill-icons/

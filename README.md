@@ -89,9 +89,9 @@ StageScape caches politely and identifies itself on every request. It reads
 public data only — no credentials, no automation, nothing that touches the game
 client, and it is not a third-party client.
 
-It deliberately ships **no Jagex artwork**. Skill and quest iconography uses
-fantasy silhouettes from game-icons.net instead, which keeps one coherent icon
-system and avoids a question the Fan Content Policy doesn't answer.
+The skill icons are Jagex's own, fetched from the OSRS Wiki at build time rather
+than committed here — so the repository redistributes no Jagex assets. See
+[NOTICE.md](NOTICE.md), which explains that decision and its limits in full.
 
 ## Credits and licences
 
@@ -99,7 +99,6 @@ Created using intellectual property belonging to Jagex Limited under the terms
 of Jagex's Fan Content Policy. This content is not endorsed by or affiliated
 with Jagex.
 
-- Domain icons — [game-icons.net](https://game-icons.net), CC BY 3.0
-  (checklist by Delapouite; hourglass, padlock and open book by Lorc)
-- Interface icons — [Phosphor](https://phosphoricons.com), MIT
-- Type — IM Fell English and Alegreya Sans, SIL Open Font License
+Third-party material — Jagex assets, icon sets, typefaces and wiki data — is
+attributed in **[NOTICE.md](NOTICE.md)**, separately from any licence covering
+this project's own code.

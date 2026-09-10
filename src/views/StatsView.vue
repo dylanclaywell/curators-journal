@@ -57,6 +57,15 @@ function refresh() {
     void hiscores.load(settings.username, settings.accountType)
 }
 
+/**
+ * The icon directory is populated at build time and gitignored, so a fresh
+ * clone that hasn't built yet has none. Hide rather than show a broken image —
+ * the skill name carries the meaning regardless.
+ */
+function hideBrokenIcon(event: Event) {
+  ;(event.target as HTMLImageElement).style.visibility = 'hidden'
+}
+
 function cancelEdit() {
   editing.value = false
   draft.value = settings.username
@@ -260,9 +269,24 @@ const asOf = computed(() => {
           class="flex flex-col justify-between gap-1 bg-parchment px-2 py-1.5"
           :class="isUntouched(skill) && 'opacity-55'"
         >
-          <span class="truncate text-[13px] leading-tight text-ink-soft">{{
-            skill.name
-          }}</span>
+          <div class="flex min-w-0 items-center gap-1.5">
+            <!-- Jagex's own interface art, fetched at build time and not
+                 committed (see NOTICE.md). Decorative: the name is right
+                 there, so alt is empty. Hidden rather than shown broken if the
+                 build-time fetch didn't run. -->
+            <img
+              :src="`/skill-icons/${skill.name.toLowerCase()}.png`"
+              alt=""
+              aria-hidden="true"
+              width="20"
+              height="20"
+              class="skill-icon shrink-0"
+              @error="hideBrokenIcon"
+            />
+            <span class="truncate text-[13px] leading-tight text-ink-soft">{{
+              skill.name
+            }}</span>
+          </div>
           <span
             class="nums text-[19px] font-bold leading-none"
             :class="skill.level >= MAX_LEVEL && 'text-done'"
