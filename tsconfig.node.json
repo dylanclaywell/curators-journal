@@ -7,9 +7,14 @@
     "moduleResolution": "Bundler",
     "strict": true,
     "noEmit": true,
+    // scripts/build-quests.ts imports src/lib/types.ts by its real path,
+    // because Node runs it directly with --experimental-strip-types and does
+    // no extension resolution for TypeScript. Sharing the app types is the
+    // point: the generator cannot drift from the shapes the client consumes.
+    "allowImportingTsExtensions": true,
     "skipLibCheck": true,
     "types": ["node"],
     "lib": ["ESNext"]
   },
-  "include": ["vite.config.ts", "scripts/**/*.ts"]
+  "include": ["vite.config.ts", "scripts/**/*.ts", "src/lib/**/*.ts"]
 }

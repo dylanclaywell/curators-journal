@@ -7,9 +7,14 @@
  * database extension, and `Module:Questreq/data` runs 21 quests behind and
  * omits exactly the newest ones. ROADMAP.md carries the full reasoning.
  *
- * Built in stages so parsing can be iterated without re-fetching. This file is
- * currently stage 1 of 4: fetch the canonical inventory and every quest page's
- * wikitext into `.cache/wiki/`. Stages 2-4 (parse, cross-check, emit) follow.
+ * Built in stages so parsing can be iterated without re-fetching:
+ *
+ *   1. Fetch the canonical inventory and every quest page's wikitext to
+ *      `.cache/wiki/pages.json`.  (done)
+ *   2. Parse templates and requirements to `.cache/wiki/parsed.json`, and
+ *      report anything that didn't reduce cleanly.  (done)
+ *   3. Cross-check against `Module:Questreq/data` and validate the graph.
+ *   4. Emit `src/data/quests.json`.
  *
  * Unlike `fetch-skill-icons.mjs`, this **fails loud**. A missing icon degrades
  * to a hidden image; a missing quest silently removes it from the queue, which
@@ -20,6 +25,11 @@
  */
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { fileURLToPath } from 'node:url'
+
+// The app's own types, so the generator cannot drift from the shapes the
+// client consumes. Node needs the explicit extension when stripping types.
+import { SKILL_NAMES } from '../src/lib/types.ts'
+import type { SkillName, SkillRequirement } from '../src/lib/types.ts'
 
 const root = fileURLToPath(new URL('..', import.meta.url))
 const cacheDir = `${root}.cache/wiki`
@@ -231,6 +241,429 @@ async function readCache(): Promise<WikiCache | null> {
   }
 }
 
+/* ---------------------------------------------------- stage 2: parse pages */
+
+/**
+ * Extracts a template's raw body by brace matching from its opening tag.
+ *
+ * Deliberately not a regex: requirement blocks nest templates and links
+ * several deep, and `\{\{Quest details(.*?)\}\}` stops at the first inner
+ * `}}`, silently truncating the requirements.
+ */
+function templateBody(text: string, name: string): string | null {
+  const start = text.indexOf(`{{${name}`)
+  if (start === -1) return null
+
+  let depth = 0
+  for (let i = start; i < text.length - 1; i++) {
+    if (text[i] === '{' && text[i + 1] === '{') {
+      depth++
+      i++
+      continue
+    }
+    if (text[i] === '}' && text[i + 1] === '}') {
+      depth--
+      if (depth === 0) return text.slice(start + 2 + name.length, i)
+      i++
+    }
+  }
+  return null
+}
+
+/**
+ * Splits a template body into named params, breaking only at nesting depth 0
+ * so a `|` inside a nested template or link doesn't start a bogus param.
+ */
+function templateParams(body: string | null): Record<string, string> {
+  if (!body) return {}
+
+  const parts: string[] = []
+  let depth = 0
+  let buf = ''
+
+  for (let i = 0; i < body.length; i++) {
+    const pair = body.slice(i, i + 2)
+    if (pair === '{{' || pair === '[[') {
+      depth++
+      buf += pair
+      i++
+      continue
+    }
+    if (pair === '}}' || pair === ']]') {
+      depth--
+      buf += pair
+      i++
+      continue
+    }
+    if (body[i] === '|' && depth === 0) {
+      parts.push(buf)
+      buf = ''
+      continue
+    }
+    buf += body[i]
+  }
+  parts.push(buf)
+
+  const out: Record<string, string> = {}
+  for (const part of parts) {
+    const eq = part.indexOf('=')
+    if (eq === -1) continue
+    out[part.slice(0, eq).trim().toLowerCase()] = part.slice(eq + 1).trim()
+  }
+  return out
+}
+
+/** Wiki title -> stable slug id. Must stay stable: completions reference it. */
+function slugify(title: string): string {
+  return title
+    .toLowerCase()
+    .replace(/'/g, '')
+    .replace(/&/g, ' and ')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '')
+}
+
+/** Strips wiki markup so a note reads as plain prose in the UI. */
+function plainText(wikitext: string): string {
+  return wikitext
+    .replace(/\[\[[^\]|]*\|([^\]]*)\]\]/g, '$1') // [[Target|label]] -> label
+    .replace(/\[\[([^\]]*)\]\]/g, '$1') // [[Target]] -> Target
+    .replace(/\{\{SCP\|([^|}]+)\|(\d+)[^}]*\}\}/gi, '$1 $2') // {{SCP|Agility|62}} -> Agility 62
+    .replace(/\{\{[^{}]*\}\}/g, '') // drop remaining templates
+    .replace(/'''?/g, '')
+    .replace(/<[^>]+>/g, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
+/**
+ * Headers that introduce a list of prerequisite quests. The wiki mostly uses
+ * one phrasing, with four one-off variants.
+ */
+const QUEST_LIST_HEADER =
+  /^(completion of|must have completed) the following quests?:?$/i
+
+/**
+ * Guards against the reverse relation. Shilo Village's page says "Completion
+ * of Shilo Village is required for the following quests:" — those are its
+ * dependents, and reading them as prerequisites would invert the graph.
+ */
+const REVERSE_RELATION = /is required for/i
+
+const SKILL_SET: ReadonlySet<string> = new Set(SKILL_NAMES)
+
+interface ParsedRequirements {
+  skills: SkillRequirement[]
+  quests: { title: string; completion: 'finished' | 'started' }[]
+  questPoints?: number
+  combatLevel?: number
+  notes: string[]
+}
+
+/**
+ * Parses the `requirements` param, which is free wikitext but conventionally
+ * templated. Four shapes appear in practice:
+ *
+ *   1. A bulleted list of `{{SCP|Skill|Level}}` with optional annotations.
+ *   2. A "Completion of the following quests:" header over a nested list,
+ *      where deeper nesting is *transitive* expansion — only the shallowest
+ *      tier under the header is a direct prerequisite.
+ *   3. Inline prose with no bullets at all (Family Pest).
+ *   4. The literal "None" (Alfred Grimhand's Barcrawl).
+ *
+ * Anything it can't reduce to a checkable requirement becomes a note rather
+ * than being dropped: "the ability to defeat a level 83 dragon" is a real
+ * requirement that no program can evaluate, and hiding it would let the app
+ * call a quest startable when it isn't.
+ */
+function parseRequirements(raw: string | undefined): ParsedRequirements {
+  const result: ParsedRequirements = { skills: [], quests: [], notes: [] }
+  if (!raw) return result
+
+  const trimmed = raw.trim()
+  if (!trimmed || /^none\.?$/i.test(trimmed)) return result
+
+  // Shape 3: no bullets anywhere, so treat the whole value as one entry.
+  const lines = /^\s*\*/m.test(trimmed)
+    ? trimmed.split('\n').filter((line) => line.trim().startsWith('*'))
+    : [`*${trimmed.replace(/\n+/g, ' ')}`]
+
+  let headerDepth: number | null = null
+
+  for (const line of lines) {
+    const depth = (line.match(/^\**/) ?? [''])[0].length
+    const content = line.replace(/^\**\s*/, '').trim()
+    if (!content) continue
+
+    if (QUEST_LIST_HEADER.test(plainText(content))) {
+      headerDepth = depth
+      continue
+    }
+    if (REVERSE_RELATION.test(content)) {
+      headerDepth = null
+      continue
+    }
+
+    // Skill and pseudo-skill requirements.
+    const scp = content.match(/\{\{SCP\|([^|}]+)\|(\d+)/i)
+    if (scp) {
+      const name = scp[1].trim()
+      const level = Number(scp[2])
+
+      if (SKILL_SET.has(name)) {
+        result.skills.push({
+          skill: name as SkillName,
+          level,
+          boostable: /\{\{Boostable\|yes\}\}/i.test(content)
+            ? true
+            : /\{\{Boostable\|no\}\}/i.test(content)
+              ? false
+              : null,
+          requiredToStart: /\{\{Questreqstart\|yes\}\}/i.test(content)
+            ? true
+            : /\{\{Questreqstart\|no\}\}/i.test(content)
+              ? false
+              : null,
+        })
+        continue
+      }
+      // "Quest" is the wiki's label for quest points; "Combat" for combat level.
+      if (/^quest$/i.test(name)) {
+        result.questPoints = level
+        continue
+      }
+      if (/^combat$/i.test(name)) {
+        result.combatLevel = level
+        continue
+      }
+      result.notes.push(plainText(content))
+      continue
+    }
+
+    // Prerequisite quests: a link at the tier directly under a header, or an
+    // inline "Completion of [[X]]" / "Started [[X]]".
+    const link = content.match(/\[\[([^\]|#]+)/)
+    const inHeaderTier = headerDepth !== null && depth === headerDepth + 1
+    const inlineCompletion =
+      /^(completion of|started|must have completed)\b/i.test(content)
+
+    if (link && (inHeaderTier || inlineCompletion)) {
+      // "Started X" and "Started X up until ..." only need the quest begun.
+      const started = /^started\b/i.test(content)
+      result.quests.push({
+        title: link[1].trim(),
+        completion: started ? 'started' : 'finished',
+      })
+      // Inline forms often carry extra conditions worth showing verbatim.
+      if (inlineCompletion && /\b(up until|partway|after)\b/i.test(content)) {
+        result.notes.push(plainText(content))
+      }
+      continue
+    }
+
+    // Deeper than the header tier: transitive prerequisites, already implied.
+    if (link && headerDepth !== null && depth > headerDepth + 1) continue
+
+    result.notes.push(plainText(content))
+  }
+
+  result.notes = result.notes.filter(Boolean)
+  return result
+}
+
+const DIFFICULTIES: ReadonlySet<string> = new Set([
+  'Novice',
+  'Intermediate',
+  'Experienced',
+  'Master',
+  'Grandmaster',
+  'Special',
+])
+
+const LENGTHS: ReadonlySet<string> = new Set([
+  'Very Short',
+  'Short',
+  'Medium',
+  'Long',
+  'Very Long',
+])
+
+/**
+ * Pages that are not quests despite using a quest infobox.
+ *
+ * Recipe for Disaster's parent is excluded because its ten subquests are the
+ * real entries: Monkey Madness II requires one of them specifically, and the
+ * parent reports the union of their requirements plus the *sum* of their quest
+ * points, which would double-count. `/Full guide` is a walkthrough page.
+ */
+const EXCLUDED_PAGES: ReadonlySet<string> = new Set([
+  'Recipe for Disaster',
+  'Recipe for Disaster/Full guide',
+])
+
+/** Multi-part quests whose subpages are grouped for display only. */
+const GROUP_PREFIXES = ['Recipe for Disaster/']
+
+interface ParsedPage {
+  id: string
+  title: string
+  name: string
+  kind: QuestKind
+  difficulty: string | null
+  length: string | null
+  questPoints: number
+  members: boolean
+  group: string | null
+  requirements: ParsedRequirements
+  wikiUrl: string
+  /** Collected for the report rather than thrown, so one run shows every issue. */
+  defects: string[]
+}
+
+function parsePage(page: CachedPage): ParsedPage {
+  const infobox = templateParams(
+    templateBody(
+      page.wikitext,
+      page.kind === 'miniquest' ? 'Infobox Miniquest' : 'Infobox Quest',
+    ),
+  )
+  const details = templateParams(templateBody(page.wikitext, 'Quest details'))
+  const rewards = templateParams(templateBody(page.wikitext, 'Quest rewards'))
+  const defects: string[] = []
+
+  const difficulty = details.difficulty?.trim() ?? ''
+  if (!DIFFICULTIES.has(difficulty)) {
+    // The template documents six words and requires the field. Numbers appear
+    // on three miniquest pages; guessing a mapping would invent data.
+    defects.push(
+      difficulty
+        ? `difficulty is ${JSON.stringify(difficulty)}, not one of the six documented values`
+        : 'no difficulty',
+    )
+  }
+
+  const length = details.length?.trim() ?? ''
+  if (length && !LENGTHS.has(length))
+    defects.push(`unexpected length ${JSON.stringify(length)}`)
+
+  const questPoints = Number(rewards.qp ?? 0)
+  if (page.kind === 'quest' && !rewards.qp) defects.push('no quest points')
+
+  const prefix = GROUP_PREFIXES.find((p) => page.title.startsWith(p))
+  const series = infobox.series?.trim()
+  const group = prefix
+    ? prefix.replace(/\/$/, '')
+    : series && !/^none$/i.test(series)
+      ? // "[[Quests/Series#Kharidian|Kharidian]], #4" -> "Kharidian", and
+        // "[[Gnome quest series]]" -> "Gnome". The position within a series is
+        // dropped: the group is a display label, not an ordering.
+        plainText(series)
+          .replace(/,\s*#\d+\s*$/, '')
+          .replace(/\s+quest series$/i, '')
+          .trim() || null
+      : null
+
+  return {
+    id: slugify(page.title),
+    title: page.title,
+    // Subpage titles carry the parent; the infobox name is what to display.
+    name: plainText(infobox.name ?? '') || page.title,
+    kind: page.kind,
+    difficulty: DIFFICULTIES.has(difficulty) ? difficulty : null,
+    length: LENGTHS.has(length) ? length : null,
+    questPoints: Number.isFinite(questPoints) ? questPoints : 0,
+    members: /^yes$/i.test(infobox.members?.trim() ?? ''),
+    group,
+    requirements: parseRequirements(details.requirements),
+    wikiUrl: `https://oldschool.runescape.wiki/w/${encodeURIComponent(page.title.replace(/ /g, '_'))}`,
+    defects,
+  }
+}
+
+/** Stage 2: parse every cached page and report what didn't reduce cleanly. */
+function parseAll(cache: WikiCache) {
+  const pages = cache.pages.filter((p) => !EXCLUDED_PAGES.has(p.title))
+  const parsed = pages.map(parsePage)
+
+  const byTitle = new Map(parsed.map((p) => [p.title, p]))
+  const byId = new Map<string, ParsedPage[]>()
+  for (const p of parsed) byId.set(p.id, [...(byId.get(p.id) ?? []), p])
+
+  console.log(
+    `\nparsed ${parsed.length} pages (${cache.pages.length - parsed.length} excluded)`,
+  )
+
+  const collisions = [...byId.values()].filter((group) => group.length > 1)
+  if (collisions.length) {
+    // Ids key the user's completions, so a collision is never acceptable.
+    throw new Error(
+      `slug collision: ${collisions.map((g) => g.map((p) => p.title).join(' / ')).join('; ')}`,
+    )
+  }
+
+  /**
+   * Achievement diaries are prerequisites the wiki links like quests, but
+   * they aren't quests and have no page in our inventory. They can't be graph
+   * edges, so they become notes — visible to the player, absent from the
+   * dependency order. Anything else that fails to resolve is a real error.
+   */
+  const NON_QUEST_PREREQ = /\bdiar(?:y|ies)\b/i
+
+  const unresolved: string[] = []
+  for (const page of parsed) {
+    const keep: typeof page.requirements.quests = []
+    for (const prereq of page.requirements.quests) {
+      const normalized = prereq.title.replace(/_/g, ' ').trim()
+      if (byTitle.has(normalized)) {
+        keep.push({ ...prereq, title: normalized })
+        continue
+      }
+      if (NON_QUEST_PREREQ.test(normalized)) {
+        page.requirements.notes.push(`Requires ${normalized}`)
+        continue
+      }
+      unresolved.push(`${page.title} -> ${prereq.title}`)
+      keep.push(prereq)
+    }
+    page.requirements.quests = keep
+  }
+
+  const skills = parsed.reduce((n, p) => n + p.requirements.skills.length, 0)
+  const edges = parsed.reduce((n, p) => n + p.requirements.quests.length, 0)
+  const notes = parsed.reduce((n, p) => n + p.requirements.notes.length, 0)
+  const started = parsed.reduce(
+    (n, p) =>
+      n +
+      p.requirements.quests.filter((q) => q.completion === 'started').length,
+    0,
+  )
+
+  console.log(`  skill requirements: ${skills}`)
+  console.log(`  prerequisite edges: ${edges} (${started} need only starting)`)
+  console.log(`  free-prose notes:   ${notes}`)
+  console.log(
+    `  unknown boostable:  ${parsed.reduce((n, p) => n + p.requirements.skills.filter((s) => s.boostable === null).length, 0)}`,
+  )
+  console.log(
+    `  unknown start flag: ${parsed.reduce((n, p) => n + p.requirements.skills.filter((s) => s.requiredToStart === null).length, 0)}`,
+  )
+
+  const withDefects = parsed.filter((p) => p.defects.length)
+  if (withDefects.length) {
+    console.log(`\npage defects needing review (${withDefects.length}):`)
+    for (const page of withDefects) {
+      console.log(`  ${page.title}: ${page.defects.join('; ')}`)
+    }
+  }
+
+  if (unresolved.length) {
+    console.log(`\nunresolved prerequisites (${unresolved.length}):`)
+    for (const u of unresolved) console.log(`  ${u}`)
+  }
+
+  return { parsed, unresolved }
+}
+
 async function main() {
   const refresh = process.argv.includes('--refresh')
 
@@ -264,7 +697,11 @@ async function main() {
     0,
   )
   console.log(`wikitext: ${(bytes / 1024).toFixed(0)} KB total`)
-  console.log('\nstage 1 of 4 complete. Parsing is the next slice.')
+
+  const { parsed } = parseAll(cache)
+  await writeFile(`${cacheDir}/parsed.json`, JSON.stringify(parsed, null, 1))
+  console.log(`\nwrote .cache/wiki/parsed.json for inspection`)
+  console.log('stage 2 of 4 complete. Cross-check and validation are next.')
 }
 
 main().catch((error: unknown) => {
