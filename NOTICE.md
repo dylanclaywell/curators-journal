@@ -1,7 +1,37 @@
 # Notices and third-party attribution
 
-This file covers material in StageScape that **is not ours**. It is separate
-from any licence covering StageScape's own source code.
+Copyright 2026 Dylan Claywell
+
+StageScape's own source code is licensed under the Apache License, Version 2.0
+— see [LICENSE](LICENSE). This file covers material that **is not ours**, and
+is kept separate from that licence.
+
+## Why this file has to travel with the code
+
+This is the `NOTICE` text file referred to by **Apache-2.0 section 4(d)**: if
+you distribute a derivative work, you must include a readable copy of the
+attribution notices below.
+
+That is not a formality here, and the reason is easy to miss:
+
+**The repository contains no Jagex assets, but anything built from it does.**
+`scripts/fetch-skill-icons.mjs` downloads Jagex's skill icons during
+`npm run build`, so every built bundle and every deployed instance — including
+a fork's — distributes Jagex artwork to its users. The source is clean; the
+output is not.
+
+So the obligation attaches to **the code that does the fetching**, not to the
+files in the repo. Consequences for anyone forking, modifying or redistributing
+this project:
+
+- You inherit the Fan Content Policy position described below, in full. It is
+  not discharged by the upstream repo having complied.
+- The §8.1 notice must stay **reachable by end users** of whatever you ship, not
+  merely present in a repo file. In this project the About panel does that job;
+  a derivative work needs its own equivalent.
+- Removing `fetch-skill-icons.mjs` — and any `<img>` referencing
+  `/skill-icons/` — is what actually removes the obligation. Deleting this file
+  does not.
 
 ---
 

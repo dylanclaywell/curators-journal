@@ -233,7 +233,11 @@ it. Add an entry to that script's `ICONS` list and re-run
   sub-licensable licence to it. Known and accepted.
 - Fonts are OFL; game-icons is CC BY 3.0 (attribution required); Phosphor is
   MIT. All third-party attribution lives in **NOTICE.md**, kept separate from
-  any licence covering our own code.
+  our own code licence (**Apache-2.0**, see LICENSE).
+- Apache-2.0 was chosen over MIT specifically for §4(d), which requires
+  derivative works to carry the NOTICE forward. The repo ships no Jagex assets
+  but every **build** does, so the obligation attaches to the fetch script
+  rather than to the files in git — NOTICE.md spells this out for forks.
 
 ## Deploy notes
 

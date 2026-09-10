@@ -99,6 +99,10 @@ Created using intellectual property belonging to Jagex Limited under the terms
 of Jagex's Fan Content Policy. This content is not endorsed by or affiliated
 with Jagex.
 
+StageScape's own code is licensed under **Apache-2.0** ([LICENSE](LICENSE)).
+
 Third-party material — Jagex assets, icon sets, typefaces and wiki data — is
-attributed in **[NOTICE.md](NOTICE.md)**, separately from any licence covering
-this project's own code.
+attributed separately in **[NOTICE.md](NOTICE.md)**, which Apache-2.0 §4(d)
+requires derivative works to carry forward. That matters more than usual here:
+the repository ships no Jagex assets, but anything **built** from it does, since
+the icons are downloaded during the build. If you fork this, read that file.
