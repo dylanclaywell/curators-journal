@@ -10,9 +10,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Node comes from .nvmrc so CI and local dev cannot drift apart. 22 is a
+      # floor wrangler sets, not a preference: wrangler 4.130 and miniflare 5
+      # both declare engines >=22.0.0, and that arrived inside the existing ^4
+      # range — so an older pin here breaks the deploy with nothing in the repo
+      # having changed. That is exactly how it broke.
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version-file: .nvmrc
           cache: npm
       - run: npm ci
 

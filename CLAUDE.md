@@ -275,8 +275,21 @@ deployed, but don't copy that shape here.
 which is both correct here and cheaper. Build output splits: `dist/client` for
 assets, `dist/stagescape` for the Worker.
 
-Deploys run through Workers Builds (git-connected) on push to `main`, or
-manually with `npm run deploy`.
+Deploys run through **GitHub Actions** (`.github/workflows/release.yml`), on
+release rather than on every push: the job is gated on release-please's
+`release_created`, because the About panel advertises `__APP_VERSION__` from
+`package.json` and only the release PR bumps it. Or manually with
+`npm run deploy`.
+
+**Workers Builds is not connected.** Every deploy goes through GitHub Actions or
+the CLI. It was proposed during the Pages→Workers migration and never set up, so
+notes claiming git-connected builds are wrong.
+
+Node comes from `.nvmrc` (22). That is wrangler's floor, not a preference:
+wrangler 4.130 and miniflare 5 declare `engines: node >=22`, and that arrived
+inside the existing `^4` range — so pinning CI to an older Node breaks the
+deploy without anything in the repo changing. Keep local dev on the same
+version.
 
 Safari evicts IndexedDB for non-installed sites after ~7 days idle. Installing to
 the home screen is the supported path, and export/import is the safety net.
