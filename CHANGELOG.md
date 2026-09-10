@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.3.0](https://github.com/dylanclaywell/stagescape/compare/stagescape-v0.2.0...stagescape-v0.3.0) (2026-09-10)
+
+
+### Features
+
+* add quest eligibility and plan ordering ([770f582](https://github.com/dylanclaywell/stagescape/commit/770f5822e2e97ba743bb9eb804b4e2aa7380555e))
+* cross-check quest requirements against the Lua module ([440ea5e](https://github.com/dylanclaywell/stagescape/commit/440ea5eb4f58b54439b92a520bd6cae7e216510a))
+* fetch and cache the wiki quest inventory ([20ba8ce](https://github.com/dylanclaywell/stagescape/commit/20ba8ce0dcfac23c52ac8e9b765ebff041ec0a64))
+* generate and commit the quest dataset ([e8d826c](https://github.com/dylanclaywell/stagescape/commit/e8d826cd002b893e7bf5ef016c34732009156230))
+* parse quest requirements from wiki page templates ([8461e51](https://github.com/dylanclaywell/stagescape/commit/8461e513d4cbbdf941b4fd5fd8c1ddb18a198ddf))
+* shape quest types around what the wiki actually provides ([0242643](https://github.com/dylanclaywell/stagescape/commit/0242643a982a7777c74a103aa79f68d863246be6))
+
+
+### Performance
+
+* keep localforage out of the initial bundle ([586ed85](https://github.com/dylanclaywell/stagescape/commit/586ed85db201e3029d5625e0233311d5a282b313))
+
 ## [0.2.0](https://github.com/dylanclaywell/stagescape/compare/stagescape-v0.1.0...stagescape-v0.2.0) (2026-09-10)
 
 
