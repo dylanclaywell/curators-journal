@@ -1,9 +1,9 @@
 /**
- * Single source of truth for shapes crossing the client ↔ Function boundary.
+ * Single source of truth for shapes crossing the client ↔ Worker boundary.
  *
- * This module is pure: no DOM, no network, no imports. The Pages Functions
- * import it by relative path across the `functions/` ↔ `src/` boundary, so
- * keep it that way.
+ * This module is pure: no DOM, no network, no imports. `src/worker/` imports it
+ * by relative path across the `src/worker/` ↔ `src/` boundary and type-checks
+ * separately against `tsconfig.worker.json`, so keep it that way.
  */
 
 /**
@@ -44,7 +44,7 @@ export const SKILL_NAMES = [
 
 export type SkillName = (typeof SKILL_NAMES)[number]
 
-/** Account types map to separate hiscore tables; the Function owns the URLs. */
+/** Account types map to separate hiscore tables; the Worker owns the URLs. */
 export type AccountType =
   | 'normal'
   | 'ironman'
@@ -103,6 +103,11 @@ export type HiscoresResult =
 
 /* ------------------------------------------------------------------ quests */
 
+/**
+ * "Special" is real, not a fallback: every Recipe for Disaster page uses it.
+ * Three miniquest pages report a numeric difficulty instead of a word — the
+ * generator corrects those rather than widening this union.
+ */
 export type QuestDifficulty =
   | 'Novice'
   | 'Intermediate'
@@ -111,19 +116,59 @@ export type QuestDifficulty =
   | 'Grandmaster'
   | 'Special'
 
+/** The wiki's own length buckets. Display only; nothing computes on it. */
+export type QuestLength =
+  'Very Short' | 'Short' | 'Medium' | 'Long' | 'Very Long'
+
+/**
+ * `null` means the wiki doesn't say, which is common enough to matter: of 415
+ * skill-requirement lines, 31 don't state boostability and 93 don't state
+ * whether the requirement blocks starting. Defaulting either to `false` would
+ * assert something the source never claimed, so unknown gets its own value and
+ * the UI has to render it as unknown.
+ */
 export interface SkillRequirement {
   skill: SkillName
   level: number
   /** Whether a boost can substitute — changes "blocked" to "reachable". */
-  boostable?: boolean
+  boostable: boolean | null
+  /**
+   * Whether this blocks *starting* the quest, as opposed to finishing it.
+   * Annotating rather than gating is the current decision: a quest you can
+   * start but not finish still shows as available, with this marked. See
+   * ROADMAP.md — provisional until the queue is used on the device.
+   */
+  requiredToStart: boolean | null
 }
+
+/**
+ * Prerequisite quests are usually "finished", but a handful only need to be
+ * *started* — 14 such cases exist. Collapsing them to "finished" would report a
+ * startable quest as blocked, so the distinction is carried explicitly.
+ */
+export interface QuestPrerequisite {
+  /** A `Quest.id` in this dataset. Generation fails if it doesn't resolve. */
+  id: string
+  completion: 'finished' | 'started'
+}
+
+/**
+ * Barbarian Assault gives a level per role rather than one number, and only
+ * Elite Kandarin Diary needs them. Kept because dropping a requirement is
+ * exactly the failure this app can't afford.
+ */
+export type BarbarianAssaultRole =
+  'Attacker' | 'Collector' | 'Defender' | 'Healer'
 
 export interface QuestRequirements {
   skills: SkillRequirement[]
-  /** Prerequisite quest ids. Must resolve within the dataset. */
-  quests: string[]
+  quests: QuestPrerequisite[]
+  /** Total quest points. 13 quests gate on this, up to 200 for Dragon Slayer II. */
   questPoints?: number
   combatLevel?: number
+  /** Varrock Museum kudos. Only Bone Voyage, which needs 100. */
+  kudos?: number
+  barbarianAssault?: { role: BarbarianAssaultRole; level: number }[]
 }
 
 export interface Quest {
@@ -131,10 +176,28 @@ export interface Quest {
   id: string
   name: string
   difficulty: QuestDifficulty
+  length: QuestLength | null
+  /** Quest points awarded. 0 for miniquests, which award none. */
   questPoints: number
   members: boolean
   miniquest: boolean
+  /**
+   * Display grouping, from the wiki's `series` field or an enclosing multi-part
+   * quest — "Recipe for Disaster" for its ten subquests, which are separate
+   * entries because other quests depend on them individually.
+   *
+   * Display only. A series is never a dependency; the graph lives in
+   * `requirements.quests`.
+   */
+  group: string | null
   requirements: QuestRequirements
+  /**
+   * Requirements no program can check: "the ability to defeat a level 83
+   * dragon", "Access to Mort'ton". ~96 exist, so **eligibility is never fully
+   * computable from levels** — these must reach the player, or the app will
+   * call a quest startable when it isn't.
+   */
+  notes: string[]
   wikiUrl: string
 }
 
@@ -142,6 +205,7 @@ export interface Quest {
 export interface QuestDataset {
   /** ISO date the dataset was generated, shown in settings. */
   generatedAt: string
-  source: string
+  /** Wiki pages are the source; `Module:Questreq/data` is the cross-check. */
+  sources: string[]
   quests: Quest[]
 }
