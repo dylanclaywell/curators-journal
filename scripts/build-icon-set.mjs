@@ -72,6 +72,16 @@ const ICONS = [
     'node_modules/@phosphor-icons/core/assets/fill/caret-down-fill.svg',
     'phosphor',
   ],
+  [
+    'refresh',
+    'node_modules/@phosphor-icons/core/assets/bold/arrows-clockwise-bold.svg',
+    'phosphor',
+  ],
+  [
+    'pencil',
+    'node_modules/@phosphor-icons/core/assets/bold/pencil-simple-bold.svg',
+    'phosphor',
+  ],
 ]
 
 /** Pulls the viewBox and every path `d` out of one SVG file. */

@@ -212,6 +212,55 @@ body {
   }
 }
 
+/*
+ * The skills grid reflows on the space the *panel* has, not the viewport —
+ * these query the unnamed container on <main>, which is the panel's own box.
+ * 24 skills, so column counts are chosen to divide cleanly and to keep the
+ * longest name ("Woodcutting", "Construction") on one line.
+ *
+ *   2 cols  below 22rem   — the 320px insurance case
+ *   3 cols  from 22rem    — a 375px window lands here
+ *   4 cols  from 34rem
+ *   6 cols  from 46rem    — the wide-and-shallow docked case: 4 rows, not 12
+ *
+ * The 1px gap over a dark ground draws the rules, so cells need no borders of
+ * their own.
+ */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--color-bevel-dk);
+  padding: 1px;
+}
+@container (min-width: 22rem) {
+  .skill-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@container (min-width: 34rem) {
+  .skill-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+@container (min-width: 46rem) {
+  .skill-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
+/* Progress to the next level. Two pixels: present when you look for it,
+   invisible when you're reading levels. */
+.skill-bar {
+  height: 2px;
+  background: var(--color-bevel-dk);
+}
+.skill-bar > i {
+  display: block;
+  height: 100%;
+  background: var(--color-doing);
+}
+
 /* RuneScape's most recognisable typographic signature: a hard 1px black
    shadow under light text on oak. Only ever used on the brown surfaces —
    on parchment it reads as a printing error. */
