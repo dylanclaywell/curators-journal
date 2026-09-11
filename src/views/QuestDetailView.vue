@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { computed, onMounted, onUnmounted, watch } from 'vue'
+import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
 import AppIcon from '@/components/AppIcon.vue'
 import QuestItemLines from '@/components/QuestItemLines.vue'
 import { pageHeader } from '@/composables/usePageHeader'
-import { combatLevel } from '@/lib/quests'
+import { combatLevel, prerequisiteChain } from '@/lib/quests'
 import type { QuestProgress } from '@/lib/quests'
 import type { SkillRequirement } from '@/lib/types'
 import { useQuestsStore } from '@/stores/quests'
@@ -40,15 +40,53 @@ onUnmounted(() => {
 
 const haveCombat = computed(() => combatLevel(quests.levels))
 
+/**
+ * Every quest behind this one, direct and transitive, in dependency order.
+ * Structural, so it doesn't depend on progress — only the stripes and the
+ * remaining count do.
+ */
+const chain = computed(() =>
+  quest.value ? prerequisiteChain(quest.value.id, quests.index) : [],
+)
+
+const chainRemaining = computed(
+  () =>
+    chain.value.filter((step) => quests.progressOf(step.quest.id) !== 'done')
+      .length,
+)
+
+/*
+ * A long chain is collapsed by default. Dragon Slayer II has 35 quests behind
+ * it and Defeating the Culinaromancer 47 — rendered whole, that's a wall of oak
+ * between the quest's status and everything below it, and vertical space is the
+ * scarce resource in the docked case. Truncating is safe *because* the order is
+ * dependency order: the first rows are the ones to do first, so a cut tail is
+ * the distant future rather than an arbitrary slice.
+ */
+const CHAIN_COLLAPSE_OVER = 10
+const CHAIN_COLLAPSED_ROWS = 6
+
+const chainExpanded = ref(false)
+// Reset when routing from one quest straight to another; the component is
+// reused, so expansion would otherwise carry over to an unrelated chain.
+watch(quest, () => {
+  chainExpanded.value = false
+})
+
+const chainCollapsible = computed(
+  () => chain.value.length > CHAIN_COLLAPSE_OVER,
+)
+const visibleChain = computed(() =>
+  chainCollapsible.value && !chainExpanded.value
+    ? chain.value.slice(0, CHAIN_COLLAPSED_ROWS)
+    : chain.value,
+)
+
 const PROGRESS_OPTIONS: { value: QuestProgress; label: string }[] = [
   { value: 'todo', label: 'Todo' },
   { value: 'doing', label: 'Doing' },
   { value: 'done', label: 'Done' },
 ]
-
-function prereqName(id: string): string {
-  return quests.index.byId.get(id)?.name ?? id
-}
 
 /**
  * `null` means unknown, not zero — the whole reason `evaluateQuest` reports
@@ -213,11 +251,24 @@ function statusStripeClass(id: string): string {
         </ul>
       </section>
 
-      <section
-        v-if="quest.requirements.quests.length"
-        class="flex flex-col gap-1.5"
-      >
-        <h2 class="m-0 text-[13px] font-bold text-ink-soft">Quests</h2>
+      <section v-if="chain.length" class="flex flex-col gap-1.5">
+        <h2 class="m-0 text-[13px] font-bold text-ink-soft">Quests first</h2>
+        <!-- The whole chain, not just what this quest names directly: A Night
+             at the Theatre lists one prerequisite and hides six behind it, and
+             tapping through them one at a time was the thing that made the
+             page read as thin. Done quests stay in the list rather than being
+             filtered out the way `buildPlan` filters them — a completed chain
+             rendered empty would say "nothing was ever required here". -->
+        <p class="m-0 text-[13px] text-ink-soft">
+          <template v-if="chainRemaining === 0">
+            All <span class="nums">{{ chain.length }}</span> done.
+          </template>
+          <template v-else>
+            <span class="nums">{{ chainRemaining }}</span> of
+            <span class="nums">{{ chain.length }}</span> still to do, in this
+            order.
+          </template>
+        </p>
         <!-- The stripe is this prerequisite's *current* progress — the same
              red/amber/green the rest of the app uses. A struck-through name
              says "done" on its own, checklist-style, needing no reading — so
@@ -229,34 +280,40 @@ function statusStripeClass(id: string): string {
              there, the chevron just nests directly in the link. -->
         <ul class="m-0 flex flex-col gap-1.5 p-0">
           <li
-            v-for="prereq in quest.requirements.quests"
-            :key="prereq.id"
+            v-for="step in visibleChain"
+            :key="step.quest.id"
             class="flex items-stretch"
           >
             <span
               class="w-1 shrink-0"
-              :class="statusStripeClass(prereq.id)"
+              :class="statusStripeClass(step.quest.id)"
               aria-hidden="true"
             />
 
             <RouterLink
-              :to="`/quests/${prereq.id}`"
+              :to="`/quests/${step.quest.id}`"
               class="tap pressable bevel-oak flex min-w-0 flex-1 items-center gap-2 bg-brown-lt py-1.5 pl-3 pr-3 no-underline"
             >
               <span
                 class="min-w-0 flex-1 truncate text-[15px] font-bold text-gold engraved"
                 :class="
-                  quests.progressOf(prereq.id) === 'done' && 'line-through'
+                  quests.progressOf(step.quest.id) === 'done' && 'line-through'
                 "
               >
-                {{ prereqName(prereq.id) }}
+                {{ step.quest.name }}
               </span>
+              <!-- Only on a direct prerequisite. "Needs finished" describes
+                   what *this* quest asks for; on a quest that's here because
+                   an ancestor needs it, the same words would attribute the
+                   requirement to the wrong quest. -->
               <span
-                v-if="quests.progressOf(prereq.id) !== 'done'"
+                v-if="
+                  step.completion && quests.progressOf(step.quest.id) !== 'done'
+                "
                 class="shrink-0 text-[12px] text-parchment-3"
               >
                 Needs
-                {{ prereq.completion === 'started' ? 'started' : 'finished' }}
+                {{ step.completion === 'started' ? 'started' : 'finished' }}
               </span>
               <AppIcon
                 name="chevron"
@@ -267,6 +324,24 @@ function statusStripeClass(id: string): string {
             </RouterLink>
           </li>
         </ul>
+
+        <!-- The secondary oak treatment the wiki link below uses, not the
+             chain rows' gold: it's a control over the list rather than another
+             entry in it. Parchment was the first instinct and is wrong twice —
+             buttons are oak here, and `.pressable` hard-codes an oak press
+             state that would flip a parchment button brown under the thumb. -->
+        <button
+          v-if="chainCollapsible"
+          type="button"
+          class="tap pressable bevel-oak flex w-full items-center justify-center gap-2 bg-brown-lt px-3 text-[13px] font-bold text-parchment-3"
+          @click="chainExpanded = !chainExpanded"
+        >
+          {{
+            chainExpanded
+              ? 'Show fewer'
+              : `Show all ${chain.length} — ${chain.length - CHAIN_COLLAPSED_ROWS} more`
+          }}
+        </button>
       </section>
 
       <section

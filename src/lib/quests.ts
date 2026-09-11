@@ -380,3 +380,68 @@ const LEVEL_AT_START = new RegExp(
   String.raw`^(${[...SKILL_NAMES, 'Combat'].join('|')})\s+(\d{1,3})\b`,
   'i',
 )
+
+export interface ChainStep {
+  quest: Quest
+  /**
+   * How the *root* quest needs this one, or `null` when it appears only
+   * because something else in the chain depends on it. The distinction is
+   * worth carrying: "Needs finished" describes what the quest you're looking
+   * at asks for, and saying it about an ancestor would attribute a
+   * requirement to the wrong quest.
+   */
+  completion: 'finished' | 'started' | null
+}
+
+/**
+ * Every quest a given quest depends on — direct and transitive — in dependency
+ * order, deepest first.
+ *
+ * Separate from `buildPlan` rather than a flag on it, because the two answer
+ * opposite questions. A queue asks "what is left to do", so `buildPlan` drops
+ * finished quests and stops descending as soon as a prerequisite is satisfied.
+ * A detail page asks "why is this hard", and must show the whole shape
+ * regardless of progress: a fully-completed chain rendered empty would read as
+ * "nothing was ever required here" rather than "you already did all of it".
+ *
+ * A quest reachable by several routes appears once, and a direct prerequisite
+ * that is also a distant ancestor keeps its direct relation — A Taste of Hope
+ * shouldn't be listed twice on A Night at the Theatre.
+ *
+ * Post-order over id-sorted prerequisites, so the order is stable across runs
+ * for the same reason `buildPlan`'s is.
+ */
+export function prerequisiteChain(id: string, index: QuestIndex): ChainStep[] {
+  const root = index.byId.get(id)
+  if (!root) return []
+
+  const direct = new Map(
+    root.requirements.quests.map((p) => [p.id, p.completion] as const),
+  )
+  const steps: ChainStep[] = []
+  // Seeded with the root so a quest can never list itself, even if a
+  // hand-edited dataset reintroduced the cycle generation rejects.
+  const placed = new Set<string>([id])
+  const visiting = new Set<string>()
+
+  const visit = (questId: string) => {
+    if (placed.has(questId) || visiting.has(questId)) return
+    const quest = index.byId.get(questId)
+    if (!quest) return
+
+    visiting.add(questId)
+    for (const prereq of sortedPrereqs(quest)) visit(prereq.id)
+    visiting.delete(questId)
+
+    if (placed.has(questId)) return
+    placed.add(questId)
+    steps.push({ quest, completion: direct.get(questId) ?? null })
+  }
+
+  for (const prereq of sortedPrereqs(root)) visit(prereq.id)
+  return steps
+}
+
+function sortedPrereqs(quest: Quest): QuestPrerequisite[] {
+  return [...quest.requirements.quests].sort((a, b) => a.id.localeCompare(b.id))
+}

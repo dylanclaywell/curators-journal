@@ -21,15 +21,15 @@ panel loads the dataset on demand and reports how many quests you could start
 right now, against live levels.
 
 Browsing, searching, filtering, add-to-queue and quest detail all exist now —
-see Phase 4 below, as do the items a quest asks you to bring (4d′).
-Export/import (slice 4b′) landed ahead of all of them, from the About panel.
+see Phase 4 below. Quest detail is finished: it carries the items a quest asks
+you to bring (4d′) and the full prerequisite chain behind it rather than one
+level (4d″). Export/import (slice 4b′) landed ahead of all of them, from the
+About panel.
 
-What's left, in order: the **transitive prerequisite chain** (4d″), the other
-half of a quest detail page that still reads thinner than the quest actually
-is; then the **queue itself** (4e), rendering the already-working plan
+What's left is the **queue itself** (4e): rendering the already-working plan
 (`buildPlan` has ordered and expanded prerequisites since 4a) as an actual
 view, rather than a placeholder that only reports a count. 4f (refresh-on-resume
-moves from `StatsView` to the shell) is small and independent of the other two.
+moves from `StatsView` to the shell) is small and independent of it.
 
 ## Phases
 
@@ -377,17 +377,17 @@ matters because the plan is persisted and returned to.
 
 ### Slices
 
-| Slice   | Contents                                                    | State    |
-| ------- | ----------------------------------------------------------- | -------- |
-| 4a      | `src/lib/quests.ts` — eligibility, plan ordering            | done     |
-| 4b      | `src/stores/quests.ts` — dataset load, progress, goals      | done     |
-| 4b′     | Export / import — do this before any UI invites data entry  | done     |
-| 4c      | Quests panel: list, search, filters, add to queue           | done     |
-| 4d      | Quest detail: full-panel, from either panel                 | done     |
-| 4d′     | Items required — dataset field, generator, detail view      | done     |
-| **4d″** | **Transitive prerequisite chain on quest detail**           | **next** |
-| 4e      | Queue panel: goals, expansion, ordering, reorder and remove | —        |
-| 4f      | Move refresh-on-resume from `StatsView` to the shell        | —        |
+| Slice  | Contents                                                     | State    |
+| ------ | ------------------------------------------------------------ | -------- |
+| 4a     | `src/lib/quests.ts` — eligibility, plan ordering             | done     |
+| 4b     | `src/stores/quests.ts` — dataset load, progress, goals       | done     |
+| 4b′    | Export / import — do this before any UI invites data entry   | done     |
+| 4c     | Quests panel: list, search, filters, add to queue            | done     |
+| 4d     | Quest detail: full-panel, from either panel                  | done     |
+| 4d′    | Items required — dataset field, generator, detail view       | done     |
+| 4d″    | Transitive prerequisite chain on quest detail                | done     |
+| **4e** | **Queue panel: goals, expansion, ordering, reorder, remove** | **next** |
+| 4f     | Move refresh-on-resume from `StatsView` to the shell         | —        |
 
 ### 4d′: items required — a real, previously-unscoped gap
 
@@ -505,28 +505,41 @@ for the queue — but `QuestDetailView.vue` only ever shows the **direct**
 prerequisite (`quest.requirements.quests`), one level deep. Seeing the whole
 shape means tapping through five more quests one at a time.
 
-Plan:
+**Built.** `prerequisiteChain(id, index)` in `src/lib/quests.ts`, rendered by
+the detail page's "Quests first" section. Engine only, as anticipated — no
+store or type changes.
 
-- **Don't reuse `buildPlan` as-is.** It deliberately drops `done` quests from
-  its output (they're not "left to do" for a queue), but a detail page showing
-  "why is this hard" should show the **whole** chain, done links included and
-  marked green — otherwise a fully-completed prerequisite chain renders as an
-  empty section, which reads as "nothing more was ever required" rather than
-  "you already did it." Add a new pure function alongside `buildPlan` in
-  `src/lib/quests.ts` — likely sharing its depth-first traversal — that
-  returns every quest a given quest depends on, direct and transitive, in
-  dependency order, without the done-filter. Name TBD;
-  `prerequisiteChain(id, index)` is a reasonable starting point.
-- **UI layout is an open question, decide by iteration** (the row styling
-  this session went through several rounds before landing — expect the same
-  here). Leading option: replace the current single-level "Quests" section
-  with one ordered list covering the full chain, each entry a clickable row
-  (reuse the oak-button row component/pattern from 4d) with its own status
-  stripe — direct prerequisites keep the "Needs finished/started" text,
-  transitive-only ones don't (that text describes what _this_ quest lists,
-  not what an ancestor needs). Avoids showing "A Taste of Hope" twice.
-- **Engine only** — no store or type changes anticipated; `QuestIndex` and
-  `PlayerState` already carry everything the traversal needs.
+**It is a separate function, not a flag on `buildPlan`,** and the reason is
+sharper than "the done-filter": `buildPlan` also stops descending the moment a
+prerequisite is satisfied, so it prunes whole satisfied branches. Reusing it
+would make a chain shrink as you complete it, which is right for a queue and
+wrong for "why is this hard". `prerequisiteChain` doesn't take `PlayerState` at
+all — it's structural, and therefore _cannot_ filter by progress. Only the
+status stripes and the remaining count read progress.
+
+Measured against the dataset: A Night at the Theatre gives exactly the seven
+expected, deepest first, with A Taste of Hope marked direct and listed once
+rather than twice. Dragon Slayer II gives 35, Defeating the Culinaromancer 47,
+Cook's Assistant none. Root never appears in its own chain, no id twice, and
+every prerequisite precedes the quest needing it.
+
+**Long chains are collapsed to six rows behind a "Show all" button** — an
+unplanned addition, forced by seeing it: 35 oak rows is a wall between the
+quest's status and everything under it, and vertical space is the scarce
+resource in the docked case. Truncation is honest here only because the order
+is dependency order, so the visible rows are the ones to do first and the
+hidden tail is the distant future. The threshold (over 10 collapses to 6) is a
+guess made at desk width; check it against the docked case.
+
+Two smaller calls worth keeping:
+
+- **"Needs finished/started" shows only on direct prerequisites.** That text
+  describes what _this_ quest asks for; on a quest present because an ancestor
+  needs it, the same words would attribute the requirement to the wrong quest.
+- **The expander is an oak button, not parchment.** Parchment was the first
+  instinct and is wrong twice — CLAUDE.md puts buttons on oak, and
+  `.pressable` hard-codes an oak press state, so a parchment button would flip
+  brown under the thumb.
 
 ### 4b′: the safety net, done before any UI invites data entry
 
