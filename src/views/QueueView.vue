@@ -422,10 +422,37 @@ const startableAnywhere = computed(() => {
 
             <ul class="m-0 flex flex-col gap-1.5 p-0">
               <li
-                v-for="goal in goalQuests"
+                v-for="(goal, i) in goalQuests"
                 :key="goal.id"
                 class="flex items-stretch gap-1.5"
               >
+                <!-- Side by side, not stacked: `.tap`'s 44px floor applies
+                 per button, so stacking would double this row's height
+                 against every other row in the list, and vertical space is
+                 the scarce resource in the docked case. Disabled rather than
+                 hidden at either end, so the row's width doesn't shift as
+                 you reorder. -->
+                <div class="flex shrink-0 gap-0.5">
+                  <button
+                    type="button"
+                    class="tap pressable bevel-oak flex items-center justify-center bg-brown-lt px-2 text-parchment-3 disabled:opacity-40"
+                    :disabled="i === 0"
+                    :aria-label="`Move ${goal.name} up`"
+                    @click="quests.moveGoal(goal.id, 'up')"
+                  >
+                    <AppIcon name="arrowUp" :size="13" />
+                  </button>
+                  <button
+                    type="button"
+                    class="tap pressable bevel-oak flex items-center justify-center bg-brown-lt px-2 text-parchment-3 disabled:opacity-40"
+                    :disabled="i === goalQuests.length - 1"
+                    :aria-label="`Move ${goal.name} down`"
+                    @click="quests.moveGoal(goal.id, 'down')"
+                  >
+                    <AppIcon name="arrowDown" :size="13" />
+                  </button>
+                </div>
+
                 <RouterLink
                   :to="`/queue/${goal.id}`"
                   class="tap pressable bevel-oak flex min-w-0 flex-1 items-center gap-2 bg-brown-lt py-1.5 pl-3 pr-3 no-underline"

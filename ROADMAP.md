@@ -31,11 +31,11 @@ plan and your goals behind a tab switch, and lets you start and finish a quest
 without leaving the panel. Curating moved wholesale to the Quests panel in the
 process — see 4e below for why the Queue has no "add" button.
 
-What's left of Phase 4 is small: **reordering goals** (4e′, the engine already
-honours the order) and **4f**, moving refresh-on-resume from `StatsView` to the
-shell. Both are independent. The more interesting question is whether the shell
-itself is right — nothing here has been used on a docked iPad yet, and the
-collapse thresholds and the bottom tab bar are both unmeasured guesses.
+What's left of Phase 4 is small: **4f**, moving refresh-on-resume from
+`StatsView` to the shell — reordering goals (4e′) is now done. The more
+interesting question is whether the shell itself is right — nothing here has
+been used on a docked iPad yet, and the collapse thresholds and the bottom tab
+bar are both unmeasured guesses.
 
 ## Phases
 
@@ -393,8 +393,8 @@ matters because the plan is persisted and returned to.
 | 4d′     | Items required — dataset field, generator, detail view     | done     |
 | 4d″     | Transitive prerequisite chain on quest detail              | done     |
 | 4e      | Queue panel: next up, plan, goals, remove, start/finish    | done     |
-| **4e′** | **Reorder goals — the last piece of 4e**                   | **next** |
-| 4f      | Move refresh-on-resume from `StatsView` to the shell       | —        |
+| 4e′     | Reorder goals — the last piece of 4e                       | done     |
+| **4f**  | **Move refresh-on-resume from `StatsView` to the shell**   | **next** |
 
 ### 4d′: items required — a real, previously-unscoped gap
 
@@ -599,11 +599,15 @@ their order, and the plan is still deterministic — the goal list is an explici
 sequence. Measured: swapping two goals moves Song of the Elves from step 43 to
 step 14, with the same 44 steps and dependency order intact either way.
 
+**4e′, reorder goals, is built.** `moveGoal(id, direction)` in the store swaps
+a goal with its neighbour and no-ops past either end; the Goals tab pairs it
+with `arrowUp`/`arrowDown` buttons per row, disabled at the ends rather than
+hidden so the row's width doesn't shift as you reorder. Side by side, not
+stacked — `.tap`'s 44px floor is per button, and stacking would have doubled
+this row's height against every other row in the list.
+
 **Still open, and worth checking on the device before building more:**
 
-- **4e′, reorder goals** — the only piece of 4e not built. The engine has
-  honoured goal order since the change above and `arrowUp`/`arrowDown` are
-  already in the icon set, so this is two controls in the Goals tab.
 - **The collapse thresholds are desk-width guesses.** The plan shows 5 of 44
   and the prerequisite chain 6 of 35. Nobody has seen either in the docked
   case.

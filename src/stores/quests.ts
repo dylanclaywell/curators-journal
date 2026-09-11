@@ -189,6 +189,24 @@ export const useQuestsStore = defineStore('quests', () => {
     goals.value = goals.value.filter((goal) => goal !== id)
   }
 
+  /**
+   * Swaps a goal with its neighbour in the given direction. `buildPlan` walks
+   * goals in this order (since 4e), so this is a real setting, not cosmetic —
+   * moving a goal up can reorder the whole plan behind it.
+   *
+   * A no-op past either end, so callers don't need to compute bounds just to
+   * disable a button.
+   */
+  function moveGoal(id: string, direction: 'up' | 'down'): void {
+    const i = goals.value.indexOf(id)
+    if (i === -1) return
+    const j = direction === 'up' ? i - 1 : i + 1
+    if (j < 0 || j >= goals.value.length) return
+    const next = [...goals.value]
+    ;[next[i], next[j]] = [next[j], next[i]]
+    goals.value = next
+  }
+
   function toggleGoal(id: string): void {
     if (isGoal(id)) removeGoal(id)
     else addGoal(id)
@@ -238,6 +256,7 @@ export const useQuestsStore = defineStore('quests', () => {
     isGoal,
     addGoal,
     removeGoal,
+    moveGoal,
     toggleGoal,
   }
 })
