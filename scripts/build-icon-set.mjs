@@ -89,6 +89,16 @@ const ICONS = [
     'node_modules/@phosphor-icons/core/assets/bold/pencil-simple-bold.svg',
     'phosphor',
   ],
+  [
+    'download',
+    'node_modules/@phosphor-icons/core/assets/bold/download-simple-bold.svg',
+    'phosphor',
+  ],
+  [
+    'upload',
+    'node_modules/@phosphor-icons/core/assets/bold/upload-simple-bold.svg',
+    'phosphor',
+  ],
 ]
 
 /** Pulls the viewBox and every path `d` out of one SVG file. */

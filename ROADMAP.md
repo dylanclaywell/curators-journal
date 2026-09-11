@@ -21,8 +21,8 @@ panel loads the dataset on demand and reports how many quests you could start
 right now, against live levels.
 
 What's missing is the **UI** — browsing, searching, quest detail, and the queue
-itself — plus **export/import**, which several comments claim exists and does
-not. See Phase 4 below; export/import goes first.
+itself. Export/import (slice 4b′) now exists, from the About panel — see
+Phase 4 below.
 
 ## Phases
 
@@ -342,27 +342,32 @@ matters because the plan is persisted and returned to.
 
 ### Slices
 
-| Slice   | Contents                                                       | State    |
-| ------- | -------------------------------------------------------------- | -------- |
-| 4a      | `src/lib/quests.ts` — eligibility, plan ordering               | done     |
-| 4b      | `src/stores/quests.ts` — dataset load, progress, goals         | done     |
-| **4b′** | **Export / import — do this before any UI invites data entry** | **next** |
-| 4c      | Quests panel: list, search, filters, add to queue              | —        |
-| 4d      | Quest detail: full-panel, from either panel                    | —        |
-| 4e      | Queue panel: goals, expansion, ordering, reorder and remove    | —        |
-| 4f      | Move refresh-on-resume from `StatsView` to the shell           | —        |
+| Slice  | Contents                                                    | State    |
+| ------ | ----------------------------------------------------------- | -------- |
+| 4a     | `src/lib/quests.ts` — eligibility, plan ordering            | done     |
+| 4b     | `src/stores/quests.ts` — dataset load, progress, goals      | done     |
+| 4b′    | Export / import — do this before any UI invites data entry  | done     |
+| **4c** | **Quests panel: list, search, filters, add to queue**       | **next** |
+| 4d     | Quest detail: full-panel, from either panel                 | —        |
+| 4e     | Queue panel: goals, expansion, ordering, reorder and remove | —        |
+| 4f     | Move refresh-on-resume from `StatsView` to the shell        | —        |
 
-### 4b′ first: the safety net doesn't exist
+### 4b′: the safety net, done before any UI invites data entry
 
-`persist.ts` calls export "the real safety net" and CLAUDE.md says "this is why
-export/import exists". **Neither is true — nothing implements it.** The quest
-store is the first thing in the app holding genuinely unrecoverable data, and
-Safari evicts IndexedDB after ~7 days idle for non-installed sites. Building a
-UI that invites someone to hand-enter 214 completions before that exists is the
-wrong order, which is why this jumped the queue.
+`persist.ts` called export "the real safety net" and CLAUDE.md said "this is
+why export/import exists" while **neither was true — nothing implemented it.**
+The quest store is the first thing in the app holding genuinely unrecoverable
+data, and Safari evicts IndexedDB after ~7 days idle for non-installed sites.
+Building a UI that invites someone to hand-enter 214 completions before that
+existed was the wrong order, which is why this jumped the queue.
 
-It needs to cover `quests:progress`, `quests:goals` and `settings` — everything
-hand-entered — and nothing fetched, since cached hiscores restore themselves.
+**Built:** `src/lib/backup.ts` (pure — builds and validates the backup shape,
+no DOM) plus export/import controls in the About panel. Covers exactly the
+hand-entered fields — `settings.username`, `settings.accountType`,
+`quests:progress`, `quests:goals` — and nothing fetched, since cached hiscores
+restore themselves from a username. A version field (`1`) and an `app` marker
+guard against importing garbage or a foreign JSON file; import replaces the
+current state wholesale after a confirm, rather than attempting a merge.
 
 ### What 4b left in place
 

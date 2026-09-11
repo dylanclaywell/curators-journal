@@ -1,5 +1,9 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref } from 'vue'
+import { computed, onMounted, onUnmounted, ref } from 'vue'
+import AppIcon from '@/components/AppIcon.vue'
+import { createBackup, parseBackup } from '@/lib/backup'
+import { useQuestsStore } from '@/stores/quests'
+import { useSettingsStore } from '@/stores/settings'
 
 /**
  * Doubles as the required Fan Content Policy notice and as a ruler.
@@ -36,6 +40,87 @@ onUnmounted(() => {
   window.removeEventListener('resize', measure)
   window.visualViewport?.removeEventListener('resize', measure)
 })
+
+/*
+ * Export/import: the safety net `persist.ts` and CLAUDE.md have long
+ * described but that never existed until now (ROADMAP slice 4b′). It covers
+ * only the hand-entered, unrecoverable half of the state — settings and quest
+ * progress/goals — not cached hiscores, which refetch themselves from a
+ * username and would just bloat the file.
+ */
+const settings = useSettingsStore()
+const quests = useQuestsStore()
+
+const fileInput = ref<HTMLInputElement | null>(null)
+const importMessage = ref<{ kind: 'ok' | 'error'; text: string } | null>(null)
+
+// Both stores hydrate asynchronously from IndexedDB on creation. Acting before
+// that finishes risks exporting the empty initial state, or an import getting
+// silently dropped by a store that isn't yet persisting writes.
+const dataReady = computed(() => settings.hydrated && quests.hydrated)
+
+function exportBackup() {
+  const backup = createBackup({
+    username: settings.username,
+    accountType: settings.accountType,
+    progress: quests.progress,
+    goals: quests.goals,
+  })
+  const blob = new Blob([JSON.stringify(backup, null, 2)], {
+    type: 'application/json',
+  })
+  const url = URL.createObjectURL(blob)
+  const link = document.createElement('a')
+  link.href = url
+  link.download = `stagescape-backup-${new Date().toISOString().slice(0, 10)}.json`
+  link.click()
+  URL.revokeObjectURL(url)
+  importMessage.value = null
+}
+
+function chooseImportFile() {
+  fileInput.value?.click()
+}
+
+async function onImportFileChosen(event: Event) {
+  const input = event.target as HTMLInputElement
+  const file = input.files?.[0]
+  // Cleared even on success, so choosing the same file twice in a row still
+  // fires a change event.
+  input.value = ''
+  if (!file) return
+
+  let parsed: unknown
+  try {
+    parsed = JSON.parse(await file.text())
+  } catch {
+    importMessage.value = {
+      kind: 'error',
+      text: 'That file is not valid JSON.',
+    }
+    return
+  }
+
+  const result = parseBackup(parsed)
+  if (!result.ok) {
+    importMessage.value = { kind: 'error', text: result.error }
+    return
+  }
+
+  // Destructive and hard to reverse — it overwrites whatever progress and
+  // goals are currently stored — so confirm before touching anything.
+  const confirmed = window.confirm(
+    `Replace your current quest progress and settings with this backup from ${new Date(result.backup.exportedAt).toLocaleString()}?`,
+  )
+  if (!confirmed) return
+
+  settings.username = result.backup.settings.username
+  settings.accountType = result.backup.settings.accountType
+  quests.progress = result.backup.quests.progress
+  quests.goals = result.backup.quests.goals
+
+  importMessage.value = { kind: 'ok', text: 'Backup restored.' }
+}
 </script>
 
 <template>
@@ -71,6 +156,54 @@ onUnmounted(() => {
         Add StageScape to your home screen. Safari clears storage for
         uninstalled sites after about a week idle, and your quest completions
         live in it.
+      </p>
+    </section>
+
+    <hr class="m-0 h-0 border-0 border-t-2 border-t-bevel-dk" />
+
+    <section class="flex flex-col gap-2">
+      <h2 class="m-0 font-display text-[19px] leading-tight">Your data</h2>
+
+      <p class="m-0 max-w-[52ch] text-[15px] text-ink-soft">
+        Quest progress and goals live only on this device. Export a backup
+        before switching phones, reinstalling, or leaving the app uninstalled
+        and idle — Safari clears storage after about a week.
+      </p>
+
+      <div class="flex gap-2">
+        <button
+          type="button"
+          :disabled="!dataReady"
+          class="tap pressable bevel-oak flex flex-1 items-center justify-center gap-2 bg-brown font-bold text-gold engraved disabled:opacity-50"
+          @click="exportBackup"
+        >
+          <AppIcon name="download" :size="15" />
+          Export
+        </button>
+        <button
+          type="button"
+          :disabled="!dataReady"
+          class="tap pressable bevel-oak flex flex-1 items-center justify-center gap-2 bg-brown font-bold text-gold engraved disabled:opacity-50"
+          @click="chooseImportFile"
+        >
+          <AppIcon name="upload" :size="15" />
+          Import
+        </button>
+        <input
+          ref="fileInput"
+          type="file"
+          accept="application/json"
+          class="hidden"
+          @change="onImportFileChosen"
+        />
+      </div>
+
+      <p
+        v-if="importMessage"
+        class="m-0 text-[15px]"
+        :class="importMessage.kind === 'error' ? 'text-todo' : 'text-done'"
+      >
+        {{ importMessage.text }}
       </p>
     </section>
 

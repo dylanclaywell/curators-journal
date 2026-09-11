@@ -30,8 +30,8 @@ export async function write(key: string, value: unknown): Promise<void> {
     await store.setItem(key, JSON.parse(JSON.stringify(value)))
   } catch {
     // Storage full, or unavailable. Losing a write is survivable only because
-    // the next one will probably succeed — the export that is supposed to be
-    // the real safety net is NOT built yet (ROADMAP slice 4b′).
+    // the next one will probably succeed — and, since slice 4b′, because the
+    // player can export a backup independently of this store's own writes.
   }
 }
 

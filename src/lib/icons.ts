@@ -3,7 +3,7 @@
  *
  * Domain icons (scroll, hourglass, padlock, openBook, progression, cog) are from
  * game-icons.net, licensed CC BY 3.0. Interface icons
- * (chart, check, gear, external, search, plus, caretDown, refresh, pencil) are from Phosphor, licensed MIT.
+ * (chart, check, gear, external, search, plus, caretDown, refresh, pencil, download, upload) are from Phosphor, licensed MIT.
  * Attribution for both ships in the app's About panel and the README.
  *
  * Icons carry their own viewBox because the two packs draw on different
@@ -76,6 +76,14 @@ export const icons = {
   pencil: {
     viewBox: '0 0 256 256',
     path: 'M230.14,70.54,185.46,25.85a20,20,0,0,0-28.29,0L33.86,149.17A19.85,19.85,0,0,0,28,163.31V208a20,20,0,0,0,20,20H92.69a19.86,19.86,0,0,0,14.14-5.86L230.14,98.82a20,20,0,0,0,0-28.28ZM91,204H52V165l84-84,39,39ZM192,103,153,64l18.34-18.34,39,39Z',
+  },
+  download: {
+    viewBox: '0 0 256 256',
+    path: 'M228,144v64a12,12,0,0,1-12,12H40a12,12,0,0,1-12-12V144a12,12,0,0,1,24,0v52H204V144a12,12,0,0,1,24,0Zm-108.49,8.49a12,12,0,0,0,17,0l40-40a12,12,0,0,0-17-17L140,115V32a12,12,0,0,0-24,0v83L96.49,95.51a12,12,0,0,0-17,17Z',
+  },
+  upload: {
+    viewBox: '0 0 256 256',
+    path: 'M228,144v64a12,12,0,0,1-12,12H40a12,12,0,0,1-12-12V144a12,12,0,0,1,24,0v52H204V144a12,12,0,0,1,24,0ZM96.49,80.49,116,61v83a12,12,0,0,0,24,0V61l19.51,19.52a12,12,0,1,0,17-17l-40-40a12,12,0,0,0-17,0l-40,40a12,12,0,1,0,17,17Z',
   },
 } satisfies Record<string, IconDef>
 
