@@ -21,10 +21,14 @@ panel loads the dataset on demand and reports how many quests you could start
 right now, against live levels.
 
 Browsing, searching, filtering, add-to-queue and quest detail all exist now —
-see Phase 4 below. What's left is the **queue itself** (4e): rendering the
-already-working plan (`buildPlan` has ordered and expanded prerequisites since
-4a) as an actual view, rather than a placeholder that only reports a count.
-Export/import (slice 4b′) also exists, from the About panel.
+see Phase 4 below, and export/import (slice 4b′) landed ahead of them, from the
+About panel. What's left, in order: **items required** (4d′) and
+the **transitive prerequisite chain** (4d″), both of which fill in a quest detail
+page that currently reads thinner than the quest actually is; then the **queue
+itself** (4e), rendering the already-working plan (`buildPlan` has ordered and
+expanded prerequisites since 4a) as an actual view, rather than a placeholder
+that only reports a count. 4f (refresh-on-resume moves from `StatsView` to the
+shell) is small and independent of the other three.
 
 ## Phases
 

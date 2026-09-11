@@ -87,9 +87,10 @@ and they must not be conflated:
 
 - **Fetched, read-only:** skill levels, XP, activity scores, item prices.
 - **User-owned, authoritative, precious:** quest completions. Hand-entered, only
-  in IndexedDB, and unrecoverable if lost. This is why export/import has to
-  exist — **it does not yet** (slice 4b′). Treat that as a live gap, not a
-  feature you can rely on.
+  in IndexedDB, and unrecoverable if lost. This is why export/import exists
+  (slice 4b′, from the About panel): `src/lib/backup.ts` builds and validates
+  the backup shape. Anything hand-entered that lands in IndexedDB belongs in
+  that shape — adding a new one means extending the backup too.
 
 ## Architecture
 
@@ -313,5 +314,5 @@ deploy without anything in the repo changing. Keep local dev on the same
 version.
 
 Safari evicts IndexedDB for non-installed sites after ~7 days idle. Installing to
-the home screen is the supported path. Export/import is meant to be the safety
-net underneath that, and is not built yet — see ROADMAP.md slice 4b′.
+the home screen is the supported path, with export/import from the About panel as
+the safety net underneath it — see ROADMAP.md slice 4b′.
