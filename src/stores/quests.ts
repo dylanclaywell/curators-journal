@@ -157,7 +157,12 @@ export const useQuestsStore = defineStore('quests', () => {
     progress.value = { ...progress.value, [id]: state }
   }
 
-  /** Cycles todo → doing → done → todo, for a single tap on a quest row. */
+  /**
+   * Cycles todo → doing → done → todo. Lives here rather than on a Quests
+   * panel row: marking progress belongs in quest detail (4d), which has room
+   * to show why a quest is blocked or startable — the row tap in the list is
+   * reserved for opening that detail, not for a whole-quest toggle.
+   */
   function cycleProgress(id: string): void {
     const next: Record<QuestProgress, QuestProgress> = {
       todo: 'doing',

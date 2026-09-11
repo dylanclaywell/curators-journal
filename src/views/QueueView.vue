@@ -4,13 +4,13 @@ import AppIcon from '@/components/AppIcon.vue'
 import { useQuestsStore } from '@/stores/quests'
 
 /*
- * The queue panel, still mostly an invitation — the queue itself (goals,
- * expansion, ordering) is slice 4e. What is real here is the whole data path
- * behind it: the committed dataset loads on demand, the engine evaluates it
- * against live levels, and progress survives being backgrounded.
- *
- * "Add a quest" has nowhere to go yet: it wants the Quests panel's list
- * (slice 4c) or quest detail (4d) to hand it a goal.
+ * The queue panel, still mostly an invitation — rendering the actual plan
+ * (goals, expansion, ordering, reorder and remove) is slice 4e. What's real
+ * here is the whole data path behind it: the committed dataset loads on
+ * demand, the engine evaluates it against live levels, progress survives
+ * being backgrounded, and goals are now reachable — added from the Quests
+ * panel's list (slice 4c) — so this only needs to stop claiming "empty" once
+ * they exist, not render the plan itself.
  */
 const quests = useQuestsStore()
 
@@ -37,23 +37,34 @@ const total = computed(() => quests.index.all.length)
 </script>
 
 <template>
-  <!-- An empty panel is an invitation, not a blank. -->
+  <!-- An empty panel is an invitation, not a blank. Once goals exist this
+       must stop claiming "empty" — the plan itself is rendered in 4e. -->
   <div class="flex flex-col items-start gap-3 p-3">
     <AppIcon name="scroll" :size="40" class="text-ink-soft" />
     <p class="m-0 font-display text-[19px] leading-tight">
-      Your queue is empty
+      {{
+        quests.goals.length === 0
+          ? 'Your queue is empty'
+          : `${quests.goals.length} quest${quests.goals.length === 1 ? '' : 's'} queued`
+      }}
     </p>
     <p class="m-0 max-w-[46ch] text-ink-soft">
-      Add a quest and StageScape works backwards through what it needs, then
-      tells you what you can start right now.
+      <template v-if="quests.goals.length === 0">
+        Add a quest and StageScape works backwards through what it needs, then
+        tells you what you can start right now.
+      </template>
+      <template v-else>
+        Prerequisite expansion and ordering already run behind the scenes — the
+        plan itself gets its own view next.
+      </template>
     </p>
-    <button
-      type="button"
-      class="tap pressable bevel-oak mt-1 flex items-center gap-2 bg-brown px-3.5 font-bold text-gold engraved"
+    <RouterLink
+      to="/quests"
+      class="tap pressable bevel-oak mt-1 flex items-center gap-2 bg-brown px-3.5 font-bold text-gold no-underline engraved"
     >
       <AppIcon name="plus" :size="15" />
-      Add a quest
-    </button>
+      {{ quests.goals.length === 0 ? 'Add a quest' : 'Add another' }}
+    </RouterLink>
 
     <!-- Proof the data path works, and useful on its own until the queue does.
          `.nums` for tabular figures, so a changing count doesn't reflow. -->
