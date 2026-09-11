@@ -310,7 +310,7 @@ function statusStripeClass(id: string): string {
            carries a status color — see QuestItemLines.vue. -->
       <section v-if="quest.itemsRequired.length" class="flex flex-col gap-1.5">
         <h2 class="m-0 text-[13px] font-bold text-ink-soft">Items needed</h2>
-        <QuestItemLines :lines="quest.itemsRequired" />
+        <QuestItemLines :lines="quest.itemsRequired" :levels="quests.levels" />
       </section>
 
       <!-- Not a second item list: the wiki's `recommended` also carries combat
@@ -322,7 +322,11 @@ function statusStripeClass(id: string): string {
         class="flex flex-col gap-1.5"
       >
         <h2 class="m-0 text-[13px] font-bold text-ink-soft">Recommended</h2>
-        <QuestItemLines :lines="quest.itemsRecommended" muted />
+        <QuestItemLines
+          :lines="quest.itemsRecommended"
+          :levels="quests.levels"
+          muted
+        />
       </section>
 
       <a

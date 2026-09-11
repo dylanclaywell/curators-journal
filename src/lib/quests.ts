@@ -14,6 +14,7 @@
  * A wrong "blocked" hides a quest you could have done, and you never learn it
  * was hidden.
  */
+import { SKILL_NAMES } from './types'
 import type { Quest, QuestPrerequisite, SkillName } from './types'
 
 /**
@@ -318,3 +319,64 @@ export function startableNow(
     .map((quest) => evaluateQuest(quest, state, index))
     .filter((status) => status.progress !== 'done' && status.canStart)
 }
+
+/**
+ * A skill or combat level named at the *start* of an item line, e.g.
+ * "Combat 95" or "Prayer 43 for overhead protection Prayers".
+ *
+ * `met` is `null` when the level isn't known — the same third state the rest of
+ * this module keeps, and the reason the UI must not paint an uncoloured line as
+ * "too low".
+ */
+export interface MentionedLevel {
+  /** `null` for combat, which is a derived level rather than a skill. */
+  skill: SkillName | null
+  need: number
+  have: number | null
+  met: boolean | null
+}
+
+/**
+ * Finds a level requirement stated at the start of an item line, or `null`.
+ *
+ * **Anchored deliberately.** Scanning anywhere in the line matches the numbers
+ * that belong to items rather than levels — "1-2 prayer potions", "12 Magic
+ * logs (can be noted)", "3-100 magic logs" — and every one of those would be
+ * painted as a level the player has or lacks. Measured against the dataset, the
+ * anchor drops all 48 such false positives and still reaches 203 lines, of
+ * which 139 are combat.
+ *
+ * Item lines are prose, so this is presentation sugar, not a requirement the
+ * engine gates on. `evaluateQuest` neither calls it nor knows it exists.
+ */
+export function mentionedLevel(
+  text: string,
+  levels: SkillLevels,
+): MentionedLevel | null {
+  const match = LEVEL_AT_START.exec(text.trim())
+  if (!match) return null
+
+  const name = match[1]
+  const need = Number(match[2])
+  if (!Number.isFinite(need)) return null
+
+  if (/^combat$/i.test(name)) {
+    const have = combatLevel(levels)
+    return { skill: null, need, have, met: have === null ? null : have >= need }
+  }
+
+  // Match is case-insensitive, so recover the canonical casing for lookup.
+  const skill = SKILL_NAMES.find((s) => s.toLowerCase() === name.toLowerCase())
+  if (!skill) return null
+
+  const have = levels[skill] ?? null
+  return { skill, need, have, met: have === null ? null : have >= need }
+}
+
+// String.raw, not a plain template literal: `\s` and `\d` in an interpolated
+// template are read as the characters "s" and "d", which silently yields a
+// regex that matches nothing rather than one that fails to compile.
+const LEVEL_AT_START = new RegExp(
+  String.raw`^(${[...SKILL_NAMES, 'Combat'].join('|')})\s+(\d{1,3})\b`,
+  'i',
+)

@@ -471,6 +471,24 @@ service worker precaches it once. But it is the app's largest asset by a wide
 margin now, and if that ever needs cutting, `itemsRecommended` is roughly half
 of it and the half that gates nothing.
 
+**Levels named in an item line are tinted, and the rule is anchored.**
+`mentionedLevel` in `src/lib/quests.ts` reads a skill or combat level stated at
+the _start_ of a line ("Combat 95", "Prayer 43 for overhead protection") and
+compares it to the player's. Anchoring is the whole trick: scanning anywhere in
+the line matches numbers belonging to items rather than levels — "1-2 prayer
+potions", "12 Magic logs (can be noted)", "3-100 magic logs" — and each would
+have been painted as a level you have or lack. The anchor drops all 48 such
+false positives and still reaches 203 lines, 139 of them combat.
+
+**Amber for unmet, not red**, which is the same judgement `requiredToStart`
+made. Nothing in these lists blocks anything; they're advice. Red is the app's
+"blocked", and spending it on a recommendation would say "you can't do this"
+about a quest you can in fact start. Unknown levels stay uncoloured — the third
+state, never collapsed into "too low".
+
+The engine doesn't call `mentionedLevel` and doesn't know it exists; it is
+presentation sugar living in `lib` only because it must stay pure.
+
 Verified by spot-checking generated entries against their wiki pages by hand —
 Heroes' Quest for the branches, A Night at the Theatre for nesting, Cabin Fever
 for the no-items-but-11-free-slots prose — plus the parse report's counts. Not

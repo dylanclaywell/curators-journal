@@ -3740,7 +3740,7 @@
           "text": "Fast travel to the Ardougne Zoo (Ardougne Cloak 1 or Ardougne teleport)"
         },
         {
-          "text": "Agility 25 Agility for a shortcut"
+          "text": "Agility 25 for a shortcut"
         },
         {
           "text": "Stamina or energy potions."
@@ -6009,7 +6009,7 @@
           "text": "Combat 50"
         },
         {
-          "text": "Agility 35 Agility to jump over the pit in the pyramid (higher agility helps even more)"
+          "text": "Agility 35 to jump over the pit in the pyramid (higher agility helps even more)"
         },
         {
           "text": "Waterskins for the desert heat"
@@ -6370,7 +6370,7 @@
           "text": "Combat 45"
         },
         {
-          "text": "Prayer 43 Prayer for Protect from Melee"
+          "text": "Prayer 43 for Protect from Melee"
         },
         {
           "text": "Prayer potions"
@@ -7024,11 +7024,11 @@
           "text": "If using Magic for the Entrana Dungeon (recommended):"
         },
         {
-          "text": "Magic 13 Magic and enough runes to cast Fire Strike for the Tree Spirit which has a 35% Fire weakness OR",
+          "text": "Magic 13 and enough runes to cast Fire Strike for the Tree Spirit which has a 35% Fire weakness OR",
           "depth": 1
         },
         {
-          "text": "Magic 39 Magic and enough runes to cast Crumble Undead against the Zombies and the Tree Spirit, who are susceptible to it (about 65 casts should be enough)",
+          "text": "Magic 39 and enough runes to cast Crumble Undead against the Zombies and the Tree Spirit, who are susceptible to it (about 65 casts should be enough)",
           "depth": 1
         },
         {
@@ -7526,10 +7526,10 @@
       "itemsRequired": [],
       "itemsRecommended": [
         {
-          "text": "Combat 60 Combat level"
+          "text": "Combat 60"
         },
         {
-          "text": "Prayer 43 Prayer to use Protect from Melee and Protect from Magic"
+          "text": "Prayer 43 to use Protect from Melee and Protect from Magic"
         },
         {
           "text": "Stamina potions or energy potions"
@@ -7681,7 +7681,7 @@
           "text": "Combat 65"
         },
         {
-          "text": "Prayer 43 Prayer highly recommended, as the player will be attacked by numerous hard-hitting melee enemies in multicombat"
+          "text": "Prayer 43 highly recommended, as the player will be attacked by numerous hard-hitting melee enemies in multicombat"
         },
         {
           "text": "Poison cures such as antipoison or antidote++"
@@ -14356,7 +14356,7 @@
       ],
       "itemsRecommended": [
         {
-          "text": "Combat 65 Combat level"
+          "text": "Combat 65"
         },
         {
           "text": "Prayer 43 or higher Prayer level for Protect from Melee"

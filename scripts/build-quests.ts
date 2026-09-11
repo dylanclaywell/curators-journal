@@ -521,6 +521,28 @@ function parseRequirements(raw: string | undefined): ParsedRequirements {
  * 200 of 216 pages state items and 201 state recommendations, so an empty
  * result means the wiki said "None" or said nothing — not that parsing failed.
  */
+/**
+ * Collapses "Agility 25 Agility for a shortcut" to "Agility 25 for a shortcut".
+ *
+ * The wiki writes `{{SCP|Agility|25}} Agility`, where the template renders as an
+ * icon plus the number and the trailing word labels it. `plainText` expands the
+ * template to "Agility 25", so the name lands twice. Nine lines do this, and a
+ * trailing "level" ("Combat 60 Combat level") goes with the duplicate.
+ *
+ * Scoped to item lines rather than folded into `plainText`: notes and
+ * requirements are parsed from differently-shaped source, and this is only
+ * measured here.
+ */
+function collapseRepeatedSkill(text: string): string {
+  return text.replace(
+    new RegExp(
+      `^(${SKILL_NAMES.join('|')}|Combat)( \\d{1,3}) \\1( level)?\\b`,
+      'i',
+    ),
+    '$1$2',
+  )
+}
+
 function parseItemList(raw: string | undefined): QuestItemLine[] {
   if (!raw) return []
 
@@ -536,7 +558,7 @@ function parseItemList(raw: string | undefined): QuestItemLine[] {
     const bullet = line.startsWith('*')
     const depth = bullet ? (line.match(/^\**/) ?? [''])[0].length - 1 : 0
     // Leading ":" is the wiki's indent markup, which survives plainText.
-    const text = plainText(line.replace(/^[*:]+\s*/, ''))
+    const text = collapseRepeatedSkill(plainText(line.replace(/^[*:]+\s*/, '')))
     if (!text || /^none\.?$/i.test(text)) continue
 
     lines.push({
