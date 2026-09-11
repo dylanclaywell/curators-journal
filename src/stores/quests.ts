@@ -42,7 +42,12 @@ export const useQuestsStore = defineStore('quests', () => {
    */
   const progress = ref<Record<string, QuestProgress>>({})
 
-  /** Quests the player chose. Order is theirs; the plan derives its own. */
+  /**
+   * Quests the player chose, in the order they want them. `buildPlan` walks
+   * goals in this order, so the array's sequence is a real setting rather than
+   * insertion trivia — it's how priority between independent chains is
+   * expressed, and it's in the export for that reason.
+   */
   const goals = ref<string[]>([])
 
   /**

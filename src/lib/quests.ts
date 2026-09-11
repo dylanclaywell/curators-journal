@@ -261,6 +261,14 @@ export interface PlanStep {
  * Order is a depth-first post-order over sorted prerequisites, so it is stable
  * across runs: the same goals always produce the same plan, which matters when
  * the plan is persisted and returned to between sessions.
+ *
+ * **Goals are walked in the caller's order**, not sorted. Sorting them was the
+ * original call and it quietly made the queue's reordering meaningless — the
+ * plan came out identical whichever way you arranged your goals, because ids
+ * were alphabetised first. Priority between independent chains is the player's
+ * to set, and this is where they set it. Determinism is unaffected: the goal
+ * list is an explicit sequence, so the same goals in the same order still give
+ * the same plan. Prerequisites stay sorted, since nobody chose their order.
  */
 export function buildPlan(
   goalIds: readonly string[],
@@ -302,7 +310,7 @@ export function buildPlan(
     })
   }
 
-  for (const id of [...goals].sort()) visit(id)
+  for (const id of goalIds) visit(id)
   return steps
 }
 
