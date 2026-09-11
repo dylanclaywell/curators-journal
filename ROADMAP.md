@@ -372,15 +372,110 @@ matters because the plan is persisted and returned to.
 
 ### Slices
 
-| Slice  | Contents                                                        | State    |
-| ------ | --------------------------------------------------------------- | -------- |
-| 4a     | `src/lib/quests.ts` — eligibility, plan ordering                | done     |
-| 4b     | `src/stores/quests.ts` — dataset load, progress, goals          | done     |
-| 4b′    | Export / import — do this before any UI invites data entry      | done     |
-| 4c     | Quests panel: list, search, filters, add to queue               | done     |
-| 4d     | Quest detail: full-panel, from either panel                     | done     |
-| **4e** | **Queue panel: goals, expansion, ordering, reorder and remove** | **next** |
-| 4f     | Move refresh-on-resume from `StatsView` to the shell            | —        |
+| Slice   | Contents                                                    | State    |
+| ------- | ----------------------------------------------------------- | -------- |
+| 4a      | `src/lib/quests.ts` — eligibility, plan ordering            | done     |
+| 4b      | `src/stores/quests.ts` — dataset load, progress, goals      | done     |
+| 4b′     | Export / import — do this before any UI invites data entry  | done     |
+| 4c      | Quests panel: list, search, filters, add to queue           | done     |
+| 4d      | Quest detail: full-panel, from either panel                 | done     |
+| **4d′** | **Items required — dataset field, generator, detail view**  | **next** |
+| 4d″     | Transitive prerequisite chain on quest detail               | —        |
+| 4e      | Queue panel: goals, expansion, ordering, reorder and remove | —        |
+| 4f      | Move refresh-on-resume from `StatsView` to the shell        | —        |
+
+### 4d′: items required — a real, previously-unscoped gap
+
+Found while looking at **A Night at the Theatre** in the new detail view: it
+shows one prerequisite quest and nothing else, which reads as suspiciously
+thin for a Master-difficulty quest. Checked against the live wiki page (both
+rendered and `?action=raw`) and against `scripts/build-quests.ts` — this
+isn't a parse bug, it's a field that was never scoped in. The quest genuinely
+has no direct skill requirements; what the wiki page **does** list, that we
+don't capture anywhere, is required and recommended items:
+
+```
+|items =*[[Ivandis flail]] or [[Blisterwood flail]]
+*[[Saw]] ([[crystal saw]] also works)
+*[[Ghostspeak amulet]] ([[Morytania legs 2]] or better also work)
+*Any [[axe]] besides the [[blessed axe]]
+
+|recommended =
+*{{SCP|Combat|95|link=yes}}
+*[[Stamina potion|Stamina]] or [[Energy Potion]]s
+*[[Drakan's medallion]]
+...
+```
+
+Both are parameters on the same `Quest details` template already parsed for
+`requirements`/`difficulty`/`length` — no new template to find, just two more
+params to read. Unlike skill requirements, `items` doesn't use the `{{SCP|...}}`
+structured markup — it's a bulleted list of free text and `[[wikilinks]]`, closer
+in shape to the ~96 free-prose requirement lines that already land in
+`Quest.notes`. That means it can't be checked against inventory (no "do you
+have this" state to compute), only displayed — same treatment as notes, not
+as a new gate.
+
+Plan:
+
+- **Types:** add `itemsRequired: string[]` and `itemsRecommended: string[]` to
+  `Quest` (not to `QuestRequirements` — these never affect `canStart`/
+  `canFinish`, so they don't belong with the fields the engine gates on).
+  Keep the two separate rather than merging into `notes`: "required" and
+  "recommended" are a distinction this project already cares about a lot
+  (see `requiredToStart`), and collapsing it here would be the same mistake
+  in miniature.
+- **Generator:** extract `items`/`recommended` from the already-parsed
+  `Quest details` template. Split on `*`/`**` bullet lines (flatten nested
+  bullets — the hespori sub-bullet under `recommended` above is exactly this),
+  strip each line to plain text (`[[X|Y]]` → `Y`, `[[X]]` → `X`), trim. Most
+  early/low-level quests won't have either param — empty array, same
+  convention as `notes` and the 19 quests with no requirements block at all.
+- **No independent cross-check exists for this** the way `Module:Questreq/data`
+  cross-checked skill requirements — validate by spot-checking a sample of
+  generated entries against their wiki pages by hand, not a scripted diff.
+- **Engine:** no changes. `evaluateQuest` never reads these fields, same as
+  `notes`.
+- **UI:** a new section in `QuestDetailView.vue`, near the existing notes
+  section — "Items needed" (required) and, lower-emphasis, "Recommended".
+  Plain bullet lists; nothing here is a status color or a tap target.
+- **Cost:** a full dataset regen (`npm run build:quests`), same shape as any
+  other schema change to the generator — deliberate, reviewable diff, not
+  automatic.
+
+### 4d″: the transitive chain isn't visible on a detail page
+
+The other half of what made A Night at the Theatre read as "not clear what's
+needed": its real difficulty is a six-quest chain behind A Taste of Hope
+(Darkness of Hallowvale → In Aid of the Myreque → In Search of the Myreque →
+Nature Spirit → Priest in Peril → The Restless Ghost), each with its own skill
+gates. That chain is correctly modeled — `buildPlan` already expands it fully
+for the queue — but `QuestDetailView.vue` only ever shows the **direct**
+prerequisite (`quest.requirements.quests`), one level deep. Seeing the whole
+shape means tapping through five more quests one at a time.
+
+Plan:
+
+- **Don't reuse `buildPlan` as-is.** It deliberately drops `done` quests from
+  its output (they're not "left to do" for a queue), but a detail page showing
+  "why is this hard" should show the **whole** chain, done links included and
+  marked green — otherwise a fully-completed prerequisite chain renders as an
+  empty section, which reads as "nothing more was ever required" rather than
+  "you already did it." Add a new pure function alongside `buildPlan` in
+  `src/lib/quests.ts` — likely sharing its depth-first traversal — that
+  returns every quest a given quest depends on, direct and transitive, in
+  dependency order, without the done-filter. Name TBD;
+  `prerequisiteChain(id, index)` is a reasonable starting point.
+- **UI layout is an open question, decide by iteration** (the row styling
+  this session went through several rounds before landing — expect the same
+  here). Leading option: replace the current single-level "Quests" section
+  with one ordered list covering the full chain, each entry a clickable row
+  (reuse the oak-button row component/pattern from 4d) with its own status
+  stripe — direct prerequisites keep the "Needs finished/started" text,
+  transitive-only ones don't (that text describes what _this_ quest lists,
+  not what an ancestor needs). Avoids showing "A Taste of Hope" twice.
+- **Engine only** — no store or type changes anticipated; `QuestIndex` and
+  `PlayerState` already carry everything the traversal needs.
 
 ### 4b′: the safety net, done before any UI invites data entry
 
