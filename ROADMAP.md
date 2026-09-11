@@ -15,9 +15,14 @@ CI deploy path is now proven — see open question 4.
 The stats half works end to end: hiscores lookup through the Worker, cached
 offline-first, a skills grid that reflows from 320px to docked width.
 
-The quest **dataset** now exists too — 214 quests generated from the wiki and
-committed. The quest **engine and UI** — the actual point of the app — are not
-built yet, and nothing reads `quests.json` so far.
+The quest **dataset** (214 quests), the **engine** (`src/lib/quests.ts`) and the
+**store** (`src/stores/quests.ts`) all exist and are wired together: the Quests
+panel loads the dataset on demand and reports how many quests you could start
+right now, against live levels.
+
+What's missing is the **UI** — browsing, searching, quest detail, and the queue
+itself — plus **export/import**, which several comments claim exists and does
+not. See Phase 4 below; export/import goes first.
 
 ## Phases
 
@@ -337,20 +342,57 @@ matters because the plan is persisted and returned to.
 
 ### Slices
 
-| Slice | Contents                                                          |
-| ----- | ----------------------------------------------------------------- |
-| 4a    | **done** — `src/lib/quests.ts`: eligibility, plan ordering        |
-| 4b    | Quest store: dataset load, three-state progress, persist + export |
-| 4c    | Quests panel: list, search, filters, add to queue                 |
-| 4d    | Quest detail: full-panel, from either panel                       |
-| 4e    | Queue panel: goals, expansion, ordering, reorder and remove       |
-| 4f    | Move refresh-on-resume from `StatsView` to the shell              |
+| Slice   | Contents                                                       | State    |
+| ------- | -------------------------------------------------------------- | -------- |
+| 4a      | `src/lib/quests.ts` — eligibility, plan ordering               | done     |
+| 4b      | `src/stores/quests.ts` — dataset load, progress, goals         | done     |
+| **4b′** | **Export / import — do this before any UI invites data entry** | **next** |
+| 4c      | Quests panel: list, search, filters, add to queue              | —        |
+| 4d      | Quest detail: full-panel, from either panel                    | —        |
+| 4e      | Queue panel: goals, expansion, ordering, reorder and remove    | —        |
+| 4f      | Move refresh-on-resume from `StatsView` to the shell           | —        |
 
-Load the dataset with a **dynamic import** so its 106 KB stays out of the initial
-bundle — the same reason localForage is behind a lazy panel. And note the id
-risk: ids derive from wiki titles, so a page rename orphans a completion. The
-dataset keeps the title, so a rename is detectable; `--check` should call an id
-change a breaking diff rather than a routine one.
+### 4b′ first: the safety net doesn't exist
+
+`persist.ts` calls export "the real safety net" and CLAUDE.md says "this is why
+export/import exists". **Neither is true — nothing implements it.** The quest
+store is the first thing in the app holding genuinely unrecoverable data, and
+Safari evicts IndexedDB after ~7 days idle for non-installed sites. Building a
+UI that invites someone to hand-enter 214 completions before that exists is the
+wrong order, which is why this jumped the queue.
+
+It needs to cover `quests:progress`, `quests:goals` and `settings` — everything
+hand-entered — and nothing fetched, since cached hiscores restore themselves.
+
+### What 4b left in place
+
+`useQuestsStore` is the seam every quest panel goes through:
+
+- **`ensureReady()`** — dataset _and_ levels, in one call. Call it on mount.
+  Views should not call `ensureDataset()` alone; that's what produced the bug
+  where a cold load reported no username because only Stats fetched levels.
+- `statuses` (a `Map<id, QuestStatus>`), `plan`, `questPoints`,
+  `completedCount`, `levelsKnown`, `awaitingLevels`.
+- `cycleProgress(id)` for a single tap: todo → doing → done → todo.
+- `toggleGoal(id)` / `addGoal` / `removeGoal`.
+
+**`levelsKnown` and `awaitingLevels` are separate on purpose.** "No account
+configured" and "levels still loading" look identical in the data and must not
+read identically in the UI — conflating them is what made the panel tell the
+player to set a username they had already set.
+
+### Invariants worth not breaking
+
+- **Neither the dataset nor localForage may enter the entry chunk.** Verify with
+  `npm run build`, then grep the `index-*.js` named in `dist/client/index.html`
+  for `cooks-assistant` and `localforage`; both must be absent. The dataset
+  should appear as its own ~108 KB `quests-*.js`.
+- **Ids derive from wiki titles**, so a page rename orphans a completion. The
+  dataset keeps the title, so a rename is detectable; `--check` should treat an
+  id change as a breaking diff rather than a routine one.
+- **A full 214-quest sweep costs ~0.16 ms**, so recomputing `statuses` freely is
+  fine. It was 300× worse before `evaluateQuest` stopped totalling quest points
+  for quests that don't gate on them — if that regresses, look there first.
 
 ## Open questions
 

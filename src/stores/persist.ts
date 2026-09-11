@@ -29,8 +29,9 @@ export async function write(key: string, value: unknown): Promise<void> {
     // snapshot to plain data first. Every persisted value goes through this.
     await store.setItem(key, JSON.parse(JSON.stringify(value)))
   } catch {
-    // Storage full, or unavailable. Losing a write is survivable; the export
-    // in the About panel is the real safety net.
+    // Storage full, or unavailable. Losing a write is survivable only because
+    // the next one will probably succeed — the export that is supposed to be
+    // the real safety net is NOT built yet (ROADMAP slice 4b′).
   }
 }
 
