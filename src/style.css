@@ -244,6 +244,22 @@ body {
 }
 
 /*
+ * Stretches an <a>'s hit area to fill its nearest `position: relative`
+ * ancestor, via an absolutely-positioned invisible pseudo-element. Exists
+ * because a quest row needs to navigate (a real <a>, which is what
+ * RouterLink renders) *and* hold a separate <button> — the two can't nest,
+ * interactive-in-interactive is invalid HTML. This lets both live in one
+ * visual oak block: the anchor stays in normal flow for its own text, the
+ * button sits alongside it with `relative z-10` to keep capturing its own
+ * clicks above this pseudo-element, and nothing needs the invalid nesting.
+ */
+.stretched-link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+/*
  * The skills grid reflows on the space the *panel* has, not the viewport —
  * these query the unnamed container on <main>, which is the panel's own box.
  * 24 skills, so column counts are chosen to divide cleanly and to keep the

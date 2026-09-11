@@ -5,10 +5,10 @@ import { useQuestsStore } from '@/stores/quests'
 import type { QuestProgress } from '@/lib/quests'
 
 /*
- * The Quests panel: browsing, searching and filtering the full dataset, and
- * adding quests to the queue. Quest detail — tapping into a single quest for
- * its full requirements — is slice 4d; a row's tap target here is reserved
- * for that, which is why "add to queue" gets its own button instead.
+ * The Quests panel: browsing, searching and filtering the full dataset,
+ * adding quests to the queue, and opening a quest's own detail. Tapping a
+ * row opens detail (4d); add-to-queue gets its own button precisely so it
+ * doesn't collide with that.
  */
 const quests = useQuestsStore()
 
@@ -52,18 +52,35 @@ const filtered = computed(() => {
 })
 
 /**
- * A colored left edge rather than a rounded dot — square corners are the art
+ * A colored stripe rather than a rounded dot — square corners are the art
  * direction's rule (see CLAUDE.md), and red/amber/green is the in-game
- * journal's own vocabulary for exactly this.
+ * journal's own vocabulary for exactly this. A standalone element, not a
+ * `border-l` on the row: the row itself is now a real oak button
+ * (`bevel-oak`), and layering a status border on top of that class risks the
+ * same cascade fight documented on the requirement rows in
+ * QuestDetailView.vue — a separate flex child sidesteps it entirely.
  */
-const STATUS_BORDER: Record<QuestProgress, string> = {
-  todo: 'border-l-todo',
-  doing: 'border-l-doing',
-  done: 'border-l-done',
+const STATUS_STRIPE: Record<QuestProgress, string> = {
+  todo: 'bg-todo',
+  doing: 'bg-doing',
+  done: 'bg-done',
 }
 
-function statusBorderClass(id: string): string {
-  return STATUS_BORDER[quests.progressOf(id)]
+function statusStripeClass(id: string): string {
+  return STATUS_STRIPE[quests.progressOf(id)]
+}
+
+/**
+ * The stripe says todo/doing/done — progress, not eligibility — so a
+ * blocked-but-not-started quest looks identical to a startable one without
+ * this. Deliberately conservative to match the engine's one rule: only ever
+ * true once levels are actually known, never while they're still loading or
+ * absent, and only for `todo` — canStart isn't decision-relevant once a
+ * quest is already doing or done.
+ */
+function isBlocked(id: string): boolean {
+  if (!quests.levelsKnown || quests.progressOf(id) !== 'todo') return false
+  return quests.statuses.get(id)?.canStart === false
 }
 </script>
 
@@ -141,42 +158,90 @@ function statusBorderClass(id: string): string {
         No quests match these filters.
       </p>
 
-      <ul class="m-0 flex list-none flex-col p-0">
+      <ul class="m-0 flex flex-col gap-1.5 p-0">
         <li
           v-for="quest in filtered"
           :key="quest.id"
-          class="flex items-center gap-2 border-b-2 border-b-bevel-dk/20 border-l-4 py-2 pl-2 pr-1"
-          :class="statusBorderClass(quest.id)"
+          class="flex items-stretch"
         >
-          <div class="min-w-0 flex-1">
-            <div class="truncate text-[15px] leading-tight">
-              {{ quest.name }}
-            </div>
-            <div class="truncate text-[12px] text-ink-soft">
-              {{ quest.difficulty ?? 'Unknown difficulty' }}
-              &middot; {{ quest.questPoints }} qp
-              <template v-if="!quest.members">&middot; F2P</template>
-            </div>
-          </div>
+          <span
+            class="w-1 shrink-0"
+            :class="statusStripeClass(quest.id)"
+            aria-hidden="true"
+          />
 
-          <button
-            type="button"
-            :aria-label="
-              quests.isGoal(quest.id) ? 'Remove from queue' : 'Add to queue'
-            "
-            class="tap pressable bevel-oak flex w-11 shrink-0 items-center justify-center"
-            :class="
-              quests.isGoal(quest.id)
-                ? 'bevel-oak-in bg-brown text-gold'
-                : 'bg-brown-lt text-parchment-3'
-            "
-            @click="quests.toggleGoal(quest.id)"
+          <!-- One oak block, matching the mockup — but a <button> can't nest
+               inside the <a> a RouterLink renders, so the link and the
+               add-to-queue button are siblings here, not link-then-button.
+               `.stretched-link` (see style.css) expands the anchor's own hit
+               area to fill this whole `relative` block; the button rides
+               above it with `relative z-10` so it keeps capturing its own
+               clicks instead of the link swallowing them. -->
+          <div
+            class="bevel-oak relative flex min-w-0 flex-1 items-center gap-1 bg-brown-lt py-1.5 pl-3 pr-3"
           >
+            <RouterLink
+              :to="`/quests/${quest.id}`"
+              class="tap stretched-link flex min-w-0 flex-1 flex-col justify-center text-gold no-underline"
+            >
+              <span
+                class="block truncate text-[15px] font-bold leading-tight engraved"
+              >
+                {{ quest.name }}
+              </span>
+              <span
+                class="flex items-center gap-1 text-[12px] text-parchment-3"
+              >
+                <!-- Blocked, not just "not started" — the stripe alone can't
+                     say that, since it's the same red either way. -->
+                <AppIcon
+                  v-if="isBlocked(quest.id)"
+                  name="padlock"
+                  :size="10"
+                  class="pointer-events-none shrink-0 text-todo"
+                  aria-hidden="true"
+                />
+                <span class="min-w-0 truncate">
+                  {{ quest.difficulty ?? 'Unknown difficulty' }}
+                  &middot; {{ quest.questPoints }} qp
+                  <template v-if="!quest.members">&middot; F2P</template>
+                </span>
+              </span>
+            </RouterLink>
+
+            <button
+              type="button"
+              :aria-label="
+                quests.isGoal(quest.id) ? 'Remove from queue' : 'Add to queue'
+              "
+              class="tap pressable bevel-oak relative z-10 flex w-11 shrink-0 items-center justify-center"
+              :class="
+                quests.isGoal(quest.id)
+                  ? 'bevel-oak-in bg-brown text-gold'
+                  : 'bg-brown-dk text-parchment-3'
+              "
+              @click="quests.toggleGoal(quest.id)"
+            >
+              <AppIcon
+                :name="quests.isGoal(quest.id) ? 'check' : 'plus'"
+                :size="16"
+              />
+            </button>
+
+            <!-- Decorative and inert (`pointer-events-none`): without that,
+                 this being a *positioned* sibling of the stretched-link
+                 anchor (even unintentionally, e.g. via a stray `relative`)
+                 is enough to paint it above the anchor's stretched hit area
+                 and swallow taps meant for navigation. `chevron` (an open
+                 notch, not `caretDown` rotated) because a filled triangle
+                 reads as a play button once it points sideways. -->
             <AppIcon
-              :name="quests.isGoal(quest.id) ? 'check' : 'plus'"
-              :size="16"
+              name="chevron"
+              :size="12"
+              class="pointer-events-none ml-1 shrink-0 text-gold"
+              aria-hidden="true"
             />
-          </button>
+          </div>
         </li>
       </ul>
     </template>

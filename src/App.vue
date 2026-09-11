@@ -4,10 +4,14 @@ import { useRoute } from 'vue-router'
 import AppIcon from '@/components/AppIcon.vue'
 import TabBar from '@/components/TabBar.vue'
 import { usePullToRefresh } from '@/composables/usePullToRefresh'
+import { pageHeader } from '@/composables/usePageHeader'
 import { panelById } from '@/panels/registry'
 
 const route = useRoute()
 const activePanel = computed(() => panelById(String(route.meta.panelId ?? '')))
+const headerTitle = computed(
+  () => pageHeader.value?.title ?? activePanel.value?.title ?? 'StageScape',
+)
 
 const scroller = ref<HTMLElement | null>(null)
 
@@ -90,13 +94,28 @@ const pullLabel = computed(() => {
            title. Centre is also where a quest journal puts its heading, so
            this costs nothing diegetically.
 
-           Consequence for the quest detail view: a back button on the left
-           would sit under that same menu. Put it on the right, or inset it. -->
-      <h1
-        class="m-0 text-center font-display text-[22px] font-normal text-gold engraved"
-      >
-        {{ activePanel?.title ?? 'StageScape' }}
-      </h1>
+           A back button (quest detail, and whatever full-panel views follow
+           it) goes on the right for the same reason — the left is where that
+           menu sits. A same-width spacer on the left keeps the title
+           genuinely centred whether or not a back button is present, rather
+           than the title drifting right when it's there. -->
+      <div class="flex items-center gap-2">
+        <div class="w-11 shrink-0" aria-hidden="true" />
+        <h1
+          class="m-0 min-w-0 flex-1 truncate text-center font-display text-[22px] font-normal text-gold engraved"
+        >
+          {{ headerTitle }}
+        </h1>
+        <RouterLink
+          v-if="pageHeader?.backTo"
+          :to="pageHeader.backTo"
+          aria-label="Back"
+          class="tap pressable bevel-oak flex w-11 shrink-0 items-center justify-center bg-brown-lt text-gold"
+        >
+          <AppIcon name="back" :size="18" />
+        </RouterLink>
+        <div v-else class="w-11 shrink-0" aria-hidden="true" />
+      </div>
     </header>
 
     <!-- Pull-to-refresh indicator. An oak band revealed above the panel, so it

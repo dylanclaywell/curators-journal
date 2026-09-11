@@ -18,6 +18,11 @@ const route = useRoute()
        single-class selectors, so whichever Tailwind emits last wins and the
        active color silently loses.
 
+       Matched on `meta.panelId`, not `route.path === panel.path`: a
+       full-panel drill-down like quest detail lives at a different path
+       (`/quests/:id`) but carries the same panelId, and should still light up
+       the tab it was reached from.
+
        Labels collapse and the strip scrolls as the rail narrows — see the
        .tab-strip rules. The accessible name comes from aria-label either way,
        so a tab that drops its label doesn't drop its meaning. -->
@@ -32,7 +37,7 @@ const route = useRoute()
       :aria-label="panel.title"
       class="tab tap pressable engraved flex flex-col items-center justify-center gap-1 text-sm font-bold no-underline"
       :class="
-        route.path === panel.path
+        route.meta.panelId === panel.id
           ? 'bevel-oak-in bg-brown text-gold'
           : 'bevel-oak bg-brown-lt text-parchment-3'
       "

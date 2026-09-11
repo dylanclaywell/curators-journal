@@ -20,9 +20,11 @@ The quest **dataset** (214 quests), the **engine** (`src/lib/quests.ts`) and the
 panel loads the dataset on demand and reports how many quests you could start
 right now, against live levels.
 
-What's missing is the **UI** — browsing, searching, quest detail, and the queue
-itself. Export/import (slice 4b′) now exists, from the About panel — see
-Phase 4 below.
+Browsing, searching, filtering, add-to-queue and quest detail all exist now —
+see Phase 4 below. What's left is the **queue itself** (4e): rendering the
+already-working plan (`buildPlan` has ordered and expanded prerequisites since
+4a) as an actual view, rather than a placeholder that only reports a count.
+Export/import (slice 4b′) also exists, from the About panel.
 
 ## Phases
 
@@ -305,8 +307,27 @@ Consequences worth holding onto:
   two packs — game-icons on the 512 grid beside Phosphor's `chart` and `gear` on
   256 — so check the four together on device.
 - **Quest detail is a full-panel view with a back button**, not an overlay.
-  Reachable from both panels. In the docked case there may be ~200px of height,
-  where a modal is unusable.
+  Reachable from both panels — Quests today; Queue joins once it has real rows
+  to tap in 4e. In the docked case there may be ~200px of height, where a
+  modal is unusable.
+
+**Built in 4d: a route outside the registry, and two shell changes it forced.**
+`/quests/:id` isn't a registry panel — it never appears in the tab bar — but
+carries `meta.panelId: 'quests'` so the shell still knows which panel it was
+reached from. That one convention paid for two things at once:
+
+- `TabBar.vue`'s active check moved from `route.path === panel.path` to
+  `route.meta.panelId === panel.id`. Exact-path matching would have dropped
+  the Quests tab's highlight the moment the path became `/quests/some-id` —
+  the generalization is correct for any future full-panel drill-down, not
+  just this one.
+- The header title can't be `activePanel.title` alone anymore — a quest's name
+  isn't known at route-definition time. `usePageHeader.ts` is a small shared
+  `ref` the shell (always in the initial bundle) reads and a lazy-loaded view
+  writes, sidestepping the alternative of statically importing the quests
+  store into `App.vue`, which would have pulled the dataset and localForage
+  into the entry chunk. The back button lives in this same shared header slot,
+  on the right, per the iPadOS window-menu finding above.
 
 **Progress gets marked from quest detail (4d), not from a Quests-panel row.**
 `cycleProgress()` existed since 4b with a doc comment claiming the opposite —
@@ -351,15 +372,15 @@ matters because the plan is persisted and returned to.
 
 ### Slices
 
-| Slice  | Contents                                                    | State    |
-| ------ | ----------------------------------------------------------- | -------- |
-| 4a     | `src/lib/quests.ts` — eligibility, plan ordering            | done     |
-| 4b     | `src/stores/quests.ts` — dataset load, progress, goals      | done     |
-| 4b′    | Export / import — do this before any UI invites data entry  | done     |
-| 4c     | Quests panel: list, search, filters, add to queue           | done     |
-| **4d** | **Quest detail: full-panel, from either panel**             | **next** |
-| 4e     | Queue panel: goals, expansion, ordering, reorder and remove | —        |
-| 4f     | Move refresh-on-resume from `StatsView` to the shell        | —        |
+| Slice  | Contents                                                        | State    |
+| ------ | --------------------------------------------------------------- | -------- |
+| 4a     | `src/lib/quests.ts` — eligibility, plan ordering                | done     |
+| 4b     | `src/stores/quests.ts` — dataset load, progress, goals          | done     |
+| 4b′    | Export / import — do this before any UI invites data entry      | done     |
+| 4c     | Quests panel: list, search, filters, add to queue               | done     |
+| 4d     | Quest detail: full-panel, from either panel                     | done     |
+| **4e** | **Queue panel: goals, expansion, ordering, reorder and remove** | **next** |
+| 4f     | Move refresh-on-resume from `StatsView` to the shell            | —        |
 
 ### 4b′: the safety net, done before any UI invites data entry
 

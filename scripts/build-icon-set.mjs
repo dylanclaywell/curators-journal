@@ -99,6 +99,22 @@ const ICONS = [
     'node_modules/@phosphor-icons/core/assets/bold/upload-simple-bold.svg',
     'phosphor',
   ],
+  // Solid, matching caretDown's choice: a filled triangle stays legible as a
+  // back button at 18px where a stroked arrow would thin out.
+  [
+    'back',
+    'node_modules/@phosphor-icons/core/assets/fill/caret-left-fill.svg',
+    'phosphor',
+  ],
+  // A notched chevron, not a filled triangle: a solid equilateral triangle
+  // reads as a play button once it's rotated to point sideways. Bold weight
+  // (not fill) draws an actual open caret, so "this row opens something"
+  // doesn't get misread as "press to start something".
+  [
+    'chevron',
+    'node_modules/@phosphor-icons/core/assets/bold/caret-right-bold.svg',
+    'phosphor',
+  ],
 ]
 
 /** Pulls the viewBox and every path `d` out of one SVG file. */
