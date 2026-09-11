@@ -243,6 +243,21 @@ body {
   }
 }
 
+/* The same affordance for a control sitting on parchment rather than oak.
+   `.pressable` hard-codes oak tones, so using it on a parchment control
+   repaints it brown under the thumb — which is how this came to exist. */
+.pressable-parchment:active {
+  border-top-color: var(--color-bevel-dk);
+  border-left-color: var(--color-bevel-dk);
+  border-right-color: var(--color-bevel-lt);
+  border-bottom-color: var(--color-bevel-lt);
+}
+@media (hover: hover) {
+  .pressable-parchment:hover {
+    background-color: var(--color-parchment-3);
+  }
+}
+
 /*
  * Stretches an <a>'s hit area to fill its nearest `position: relative`
  * ancestor, via an absolutely-positioned invisible pseudo-element. Exists

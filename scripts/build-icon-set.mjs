@@ -79,6 +79,20 @@ const ICONS = [
     'node_modules/@phosphor-icons/core/assets/fill/caret-down-fill.svg',
     'phosphor',
   ],
+  // Queue controls (4e). An X rather than a trash can for removing a goal:
+  // nothing is destroyed — the quest and its progress stay, it just leaves the
+  // queue — and a bin overstates that on a panel holding precious data.
+  ['x', 'node_modules/@phosphor-icons/core/assets/bold/x-bold.svg', 'phosphor'],
+  [
+    'arrowUp',
+    'node_modules/@phosphor-icons/core/assets/bold/arrow-up-bold.svg',
+    'phosphor',
+  ],
+  [
+    'arrowDown',
+    'node_modules/@phosphor-icons/core/assets/bold/arrow-down-bold.svg',
+    'phosphor',
+  ],
   [
     'refresh',
     'node_modules/@phosphor-icons/core/assets/bold/arrows-clockwise-bold.svg',
