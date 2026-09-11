@@ -101,6 +101,13 @@ deliberate: the eventual plugin system should be "register a panel from a
 manifest," not an app rewrite. Keep `PanelDefinition` additive and serializable
 — that's why `icon` is a name looked up in the icon set rather than a component.
 
+**A drill-down route carries the panel it was reached from.** Quest detail is
+not a registry panel, but it mounts at both `/quests/:id` and `/queue/:id` with
+`meta.panelId` naming the origin, and derives its back target, its tab-bar
+highlight and its own outgoing links from that. Put this context in the path,
+never in a remembered variable: iOS kills backgrounded PWAs, and only the URL
+survives the relaunch.
+
 **Pure lib modules cross the `src/worker/` ↔ `src/` boundary.** Anything that
 parses or computes lives in `src/lib/*` with no DOM and no network, so the
 Worker and the client share one implementation. `src/worker/` is a different
@@ -130,8 +137,10 @@ fragile live wiki query. Regenerate deliberately with `npm run build:quests`
 
 **Two bundle invariants, both easy to break by adding one static import:**
 
-- `src/data/quests.json` (~108 KB) must stay out of the entry chunk — the quest
-  store imports it dynamically.
+- `src/data/quests.json` (~297 KB built, ~68 KB gzipped) must stay out of the
+  entry chunk — the quest store imports it dynamically. It roughly tripled when
+  4d′ added the items each quest wants; it is now the app's largest asset by a
+  wide margin, so weigh anything that would grow it again.
 - localForage must too, which is why stores that persist are only reached from
   lazily-loaded panels, and why `App.vue`'s refresh handler imports its stores
   inside the function.
@@ -188,6 +197,10 @@ manipulation`). No exceptions, including icon-only buttons.
 - **Press states use `:active`, not `:hover`.** Touch has no hover, so a
   hover-only affordance is invisible on the target device. `.pressable` handles
   this. Any hover styling belongs inside `@media (hover: hover)`.
+- **`.pressable` is oak-only; parchment controls get `.pressable-parchment`.**
+  The first hard-codes brown tones, so putting it on a parchment control
+  repaints it brown under the thumb — which is how the second came to exist.
+  Match the press class to the surface, not to the element.
 - **Never put information behind hover** — no tooltip as the only source of a
   fact.
 - Base font size is 16px. Don't go below it for body text or inputs; iOS zooms

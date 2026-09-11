@@ -26,10 +26,16 @@ you to bring (4d′) and the full prerequisite chain behind it rather than one
 level (4d″). Export/import (slice 4b′) landed ahead of all of them, from the
 About panel.
 
-What's left is the **queue itself** (4e): rendering the already-working plan
-(`buildPlan` has ordered and expanded prerequisites since 4a) as an actual
-view, rather than a placeholder that only reports a count. 4f (refresh-on-resume
-moves from `StatsView` to the shell) is small and independent of it.
+The **queue is real** (4e): it leads with what you can start, keeps the ordered
+plan and your goals behind a tab switch, and lets you start and finish a quest
+without leaving the panel. Curating moved wholesale to the Quests panel in the
+process — see 4e below for why the Queue has no "add" button.
+
+What's left of Phase 4 is small: **reordering goals** (4e′, the engine already
+honours the order) and **4f**, moving refresh-on-resume from `StatsView` to the
+shell. Both are independent. The more interesting question is whether the shell
+itself is right — nothing here has been used on a docked iPad yet, and the
+collapse thresholds and the bottom tab bar are both unmeasured guesses.
 
 ## Phases
 
@@ -39,7 +45,7 @@ moves from `StatsView` to the shell) is small and independent of it.
 | 1 — Shell                       | done  | Panel registry, generated routes, tab bar, About panel                       |
 | 2 — Hiscores                    | done  | 2a route + parser · 2b store + persistence · 2c skills grid                  |
 | 3 — Quest dataset               | done  | 214 quests committed; `build:quests` fetches · parses · cross-checks · emits |
-| **4 — Quest engine and queue**  | next  | Eligibility resolution, prerequisite expansion, the queue UI                 |
+| **4 — Quest engine and queue**  | next  | Engine, detail and queue all built; reorder (4e′) and 4f are what's left     |
 | Later — ironman requirements    | —     | Currently dropped entirely; see below                                        |
 | Later — prices panel            | —     | `prices.runescape.wiki`, same Worker-proxy shape                             |
 | Later — wide-and-shallow layout | —     | Tabs to a left strip when short and wide; see CLAUDE.md                      |
@@ -377,17 +383,18 @@ matters because the plan is persisted and returned to.
 
 ### Slices
 
-| Slice  | Contents                                                     | State    |
-| ------ | ------------------------------------------------------------ | -------- |
-| 4a     | `src/lib/quests.ts` — eligibility, plan ordering             | done     |
-| 4b     | `src/stores/quests.ts` — dataset load, progress, goals       | done     |
-| 4b′    | Export / import — do this before any UI invites data entry   | done     |
-| 4c     | Quests panel: list, search, filters, add to queue            | done     |
-| 4d     | Quest detail: full-panel, from either panel                  | done     |
-| 4d′    | Items required — dataset field, generator, detail view       | done     |
-| 4d″    | Transitive prerequisite chain on quest detail                | done     |
-| **4e** | **Queue panel: goals, expansion, ordering, reorder, remove** | **next** |
-| 4f     | Move refresh-on-resume from `StatsView` to the shell         | —        |
+| Slice   | Contents                                                   | State    |
+| ------- | ---------------------------------------------------------- | -------- |
+| 4a      | `src/lib/quests.ts` — eligibility, plan ordering           | done     |
+| 4b      | `src/stores/quests.ts` — dataset load, progress, goals     | done     |
+| 4b′     | Export / import — do this before any UI invites data entry | done     |
+| 4c      | Quests panel: list, search, filters, add to queue          | done     |
+| 4d      | Quest detail: full-panel, from either panel                | done     |
+| 4d′     | Items required — dataset field, generator, detail view     | done     |
+| 4d″     | Transitive prerequisite chain on quest detail              | done     |
+| 4e      | Queue panel: next up, plan, goals, remove, start/finish    | done     |
+| **4e′** | **Reorder goals — the last piece of 4e**                   | **next** |
+| 4f      | Move refresh-on-resume from `StatsView` to the shell       | —        |
 
 ### 4d′: items required — a real, previously-unscoped gap
 
@@ -540,6 +547,74 @@ Two smaller calls worth keeping:
   instinct and is wrong twice — CLAUDE.md puts buttons on oak, and
   `.pressable` hard-codes an oak press state, so a parchment button would flip
   brown under the thumb.
+
+### 4e: the queue, and the workflow rethink it forced
+
+**Built.** `QueueView.vue` renders _Next up_ over a tabbed _Plan_ / _Goals_.
+Quest detail gained a goal toggle, the Queue lost its add button, and
+`/queue/:id` exists. Three things drove the shape, and all three came from
+looking at real numbers or the real screen rather than from the plan:
+
+**A plan is long, so the panel can't lead with it.** Dragon Slayer II alone
+expands to 36 steps; two goals reach 44. The queue's question is "what am I
+doing next", asked mid-session with the game above, so the panel leads with the
+startable steps and keeps the ordered plan behind a tab, collapsed to five.
+Same truncation argument as the prerequisite chain, and safe for the same
+reason: dependency order means the visible rows are the near future.
+
+**Plan and goals are different workflows, not two halves of a view.** Stacked,
+they also read as redundant — every goal appears in both, and Dragon Slayer II
+sits at step 36 of its own plan. Tabs let one panel serve both and buy back the
+height. The selected tab is dark oak with gold, matching the shell's tab bar and
+quest detail's progress switcher; the panel carries its own parchment ground so
+its rows visibly belong to the selected tab.
+
+**"Add" was a mode change wearing the costume of an action.** The Queue's "Add
+another" handed you to the Quests panel for an open-ended session you never
+returned from. So curating is now a Quests-panel activity end to end — search,
+open a quest, read why it's hard, add it there — and the Queue has no add
+affordance at all, because the tab bar is always one tap away. The only
+exception is the empty state, which keeps a link named for its destination
+("Browse quests"): with nothing queued there is no session to lose.
+
+Two fixes fell out of that:
+
+- **`/queue/:id`.** Quest detail hardcoded `/quests` as its back target, so
+  opening a plan row from the Queue stranded you in a 214-row list and moved
+  the tab highlight with it. The same view now mounts under both panels and
+  reads `meta.panelId` for its back target and its own outgoing links, so a tap
+  three deep into a chain stays in the panel it started in. Context lives in
+  the path because that survives the relaunch a remembered variable wouldn't.
+- **Start / Finish on each Next up row.** Marking a quest done cost four
+  interactions and two navigations from the panel you return to mid-session.
+  The button names the _transition_, not the state, which works because
+  `buildPlan` drops finished quests — a row here is only ever todo or doing, so
+  there is no third case to decode. Finishing one promotes the next into its
+  place.
+
+**`buildPlan` now walks goals in the caller's order** rather than sorting their
+ids. Sorting quietly made reordering meaningless: the plan came out identical
+however you arranged your goals. Prerequisites stay sorted, since nobody chose
+their order, and the plan is still deterministic — the goal list is an explicit
+sequence. Measured: swapping two goals moves Song of the Elves from step 43 to
+step 14, with the same 44 steps and dependency order intact either way.
+
+**Still open, and worth checking on the device before building more:**
+
+- **4e′, reorder goals** — the only piece of 4e not built. The engine has
+  honoured goal order since the change above and `arrowUp`/`arrowDown` are
+  already in the icon set, so this is two controls in the Goals tab.
+- **The collapse thresholds are desk-width guesses.** The plan shows 5 of 44
+  and the prerequisite chain 6 of 35. Nobody has seen either in the docked
+  case.
+- **UI state still doesn't survive backgrounding**, and the queue's tab
+  selection now joins the list of things that should (with active panel, scroll
+  position and current step). It's deliberately a plain `ref` rather than a
+  one-off persistence key — see the banked idea below.
+- **The docked layout.** Phase 4 is nearly closed and "tabs to a left icon
+  strip when short and wide" has been in Later since the start. The queue is
+  the panel you'd actually live in down there, so this is the moment to find
+  out whether the bottom tab bar is the wrong shape.
 
 ### 4b′: the safety net, done before any UI invites data entry
 
