@@ -137,15 +137,20 @@ const startableAnywhere = computed(() => {
           Your queue is empty
         </p>
         <p class="m-0 max-w-[46ch] text-ink-soft">
-          Add a quest and StageScape works backwards through what it needs, then
-          tells you what you can start right now.
+          Pick a quest in the Quests tab and StageScape works backwards through
+          everything it needs, then tells you what you can start right now.
         </p>
+        <!-- The one place the Queue links to Quests, and it names a
+             destination rather than promising an action: with nothing queued
+             there's no session to lose, and a first run needs a way forward.
+             Once the queue has anything in it this button is gone, and the tab
+             bar is the way across. -->
         <RouterLink
           to="/quests"
           class="tap pressable bevel-oak mt-1 flex items-center gap-2 bg-brown px-3.5 font-bold text-gold no-underline engraved"
         >
-          <AppIcon name="plus" :size="15" />
-          Add a quest
+          <AppIcon name="openBook" :size="15" />
+          Browse quests
         </RouterLink>
 
         <!-- Useful on its own while the queue is empty, and proof the data
@@ -285,8 +290,8 @@ const startableAnywhere = computed(() => {
              quests, so completing everything you aimed at empties it. That's
              the good ending, and it must read as one rather than as a bug. -->
             <p v-if="!quests.plan.length" class="m-0 text-[15px]">
-              Everything you're aiming at is done. Add another goal to keep
-              going.
+              Everything you're aiming at is done. Pick another in the Quests
+              tab to keep going.
             </p>
 
             <p v-else class="m-0 text-[13px] text-ink-soft">
@@ -407,13 +412,14 @@ const startableAnywhere = computed(() => {
               </li>
             </ul>
 
-            <RouterLink
-              to="/quests"
-              class="tap pressable bevel-oak flex w-fit items-center gap-2 bg-brown px-3.5 font-bold text-gold no-underline engraved"
-            >
-              <AppIcon name="plus" :size="15" />
-              Add another
-            </RouterLink>
+            <!-- No "add" button here on purpose. Adding is a Quests-panel
+                 activity: you search, open a quest, read it, decide. A button
+                 on this panel promises a single action and instead hands you
+                 to another tab for an open-ended session you never return
+                 from. The Quests tab is one tap away in the bar regardless. -->
+            <p class="m-0 text-[13px] text-ink-soft">
+              Add more from the Quests tab.
+            </p>
           </section>
         </div>
       </div>

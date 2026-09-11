@@ -195,6 +195,41 @@ function statusStripeClass(id: string): string {
         </div>
       </section>
 
+      <!-- Queueing belongs here, not only on the list row it landed on in 4c.
+           Curating the queue is a Quests-panel activity — the Queue panel has
+           no "add" of its own, because a button that silently moves you to
+           another tab reads as one action when it's really a mode change. So
+           the flow is: search, open a quest, read why it's hard, decide, add,
+           go back for the next one. Without a toggle here, that flow dead-ends
+           at the moment you've decided. -->
+      <section class="flex flex-col gap-1.5">
+        <h2 class="m-0 text-[13px] font-bold text-ink-soft">Queue</h2>
+        <button
+          type="button"
+          class="tap pressable bevel-oak flex w-full items-center justify-center gap-2 px-3 font-bold"
+          :class="
+            quests.isGoal(quest.id)
+              ? 'bevel-oak-in bg-brown text-gold engraved'
+              : 'bg-brown-lt text-parchment-3'
+          "
+          @click="quests.toggleGoal(quest.id)"
+        >
+          <AppIcon
+            :name="quests.isGoal(quest.id) ? 'check' : 'plus'"
+            :size="15"
+          />
+          {{ quests.isGoal(quest.id) ? 'In your queue' : 'Add to queue' }}
+        </button>
+        <!-- Says what queueing actually does, because it isn't obvious that
+             one goal can pull in dozens of quests behind it. -->
+        <p
+          v-if="!quests.isGoal(quest.id)"
+          class="m-0 text-[13px] text-ink-soft"
+        >
+          StageScape works backwards from this and everything it needs.
+        </p>
+      </section>
+
       <section
         v-if="quest.requirements.skills.length"
         class="flex flex-col gap-1.5"
