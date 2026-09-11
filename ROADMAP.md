@@ -308,6 +308,15 @@ Consequences worth holding onto:
   Reachable from both panels. In the docked case there may be ~200px of height,
   where a modal is unusable.
 
+**Progress gets marked from quest detail (4d), not from a Quests-panel row.**
+`cycleProgress()` existed since 4b with a doc comment claiming the opposite —
+"a single tap on a quest row" — which never got built and turned out to be the
+wrong call once the list existed: a tap on one of 214 rows is reserved for
+opening that quest's detail, where there's room to show _why_ it's blocked, not
+a blind whole-quest toggle. Add-to-queue is the one action that did land on the
+list row directly (4c), because it has nowhere else to go yet and doesn't need
+that context.
+
 ### Two things the engine settled
 
 **Quest progress is three-state: `todo` / `doing` / `done`.** Not a checkbox.
@@ -347,8 +356,8 @@ matters because the plan is persisted and returned to.
 | 4a     | `src/lib/quests.ts` — eligibility, plan ordering            | done     |
 | 4b     | `src/stores/quests.ts` — dataset load, progress, goals      | done     |
 | 4b′    | Export / import — do this before any UI invites data entry  | done     |
-| **4c** | **Quests panel: list, search, filters, add to queue**       | **next** |
-| 4d     | Quest detail: full-panel, from either panel                 | —        |
+| 4c     | Quests panel: list, search, filters, add to queue           | done     |
+| **4d** | **Quest detail: full-panel, from either panel**             | **next** |
 | 4e     | Queue panel: goals, expansion, ordering, reorder and remove | —        |
 | 4f     | Move refresh-on-resume from `StatsView` to the shell        | —        |
 
