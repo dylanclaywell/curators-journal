@@ -192,7 +192,7 @@ const startableAnywhere = computed(() => {
             >
               <span class="w-1 shrink-0 bg-done" aria-hidden="true" />
               <RouterLink
-                :to="`/quests/${step.quest.id}`"
+                :to="`/queue/${step.quest.id}`"
                 class="tap pressable bevel-oak flex min-w-0 flex-1 items-center gap-2 bg-brown py-1.5 pl-3 pr-3 no-underline"
               >
                 <span
@@ -325,7 +325,7 @@ const startableAnywhere = computed(() => {
                   aria-hidden="true"
                 />
                 <RouterLink
-                  :to="`/quests/${step.quest.id}`"
+                  :to="`/queue/${step.quest.id}`"
                   class="tap pressable bevel-oak flex min-w-0 flex-1 items-center gap-2 bg-brown-lt py-1.5 pl-3 pr-3 no-underline"
                 >
                   <span class="nums shrink-0 text-[12px] text-parchment-3">{{
@@ -386,7 +386,7 @@ const startableAnywhere = computed(() => {
                 class="flex items-stretch gap-1.5"
               >
                 <RouterLink
-                  :to="`/quests/${goal.id}`"
+                  :to="`/queue/${goal.id}`"
                   class="tap pressable bevel-oak flex min-w-0 flex-1 items-center gap-2 bg-brown-lt py-1.5 pl-3 pr-3 no-underline"
                 >
                   <span

@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
+import { useRoute } from 'vue-router'
 import AppIcon from '@/components/AppIcon.vue'
 import QuestItemLines from '@/components/QuestItemLines.vue'
 import { pageHeader } from '@/composables/usePageHeader'
 import { combatLevel, prerequisiteChain } from '@/lib/quests'
 import type { QuestProgress } from '@/lib/quests'
 import type { SkillRequirement } from '@/lib/types'
+import { panelById } from '@/panels/registry'
 import { useQuestsStore } from '@/stores/quests'
 
 /*
@@ -24,13 +26,33 @@ const status = computed(() =>
   quest.value ? quests.statuses.get(quest.value.id) : undefined,
 )
 
+/*
+ * This view is mounted under two paths — `/quests/:id` and `/queue/:id` — and
+ * the difference is which panel you came from. Back has to return there: a plan
+ * row opened from the Queue that dropped you into the 214-row quest list would
+ * be sending you somewhere you'd never been.
+ *
+ * Read from `meta.panelId` rather than tracked in a variable, because the path
+ * is the only form of this that survives the app being killed in the
+ * background, which iOS does to a home-screen PWA.
+ */
+const route = useRoute()
+const fromPanel = computed(
+  () => panelById(String(route.meta.panelId ?? '')) ?? panelById('quests')!,
+)
+
+/** Keeps a tap from one quest to another inside the panel you started in. */
+function detailPath(id: string): string {
+  return `${fromPanel.value.path}/${id}`
+}
+
 // Watches `quest`, not just mount: Vue Router reuses this component when
 // navigating from one quest straight to another (a prerequisite link below),
 // since only the `:id` param changes — a mount-only title would go stale.
 watch(
-  quest,
-  (q) => {
-    pageHeader.value = { title: q?.name ?? 'Quest', backTo: '/quests' }
+  [quest, fromPanel],
+  ([q, panel]) => {
+    pageHeader.value = { title: q?.name ?? 'Quest', backTo: panel.path }
   },
   { immediate: true },
 )
@@ -134,11 +156,11 @@ function statusStripeClass(id: string): string {
     <template v-else-if="!quest">
       <p class="m-0 text-[15px] text-ink-soft">Quest not found.</p>
       <RouterLink
-        to="/quests"
+        :to="fromPanel.path"
         class="tap pressable bevel-oak flex w-fit items-center gap-2 bg-brown px-3.5 font-bold text-gold engraved"
       >
         <AppIcon name="back" :size="14" />
-        Back to Quests
+        Back to {{ fromPanel.title }}
       </RouterLink>
     </template>
 
@@ -326,7 +348,7 @@ function statusStripeClass(id: string): string {
             />
 
             <RouterLink
-              :to="`/quests/${step.quest.id}`"
+              :to="detailPath(step.quest.id)"
               class="tap pressable bevel-oak flex min-w-0 flex-1 items-center gap-2 bg-brown-lt py-1.5 pl-3 pr-3 no-underline"
             >
               <span

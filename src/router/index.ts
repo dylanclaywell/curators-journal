@@ -16,14 +16,27 @@ const router = createRouter({
       meta: { panelId: panel.id },
     })),
     // Quest detail isn't a registry panel — it never appears in the tab bar —
-    // but `meta.panelId` still points at 'quests' so the tab bar keeps that
-    // tab highlighted and the shell knows which panel it was reached from.
-    // `/queue/:id` joins this once the Queue panel has real rows to tap (4e).
+    // but `meta.panelId` still names the panel it was reached from, so the tab
+    // bar keeps that tab highlighted and the view knows where "back" goes.
+    //
+    // The same component is mounted under both panels rather than sharing one
+    // path, because the panel you came from is part of where you are: opening a
+    // plan row from the Queue and landing back in a 214-row quest list is a
+    // different screen than the one you left. The path carries that context so
+    // it survives a reload and a relaunch, which a remembered variable
+    // wouldn't — this is a home-screen PWA that gets killed in the background.
     {
       path: '/quests/:id',
       name: 'quest-detail',
       component: () => import('@/views/QuestDetailView.vue'),
       meta: { panelId: 'quests' },
+      props: true,
+    },
+    {
+      path: '/queue/:id',
+      name: 'queue-quest-detail',
+      component: () => import('@/views/QuestDetailView.vue'),
+      meta: { panelId: 'queue' },
       props: true,
     },
     // Unknown paths land on the first panel rather than a dead end — a PWA
