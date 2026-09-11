@@ -190,7 +190,15 @@ const startableAnywhere = computed(() => {
               :key="step.quest.id"
               class="flex items-stretch"
             >
-              <span class="w-1 shrink-0 bg-done" aria-hidden="true" />
+              <span
+                class="w-1 shrink-0"
+                :class="
+                  quests.progressOf(step.quest.id) === 'doing'
+                    ? 'bg-doing'
+                    : 'bg-done'
+                "
+                aria-hidden="true"
+              />
               <RouterLink
                 :to="`/queue/${step.quest.id}`"
                 class="tap pressable bevel-oak flex min-w-0 flex-1 items-center gap-2 bg-brown py-1.5 pl-3 pr-3 no-underline"
@@ -200,14 +208,6 @@ const startableAnywhere = computed(() => {
                 >
                   {{ step.quest.name }}
                 </span>
-                <!-- Only worth saying on a step that isn't the goal itself:
-                     on the goal, "why am I doing this" answers itself. -->
-                <span
-                  v-if="!step.goal"
-                  class="shrink-0 text-[12px] text-parchment-3"
-                >
-                  Leads on
-                </span>
                 <AppIcon
                   name="chevron"
                   :size="12"
@@ -215,6 +215,47 @@ const startableAnywhere = computed(() => {
                   aria-hidden="true"
                 />
               </RouterLink>
+
+              <!-- The mid-session loop, and the reason this panel exists: you
+                   finish a quest with the game still open above, and want the
+                   next one without a round trip through its detail page.
+                   Marking progress used to cost four interactions and two
+                   navigations from here.
+
+                   The label is the *transition*, not the state — `buildPlan`
+                   drops finished quests, so a row here is only ever todo or
+                   doing and there is no third case to decode. "Leads on" gave
+                   up its place: at the 375px floor a name, a hint and a real
+                   tap target don't fit, and an action beats an annotation on
+                   the one row you came to act on. -->
+              <button
+                type="button"
+                class="tap pressable bevel-oak ml-1.5 flex shrink-0 items-center justify-center px-3 text-[13px] font-bold"
+                :class="
+                  quests.progressOf(step.quest.id) === 'doing'
+                    ? 'bg-brown-lt text-done'
+                    : 'bg-brown-lt text-parchment-3'
+                "
+                :aria-label="
+                  quests.progressOf(step.quest.id) === 'doing'
+                    ? `Mark ${step.quest.name} finished`
+                    : `Mark ${step.quest.name} started`
+                "
+                @click="
+                  quests.setProgress(
+                    step.quest.id,
+                    quests.progressOf(step.quest.id) === 'doing'
+                      ? 'done'
+                      : 'doing',
+                  )
+                "
+              >
+                {{
+                  quests.progressOf(step.quest.id) === 'doing'
+                    ? 'Finish'
+                    : 'Start'
+                }}
+              </button>
             </li>
           </ul>
         </template>
