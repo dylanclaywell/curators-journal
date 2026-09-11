@@ -167,6 +167,38 @@ export interface QuestRequirements {
   combatLevel?: number
 }
 
+/**
+ * One line of a quest's item list. Display only — nothing computes on these,
+ * because there is no inventory to check them against.
+ *
+ * A flat list of strings would have been enough for the ~200 quests whose items
+ * are a plain list, but not for the ones that branch: Heroes' Quest lists its
+ * items under "If you are a Black Arm Gang member:" and "If you are a Phoenix
+ * Gang member:", and flattening those tells the player to bring both sets. That
+ * is the same invisible wrongness that ruled out Wise Old Man and the composite
+ * Recipe for Disaster entry, so the structure is carried instead of discarded.
+ */
+export interface QuestItemLine {
+  /** Plain text, wiki markup already stripped. */
+  text: string
+  /**
+   * A label introducing the lines beneath it, rather than an item itself.
+   * Detected by a trailing colon, which is how the wiki writes them — 15 of the
+   * 16 real headings in the dataset. The exception is a bare "Recommended" on
+   * Forgettable Tale, which renders as an ordinary line; a wholly-bold rule
+   * would catch it but would also promote The Tourist Trap's bolded *note* to a
+   * heading, so the quieter failure was chosen.
+   */
+  heading?: boolean
+  /**
+   * Nesting depth in the wiki's bullet list; omitted at top level. Kept rather
+   * than flattened because a sub-bullet is usually a detail hanging off the line
+   * above ("Additional antipoison when fighting the hespori") and reads as a
+   * separate requirement once promoted. Goes 4 deep on 90 pages.
+   */
+  depth?: number
+}
+
 export interface Quest {
   /** Slug, e.g. "cooks-assistant". Stable across dataset regenerations. */
   id: string
@@ -199,6 +231,26 @@ export interface Quest {
    * call a quest startable when it isn't.
    */
   notes: string[]
+  /**
+   * Items the wiki says to bring. Deliberately *not* in `QuestRequirements`:
+   * the engine never reads these, so they don't belong beside the fields
+   * `canStart` / `canFinish` gate on.
+   *
+   * Near-universal — 200 of 216 pages state some — so an empty array usually
+   * means the quest genuinely needs nothing, not that the data is missing.
+   */
+  itemsRequired: QuestItemLine[]
+  /**
+   * The wiki's `recommended` param. Kept separate from `itemsRequired` rather
+   * than merged: required vs. recommended is a distinction this dataset already
+   * carries elsewhere (see `SkillRequirement.requiredToStart`), and collapsing
+   * it here would be the same mistake in miniature.
+   *
+   * Not strictly items — it also carries travel routes, combat levels and
+   * inventory-space advice — so present it as "recommended", not as a second
+   * item list.
+   */
+  itemsRecommended: QuestItemLine[]
   wikiUrl: string
 }
 

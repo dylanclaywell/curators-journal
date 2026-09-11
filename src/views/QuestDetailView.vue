@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, onMounted, onUnmounted, watch } from 'vue'
 import AppIcon from '@/components/AppIcon.vue'
+import QuestItemLines from '@/components/QuestItemLines.vue'
 import { pageHeader } from '@/composables/usePageHeader'
 import { combatLevel } from '@/lib/quests'
 import type { QuestProgress } from '@/lib/quests'
@@ -301,6 +302,27 @@ function statusStripeClass(id: string): string {
         <ul class="m-0 flex list-none flex-col gap-1 p-0 text-[15px]">
           <li v-for="(note, i) in quest.notes" :key="i">{{ note }}</li>
         </ul>
+      </section>
+
+      <!-- Items sit below the checkable requirements and above the wiki link:
+           they're what you act on once you've decided the quest is startable,
+           not part of deciding it. Neither list gates anything, so neither
+           carries a status color — see QuestItemLines.vue. -->
+      <section v-if="quest.itemsRequired.length" class="flex flex-col gap-1.5">
+        <h2 class="m-0 text-[13px] font-bold text-ink-soft">Items needed</h2>
+        <QuestItemLines :lines="quest.itemsRequired" />
+      </section>
+
+      <!-- Not a second item list: the wiki's `recommended` also carries combat
+           levels, travel routes and inventory-space advice, so the heading says
+           "Recommended" rather than promising items. Muted because it's
+           advisory — the required list above is the one that blocks you. -->
+      <section
+        v-if="quest.itemsRecommended.length"
+        class="flex flex-col gap-1.5"
+      >
+        <h2 class="m-0 text-[13px] font-bold text-ink-soft">Recommended</h2>
+        <QuestItemLines :lines="quest.itemsRecommended" muted />
       </section>
 
       <a

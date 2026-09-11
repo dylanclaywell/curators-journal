@@ -21,14 +21,15 @@ panel loads the dataset on demand and reports how many quests you could start
 right now, against live levels.
 
 Browsing, searching, filtering, add-to-queue and quest detail all exist now —
-see Phase 4 below, and export/import (slice 4b′) landed ahead of them, from the
-About panel. What's left, in order: **items required** (4d′) and
-the **transitive prerequisite chain** (4d″), both of which fill in a quest detail
-page that currently reads thinner than the quest actually is; then the **queue
-itself** (4e), rendering the already-working plan (`buildPlan` has ordered and
-expanded prerequisites since 4a) as an actual view, rather than a placeholder
-that only reports a count. 4f (refresh-on-resume moves from `StatsView` to the
-shell) is small and independent of the other three.
+see Phase 4 below, as do the items a quest asks you to bring (4d′).
+Export/import (slice 4b′) landed ahead of all of them, from the About panel.
+
+What's left, in order: the **transitive prerequisite chain** (4d″), the other
+half of a quest detail page that still reads thinner than the quest actually
+is; then the **queue itself** (4e), rendering the already-working plan
+(`buildPlan` has ordered and expanded prerequisites since 4a) as an actual
+view, rather than a placeholder that only reports a count. 4f (refresh-on-resume
+moves from `StatsView` to the shell) is small and independent of the other two.
 
 ## Phases
 
@@ -383,8 +384,8 @@ matters because the plan is persisted and returned to.
 | 4b′     | Export / import — do this before any UI invites data entry  | done     |
 | 4c      | Quests panel: list, search, filters, add to queue           | done     |
 | 4d      | Quest detail: full-panel, from either panel                 | done     |
-| **4d′** | **Items required — dataset field, generator, detail view**  | **next** |
-| 4d″     | Transitive prerequisite chain on quest detail               | —        |
+| 4d′     | Items required — dataset field, generator, detail view      | done     |
+| **4d″** | **Transitive prerequisite chain on quest detail**           | **next** |
 | 4e      | Queue panel: goals, expansion, ordering, reorder and remove | —        |
 | 4f      | Move refresh-on-resume from `StatsView` to the shell        | —        |
 
@@ -422,30 +423,58 @@ as a new gate.
 
 Plan:
 
-- **Types:** add `itemsRequired: string[]` and `itemsRecommended: string[]` to
-  `Quest` (not to `QuestRequirements` — these never affect `canStart`/
-  `canFinish`, so they don't belong with the fields the engine gates on).
-  Keep the two separate rather than merging into `notes`: "required" and
-  "recommended" are a distinction this project already cares about a lot
-  (see `requiredToStart`), and collapsing it here would be the same mistake
-  in miniature.
-- **Generator:** extract `items`/`recommended` from the already-parsed
-  `Quest details` template. Split on `*`/`**` bullet lines (flatten nested
-  bullets — the hespori sub-bullet under `recommended` above is exactly this),
-  strip each line to plain text (`[[X|Y]]` → `Y`, `[[X]]` → `X`), trim. Most
-  early/low-level quests won't have either param — empty array, same
-  convention as `notes` and the 19 quests with no requirements block at all.
-- **No independent cross-check exists for this** the way `Module:Questreq/data`
-  cross-checked skill requirements — validate by spot-checking a sample of
-  generated entries against their wiki pages by hand, not a scripted diff.
-- **Engine:** no changes. `evaluateQuest` never reads these fields, same as
-  `notes`.
-- **UI:** a new section in `QuestDetailView.vue`, near the existing notes
-  section — "Items needed" (required) and, lower-emphasis, "Recommended".
-  Plain bullet lists; nothing here is a status color or a tap target.
-- **Cost:** a full dataset regen (`npm run build:quests`), same shape as any
-  other schema change to the generator — deliberate, reviewable diff, not
-  automatic.
+**Built.** `parseItemList` in the generator, `QuestItemLine` in
+`src/lib/types.ts`, `QuestItemLines.vue` rendering both lists on quest detail.
+The engine is untouched, as planned — `evaluateQuest` never reads these.
+
+Surveying the cached wikitext before writing the parser contradicted three
+assumptions in the plan above, all in the same direction: the field is bigger
+and more structured than "a bulleted list of free text" suggested.
+
+- **Coverage is near-universal, not sparse.** The plan guessed "most
+  early/low-level quests won't have either param." In fact 213 of 216 pages
+  carry `items` and 205 carry `recommended`; 200 and 201 respectively say
+  something other than "None". So an empty array now means the quest really
+  needs nothing, and a _drop_ in the counts after a regen means the wiki
+  renamed the param — which is why `parseAll` reports item and heading counts.
+  With no `Module:Questreq/data` equivalent to cross-check against, that report
+  is the only tripwire this field gets.
+- **Flattening the list would have told players to bring the wrong items.**
+  Heroes' Quest splits its items under "If you are a Black Arm Gang member:"
+  and "If you are a Phoenix Gang member:" — alternatives, not a sequence.
+  Flattening asks for both. That's the Monkey Madness II / composite-RFD
+  failure again, in a third place, so the same answer applies: carry the
+  structure rather than discard it. `QuestItemLine` is `{ text, heading?,
+depth? }` instead of the planned bare `string`.
+- **`recommended` isn't a second item list.** It also carries combat levels,
+  travel routes and "9 empty inventory slots". The section is therefore titled
+  "Recommended", not "Also bring".
+
+**Headings are detected by a trailing colon**, which was measured rather than
+guessed: across every non-bullet line in the dataset it catches 15 of 16 with
+no false positives. Wholly-bold looked like the better signal and isn't — The
+Tourist Trap's bolded line is a _note_, not a heading, and would have been
+promoted. The one miss is a bare "Recommended" on Forgettable Tale, which
+renders as an ordinary line. Prefer that failure: a heading shown as a bullet
+is untidy, a note shown as a heading invents structure.
+
+**Nesting is kept as `depth`, not flattened** — reversing the plan's call. It
+reaches 4 levels on 90 pages, and a sub-bullet is usually a detail hanging off
+the line above ("Additional antipoison when fighting the hespori"), which reads
+as a separate requirement once promoted to a sibling.
+
+**The cost is size, and it's larger than a schema tweak.** `quests.json` went
+from ~108 KB to 297 KB built, gzip ~14 KB → ~68 KB — items are now most of the
+dataset. Both bundle invariants still hold (it's its own lazily-loaded chunk,
+`localforage` and the dataset are both absent from the entry chunk), and the
+service worker precaches it once. But it is the app's largest asset by a wide
+margin now, and if that ever needs cutting, `itemsRecommended` is roughly half
+of it and the half that gates nothing.
+
+Verified by spot-checking generated entries against their wiki pages by hand —
+Heroes' Quest for the branches, A Night at the Theatre for nesting, Cabin Fever
+for the no-items-but-11-free-slots prose — plus the parse report's counts. Not
+a scripted diff; no second source exists to diff against.
 
 ### 4d″: the transitive chain isn't visible on a detail page
 

@@ -34,6 +34,7 @@ import type {
   Quest,
   QuestDataset,
   QuestDifficulty,
+  QuestItemLine,
   QuestLength,
   SkillName,
   SkillRequirement,
@@ -498,6 +499,58 @@ function parseRequirements(raw: string | undefined): ParsedRequirements {
   return result
 }
 
+/**
+ * Parses the `items` and `recommended` params of `Quest details`.
+ *
+ * Unlike `requirements`, these carry no `{{SCP|...}}` structure — they are
+ * bulleted free text, so nothing here is checkable and everything is display
+ * only. The parse therefore preserves shape rather than extracting facts:
+ *
+ *   - **Nesting is kept as `depth`**, not flattened. A sub-bullet is usually a
+ *     detail hanging off the line above, and promoting it to top level reads as
+ *     a separate item. Depth reaches 4.
+ *   - **Non-bullet lines are kept**, because they carry the branches: Heroes'
+ *     Quest splits its items under "If you are a Black Arm Gang member:" and
+ *     "If you are a Phoenix Gang member:". Dropping those merges two
+ *     alternatives into one list that asks for both.
+ *   - **A trailing colon marks a heading.** Measured across every non-bullet
+ *     line in the dataset, that catches 15 of 16 with no false positives; see
+ *     `QuestItemLine.heading` for the one it misses and why the alternative
+ *     rule is worse.
+ *
+ * 200 of 216 pages state items and 201 state recommendations, so an empty
+ * result means the wiki said "None" or said nothing — not that parsing failed.
+ */
+function parseItemList(raw: string | undefined): QuestItemLine[] {
+  if (!raw) return []
+
+  const trimmed = raw.trim()
+  if (!trimmed || /^none\.?$/i.test(trimmed)) return []
+
+  const lines: QuestItemLine[] = []
+
+  for (const source of trimmed.split('\n')) {
+    const line = source.trim()
+    if (!line) continue
+
+    const bullet = line.startsWith('*')
+    const depth = bullet ? (line.match(/^\**/) ?? [''])[0].length - 1 : 0
+    // Leading ":" is the wiki's indent markup, which survives plainText.
+    const text = plainText(line.replace(/^[*:]+\s*/, ''))
+    if (!text || /^none\.?$/i.test(text)) continue
+
+    lines.push({
+      text,
+      // Only an unbulleted line introduces the ones below it; a bulleted line
+      // ending in a colon is an item with a parenthetical, not a label.
+      ...(!bullet && text.endsWith(':') ? { heading: true } : {}),
+      ...(depth > 0 ? { depth } : {}),
+    })
+  }
+
+  return lines
+}
+
 const DIFFICULTIES: ReadonlySet<string> = new Set([
   'Novice',
   'Intermediate',
@@ -544,6 +597,8 @@ interface ParsedPage {
   members: boolean
   group: string | null
   requirements: ParsedRequirements
+  itemsRequired: QuestItemLine[]
+  itemsRecommended: QuestItemLine[]
   wikiUrl: string
   /** Collected for the report rather than thrown, so one run shows every issue. */
   defects: string[]
@@ -605,6 +660,8 @@ function parsePage(page: CachedPage): ParsedPage {
     members: /^yes$/i.test(infobox.members?.trim() ?? ''),
     group,
     requirements: parseRequirements(details.requirements),
+    itemsRequired: parseItemList(details.items),
+    itemsRecommended: parseItemList(details.recommended),
     wikiUrl: `https://oldschool.runescape.wiki/w/${encodeURIComponent(page.title.replace(/ /g, '_'))}`,
     defects,
   }
@@ -971,6 +1028,24 @@ function parseAll(cache: WikiCache) {
     `  unknown start flag: ${parsed.reduce((n, p) => n + p.requirements.skills.filter((s) => s.requiredToStart === null).length, 0)}`,
   )
 
+  // Items are unverifiable against any second source, so the report is the only
+  // signal that the parse still works. A sharp drop in either count after a
+  // regeneration means the wiki changed the param, not that quests lost items.
+  const itemLines = parsed.reduce((n, p) => n + p.itemsRequired.length, 0)
+  const recLines = parsed.reduce((n, p) => n + p.itemsRecommended.length, 0)
+  const withItems = parsed.filter((p) => p.itemsRequired.length > 0).length
+  const headings = parsed.reduce(
+    (n, p) =>
+      n +
+      [...p.itemsRequired, ...p.itemsRecommended].filter((l) => l.heading)
+        .length,
+    0,
+  )
+  console.log(
+    `  item lines:         ${itemLines} across ${withItems} quests (${headings} headings)`,
+  )
+  console.log(`  recommended lines:  ${recLines}`)
+
   const withDefects = parsed.filter((p) => p.defects.length)
   if (withDefects.length) {
     console.log(`\npage defects needing review (${withDefects.length}):`)
@@ -1039,6 +1114,8 @@ function toDataset(parsed: ParsedPage[]): {
         : {}),
     },
     notes: page.requirements.notes,
+    itemsRequired: page.itemsRequired,
+    itemsRecommended: page.itemsRecommended,
     wikiUrl: page.wikiUrl,
   }))
 
