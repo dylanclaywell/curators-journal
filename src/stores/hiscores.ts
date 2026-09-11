@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { computed, ref } from 'vue'
+import { computed, ref, watch } from 'vue'
 import {
   combatLevelOf,
   isValidUsername,
@@ -7,6 +7,7 @@ import {
 } from '@/lib/hiscores'
 import type { AccountType, HiscoresError, HiscoresSnapshot } from '@/lib/types'
 import { fetchHiscores } from './api'
+import { useSettingsStore } from './settings'
 import { read, write } from './persist'
 
 export type HiscoresStatus = 'idle' | 'loading' | 'ready' | 'error'
@@ -122,6 +123,41 @@ export const useHiscoresStore = defineStore('hiscores', () => {
     await load(current.username, current.accountType)
   }
 
+  /**
+   * Makes levels available to any panel, not just the one that fetches them.
+   *
+   * Without this the store is **inert unless StatsView has mounted**: it seeded
+   * the only snapshot, so a cold load straight into the quest panel saw no
+   * levels and reported that no username was set — when one was. Tabbing to
+   * Stats and back "fixed" it, which is the signature of this bug.
+   *
+   * Safe to call from anywhere on mount. It returns immediately when a
+   * snapshot already exists, and `load` shows the cached snapshot before it
+   * fetches, so levels appear without waiting on the network.
+   */
+  async function ensureLoaded(): Promise<void> {
+    if (snapshot.value || status.value === 'loading') return
+
+    const settings = useSettingsStore()
+    if (!settings.hydrated) {
+      // Reads are async, so a caller mounting during startup would otherwise
+      // act on the empty defaults and conclude there's no account configured.
+      await new Promise<void>((resolve) => {
+        const stop = watch(
+          () => settings.hydrated,
+          (ready) => {
+            if (!ready) return
+            stop()
+            resolve()
+          },
+        )
+      })
+    }
+
+    if (!settings.username) return
+    await load(settings.username, settings.accountType)
+  }
+
   function clear(): void {
     latestRequest++
     snapshot.value = null
@@ -136,6 +172,7 @@ export const useHiscoresStore = defineStore('hiscores', () => {
     combat,
     stale,
     load,
+    ensureLoaded,
     refreshIfStale,
     clear,
   }

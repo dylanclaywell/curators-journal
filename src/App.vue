@@ -55,17 +55,19 @@ const pullLabel = computed(() => {
 })
 
 /*
- * Refresh-on-resume deliberately does NOT live here — see StatsView.
+ * Refresh-on-resume still lives in StatsView, but the reason has changed.
  *
- * It was here, on the reasoning that resuming is an app-level event and the
- * quest queue will want levels too. Two things were wrong with that. Importing
- * the hiscores store from the shell dragged localForage into the initial bundle
- * (~11 KB gzipped), and the handler was inert anywhere but Stats anyway, since
- * only StatsView seeds the snapshot that `refreshIfStale` needs.
+ * The old reason — that a shell-level handler would be inert because only
+ * StatsView seeds a snapshot — no longer holds: `hiscores.ensureLoaded()`
+ * hydrates from settings and cache, so any panel can have levels. That was
+ * built because the quest panel hit exactly that bug, reporting no username
+ * when one was set until you visited Stats and came back.
  *
- * When Phase 4 gives the quest panel a real use for levels, this moves back up
- * here — but the store needs to hydrate itself first, or it will be just as
- * inert as it was. Keep the import dynamic when it does.
+ * What remains is the bundle constraint: importing the hiscores store from the
+ * shell statically drags localForage into the initial bundle (~11 KB gzipped).
+ * The `refresh` handler above shows the shape that avoids it — a dynamic
+ * import inside the handler — so moving resume handling up here is now a small
+ * job rather than a blocked one. Slice 4f.
  */
 </script>
 

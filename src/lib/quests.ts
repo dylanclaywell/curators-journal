@@ -187,8 +187,14 @@ export function evaluateQuest(
     })
   }
 
+  /*
+   * Only totalled when a quest actually gates on quest points, which 13 of
+   * 214 do. Computing it unconditionally made evaluating the whole dataset
+   * O(n²) — ~46k iterations, re-run on every progress change, on a tablet.
+   */
   const needPoints = quest.requirements.questPoints
-  const havePoints = questPointsEarned(index, state.progress)
+  const havePoints =
+    needPoints === undefined ? 0 : questPointsEarned(index, state.progress)
   const unmetQuestPoints =
     needPoints !== undefined && havePoints < needPoints
       ? { need: needPoints, have: havePoints }

@@ -1,7 +1,37 @@
 <script setup lang="ts">
+import { computed, onMounted } from 'vue'
 import AppIcon from '@/components/AppIcon.vue'
-// Phase 4 replaces this with the queue: prerequisites expanded in order, and
-// the next actionable step pinned to the top.
+import { useQuestsStore } from '@/stores/quests'
+
+/*
+ * The queue panel, still mostly an invitation. What is real here is the whole
+ * data path behind it: the committed dataset loads on demand, the engine
+ * evaluates it against live levels, and progress survives being backgrounded.
+ *
+ * The two panels this splits into — Queue and Quests — arrive in slices 4c/4e.
+ */
+const quests = useQuestsStore()
+
+// Dataset *and* levels. The panel used to load only the dataset, which meant a
+// cold load here showed no levels until Stats had been visited.
+onMounted(() => void quests.ensureReady())
+
+/**
+ * Deliberately reports nothing until levels exist. With no snapshot every
+ * skill reads as unknown, so a count would say "you can start 12 quests" when
+ * the truth is "we don't know your levels yet" — the exact overclaim the
+ * engine is built to avoid.
+ */
+const startable = computed(() => {
+  if (!quests.levelsKnown) return null
+  let count = 0
+  for (const status of quests.statuses.values()) {
+    if (status.progress !== 'done' && status.canStart) count++
+  }
+  return count
+})
+
+const total = computed(() => quests.index.all.length)
 </script>
 
 <template>
@@ -22,5 +52,26 @@ import AppIcon from '@/components/AppIcon.vue'
       <AppIcon name="plus" :size="15" />
       Add a quest
     </button>
+
+    <!-- Proof the data path works, and useful on its own until the queue does.
+         `.nums` for tabular figures, so a changing count doesn't reflow. -->
+    <p
+      v-if="total"
+      class="nums m-0 mt-1 border-t-2 border-bevel-dk pt-3 text-[15px] text-ink-soft"
+    >
+      <template v-if="startable !== null">
+        <strong class="font-bold text-ink">{{ startable }}</strong> of
+        {{ total }} quests startable now
+      </template>
+      <!-- Three states, not two: a username that's set but still resolving
+           must not be told to set a username. -->
+      <template v-else-if="quests.awaitingLevels">
+        {{ total }} quests loaded — checking your levels
+      </template>
+      <template v-else>
+        {{ total }} quests loaded — add your username in Stats to see which you
+        can start
+      </template>
+    </p>
   </div>
 </template>
