@@ -31,10 +31,18 @@ export interface PanelDefinition {
 
 export const panels: PanelDefinition[] = [
   {
+    id: 'queue',
+    title: 'Queue',
+    path: '/queue',
+    icon: 'scroll',
+    minWidth: 320,
+    component: () => import('@/views/QueueView.vue'),
+  },
+  {
     id: 'quests',
     title: 'Quests',
     path: '/quests',
-    icon: 'scroll',
+    icon: 'openBook',
     minWidth: 320,
     component: () => import('@/views/QuestsView.vue'),
   },
