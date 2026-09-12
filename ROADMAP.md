@@ -31,11 +31,10 @@ plan and your goals behind a tab switch, and lets you start and finish a quest
 without leaving the panel. Curating moved wholesale to the Quests panel in the
 process — see 4e below for why the Queue has no "add" button.
 
-What's left of Phase 4 is small: **4f**, moving refresh-on-resume from
-`StatsView` to the shell — reordering goals (4e′) is now done. The more
-interesting question is whether the shell itself is right — nothing here has
-been used on a docked iPad yet, and the collapse thresholds and the bottom tab
-bar are both unmeasured guesses.
+**Phase 4 is done** — 4f moved refresh-on-resume from `StatsView` to the shell,
+the last slice. The more interesting question now is whether the shell itself
+is right — nothing here has been used on a docked iPad yet, and the collapse
+thresholds and the bottom tab bar are both unmeasured guesses.
 
 ## Phases
 
@@ -45,7 +44,7 @@ bar are both unmeasured guesses.
 | 1 — Shell                       | done  | Panel registry, generated routes, tab bar, About panel                       |
 | 2 — Hiscores                    | done  | 2a route + parser · 2b store + persistence · 2c skills grid                  |
 | 3 — Quest dataset               | done  | 214 quests committed; `build:quests` fetches · parses · cross-checks · emits |
-| **4 — Quest engine and queue**  | next  | Engine, detail and queue all built; reorder (4e′) and 4f are what's left     |
+| 4 — Quest engine and queue      | done  | Engine, detail, queue, reorder (4e′) and refresh-on-resume (4f) all built    |
 | Later — ironman requirements    | —     | Currently dropped entirely; see below                                        |
 | Later — prices panel            | —     | `prices.runescape.wiki`, same Worker-proxy shape                             |
 | Later — wide-and-shallow layout | —     | Tabs to a left strip when short and wide; see CLAUDE.md                      |
@@ -383,18 +382,18 @@ matters because the plan is persisted and returned to.
 
 ### Slices
 
-| Slice  | Contents                                                   | State    |
-| ------ | ---------------------------------------------------------- | -------- |
-| 4a     | `src/lib/quests.ts` — eligibility, plan ordering           | done     |
-| 4b     | `src/stores/quests.ts` — dataset load, progress, goals     | done     |
-| 4b′    | Export / import — do this before any UI invites data entry | done     |
-| 4c     | Quests panel: list, search, filters, add to queue          | done     |
-| 4d     | Quest detail: full-panel, from either panel                | done     |
-| 4d′    | Items required — dataset field, generator, detail view     | done     |
-| 4d″    | Transitive prerequisite chain on quest detail              | done     |
-| 4e     | Queue panel: next up, plan, goals, remove, start/finish    | done     |
-| 4e′    | Reorder goals — the last piece of 4e                       | done     |
-| **4f** | **Move refresh-on-resume from `StatsView` to the shell**   | **next** |
+| Slice | Contents                                                   | State |
+| ----- | ---------------------------------------------------------- | ----- |
+| 4a    | `src/lib/quests.ts` — eligibility, plan ordering           | done  |
+| 4b    | `src/stores/quests.ts` — dataset load, progress, goals     | done  |
+| 4b′   | Export / import — do this before any UI invites data entry | done  |
+| 4c    | Quests panel: list, search, filters, add to queue          | done  |
+| 4d    | Quest detail: full-panel, from either panel                | done  |
+| 4d′   | Items required — dataset field, generator, detail view     | done  |
+| 4d″   | Transitive prerequisite chain on quest detail              | done  |
+| 4e    | Queue panel: next up, plan, goals, remove, start/finish    | done  |
+| 4e′   | Reorder goals — the last piece of 4e                       | done  |
+| 4f    | Move refresh-on-resume from `StatsView` to the shell       | done  |
 
 ### 4d′: items required — a real, previously-unscoped gap
 
@@ -604,7 +603,11 @@ a goal with its neighbour and no-ops past either end; the Goals tab pairs it
 with `arrowUp`/`arrowDown` buttons per row, disabled at the ends rather than
 hidden so the row's width doesn't shift as you reorder. Side by side, not
 stacked — `.tap`'s 44px floor is per button, and stacking would have doubled
-this row's height against every other row in the list.
+this row's height against every other row in the list. The Goals `<ul>` is a
+Vue `<TransitionGroup>` so a swap slides into place (`.goal-move` in
+`style.css`) instead of jump-cutting; only the FLIP move is animated, and the
+existing global `prefers-reduced-motion` rule already shortens it for anyone
+who asked for that, so no separate motion gate was needed.
 
 **Still open, and worth checking on the device before building more:**
 
@@ -615,10 +618,10 @@ this row's height against every other row in the list.
   selection now joins the list of things that should (with active panel, scroll
   position and current step). It's deliberately a plain `ref` rather than a
   one-off persistence key — see the banked idea below.
-- **The docked layout.** Phase 4 is nearly closed and "tabs to a left icon
-  strip when short and wide" has been in Later since the start. The queue is
-  the panel you'd actually live in down there, so this is the moment to find
-  out whether the bottom tab bar is the wrong shape.
+- **The docked layout.** Phase 4 is now closed and "tabs to a left icon strip
+  when short and wide" has been in Later since the start. The queue is the
+  panel you'd actually live in down there, so this is the moment to find out
+  whether the bottom tab bar is the wrong shape.
 
 ### 4b′: the safety net, done before any UI invites data entry
 
@@ -636,6 +639,27 @@ hand-entered fields — `settings.username`, `settings.accountType`,
 restore themselves from a username. A version field (`1`) and an `app` marker
 guard against importing garbage or a foreign JSON file; import replaces the
 current state wholesale after a confirm, rather than attempting a merge.
+
+### 4f: refresh-on-resume moved to the shell
+
+**Built.** The `visibilitychange` listener that calls `hiscores.refreshIfStale()`
+now lives in `App.vue`, not `StatsView.vue`. It had been scoped to that view
+because `refreshIfStale` needs an existing snapshot and StatsView was the only
+thing that seeded one — an app-level listener would have done nothing on every
+other panel while still costing them the store's chunk.
+
+That stopped being true once `hiscores.ensureLoaded()` (built for the quest
+panel, to fix the same "no username" bug) let any panel hydrate a snapshot
+from settings and cache. `refreshIfStale` is a quiet no-op with nothing to
+refresh, so promoting the listener to the shell is safe even on a cold load
+into a panel that hasn't fetched anything yet — it just does nothing until
+something has.
+
+The move only works because it follows the same shape as `App.vue`'s existing
+`refresh()` handler: the hiscores store is imported dynamically inside the
+handler, not statically at the top of the file, so localForage stays out of
+the initial bundle. Verified after the move — `cooks-assistant` and
+`localforage` are still both absent from the entry chunk.
 
 ### What 4b left in place
 
@@ -765,11 +789,6 @@ what must not change.
 - **The game notifies level-ups, not us.** So the cost of stale data is low, and
   a prominent manual refresh covers the case where you know something changed.
   Automatic cadence can stay conservative.
-- **Refresh-on-resume needs to move.** It currently lives in `StatsView` because
-  `refreshIfStale` needs a snapshot and only that view seeds one. When the quest
-  panel needs levels, it moves to the shell — but the store must hydrate itself
-  first, or it will be inert. Keep the import dynamic, or localForage lands back
-  in the initial bundle. Comments in `App.vue` and `StatsView.vue` say the same.
 - **UI state must survive backgrounding.** iOS suspends and kills backgrounded
   PWAs, and the app is swapped to rather than watched. Active panel, scroll
   position, current quest and current step all need to persist.

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { useRoute } from 'vue-router'
 import AppIcon from '@/components/AppIcon.vue'
 import TabBar from '@/components/TabBar.vue'
@@ -59,20 +59,32 @@ const pullLabel = computed(() => {
 })
 
 /*
- * Refresh-on-resume still lives in StatsView, but the reason has changed.
+ * Refresh-on-resume (4f), moved up from StatsView.
  *
- * The old reason — that a shell-level handler would be inert because only
- * StatsView seeds a snapshot — no longer holds: `hiscores.ensureLoaded()`
- * hydrates from settings and cache, so any panel can have levels. That was
- * built because the quest panel hit exactly that bug, reporting no username
- * when one was set until you visited Stats and came back.
+ * It used to be scoped to that view because `refreshIfStale` needs an
+ * existing snapshot and StatsView was the only thing that seeded one — an
+ * app-level listener would have done nothing on every other panel. That
+ * stopped being true once `hiscores.ensureLoaded()` let any panel hydrate a
+ * snapshot from settings and cache (built for the quest panel, which hit the
+ * same "no username" bug this file's `refresh()` comment describes).
  *
- * What remains is the bundle constraint: importing the hiscores store from the
- * shell statically drags localForage into the initial bundle (~11 KB gzipped).
- * The `refresh` handler above shows the shape that avoids it — a dynamic
- * import inside the handler — so moving resume handling up here is now a small
- * job rather than a blocked one. Slice 4f.
+ * `refreshIfStale` is still a quiet no-op with nothing to refresh, so this is
+ * safe to run from every panel rather than just the one that happens to have
+ * loaded something. The dynamic import matches `refresh()` above — keeps
+ * localForage out of the initial bundle.
  */
+async function onVisibilityChange(): Promise<void> {
+  if (document.visibilityState !== 'visible') return
+  const { useHiscoresStore } = await import('@/stores/hiscores')
+  void useHiscoresStore().refreshIfStale()
+}
+
+onMounted(() =>
+  document.addEventListener('visibilitychange', onVisibilityChange),
+)
+onUnmounted(() =>
+  document.removeEventListener('visibilitychange', onVisibilityChange),
+)
 </script>
 
 <template>
