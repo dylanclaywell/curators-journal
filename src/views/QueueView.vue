@@ -420,7 +420,11 @@ const startableAnywhere = computed(() => {
               What you're aiming at. The plan works backwards from these.
             </p>
 
-            <ul class="m-0 flex flex-col gap-1.5 p-0">
+            <TransitionGroup
+              tag="ul"
+              name="goal"
+              class="m-0 flex flex-col gap-1.5 p-0"
+            >
               <li
                 v-for="(goal, i) in goalQuests"
                 :key="goal.id"
@@ -478,7 +482,7 @@ const startableAnywhere = computed(() => {
                   <AppIcon name="x" :size="14" />
                 </button>
               </li>
-            </ul>
+            </TransitionGroup>
 
             <!-- No "add" button here on purpose. Adding is a Quests-panel
                  activity: you search, open a quest, read it, decide. A button

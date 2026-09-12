@@ -347,6 +347,16 @@ body {
   outline-offset: 2px;
 }
 
+/*
+ * The goals list reorders itself (4e′). Vue's <TransitionGroup> FLIPs the
+ * siblings that moved by applying this class during the transform, so a
+ * swap reads as a slide rather than a jump-cut. The global reduced-motion
+ * rule below shortens it to near-zero for anyone who asked for that.
+ */
+.goal-move {
+  transition: transform 200ms ease;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

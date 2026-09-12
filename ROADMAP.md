@@ -383,18 +383,18 @@ matters because the plan is persisted and returned to.
 
 ### Slices
 
-| Slice   | Contents                                                   | State    |
-| ------- | ---------------------------------------------------------- | -------- |
-| 4a      | `src/lib/quests.ts` — eligibility, plan ordering           | done     |
-| 4b      | `src/stores/quests.ts` — dataset load, progress, goals     | done     |
-| 4b′     | Export / import — do this before any UI invites data entry | done     |
-| 4c      | Quests panel: list, search, filters, add to queue          | done     |
-| 4d      | Quest detail: full-panel, from either panel                | done     |
-| 4d′     | Items required — dataset field, generator, detail view     | done     |
-| 4d″     | Transitive prerequisite chain on quest detail              | done     |
-| 4e      | Queue panel: next up, plan, goals, remove, start/finish    | done     |
-| 4e′     | Reorder goals — the last piece of 4e                       | done     |
-| **4f**  | **Move refresh-on-resume from `StatsView` to the shell**   | **next** |
+| Slice  | Contents                                                   | State    |
+| ------ | ---------------------------------------------------------- | -------- |
+| 4a     | `src/lib/quests.ts` — eligibility, plan ordering           | done     |
+| 4b     | `src/stores/quests.ts` — dataset load, progress, goals     | done     |
+| 4b′    | Export / import — do this before any UI invites data entry | done     |
+| 4c     | Quests panel: list, search, filters, add to queue          | done     |
+| 4d     | Quest detail: full-panel, from either panel                | done     |
+| 4d′    | Items required — dataset field, generator, detail view     | done     |
+| 4d″    | Transitive prerequisite chain on quest detail              | done     |
+| 4e     | Queue panel: next up, plan, goals, remove, start/finish    | done     |
+| 4e′    | Reorder goals — the last piece of 4e                       | done     |
+| **4f** | **Move refresh-on-resume from `StatsView` to the shell**   | **next** |
 
 ### 4d′: items required — a real, previously-unscoped gap
 
