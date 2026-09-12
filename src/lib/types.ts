@@ -232,6 +232,26 @@ export interface Quest {
    */
   notes: string[]
   /**
+   * The wiki's `description` field, one entry per paragraph (it's usually one,
+   * occasionally two or three). Flavor text, not a requirement — shown so a
+   * quick "what is this quest actually about" doesn't need a wiki tab.
+   */
+  description: string[]
+  /** The wiki's `start` field: where and who to talk to. Empty when unstated. */
+  startPoint: string
+  /**
+   * The wiki's `kills` field: monsters the quest requires fighting, same
+   * bulleted shape as `itemsRequired`. Not part of `QuestRequirements` for the
+   * same reason items aren't — the engine never gates on this.
+   */
+  kills: QuestItemLine[]
+  /**
+   * The `Quest rewards` template's `rewards` field: XP, unlocks and items
+   * granted on completion, beyond the `questPoints` already broken out.
+   * Same bulleted shape as `itemsRequired` since the wiki writes it the same way.
+   */
+  rewards: QuestItemLine[]
+  /**
    * Items the wiki says to bring. Deliberately *not* in `QuestRequirements`:
    * the engine never reads these, so they don't belong beside the fields
    * `canStart` / `canFinish` gate on.

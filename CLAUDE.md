@@ -137,9 +137,10 @@ fragile live wiki query. Regenerate deliberately with `npm run build:quests`
 
 **Two bundle invariants, both easy to break by adding one static import:**
 
-- `src/data/quests.json` (~297 KB built, ~68 KB gzipped) must stay out of the
+- `src/data/quests.json` (~463 KB built, ~129 KB gzipped) must stay out of the
   entry chunk — the quest store imports it dynamically. It roughly tripled when
-  4d′ added the items each quest wants; it is now the app's largest asset by a
+  4d′ added the items each quest wants, then grew again in 4g for description,
+  kills and rewards; it is now the app's largest asset by a
   wide margin, so weigh anything that would grow it again.
 - localForage must too, which is why stores that persist are only reached from
   lazily-loaded panels, and why `App.vue`'s refresh handler imports its stores

@@ -394,6 +394,7 @@ matters because the plan is persisted and returned to.
 | 4e    | Queue panel: next up, plan, goals, remove, start/finish    | done  |
 | 4e′   | Reorder goals — the last piece of 4e                       | done  |
 | 4f    | Move refresh-on-resume from `StatsView` to the shell       | done  |
+| 4g    | Description, start point, kills, rewards, chaptered layout | done  |
 
 ### 4d′: items required — a real, previously-unscoped gap
 
@@ -660,6 +661,66 @@ The move only works because it follows the same shape as `App.vue`'s existing
 handler, not statically at the top of the file, so localForage stays out of
 the initial bundle. Verified after the move — `cooks-assistant` and
 `localforage` are still both absent from the entry chunk.
+
+### 4g: description, start point, kills, rewards — more of the wiki template, same fields
+
+Requested as "pull in the wiki table data" — quest detail was already reading
+`Quest details` for `difficulty`/`length`/`requirements`/`items`/`recommended`,
+but that template also carries `description` and `start`, and `Quest rewards`
+carries a `rewards` list beside the `qp` already read. No new template to
+find, same shape as 4d′: more params off pages already fetched and parsed.
+
+**Built.**
+
+- `description` splits on blank lines into paragraphs (most pages write one,
+  a few write two or three) and is shown above Progress/Queue as context for
+  the decision those make, not a result of it.
+- `startPoint` is `start`, plain-texted — shown alongside description.
+- `kills` reuses `parseItemList`/`QuestItemLine` — same bulleted shape as
+  `items`, so no new parser.
+- `rewards` reuses the same list parser on the `Quest rewards` template's
+  `rewards` param.
+
+Neither `kills` nor `rewards` gates anything or lands in `QuestRequirements` —
+same reasoning as `itemsRequired` in 4d′: the engine never reads them, so they
+don't belong beside the fields `canStart`/`canFinish` gate on.
+
+**A latent bug in `plainText` surfaced immediately.** Its `{{SCP|...}}`
+expansion used `(\d+)` for the number, which is correct for every skill
+_requirement_ SCP has ever carried (1–99, no thousands separator) but wrong
+for a reward's XP amount: `{{SCP|Smithing|80,000}}` matched only as far as
+the comma, so the first `rewards` build read "Smithing 80,000 experience" as
+"Smithing 80 experience" — off by 1000x. Fixed to `([\d,]+)`. Existing
+requirement/item parsing is unaffected since those numbers never had commas
+to lose.
+
+**Rewards needed `QuestItemLines` to stop tinting numbers.** The component's
+level-coloring (`mentionedLevel`) reads a line's leading number as a level to
+check against the player's own — right for `items`/`recommended`, wrong for
+`rewards`: "Smithing 80,000 experience" isn't a requirement to compare against
+the player's Smithing level. Added a `colorLevels` prop, off for rewards only.
+
+**The cost is size, again.** `quests.json` went from 297 KB to 463 KB built
+(gzip ~68 KB → ~129 KB, inside its own lazily-loaded chunk). Both bundle
+invariants still hold — verified `cooks-assistant` and `localforage` are both
+absent from the entry chunk after this build.
+
+**Follow-up: eight same-weight sections read as a wall, so they're chaptered.**
+Once 4g's fields were live, Skills / Quests first / Quest points / Combat
+level / Notes / Monsters to kill / Items needed / Recommended / Rewards all
+carried the same small-bold-label treatment, in a row — nothing told them
+apart at a glance. Weighed three fixes as mockups (chaptered scroll, tabs
+that become columns when docked, an action-bar-plus-accordion split by
+what gates `canStart`) before touching the real component; picked the
+chaptered scroll. It adds no interaction — everything still just scrolls —
+and reuses `font-display`, the journal's own serif face, as a second,
+heavier hierarchy level above the existing bold labels: **What it takes**
+(Skills, Quests first, Quest points, Combat level, Notes — everything that
+gates or almost-gates starting), **Before you go** (Monsters to kill, Items
+needed, Recommended — prep, gates nothing), **When it's done** (Rewards). A
+chapter with nothing in it doesn't render its title — Cook's Assistant has
+no skills, chain, quest points, combat level, or notes, so it goes straight
+from Queue to "Before you go".
 
 ### What 4b left in place
 

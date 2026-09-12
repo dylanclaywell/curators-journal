@@ -30,6 +30,15 @@ const props = defineProps<{
   lines: QuestItemLine[]
   levels: SkillLevels
   muted?: boolean
+  /**
+   * Off for the rewards list: `mentionedLevel` reads a line's *first* number
+   * as a level to check, but a reward line's leading number is usually an XP
+   * amount ("Smithing 80,000 experience") — its comma stops the digit match
+   * at "80", which would then get tinted as if 80 Smithing were a requirement
+   * the player has or hasn't met. Defaults on for items/recommended, where
+   * that reading is correct.
+   */
+  colorLevels?: boolean
 }>()
 
 /** Deep enough to show structure, shallow enough to survive a 375px rail. */
@@ -49,7 +58,7 @@ const INDENT_PX = 14
  * line must read as unknown, never as unmet.
  */
 function levelClass(line: QuestItemLine): string {
-  if (line.heading) return ''
+  if (line.heading || props.colorLevels === false) return ''
   const level = mentionedLevel(line.text, props.levels)
   if (!level || level.met === null) return ''
   return level.met ? 'text-done' : 'text-doing'

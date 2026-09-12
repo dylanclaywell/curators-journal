@@ -334,18 +334,24 @@ function slugify(title: string): string {
 
 /** Strips wiki markup so a note reads as plain prose in the UI. */
 function plainText(wikitext: string): string {
-  return wikitext
-    .replace(/<!--[\s\S]*?-->/g, '') // editor notes, e.g. "DO NOT ADD 30 FIREMAKING"
-    .replace(/<ref[^>]*\/>/g, '')
-    .replace(/<ref[^>]*>([\s\S]*?)<\/ref>/g, ' ($1)') // keep the caveat, drop the markup
-    .replace(/\[\[[^\]|]*\|([^\]]*)\]\]/g, '$1') // [[Target|label]] -> label
-    .replace(/\[\[([^\]]*)\]\]/g, '$1') // [[Target]] -> Target
-    .replace(/\{\{SCP\|([^|}]+)\|(\d+)[^}]*\}\}/gi, '$1 $2') // {{SCP|Agility|62}} -> Agility 62
-    .replace(/\{\{[^{}]*\}\}/g, '') // drop remaining templates
-    .replace(/'''?/g, '')
-    .replace(/<[^>]+>/g, '')
-    .replace(/\s+/g, ' ')
-    .trim()
+  return (
+    wikitext
+      .replace(/<!--[\s\S]*?-->/g, '') // editor notes, e.g. "DO NOT ADD 30 FIREMAKING"
+      .replace(/<ref[^>]*\/>/g, '')
+      .replace(/<ref[^>]*>([\s\S]*?)<\/ref>/g, ' ($1)') // keep the caveat, drop the markup
+      .replace(/\[\[[^\]|]*\|([^\]]*)\]\]/g, '$1') // [[Target|label]] -> label
+      .replace(/\[\[([^\]]*)\]\]/g, '$1') // [[Target]] -> Target
+      // {{SCP|Agility|62}} -> Agility 62. The number needs `[\d,]` rather than
+      // just `\d`: skill *requirements* never exceed 99 and never carry a comma,
+      // but a reward's XP amount does ({{SCP|Smithing|80,000}}) — `\d+` alone
+      // would stop at "80" and hand rewards a number 1000x too small.
+      .replace(/\{\{SCP\|([^|}]+)\|([\d,]+)[^}]*\}\}/gi, '$1 $2')
+      .replace(/\{\{[^{}]*\}\}/g, '') // drop remaining templates
+      .replace(/'''?/g, '')
+      .replace(/<[^>]+>/g, '')
+      .replace(/\s+/g, ' ')
+      .trim()
+  )
 }
 
 /**
@@ -543,6 +549,20 @@ function collapseRepeatedSkill(text: string): string {
   )
 }
 
+/**
+ * The `description` field, split on blank lines into paragraphs. Most pages
+ * write one; a few (Dragon Slayer II among them) write several. Each
+ * paragraph goes through `plainText`, which is also what collapses an
+ * internal line-wrap back to a single paragraph rather than a false split.
+ */
+function parseParagraphs(raw: string | undefined): string[] {
+  if (!raw) return []
+  return raw
+    .split(/\n\s*\n/)
+    .map((paragraph) => plainText(paragraph))
+    .filter(Boolean)
+}
+
 function parseItemList(raw: string | undefined): QuestItemLine[] {
   if (!raw) return []
 
@@ -621,6 +641,10 @@ interface ParsedPage {
   requirements: ParsedRequirements
   itemsRequired: QuestItemLine[]
   itemsRecommended: QuestItemLine[]
+  description: string[]
+  startPoint: string
+  kills: QuestItemLine[]
+  rewards: QuestItemLine[]
   wikiUrl: string
   /** Collected for the report rather than thrown, so one run shows every issue. */
   defects: string[]
@@ -684,6 +708,10 @@ function parsePage(page: CachedPage): ParsedPage {
     requirements: parseRequirements(details.requirements),
     itemsRequired: parseItemList(details.items),
     itemsRecommended: parseItemList(details.recommended),
+    description: parseParagraphs(details.description),
+    startPoint: plainText(details.start ?? ''),
+    kills: parseItemList(details.kills),
+    rewards: parseItemList(rewards.rewards),
     wikiUrl: `https://oldschool.runescape.wiki/w/${encodeURIComponent(page.title.replace(/ /g, '_'))}`,
     defects,
   }
@@ -1138,6 +1166,10 @@ function toDataset(parsed: ParsedPage[]): {
     notes: page.requirements.notes,
     itemsRequired: page.itemsRequired,
     itemsRecommended: page.itemsRecommended,
+    description: page.description,
+    startPoint: page.startPoint,
+    kills: page.kills,
+    rewards: page.rewards,
     wikiUrl: page.wikiUrl,
   }))
 
