@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/dylanclaywell/stagescape/compare/stagescape-v0.4.0...stagescape-v0.5.0) (2026-09-12)
+
+
+### Features
+
+* add description, kills and rewards to quest detail (4g) ([4635ec0](https://github.com/dylanclaywell/stagescape/commit/4635ec0387c0fd08cb3f6d352ec7f1430769a044))
+
 ## [0.4.0](https://github.com/dylanclaywell/stagescape/compare/stagescape-v0.3.1...stagescape-v0.4.0) (2026-09-12)
 
 
