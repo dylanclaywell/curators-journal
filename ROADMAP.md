@@ -874,7 +874,7 @@ fine; most RuneLite plugins are BSD-2.
 
 | Slice | Contents                                                      | State |
 | ----- | ------------------------------------------------------------- | ----- |
-| 5a    | `src/lib/sync.ts` — snapshot shape and validator, pure        | —     |
+| 5a    | `src/lib/sync.ts` — snapshot shape and validator, pure        | done  |
 | 5b    | D1 binding, `POST`/`GET /api/sync`, abuse caps                | —     |
 | 5c    | Sync store: `sync:snapshot`, merge computed, refresh, toggle  | —     |
 | 5d    | `curators-journal-runelite`: panel, sync button, hash display | —     |
