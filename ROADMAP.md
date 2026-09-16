@@ -36,6 +36,12 @@ the last slice. The more interesting question now is whether the shell itself
 is right — nothing here has been used on a docked iPad yet, and the collapse
 thresholds and the bottom tab bar are both unmeasured guesses.
 
+**Phase 5 is planned, not started.** A companion RuneLite plugin syncs quest
+state through our own Worker and D1, and the web side merges it into the quest
+panel behind a toggle — the first time anything but the player has written to
+quest progress, which is why the section below spends most of its words on
+keeping the two apart.
+
 ## Phases
 
 | Phase                           | State | Notes                                                                        |
@@ -45,6 +51,7 @@ thresholds and the bottom tab bar are both unmeasured guesses.
 | 2 — Hiscores                    | done  | 2a route + parser · 2b store + persistence · 2c skills grid                  |
 | 3 — Quest dataset               | done  | 214 quests committed; `build:quests` fetches · parses · cross-checks · emits |
 | 4 — Quest engine and queue      | done  | Engine, detail, queue, reorder (4e′) and refresh-on-resume (4f) all built    |
+| 5 — RuneLite sync               | next  | Companion plugin pushes quest state to D1; merged read-only into progress    |
 | Later — ironman requirements    | —     | Currently dropped entirely; see below                                        |
 | Later — prices panel            | —     | `prices.runescape.wiki`, same Worker-proxy shape                             |
 | Later — wide-and-shallow layout | —     | Tabs to a left strip when short and wide; see CLAUDE.md                      |
@@ -751,6 +758,141 @@ player to set a username they had already set.
 - **A full 214-quest sweep costs ~0.16 ms**, so recomputing `statuses` freely is
   fine. It was 300× worse before `evaluateQuest` stopped totalling quest points
   for quests that don't gate on them — if that regresses, look there first.
+
+## Phase 5: RuneLite sync
+
+The constraint at the top of CLAUDE.md is that the hiscores don't expose quest
+state, so completions are hand-entered. A RuneLite plugin is the one source
+that _does_ know. Phase 5 adds a companion plugin that pushes quest state to our
+own backend, and a web side that pulls it down — without ever letting it touch
+the hand-entered half.
+
+### The plugin lives in its own repo
+
+Plugin Hub submission is a PR to `runelite/plugin-hub` adding a file that names
+a **repository URL and a commit hash**. The referenced repo is built standalone:
+Gradle at the root, its own licence, its own tags. A Java project wedged into a
+subdirectory here doesn't fit that shape, and release-please — which reads every
+Conventional Commit in this repo — would start versioning StageScape off plugin
+commits.
+
+So: **`stagescape-runelite`, separate and public.** What crosses between them is
+the wire format and nothing else. `src/lib/sync.ts` is the spec; the Java side
+is a hand-copy of it. Two implementations of a twenty-line contract is cheaper
+than any mechanism for sharing one across two build systems.
+
+### Synced data is a third kind of data
+
+CLAUDE.md names two kinds and insists they not be conflated. This adds a third:
+
+- **Fetched, read-only** — hiscores, prices. Disposable, refetchable.
+- **User-owned, authoritative, precious** — progress and goals. Unrecoverable.
+- **Synced, semi-trusted, disposable** — authoritative about the game, but it
+  arrives over an open endpoint, so it is never trusted enough to write.
+
+The rules that keep the third from eating the second:
+
+- It lands under its own key, `sync:snapshot`, written only by the sync store.
+- **The merge happens in a computed, never on disk.** The engine and the views
+  read `effectiveProgress`; `quests:progress` has no code path that sync can
+  write. Garbage in the database can't corrupt the precious half because the
+  code that would do it doesn't exist.
+- **The merge is additive only.** A synced `done` can promote a local `todo`; a
+  local `done` is never demoted. So a bad snapshot can only over-report, and
+  toggling the merge off is a complete undo.
+- It is **excluded from the backup shape**, for the same reason cached hiscores
+  are: it refetches itself, so it isn't precious.
+- Validation lives in a pure `src/lib` module shared with the Worker, so the
+  write endpoint rejects exactly what the client would reject.
+
+### No auth, deliberately
+
+WikiSync's model, and for WikiSync's reason. Yes, anyone holding an account hash
+can write garbage to that row. The cost of that is bounded by the separation
+above: the next plugin sync overwrites it, and in the meantime it's "someone
+spoofed me, toggle the merge off" rather than "my quest log is gone." Real
+accounts would mean adding a server-side user concept to an app that has none,
+to defend against a nuisance.
+
+**Keyed on `client.getAccountHash()`, not the RSN.** Settings already holds a
+username, so keying on the RSN would need no pasting at all — but an RSN is
+public and enumerable, so garbage could be sprayed at every name on the
+hiscores. A hash is opaque, so one paste from the plugin panel into StageScape
+buys spoof-resistance for free. It is an identifier, not a secret: anyone who
+has it can read and write that row, and that is accepted.
+
+The endpoint still needs **abuse caps** — a payload size limit, unknown quest
+ids rejected before the write, one row per key so a key can't grow. That is
+keeping an open POST route from becoming free storage for strangers, not
+protecting the player from spoofing.
+
+### D1, and specifically not KV
+
+The storage is one JSON blob per player, which is KV's shape. Pick D1 anyway:
+**KV is eventually consistent**, up to ~60s, and the entire interaction is "hit
+Sync in RuneLite, hit Refresh in StageScape." A stale read there doesn't read as
+eventual consistency, it reads as broken. D1 is read-after-write consistent.
+
+One table, one row per account hash: the payload as JSON text, plus a schema
+version and a received-at timestamp. The schema version is what lets a plugin
+running an older format be rejected cleanly rather than parsed into nonsense.
+
+### The wire format
+
+```jsonc
+{
+  "schemaVersion": 1,
+  "accountHash": "…",
+  "quests": { "cooks-assistant": "done", "dragon-slayer-i": "doing" },
+}
+```
+
+`quests` is nested rather than being the top-level map on purpose — the same
+pipe could later carry diaries, combat achievements or the collection log, and a
+bare map would have to be broken to add them. Don't design those in; don't make
+the shape hostile to them either.
+
+Ids are ours, not the plugin's. RuneLite exposes quest state through its `Quest`
+enum and `quest.getState(client)` (`NOT_STARTED` / `IN_PROGRESS` / `FINISHED`),
+which maps cleanly onto todo / doing / done, read on the client thread. The
+plugin matches those names to our dataset by wiki title and **logs whatever
+fails to match** — that list is the drift detector between the plugin and
+`build:quests`.
+
+### The §6.1.2 wording gets narrower
+
+CLAUDE.md and NOTICE.md both say StageScape reads public hiscores over HTTP and
+never touches the game client, so it isn't a third-party client. The plugin runs
+_inside_ RuneLite, which Jagex permits, so it isn't one either — but the
+sentence as written stops being true of the project as a whole and needs
+rewording rather than being left to rot.
+
+Plugin Hub also requires the plugin repo carry its own licence. Apache-2.0 is
+fine; most RuneLite plugins are BSD-2.
+
+### Slices
+
+| Slice | Contents                                                     | State |
+| ----- | ------------------------------------------------------------ | ----- |
+| 5a    | `src/lib/sync.ts` — snapshot shape and validator, pure       | —     |
+| 5b    | D1 binding, `POST`/`GET /api/sync`, abuse caps               | —     |
+| 5c    | Sync store: `sync:snapshot`, merge computed, refresh, toggle | —     |
+| 5d    | `stagescape-runelite`: panel, sync button, hash display      | —     |
+| 5e    | Plugin Hub submission                                        | —     |
+| 5f    | Licensing rewording in CLAUDE.md and NOTICE.md               | —     |
+
+### Open within Phase 5
+
+- **Where does the sync UI live?** Its own panel makes a fifth tab, which trips
+  the tab bar's icon-only threshold for every panel. It may belong in About
+  alongside export/import, which is where the other account-shaped settings
+  already are. Unmeasured either way.
+- **What triggers a sync?** On login, on every quest completion, or on a button
+  in the plugin panel. Chattiness against freshness, undecided — but the web
+  side pulls on session start and on demand regardless, so the plugin can start
+  at the conservative end.
+- **Quests only, initially.** Diaries and combat achievements are the obvious
+  next passengers and are explicitly out of scope here.
 
 ## Open questions
 
