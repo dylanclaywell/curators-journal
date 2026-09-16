@@ -29,6 +29,11 @@ jobs:
       - name: Lint
         run: npm run lint:check
 
+      # Runs in workerd via @cloudflare/vitest-pool-workers, against a local
+      # SQLite — no Cloudflare account, no network, no secrets needed here.
+      - name: Test
+        run: npm run test
+
       - name: Format check
         run: npm run format:check
 

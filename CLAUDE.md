@@ -62,7 +62,26 @@ npm run build:icons    # rasterize public/icons/icon.svg -> PWA/iOS PNGs
 npm run build:icon-set # regenerate src/lib/icons.ts from the vendored packs
 ```
 
-No test framework is configured.
+Tests run in **workerd**, not Node — `vitest` with
+`@cloudflare/vitest-pool-workers`, configured in `vitest.config.ts`. They
+live in `test/` rather than beside the code, because `tsconfig.worker.json`
+and `tsconfig.node.json` both include `src/lib` with no exclusions and would
+try to compile a colocated test as Worker source. Nothing in `test/` is
+covered by `npm run typecheck`.
+
+Three things worth knowing, since examples on the web predate them:
+
+- **`defineWorkersConfig` and the `/config` subpath are gone** as of 0.22,
+  replaced by a `cloudflareTest()` Vite plugin used from a normal
+  `defineConfig`.
+- **Storage is isolated per test _file_, not per test.** Files run concurrently
+  and each gets its own storage, but tests inside one file share a database —
+  so `test/setup.ts` empties the tables before each test, or the suite quietly
+  becomes order-dependent. (`--max-workers=1 --no-isolate` makes files share
+  storage instead, for integration tests that want it.)
+- **The pool bundles an older workerd than wrangler does**, so it refuses the
+  `compatibility_date` in wrangler.jsonc and the test runtime pins its own.
+  Raise it when the pool catches up.
 
 ## Working agreement
 
