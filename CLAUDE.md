@@ -107,7 +107,7 @@ and they must not be conflated:
 - **Fetched, read-only:** skill levels, XP, activity scores, item prices.
 - **User-owned, authoritative, precious:** quest completions. Hand-entered, only
   in IndexedDB, and unrecoverable if lost. This is why export/import exists
-  (slice 4b′, from the About panel): `src/lib/backup.ts` builds and validates
+  (slice 4b′, from the Settings panel): `src/lib/backup.ts` builds and validates
   the backup shape. Anything hand-entered that lands in IndexedDB belongs in
   that shape — adding a new one means extending the backup too.
 
@@ -235,7 +235,7 @@ manipulation`). No exceptions, including icon-only buttons.
   along the bottom. Don't try to tell them apart by width; it can't be done.
 - **375px is the measured floor**, on both Safari and the installed PWA. The
   22rem container rule still earns its place as insurance (an iPhone SE 1st gen
-  really is 320pt), but nothing on an iPad will trigger it. The About panel
+  really is 320pt), but nothing on an iPad will trigger it. The Settings panel
   reports live window size — measure rather than assume.
 
 ### The tab bar degrades in three stages
@@ -283,7 +283,7 @@ it. Add an entry to that script's `ICONS` list and re-run
 ## Licensing
 
 - Jagex's Fan Content Policy §8.1 requires this exact notice in a prominent
-  place. It ships in the README and the app's About panel:
+  place. It ships in the README and the app's Settings panel:
   "Created using intellectual property belonging to Jagex Limited under the
   terms of Jagex's Fan Content Policy. This content is not endorsed by or
   affiliated with Jagex."
@@ -332,7 +332,7 @@ assets, `dist/curators_journal` for the Worker.
 
 Deploys run through **GitHub Actions** (`.github/workflows/release.yml`), on
 release rather than on every push: the job is gated on release-please's
-`release_created`, because the About panel advertises `__APP_VERSION__` from
+`release_created`, because the Settings panel advertises `__APP_VERSION__` from
 `package.json` and only the release PR bumps it. Or manually with
 `npm run deploy`.
 
@@ -347,5 +347,5 @@ deploy without anything in the repo changing. Keep local dev on the same
 version.
 
 Safari evicts IndexedDB for non-installed sites after ~7 days idle. Installing to
-the home screen is the supported path, with export/import from the About panel as
+the home screen is the supported path, with export/import from the Settings panel as
 the safety net underneath it — see ROADMAP.md slice 4b′.

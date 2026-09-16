@@ -4,7 +4,7 @@
  * Domain icons (scroll, hourglass, padlock, openBook, progression, cog) are from
  * game-icons.net, licensed CC BY 3.0. Interface icons
  * (chart, check, gear, external, search, plus, caretDown, x, arrowUp, arrowDown, refresh, pencil, download, upload, back, chevron) are from Phosphor, licensed MIT.
- * Attribution for both ships in the app's About panel and the README.
+ * Attribution for both ships in the app's Settings panel and the README.
  *
  * Icons carry their own viewBox because the two packs draw on different
  * grids (512 vs 256) — never assume 24.

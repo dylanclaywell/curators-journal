@@ -27,7 +27,7 @@ this project:
 - You inherit the Fan Content Policy position described below, in full. It is
   not discharged by the upstream repo having complied.
 - The §8.1 notice must stay **reachable by end users** of whatever you ship, not
-  merely present in a repo file. In this project the About panel does that job;
+  merely present in a repo file. In this project the Settings panel does that job;
   a derivative work needs its own equivalent.
 - Removing `fetch-skill-icons.mjs` — and any `<img>` referencing
   `/skill-icons/` — is what actually removes the obligation. Deleting this file
@@ -43,7 +43,7 @@ this project:
 
 That wording is required verbatim, in a prominent place, by
 [section 8.1 of the Fan Content Policy](https://legal.jagex.com/docs/policies/fan-content-policy).
-It also appears in the app's About panel. Do not paraphrase it.
+It also appears in the app's Settings panel. Do not paraphrase it.
 
 ### Skill icons — read this before changing how they are handled
 

@@ -39,6 +39,10 @@ const router = createRouter({
       meta: { panelId: 'queue' },
       props: true,
     },
+    // The Settings panel was /about until it was renamed. An installed PWA
+    // relaunches on the URL it was killed holding, so this has to outlive the
+    // rename rather than fall through to the catch-all and open the Queue.
+    { path: '/about', redirect: '/settings' },
     // Unknown paths land on the first panel rather than a dead end — a PWA
     // relaunched on a stale URL should just open.
     { path: '/:pathMatch(.*)*', redirect: panels[0].path },

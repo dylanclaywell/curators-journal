@@ -55,12 +55,17 @@ export const panels: PanelDefinition[] = [
     component: () => import('@/views/StatsView.vue'),
   },
   {
-    id: 'about',
-    title: 'About',
-    path: '/about',
+    // Settings rather than About: the icon has always been a cog, the panel
+    // holds username, account type, sync and backup, and Settings is what the
+    // game calls its own gear tab. Credits keeps the §8.1 notice prominent
+    // inside it. `/about` redirects, in router/index.ts — a home-screen PWA
+    // relaunches on whatever URL it was killed holding.
+    id: 'settings',
+    title: 'Settings',
+    path: '/settings',
     icon: 'cog',
     minWidth: 300,
-    component: () => import('@/views/AboutView.vue'),
+    component: () => import('@/views/SettingsView.vue'),
   },
 ]
 

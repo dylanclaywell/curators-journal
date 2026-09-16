@@ -24,7 +24,7 @@ Browsing, searching, filtering, add-to-queue and quest detail all exist now —
 see Phase 4 below. Quest detail is finished: it carries the items a quest asks
 you to bring (4d′) and the full prerequisite chain behind it rather than one
 level (4d″). Export/import (slice 4b′) landed ahead of all of them, from the
-About panel.
+Settings panel.
 
 The **queue is real** (4e): it leads with what you can start, keeps the ordered
 plan and your goals behind a tab switch, and lets you start and finish a quest
@@ -47,7 +47,7 @@ keeping the two apart.
 | Phase                           | State | Notes                                                                        |
 | ------------------------------- | ----- | ---------------------------------------------------------------------------- |
 | 0 — Scaffold                    | done  | Vue 3 + TS, Tailwind v4, PWA, Workers + Static Assets, CI, release-please    |
-| 1 — Shell                       | done  | Panel registry, generated routes, tab bar, About panel                       |
+| 1 — Shell                       | done  | Panel registry, generated routes, tab bar, Settings panel                    |
 | 2 — Hiscores                    | done  | 2a route + parser · 2b store + persistence · 2c skills grid                  |
 | 3 — Quest dataset               | done  | 214 quests committed; `build:quests` fetches · parses · cross-checks · emits |
 | 4 — Quest engine and queue      | done  | Engine, detail, queue, reorder (4e′) and refresh-on-resume (4f) all built    |
@@ -641,7 +641,7 @@ Building a UI that invites someone to hand-enter 214 completions before that
 existed was the wrong order, which is why this jumped the queue.
 
 **Built:** `src/lib/backup.ts` (pure — builds and validates the backup shape,
-no DOM) plus export/import controls in the About panel. Covers exactly the
+no DOM) plus export/import controls in the Settings panel. Covers exactly the
 hand-entered fields — `settings.username`, `settings.accountType`,
 `quests:progress`, `quests:goals` — and nothing fetched, since cached hiscores
 restore themselves from a username. A version field (`1`) and an `app` marker
@@ -919,7 +919,7 @@ fine; most RuneLite plugins are BSD-2.
    - **Manual refresh has no home in a PWA** — no address bar to pull. Hence
      pull-to-refresh.
 
-   Still unmeasured: the tab bar is ~74px of a docked strip. The About panel
+   Still unmeasured: the tab bar is ~74px of a docked strip. The Settings panel
    reports live window size, so that number is now obtainable.
 
 4. ~~The automated deploy is unproven.~~ **Closed — it works.** 0.3.0's deploy
@@ -944,7 +944,7 @@ fine; most RuneLite plugins are BSD-2.
    cutting a release — the trap this hit twice.
 
    **Dispatch against the release _tag_, not `main`.** The dropdown accepts
-   either, and the gate exists because the About panel advertises
+   either, and the gate exists because the Settings panel advertises
    `__APP_VERSION__` from `package.json`, which only the release PR bumps.
    Deploying `main` manually would ship a build whose version readout is ahead
    of its tag — and that readout is what device measurements rely on.

@@ -32,6 +32,14 @@ function measure() {
 
 onMounted(() => {
   measure()
+  // One fetch per session, from the cache otherwise — the plugin writes when
+  // the player syncs, not continuously, so there's no cadence worth guessing.
+  void sync.ensureLoaded()
+  // This panel reads quest data too: without the dataset the index is empty,
+  // every synced id looks unknown, and the drift warning accuses the plugin of
+  // sending 19 quests that do not exist. Panels ask a store for what they
+  // need rather than relying on another panel having been opened first.
+  void quests.ensureReady()
   window.addEventListener('resize', measure)
   // iOS reports interface-driven size changes here rather than on `resize`.
   window.visualViewport?.addEventListener('resize', measure)
@@ -85,6 +93,18 @@ function exportBackup() {
   URL.revokeObjectURL(url)
   importMessage.value = null
 }
+
+/**
+ * Synced quests that this build has a quest for. The unknown ones are counted
+ * separately — they're drift between the plugin and `build:quests`, and
+ * silently dropping them is how that drift stays invisible.
+ */
+const syncedCount = computed(() => Object.keys(quests.syncedProgress).length)
+
+const lastSynced = computed(() => {
+  const at = sync.snapshot?.receivedAt
+  return at ? new Date(at).toLocaleString() : null
+})
 
 function chooseImportFile() {
   fileInput.value?.click()
@@ -173,6 +193,80 @@ async function onImportFileChosen(event: Event) {
         Add Curator's Journal to your home screen. Safari clears storage for
         uninstalled sites after about a week idle, and your quest completions
         live in it.
+      </p>
+    </section>
+
+    <hr class="m-0 h-0 border-0 border-t-2 border-t-bevel-dk" />
+
+    <section class="flex flex-col gap-2">
+      <h2 class="m-0 font-display text-[19px] leading-tight">RuneLite sync</h2>
+
+      <p class="m-0 max-w-[52ch] text-[15px] text-ink-soft">
+        The companion plugin can send your quest state here, so you don't have
+        to enter it by hand. Paste the account hash it shows you.
+      </p>
+
+      <label class="flex flex-col gap-1">
+        <span class="text-[15px] font-bold">Account hash</span>
+        <!-- Monospace and numeric: it's a nineteen-digit number read off
+             another screen, which is exactly when a transposed digit hides. -->
+        <input
+          v-model="sync.accountHash"
+          type="text"
+          inputmode="numeric"
+          autocapitalize="none"
+          autocomplete="off"
+          spellcheck="false"
+          maxlength="20"
+          placeholder="1234567890123456789"
+          class="tap bevel-in bg-parchment-2 px-2 font-mono text-[16px] text-ink placeholder:text-ink-soft/60"
+        />
+      </label>
+
+      <label
+        class="tap pressable-parchment bevel-in flex items-center gap-2 bg-parchment-2 px-2"
+      >
+        <input v-model="sync.mergeEnabled" type="checkbox" class="size-4" />
+        <span class="text-[15px] font-bold">Merge synced quests</span>
+      </label>
+
+      <p class="m-0 max-w-[52ch] text-[15px] text-ink-soft">
+        Merging only ever marks a quest further along, never back, and nothing
+        synced is written to your own record — so turning this off restores
+        exactly what you entered.
+      </p>
+
+      <div class="flex gap-2">
+        <button
+          type="button"
+          :disabled="!sync.accountHash || sync.loading"
+          class="tap pressable bevel-oak flex flex-1 items-center justify-center gap-2 bg-brown font-bold text-gold engraved disabled:opacity-50"
+          @click="sync.refresh()"
+        >
+          <AppIcon name="refresh" :size="15" />
+          {{ sync.loading ? 'Refreshing…' : 'Refresh' }}
+        </button>
+      </div>
+
+      <p v-if="sync.error" class="m-0 text-[15px] text-todo">
+        {{ sync.error }}
+      </p>
+
+      <p v-else-if="lastSynced" class="m-0 text-[15px] text-ink-soft">
+        <span class="nums">{{ syncedCount }}</span>
+        quest<span v-if="syncedCount !== 1">s</span> synced, last updated
+        {{ lastSynced }}.
+      </p>
+
+      <!-- Drift, not an error: the plugin named a quest this dataset has no
+           entry for, which means build:quests should be re-run. -->
+      <p
+        v-if="quests.syncUnknownIds.length"
+        class="m-0 max-w-[52ch] text-[15px] text-doing"
+      >
+        <span class="nums">{{ quests.syncUnknownIds.length }}</span>
+        synced quest<span v-if="quests.syncUnknownIds.length !== 1">s</span>
+        aren't in this app's quest list and were ignored.
       </p>
     </section>
 
