@@ -39,7 +39,7 @@ const CACHE_TTL_SECONDS = 60
 
 /** Identifies us to Jagex. Wiki etiquette asks for this and it costs nothing. */
 const USER_AGENT =
-  'StageScape/0.1 (OSRS quest companion; +https://github.com/dylanclaywell/stagescape)'
+  'CuratorsJournal/0.1 (OSRS quest companion; +https://github.com/dylanclaywell/curators-journal)'
 
 function json(result: HiscoresResult, status: number, ttl = 0): Response {
   return new Response(JSON.stringify(result), {
@@ -120,7 +120,7 @@ export async function handleHiscores(
 
   // A synthetic key, so query-param order and spacing can't split the cache.
   const cacheKey = new Request(
-    `https://hiscores.stagescape.internal/${accountType}/${encodeURIComponent(username)}`,
+    `https://hiscores.curators-journal.internal/${accountType}/${encodeURIComponent(username)}`,
   )
 
   // Cache API is a real cache in production and effectively a no-op in some

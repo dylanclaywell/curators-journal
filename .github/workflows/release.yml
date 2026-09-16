@@ -62,7 +62,7 @@ jobs:
       # Its own step, so the skill-icon fetch, vue-tsc and vite build fail
       # visibly and separately from the deploy itself. It also writes
       # .wrangler/deploy/config.json, which points wrangler at the generated
-      # dist/stagescape/wrangler.json.
+      # dist/curators_journal/wrangler.json.
       - name: Build
         run: npm run build
 

@@ -72,7 +72,7 @@ function exportBackup() {
   const url = URL.createObjectURL(blob)
   const link = document.createElement('a')
   link.href = url
-  link.download = `stagescape-backup-${new Date().toISOString().slice(0, 10)}.json`
+  link.download = `curators-journal-backup-${new Date().toISOString().slice(0, 10)}.json`
   link.click()
   URL.revokeObjectURL(url)
   importMessage.value = null
@@ -153,7 +153,7 @@ async function onImportFileChosen(event: Event) {
       </dl>
 
       <p v-if="!installed" class="m-0 text-[15px] text-ink-soft">
-        Add StageScape to your home screen. Safari clears storage for
+        Add Curator's Journal to your home screen. Safari clears storage for
         uninstalled sites after about a week idle, and your quest completions
         live in it.
       </p>
@@ -230,8 +230,8 @@ async function onImportFileChosen(event: Event) {
       </ul>
 
       <p class="m-0 max-w-[52ch] text-[15px] text-ink-soft">
-        StageScape reads public data only. It is not a third-party client and
-        never touches the game.
+        Curator's Journal reads public data only. It is not a third-party client
+        and never touches the game.
       </p>
     </section>
   </div>

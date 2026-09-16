@@ -14,9 +14,18 @@
 import type { AccountType } from './types'
 import type { QuestProgress } from './quests'
 
+/**
+ * The app slug written into the file. It changed when StageScape was renamed
+ * to Curator's Journal, so `LEGACY_APPS` keeps older exports importable: a
+ * backup is the only recovery path for data that has no other source, and
+ * refusing to read one because the app was renamed would defeat its purpose.
+ */
+const APP = 'curators-journal'
+const LEGACY_APPS: ReadonlySet<string> = new Set(['stagescape'])
+
 export interface Backup {
   version: 1
-  app: 'stagescape'
+  app: typeof APP
   /** ISO timestamp, informational — shown to the player, not checked on import. */
   exportedAt: string
   settings: {
@@ -39,7 +48,7 @@ export interface BackupInput {
 export function createBackup(input: BackupInput): Backup {
   return {
     version: 1,
-    app: 'stagescape',
+    app: APP,
     exportedAt: new Date().toISOString(),
     settings: {
       username: input.username,
@@ -79,11 +88,13 @@ export function parseBackup(raw: unknown): ParseResult {
   const fail = (error: string): ParseResult => ({ ok: false, error })
 
   if (typeof raw !== 'object' || raw === null) {
-    return fail('Not a StageScape backup file.')
+    return fail("Not a Curator's Journal backup file.")
   }
   const obj = raw as Record<string, unknown>
 
-  if (obj.app !== 'stagescape') return fail('Not a StageScape backup file.')
+  if (obj.app !== APP && !LEGACY_APPS.has(obj.app as string)) {
+    return fail("Not a Curator's Journal backup file.")
+  }
   if (obj.version !== 1) {
     return fail(`Unsupported backup version: ${JSON.stringify(obj.version)}.`)
   }
@@ -122,7 +133,7 @@ export function parseBackup(raw: unknown): ParseResult {
     ok: true,
     backup: {
       version: 1,
-      app: 'stagescape',
+      app: APP,
       exportedAt:
         typeof obj.exportedAt === 'string'
           ? obj.exportedAt

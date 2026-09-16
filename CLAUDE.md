@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-StageScape is an OSRS companion PWA. It combines live hiscores with
+Curator's Journal is an OSRS companion PWA. It combines live hiscores with
 locally-tracked quest completions to answer "what can I actually start right
 now," then builds a dependency-ordered quest queue. Deployed to Cloudflare
 Workers with Static Assets; third-party API calls go through the Worker.
@@ -33,7 +33,7 @@ There is no single target size. Three real cases, all served by one codebase:
 only two window sizes (fullscreen and slightly smaller), and our 375px minimum
 window width doesn't fit beside either, so Stage Manager overlaps rather than
 tiles. The minimum window _height_ is larger still, which also rules out sitting
-in OSRS's letterbox band. Portrait with StageScape docked along the bottom is
+in OSRS's letterbox band. Portrait with Curator's Journal docked along the bottom is
 the arrangement that works.
 
 Two consequences worth holding onto:
@@ -52,7 +52,7 @@ Two consequences worth holding onto:
 
 ```bash
 npm run dev            # Vite + HMR, with the Worker running in workerd. /api/* works.
-npm run build          # vue-tsc -b && vite build -> dist/client (assets) + dist/stagescape (Worker)
+npm run build          # vue-tsc -b && vite build -> dist/client (assets) + dist/curators_journal (Worker)
 npm run preview        # build, then serve the built output in the Workers runtime
 npm run deploy         # build && wrangler deploy
 npm run typecheck      # vue-tsc app + tsc tsconfig.worker.json (both must pass)
@@ -270,7 +270,7 @@ it. Add an entry to that script's `ICONS` list and re-run
   affiliated with Jagex."
 - §2.4 carves trademarks out of the policy entirely: **never use the Jagex or
   RuneScape logos**, or anything implying endorsement.
-- §6.1.2 forbids third-party _clients_. StageScape reads public hiscores over
+- §6.1.2 forbids third-party _clients_. Curator's Journal reads public hiscores over
   HTTP and never touches the game client, so it isn't one — keep it that way.
 - Embedding Jagex sprites in a third-party tool is **not addressed** by the
   policy — a genuine gap. We use the real skill icons anyway, as a considered
@@ -299,7 +299,7 @@ deployed, but don't copy that shape here.
 `wrangler.jsonc` is the input config. Two things about it are easy to get wrong:
 
 - **Never set `assets.directory`.** `@cloudflare/vite-plugin` generates
-  `dist/stagescape/wrangler.json` at build time and populates that field from
+  `dist/curators_journal/wrangler.json` at build time and populates that field from
   the client build output. Setting it by hand fights the plugin.
 - `assets.not_found_handling: "single-page-application"` is what makes deep
   links work. Without it `/quests`, `/stats` and `/about` 404 on a cold load —
@@ -309,7 +309,7 @@ deployed, but don't copy that shape here.
 `assets.run_worker_first: ["/api/*"]` means the Worker is invoked **only** for
 `/api/*`. Browser navigations are served straight from assets without waking it,
 which is both correct here and cheaper. Build output splits: `dist/client` for
-assets, `dist/stagescape` for the Worker.
+assets, `dist/curators_journal` for the Worker.
 
 Deploys run through **GitHub Actions** (`.github/workflows/release.yml`), on
 release rather than on every push: the job is gated on release-please's

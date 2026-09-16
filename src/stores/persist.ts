@@ -7,6 +7,12 @@
  */
 import localforage from 'localforage'
 
+/**
+ * `name` is the IndexedDB database name, and it is deliberately still the
+ * old app slug. It is invisible to the player, and changing it would point a
+ * renamed build at a fresh empty database — progress, goals and settings all
+ * still on disk and none of them found. A cosmetic rename is not worth that.
+ */
 const store = localforage.createInstance({
   name: 'stagescape',
   storeName: 'state',

@@ -10,7 +10,8 @@ import { panelById } from '@/panels/registry'
 const route = useRoute()
 const activePanel = computed(() => panelById(String(route.meta.panelId ?? '')))
 const headerTitle = computed(
-  () => pageHeader.value?.title ?? activePanel.value?.title ?? 'StageScape',
+  () =>
+    pageHeader.value?.title ?? activePanel.value?.title ?? "Curator's Journal",
 )
 
 const scroller = ref<HTMLElement | null>(null)

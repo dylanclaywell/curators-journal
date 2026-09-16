@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "stagescape",
+  "name": "curators-journal",
   "compatibility_date": "2026-09-09",
   "main": "./src/worker/index.ts",
   "assets": {

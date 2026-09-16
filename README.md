@@ -1,4 +1,4 @@
-# StageScape
+# Curator's Journal
 
 An Old School RuneScape companion PWA that sits alongside the game — docked
 along the bottom of a portrait iPad, on a phone as a second screen, or full
@@ -9,7 +9,7 @@ actually do next?_
 
 ## What it does
 
-- **Quest queue.** Add a quest and StageScape inserts its unmet prerequisites
+- **Quest queue.** Add a quest and Curator's Journal inserts its unmet prerequisites
   ahead of it in a valid order, surfaces the skill gaps blocking it as their own
   line items, and keeps the next actionable step pinned at the top.
 - **Live stats.** Hiscores lookup across every account type, with XP-to-next and
@@ -29,7 +29,7 @@ Installing matters for more than the icon: Safari evicts storage for
 non-installed sites after about a week idle, and your quest completions live in
 that storage. There's a JSON export in settings as a second safety net.
 
-To run it beside the game, put the iPad in **portrait** and dock StageScape along
+To run it beside the game, put the iPad in **portrait** and dock Curator's Journal along
 the bottom. Landscape doesn't work — OSRS only offers two window sizes and
 neither leaves room for a second window, so they overlap instead of tiling.
 
@@ -85,7 +85,7 @@ on `:active`, not `:hover` — the target device has no hover.
 ## Data sources
 
 Hiscores and wiki data belong to Jagex and the OSRS Wiki respectively.
-StageScape caches politely and identifies itself on every request. It reads
+Curator's Journal caches politely and identifies itself on every request. It reads
 public data only — no credentials, no automation, nothing that touches the game
 client, and it is not a third-party client.
 
@@ -99,7 +99,7 @@ Created using intellectual property belonging to Jagex Limited under the terms
 of Jagex's Fan Content Policy. This content is not endorsed by or affiliated
 with Jagex.
 
-StageScape's own code is licensed under **Apache-2.0** ([LICENSE](LICENSE)).
+This project's own code is licensed under **Apache-2.0** ([LICENSE](LICENSE)).
 
 Third-party material — Jagex assets, icon sets, typefaces and wiki data — is
 attributed separately in **[NOTICE.md](NOTICE.md)**, which Apache-2.0 §4(d)

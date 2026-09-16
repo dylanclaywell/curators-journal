@@ -137,8 +137,9 @@ const startableAnywhere = computed(() => {
           Your queue is empty
         </p>
         <p class="m-0 max-w-[46ch] text-ink-soft">
-          Pick a quest in the Quests tab and StageScape works backwards through
-          everything it needs, then tells you what you can start right now.
+          Pick a quest in the Quests tab and Curator's Journal works backwards
+          through everything it needs, then tells you what you can start right
+          now.
         </p>
         <!-- The one place the Queue links to Quests, and it names a
              destination rather than promising an action: with nothing queued

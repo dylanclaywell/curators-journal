@@ -18,10 +18,10 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'apple-touch-icon.png'],
       manifest: {
-        name: 'StageScape',
-        short_name: 'StageScape',
+        name: "Curator's Journal",
+        short_name: 'Curator',
         description:
-          'An OSRS companion rail — quest queue and live stats, sized for Stage Manager.',
+          'An OSRS quest journal — what you can start right now, and the order to do the rest in.',
         theme_color: '#3E2F1C',
         background_color: '#241C12',
         display: 'standalone',

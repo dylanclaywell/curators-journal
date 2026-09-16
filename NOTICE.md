@@ -2,7 +2,7 @@
 
 Copyright 2026 Dylan Claywell
 
-StageScape's own source code is licensed under the Apache License, Version 2.0
+This project's own source code is licensed under the Apache License, Version 2.0
 — see [LICENSE](LICENSE). This file covers material that **is not ours**, and
 is kept separate from that licence.
 
@@ -64,7 +64,7 @@ Where that leaves us, honestly:
   gap, not a loophole we found.
 - §2.4 excludes trademarks from the policy entirely. **The Jagex and RuneScape
   logos and wordmarks are never used here**, and must not be.
-- §6.1.2 prohibits third-party game _clients_. StageScape reads public hiscores
+- §6.1.2 prohibits third-party game _clients_. Curator's Journal reads public hiscores
   over HTTP and never touches the game, so it is not one.
 - Using these icons is near-universal practice among OSRS fan tools, and the
   policy is permissive in spirit. For a personal, non-commercial tool carrying

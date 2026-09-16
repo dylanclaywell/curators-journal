@@ -2,7 +2,7 @@ import type { Component } from 'vue'
 import type { IconName } from '@/lib/icons'
 
 /**
- * A panel is the unit of composition in StageScape: one screen in the rail,
+ * A panel is the unit of composition in Curator's Journal: one screen in the rail,
  * one tab in the tab bar. Panels read data only through stores — they never
  * fetch directly — which is what will let a future plugin contribute a panel
  * through this same registry instead of needing app changes.

@@ -9,7 +9,7 @@ licensing lives in [NOTICE.md](NOTICE.md).
 
 ## Status
 
-**0.3.1 is deployed** at <https://stagescape.infinitebit.workers.dev>, and the
+**0.3.1 is deployed** at <https://curators-journal.infinitebit.workers.dev>, and the
 CI deploy path is now proven — see open question 4.
 
 The stats half works end to end: hiscores lookup through the Worker, cached
@@ -773,10 +773,10 @@ Plugin Hub submission is a PR to `runelite/plugin-hub` adding a file that names
 a **repository URL and a commit hash**. The referenced repo is built standalone:
 Gradle at the root, its own licence, its own tags. A Java project wedged into a
 subdirectory here doesn't fit that shape, and release-please — which reads every
-Conventional Commit in this repo — would start versioning StageScape off plugin
+Conventional Commit in this repo — would start versioning Curator's Journal off plugin
 commits.
 
-So: **`stagescape-runelite`, separate and public.** What crosses between them is
+So: **`curators-journal-runelite`, separate and public.** What crosses between them is
 the wire format and nothing else. `src/lib/sync.ts` is the spec; the Java side
 is a hand-copy of it. Two implementations of a twenty-line contract is cheaper
 than any mechanism for sharing one across two build systems.
@@ -817,7 +817,7 @@ to defend against a nuisance.
 **Keyed on `client.getAccountHash()`, not the RSN.** Settings already holds a
 username, so keying on the RSN would need no pasting at all — but an RSN is
 public and enumerable, so garbage could be sprayed at every name on the
-hiscores. A hash is opaque, so one paste from the plugin panel into StageScape
+hiscores. A hash is opaque, so one paste from the plugin panel into Curator's Journal
 buys spoof-resistance for free. It is an identifier, not a secret: anyone who
 has it can read and write that row, and that is accepted.
 
@@ -830,7 +830,7 @@ protecting the player from spoofing.
 
 The storage is one JSON blob per player, which is KV's shape. Pick D1 anyway:
 **KV is eventually consistent**, up to ~60s, and the entire interaction is "hit
-Sync in RuneLite, hit Refresh in StageScape." A stale read there doesn't read as
+Sync in RuneLite, hit Refresh in Curator's Journal." A stale read there doesn't read as
 eventual consistency, it reads as broken. D1 is read-after-write consistent.
 
 One table, one row per account hash: the payload as JSON text, plus a schema
@@ -861,7 +861,7 @@ fails to match** — that list is the drift detector between the plugin and
 
 ### The §6.1.2 wording gets narrower
 
-CLAUDE.md and NOTICE.md both say StageScape reads public hiscores over HTTP and
+CLAUDE.md and NOTICE.md both say Curator's Journal reads public hiscores over HTTP and
 never touches the game client, so it isn't a third-party client. The plugin runs
 _inside_ RuneLite, which Jagex permits, so it isn't one either — but the
 sentence as written stops being true of the project as a whole and needs
@@ -872,14 +872,14 @@ fine; most RuneLite plugins are BSD-2.
 
 ### Slices
 
-| Slice | Contents                                                     | State |
-| ----- | ------------------------------------------------------------ | ----- |
-| 5a    | `src/lib/sync.ts` — snapshot shape and validator, pure       | —     |
-| 5b    | D1 binding, `POST`/`GET /api/sync`, abuse caps               | —     |
-| 5c    | Sync store: `sync:snapshot`, merge computed, refresh, toggle | —     |
-| 5d    | `stagescape-runelite`: panel, sync button, hash display      | —     |
-| 5e    | Plugin Hub submission                                        | —     |
-| 5f    | Licensing rewording in CLAUDE.md and NOTICE.md               | —     |
+| Slice | Contents                                                      | State |
+| ----- | ------------------------------------------------------------- | ----- |
+| 5a    | `src/lib/sync.ts` — snapshot shape and validator, pure        | —     |
+| 5b    | D1 binding, `POST`/`GET /api/sync`, abuse caps                | —     |
+| 5c    | Sync store: `sync:snapshot`, merge computed, refresh, toggle  | —     |
+| 5d    | `curators-journal-runelite`: panel, sync button, hash display | —     |
+| 5e    | Plugin Hub submission                                         | —     |
+| 5f    | Licensing rewording in CLAUDE.md and NOTICE.md                | —     |
 
 ### Open within Phase 5
 

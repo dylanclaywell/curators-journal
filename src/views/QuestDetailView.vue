@@ -296,7 +296,7 @@ function statusStripeClass(id: string): string {
           v-if="!quests.isGoal(quest.id)"
           class="m-0 text-[13px] text-ink-soft"
         >
-          StageScape works backwards from this and everything it needs.
+          Curator's Journal works backwards from this and everything it needs.
         </p>
       </section>
 

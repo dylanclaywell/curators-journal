@@ -47,7 +47,7 @@ const API = 'https://oldschool.runescape.wiki/api.php'
 
 /** The wiki asks API consumers to identify themselves. */
 const USER_AGENT =
-  'StageScape/0.1 (OSRS quest companion; +https://github.com/dylanclaywell/stagescape)'
+  'CuratorsJournal/0.1 (OSRS quest companion; +https://github.com/dylanclaywell/curators-journal)'
 
 const headers = { 'user-agent': USER_AGENT }
 
