@@ -164,8 +164,13 @@ function isBlocked(id: string): boolean {
           :key="quest.id"
           class="flex items-stretch"
         >
+          <!-- 8px, not 4: against oak these three separate by hue rather
+               than by contrast (todo 1.26, doing 1.78, done 1.45 against
+               #57432a), and doing sits 9° from the wood's own hue. A 4px
+               sliver is too little area to read a hue from, which made
+               doing look like a lighter plank. -->
           <span
-            class="w-1 shrink-0"
+            class="w-2 shrink-0"
             :class="statusStripeClass(quest.id)"
             aria-hidden="true"
           />
@@ -184,8 +189,21 @@ function isBlocked(id: string): boolean {
               :to="`/quests/${quest.id}`"
               class="tap stretched-link flex min-w-0 flex-1 flex-col justify-center text-gold no-underline"
             >
+              <!-- Struck through when done, the way a journal entry gets
+                   crossed off. The stripe already says it; this says it
+                   without having to look left, which is what makes a long
+                   scrolled list readable.
+
+                   1px, not 2: `.engraved` puts a hard black shadow under the
+                   text and that shadow falls under the decoration line too,
+                   so a 2px strike renders as 2px of gold plus a 1px black
+                   echo and swallows the letterforms. -->
               <span
                 class="block truncate text-[15px] font-bold leading-tight engraved"
+                :class="{
+                  'line-through decoration-1':
+                    quests.progressOf(quest.id) === 'done',
+                }"
               >
                 {{ quest.name }}
               </span>
