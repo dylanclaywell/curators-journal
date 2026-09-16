@@ -11,6 +11,7 @@ import {
   parseHiscores,
 } from '../../lib/hiscores'
 import type { AccountType, HiscoresResult } from '../../lib/types'
+import { readCapped } from '../http'
 
 /**
  * Each account type is a separate hiscore table with its own `m=` module.
@@ -59,37 +60,6 @@ function fail(
   status: number,
 ): Response {
   return json({ ok: false, error, message }, status)
-}
-
-/** Reads a body but refuses to buffer more than `maxBytes`. */
-async function readCapped(
-  response: Response,
-  maxBytes: number,
-): Promise<string | null> {
-  const reader = response.body?.getReader()
-  if (!reader) return ''
-
-  const chunks: Uint8Array[] = []
-  let total = 0
-
-  for (;;) {
-    const { done, value } = await reader.read()
-    if (done) break
-    total += value.byteLength
-    if (total > maxBytes) {
-      await reader.cancel()
-      return null
-    }
-    chunks.push(value)
-  }
-
-  const joined = new Uint8Array(total)
-  let offset = 0
-  for (const chunk of chunks) {
-    joined.set(chunk, offset)
-    offset += chunk.byteLength
-  }
-  return new TextDecoder().decode(joined)
 }
 
 export async function handleHiscores(

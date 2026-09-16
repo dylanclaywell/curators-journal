@@ -13,6 +13,7 @@
  */
 
 import { handleHiscores } from './routes/hiscores'
+import { handleSync } from './routes/sync'
 
 export interface Env {
   ASSETS: Fetcher
@@ -44,6 +45,8 @@ export default {
     switch (url.pathname) {
       case '/api/hiscores':
         return handleHiscores(request, ctx)
+      case '/api/sync':
+        return handleSync(request, env)
       default:
         return notFound(url.pathname)
     }

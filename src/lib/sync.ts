@@ -218,3 +218,24 @@ export function mergeProgress(
 
   return merged
 }
+
+/** Why a sync request was refused. Mirrors `HiscoresResult`'s error union. */
+export type SyncError =
+  | 'invalid_request'
+  | 'invalid_snapshot'
+  | 'not_found'
+  | 'too_large'
+  | 'storage_error'
+
+/**
+ * What `GET /api/sync` answers with — one shape either way, so the client has
+ * a single thing to handle, exactly as the hiscores route does.
+ */
+export type SyncFetchResult =
+  | { ok: true; snapshot: StoredSnapshot }
+  | { ok: false; error: SyncError; message: string }
+
+/** What `POST /api/sync` answers with. */
+export type SyncWriteResult =
+  | { ok: true; receivedAt: string }
+  | { ok: false; error: SyncError; message: string }
