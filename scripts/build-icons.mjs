@@ -3,6 +3,11 @@
  * need. iOS ignores SVG for apple-touch-icon, so the home-screen install this
  * app is built around genuinely depends on these files existing.
  *
+ * It also copies the source SVG to public/favicon.svg, which browsers prefer
+ * over the PNG for the tab icon. That file used to be drawn by hand, and it
+ * duly went stale the first time the logo changed — so it is generated now,
+ * and icon.svg is the only mark anyone edits.
+ *
  * Run after editing the SVG:  npm run build:icons
  */
 import { readFile, writeFile } from 'node:fs/promises'
@@ -28,6 +33,9 @@ const targets = [
   // artwork is inset into the safe zone (~80% of the canvas).
   { out: 'public/maskable-512x512.png', size: 512, pad: 0.1 },
 ]
+
+await writeFile(`${root}public/favicon.svg`, svg)
+console.log('public/favicon.svg  (copied)')
 
 for (const { out, size, pad } of targets) {
   const inner = Math.round(size * (1 - pad * 2))
