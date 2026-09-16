@@ -16,4 +16,11 @@
     // from assets without waking it, which is both correct here and cheaper.
     "run_worker_first": ["/api/*"],
   },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "curators-journal",
+      "database_id": "777f905f-d9e2-4b56-99db-a9bebe158ce7",
+    },
+  ],
 }

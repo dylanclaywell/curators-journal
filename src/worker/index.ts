@@ -16,6 +16,12 @@ import { handleHiscores } from './routes/hiscores'
 
 export interface Env {
   ASSETS: Fetcher
+  /**
+   * The RuneLite sync store — one row per account hash, see migrations/.
+   * Bound as `DB` rather than after the database's name, because a binding is
+   * a property on `env` and reads as one at every call site.
+   */
+  DB: D1Database
 }
 
 function notFound(pathname: string): Response {
