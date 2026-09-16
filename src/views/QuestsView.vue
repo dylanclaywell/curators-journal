@@ -89,7 +89,12 @@ function isBlocked(id: string): boolean {
     <!-- Sticky, so search and filters stay reachable without scrolling back
          up through 214 rows — the touch-first rule against hiding a needed
          control. -->
-    <div class="sticky top-0 z-10 flex flex-col gap-2 bg-parchment pb-2">
+    <!-- z-20, not z-10: the add button below is `relative z-10` so it can
+         out-rank its row's stretched-link, and `relative` alone makes no
+         stacking context — so at equal z-index the rows win on document
+         order and scroll over this header. The two numbers are solving
+         different problems and must not be the same. -->
+    <div class="sticky top-0 z-20 flex flex-col gap-2 bg-parchment pb-2">
       <div class="relative flex">
         <AppIcon
           name="search"
