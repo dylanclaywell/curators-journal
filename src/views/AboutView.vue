@@ -3,6 +3,7 @@ import { computed, onMounted, onUnmounted, ref } from 'vue'
 import AppIcon from '@/components/AppIcon.vue'
 import { createBackup, parseBackup } from '@/lib/backup'
 import { useQuestsStore } from '@/stores/quests'
+import { useSyncStore } from '@/stores/sync'
 import { useSettingsStore } from '@/stores/settings'
 
 /**
@@ -50,6 +51,7 @@ onUnmounted(() => {
  */
 const settings = useSettingsStore()
 const quests = useQuestsStore()
+const sync = useSyncStore()
 
 const fileInput = ref<HTMLInputElement | null>(null)
 const importMessage = ref<{ kind: 'ok' | 'error'; text: string } | null>(null)
@@ -57,7 +59,9 @@ const importMessage = ref<{ kind: 'ok' | 'error'; text: string } | null>(null)
 // Both stores hydrate asynchronously from IndexedDB on creation. Acting before
 // that finishes risks exporting the empty initial state, or an import getting
 // silently dropped by a store that isn't yet persisting writes.
-const dataReady = computed(() => settings.hydrated && quests.hydrated)
+const dataReady = computed(
+  () => settings.hydrated && quests.hydrated && sync.hydrated,
+)
 
 function exportBackup() {
   const backup = createBackup({
@@ -65,6 +69,10 @@ function exportBackup() {
     accountType: settings.accountType,
     progress: quests.progress,
     goals: quests.goals,
+    // The cached snapshot is deliberately absent — it refetches from the hash.
+    // The hash itself is not recoverable without going back to RuneLite.
+    accountHash: sync.accountHash,
+    mergeEnabled: sync.mergeEnabled,
   })
   const blob = new Blob([JSON.stringify(backup, null, 2)], {
     type: 'application/json',
@@ -118,6 +126,15 @@ async function onImportFileChosen(event: Event) {
   settings.accountType = result.backup.settings.accountType
   quests.progress = result.backup.quests.progress
   quests.goals = result.backup.quests.goals
+
+  // Absent in backups written before Phase 5, and an older file should leave
+  // the current sync settings alone rather than blanking them.
+  if (result.backup.sync) {
+    sync.accountHash = result.backup.sync.accountHash
+    sync.mergeEnabled = result.backup.sync.mergeEnabled
+    // The cache belongs to whoever the old hash was; refetched on next open.
+    sync.clearSnapshot()
+  }
 
   importMessage.value = { kind: 'ok', text: 'Backup restored.' }
 }

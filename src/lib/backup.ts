@@ -7,9 +7,15 @@
  * tsconfig even though nothing here currently runs there.
  *
  * Scope is deliberately narrow — only what's hand-entered and unrecoverable:
- * `settings` (username, account type) and quest `progress`/`goals`. Cached
- * hiscores are excluded; they refetch themselves from a username, which is
- * exactly why they aren't in this category. See ROADMAP.md slice 4b′.
+ * `settings` (username, account type), quest `progress`/`goals`, and the
+ * `sync` settings. Cached hiscores are excluded, and so is the cached
+ * RuneLite snapshot; both refetch themselves from something else in here,
+ * which is exactly why they aren't in this category. See ROADMAP.md slice 4b′.
+ *
+ * `sync` is optional and the version stays at 1 on purpose. Bumping it would
+ * make new exports unreadable to an installed build that hasn't updated —
+ * plausible for a home-screen PWA — whereas an added optional field is
+ * ignored by an older reader and defaulted by a newer one.
  */
 import type { AccountType } from './types'
 import type { QuestProgress } from './quests'
@@ -36,6 +42,15 @@ export interface Backup {
     progress: Record<string, QuestProgress>
     goals: string[]
   }
+  /**
+   * Absent in backups written before Phase 5. The account hash is the piece
+   * worth keeping: it's a nineteen-digit number that otherwise has to be
+   * fetched out of RuneLite again.
+   */
+  sync?: {
+    accountHash: string
+    mergeEnabled: boolean
+  }
 }
 
 export interface BackupInput {
@@ -43,6 +58,8 @@ export interface BackupInput {
   accountType: AccountType
   progress: Record<string, QuestProgress>
   goals: string[]
+  accountHash: string
+  mergeEnabled: boolean
 }
 
 export function createBackup(input: BackupInput): Backup {
@@ -57,6 +74,10 @@ export function createBackup(input: BackupInput): Backup {
     quests: {
       progress: { ...input.progress },
       goals: [...input.goals],
+    },
+    sync: {
+      accountHash: input.accountHash,
+      mergeEnabled: input.mergeEnabled,
     },
   }
 }
@@ -129,6 +150,22 @@ export function parseBackup(raw: unknown): ParseResult {
     return fail('Backup file has an invalid goal list.')
   }
 
+  // Optional, and validated only if present: a backup from before Phase 5 is
+  // a valid backup, not a broken one.
+  let sync: Backup['sync']
+  if (obj.sync !== undefined) {
+    const raw = obj.sync as Record<string, unknown> | null
+    if (
+      !raw ||
+      typeof raw !== 'object' ||
+      typeof raw.accountHash !== 'string' ||
+      typeof raw.mergeEnabled !== 'boolean'
+    ) {
+      return fail('Backup file has invalid sync settings.')
+    }
+    sync = { accountHash: raw.accountHash, mergeEnabled: raw.mergeEnabled }
+  }
+
   return {
     ok: true,
     backup: {
@@ -146,6 +183,7 @@ export function parseBackup(raw: unknown): ParseResult {
         progress: progress as Record<string, QuestProgress>,
         goals: quests.goals as string[],
       },
+      ...(sync ? { sync } : {}),
     },
   }
 }

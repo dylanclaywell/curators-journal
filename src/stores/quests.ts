@@ -12,8 +12,10 @@ import {
   type SkillLevels,
 } from '@/lib/quests'
 import type { Quest, QuestDataset } from '@/lib/types'
+import { mergeProgress, reconcileSnapshot } from '@/lib/sync'
 import { useHiscoresStore } from './hiscores'
 import { useSettingsStore } from './settings'
+import { useSyncStore } from './sync'
 import { read, write } from './persist'
 
 /**
@@ -74,9 +76,48 @@ export const useQuestsStore = defineStore('quests', () => {
     return out
   })
 
+  /**
+   * The RuneLite snapshot, reduced to quests this build knows about.
+   *
+   * Empty unless the player turned the merge on, so the toggle is the only
+   * thing standing between synced data and every derived value below.
+   */
+  const syncedProgress = computed<ProgressMap>(() => {
+    const sync = useSyncStore()
+    if (!sync.mergeEnabled || !sync.snapshot) return {}
+    return reconcileSnapshot(sync.snapshot, new Set(index.value.byId.keys()))
+      .progress
+  })
+
+  /**
+   * Ids the snapshot carried that this dataset has no quest for. Expected to
+   * be empty; anything here means the plugin's quest names and
+   * `build:quests` have drifted, which is worth showing rather than hiding.
+   */
+  const syncUnknownIds = computed<string[]>(() => {
+    const sync = useSyncStore()
+    if (!sync.snapshot) return []
+    return reconcileSnapshot(sync.snapshot, new Set(index.value.byId.keys()))
+      .unknownIds
+  })
+
+  /**
+   * What the app displays and reasons about: the player's own record, with the
+   * snapshot allowed to move a quest forwards and never backwards.
+   *
+   * **This is a computed and nothing persists it.** `quests:progress` is
+   * written only by `setProgress`, so a bad snapshot cannot reach disk and
+   * turning the merge off restores exactly what the player entered. That
+   * property is the entire safety argument for syncing at all — see
+   * ROADMAP.md Phase 5.
+   */
+  const effectiveProgress = computed<ProgressMap>(() =>
+    mergeProgress(progress.value as ProgressMap, syncedProgress.value),
+  )
+
   const playerState = computed<PlayerState>(() => ({
     levels: levels.value,
-    progress: progress.value as ProgressMap,
+    progress: effectiveProgress.value,
   }))
 
   /**
@@ -146,8 +187,30 @@ export const useQuestsStore = defineStore('quests', () => {
 
   void hydrate()
 
+  /**
+   * What to show for a quest: the merged state, so a synced completion reads
+   * as done everywhere without every view having to know sync exists.
+   */
   function progressOf(id: string): QuestProgress {
+    return effectiveProgress.value[id] ?? 'todo'
+  }
+
+  /** What the player actually entered, which is what the write paths cycle. */
+  function localProgressOf(id: string): QuestProgress {
     return progress.value[id] ?? 'todo'
+  }
+
+  /**
+   * True when a quest reads as further along than the player recorded — that
+   * is, the snapshot is what's showing.
+   *
+   * The UI needs this: tapping through `cycleProgress` on such a quest edits
+   * the local value underneath and the display doesn't move, because the merge
+   * re-asserts it. Better to show where the state came from than to offer a
+   * control that appears not to work.
+   */
+  function isSynced(id: string): boolean {
+    return progressOf(id) !== localProgressOf(id)
   }
 
   function setProgress(id: string, state: QuestProgress): void {
@@ -174,7 +237,7 @@ export const useQuestsStore = defineStore('quests', () => {
       doing: 'done',
       done: 'todo',
     }
-    setProgress(id, next[progressOf(id)])
+    setProgress(id, next[localProgressOf(id)])
   }
 
   function isGoal(id: string): boolean {
@@ -227,11 +290,12 @@ export const useQuestsStore = defineStore('quests', () => {
   )
 
   const questPoints = computed(() =>
-    questPointsEarned(index.value, progress.value as ProgressMap),
+    questPointsEarned(index.value, effectiveProgress.value),
   )
 
   const completedCount = computed(
-    () => Object.values(progress.value).filter((s) => s === 'done').length,
+    () =>
+      Object.values(effectiveProgress.value).filter((s) => s === 'done').length,
   )
 
   return {
@@ -239,6 +303,9 @@ export const useQuestsStore = defineStore('quests', () => {
     loading,
     hydrated,
     progress,
+    effectiveProgress,
+    syncedProgress,
+    syncUnknownIds,
     goals,
     index,
     levels,
@@ -251,6 +318,8 @@ export const useQuestsStore = defineStore('quests', () => {
     levelsKnown,
     awaitingLevels,
     progressOf,
+    localProgressOf,
+    isSynced,
     setProgress,
     cycleProgress,
     isGoal,
