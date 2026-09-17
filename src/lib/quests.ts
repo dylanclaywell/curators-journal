@@ -15,7 +15,12 @@
  * was hidden.
  */
 import { SKILL_NAMES } from './types'
-import type { Quest, QuestPrerequisite, SkillName } from './types'
+import type {
+  Quest,
+  QuestPrerequisite,
+  QuestRequirements,
+  SkillName,
+} from './types'
 
 /**
  * The three states the in-game quest journal itself uses, which is why the
@@ -151,6 +156,77 @@ function prerequisiteMet(
   return prereq.completion === 'started' && state === 'doing'
 }
 
+/** The unmet half of a requirement set — what `QuestStatus` is built from. */
+export interface UnmetRequirements {
+  unmetSkills: UnmetSkill[]
+  unmetQuests: UnmetPrerequisite[]
+  unmetQuestPoints: { need: number; have: number } | null
+  unmetCombatLevel: { need: number; have: number } | null
+}
+
+/**
+ * Checks one `QuestRequirements` against the player.
+ *
+ * Extracted from `evaluateQuest` so achievement diary tiers and tasks can be
+ * checked by the same code: a diary tier states skill levels, prerequisite
+ * quests and quest points, which is exactly a quest's shape. Anything about
+ * *starting* versus *finishing* stays in `evaluateQuest`, because that
+ * distinction is a quest's and not a requirement set's — a diary task is done
+ * or it isn't.
+ */
+export function evaluateRequirements(
+  requirements: QuestRequirements,
+  state: PlayerState,
+  index: QuestIndex,
+): UnmetRequirements {
+  const unmetSkills: UnmetSkill[] = []
+  for (const requirement of requirements.skills) {
+    const have = state.levels[requirement.skill] ?? null
+    if (have !== null && have >= requirement.level) continue
+    unmetSkills.push({
+      skill: requirement.skill,
+      need: requirement.level,
+      have,
+      boostable: requirement.boostable,
+      requiredToStart: requirement.requiredToStart,
+    })
+  }
+
+  const unmetQuests: UnmetPrerequisite[] = []
+  for (const prereq of requirements.quests) {
+    if (prerequisiteMet(prereq, state.progress)) continue
+    unmetQuests.push({
+      ...prereq,
+      uncertain:
+        prereq.completion === 'started' &&
+        progressOf(prereq.id, state.progress) === 'todo',
+    })
+  }
+
+  /*
+   * Only totalled when the requirements actually gate on quest points, which
+   * 13 of 214 quests do. Computing it unconditionally made evaluating the
+   * whole dataset O(n²) — ~46k iterations, re-run on every progress change,
+   * on a tablet.
+   */
+  const needPoints = requirements.questPoints
+  const havePoints =
+    needPoints === undefined ? 0 : questPointsEarned(index, state.progress)
+  const unmetQuestPoints =
+    needPoints !== undefined && havePoints < needPoints
+      ? { need: needPoints, have: havePoints }
+      : null
+
+  const needCombat = requirements.combatLevel
+  const haveCombat = combatLevel(state.levels)
+  const unmetCombatLevel =
+    needCombat !== undefined && haveCombat !== null && haveCombat < needCombat
+      ? { need: needCombat, have: haveCombat }
+      : null
+
+  return { unmetSkills, unmetQuests, unmetQuestPoints, unmetCombatLevel }
+}
+
 /**
  * Evaluates one quest against the player's levels and history.
  *
@@ -164,49 +240,8 @@ export function evaluateQuest(
   state: PlayerState,
   index: QuestIndex,
 ): QuestStatus {
-  const unmetSkills: UnmetSkill[] = []
-  for (const requirement of quest.requirements.skills) {
-    const have = state.levels[requirement.skill] ?? null
-    if (have !== null && have >= requirement.level) continue
-    unmetSkills.push({
-      skill: requirement.skill,
-      need: requirement.level,
-      have,
-      boostable: requirement.boostable,
-      requiredToStart: requirement.requiredToStart,
-    })
-  }
-
-  const unmetQuests: UnmetPrerequisite[] = []
-  for (const prereq of quest.requirements.quests) {
-    if (prerequisiteMet(prereq, state.progress)) continue
-    unmetQuests.push({
-      ...prereq,
-      uncertain:
-        prereq.completion === 'started' &&
-        progressOf(prereq.id, state.progress) === 'todo',
-    })
-  }
-
-  /*
-   * Only totalled when a quest actually gates on quest points, which 13 of
-   * 214 do. Computing it unconditionally made evaluating the whole dataset
-   * O(n²) — ~46k iterations, re-run on every progress change, on a tablet.
-   */
-  const needPoints = quest.requirements.questPoints
-  const havePoints =
-    needPoints === undefined ? 0 : questPointsEarned(index, state.progress)
-  const unmetQuestPoints =
-    needPoints !== undefined && havePoints < needPoints
-      ? { need: needPoints, have: havePoints }
-      : null
-
-  const needCombat = quest.requirements.combatLevel
-  const haveCombat = combatLevel(state.levels)
-  const unmetCombatLevel =
-    needCombat !== undefined && haveCombat !== null && haveCombat < needCombat
-      ? { need: needCombat, have: haveCombat }
-      : null
+  const { unmetSkills, unmetQuests, unmetQuestPoints, unmetCombatLevel } =
+    evaluateRequirements(quest.requirements, state, index)
 
   // Only requirements the wiki explicitly marks as needed to start can block
   // starting. Unknown and finish-only requirements are surfaced, not gates —
