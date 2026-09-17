@@ -231,21 +231,56 @@ export function slugify(title: string): string {
 
 /** Strips wiki markup so a note reads as plain prose in the UI. */
 export function plainText(wikitext: string): string {
+  let text = wikitext
+    .replace(/<!--[\s\S]*?-->/g, '') // editor notes, e.g. "DO NOT ADD 30 FIREMAKING"
+    .replace(/<ref[^>]*\/>/g, '')
+    .replace(/<ref[^>]*>([\s\S]*?)<\/ref>/g, ' ($1)') // keep the caveat, drop the markup
+    .replace(/\[\[[^\]|]*\|([^\]]*)\]\]/g, '$1') // [[Target|label]] -> label
+    .replace(/\[\[([^\]]*)\]\]/g, '$1') // [[Target]] -> Target
+    // {{SCP|Agility|62}} -> Agility 62. The number needs `[\d,]` rather than
+    // just `\d`: skill *requirements* never exceed 99 and never carry a comma,
+    // but a reward's XP amount does ({{SCP|Smithing|80,000}}) — `\d+` alone
+    // would stop at "80" and hand rewards a number 1000x too small.
+    .replace(/\{\{SCP\|([^|}]+)\|([\d,]+)[^}]*\}\}/gi, '$1 $2')
+    // {{Fairycode|dks}} -> DKS. The code is the point of the sentence it sits
+    // in ("travel to fairy ring code DKS"), so dropping it with the other
+    // templates leaves an instruction with its instruction removed.
+    .replace(/\{\{Fairycode\|([^|}]+)\}\}/gi, (_, code: string) =>
+      code.toUpperCase(),
+    )
+    // {{RuneReq|Fire=5|Cosmic=1}} -> 5 Fire, 1 Cosmic. Otherwise "means to
+    // cast Varrock Teleport ()" ships with empty parentheses where the runes
+    // should be.
+    .replace(/\{\{RuneReq\|([^{}]*)\}\}/gi, (_, body: string) =>
+      body
+        .split('|')
+        .map((p) => p.split('='))
+        .filter(([rune, n]) => rune && n)
+        .map(([rune, n]) => `${n.trim()} ${rune.trim()}`)
+        .join(', '),
+    )
+
+  /*
+   * Innermost-first, to a fixed point. A single pass of a non-nesting pattern
+   * strips `{{GEPT|Battlestaff|15}}` out of
+   * `{{NoCoins|{{GEPT|Battlestaff|15}}-105000}}` and leaves the outer braces
+   * behind as literal text — which is how `{{#vardefine:` and `{{NoCoins|`
+   * ended up rendered to the player.
+   */
+  for (let pass = 0; pass < 10; pass++) {
+    const next = text.replace(/\{\{[^{}]*\}\}/g, '')
+    if (next === text) break
+    text = next
+  }
+
   return (
-    wikitext
-      .replace(/<!--[\s\S]*?-->/g, '') // editor notes, e.g. "DO NOT ADD 30 FIREMAKING"
-      .replace(/<ref[^>]*\/>/g, '')
-      .replace(/<ref[^>]*>([\s\S]*?)<\/ref>/g, ' ($1)') // keep the caveat, drop the markup
-      .replace(/\[\[[^\]|]*\|([^\]]*)\]\]/g, '$1') // [[Target|label]] -> label
-      .replace(/\[\[([^\]]*)\]\]/g, '$1') // [[Target]] -> Target
-      // {{SCP|Agility|62}} -> Agility 62. The number needs `[\d,]` rather than
-      // just `\d`: skill *requirements* never exceed 99 and never carry a comma,
-      // but a reward's XP amount does ({{SCP|Smithing|80,000}}) — `\d+` alone
-      // would stop at "80" and hand rewards a number 1000x too small.
-      .replace(/\{\{SCP\|([^|}]+)\|([\d,]+)[^}]*\}\}/gi, '$1 $2')
-      .replace(/\{\{[^{}]*\}\}/g, '') // drop remaining templates
+    text
       .replace(/'''?/g, '')
       .replace(/<[^>]+>/g, '')
+      // Punctuation orphaned by a stripped template: "Teleport ()" and
+      // "the city ," read as typos rather than as missing data.
+      .replace(/\(\s*\)/g, '')
+      .replace(/\s+([.,;:])/g, '$1')
       .replace(/\s+/g, ' ')
       .trim()
   )
