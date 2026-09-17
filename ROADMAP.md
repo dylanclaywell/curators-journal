@@ -955,6 +955,23 @@ three days after it was captured, on a device that cannot see the game?
 
 #### Rejected, with reasons worth keeping
 
+- **WikiSync's API, as a shortcut past the whole plugin.** `sync.runescape.wiki`
+  serves a player's diary tiers (per region, per tier, per task), quest states,
+  levels and combat achievements as public JSON keyed by username, and it is
+  live — so it appears to make slices 5d and 5e unnecessary for both quests and
+  diaries. **We don't get to use it.** RuneScape:WikiSync §Third-party use asks
+  third parties not to, on the grounds that players enabled the plugin to share
+  data with _the wiki_, not with arbitrary sites, and states they will actively
+  limit outside callers. Consent-scoped that narrowly, so there is nothing to
+  negotiate and nothing to wait out. Recorded in CLAUDE.md beside the
+  third-party source table, because it will look like the answer again.
+
+  Worth keeping for shape, though: WikiSync's payload is close to what our own
+  plugin should send — quests as an enum rather than a boolean, diaries nested
+  region → tier → tasks, which is exactly the "not a bare top-level map"
+  argument the wire format already makes. Arrive at that independently; don't
+  copy theirs.
+
 - **Quest step tracking via varbits.** The most expensive thing on the list — a
   per-quest varbit-to-step mapping that is large, undocumented and drifts every
   game update — and it fails the test outright. Away from the desk you are not

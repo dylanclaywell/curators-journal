@@ -143,6 +143,21 @@ stay free of DOM and Node APIs.
 | `prices.runescape.wiki`         | Wants a descriptive `User-Agent`; that's a forbidden header in `fetch()` |
 | `oldschool.runescape.wiki`      | CORS works with `origin=*`, but same UA etiquette                        |
 
+**`sync.runescape.wiki` is off limits.** WikiSync is a RuneLite plugin that
+publishes a player's quest state, achievement diary tiers, levels and combat
+achievements as public JSON by username — it looks like the answer to every
+"where does completion state come from" question this project has, and it is
+not. The wiki asks third parties not to use it, in as many words: _"Please do
+not use the WikiSync API in your own projects […] people who enable the plugin
+are choosing to share their game data to improve their experience on the wiki,
+rather than arbitrary third-parties."_ ([RuneScape:WikiSync
+§Third-party use](https://oldschool.runescape.wiki/w/RuneScape:WikiSync#Third-party_use))
+They also say they intend to block outside callers, so this is a dead end on
+etiquette **and** on reliability. Don't call it, don't mirror it, don't scrape
+it, and don't model our own sync shape on it. Completion state that isn't in
+the hiscores gets hand-entered or arrives through our own plugin (Phase 5) —
+there is no third route.
+
 Route handlers carry a fetch timeout, a response byte cap, and short-TTL Cache
 API caching so a remounting panel can't hammer Jagex. Follow the existing shape
 when adding one. Register new routes in `src/worker/index.ts`; there is no
