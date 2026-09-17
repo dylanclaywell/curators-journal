@@ -894,6 +894,86 @@ fine; most RuneLite plugins are BSD-2.
 - **Quests only, initially.** Diaries and combat achievements are the obvious
   next passengers and are explicitly out of scope here.
 
+### What to sync next, and the rule that decides it
+
+The two contexts this app serves are **temporally disjoint**, and that is the
+whole design constraint for anything else the plugin might carry:
+
+- **At the desk**, on RuneLite, is the only time the plugin can capture
+  anything. That is the write window.
+- **Out with only an iPad or a phone** — no RuneLite, no desktop — is when the
+  app gets used. That is the read window, and it is the reason the app exists.
+
+So a snapshot is **always old when it is read**, by hours or days. Which gives
+the rule:
+
+> **Sync facts that only ever accumulate.**
+
+Monotonic state ages well: a completed diary is still completed on Friday.
+Fluctuating state ages badly, and worse, it is wrong in the direction that
+costs something — a Tuesday bank tells you that you have the planks you spent
+on Wednesday.
+
+`mergeProgress` already encodes this. Taking the maximum of two states is
+**only** correct for data that never goes backwards, so the merge rule and the
+staleness rule are the same rule seen twice. It also means the two writers
+compose without any conflict resolution: quests finished on mobile get entered
+by hand, quests finished at the desk arrive by sync, and additive-max is right
+for both without either writer knowing about the other. Keep every future
+passenger on this pipe monotonic and that stays true.
+
+**The test for any proposed feature:** does it still answer something useful
+three days after it was captured, on a device that cannot see the game?
+
+#### Ranked by that test
+
+1. **Achievement diaries.** Monotonic, miserable to hand-enter, and
+   structurally identical to a quest — skill levels plus quest prerequisites —
+   so `evaluateQuest` and `buildPlan` need almost nothing new. It is a dataset
+   problem, not an engine problem. Give it its own lazy chunk from the start:
+   `quests.json` is already the largest asset by a wide margin.
+2. **Unlocks — fairy rings, spirit trees, lunar teleports, ancient scrolls.**
+   Permanent, tedious to track, and they gate _travel_, which gates whether a
+   quest's start point is actually reachable. Squarely in this app's lane and
+   exactly what you cannot remember while planning on a bus.
+3. **Collection log, combat achievements, music.** Same category, same pipe,
+   lower value — they are completionist records rather than answers to "what
+   can I start now".
+4. **Drift reporting.** The plugin has to log quest names it cannot match to
+   our ids anyway; sending those up makes the dataset self-monitoring, so a
+   wiki rename surfaces without anyone remembering to run
+   `build:quests -- --check`. Cheap, unglamorous, and it protects the ids that
+   quest completions are keyed on.
+5. **Multiple accounts.** Nearly free — the row is keyed by account hash, so a
+   main and an ironman are two hashes. Mostly a UI question.
+6. **Bank contents, reframed.** Fails the freshness test as a readiness check
+   and must never render as a checkmark, but it survives as a **prep list**:
+   what to buy before the next desk session. The away-job is planning the next
+   session, not executing this one. Note that the current caps are quest-sized
+   — `MAX_QUEST_ENTRIES` is 400 and the payload `CHECK` is 64 KiB, against a
+   bank of 800+ stacks — so this needs its own table rather than the one blob.
+
+#### Rejected, with reasons worth keeping
+
+- **Quest step tracking via varbits.** The most expensive thing on the list — a
+  per-quest varbit-to-step mapping that is large, undocumented and drifts every
+  game update — and it fails the test outright. Away from the desk you are not
+  mid-quest at the desk, and anything you do play on mobile the plugin never
+  sees.
+- **Anything the plugin _renders_.** An in-game overlay of the plan, quest
+  arrows, checklists: these make the desktop client better and make the phone
+  unnecessary, which is backwards. **The plugin is a sensor, not a surface.**
+  Quest Helper already does the other job and does it better.
+- **Farming and birdhouse timers.** Genuinely asynchronous and genuinely
+  second-screen, but RuneLite's Timetracking already covers it and it has
+  nothing to do with a quest journal.
+
+#### One consequence for the UI already built
+
+**"Last synced" is load-bearing, not a footnote.** If every read is of stale
+data then the age of that data is part of the answer, and it currently sits in
+a muted line under the refresh button. That is probably too quiet.
+
 ## Open questions
 
 1. **How often do the hiscores actually recompute?** Unmeasured, and it's the
