@@ -282,3 +282,105 @@ export interface QuestDataset {
   sources: string[]
   quests: Quest[]
 }
+
+/* ----------------------------------------------------------------- diaries */
+
+/**
+ * The four tiers, in the order the wiki lists them and the order their rewards
+ * unlock. Closed: all 12 diary pages carry exactly these four, verified against
+ * the live wiki, so a page yielding anything else is a defect to report rather
+ * than a value to absorb.
+ */
+export const DIARY_TIERS = ['Easy', 'Medium', 'Hard', 'Elite'] as const
+
+export type DiaryTierName = (typeof DIARY_TIERS)[number]
+
+/**
+ * One numbered task within a tier.
+ *
+ * Tasks carry parsed requirements rather than prose, which is the one place
+ * this dataset goes further than quests do. The wiki writes each task's
+ * requirement cell as `{{SCP|Thieving|38}}` and `{{SCP|Quest}} Started [[Sea
+ * Slug]]` templates, so they reduce to the same shapes quest requirements use
+ * — and reducing them is what lets the UI say *which* task is blocking a tier
+ * instead of only that the tier is blocked.
+ */
+export interface DiaryTask {
+  /** The task text, wiki markup stripped. Numbering is positional, not stored. */
+  text: string
+  /**
+   * Requirements parsed from the task's own cell. `questPoints` and
+   * `combatLevel` appear here as they do on quests: nine tasks state a combat
+   * level via `{{SCP|Combat|N}}`.
+   */
+  requirements: QuestRequirements
+  /**
+   * Items and access the task needs, as bulleted lines. Display only, exactly
+   * as `Quest.itemsRequired` is — there is still no inventory to check against.
+   */
+  items: QuestItemLine[]
+  /**
+   * Requirements that did not reduce to structured data: footnotes, ironman
+   * caveats, and prose like "Partial completion of Watchtower" that names no
+   * quest we can resolve. Same contract as `Quest.notes` — shown, never gated
+   * on.
+   */
+  notes: string[]
+}
+
+/**
+ * One tier of one diary: the unit progress is tracked against.
+ *
+ * A tier is structurally a quest — skill levels, prerequisite quests, quest
+ * points — which is why `evaluateRequirements` serves both and the engine
+ * needed almost nothing new. What it is *not* is a quest prerequisite: nothing
+ * in the quest graph depends on a diary, so diaries never enter `buildPlan`'s
+ * ordering.
+ */
+export interface DiaryTier {
+  /** Slug, e.g. "ardougne-hard". Stable: completions reference it. */
+  id: string
+  tier: DiaryTierName
+  /**
+   * The tier's own stated requirements, from `{{DiarySkillStats}}` and the
+   * quest table beside it. The generator cross-checks these against the union
+   * of `tasks` and reports disagreement — the wiki maintains the two by hand
+   * and they drift.
+   */
+  requirements: QuestRequirements
+  tasks: DiaryTask[]
+  /** Unstructured requirements stated for the tier as a whole. */
+  notes: string[]
+  /** What completing the tier grants, same bulleted shape as `Quest.rewards`. */
+  rewards: QuestItemLine[]
+}
+
+/**
+ * One of the 12 achievement diaries.
+ *
+ * Tiers are independent for *completion* — tasks may be done in any order — but
+ * sequential for *rewards*: the wiki is explicit that earlier tiers must be
+ * finished before a later tier's rewards can be claimed. So the engine must not
+ * treat Easy as a prerequisite of Medium; only the reward is gated, and that
+ * distinction belongs in the UI rather than in eligibility.
+ */
+export interface Diary {
+  /** Slug, e.g. "ardougne". Stable: tier ids are derived from it. */
+  id: string
+  name: string
+  /** The areas the tasks cover, from the infobox. Display only. */
+  areas: string[]
+  members: boolean
+  /** Where the rewards are claimed, from the infobox's `taskmasters`. */
+  taskmaster: string
+  tiers: DiaryTier[]
+  wikiUrl: string
+}
+
+/** Generated artifact shape for src/data/diaries.json. */
+export interface DiaryDataset {
+  /** ISO date the dataset was generated, shown in settings. */
+  generatedAt: string
+  sources: string[]
+  diaries: Diary[]
+}
