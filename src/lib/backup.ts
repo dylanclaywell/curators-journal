@@ -51,6 +51,19 @@ export interface Backup {
     accountHash: string
     mergeEnabled: boolean
   }
+  /**
+   * Absent in backups written before Phase 6. Diary tier completions are
+   * hand-entered and have no other source — the same category as quest
+   * progress — so they belong here by the rule CLAUDE.md states: anything
+   * hand-entered that lands in IndexedDB belongs in the backup shape.
+   *
+   * Keyed by tier id (`ardougne-easy`), a different keyspace from quest ids,
+   * which is why it is its own object rather than more entries in
+   * `quests.progress`.
+   */
+  diaries?: {
+    progress: Record<string, QuestProgress>
+  }
 }
 
 export interface BackupInput {
@@ -60,6 +73,7 @@ export interface BackupInput {
   goals: string[]
   accountHash: string
   mergeEnabled: boolean
+  diaryProgress: Record<string, QuestProgress>
 }
 
 export function createBackup(input: BackupInput): Backup {
@@ -78,6 +92,9 @@ export function createBackup(input: BackupInput): Backup {
     sync: {
       accountHash: input.accountHash,
       mergeEnabled: input.mergeEnabled,
+    },
+    diaries: {
+      progress: { ...input.diaryProgress },
     },
   }
 }
@@ -166,6 +183,30 @@ export function parseBackup(raw: unknown): ParseResult {
     sync = { accountHash: raw.accountHash, mergeEnabled: raw.mergeEnabled }
   }
 
+  // Same contract as `sync`: optional, so a pre-Phase-6 backup is valid, but
+  // validated entry by entry when present. This is hand-entered data with no
+  // other source, so a malformed file has to be refused rather than partly
+  // applied.
+  let diaries: Backup['diaries']
+  if (obj.diaries !== undefined) {
+    const raw = obj.diaries as Record<string, unknown> | null
+    if (
+      !raw ||
+      typeof raw !== 'object' ||
+      typeof raw.progress !== 'object' ||
+      raw.progress === null
+    ) {
+      return fail('Backup file has invalid diary data.')
+    }
+    const entries = raw.progress as Record<string, unknown>
+    for (const [id, state] of Object.entries(entries)) {
+      if (typeof state !== 'string' || !PROGRESS_STATES.has(state)) {
+        return fail(`Backup file has an invalid diary entry for "${id}".`)
+      }
+    }
+    diaries = { progress: entries as Record<string, QuestProgress> }
+  }
+
   return {
     ok: true,
     backup: {
@@ -184,6 +225,7 @@ export function parseBackup(raw: unknown): ParseResult {
         goals: quests.goals as string[],
       },
       ...(sync ? { sync } : {}),
+      ...(diaries ? { diaries } : {}),
     },
   }
 }

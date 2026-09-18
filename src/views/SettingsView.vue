@@ -3,6 +3,7 @@ import { computed, onMounted, onUnmounted, ref } from 'vue'
 import AppIcon from '@/components/AppIcon.vue'
 import { createBackup, parseBackup } from '@/lib/backup'
 import { useQuestsStore } from '@/stores/quests'
+import { useDiariesStore } from '@/stores/diaries'
 import { useSyncStore } from '@/stores/sync'
 import { useSettingsStore } from '@/stores/settings'
 
@@ -59,6 +60,7 @@ onUnmounted(() => {
  */
 const settings = useSettingsStore()
 const quests = useQuestsStore()
+const diaries = useDiariesStore()
 const sync = useSyncStore()
 
 const fileInput = ref<HTMLInputElement | null>(null)
@@ -68,7 +70,8 @@ const importMessage = ref<{ kind: 'ok' | 'error'; text: string } | null>(null)
 // that finishes risks exporting the empty initial state, or an import getting
 // silently dropped by a store that isn't yet persisting writes.
 const dataReady = computed(
-  () => settings.hydrated && quests.hydrated && sync.hydrated,
+  () =>
+    settings.hydrated && quests.hydrated && diaries.hydrated && sync.hydrated,
 )
 
 function exportBackup() {
@@ -81,6 +84,9 @@ function exportBackup() {
     // The hash itself is not recoverable without going back to RuneLite.
     accountHash: sync.accountHash,
     mergeEnabled: sync.mergeEnabled,
+    // Tier completions are hand-entered and have no other source, so they
+    // belong in the backup for exactly the reason quest progress does.
+    diaryProgress: diaries.progress,
   })
   const blob = new Blob([JSON.stringify(backup, null, 2)], {
     type: 'application/json',
@@ -154,6 +160,12 @@ async function onImportFileChosen(event: Event) {
     sync.mergeEnabled = result.backup.sync.mergeEnabled
     // The cache belongs to whoever the old hash was; refetched on next open.
     sync.clearSnapshot()
+  }
+
+  // Absent before Phase 6. Same reasoning as sync: an older backup should
+  // leave diary progress alone rather than wiping it.
+  if (result.backup.diaries) {
+    diaries.progress = result.backup.diaries.progress
   }
 
   importMessage.value = { kind: 'ok', text: 'Backup restored.' }

@@ -107,8 +107,12 @@ activities only — no quest points, no completions. So there are two kinds of d
 and they must not be conflated:
 
 - **Fetched, read-only:** skill levels, XP, activity scores, item prices.
-- **User-owned, authoritative, precious:** quest completions. Hand-entered, only
-  in IndexedDB, and unrecoverable if lost. This is why export/import exists
+- **User-owned, authoritative, precious:** quest completions and achievement
+  diary tier completions. Hand-entered, only in IndexedDB, and unrecoverable if
+  lost. They are separate keyspaces and separate storage keys on purpose —
+  `quests:progress` and `diaries:progress` — because one map would let a tier id
+  collide with a quest slug, and a collision here marks the wrong thing done
+  with no way to notice or undo it. This is why export/import exists
   (slice 4b′, from the Settings panel): `src/lib/backup.ts` builds and validates
   the backup shape. Anything hand-entered that lands in IndexedDB belongs in
   that shape — adding a new one means extending the backup too.
@@ -171,19 +175,26 @@ on an iPad that dropped wifi, and a hand-correctable diffable dataset beats a
 fragile live wiki query. Regenerate deliberately with `npm run build:quests`
 (`-- --check` reports whether the wiki has moved); never fetch it at runtime.
 
-**Two bundle invariants, both easy to break by adding one static import:**
+**Three bundle invariants, all easy to break by adding one static import:**
 
 - `src/data/quests.json` (~463 KB built, ~129 KB gzipped) must stay out of the
   entry chunk — the quest store imports it dynamically. It roughly tripled when
   4d′ added the items each quest wants, then grew again in 4g for description,
   kills and rewards; it is now the app's largest asset by a
   wide margin, so weigh anything that would grow it again.
+- `src/data/diaries.json` (~240 KB built, ~40 KB gzipped) must too, for the
+  same reason and by the same mechanism — `useDiariesStore().ensureDataset()`.
+  Note that `SettingsView` imports the diaries **store** for export/import
+  without pulling the dataset in; that only holds while the store's own import
+  stays dynamic.
 - localForage must too, which is why stores that persist are only reached from
   lazily-loaded panels, and why `App.vue`'s refresh handler imports its stores
   inside the function.
 
 After `npm run build`, grep the `index-*.js` named in `dist/client/index.html`
-for `cooks-assistant` and `localforage`. Both must be absent.
+for `cooks-assistant`, `ardougne-easy` and `localforage`. All three must be
+absent. Together the two datasets are most of the ~1.1 MB precache, so a third
+wants weighing rather than adding.
 
 **Anything a panel needs, it gets by calling one `ensure*` on a store.**
 `useQuestsStore().ensureReady()` loads the dataset _and_ the levels. The

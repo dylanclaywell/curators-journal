@@ -14,6 +14,7 @@ const input = {
   goals: ['dragon-slayer-i'],
   accountHash: '1234567890',
   mergeEnabled: true,
+  diaryProgress: { 'ardougne-easy': 'done' as const },
 }
 
 describe('createBackup', () => {
@@ -99,5 +100,59 @@ describe('parseBackup', () => {
     ],
   ])('rejects %s', (_label, backup) => {
     expect(parseBackup(backup).ok).toBe(false)
+  })
+})
+
+/**
+ * Diary progress is the second thing in this file with no other source, so it
+ * gets the same treatment quest progress does: it must survive a round trip,
+ * an older file without it must still import, and a malformed entry must be
+ * refused rather than partly applied.
+ */
+describe('diary progress', () => {
+  it('round-trips', () => {
+    const result = parseBackup(JSON.parse(JSON.stringify(createBackup(input))))
+    expect(result.ok).toBe(true)
+    if (!result.ok) return
+    expect(result.backup.diaries?.progress).toEqual({
+      'ardougne-easy': 'done',
+    })
+  })
+
+  it('accepts a backup written before diaries existed', () => {
+    const backup = createBackup(input) as Record<string, unknown>
+    delete backup.diaries
+    const result = parseBackup(JSON.parse(JSON.stringify(backup)))
+    expect(result.ok).toBe(true)
+    if (!result.ok) return
+    // Undefined rather than empty: the caller must be able to tell "this file
+    // predates diaries" from "this file says you have done none", so it can
+    // leave existing progress alone instead of wiping it.
+    expect(result.backup.diaries).toBeUndefined()
+  })
+
+  it('refuses an invalid tier state, naming the tier', () => {
+    const backup = createBackup(input) as unknown as {
+      diaries: { progress: Record<string, string> }
+    }
+    backup.diaries.progress['falador-hard'] = 'finished'
+    const result = parseBackup(JSON.parse(JSON.stringify(backup)))
+    expect(result.ok).toBe(false)
+    if (result.ok) return
+    expect(result.error).toContain('falador-hard')
+  })
+
+  it('refuses a diaries block that is not an object', () => {
+    const backup = createBackup(input) as unknown as Record<string, unknown>
+    backup.diaries = 'nope'
+    const result = parseBackup(JSON.parse(JSON.stringify(backup)))
+    expect(result.ok).toBe(false)
+  })
+
+  it('does not alias the caller’s diary progress', () => {
+    const diaryProgress = { 'ardougne-easy': 'done' as const }
+    const backup = createBackup({ ...input, diaryProgress })
+    diaryProgress['ardougne-easy'] = 'todo' as 'done'
+    expect(backup.diaries?.progress).toEqual({ 'ardougne-easy': 'done' })
   })
 })

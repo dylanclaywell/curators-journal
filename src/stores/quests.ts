@@ -309,6 +309,10 @@ export const useQuestsStore = defineStore('quests', () => {
     goals,
     index,
     levels,
+    // Exposed for the diaries store: a diary tier gates on quest completions
+    // and quest points, so it needs the same merged view this store already
+    // derives rather than assembling a second, subtly different one.
+    playerState,
     statuses,
     plan,
     questPoints,
