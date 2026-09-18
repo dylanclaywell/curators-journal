@@ -8,7 +8,9 @@ Today is !`date +%Y-%m-%d`, the time is !`date +%H%M%S`.
 Branch !`git rev-parse --abbrev-ref HEAD` at !`git rev-parse --short HEAD`.
 
 Write a checkpoint to `.memories/<date>/<time>_<short-slug>.md` covering the
-work in this session$ARGUMENTS. Use this shape:
+work in this session. $ARGUMENTS
+
+Use this shape:
 
     ---
     timestamp: <ISO 8601>
