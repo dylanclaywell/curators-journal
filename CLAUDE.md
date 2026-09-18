@@ -91,9 +91,15 @@ Three things worth knowing, since examples on the web predate them:
   receiving explicit approval. Never commit without that back-and-forth. This applies to
   **every** commit — approval for one is not approval for the next, and small follow-up
   fixes during a debugging loop are exactly where this gets forgotten.
+- **Before committing:** `git fetch` and check `git status -sb` as a **separate step,
+  before staging**. If local `main` is behind, fast-forward first — folding the fetch
+  into the same command as `git add`/`git commit` means its answer arrives too late to
+  act on, which is exactly how this has gone wrong. The order is fetch → fast-forward →
+  commit → push, so an upstream merge commit arrives by fast-forward and stays intact.
 - **Pushing:** Ask first, separately. Approval to commit is not approval to push. If a
   push is rejected because the remote moved, say so and ask — don't resolve it and retry.
-  (Rebasing local `main` onto `origin/main` to resolve such a divergence is fine.)
+  (Rebasing local `main` onto `origin/main` repairs a divergence that already happened,
+  and is fine; it is not a substitute for fast-forwarding first.)
 - **Commit messages:** Conventional Commits format (release-please reads them). Body is
   one paragraph at most (omit it when the subject says enough). Do NOT append
   "Co-Authored-By: Claude" or any trailer.
