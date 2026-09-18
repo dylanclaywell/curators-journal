@@ -182,7 +182,7 @@ fragile live wiki query. Regenerate deliberately with `npm run build:quests`
   4d′ added the items each quest wants, then grew again in 4g for description,
   kills and rewards; it is now the app's largest asset by a
   wide margin, so weigh anything that would grow it again.
-- `src/data/diaries.json` (~240 KB built, ~40 KB gzipped) must too, for the
+- `src/data/diaries.json` (~256 KB built, ~45 KB gzipped) must too, for the
   same reason and by the same mechanism — `useDiariesStore().ensureDataset()`.
   Note that `SettingsView` imports the diaries **store** for export/import
   without pulling the dataset in; that only holds while the store's own import

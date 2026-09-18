@@ -5,8 +5,10 @@ import {
   completableNow,
   diaryCompletion,
   evaluateDiaryTier,
+  taskIdsOf,
+  tierProgressFrom,
 } from '@/lib/diaries'
-import type { DiaryProgressMap, DiaryTierStatus } from '@/lib/diaries'
+import type { DiaryTaskMap, DiaryTierStatus } from '@/lib/diaries'
 import type { Diary, DiaryDataset } from '@/lib/types'
 import type { QuestProgress } from '@/lib/quests'
 import { useQuestsStore } from './quests'
@@ -17,28 +19,30 @@ import { read, write } from './persist'
  * a generated, disposable dataset, and hand-entered progress that has no
  * other source.
  *
- * Two things differ from the quest store and both are deliberate.
+ * **There is exactly one hand-entered fact here: a task is done.** Tier state,
+ * counts and the reward gate are all derived from that. An earlier version
+ * stored tier progress separately and it was the wrong shape twice over — two
+ * records that could disagree, and a tier control whose effect nobody could
+ * name. Marking a tier now simply checks its tasks, which is visibly the same
+ * thing.
  *
- * **Tier progress is keyed separately from quest progress** (`diaries:progress`
- * rather than a shared map). Tier ids and quest ids are different keyspaces,
- * and one map would let `ardougne-easy` collide with a quest slug — unlikely
- * today, but the kind of collision that silently marks the wrong thing done
- * and is unrecoverable, since both halves are hand-entered.
+ * Task ids are content-derived (`task-id.ts`) so a completion survives the
+ * dataset being regenerated, and they are a different keyspace from quest ids,
+ * which is why they get their own storage key rather than sharing one map.
  *
- * **It leans on the quest store rather than duplicating it.** Diary tiers have
- * quest prerequisites and quest-point requirements, so evaluation needs the
- * quest index and the player's merged quest progress. `ensureReady` pulls
- * both, so no panel can depend on Quests having been visited first — the bug
- * CLAUDE.md records for levels, which would land here the same way.
+ * It leans on the quest store rather than duplicating it: tiers and tasks gate
+ * on quest completions and quest points, so `ensureReady` pulls both. No panel
+ * can depend on Quests having been visited first — the bug CLAUDE.md records
+ * for levels, which would land here the same way.
  */
-const PROGRESS_KEY = 'diaries:progress'
+const TASKS_KEY = 'diaries:tasks'
 
 export const useDiariesStore = defineStore('diaries', () => {
   const dataset = ref<DiaryDataset | null>(null)
   const loading = ref(false)
 
-  /** Only non-default states are stored, so `todo` is the absence of an entry. */
-  const progress = ref<Record<string, QuestProgress>>({})
+  /** Only completed tasks are stored; absence is "not done". */
+  const doneTasks = ref<Record<string, true>>({})
 
   /** False until the persisted values load. Writes are gated on it. */
   const hydrated = ref(false)
@@ -52,7 +56,8 @@ export const useDiariesStore = defineStore('diaries', () => {
    *
    * ROADMAP.md asked for this from the start rather than as a later fix:
    * `quests.json` is already the largest asset by a wide margin, and a static
-   * import here would add another 234 KB to whatever chunk touched it.
+   * import here would add another quarter of a megabyte to whatever chunk
+   * touched it.
    */
   async function ensureDataset(): Promise<void> {
     if (dataset.value || loading.value) return
@@ -74,55 +79,76 @@ export const useDiariesStore = defineStore('diaries', () => {
   }
 
   async function hydrate(): Promise<void> {
-    const saved = await read<Record<string, QuestProgress>>(PROGRESS_KEY)
-    if (saved) progress.value = saved
+    const saved = await read<Record<string, true>>(TASKS_KEY)
+    if (saved) doneTasks.value = saved
     hydrated.value = true
   }
 
   watch(
-    progress,
+    doneTasks,
     () => {
       if (!hydrated.value) return
-      void write(PROGRESS_KEY, progress.value)
+      void write(TASKS_KEY, doneTasks.value)
     },
     { deep: true },
   )
 
   void hydrate()
 
-  const diaryProgress = computed<DiaryProgressMap>(
-    () => progress.value as DiaryProgressMap,
-  )
+  const done = computed<DiaryTaskMap>(() => doneTasks.value as DiaryTaskMap)
 
-  function progressOf(id: string): QuestProgress {
-    return progress.value[id] ?? 'todo'
+  function isTaskDone(taskId: string): boolean {
+    return Boolean(doneTasks.value[taskId])
   }
 
-  function setProgress(id: string, state: QuestProgress): void {
-    if (state === 'todo') {
-      const rest = { ...progress.value }
-      delete rest[id]
-      progress.value = rest
+  function setTaskDone(taskId: string, value: boolean): void {
+    if (!value) {
+      const rest = { ...doneTasks.value }
+      delete rest[taskId]
+      doneTasks.value = rest
       return
     }
-    progress.value = { ...progress.value, [id]: state }
+    doneTasks.value = { ...doneTasks.value, [taskId]: true }
   }
 
-  /** Cycles todo → doing → done → todo, as quest rows do. */
-  function cycleProgress(id: string): void {
-    const next: Record<QuestProgress, QuestProgress> = {
-      todo: 'doing',
-      doing: 'done',
-      done: 'todo',
-    }
-    setProgress(id, next[progressOf(id)])
+  function toggleTask(taskId: string): void {
+    setTaskDone(taskId, !isTaskDone(taskId))
+  }
+
+  /** A tier's state, derived. Nothing writes this. */
+  function progressOf(tierId: string): QuestProgress {
+    const entry = index.value.tierById.get(tierId)
+    return entry ? tierProgressFrom(entry.tier, done.value) : 'todo'
   }
 
   /**
-   * Every tier's status. Keyed by tier id, so a route param resolves directly.
+   * Checks or clears every task in a tier.
    *
-   * 48 tiers x their tasks is small enough to evaluate eagerly — unlike the
-   * quest dataset, nothing here needs the quest-points shortcut that keeps
+   * The shortcut for someone who finished a diary years ago and should not
+   * have to tick nineteen boxes to say so. Deliberately written as task
+   * completions rather than as a tier-level flag, so there stays exactly one
+   * record of what is done.
+   */
+  function setTierDone(tierId: string, value: boolean): void {
+    const entry = index.value.tierById.get(tierId)
+    if (!entry) return
+    const next = { ...doneTasks.value }
+    for (const id of taskIdsOf(entry.tier)) {
+      if (value) next[id] = true
+      else delete next[id]
+    }
+    doneTasks.value = next
+  }
+
+  function toggleTier(tierId: string): void {
+    setTierDone(tierId, progressOf(tierId) !== 'done')
+  }
+
+  /**
+   * Every tier's status, keyed by tier id so a route param resolves directly.
+   *
+   * 48 tiers and their 492 tasks is small enough to evaluate eagerly — unlike
+   * the quest dataset, nothing here needs the quest-points shortcut that keeps
    * `evaluateQuest` off an O(n²) path.
    */
   const statuses = computed<Map<string, DiaryTierStatus>>(() => {
@@ -137,7 +163,7 @@ export const useDiariesStore = defineStore('diaries', () => {
             tier,
             quests.playerState,
             quests.index,
-            diaryProgress.value,
+            done.value,
           ),
         )
       }
@@ -145,34 +171,35 @@ export const useDiariesStore = defineStore('diaries', () => {
     return map
   })
 
-  /** Tiers whose requirements are met and which aren't done yet. */
+  /** Tiers whose requirements are met and which aren't finished yet. */
   const ready = computed<DiaryTierStatus[]>(() => {
     const quests = useQuestsStore()
     return completableNow(
       index.value,
       quests.playerState,
       quests.index,
-      diaryProgress.value,
+      done.value,
     )
   })
 
-  const completion = computed(() =>
-    diaryCompletion(index.value, diaryProgress.value),
-  )
+  const completion = computed(() => diaryCompletion(index.value, done.value))
 
   return {
     dataset,
     loading,
     hydrated,
-    progress,
+    doneTasks,
     index,
     statuses,
     ready,
     completion,
     ensureDataset,
     ensureReady,
+    isTaskDone,
+    setTaskDone,
+    toggleTask,
     progressOf,
-    setProgress,
-    cycleProgress,
+    setTierDone,
+    toggleTier,
   }
 })

@@ -52,17 +52,21 @@ export interface Backup {
     mergeEnabled: boolean
   }
   /**
-   * Absent in backups written before Phase 6. Diary tier completions are
+   * Absent in backups written before Phase 6. Diary task completions are
    * hand-entered and have no other source — the same category as quest
    * progress — so they belong here by the rule CLAUDE.md states: anything
    * hand-entered that lands in IndexedDB belongs in the backup shape.
    *
-   * Keyed by tier id (`ardougne-easy`), a different keyspace from quest ids,
-   * which is why it is its own object rather than more entries in
-   * `quests.progress`.
+   * Keyed by content-derived task id (`ardougne-easy-374b9e70`), a different
+   * keyspace from quest ids, which is why it is its own object rather than
+   * more entries in `quests.progress`.
+   *
+   * Tier state is derived from these and deliberately **not** stored: one
+   * record, so an export and an import have nothing to disagree about. Only
+   * completed tasks appear, so an absent id means not done.
    */
   diaries?: {
-    progress: Record<string, QuestProgress>
+    tasks: Record<string, true>
   }
 }
 
@@ -73,7 +77,7 @@ export interface BackupInput {
   goals: string[]
   accountHash: string
   mergeEnabled: boolean
-  diaryProgress: Record<string, QuestProgress>
+  diaryTasks: Record<string, true>
 }
 
 export function createBackup(input: BackupInput): Backup {
@@ -94,7 +98,7 @@ export function createBackup(input: BackupInput): Backup {
       mergeEnabled: input.mergeEnabled,
     },
     diaries: {
-      progress: { ...input.diaryProgress },
+      tasks: { ...input.diaryTasks },
     },
   }
 }
@@ -193,18 +197,21 @@ export function parseBackup(raw: unknown): ParseResult {
     if (
       !raw ||
       typeof raw !== 'object' ||
-      typeof raw.progress !== 'object' ||
-      raw.progress === null
+      typeof raw.tasks !== 'object' ||
+      raw.tasks === null
     ) {
       return fail('Backup file has invalid diary data.')
     }
-    const entries = raw.progress as Record<string, unknown>
-    for (const [id, state] of Object.entries(entries)) {
-      if (typeof state !== 'string' || !PROGRESS_STATES.has(state)) {
+    const entries = raw.tasks as Record<string, unknown>
+    for (const [id, value] of Object.entries(entries)) {
+      // `true` and nothing else. A `false` or a string here would mean the
+      // file came from something that doesn't share this shape, and guessing
+      // what it meant risks marking work done that wasn't.
+      if (value !== true) {
         return fail(`Backup file has an invalid diary entry for "${id}".`)
       }
     }
-    diaries = { progress: entries as Record<string, QuestProgress> }
+    diaries = { tasks: entries as Record<string, true> }
   }
 
   return {

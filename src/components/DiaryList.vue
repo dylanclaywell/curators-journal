@@ -3,8 +3,8 @@ import { computed, onMounted, ref } from 'vue'
 import AppIcon from '@/components/AppIcon.vue'
 import { useDiariesStore } from '@/stores/diaries'
 import { useQuestsStore } from '@/stores/quests'
-import type { QuestProgress } from '@/lib/quests'
-import { DIARY_TIERS } from '@/lib/types'
+import type { DiaryTierStatus } from '@/lib/diaries'
+import type { DiaryTier } from '@/lib/types'
 
 /*
  * The diary list itself, deliberately separate from where it is mounted.
@@ -35,19 +35,37 @@ const shown = computed(() =>
   }),
 )
 
-const STRIPE: Record<QuestProgress, string> = {
-  todo: 'bg-todo',
-  doing: 'bg-doing',
-  done: 'bg-done',
-}
+/**
+ * The open diary's tiers paired with their statuses, resolved once.
+ *
+ * The template used to look each of these up per row — and up to four times
+ * per task — which read badly and put an id-or-empty-string fallback in a
+ * dozen places, each one somewhere to get it subtly wrong.
+ */
+const openTiers = computed<{ tier: DiaryTier; status?: DiaryTierStatus }[]>(
+  () => {
+    const diary = openDiary.value
+      ? diaries.index.byId.get(openDiary.value)
+      : null
+    if (!diary) return []
+    return diary.tiers.map((tier) => ({
+      tier,
+      status: diaries.statuses.get(tier.id),
+    }))
+  },
+)
 
-function tierOf(diaryId: string, tier: string) {
-  return diaries.index.byId.get(diaryId)?.tiers.find((t) => t.tier === tier)
-}
+const openName = computed(() =>
+  openDiary.value ? diaries.index.byId.get(openDiary.value)?.name : '',
+)
 
-function statusOf(id: string) {
-  return diaries.statuses.get(id)
-}
+const openTaskmaster = computed(() =>
+  openDiary.value
+    ? diaries.index.byId.get(openDiary.value)?.taskmaster
+    : undefined,
+)
+
+const STRIPE = { todo: 'bg-todo', doing: 'bg-doing', done: 'bg-done' } as const
 
 /** Tiers done, out of four — the number that reads at a glance in a list row. */
 function doneCount(diaryId: string): number {
@@ -57,33 +75,33 @@ function doneCount(diaryId: string): number {
 }
 
 /**
- * Blocked means "requirements unmet", and only for a tier not yet done —
- * matching the Quests panel's rule, where `canStart` stops being
- * decision-relevant once a quest is underway.
+ * A tier is "blocked" when its requirements are unmet and it isn't finished.
+ * Done and doable stay independent everywhere here: the dataset's levels are
+ * the wiki's opinion, the checks are the player's record of what they did.
  */
-function isBlocked(id: string): boolean {
-  if (!quests.levelsKnown) return false
-  const s = statusOf(id)
-  return Boolean(s && s.progress !== 'done' && !s.canComplete)
+function isBlocked(status?: DiaryTierStatus): boolean {
+  if (!quests.levelsKnown || !status) return false
+  return status.progress !== 'done' && !status.canComplete
 }
 
-function summarise(id: string): string {
-  const s = statusOf(id)
-  if (!s) return ''
-  if (s.progress === 'done') return 'Complete'
-  if (!quests.levelsKnown) return `${s.tasks.length} tasks`
-  if (!s.canComplete) {
-    const skills = s.unmet.unmetSkills.length
-    const quests_ = s.unmet.unmetQuests.length
+function summarise(status?: DiaryTierStatus): string {
+  if (!status) return ''
+  const counted = `${status.doneTasks}/${status.totalTasks} tasks`
+  if (status.progress === 'done') return `Complete · ${counted}`
+  if (!quests.levelsKnown) return counted
+  if (!status.canComplete) {
     const parts: string[] = []
+    const skills = status.unmet.unmetSkills.length
+    const questsNeeded = status.unmet.unmetQuests.length
     if (skills) parts.push(`${skills} skill${skills === 1 ? '' : 's'}`)
-    if (quests_) parts.push(`${quests_} quest${quests_ === 1 ? '' : 's'}`)
-    if (s.unmet.unmetQuestPoints) parts.push('quest points')
-    return parts.length ? `Needs ${parts.join(', ')}` : 'Blocked'
+    if (questsNeeded)
+      parts.push(`${questsNeeded} quest${questsNeeded === 1 ? '' : 's'}`)
+    if (status.unmet.unmetQuestPoints) parts.push('quest points')
+    return parts.length ? `${counted} · needs ${parts.join(', ')}` : counted
   }
-  return s.blockedTasks
-    ? `Ready · ${s.blockedTasks} of ${s.tasks.length} tasks blocked`
-    : `Ready · ${s.tasks.length} tasks`
+  return status.blockedTasks
+    ? `${counted} · ${status.blockedTasks} blocked`
+    : `${counted} · ready`
 }
 </script>
 
@@ -109,7 +127,13 @@ function summarise(id: string): string {
           Ready now
         </button>
         <span class="nums text-[13px] text-ink-soft">
-          {{ diaries.completion.done }} of {{ diaries.completion.total }} tiers
+          {{ diaries.completion.tiers }}/{{
+            diaries.completion.totalTiers
+          }}
+          tiers &middot; {{ diaries.completion.tasks }}/{{
+            diaries.completion.totalTasks
+          }}
+          tasks
         </span>
       </div>
 
@@ -170,23 +194,24 @@ function summarise(id: string): string {
           All diaries
         </button>
         <h3 class="m-0 truncate font-display text-[17px] leading-tight">
-          {{ diaries.index.byId.get(openDiary)?.name }}
+          {{ openName }}
         </h3>
       </div>
 
       <p class="m-0 text-[13px] text-ink-soft">
-        Rewards are claimed from
-        {{ diaries.index.byId.get(openDiary)?.taskmaster || 'the taskmaster' }}.
-        Tasks can be done in any order.
+        Rewards are claimed from {{ openTaskmaster || 'the taskmaster' }}. Tasks
+        can be done in any order.
       </p>
 
       <ul class="m-0 flex flex-col gap-2 p-0">
-        <li v-for="name in DIARY_TIERS" :key="name" class="flex items-stretch">
+        <li
+          v-for="{ tier, status } in openTiers"
+          :key="tier.id"
+          class="flex items-stretch"
+        >
           <span
             class="w-2 shrink-0"
-            :class="
-              STRIPE[diaries.progressOf(tierOf(openDiary, name)?.id ?? '')]
-            "
+            :class="STRIPE[diaries.progressOf(tier.id)]"
             aria-hidden="true"
           />
           <div
@@ -197,91 +222,123 @@ function summarise(id: string): string {
                 class="flex min-w-0 flex-1 items-center gap-1 text-[15px] font-bold text-gold engraved"
               >
                 <AppIcon
-                  v-if="isBlocked(tierOf(openDiary, name)?.id ?? '')"
+                  v-if="isBlocked(status)"
                   name="padlock"
                   :size="11"
                   class="shrink-0 text-todo"
                   aria-hidden="true"
                 />
-                {{ name }}
+                {{ tier.tier }}
               </span>
-              <!-- Cycles todo → doing → done, as quest rows do. This is the
-                   only write path for diary progress, so it carries the
-                   whole hand-entry burden — 48 taps for a full account. -->
+              <!-- Checks or clears every task in the tier. Written as task
+                   completions rather than a tier flag, so there is exactly one
+                   record of what's done and this button is visibly the same
+                   thing as ticking the boxes below.
+
+                   `checkAll` (a double tick), never `plus`: plus already means
+                   "add to queue" on quest rows, and the same glyph cannot mean
+                   both that and "mark everything done". The glyph also stays
+                   put between states — only the bevel and colour move — so the
+                   button keeps saying what it does rather than what has
+                   happened. -->
               <button
                 type="button"
-                :aria-label="`Mark ${name} tier`"
+                :aria-label="
+                  diaries.progressOf(tier.id) === 'done'
+                    ? `Clear all ${tier.tier} tasks`
+                    : `Check all ${tier.tier} tasks`
+                "
                 class="tap pressable bevel-oak flex w-11 shrink-0 items-center justify-center"
                 :class="
-                  diaries.progressOf(tierOf(openDiary, name)?.id ?? '') ===
-                  'done'
+                  diaries.progressOf(tier.id) === 'done'
                     ? 'bevel-oak-in bg-brown text-gold'
                     : 'bg-brown-dk text-parchment-3'
                 "
-                @click="
-                  diaries.cycleProgress(tierOf(openDiary, name)?.id ?? '')
-                "
+                @click="diaries.toggleTier(tier.id)"
               >
-                <AppIcon
-                  :name="
-                    diaries.progressOf(tierOf(openDiary, name)?.id ?? '') ===
-                    'done'
-                      ? 'check'
-                      : 'plus'
-                  "
-                  :size="16"
-                />
+                <AppIcon name="checkAll" :size="18" />
               </button>
             </div>
 
-            <span class="text-[12px] text-parchment-3">
-              {{ summarise(tierOf(openDiary, name)?.id ?? '') }}
+            <span class="nums text-[12px] text-parchment-3">
+              {{ summarise(status) }}
             </span>
 
             <!-- The claim gate, stated separately from eligibility: the tasks
                  are doable in any order, only the reward waits. Folding these
                  together would hide a tier worth working on. -->
             <span
-              v-if="
-                statusOf(tierOf(openDiary, name)?.id ?? '')?.rewardsBlockedBy
-                  ?.length
-              "
+              v-if="status?.rewardsBlockedBy.length"
               class="text-[12px] text-parchment-3/80"
             >
-              Rewards need
-              {{
-                statusOf(
-                  tierOf(openDiary, name)?.id ?? '',
-                )?.rewardsBlockedBy.join(', ')
-              }}
-              first.
+              Rewards need {{ status.rewardsBlockedBy.join(', ') }} first.
             </span>
 
-            <ul class="m-0 flex flex-col gap-1 p-0 pt-1">
-              <li
-                v-for="(t, i) in tierOf(openDiary, name)?.tasks ?? []"
-                :key="i"
-                class="flex items-start gap-1.5 text-[13px] leading-snug"
-                :class="
-                  statusOf(tierOf(openDiary, name)?.id ?? '')?.tasks[i]
-                    ?.canComplete === false && quests.levelsKnown
-                    ? 'text-parchment-3/60'
-                    : 'text-parchment-2'
-                "
-              >
-                <AppIcon
-                  v-if="
+            <ul class="m-0 flex flex-col gap-0.5 p-0 pt-1">
+              <li v-for="(task, i) in tier.tasks" :key="task.id">
+                <!-- The whole row is the target — `.tap` puts a 44px floor
+                     under it — but the box still has to *look* like something
+                     worth aiming at, so it is 24px rather than the 16px that
+                     matched the old text size. An affordance the thumb can't
+                     see is one the thumb won't trust, whatever the hit area
+                     actually is.
+
+                     Text is 15px, the same as a quest row's title, not the
+                     13px used for secondary lines elsewhere: this is the
+                     content of the panel, read while playing, not a caption
+                     under something else. -->
+                <button
+                  type="button"
+                  class="tap pressable flex w-full items-start gap-2 px-1 py-1.5 text-left text-[15px] leading-snug"
+                  :class="
+                    !status?.tasks[i]?.done &&
                     quests.levelsKnown &&
-                    statusOf(tierOf(openDiary, name)?.id ?? '')?.tasks[i]
-                      ?.canComplete === false
+                    status?.tasks[i]?.canComplete === false
+                      ? 'text-parchment-3/60'
+                      : 'text-parchment-2'
                   "
-                  name="padlock"
-                  :size="10"
-                  class="mt-1 shrink-0 text-todo"
-                  aria-hidden="true"
-                />
-                <span class="nums shrink-0 opacity-60">{{ i + 1 }}.</span>
-                <span class="min-w-0 flex-1">{{ t.text }}</span>
+                  @click="diaries.toggleTask(task.id)"
+                >
+                  <span
+                    class="bevel-oak flex h-6 w-6 shrink-0 items-center justify-center"
+                    :class="
+                      status?.tasks[i]?.done
+                        ? 'bevel-oak-in bg-brown text-gold'
+                        : 'bg-brown-dk'
+                    "
+                    aria-hidden="true"
+                  >
+                    <AppIcon
+                      v-if="status?.tasks[i]?.done"
+                      name="check"
+                      :size="14"
+                    />
+                  </span>
+
+                  <!-- Shown even on a checked task. The padlock is the wiki's
+                       opinion of the requirements; the check is the player's
+                       record of what they did. Neither overrides the other. -->
+                  <AppIcon
+                    v-if="
+                      quests.levelsKnown &&
+                      status?.tasks[i]?.canComplete === false
+                    "
+                    name="padlock"
+                    :size="12"
+                    class="mt-1 shrink-0 text-todo"
+                    aria-hidden="true"
+                  />
+
+                  <span class="nums shrink-0 opacity-60">{{ i + 1 }}.</span>
+                  <span
+                    class="min-w-0 flex-1"
+                    :class="{
+                      'line-through decoration-1': status?.tasks[i]?.done,
+                    }"
+                  >
+                    {{ task.text }}
+                  </span>
+                </button>
               </li>
             </ul>
           </div>

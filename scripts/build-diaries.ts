@@ -31,6 +31,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { fileURLToPath } from 'node:url'
 
 import { DIARY_TIERS, SKILL_NAMES } from '../src/lib/types.ts'
+import { taskIdFor } from '../src/lib/task-id.ts'
 import type {
   Diary,
   DiaryDataset,
@@ -578,6 +579,7 @@ function taskTableFor(
 function parseTasks(
   wikitext: string,
   tier: DiaryTierName,
+  tierId: string,
   questIds: ReadonlySet<string>,
   page: string,
 ): DiaryTask[] {
@@ -612,7 +614,7 @@ function parseTasks(
       report(page, `${tier} task ${numbered[1]} has no readable text`)
       continue
     }
-    tasks.push({ text, ...parsed })
+    tasks.push({ id: taskIdFor(tierId, text), text, ...parsed })
   }
   return tasks
 }
@@ -721,7 +723,8 @@ function parsePage(
   const tiers: DiaryTier[] = DIARY_TIERS.map((tier) => {
     const stated = overview.get(tier)!
     const section = sectionFor(wikitext, tier)
-    const tasks = parseTasks(wikitext, tier, questIds, title)
+    const tierId = `${id}-${tier.toLowerCase()}`
+    const tasks = parseTasks(wikitext, tier, tierId, questIds, title)
 
     if (!tasks.length) report(title, `${tier} yielded no tasks`)
 
@@ -739,7 +742,7 @@ function parsePage(
     stated.requirements.quests = dedupeQuests(resolved)
 
     return {
-      id: `${id}-${tier.toLowerCase()}`,
+      id: tierId,
       tier,
       requirements: stated.requirements,
       tasks,
@@ -817,6 +820,80 @@ function crossCheck(diaries: Diary[]) {
 interface SourceLock {
   generatedAt: string
   revisions: Record<string, number>
+}
+
+/**
+ * Task ids must be unique, and a duplicate is fatal rather than reported.
+ *
+ * Two tasks sharing an id means two tasks sharing a completion: ticking one
+ * ticks the other, forever, with nothing to indicate it. That is corruption of
+ * hand-entered data, so it stops the build. The scoping to a tier makes this
+ * very unlikely — see `task-id.ts` — but "unlikely" is not a guarantee, and
+ * this check is what turns it into one.
+ */
+function assertUniqueTaskIds(diaries: Diary[]) {
+  const seen = new Map<string, string>()
+  for (const diary of diaries) {
+    for (const tier of diary.tiers) {
+      for (const task of tier.tasks) {
+        const prior = seen.get(task.id)
+        if (prior) {
+          throw new Error(
+            `task id collision: "${task.id}" is both\n  ${prior}\n  ${task.text}`,
+          )
+        }
+        seen.set(task.id, task.text)
+      }
+    }
+  }
+  console.log(`${seen.size} task ids, all unique`)
+}
+
+/**
+ * Reports task ids the committed dataset had and this one doesn't.
+ *
+ * An orphan is a completion the player will silently lose: their tick is keyed
+ * on an id no task claims any more, usually because the wiki reworded the
+ * task. It is not an error — the wiki is allowed to edit itself — but it must
+ * be *seen*, because the alternative is hand-entered data quietly evaporating
+ * on a routine regeneration. Print the pair and a human can decide whether the
+ * reword is the same task.
+ */
+async function reportOrphanedTasks(diaries: Diary[]) {
+  let previous: DiaryDataset
+  try {
+    previous = JSON.parse(
+      await readFile(`${dataDir}/diaries.json`, 'utf8'),
+    ) as DiaryDataset
+  } catch {
+    return // First run; nothing to orphan.
+  }
+
+  const now = new Map<string, string>()
+  for (const d of diaries)
+    for (const t of d.tiers) for (const k of t.tasks) now.set(k.id, k.text)
+
+  const gone: { id: string; text: string }[] = []
+  for (const d of previous.diaries) {
+    for (const t of d.tiers) {
+      for (const k of t.tasks ?? []) {
+        // `id` is absent in datasets generated before task ids existed.
+        if (k.id && !now.has(k.id)) gone.push({ id: k.id, text: k.text })
+      }
+    }
+  }
+
+  if (!gone.length) {
+    console.log('no task ids orphaned by this regeneration')
+    return
+  }
+
+  console.warn(
+    `\n  ${gone.length} task id(s) no longer exist — any completion keyed on ` +
+      `these is lost:`,
+  )
+  for (const t of gone.slice(0, 20)) console.warn(`    ${t.id}  ${t.text}`)
+  if (gone.length > 20) console.warn(`    ... and ${gone.length - 20} more`)
 }
 
 async function emit(parsed: ParsedDiary[]) {
@@ -967,6 +1044,9 @@ async function main() {
 
   console.log('\ncross-checking tier requirements against their tasks:')
   crossCheck(parsed.map((p) => p.diary))
+
+  assertUniqueTaskIds(parsed.map((p) => p.diary))
+  await reportOrphanedTasks(parsed.map((p) => p.diary))
 
   await emit(parsed)
 }

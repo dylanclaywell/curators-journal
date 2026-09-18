@@ -111,7 +111,7 @@ attribution.
 | `big-gear`        | DarkZaitzev |
 
 **[Phosphor Icons](https://phosphoricons.com)** — licensed MIT. Used:
-`chart-bar`, `check`, `gear`, `arrow-square-out`, `magnifying-glass`, `plus`,
+`chart-bar`, `check`, `checks`, `gear`, `arrow-square-out`, `magnifying-glass`, `plus`,
 `caret-down`, `arrows-clockwise`, `pencil-simple`.
 
 Both are vendored into `src/lib/icons.ts` by `scripts/build-icon-set.mjs`.

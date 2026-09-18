@@ -14,7 +14,7 @@ const input = {
   goals: ['dragon-slayer-i'],
   accountHash: '1234567890',
   mergeEnabled: true,
-  diaryProgress: { 'ardougne-easy': 'done' as const },
+  diaryTasks: { 'ardougne-easy-374b9e70': true as const },
 }
 
 describe('createBackup', () => {
@@ -109,13 +109,13 @@ describe('parseBackup', () => {
  * an older file without it must still import, and a malformed entry must be
  * refused rather than partly applied.
  */
-describe('diary progress', () => {
+describe('diary task completions', () => {
   it('round-trips', () => {
     const result = parseBackup(JSON.parse(JSON.stringify(createBackup(input))))
     expect(result.ok).toBe(true)
     if (!result.ok) return
-    expect(result.backup.diaries?.progress).toEqual({
-      'ardougne-easy': 'done',
+    expect(result.backup.diaries?.tasks).toEqual({
+      'ardougne-easy-374b9e70': true,
     })
   })
 
@@ -131,15 +131,17 @@ describe('diary progress', () => {
     expect(result.backup.diaries).toBeUndefined()
   })
 
-  it('refuses an invalid tier state, naming the tier', () => {
+  it('refuses a non-true entry, naming the task', () => {
     const backup = createBackup(input) as unknown as {
-      diaries: { progress: Record<string, string> }
+      diaries: { tasks: Record<string, unknown> }
     }
-    backup.diaries.progress['falador-hard'] = 'finished'
+    // Not `true`: anything else came from a shape we do not share, and
+    // guessing at it risks marking work done that was not.
+    backup.diaries.tasks['falador-hard-1a2b3c4d'] = 'done'
     const result = parseBackup(JSON.parse(JSON.stringify(backup)))
     expect(result.ok).toBe(false)
     if (result.ok) return
-    expect(result.error).toContain('falador-hard')
+    expect(result.error).toContain('falador-hard-1a2b3c4d')
   })
 
   it('refuses a diaries block that is not an object', () => {
@@ -149,10 +151,10 @@ describe('diary progress', () => {
     expect(result.ok).toBe(false)
   })
 
-  it('does not alias the caller’s diary progress', () => {
-    const diaryProgress = { 'ardougne-easy': 'done' as const }
-    const backup = createBackup({ ...input, diaryProgress })
-    diaryProgress['ardougne-easy'] = 'todo' as 'done'
-    expect(backup.diaries?.progress).toEqual({ 'ardougne-easy': 'done' })
+  it('does not alias the caller’s diary tasks', () => {
+    const diaryTasks: Record<string, true> = { 'ardougne-easy-374b9e70': true }
+    const backup = createBackup({ ...input, diaryTasks })
+    delete diaryTasks['ardougne-easy-374b9e70']
+    expect(backup.diaries?.tasks).toEqual({ 'ardougne-easy-374b9e70': true })
   })
 })

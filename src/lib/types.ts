@@ -306,6 +306,13 @@ export type DiaryTierName = (typeof DIARY_TIERS)[number]
  * instead of only that the tier is blocked.
  */
 export interface DiaryTask {
+  /**
+   * Content-derived and stable across regeneration: `<tierId>-<8 hex>`, from
+   * `taskIdFor` in `task-id.ts`. Completions are keyed on this, and the
+   * RuneLite plugin is expected to arrive at the same id from the task text
+   * the game gives it — see that module, which documents the contract.
+   */
+  id: string
   /** The task text, wiki markup stripped. Numbering is positional, not stored. */
   text: string
   /**

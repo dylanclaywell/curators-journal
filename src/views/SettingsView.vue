@@ -86,7 +86,7 @@ function exportBackup() {
     mergeEnabled: sync.mergeEnabled,
     // Tier completions are hand-entered and have no other source, so they
     // belong in the backup for exactly the reason quest progress does.
-    diaryProgress: diaries.progress,
+    diaryTasks: diaries.doneTasks,
   })
   const blob = new Blob([JSON.stringify(backup, null, 2)], {
     type: 'application/json',
@@ -165,7 +165,7 @@ async function onImportFileChosen(event: Event) {
   // Absent before Phase 6. Same reasoning as sync: an older backup should
   // leave diary progress alone rather than wiping it.
   if (result.backup.diaries) {
-    diaries.progress = result.backup.diaries.progress
+    diaries.doneTasks = result.backup.diaries.tasks
   }
 
   importMessage.value = { kind: 'ok', text: 'Backup restored.' }

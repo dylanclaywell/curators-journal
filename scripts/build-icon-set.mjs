@@ -56,6 +56,14 @@ const ICONS = [
     'node_modules/@phosphor-icons/core/assets/bold/check-bold.svg',
     'phosphor',
   ],
+  // The double tick, for 'all of them'. A sibling of `check` rather than a
+  // different idea, and deliberately NOT `plus`: plus already means 'add to
+  // queue' on quest rows, and one glyph cannot carry both.
+  [
+    'checkAll',
+    'node_modules/@phosphor-icons/core/assets/bold/checks-bold.svg',
+    'phosphor',
+  ],
   [
     'gear',
     'node_modules/@phosphor-icons/core/assets/bold/gear-bold.svg',

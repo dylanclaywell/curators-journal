@@ -3,7 +3,7 @@
  *
  * Domain icons (scroll, hourglass, padlock, openBook, trophy, progression, cog) are from
  * game-icons.net, licensed CC BY 3.0. Interface icons
- * (chart, check, gear, external, search, plus, caretDown, x, arrowUp, arrowDown, refresh, pencil, download, upload, back, chevron) are from Phosphor, licensed MIT.
+ * (chart, check, checkAll, gear, external, search, plus, caretDown, x, arrowUp, arrowDown, refresh, pencil, download, upload, back, chevron) are from Phosphor, licensed MIT.
  * Attribution for both ships in the app's About panel and the README.
  *
  * Icons carry their own viewBox because the two packs draw on different
@@ -52,6 +52,10 @@ export const icons = {
   check: {
     viewBox: '0 0 256 256',
     path: 'M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z',
+  },
+  checkAll: {
+    viewBox: '0 0 256 256',
+    path: 'M152.41,88.56l-89.6,88a12,12,0,0,1-16.82,0L7.59,138.85a12,12,0,0,1,16.82-17.13l30,29.46,81.19-79.74a12,12,0,0,1,16.82,17.12Zm96.15-17a12,12,0,0,0-17-.15L150.4,151.18l-7.88-7.74a12,12,0,0,0-16.82,17.12l16.29,16a12,12,0,0,0,16.82,0l89.6-88A12,12,0,0,0,248.56,71.59Z',
   },
   gear: {
     viewBox: '0 0 256 256',
