@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.0](https://github.com/dylanclaywell/stagescape/compare/curators-journal-v0.7.0...curators-journal-v0.8.0) (2026-09-18)
+
+
+### Features
+
+* check the datasets against the wiki on a schedule ([3269c94](https://github.com/dylanclaywell/stagescape/commit/3269c94dc86a4bffd8038c4ae0dbb221d2422557))
+
 ## [0.7.0](https://github.com/dylanclaywell/stagescape/compare/curators-journal-v0.6.0...curators-journal-v0.7.0) (2026-09-18)
 
 
