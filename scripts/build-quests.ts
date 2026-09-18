@@ -50,6 +50,7 @@ import {
   slugify,
   templateBody,
   templateParams,
+  exitCodeFor,
 } from './lib/wiki.ts'
 
 const root = fileURLToPath(new URL('..', import.meta.url))
@@ -1112,5 +1113,5 @@ main().catch((error: unknown) => {
   console.error(
     'No dataset was written. A partial quest dataset is worse than none.',
   )
-  process.exit(1)
+  process.exit(exitCodeFor(error))
 })

@@ -1,0 +1,52 @@
+name: Dataset drift
+
+# Thursdays. OSRS updates land on Wednesday and the wiki is edited hard for the
+# rest of that day, so Thursday reads a wiki that has had a night to settle.
+#
+# Deliberately NOT on pull_request. Wiki drift is time-driven and has nothing to
+# do with whether someone opened a PR, so a PR trigger samples at a cadence set
+# by unrelated activity — noisy when the repo is busy, silent when it isn't. It
+# would also make every PR depend on a volunteer-run third party, where CI
+# currently needs nothing but npm.
+#
+# workflow_dispatch is here because scheduled workflows are disabled after a
+# long quiet spell on public repositories, and because "has the wiki moved yet?"
+# is a reasonable thing to ask on demand.
+on:
+  schedule:
+    - cron: '17 9 * * 4'
+  workflow_dispatch:
+
+# The job pushes a branch and opens a PR. It never writes to main.
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: dataset-drift
+  cancel-in-progress: false
+
+jobs:
+  drift:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+
+      # Everything lives in the script, deliberately. It reads the generators'
+      # exit codes against the constants they are defined with rather than
+      # re-encoding them as numbers here, and unlike a `run:` block it is
+      # type-checked, linted, and runnable by hand exactly as it runs here:
+      #
+      #   npm run check:drift             # report only, writes nothing
+      #   npm run check:drift -- --open-pr
+      - name: Check for drift, and raise a PR if the wiki has moved
+        run: npm run check:drift -- --open-pr
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

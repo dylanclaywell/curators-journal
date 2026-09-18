@@ -24,6 +24,25 @@ export const BATCH_SIZE = 50
 const REQUEST_TIMEOUT_MS = 20_000
 const MAX_ATTEMPTS = 3
 
+/**
+ * The wiki could not be reached, as distinct from it answering something we
+ * couldn't use.
+ *
+ * The distinction exists for the scheduled drift check: "the wiki is down"
+ * carries no information and should pass quietly until next week, while "the
+ * dataset is stale" or "the parser broke" are findings that want a human. A
+ * single exit code for all three trains everyone to ignore the job.
+ *
+ * Thrown only when retries are exhausted against a transport failure, a 429 or
+ * a 5xx. A 4xx is a bug in our request and stays an ordinary Error.
+ */
+export class WikiUnreachableError extends Error {
+  constructor(message: string) {
+    super(message)
+    this.name = 'WikiUnreachableError'
+  }
+}
+
 export async function api(params: Record<string, string>): Promise<unknown> {
   const query = new URLSearchParams({
     format: 'json',
@@ -49,9 +68,8 @@ export async function api(params: Record<string, string>): Promise<unknown> {
 
       const retryable = response.status === 429 || response.status >= 500
       if (!retryable || attempt === MAX_ATTEMPTS) {
-        throw new Error(
-          `wiki API returned ${response.status} for ${params.list ?? params.prop}`,
-        )
+        const message = `wiki API returned ${response.status} for ${params.list ?? params.prop}`
+        throw retryable ? new WikiUnreachableError(message) : new Error(message)
       }
 
       const retryAfter = Number(response.headers.get('retry-after'))
@@ -62,13 +80,62 @@ export async function api(params: Record<string, string>): Promise<unknown> {
       console.warn(`  ${response.status} from the wiki, retrying in ${delay}ms`)
       await new Promise((resolve) => setTimeout(resolve, delay))
     } catch (error) {
-      if (attempt === MAX_ATTEMPTS) throw error
+      if (attempt === MAX_ATTEMPTS) {
+        // The errors thrown deliberately above already carry the right type;
+        // what's left to classify is the transport.
+        if (!isTransportFailure(error)) throw error
+        const reason = error instanceof Error ? error.message : String(error)
+        throw new WikiUnreachableError(`could not reach the wiki: ${reason}`)
+      }
       const reason = error instanceof Error ? error.message : String(error)
       console.warn(`  request failed (${reason}), retrying`)
       await new Promise((resolve) => setTimeout(resolve, attempt * 1000))
     }
   }
   throw new Error('unreachable')
+}
+
+/**
+ * The exit codes both generators use, and the scheduled drift check reads.
+ *
+ *   0  the committed dataset matches the wiki, or a generation succeeded
+ *   1  a finding that wants a human — stale data, or a parse that failed
+ *   2  the wiki could not be reached, which is not a finding at all
+ *
+ * Two is the one that earns its keep. A volunteer-run wiki being down on a
+ * Thursday says nothing about our data, and a job that goes red for it is a
+ * job people stop reading.
+ */
+export const EXIT_OK = 0
+export const EXIT_FINDING = 1
+export const EXIT_UNREACHABLE = 2
+
+/**
+ * Whether an error means we never got an answer.
+ *
+ * `fetch` rejects with a TypeError when it cannot connect, and
+ * `AbortSignal.timeout` rejects with a TimeoutError. Matched by name rather
+ * than by constructor because these cross a runtime boundary, where
+ * `instanceof DOMException` is not dependable.
+ *
+ * One predicate, used both to wrap inside `api` and to classify afterwards —
+ * the two disagreed when the logic was written twice, and a transport failure
+ * that reached `exitCodeFor` without passing through `api` was reported as a
+ * finding.
+ */
+function isTransportFailure(error: unknown): boolean {
+  const name = error instanceof Error ? error.name : ''
+  return (
+    error instanceof TypeError ||
+    name === 'TimeoutError' ||
+    name === 'AbortError'
+  )
+}
+
+export function exitCodeFor(error: unknown): number {
+  return error instanceof WikiUnreachableError || isTransportFailure(error)
+    ? EXIT_UNREACHABLE
+    : EXIT_FINDING
 }
 
 /** Every mainspace page embedding a template, following continuations. */

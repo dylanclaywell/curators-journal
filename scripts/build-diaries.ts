@@ -55,6 +55,7 @@ import {
   slugify,
   templateBody,
   templateParams,
+  exitCodeFor,
 } from './lib/wiki.ts'
 
 const root = fileURLToPath(new URL('..', import.meta.url))
@@ -1053,5 +1054,5 @@ async function main() {
 
 main().catch((error: unknown) => {
   console.error(error instanceof Error ? error.message : error)
-  process.exitCode = 1
+  process.exitCode = exitCodeFor(error)
 })

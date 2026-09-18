@@ -23,7 +23,8 @@
     "deploy": "npm run build && wrangler deploy",
     "fetch:skill-icons": "node scripts/fetch-skill-icons.mjs",
     "build:quests": "node --experimental-strip-types scripts/build-quests.ts",
-    "build:diaries": "node --experimental-strip-types scripts/build-diaries.ts"
+    "build:diaries": "node --experimental-strip-types scripts/build-diaries.ts",
+    "check:drift": "node --experimental-strip-types scripts/check-dataset-drift.ts"
   },
   "dependencies": {
     "localforage": "^1.10.0",
