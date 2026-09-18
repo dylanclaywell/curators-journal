@@ -1,0 +1,150 @@
+{
+ "id": "a-souls-bane",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/A_Soul's_Bane%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [
+    "Note: If you log out, you lose your progress and appear above the rift next time you log in. However, you can clear a room and exit, with your progress starting over to the last room you cleared."
+   ],
+   "steps": []
+  },
+  {
+   "title": "Starting out",
+   "notes": [],
+   "steps": [
+    {
+     "text": "From Varrock, head north-east towards the Digsite talk to Launa by the rift.",
+     "chat": [
+      "1. Would you like me to go down and look for your husband and son?"
+     ]
+    },
+    {
+     "text": "Enter the rift with your rope."
+    },
+    {
+     "text": "Note: This will generate a cut scene. Do not click outside of the text boxes as you will return to the surface.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Room 1 - Anger",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Use weapons from the rack to kill monsters until rage bar is full. (Logging out will reset the rage bar)"
+    },
+    {
+     "text": "Anger sword - kills Angry unicorn.",
+     "depth": 1
+    },
+    {
+     "text": "Anger spear - kills Angry bear.",
+     "depth": 1
+    },
+    {
+     "text": "Anger mace - kills Angry giant rat.",
+     "depth": 1
+    },
+    {
+     "text": "Anger battleaxe - kills Angry goblin.",
+     "depth": 1
+    },
+    {
+     "text": "When your rage bar is full you'll get a cutscene (this gives 40 Attack experience!)."
+    },
+    {
+     "text": "Head east to the next cave."
+    }
+   ]
+  },
+  {
+   "title": "Room 2 - Fear",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Look inside the dark holes, some will have a fear reaper."
+    },
+    {
+     "text": "You cannot search the same hole repeatedly. Search the holes going clock-wise for as many rotations as it takes to get your kills.",
+     "depth": 1
+    },
+    {
+     "text": "Kill 5 or 6 reapers to get a cutscene."
+    },
+    {
+     "text": "Enter the black hole to the west."
+    }
+   ]
+  },
+  {
+   "title": "Room 3 - Confusion",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Defeat confusion beasts until you find the one that takes damage. The \"fake\" ones give combat XP on missed hits and will vanish after 8 hits."
+    },
+    {
+     "text": "You can disengage a beast by running to the opposite end of the room.",
+     "depth": 1
+    },
+    {
+     "text": "If you're attacking a fake one, you can swap to a fast attacking weapon to kill it faster.",
+     "depth": 1
+    },
+    {
+     "text": "If you quickly swap after attacking one(darts/knife), you can check for 2 fakes and only have to hit one of them 8 times",
+     "depth": 1
+    },
+    {
+     "text": "Repeat until one door remains to get the cutscene."
+    },
+    {
+     "text": "Enter the remaining confusing door."
+    }
+   ]
+  },
+  {
+   "title": "Room 4 - Hopelessness",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Kill all the hopeless creatures 3 times each."
+    },
+    {
+     "text": "Cross the bridge and prepare to fight Tolna (3 level-46 monsters)."
+    }
+   ]
+  },
+  {
+   "title": "Finishing up",
+   "notes": [
+    "Note: You must finish the final cutscene/dialogue before attacking the heads or you will be returned to the entrance!"
+   ],
+   "steps": [
+    {
+     "text": "Kill the 3 heads."
+    },
+    {
+     "text": "Use Protect from Missiles to take no damage if ranging, or Protect from Melee to take no damage if meleeing (if low level).",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Tolna."
+    },
+    {
+     "text": "Talk to him again on the surface."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    },
+    {
+     "text": "Note: Re-enter the rift once you've completed the quest to complete a task from the Varrock Medium Achievement Diary.",
+     "depth": 1
+    }
+   ]
+  }
+ ]
+}

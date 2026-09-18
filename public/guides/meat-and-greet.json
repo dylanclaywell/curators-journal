@@ -1,0 +1,93 @@
+{
+ "id": "meat-and-greet",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Meat_and_Greet%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Emelio in south-east Outer Fortis",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Talk to the Spice Merchant in the Bazaar about missing delivery",
+     "chat": [
+      "2. I'm here about a missing delivery."
+     ]
+    },
+    {
+     "text": "Open the box using the code 2546."
+    },
+    {
+     "text": "Talk to Alba at the north of Ortus Farm just outside the western entryway of the city, in the building north of the Buffalo pen."
+    },
+    {
+     "text": "Go west of the farm to the wolf den and inside the cave and kill the Dire Wolf Alpha. Bring food, as this fight takes place in a multicombat area with both melee and ranged damage being dealt simultaneously."
+    },
+    {
+     "text": "Return to Alba."
+    },
+    {
+     "text": "Return to Emelio"
+    },
+    {
+     "text": "Talk to Emelio again and give him these numbers:"
+    },
+    {
+     "text": "4 portions of meat",
+     "depth": 1
+    },
+    {
+     "text": "2 portions of salad",
+     "depth": 1
+    },
+    {
+     "text": "1 portion of spice",
+     "depth": 1
+    },
+    {
+     "text": "3 portions of sauce",
+     "depth": 1
+    },
+    {
+     "text": "Give the test kebab to Vincens, Renata or Lucas outside."
+    },
+    {
+     "text": "Talk to Emelio again."
+    },
+    {
+     "text": "Talk to Lelia inside the Fortis Colosseum. She can be found in the southern room."
+    },
+    {
+     "text": "Fight and defeat the Minotaur."
+    },
+    {
+     "text": "Protect from Melee. When he says \"Moo!\" switch to Protect from Magic.",
+     "depth": 1
+    },
+    {
+     "text": "When he says \"Moooo!\", he will attack 1 tick faster.",
+     "depth": 1
+    },
+    {
+     "text": "If you die or escape, talk to Lelia to re-enter the fight.",
+     "depth": 1
+    },
+    {
+     "text": "Occasionally, the Minotaur will yell \"moo\" and attack with Melee.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Lelia after defeating the minotaur."
+    },
+    {
+     "text": "Talk to Emelio to finish the quest."
+    }
+   ]
+  }
+ ]
+}

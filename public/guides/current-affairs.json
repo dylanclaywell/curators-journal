@@ -1,0 +1,107 @@
+{
+ "id": "current-affairs",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Current_Affairs%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Duck troubles",
+   "notes": [
+    "Needed: Charcoal (obtainable during the quest)"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Arhein on the Catherby docks.",
+     "chat": [
+      "2. What's with the duck?",
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Talk to Councillor Catherine in the council office in north-east Catherby."
+    },
+    {
+     "text": "If needed, search the nearby cabinet for charcoal.",
+     "depth": 1
+    },
+    {
+     "text": "With charcoal in your inventory, fill in form cr-4p, selecting the first option for every question."
+    },
+    {
+     "text": "Talk to Councillor Catherine again to return the form."
+    }
+   ]
+  },
+  {
+   "title": "Fishing a mayor",
+   "notes": [
+    "Needed: 50 coins"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Arhein again.",
+     "chat": [
+      "2. I need to find the Mayor of Catherby."
+     ]
+    },
+    {
+     "text": "Talk to Harry in the fishing shop in the easternmost building in Catherby.",
+     "chat": [
+      "2. I'm here about the mayor.",
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "He will sell you the mayoral fishbowl and tiny net for 50 coins.",
+     "depth": 1
+    },
+    {
+     "text": "Use the tiny net on either aquarium in the shop to catch the Mayor of Catherby."
+    },
+    {
+     "text": "Talk to Arhein again to have him place a mayoral chain on the mayor.",
+     "chat": [
+      "2. About the mayor..."
+     ]
+    },
+    {
+     "text": "Talk to Councillor Catherine and select the first option for every question again."
+    },
+    {
+     "text": "Use form 7r4-5h on the Mayor of Catherby, then talk to Catherine to return the signed form."
+    },
+    {
+     "text": "Talk to Arhein again to receive the current duck.",
+     "chat": [
+      "2. The by-law has been changed!"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Charting the current",
+   "notes": [
+    "Needed: Current duck"
+   ],
+   "steps": [
+    {
+     "text": "Board your boat at the Catherby docks and sail east to the ripple immediately west of the Obelisk of Water."
+    },
+    {
+     "text": "While your boat is on top of the ripple, click the current duck in your inventory to place it in the water."
+    },
+    {
+     "text": "Follow the duck until it reaches the shore near Holgart, then collect it."
+    },
+    {
+     "text": "Return to Arhein.",
+     "chat": [
+      "2. I've charted the currents!"
+     ]
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

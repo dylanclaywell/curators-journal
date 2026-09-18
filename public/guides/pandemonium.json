@@ -1,0 +1,116 @@
+{
+ "id": "pandemonium",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Pandemonium%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Salvaging",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Will or Anne at the south docks of Port Sarim to accept their shipwreck salvaging job.",
+     "chat": [
+      "1. Yes",
+      "1. I guess I'm ready..."
+     ]
+    },
+    {
+     "text": "Navigate the helm to take control of the ship."
+    },
+    {
+     "text": "Navigate south through the Bay of Sarim until you reach east of the Karamja Shipyard."
+    },
+    {
+     "text": "Click the minimap or water to set your heading in that direction.",
+     "depth": 1
+    },
+    {
+     "text": "Click to trim the sails when a gust of wind arises for a speed boost.",
+     "depth": 1
+    },
+    {
+     "text": "Un-set the sails when Will says you have arrived."
+    },
+    {
+     "text": "Deploy the salvaging hook, after which you will be pushed overboard."
+    }
+   ]
+  },
+  {
+   "title": "Facilities",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to 'Squawking' Steve Beanie at the Pandemonium Pub."
+    },
+    {
+     "text": "Talk to Ribs just to the north to discuss the map."
+    },
+    {
+     "text": "Talk to 'Squawking' Steve Beanie again.",
+     "chat": [
+      "2. About Will and Anne...",
+      "2. Do you have any idea where Will and Anne might have gone?"
+     ]
+    },
+    {
+     "text": "Head east to the docks and talk to Junior Jim to get a raft in exchange for the salvaged old cup. He will take you to the shipyard."
+    },
+    {
+     "text": "If needed, take a hammer and saw from the crates just to the south.",
+     "depth": 1
+    },
+    {
+     "text": "Board the gangplank to your raft and build a cargo hold in the facility hotspot."
+    },
+    {
+     "text": "Disembark the gangplank and talk to Junior Jim again to return to the Pandemonium and receive a Captain's log."
+    }
+   ]
+  },
+  {
+   "title": "Cargo courier",
+   "notes": [
+    "Needed: Free hands to carry cargo (no weapons equipped)."
+   ],
+   "steps": [
+    {
+     "text": "Board the gangplank to the north-east."
+    },
+    {
+     "text": "Navigate north through Mudskipper Sound and the Bay of Sarim until you reach Port Sarim."
+    },
+    {
+     "text": "Optionally use the buoy to dock your raft, then disembark the gangplank.",
+     "depth": 1
+    },
+    {
+     "text": "Take cargo from the ledger table near the docks and board the gangplank again."
+    },
+    {
+     "text": "Open the basic cargo hold to store the cargo.",
+     "depth": 1
+    },
+    {
+     "text": "Navigate back to the docks at the Pandemonium."
+    },
+    {
+     "text": "Open the basic cargo hold and withdraw the cargo.",
+     "depth": 1
+    },
+    {
+     "text": "Disembark the gangplank and deposit the cargo at the ledger table."
+    },
+    {
+     "text": "Talk to Junior Jim to let him know you delivered his cargo."
+    },
+    {
+     "text": "Talk to 'Squawking' Steve Beanie in the pub for an update on Will and Anne."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

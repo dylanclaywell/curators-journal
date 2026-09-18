@@ -1,0 +1,213 @@
+{
+ "id": "barbarian-training",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Barbarian_Training%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Heavy rod fishing",
+   "depth": 1,
+   "notes": [
+    "Items required: Fishing bait or feathers, a knife"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Otto Godblessed and ask him about heavy rod fishing.",
+     "chat": [
+      "2. What can I learn about the use of a fishing rod?"
+     ]
+    },
+    {
+     "text": "Search the barbarian bed to obtain a barbarian rod."
+    },
+    {
+     "text": "Catch a leaping fish at one of the nearby fishing spots."
+    },
+    {
+     "text": "Dissect the leaping fish with the knife to obtain roe. Keep the roe for later."
+    },
+    {
+     "text": "Talk to Otto again and tell him of your success.",
+     "chat": [
+      "2. I've fished with a barbarian rod!"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Barehanded fishing",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Otto Godblessed and ask him about barehanded fishing.",
+     "chat": [
+      "1. Please teach me of your cunning with harpoons."
+     ]
+    },
+    {
+     "text": "Go to any fishing spot that requires a harpoon."
+    },
+    {
+     "text": "Talk to Otto again and tell him of your success.",
+     "chat": [
+      "1. I've fished with my hands!"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Lighting fires with a bow",
+   "depth": 1,
+   "notes": [
+    "Items required: Any standard bow made with logs, one set of oak logs"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Otto Godblessed and ask him about firemaking.",
+     "chat": [
+      "3. I'm ready for your firemaking wisdom. Please instruct me."
+     ]
+    },
+    {
+     "text": "Use the logs on the bow. See the table for skill requirements."
+    },
+    {
+     "text": "Talk to Otto again and tell him of your success.",
+     "chat": [
+      "3. I've set fire to logs with a bow!"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Pyre ships",
+   "depth": 1,
+   "notes": [
+    "Items required: Any woodcutting axe, some logs, and a tinderbox or suitable bow"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Otto Godblessed and ask him about firemaking again.",
+     "chat": [
+      "3. I have completed firemaking with a bow. What follows this?"
+     ]
+    },
+    {
+     "text": "Kill mithril dragons until one of them drops a set of chewed bones (3/128 drop rate)."
+    },
+    {
+     "text": "Construct a funeral pyre at one of the pyre sites using the logs. Light it on fire."
+    }
+   ]
+  },
+  {
+   "title": "Bare-handed planting",
+   "depth": 1,
+   "notes": [
+    "Items required: Any seed (except grape seeds) that can be planted with a seed dibber (bring multiple in case you crush the first seed), 1 free Farming patch."
+   ],
+   "steps": [
+    {
+     "text": "Talk to Otto Godblessed and ask him about farming.",
+     "chat": [
+      "4. How can I use my strength in the ways of agriculture?"
+     ]
+    },
+    {
+     "text": "Go to the farming patch and plant the seed you have."
+    },
+    {
+     "text": "Talk to Otto again and tell him of your success.",
+     "chat": [
+      "4. I've planted seeds with my fists!"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Pot-smashing",
+   "depth": 1,
+   "notes": [
+    "Items required: A spade, any sapling, 1 free Farming patch."
+   ],
+   "steps": [
+    {
+     "text": "Talk to Otto Godblessed and ask him about farming again.",
+     "chat": [
+      "4. Are there any other fist related farming activities I can learn?"
+     ]
+    },
+    {
+     "text": "Go to the farming patch and plant the sapling you have."
+    },
+    {
+     "text": "Talk to Otto again and tell him of your success.",
+     "chat": [
+      "4. I've smashed a pot whilst farming!"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Smithing",
+   "notes": [
+    "Items required: Two bronze bars, two logs, and a hammer"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Otto Godblessed and ask him about spears.",
+     "chat": [
+      "1. Tell me more about the use of spears."
+     ]
+    },
+    {
+     "text": "Use one of the bronze bar and logs on the nearby barbarian anvil. Make only one bronze spear."
+    },
+    {
+     "text": "Ask Otto about spears again.",
+     "chat": [
+      "1. Tell me more about the use of spears."
+     ]
+    },
+    {
+     "text": "Ask Otto about hastae.",
+     "chat": [
+      "1. What of the one-handed spears of which you spoke?"
+     ]
+    },
+    {
+     "text": "Use the other bronze bar and logs on the nearby barbarian anvil. Make a bronze hasta."
+    },
+    {
+     "text": "Ask Otto about hastae again.",
+     "chat": [
+      "1. What of the one-handed spears of which you spoke?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Herblore",
+   "notes": [
+    "Items required: A normal attack potion (2 doses), roe, and a knife."
+   ],
+   "steps": [
+    {
+     "text": "Talk to Otto Godblessed and ask him about herblore.",
+     "chat": [
+      "2. What was that secret knowledge of herblore we talked of?"
+     ]
+    },
+    {
+     "text": "Right-click \"Use\" the roe on the attack potion."
+    },
+    {
+     "text": "Talk to Otto again and tell him of your success.",
+     "chat": [
+      "2. I've made a barbarian potion!"
+     ]
+    }
+   ]
+  }
+ ]
+}

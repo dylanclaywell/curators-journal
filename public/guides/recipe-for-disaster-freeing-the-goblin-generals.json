@@ -1,0 +1,57 @@
+{
+ "id": "recipe-for-disaster-freeing-the-goblin-generals",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Recipe_for_Disaster%2FFreeing_the_Goblin_generals%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Inspect one of the goblin generals in Lumbridge Castle dining room."
+    },
+    {
+     "text": "Go to the Goblin Village and climb down the ladder in the north-east building."
+    },
+    {
+     "text": "Talk to the Goblin Cook., then talk to him again and give him the charcoal.",
+     "chat": [
+      "2. I need your help...",
+      "1. What do you need? Maybe I cam get it for you.",
+      "1. I've got the charcoal you were after."
+     ]
+    },
+    {
+     "text": "Talk to the Goblin Cook again.",
+     "chat": [
+      "3. I need your help..."
+     ]
+    },
+    {
+     "text": "Slice an orange and add blue, green, or purple dye. (Doesn't matter which)",
+     "depth": 1
+    },
+    {
+     "text": "Use spice on a fishing bait.",
+     "depth": 1
+    },
+    {
+     "text": "Use a bucket of water on bread.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to the Goblin Cook again.",
+     "chat": [
+      "3. I've got the ingredients we need..."
+     ]
+    },
+    {
+     "text": "Give the slop of compromise to the generals in Lumbridge."
+    },
+    {
+     "text": "Congratulations, section complete!"
+    }
+   ]
+  }
+ ]
+}

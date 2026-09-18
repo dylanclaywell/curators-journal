@@ -1,0 +1,197 @@
+{
+ "id": "temple-of-the-eye",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Temple_of_the_Eye%2FQuick_guide",
+ "sections": [
+  {
+   "title": "An Eye for a Favour",
+   "notes": [
+    "Needed: A bucket of water, 1 free inventory slot",
+    "Recommended: Ring of dueling, Lumbridge Teleport, Varrock Teleport"
+   ],
+   "steps": [
+    {
+     "text": "Speak with Wizard Persten west of the Emir's Arena to obtain the eye amulet.",
+     "chat": [
+      "2. What's a wizard doing in Al Kharid?",
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Go to the Mage of Zamorak at the Altar of Chaos in south-eastern Varrock; use the eye amulet on him."
+    },
+    {
+     "text": "Speak to the Tea Seller at the eastern entrance to Varrock.",
+     "chat": [
+      "3. Could I have a strong cup of tea?"
+     ]
+    },
+    {
+     "text": "Note: Do not steal from the Tea stall or you won't be able to continue for 10 minutes of in-game time.",
+     "depth": 1
+    },
+    {
+     "text": "Use the strong cup of tea on the Mage of Zamorak, and accept the teleport to the Abyss.",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Use the eye amulet on the Dark Mage."
+    },
+    {
+     "text": "Now there will be runic energies surrounding the rift. Touch each colour until they all turn white; the order is random for every player. Remember the order as you try out different combinations as it will reset with each failed order."
+    },
+    {
+     "text": "Speak to the Dark Mage to receive an abyssal incantation."
+    }
+   ]
+  },
+  {
+   "title": "Help from Some Wizards",
+   "notes": [
+    "Needed: Eye amulet & abyssal incantation"
+   ],
+   "steps": [
+    {
+     "text": "Go back to Wizard Persten in Al Kharid (Recommend exiting the abyss via Fire Altar, will place you just east of Persten) talk to him and accept the teleport to the Wizards' Tower.",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Go to the basement and use the abyssal incantation on Archmage Sedridor."
+    },
+    {
+     "text": "Climb up the ladder and stairs once, then speak to Wizard Traiborn.",
+     "chat": [
+      "2. I need your apprentices to help with an incantation."
+     ]
+    },
+    {
+     "text": "Speak with the three apprentice wizards on the of the wizards tower, Apprentice Felix, Tamara, and Cordelia, in no particular order and view their riddles."
+    },
+    {
+     "text": "Speak to Traiborn, and answer 11 when prompted.",
+     "chat": [
+      "2. I think I know what a thingummywut is!"
+     ]
+    },
+    {
+     "text": "Speak to Archmage Sedridor or Wizard Persten in the basement.",
+     "chat": [
+      "1. Let's do it."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Guardians of the Rift",
+   "notes": [
+    "Needed: Chisel and pickaxe (both obtainable during the relevant section)",
+    "Be advised this section has arrow prompts throughout the tutorial. Follow the arrows to complete the quest."
+   ],
+   "steps": [
+    {
+     "text": "Speak to each of the apprentices in no particular order."
+    },
+    {
+     "text": "Speak to Wizard Persten. The Guardians of the Rift tutorial begins after this step."
+    },
+    {
+     "text": "Speak to Apprentice Cordelia."
+    },
+    {
+     "text": "Speak to Apprentice Felix, then take a weak cell from the table."
+    },
+    {
+     "text": "Speak to Apprentice Tamara, then place the weak cell on the inactive cell tile near her."
+    },
+    {
+     "text": "Speak to Apprentice Felix."
+    },
+    {
+     "text": "Take a weak cell from the table, then click on the essence pile to assemble a guardian."
+    },
+    {
+     "text": "Repeat the previous step for the other essence pile."
+    },
+    {
+     "text": "Speak to Apprentice Tamara."
+    },
+    {
+     "text": "Mine five guardian fragments from the guardian remains."
+    },
+    {
+     "text": "Speak to Apprentice Felix."
+    },
+    {
+     "text": "Work at the workbench to turn guardian fragments into guardian essence."
+    },
+    {
+     "text": "Speak to Apprentice Tamara."
+    },
+    {
+     "text": "Take an uncharged cell from the table."
+    },
+    {
+     "text": "Enter the Mind Altar and click the altar."
+    },
+    {
+     "text": "Speak to Apprentice Tamara."
+    },
+    {
+     "text": "Click the weak cell tile, then power-up The Great Guardian."
+    },
+    {
+     "text": "Speak to Apprentice Tamara."
+    },
+    {
+     "text": "Repeat the process of mining five guardian fragments and turning them into guardian essence."
+    },
+    {
+     "text": "Enter the Water Altar and click the altar"
+    },
+    {
+     "text": "Power-up The Great Guardian."
+    },
+    {
+     "text": "Speak to Apprentice Tamara."
+    },
+    {
+     "text": "Click on the Essence pile again to assemble another guardian."
+    },
+    {
+     "text": "Speak to Apprentice Tamara."
+    },
+    {
+     "text": "Repeat the process of mining guardian fragments and turning them into guardian essence."
+    },
+    {
+     "text": "Take an uncharged cell from the table and use the water portal talisman on the water guardian."
+    },
+    {
+     "text": "Click the Water Altar."
+    },
+    {
+     "text": "Leave the altar and speak to Apprentice Tamara."
+    },
+    {
+     "text": "Place the cell you made on the cell tile."
+    },
+    {
+     "text": "Speak to Apprentice Tamara."
+    },
+    {
+     "text": "Power-up The Great Guardian."
+    },
+    {
+     "text": "Upon completion of the tutorial, you will automatically exit and speak to Archmage Sedridor."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

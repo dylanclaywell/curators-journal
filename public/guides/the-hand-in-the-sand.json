@@ -1,0 +1,150 @@
+{
+ "id": "the-hand-in-the-sand",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/The_Hand_in_the_Sand%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Sandy Hand",
+   "notes": [
+    "Needed: A beer (obtainable for 2 gp)"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Bert in Yanille, in the house next to the POH Portal to get a Sandy hand.",
+     "chat": [
+      "2. Eww a hand, in the sand! Why haven't you told the authorities?",
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Go to the Dragon Inn pub south of Bert's house. Buy a beer from the bartender (if you don't have one) and give the beer to the Guard Captain."
+    },
+    {
+     "text": "Ring the bell at the Wizards' Guild (outside near eastern doors), or enter the guild with 66 Magic, then talk to Zavistic Rarve, who will take the Hand. If started Zogre Flesh Eaters:",
+     "chat": [
+      "2. I have a rather sandy problem that I'd like to palm off on you."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Sandy the Slavedriver",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Bert to get Bert's rota."
+    },
+    {
+     "text": "Travel to Brimhaven and find Sandy in a small house south of The Shrimp and Parrot restaurant and north-west of the pub."
+    },
+    {
+     "text": "Search Sandy's desk to get Sandy's rota."
+    },
+    {
+     "text": "Pickpocket Sandy until you get sand."
+    }
+   ]
+  },
+  {
+   "title": "Truth Serum",
+   "notes": [
+    "Needed: 2 vials, a lantern lens, Bert's rota, Sandy's rota, redberries and white berries, sand"
+   ],
+   "steps": [
+    {
+     "text": "Travel back to Yanille and talk to Bert to receive a magic scroll."
+    },
+    {
+     "text": "Ring the bell just outside the Wizards' Guild and talk to Zavistic Rarve again to receive a magical orb."
+    },
+    {
+     "text": "Talk to Zavistic Rarve again. He will offer to teleport you to Port Sarim. ( if started Zogre Flesh Eaters)",
+     "chat": [
+      "4. Can you help me more?",
+      "1. Yes, that would be great!"
+     ]
+    },
+    {
+     "text": "Talk to Betty in Port Sarim Magic shop for a bottled water.",
+     "chat": [
+      "1. Talk to Betty about the Hand in the Sand."
+     ]
+    },
+    {
+     "text": "First add redberries, then white berries to the bottled water in order to get a pink dye."
+    },
+    {
+     "text": "Redberries can be bought at the food store in southern Port Sarim.",
+     "depth": 1
+    },
+    {
+     "text": "Dye the lantern lens to get a rose-tinted lens."
+    },
+    {
+     "text": "Talk to Betty again so she puts the vial on the counter.",
+     "chat": [
+      "1. Talk to Betty about the Hand in the Sand."
+     ]
+    },
+    {
+     "text": "Go stand in the doorway and \"use\" the lens on the counter to get a truth serum."
+    },
+    {
+     "text": "Talk to Betty one last time with sand in your inventory.",
+     "chat": [
+      "1. Talk to Betty about the Hand in the Sand."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Sandy Truth-Be-Told",
+   "notes": [
+    "Needed: magical orb, truth serum"
+   ],
+   "steps": [
+    {
+     "text": "Travel to Brimhaven and talk to Sandy."
+    },
+    {
+     "text": "Select an option until you distract him, and use the truth serum on Sandy's Coffee Mug.",
+     "depth": 1,
+     "chat": [
+      "1. There's a herd of huge mutant herring about to drop from the sky!",
+      "2. But the pygmy shrews have eaten all the sand!",
+      "3. A small parrot with a pink banana is sitting outside your window!"
+     ]
+    },
+    {
+     "text": "Activate the magical orb and talk to Sandy again. Be sure to click every option.",
+     "chat": [
+      "1. Why is Bert's rota different from the original?",
+      "1. Why doesn't Bert remember the change in his hours?",
+      "1. What happened to the wizard?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "And Sandy said, \"Drat-foiled again!\"",
+   "notes": [
+    "Needed: 5 earth runes and a bucket of sand",
+    "Congratulations, quest complete!"
+   ],
+   "steps": [
+    {
+     "text": "Travel to Yanille and Ring the Bell at the Wizards' Guild to talk to Zavistic Rarve."
+    },
+    {
+     "text": "Talk to Zavistic Rarve again to get a cut scene."
+    },
+    {
+     "text": "Travel to Entrana and talk to Mazion at the sandpit to get a Wizard's head."
+    },
+    {
+     "text": "Return to Yanille, ring the bell and talk to Zavistic Rarve."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,258 @@
+{
+ "id": "desert-treasure-i",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Desert_Treasure_I%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting out",
+   "notes": [
+    "Items required (may be noted): 650 coins, ashes, blood rune, bones, 6 molten glass, 12 magic logs, charcoal and 6 steel bars.",
+    "Recommended: waterskins, a charged ring of dueling, 400 coins for carpet rides to Bedabin Camp, stamina potions, 2 Shantay passes, Digsite teleport",
+    "Ultimate Ironmen: You can deliver the supplies in several trips (use the items on Eblis).",
+    "Collect the 4 diamonds, they may be obtained in any order.",
+    "Note: At any point with one of the diamonds in your inventory, a level 95 stranger may randomly appear and attack you with a poisoned dragon dagger. You may place the diamonds in the pyramid or your bank at any point to avoid this."
+   ],
+   "steps": [
+    {
+     "text": "Talk to Asgarnia Smith in the Bedabin camp by the magic carpet with at least one inventory slot free.",
+     "chat": [
+      "2. Do you have any quests?",
+      "1. Yes, I'll help you."
+     ]
+    },
+    {
+     "text": "Go to the Digsite Exam Centre and talk to Terry Balando.",
+     "chat": [
+      "1. Ask about the Desert Treasure quest."
+     ]
+    },
+    {
+     "text": "Talk to him again for a translation.",
+     "chat": [
+      "1. Ask about the Desert Treasure quest."
+     ]
+    },
+    {
+     "text": "Talk to Asgarnia Smith in the desert.",
+     "chat": [
+      "2. Don't read book"
+     ]
+    },
+    {
+     "text": "Talk to him again.",
+     "chat": [
+      "1. Help him"
+     ]
+    },
+    {
+     "text": "Run south to the bandit camp and buy a drink in the pub for 650 coins. (If you are wearing any saradomin or zamorak items e.g. unholy blessing, remove them now so you don't get attacked by the Bandits)",
+     "chat": [
+      "2. Buy a drink",
+      "1. Buy a beer"
+     ]
+    },
+    {
+     "text": "Talk to the bartender again.",
+     "chat": [
+      "2. I heard about four diamonds..."
+     ]
+    },
+    {
+     "text": "Talk to Eblis in or just outside of the small rectangular building east of the bar.",
+     "chat": [
+      "4. Tell me of The four diamonds of Azzanadra",
+      "1. Yes",
+      "1. Yes, I will go get those for you."
+     ]
+    },
+    {
+     "text": "Deliver all the required items to Eblis by using them on him (items can remain noted), then talk to him again."
+    },
+    {
+     "text": "Go south-east to the mirrors, and talk to Eblis there."
+    }
+   ]
+  },
+  {
+   "title": "Smoke diamond",
+   "notes": [
+    "Items required: tinderbox, facemask (Slayer Helmet works) or gas mask, combat gear, food, and ice gloves or water spells or Dwarven cannon.",
+    "Recommended: Stamina or energy potions, Dwarven cannon, good food, Protect from melee prayer.",
+    "Note: You must wear ice gloves to wield anything while fighting Fareed (you can use ranged without ice gloves if you keep your distance, but all arrows are turned to ash as they hit). If using magic, only water spells can damage him (Trident of the Seas will not work). Be ready to run nonstop - the torches each have a timer."
+   ],
+   "steps": [
+    {
+     "text": "Equip your facemask and enter the Smoke Dungeon west of Pollnivneach and east of the mirrors"
+    },
+    {
+     "text": "Light the 4 standing torches, one in each corner of the dungeon, and open the chest in the centre to get the key before any of the torches burns out."
+    },
+    {
+     "text": "Starting at the NE corner with 100% run and then onto SE, NW and then SW, you can make it to the chest without stamina or energy pots.",
+     "depth": 1
+    },
+    {
+     "text": "Use the warm key to open the gate to the east."
+    },
+    {
+     "text": "Kill Fareed to get the Smoke diamond. Protect from Melee is strongly advised and attacking with water spell or any range arrow."
+    }
+   ]
+  },
+  {
+   "title": "Shadow diamond",
+   "notes": [
+    "Items required: 20+ lockpicks, antipoison, food, 5,000 coins, magic combat equipment, Prayer/Super restores to combat the Prayer drain. Note: Tiles by the general store in the Bandit camp will unnote any items for a small fee, and nearby bandits can be pickpocketed for Antipoison and lockpicks."
+   ],
+   "steps": [
+    {
+     "text": "Talk to Rasolo outside the house south of Baxtorian Falls.",
+     "chat": [
+      "3. Ask about the Diamonds of Azzanadra",
+      "1. Yes"
+     ]
+    },
+    {
+     "text": "Go to the most southern tent in the Bandit camp. Bring antipoison, food, and 20+ lockpicks (you can bring noted ones and coins to exchange with Tiles in Bandit camp's general store, 5 coins for each lockpick) (For ironmen, note that both lockpicks and antipoisons may be pickpocketed from the Bandits in the vicinity)."
+    },
+    {
+     "text": "Unlock the secure chest (the 3 locks must be picked consecutively, it can take upwards of 100 tries to open the chest and is dependent upon Thieving level)."
+    },
+    {
+     "text": "Give the gilded cross to Rasolo. Even if your inventory is full, the cross will instantly be swapped for the ring."
+    },
+    {
+     "text": "Equip the visibility ring and climb down the ladder east of Rasolo in the fenced area."
+    },
+    {
+     "text": "Run through the dungeon, kill Damis in his 2 forms and pick up the shadow diamond (his second form drains player's prayer rapidly, it is advised to safespot Damis, this can be done by hitting a bat or rat and stacking npcs behind). Kill a Shadow Hound to complete a task in the Hard Kandarin Diary."
+    },
+    {
+     "text": "Note: If you run too fast and too far out of Damis' range, he will vanish once more into the shadows. If this happens, go back into the maze where you first enter the large area with Damis' spawn. He will re-appear in the form he disappeared in, with hitpoints reset to full.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Ice diamond",
+   "notes": [
+    "Items required: runes to cast fire spells to unfreeze the Trolls after killing Kamil, any sweet food (from Troll child's list), spiked boots (get these from Dunstan with a pair of climbing boots and an iron bar), climbing boots or Trollheim Teleport, enough food and combat equipment to kill 5 Ice Trolls and Kamil. Prayer and restore/super restore/menaphite remedy potions highly recommended. Note: Only fire spells will work if using Magic on Kamil. Iban Blast, Flames of Zamorak, and trident of the seas' built in spell cannot damage Kamil. Additionally, your stats will be constantly drained during this fight; keep this in mind when selecting the fire spell you will use. Note you cannot run in the area, so there's no point in bringing graceful set.",
+    "Tip: Use a ring of dueling to teleport to Ferox Enclave and use the pools to restore all your combat stats and prayer before proceeding."
+   ],
+   "steps": [
+    {
+     "text": "Give your sweet food to the Troll child north-west of Trollheim by right-clicking and using the cake on the troll child."
+    },
+    {
+     "text": "Talk to the Troll child.",
+     "chat": [
+      "1. Yes"
+     ]
+    },
+    {
+     "text": "Enter the ice gate and kill 5 ice trolls."
+    },
+    {
+     "text": "Note: You won't need to kill the trolls again if you teleport out and come back",
+     "depth": 1
+    },
+    {
+     "text": "Enter the cave."
+    },
+    {
+     "text": "Follow the path then kill Kamil (it is advised to approach with protect from magic to force him to teleport into range, then protect from melee, and manually cast your spells)."
+    },
+    {
+     "text": "Continue west and follow the long icy path."
+    },
+    {
+     "text": "Wear spiked boots and climb the ice ledge, follow the new path."
+    },
+    {
+     "text": "Go through the gate and smash the trolls frozen in ice by using your fire spell on each of them. Talk to them for the ice diamond."
+    }
+   ]
+  },
+  {
+   "title": "Blood diamond",
+   "notes": [
+    "Items required: Silver bar, spice, garlic powder (or garlic and pestle and mortar), food, prayer potions, and (after Entrana!) combat equipment. Means of travel to Draynor is also helpful.",
+    "Recommended: Consider bringing your Druid pouch to prevent ghasts from rotting your food as you run through the swamp"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Malak in the Canifis pub.",
+     "chat": [
+      "5. I am looking for a special Diamond...",
+      "1. Yes",
+      "3. How can I kill Dessous?"
+     ]
+    },
+    {
+     "text": "Travel to the Draynor Sewer and give Ruantun a silver bar for a silver pot."
+    },
+    {
+     "text": "You can go upstairs in Morgan's house and search the cupboard to get garlic if needed. Grind your garlic with a pestle and mortar to receive garlic powder.",
+     "depth": 1
+    },
+    {
+     "text": "Take the silver pot to the High Priest in the Entrana church and he will enchant it."
+    },
+    {
+     "text": "Talk to Malak (He will damage you for five hitpoints here, but he cannot kill you)."
+    },
+    {
+     "text": "Add spices and garlic powder to the pot of blood."
+    },
+    {
+     "text": "Prepare for a tough boss fight (combat gear, high healing food)."
+    },
+    {
+     "text": "Go to the Morytania Graveyard north of Castle Drakan (see map)."
+    },
+    {
+     "text": "Pour your pot of blood on the tomb and defeat Dessous"
+    },
+    {
+     "text": "Dessous has 99 Defence and 150 defence against slash and is generally very strong against melee. Recommended to range/mage him.",
+     "depth": 1
+    },
+    {
+     "text": "You can avoid taking damage by alternating between protection from melee and protection from range each game tick. (Note: if you leave the fight you will need to make a new pot of blood but you keep your blessed pot)",
+     "depth": 1
+    },
+    {
+     "text": "Return to Malak and claim the blood diamond."
+    }
+   ]
+  },
+  {
+   "title": "The Ancient Pyramid",
+   "notes": [
+    "Items required: all four diamonds. Recommended: weight-reducing gear, stamina potion, energy potion, antipoison, prayer potions and high-healing food.",
+    "Note: Talk to Eblis after the quest to buy an Ancient staff for 80,000 coins, or buy one from the GE for."
+   ],
+   "steps": [
+    {
+     "text": "Go south-east of Eblis and place a diamond in each of the pyramid's obelisks."
+    },
+    {
+     "text": "Enter the pyramid from the top."
+    },
+    {
+     "text": "Run through each floor and don't stop or a trap may send you back to the start. Traps may still trigger regardless. Beware Mummies and Scarabs as they can hit over 20."
+    },
+    {
+     "text": "Talk to Azzanadra at the end."
+    },
+    {
+     "text": "Praying at the altar twice after completing the quest will unlock a hard task in the Desert area.",
+     "depth": 1
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

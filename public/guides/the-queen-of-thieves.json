@@ -1,0 +1,66 @@
+{
+ "id": "the-queen-of-thieves",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/The_Queen_of_Thieves%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Speak to Tomas Lawry outside the Port Piscarilius bank. (Grab a bowl from the general store on your way to the bank if you plan on making the stew yourself.)",
+     "chat": [
+      "2. I'm looking for a quest.",
+      "1. Absolutely.",
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Head south and speak to Robert O'Reilly in the house directly west of the bridge. He will ask for a stew. A stew can be made with raw beef and a potato purchased from Kenelme directly west along with a bowl from the general store south-east.",
+     "chat": [
+      "1. Okay."
+     ]
+    },
+    {
+     "text": "Enter the manhole to the east marked by the icon, cross the bridge a bit to the south, continue west."
+    },
+    {
+     "text": "Speak to Devan Rutter, near the fish stall.",
+     "chat": [
+      "1. Nope, sounds good to me."
+     ]
+    },
+    {
+     "text": "Optional: Trade the General Store Shop Keeper in The Warrens for an easy Kourend & Kebos Diary task."
+    },
+    {
+     "text": "Return to the surface from the way you entered and murder Conrad King (non-combat) on the dock on the southern side of the Piscarilius Foodhall (the largest building). Pick either option."
+    },
+    {
+     "text": "Go back down the manhole and enter the tent."
+    },
+    {
+     "text": "Speak to the Queen of Thieves."
+    },
+    {
+     "text": "Exit the sewers and travel south-west to Kingstown and enter the house immediately north from the entrance (south of the icon), and climb the stairs to the."
+    },
+    {
+     "text": "Picklock the chest in the east side of the room to find a letter. (You may have to click the lock multiple times)"
+    },
+    {
+     "text": "Return to Tomas Lawry.",
+     "chat": [
+      "1. Let's talk about my quest."
+     ]
+    },
+    {
+     "text": "Return to The Queen of Thieves (now called Lady Shauna Piscarilius)."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

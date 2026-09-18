@@ -1,0 +1,152 @@
+{
+ "id": "rag-and-bone-man-i",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Rag_and_Bone_Man_I%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting out",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to the Odd Old Man in Silvarea, north-east of Varrock, north of the Digsite, during the conversation he will mention boiling the bones in vinegar..",
+     "chat": [
+      "1. Anything I can do to help?",
+      "1. Yes"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Gathering the bones",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Gather the following bones by killing the appropriate monsters and picking up the drop. Either pick your preferred locations from the table, or follow one of the suggested paths in the section below."
+    }
+   ]
+  },
+  {
+   "title": "Suggested paths",
+   "depth": 1,
+   "notes": [
+    "Path with teleports="
+   ],
+   "steps": [
+    {
+     "text": "Head to the sheep pen north of Ardougne. Skills necklace to the Fishing Guild and run east or Combat bracelet to the Ranging Guild and run south, or Ardougne Teleport and run north."
+    },
+    {
+     "text": "Kill a ram in the pen for the ram skull.",
+     "depth": 1
+    },
+    {
+     "text": "At the mine to the south-east, kill a grizzly bear for the bear ribs.",
+     "depth": 1
+    },
+    {
+     "text": "Head to Musa Point/the Karamja Volcano. Amulet of glory to Musa Point or Minigame Teleport to TzHaar Fight Pit."
+    },
+    {
+     "text": "Just east of the volcano, kill a monkey for the monkey paw.",
+     "depth": 1
+    },
+    {
+     "text": "Inside the Karamja Volcano Dungeon, kill a giant bat for the giant bat wing.",
+     "depth": 1
+    },
+    {
+     "text": "Head to Draynor Village using the Amulet of glory."
+    },
+    {
+     "text": "Kill a level 2 goblin south of the village and pick up the goblin skull.",
+     "depth": 1
+    },
+    {
+     "text": "Kill a unicorn in the swamp and pick up the unicorn bone.",
+     "depth": 1
+    },
+    {
+     "text": "Kill a giant rat in the swamp and pick up the giant rat bone.",
+     "depth": 1
+    },
+    {
+     "text": "Kill a big frog in the swamp and pick up the big frog leg. The small frogs and giant frogs do NOT drop the big frog leg.",
+     "depth": 1
+    },
+    {
+     "text": "Head south past Varrock until you reach the south-east Varrock mine and kill a giant rat near or inside the mine, picking up the giant rat bone."
+    },
+    {
+     "text": "Head slightly south of the mine to the forest and kill a unicorn and black bear, picking up the unicorn bone and the bear ribs respectively."
+    },
+    {
+     "text": "Head into the sheep pen to the south-west of the mine and west of the forest and kill a ram to get a ram skull."
+    },
+    {
+     "text": "Walk south towards Lumbridge (or teleport to the city and walk east) and kill a goblin on the eastern side of the River Lum to get a goblin skull."
+    },
+    {
+     "text": "Head down to the Lumbridge Swamp and kill one of the big frogs for the big frog leg. The small frogs and giant frogs do NOT drop the big frog leg."
+    },
+    {
+     "text": "Retrieve 60 coins from the Draynor Village bank to pay for transportation in the next step. Consider retrieving an additional 8 coins and creating the required pots of vinegar before continuing (see the following section)."
+    },
+    {
+     "text": "Head to Port Sarim. Talk to one of the Seamen just east of the Fishing shop and pay to travel to Musa Point."
+    },
+    {
+     "text": "Walk west towards the Karamja Volcano and kill a monkey on the way, picking up the monkey paw."
+    },
+    {
+     "text": "Head into the Crandor and Karamja Dungeon, which is located at the top of the Karamja Volcano (marked by a dungeon icon), and kill a giant bat, picking up the giant bat wing."
+    }
+   ]
+  },
+  {
+   "title": "Polishing the bones",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Fortunato located in Draynor marketplace and buy 8 jug of vinegar."
+    },
+    {
+     "text": "Use all of the jugs of vinegar with all the pots to make 8 pots of vinegar. If intending to do Rag and Bone Man II, buy 27 more (35 total) jugs of vinegar to save time."
+    },
+    {
+     "text": "Use all of the bones with your pots of vinegar to get 8 bones in vinegar."
+    },
+    {
+     "text": "Withdraw a tinderbox and either 8 logs or an axe"
+    },
+    {
+     "text": "With the logs in your inventory, return to the Odd Old Man"
+    },
+    {
+     "text": "For each bone in vinegar do:"
+    },
+    {
+     "text": "Place a set of logs on the pot-boiler next to the old man.",
+     "depth": 1
+    },
+    {
+     "text": "Use a bone in vinegar with the pot-boiler.",
+     "depth": 1
+    },
+    {
+     "text": "Light the set of logs with your tinderbox.",
+     "depth": 1
+    },
+    {
+     "text": "Wait 12 seconds until the fire is consumed and remove the pot from the pot-boiler. (Alternatively, hop worlds after lighting the logs for them to be finished when you log back in)",
+     "depth": 1
+    },
+    {
+     "text": "Talk to the Odd Old Man."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

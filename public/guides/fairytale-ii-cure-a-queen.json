@@ -1,0 +1,108 @@
+{
+ "id": "fairytale-ii-cure-a-queen",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Fairytale_II_-_Cure_a_Queen%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Unlocking Fairy Rings",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Take all required items with you."
+    },
+    {
+     "text": "Speak with Martin the Master Gardener in the Draynor Market.",
+     "chat": [
+      "2. Quest."
+     ]
+    },
+    {
+     "text": "Note: Do not pickpocket Martin or you won't be able to continue for 10 minutes of in-game time.",
+     "depth": 1
+    },
+    {
+     "text": "Wait 5 minutes (Real World Time) and speak to Martin the Master Gardener again.",
+     "chat": [
+      "2. Quest.",
+      "1. I suppose I'd better go see what the problem is then."
+     ]
+    },
+    {
+     "text": "Now make your way to Fairy Nuff's grotto in Zanaris just north of the bank."
+    },
+    {
+     "text": "Take Nuff's Healing certificate off the floor, right-click it and study it. (If lost, you can obtain another Healing certificate by searching the Potion shelves in Fairy Nuff's grotto.)"
+    },
+    {
+     "text": "Head to the south-west area of Zanaris, read the Rune temple sign just south of the Cosmic Altar."
+    },
+    {
+     "text": "Talk to the Fairy Godfather in the throne room.",
+     "chat": [
+      "1. Where is the Fairy Queen?",
+      "2. Where could she have been taken to?",
+      "1. Yes, okay."
+     ]
+    },
+    {
+     "text": "Talk to the Co-ordinator just north of the throne room. You can now use the fairy rings.",
+     "chat": [
+      "2. The fairy rings."
+     ]
+    },
+    {
+     "text": "Talk to Fairy Fixit near the fairy ring west of the throne room.",
+     "chat": [
+      "1. Why are you carrying that toolbox?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Curing the Queen",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Now, equip your Dramen staff, and teleport using the fairy ring in this sequence: AIR, DLR, DJQ (You will not go anywhere), AJS - (Note: You can right click configure but you must have the Nuff's certificate in your inventory)"
+    },
+    {
+     "text": "Talk to Fairy Nuff and Fairy Very Wise in the NE corner of the area."
+    },
+    {
+     "text": "Go back to Zanaris (BKS) and pickpocket the Fairy Godfather while he and his henchmen aren't looking."
+    },
+    {
+     "text": "Go back to the hideout and give the Queen's secateurs to Fairy Nuff. (AIR, DLR, DJQ, AJS)"
+    },
+    {
+     "text": "Note: Do not mix the magic essence potion before learning how to make it from the Fairy or it will not revive the Fairy Queen when used on her.",
+     "depth": 1
+    },
+    {
+     "text": "Travel to fairy code CKP. Wait here (2-5 mins) until a star flower has grown then pick it. (You must have Nuff's certificate with you for this to work.)"
+    },
+    {
+     "text": "Travel to fairy code DIR. Kill a gorak and pick up its gorak claws. Goraks can be safespotted using some terrain."
+    },
+    {
+     "text": "Return to the hideout. (AIR, DLR, DJQ, AJS)"
+    },
+    {
+     "text": "Talk to Fairy Nuff."
+    },
+    {
+     "text": "Now use the star flower on your vial of water and grind the gorak claws to receive gorak claw powder, then use the two items on each other to make a magic essence potion."
+    },
+    {
+     "text": "RIGHT-CLICK use the magic essence on the queen, laying on the stretcher near Fairy Nuff."
+    },
+    {
+     "text": "Speak with the Fairy Queen to complete the quest."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

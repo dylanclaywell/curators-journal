@@ -1,0 +1,514 @@
+{
+ "id": "sins-of-the-father",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Sins_of_the_Father%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Slepe's Sleeper Plague",
+   "notes": [
+    "Needed: Combat equipment (preferably ranged)",
+    "Recommended: Food, prayer potions, stamina potion for following Carl, Drakan's medallion or an Ectophial alongside 10,000 coins, teleport to Drezel (Fairy ring CKS, Salve Graveyard Teleport tablet, Slayer ring), teleport to Fenkenstrain's Castle (Fenkenstrain's Castle Teleport tablet)."
+   ],
+   "steps": [
+    {
+     "text": "Talk to Veliaf Hurtz, outside of the church in Slepe.",
+     "chat": [
+      "1. Yes.<!--",
+      "4. I'd better get going. -->"
+     ]
+    },
+    {
+     "text": "Talk to Hameln the Jester inside the church.",
+     "chat": [
+      "1. Do you know how he fell ill?<!--",
+      "2. Bye! -->"
+     ]
+    },
+    {
+     "text": "Talk to Carl in the pub south-east of the church.",
+     "chat": [
+      "2. Where do you get your Bloody Bracers from?"
+     ]
+    },
+    {
+     "text": "Inspect the barrel south of the pub to follow Carl to his supplier."
+    },
+    {
+     "text": "Go through the church and hide at the north doors, wait there until he passes the doors.",
+     "depth": 1
+    },
+    {
+     "text": "Proceed to the hollow tree just north of the graves, and hide on the eastern side.",
+     "depth": 1
+    },
+    {
+     "text": "When he reaches the centre square of the town, hide at the northern side of the hollow tree next to the gallows (due east).",
+     "depth": 1
+    },
+    {
+     "text": "Once he approaches the graveyard, hide at the western side of the hollow tree to the west of the graveyard.",
+     "depth": 1
+    },
+    {
+     "text": "After the cutscene, kill Kroy. Kroy does not have to be killed with the Ivandis flail, and can instead be killed with normal weapons."
+    },
+    {
+     "text": "Use Protect from Magic, and dodge his potion-throw attack.",
+     "depth": 1
+    },
+    {
+     "text": "Stand behind a lab table and attack him with ranged to negate all his damage.",
+     "depth": 1
+    },
+    {
+     "text": "Destroy both lab tables."
+    },
+    {
+     "text": "Leave the lab by clicking the southern gate."
+    },
+    {
+     "text": "Talk to Veliaf in the Slepe church graveyard.",
+     "chat": [
+      "2. Fair enough, so what now?<!--",
+      "4. I'd better get going. -->"
+     ]
+    },
+    {
+     "text": "Talk to Veliaf Hurtz next to Drezel at Paterdomus. (Fairy ring CKS, Salve Graveyard Teleport tablet, Slayer ring)",
+     "chat": [
+      "2. I see. So that's why you want to keep him safe, Veliaf?"
+     ]
+    },
+    {
+     "text": "Talk to Ivan Strom south of Fenkenstrain's Castle. (Fenkenstrain's Castle Teleport tablet)"
+    }
+   ]
+  },
+  {
+   "title": "An Unwelcome Surprise",
+   "notes": [
+    "Needed: Knife, hammer and an axe (or 3 logs which is slightly faster), combat equipment and a weapon to harm tier 2 vampyres (such as the Ivandis flail)",
+    "Recommended: Three empty spaces and food to heal yourself and Ivan Strom. Bring druid pouches in case you run into the Ghast event which will turn your food rotten."
+   ],
+   "steps": [
+    {
+     "text": "Talk to Ivan Strom east of Paterdomus (north of fairy ring CKS ) to begin the trek.",
+     "chat": [
+      "1. I'm ready."
+     ]
+    },
+    {
+     "text": "Cut three vines from the swamp tree to the north-east.",
+     "depth": 1
+    },
+    {
+     "text": "Use the vines on each other to make a long vine.",
+     "depth": 1
+    },
+    {
+     "text": "Use the long vine on the swamp tree branch.",
+     "depth": 1
+    },
+    {
+     "text": "Swing across the water and continue the trek by clicking the last tile.",
+     "depth": 1
+    },
+    {
+     "text": "Kill the Nail beasts, use food on Ivan if his health becomes too low, and continue the trek.",
+     "depth": 1
+    },
+    {
+     "text": "Use your logs on the bridge (chop 3 logs if you didn't bring any. If you forgot your axe, kill the zombie for one.)",
+     "depth": 1
+    },
+    {
+     "text": "Cross the bridge and continue the trek.",
+     "depth": 1
+    },
+    {
+     "text": "Before the dialogue ends, attack the easternmost Vampyre (the one in-front of Ivan) so that it doesn't attack Ivan.",
+     "depth": 1
+    },
+    {
+     "text": "Use your Ivandis Flail to kill these Vampyres.",
+     "depth": 1
+    },
+    {
+     "text": "Continue the trek to end up in Burgh de Rott.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Ivan and complete the dialogue to send him to the boathouse.",
+     "depth": 1
+    },
+    {
+     "text": "After completing the trek, bank and prepare for the next step.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "A Nice and Simple Plan",
+   "notes": [
+    "Needed: Pickaxe, combat equipment to kill a Mutated Bloodveld (level 123) and some free inventory space.",
+    "Recommended: Drakan's medallion and either Morytania legs 3 or Mort'ton teleport"
+   ],
+   "steps": [
+    {
+     "text": "Head south-east of Burgh de Rott to the boat house and talk to Ivan Strom."
+    },
+    {
+     "text": "Board the boat and head to the Icyene graveyard."
+    },
+    {
+     "text": "Talk to Veliaf Hurtz."
+    },
+    {
+     "text": "After the cutscene, talk to Vanescula Drakan"
+    },
+    {
+     "text": "Unlock the mausoleum door north of you."
+    },
+    {
+     "text": "Solve the Mausoleum Door's puzzle."
+    },
+    {
+     "text": "Talk to everyone in this order:"
+    },
+    {
+     "text": "Vertida Sefalatis.",
+     "depth": 1
+    },
+    {
+     "text": "Kael Forshaw.",
+     "depth": 1
+    },
+    {
+     "text": "Radigad Ponfit.",
+     "depth": 1
+    },
+    {
+     "text": "Polmafi Ferdygris.",
+     "depth": 1
+    },
+    {
+     "text": "Ivan Strom.",
+     "depth": 1
+    },
+    {
+     "text": "Veliaf Hurtz.",
+     "depth": 1
+    },
+    {
+     "text": "Finish the conversation with Vanescula Drakan."
+    },
+    {
+     "text": "Use Drakan's medallion to teleport to Ver Sinhaza and ask the Vyrewatch next to the bank to send you to the mines.",
+     "chat": [
+      "1. Send me to the mines."
+     ]
+    },
+    {
+     "text": "Mine 15 Daeyalt ore and place them in the cart. (If you forgot a pickaxe, talk to any miner for a bronze one.)"
+    },
+    {
+     "text": "Talk to the Vampyre Juvinate."
+    },
+    {
+     "text": "Head south-east to the house with the slashed tapestry and the statue."
+    },
+    {
+     "text": "Walk through the tapestry."
+    },
+    {
+     "text": "Go down the staircase."
+    },
+    {
+     "text": "Talk to Safalaan.",
+     "chat": [
+      "1. Shall we get going then?"
+     ]
+    },
+    {
+     "text": "Kill the Mutated Bloodveld."
+    },
+    {
+     "text": "Talk to Safalaan again."
+    },
+    {
+     "text": "Search the bookshelf on the western wall inside the room filled with mutated bloodvelds."
+    },
+    {
+     "text": "Talk to Safalaan.",
+     "chat": [
+      "1. Sure. Here you go."
+     ]
+    },
+    {
+     "text": "Head back to Burgh de Rott. (Morytania legs 3, Mort'ton teleport or Shades of Mort'ton minigame teleport and run south-east to the boat or Drakan's Medallion and run south-west to the boat.)"
+    }
+   ]
+  },
+  {
+   "title": "A Vyre-ry Noble Disguise",
+   "notes": [
+    "Needed: 1950 coins (or Vyrewatch outfit), melee combat equipment, Ivandis flail",
+    "Recommended: Drakan's medallion, some food, an antipoison, 1-2 prayer potions, and 1 super combat potion, 3 empty inventory slots for the outfit."
+   ],
+   "steps": [
+    {
+     "text": "Take the boat back to the Icyene Graveyard."
+    },
+    {
+     "text": "Talk to Veliaf at the eastern part of the graveyard."
+    },
+    {
+     "text": "Use your Drakan's medallion to teleport to Ver Sinhaza."
+    },
+    {
+     "text": "Exit to the west towards Meiyerditch."
+    },
+    {
+     "text": "If you don't have the Vyrewatch outfit head to Trader Sven's house south of Old Man Ral's house, near the shore. Trade him and buy a Vyrewatch outfit. (Do not equip the outfit)",
+     "depth": 1
+    },
+    {
+     "text": "Go down the trapdoor in the northern room of Old Man Ral's house. (Old Man Ral's house is to the west)"
+    },
+    {
+     "text": "Talk to Polmafi Ferdygris. (Make sure to upgrade the outfit to Noble)",
+     "chat": [
+      "1. Here you go."
+     ]
+    },
+    {
+     "text": "Make your way back to Icyene Graveyard by either:"
+    },
+    {
+     "text": "Climbing back up, going south-west to the wall, climb the wall and navigate to the boat",
+     "depth": 1
+    },
+    {
+     "text": "Or go back to Burgh de Rott to get to the boat",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Vanescula Drakan."
+    },
+    {
+     "text": "Take the boat to Slepe."
+    },
+    {
+     "text": "Talk to Veliaf at the graveyard.",
+     "chat": [
+      "1. Let's do this."
+     ]
+    },
+    {
+     "text": "Kill Damien Leucurte."
+    },
+    {
+     "text": "Wield your Ivandis Flail.",
+     "depth": 1
+    },
+    {
+     "text": "Use Protect from Magic.",
+     "depth": 1
+    },
+    {
+     "text": "Drink your antipoison when poisoned.",
+     "depth": 1
+    },
+    {
+     "text": "Stomp out the magical fires Damien periodically spawns. (Prioritise this, as having even a single fire on screen make your attacks against Damien have no effect)",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Veliaf."
+    },
+    {
+     "text": "Use your Drakan's Medallion to teleport to Ver Sinhaza and prepare for the next step."
+    }
+   ]
+  },
+  {
+   "title": "The Branches of Darkmeyer",
+   "notes": [
+    "Needed: Vyre noble clothing, an axe, eight free inventory spaces",
+    "Recommended: Drakan's medallion, weight reducing gear, stamina potion, ways to restore run energy, at least 10k coins for the boat from the ectofuntus"
+   ],
+   "steps": [
+    {
+     "text": "Go back to the Icyene Graveyard (Use Morytania legs 3 or Drakan's Medallion and take the boat to the north or Mort'ton teleport and take the boat south-east of Burgh de Rott)."
+    },
+    {
+     "text": "Talk to Vanescula Drakan."
+    },
+    {
+     "text": "Equip the Vyre noble clothing."
+    },
+    {
+     "text": "Use your Drakan's medallion to teleport to Ver Sinhaza."
+    },
+    {
+     "text": "Talk to the Vyrewatch right next to the bank and ask to be sent to the mines.",
+     "chat": [
+      "1. Send me to the mines."
+     ]
+    },
+    {
+     "text": "Talk to a Vampyre Juvinate to exit the mine. You do not have to mine daeyalt ore this time."
+    },
+    {
+     "text": "Go through the crack north of the mining hole."
+    },
+    {
+     "text": "Head to the Arboretum. (The tree icon east of the bank in Darkmeyer.)"
+    },
+    {
+     "text": "Finish the dialogue with the guard Desmodus Lasiurus."
+    },
+    {
+     "text": "Head to the house with a water symbol north-east of the furnace, along the east wall near the crack."
+    },
+    {
+     "text": "Talk to Mordan Nikazsi."
+    },
+    {
+     "text": "Head to the prison in the northern part of Darkmeyer, north of the Arboretum."
+    },
+    {
+     "text": "Talk to Maria Gadderanks."
+    },
+    {
+     "text": "Head to the Arboretum and enter it."
+    },
+    {
+     "text": "Search the toppled shelves for an old note."
+    },
+    {
+     "text": "Read it, and take note of how many gallons the tree requires to be cut."
+    },
+    {
+     "text": "Look up the required gallons in the solution table and set the north and south valve to the given values."
+    },
+    {
+     "text": "Cut eight blisterwood logs."
+    },
+    {
+     "text": "Head back to the Icyene Graveyard."
+    },
+    {
+     "text": "Speak to Veliaf/Vanescula."
+    },
+    {
+     "text": "Use your Drakan's medallion to teleport to Ver Sinhaza."
+    }
+   ]
+  },
+  {
+   "title": "The Final Preparations",
+   "notes": [
+    "Needed: 8 blisterwood logs, knife, chisel, ruby, Ivandis flail, or 20,000 coins if you don't have one, and either 5 fire runes and a cosmic rune or an enchant ruby tablet."
+   ],
+   "steps": [
+    {
+     "text": "Head back to the underground lair under Old Man Ral's house in Meiyerditch."
+    },
+    {
+     "text": "Talk to Vertida Sefalatis and give him 7 Blisterwood logs.",
+     "chat": [
+      "1. Here you go."
+     ]
+    },
+    {
+     "text": "Search the nearby crate for a silver sickle (b)."
+    },
+    {
+     "text": "Use the ruby on the sickle."
+    },
+    {
+     "text": "Enchant the ruby sickle (b)."
+    },
+    {
+     "text": "Use the blisterwood log on the enchanted ruby sickle (b)."
+    },
+    {
+     "text": "Use your Ivandis flail on the blisterwood sickle."
+    },
+    {
+     "text": "Prepare for the fight with Vanstrom Klause."
+    }
+   ]
+  },
+  {
+   "title": "A Bloody Show",
+   "notes": [
+    "Needed: Blisterwood flail, combat equipment.",
+    "Recommended: High magic defence gear, equipment with crush attack bonuses, a fast ranged weapon, Efaritay's aid, 43 prayer to use protection prayers (70+ recommended for Piety), high healing food, prayer potions, super combat potions and an emergency teleport."
+   ],
+   "steps": [
+    {
+     "text": "Go back to the Icyene Graveyard."
+    },
+    {
+     "text": "Talk to Vanescula Drakan."
+    },
+    {
+     "text": "Run north-east of the graveyard."
+    },
+    {
+     "text": "Talk to Safalaan Hallow.",
+     "chat": [
+      "1. I'm ready."
+     ]
+    },
+    {
+     "text": "Kill Vanstrom Klause, use Protect from Magic."
+    },
+    {
+     "text": "Vanstrom uses three special attacks. He will use a special attack every 8-10 attacks, and will never use the same one twice in a row. He can also use an attack that lowers your Attack level similar to Shadow Spells.",
+     "depth": 1
+    },
+    {
+     "text": "- Acidic Bloodveld is spawned and will explode on the player for high damage. Kill with ranged.",
+     "depth": 2
+    },
+    {
+     "text": "- A blood orb spawns that periodically heals Vanstrom. Walking on top of it (3x3 area) damages the player, but Vanstrom can be lured on top to damage him.",
+     "depth": 2
+    },
+    {
+     "text": "- Heavy damage is taken if the player is facing Vanstrom. The attack gives very little warning and is near impossible to avoid on reaction. It is recommended that the player keep a count of how many attacks Vanstrom has done and turn around preemptively.",
+     "depth": 2
+    },
+    {
+     "text": "After you deplete his hitpoints, he will heal himself 200 hitpoints and stop using his special attacks.",
+     "depth": 1
+    },
+    {
+     "text": "Turn off protection prayers to save on prayer points as they no longer have any effect, but continue using Piety or other buffing prayers.",
+     "depth": 2
+    },
+    {
+     "text": "Vanstrom summons lightning to strike tiles with a max hit of 46. Tiles that are about to be struck will have a dark circle on them and should be avoided.",
+     "depth": 2
+    },
+    {
+     "text": "Consider turning off RuneLite's 117 HD plugin if enabled, as it makes it much harder to see where the lightning will strike.",
+     "depth": 2
+    },
+    {
+     "text": "Note: You can speak to Veliaf if you wish to re-attempt the fight.",
+     "depth": 1
+    },
+    {
+     "text": "Watch the cutscene."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

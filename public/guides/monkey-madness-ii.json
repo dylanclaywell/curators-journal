@@ -1,0 +1,603 @@
+{
+ "id": "monkey-madness-ii",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Monkey_Madness_II%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [
+    "===Getting Started==="
+   ],
+   "steps": []
+  },
+  {
+   "title": "Getting Started",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to King Narnode Shareen, located in the Gnome Stronghold's Grand tree.",
+     "chat": [
+      "1. I'll help you look for Glough."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapter I",
+   "notes": [
+    "Items Required: Lemon, grapes, pestle and mortar, Translation book (if you kept it from The Grand Tree Quest), normal logs, no weapons or armour. Recommended: some magic logs (if you don't already have some in your balloon transport storage)"
+   ],
+   "steps": [
+    {
+     "text": "Go to Glough's house south-east of the Grand Tree and go upstairs, then climb the eastern tree."
+    },
+    {
+     "text": "Right click and investigate the tree to receive a handkerchief."
+    },
+    {
+     "text": "Talk to Anita in her house north of the Gnome Ball Field (use north-western-most staircase to get into house).",
+     "chat": [
+      "1. What's wrong?",
+      "2. He might be in trouble, I could help."
+     ]
+    },
+    {
+     "text": "Go to Glough's house again, go up the tree to the, then climb again to reach the. (to reach the you must click the northern branch)"
+    },
+    {
+     "text": "Investigate the gnome statue and turn it to unlock the cupboard."
+    },
+    {
+     "text": "Search the cupboard for book of spyology, the gnome crates for a brush, and fire remains for mysterious note."
+    },
+    {
+     "text": "Use pestle and mortar on the lemon"
+    },
+    {
+     "text": "Use notes on the candles"
+    },
+    {
+     "text": "Use pestle and mortar on grapes"
+    },
+    {
+     "text": "Use juice-coated brush on mysterious note."
+    },
+    {
+     "text": "Read the scrawled note."
+    },
+    {
+     "text": "Talk to King Narnode. Read the translation book he gives you. (You may already have the translation book from a prerequisite quest: The Grand Tree, if this is the case King Narnode will not hand you a second copy.)"
+    },
+    {
+     "text": "Use translation book on the note, and talk to King Narnode again."
+    },
+    {
+     "text": "Talk to Anita again.",
+     "chat": [
+      "3. Could you translate these notes?"
+     ]
+    },
+    {
+     "text": "Read the translated note."
+    },
+    {
+     "text": "Talk to the King again."
+    },
+    {
+     "text": "Talk to Assistant Lori next to the hot air balloon beside Glough's house.",
+     "chat": [
+      "3. Who are you?"
+     ]
+    },
+    {
+     "text": "Fly to Entrana via balloon and talk to Auguste.",
+     "chat": [
+      "1. Talk about Assistant Le Smith.",
+      "1. Thanks for the information."
+     ]
+    },
+    {
+     "text": "Return to the Gnome stronghold and talk to King Narnode again."
+    }
+   ]
+  },
+  {
+   "title": "Chapter II",
+   "notes": [
+    "Items Required: ninja monkey greegree or ancient gorilla greegree, m'speak amulet, monkey talisman (or 1,000 coins), light source. Tank path also requires: slash weapon, pickaxe, plank. Recommended: Food, Dramen Staff, antipoison, combat equipment, super combat, stamina, and prayer potions.",
+    "Below is a map of Kruk's Dungeon. You have two different routes that they can take through the dungeon - one through the agility section of the dungeon (starting at the dodgy ground a little bit south), and one that goes through a series of rooms filled with aggressive mobs using both Melee and Ranged (extreme south). The player may choose which route to take, but the exact routes in each room varies from player to player - in each section/room there are two possible exits and only one will be correct for your player."
+   ],
+   "steps": [
+    {
+     "text": "Go to Ape Atoll (CLR, one of the two Ape Atoll Teleports or via the gliders used in the first quest)."
+    },
+    {
+     "text": "Equip your monkey/gorilla greegree and use the agility shortcuts as a monkey to climb the vine down to the village."
+    },
+    {
+     "text": "If you don't already have a monkey talisman, purchase one from Tutab in the Ape Atoll Magic shop.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Garkor located outside Awowogei's house.",
+     "chat": [
+      "1. King Narnode has sent me.",
+      "2. It's worth a shot."
+     ]
+    },
+    {
+     "text": "Talk to Awowogei.",
+     "chat": [
+      "2. I'm here to discuss military strategies.",
+      "1. Of course, my king."
+     ]
+    },
+    {
+     "text": "Talk to Garkor again."
+    },
+    {
+     "text": "Go all the way to the West side of the island and go up the hill to the Monkey Archers."
+    },
+    {
+     "text": "Talk to a Monkey Archer about Kruk."
+    },
+    {
+     "text": "Follow the tracks (foot prints) that start at the foot of the hill until you reach a trapdoor (\"Jungle Grass\") at the foot of a palm tree just north-west of the bamboo gate."
+    },
+    {
+     "text": "(: If inventory is full, your greegree will be dropped to the floor upon entering the dungeon.) Go down the trapdoor and go south."
+    },
+    {
+     "text": "Navigate the maze via the agility path to the east or the tank pathway to the south. You will be able to create a shortcut after the maze, allowing for banking. It is very easy to die here if you are not careful and paying attention to which prayers you need to use. Prayer potions and good food are highly recommended for this."
+    },
+    {
+     "text": "It is recommended to consult the map to follow the right route towards the end."
+    }
+   ]
+  },
+  {
+   "title": "On the agility path:",
+   "depth": 1,
+   "notes": [
+    "Note: if using a 3rd party client, be sure to disable display settings such as Low Detail plugins, as it can cause graphical issues while doing the agility path."
+   ],
+   "steps": [
+    {
+     "text": "If you fail an obstacle and receive a message '...this route feels wrong', you have to take the other path instead."
+    },
+    {
+     "text": "You will come across areas throughout the agility path that contain Dodgy Ground, such as at the start of the path. The trick here is to only walk on the tiles that do NOT appear cracked, since otherwise you will fall down. These are fairly easily distinguishable as the \"cracked ground\" tiles look as if they have slightly darker cracks in the shape of an \"X\" on each tile, while the safer tiles look smooth and uncracked."
+    },
+    {
+     "text": "Throughout this path, as soon as you inevitably fall down, you will want to immediately pray either against melee or ranged, respectively, depending on how far you are through the path. Otherwise you can very easily and quickly die. Quickly make your way to whichever hanging vine is available to you, and click it in order to return to the surface of the maze."
+    },
+    {
+     "text": "Head all the way east until you reach a small cave with a chest. Pray melee when you fall down until passing through the metal door 3."
+    },
+    {
+     "text": "Enter the small cave and pick the lock on the chest. Search the chest and you will obtain a bronze key."
+    },
+    {
+     "text": "Move through the Bronze Door just north-west of this chest. If you must leave and return, you will need to obtain the bronze key again."
+    },
+    {
+     "text": "Move north until checkpoint 4, pray ranged when you fall down. Note: The cave below has many dead ends. Check the map to memorize the route towards the rope (checkpoint 3)."
+    },
+    {
+     "text": "Move west to checkpoint 5."
+    },
+    {
+     "text": "Continue reading at the #Combined part section below."
+    }
+   ]
+  },
+  {
+   "title": "On the tank path:",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "You will need a slash weapon in order to cut webs, as well as a pickaxe to mine rocks blocking your path. It is not possible to fail slashing a web if that web is on the correct path."
+    },
+    {
+     "text": "Pray ranged all the way until checkpoint 5. You will be attacked by both melee and ranged, but due to distance, melee attacks are less frequent."
+    },
+    {
+     "text": "There are several spots where you will stand between climbable rocks and a web. These can be treated as safespots if you ever need to take a rest."
+    },
+    {
+     "text": "If you run into a rock or a web which you're unable to break or cut through, and you get a game message in chat containing something like '...Maybe find another route.', you will have to try another route."
+    },
+    {
+     "text": "Make your way east until you find a crossroads going south or north."
+    },
+    {
+     "text": "It is recommended players try the southern route first. If the web cannot be slashed, the player must move to the northern path.",
+     "depth": 1
+    },
+    {
+     "text": "After successfully slashing the web and walking through, right-click to unlock one of the chests; if it opens, search it for a combat scratched key, and if it doesn't, unlock and search the other chest.",
+     "depth": 2
+    },
+    {
+     "text": "Continue east and then north until the two paths meet up again.",
+     "depth": 2
+    },
+    {
+     "text": "If the southern web is not slashable, go back up the rocks and head north. This path will lead to another room with similar chests.",
+     "depth": 1
+    },
+    {
+     "text": "Right-click to unlock one of the chests; if it opens, search it for a combat damaged key, and if it doesn't, unlock and search the other chest.",
+     "depth": 2
+    },
+    {
+     "text": "Continue through to the north-east to meet up with the other path.",
+     "depth": 2
+    },
+    {
+     "text": "After meeting up with the alternative route, continue further north and pass through the door matching the key you obtained (see the map for each door's location)."
+    },
+    {
+     "text": "You will now pass some traps. The traps that are on the 'correct' route for the player (as indicated by their key) can be disarmed by the player, and will shoot darts significantly less. The traps on the wrong route will always fire when passing them."
+    },
+    {
+     "text": "The floor blade trap can be avoided with proper timing, but getting hit by them will hit relatively low damage compared to the damage done by the monkeys.",
+     "depth": 1
+    },
+    {
+     "text": "Do not bother disarming the dart traps, as these only seem to fire if the player takes the wrong route, or stands still in their line of sight for several seconds. If these do shoot you, they may inflict poison starting at 8 damage.",
+     "depth": 1
+    },
+    {
+     "text": "The spinning blade can be disarmed, or you can simply run past taking a small amount of damage. However, do NOT run past if you do not have the \"combat scratched key\", since that will cause you to get stuck, forcing you to teleport out.",
+     "depth": 1
+    },
+    {
+     "text": "Open the door for your key as indicated on the map, and continue west to meet up with the agility route."
+    }
+   ]
+  },
+  {
+   "title": "Combined part",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "For this part, pray melee if you fall down, and keep your prayer on after climbing up the rope to protect from the three monkeys walking around above."
+    },
+    {
+     "text": "Follow the path that doesn't give a message that this route feels wrong."
+    },
+    {
+     "text": "Before you cross the dodgy ground into Kruk's room, investigate the wall that faces the path you did not take (i.e. the western wall if you take the eastern path)."
+    },
+    {
+     "text": "Should you wish to restock, or should you wish to return after you die, you can use this shortcut by entering the hole just east of the very start of the dungeon.",
+     "depth": 1
+    },
+    {
+     "text": "After unlocking this shortcut, enter the large cave south of the dodgy ground, to encounter Kruk."
+    },
+    {
+     "text": "Kill Kruk."
+    },
+    {
+     "text": "Kruk can be flinched. To trap him, stand next to a cave wall in such a manner that there is a cave wall directly north or south of you, with Kruk standing diagonally from you.",
+     "depth": 1
+    },
+    {
+     "text": "Attack Kruk every time his health bar disappears and directly step back to the original square, in order to prevent him from damaging you back.",
+     "depth": 1
+    },
+    {
+     "text": "If not flinching, it is recommended to use stamina potions, range, and Protect from Missiles to kill Kruk. Use a hit-and-run method to stay out of his melee range.",
+     "depth": 1
+    },
+    {
+     "text": "Pick up Kruk's paw."
+    },
+    {
+     "text": "Talk to Zooknock at the end of the Ape Atoll Dungeon from Monkey Madness I, bringing the paw and a monkey talisman. He will give you a Kruk monkey greegree.",
+     "chat": [
+      "1. Talk about your mission."
+     ]
+    },
+    {
+     "text": "Use a monkey greegree to avoid taking damage from undead monkeys and spiders in the dungeon. This way, you will only need to bring food and anti-poison for the traps and falling rocks.",
+     "depth": 1
+    },
+    {
+     "text": "From this point on, use the Kruk greegree whenever on Ape Atoll.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Awowogei."
+    },
+    {
+     "text": "Talk to Garkor."
+    }
+   ]
+  },
+  {
+   "title": "Chapter III",
+   "notes": [
+    "Items required: 20 coins, m'speak amulet, Kruk greegree, weapon and armour. Recommended: chisel, hammer, Ape Atoll teleport, Trollheim teleport, ring of dueling, food, 1-2 prayer potions (if melee), 1-2 stamina potions."
+   ],
+   "steps": []
+  },
+  {
+   "title": "'Convincing' the leaders",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Teleport to Trollheim using standard spellbook teleport or stony basalt and enter the Troll Stronghold."
+    },
+    {
+     "text": "Go south-west of the entrance into the room with Kob."
+    },
+    {
+     "text": "Activate Protect from Melee and talk to Kob.",
+     "chat": [
+      "1. I know about your deal with the monkeys.",
+      "1. You won't be around to crush anyone when I'm done with you.",
+      "1. I accept your challenge."
+     ]
+    },
+    {
+     "text": "Fight Kob until he gives up."
+    },
+    {
+     "text": "Kob can hit through prayer, and deals up to 58 damage if you do not use Protect from Melee!",
+     "depth": 1
+    },
+    {
+     "text": "Kob can be safespotted by standing in the doorway.",
+     "depth": 1
+    },
+    {
+     "text": "If the fight takes too long, the attackable Kob will despawn and his health will reset. Flinching him is generally not fast enough!",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Kob again."
+    },
+    {
+     "text": "Make your way to Gu'Tanoth. Use the 71 Agility shortcut, or follow the western path to the end."
+    },
+    {
+     "text": "Activate Protect from Melee and talk to Keef. Fight him until he gives up.",
+     "chat": [
+      "1. I know about your deal with the monkeys.",
+      "2. I offer to spare your life.",
+      "1. I accept your challenge."
+     ]
+    },
+    {
+     "text": "Like Kob, Keef can hit through protection prayers, and Keef will also despawn if the fight takes too long.",
+     "depth": 1
+    },
+    {
+     "text": "There is a tree that can be used as a safespot, by trapping Keef to the north of the tree.",
+     "depth": 1
+    },
+    {
+     "text": "You may now want to bank your heavy armour and weapons and withdraw your graceful outfit and some stamina potions, as there is no more combat involved in the next section."
+    },
+    {
+     "text": "Go back to Ape Atoll and talk to Garkor near Awowogei."
+    },
+    {
+     "text": "Find Assistant Le Smith and talk to him, who is found somewhere on the rooftops of Marim. There are four possible locations:",
+     "chat": [
+      "1. I was going to ask you the same question.",
+      "2. Why is that?",
+      "1. Awowogei has already informed me about the battleships.",
+      "1. Where is the fleet, currently?"
+     ]
+    },
+    {
+     "text": "Top floor (up two ladders) of the broken building next to the Monkey Child and The Monkey's Aunt.",
+     "depth": 1
+    },
+    {
+     "text": "Top floor of the jail. To access the top floor, climb the ladder by Solihib's Food Stall, then walk northwards and climb the ladder north of the bamboo bed.",
+     "depth": 1
+    },
+    {
+     "text": "Top floor of the building west of the Magic Stall. To access this building, climb the ladder at the southern end of the Temple of Marimbo. Then, climb the ladder on the north-west corner of the building, then run all the way south-west to reach the aforementioned building.",
+     "depth": 1
+    },
+    {
+     "text": "Alternatively, go to the building east of the magic stall and search the south-east crate to enter a cave. Go to the west end of the cave and climb up the rope. Warning: You will take heavy damage (30+) from falling in to the dungeon, which can kill you if your Hitpoints are low.",
+     "depth": 2
+    },
+    {
+     "text": "On top of the bridge that connects the two watchtowers of the main gate.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Garkor."
+    },
+    {
+     "text": "Go to the west side of the island and talk to the monkey guard next to a boat to go to the airship platform.",
+     "chat": [
+      "1. What's going on here?",
+      "1. Construction platform?",
+      "2. Can I visit the platform?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The airship platforms",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Navigate your way through the maze without being caught by the ninja monkeys. You will need to pick up 6 satchels, fill them with explosives, then use them in 6 different locations. Any explosives that have already been placed will remain even if caught."
+    },
+    {
+     "text": "Make your way to the east wall of the ground floor. Move past the (cyan) ladder on the north side and climb the (green) ladder in the east.",
+     "depth": 1
+    },
+    {
+     "text": "Go south then west and climb down the (blue) ladder. Navigate to the end and pick up 6 satchels from the crates.",
+     "depth": 1
+    },
+    {
+     "text": "Go back to the first (cyan) ladder of the ground floor on the north wall and climb it.",
+     "depth": 1
+    },
+    {
+     "text": "Climb down the next (magenta) ladder you find. Follow the path north to reach the explosives.",
+     "depth": 1
+    },
+    {
+     "text": "Click the barrel to fill all 6 satchels. If you get caught from this point on, you will need to come back here to fill your satchels again.",
+     "depth": 1
+    },
+    {
+     "text": "Climb back up the (magenta) ladder and go south. Use a satchel on the weakened floorboards.",
+     "depth": 1
+    },
+    {
+     "text": "Go back to the ground floor using the (cyan) ladder on the north wall.",
+     "depth": 1
+    },
+    {
+     "text": "Go south and place a satchel on the support beams to the east.",
+     "depth": 1
+    },
+    {
+     "text": "Take the (green) ladder on the east side of the ground floor.",
+     "depth": 1
+    },
+    {
+     "text": "Take the west path, cross the vines, then take the north route at the fork to the end. Place a satchel on the weakened floorboards there.",
+     "depth": 1
+    },
+    {
+     "text": "Go back to the (green) ladder on the middle floor and climb up to the top floor. Go south and place a satchel on the gas cylinder.",
+     "depth": 1
+    },
+    {
+     "text": "Go north and place another satchel on the gas cylinder there.",
+     "depth": 1
+    },
+    {
+     "text": "Make your way to the ground floor and go back towards the boat. Place a satchel on the support beams found in the west fork near the entrance.",
+     "depth": 1
+    },
+    {
+     "text": "Go back to the boat, you can get caught to make it faster."
+    },
+    {
+     "text": "Talk to Garkor."
+    },
+    {
+     "text": "Enter the trapdoor to the dungeon you fought Kruk in."
+    },
+    {
+     "text": "Go north to find monkey bars. Equip your Kruk greegree and use the monkey bars."
+    },
+    {
+     "text": "Enter the passage into Glough's laboratory."
+    },
+    {
+     "text": "Climb on the stunted demonic gorilla and go down the stairs."
+    },
+    {
+     "text": "Fight the three gorillas until they return to their cages. Use Protect from Melee if necessary."
+    },
+    {
+     "text": "Use Holding area to dismount the stunted demonic gorilla."
+    },
+    {
+     "text": "Search the crates for a chisel and hammer if needed."
+    },
+    {
+     "text": "Go upstairs and tamper with the device to the north."
+    },
+    {
+     "text": "Use the chisel on the charged onyx, then use the deconstructed onyx on the device."
+    },
+    {
+     "text": "Investigate an incubation chamber."
+    },
+    {
+     "text": "Talk to Garkor."
+    },
+    {
+     "text": "Talk to Awowogei."
+    },
+    {
+     "text": "Talk to Garkor again."
+    }
+   ]
+  },
+  {
+   "title": "Chapter IV",
+   "notes": [
+    "Items needed: Weapon and armour to defeat tortured and demonic gorillas, food and prayer potions. Recommended: Slayer ring teleport, an emergency teleport."
+   ],
+   "steps": [
+    {
+     "text": "Talk to King Narnode in the Grand Tree."
+    },
+    {
+     "text": "Talk to Nieve. If you ever lose Nieve, she will be at the front doors of the Grand Tree.",
+     "chat": [
+      "1. Talk about Monkey Madness II.",
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Walk around the Gnome Stronghold, and kill 4 tortured gorillas until Nieve notifies you to find Garkor. (They will only attack with melee and can be safespotted behind various objects)"
+    },
+    {
+     "text": "Gear up with 2 attack (combat) styles and go north-west of the Grand Tree to Garkor. (near the swamp toad and king worm swamp and the tortoise enclosure)"
+    },
+    {
+     "text": "Leave the gnome stronghold and go north-east, past the tortured gorillas, to enter the cave."
+    },
+    {
+     "text": "Follow the path to Glough."
+    },
+    {
+     "text": "Kill the 2 tortured gorillas and 2 demonic gorillas. It's recommended to kill one tortured gorilla, then the Demonic gorilla that jumps down. Then proceed to kill the other tortured gorilla and demonic gorilla."
+    },
+    {
+     "text": "At this point you can safely teleport out and restock. Glough can hit 66 with his melee attack and 40+ with his ranged attack."
+    }
+   ]
+  },
+  {
+   "title": "Chapter V",
+   "notes": [
+    "Items needed: Weapon and armour to fight Glough, food and prayer potions. Recommended: An emergency teleport."
+   ],
+   "steps": [
+    {
+     "text": "Go to the next room and attack Glough until he moves on to the next room. He can be safespotted in this first room."
+    },
+    {
+     "text": "In this second room, lure Glough back to the first room and hug the north wall two squares past the divot to safespot him with ranged/magic (because praying ranged does not protect you) until he moves on to the next room."
+    },
+    {
+     "text": "In the final room, kill Glough. It is recommended to use protect from melee if you're close to Glough and protect from magic if you're at a distance. He will try to push/pull you depending on your location. (Can be flinched with a bow with an attack range of ten or more. This requires a 10-minute de-aggro.)"
+    },
+    {
+     "text": "Talk to Zooknock and ask him to teleport you to the Grand Tree."
+    },
+    {
+     "text": "Talk to King Narnode."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

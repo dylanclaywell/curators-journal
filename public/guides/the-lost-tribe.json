@@ -1,0 +1,162 @@
+{
+ "id": "the-lost-tribe",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/The_Lost_Tribe%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [
+    "Congratulations, quest complete!"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Sigmund on the of the Lumbridge Castle.",
+     "chat": [
+      "1. Do you have any quests for me?",
+      "1. Yes"
+     ]
+    },
+    {
+     "text": "Ask the following people about what happened in the cellar. You can stop when one mentions a goblin in the basement."
+    },
+    {
+     "text": "Duke Horacio ( if started Dragon Slayer)",
+     "depth": 1,
+     "chat": [
+      "3. What happened in the cellar?",
+      "4. What happened in the cellar?"
+     ]
+    },
+    {
+     "text": "Cook ( if started Recipe for Disaster)",
+     "depth": 1,
+     "chat": [
+      "5. Do you know what happened in the castle cellar?",
+      "2. Do you know what happened in the castle cellar?"
+     ]
+    },
+    {
+     "text": "Hans",
+     "depth": 1,
+     "chat": [
+      "1. Do you know what happened in the cellar?"
+     ]
+    },
+    {
+     "text": "Father Aereck",
+     "depth": 1,
+     "chat": [
+      "4. Do you know what happened in the castle cellar?"
+     ]
+    },
+    {
+     "text": "Bob",
+     "depth": 1,
+     "chat": [
+      "1. Do you know what happened in the castle cellar?"
+     ]
+    },
+    {
+     "text": "Gee or Donie",
+     "depth": 1,
+     "chat": [
+      "5. Do you know what happened in the castle cellar?"
+     ]
+    },
+    {
+     "text": "Talk to Duke Horacio again. ( if started Dragon Slayer)",
+     "chat": [
+      "3. The cook says he saw something in the cellar",
+      "4. The cook says he saw something in the cellar"
+     ]
+    },
+    {
+     "text": "Climb-down the trapdoor in the kitchen on the."
+    },
+    {
+     "text": "Use your pickaxe on the rubble in the basement and climb through the hole."
+    },
+    {
+     "text": "Light your light source and grab the brooch which sits on the floor about 10 steps into cave."
+    },
+    {
+     "text": "Show the brooch to the duke. or or",
+     "chat": [
+      "2. Talk about something else.",
+      "3. I dug through the rubble...",
+      "4. I dug through the rubble...",
+      "3. I dug through the rubble..."
+     ]
+    },
+    {
+     "text": "Go to the Varrock Palace library in Varrock."
+    },
+    {
+     "text": "Talk to Reldo. or if not started shield of Arrav",
+     "chat": [
+      "1. ..."
+     ]
+    },
+    {
+     "text": "Search the northern bookcase on the west wall for goblin symbol book."
+    },
+    {
+     "text": "Read through the book."
+    },
+    {
+     "text": "Go to Goblin Village and talk to the generals, and mediate for them until you learn goblin emotes.",
+     "chat": [
+      "1. Have you ever heard of the Dorgeshuun?",
+      "3. It doesn't really matter",
+      "2. Well either way they refused to fight",
+      "3. Well I found a brooch underground...",
+      "3. Well why not show me both greetings?"
+     ]
+    },
+    {
+     "text": "Go back to the Lumbridge Castle cellar and follow the map in the image on this page through the caves. Don't stray from it! (Clicking on the minimap also auto-paths the correct path)"
+    },
+    {
+     "text": "At the end of the cave talk to Mistag, and do your Goblin Bow in front of him."
+    },
+    {
+     "text": "Talk to Mistag then let him take you back to Lumbridge.",
+     "chat": [
+      "4. Can you show me the way out of the mines?"
+     ]
+    },
+    {
+     "text": "Talk to the duke. He won't believe you. or",
+     "chat": [
+      "3. I've made contact with the cave goblins...",
+      "4. I've made contact with the cave goblins..."
+     ]
+    },
+    {
+     "text": "Pickpocket Sigmund and unlock his chest in the other room to find some HAM robes. Keep them for Death to the Dorgeshuun."
+    },
+    {
+     "text": "Go to the HAM lair west of Lumbridge Castle."
+    },
+    {
+     "text": "Pick the lock on the trapdoor and enter the lair."
+    },
+    {
+     "text": "Search the crate south of the ladder to find the stolen silverware."
+    },
+    {
+     "text": "Bring the silverware to the Duke. He will fire Sigmund and give you a signed peace treaty.",
+     "chat": [
+      "3. I found the missing silverware in the HAM cave!"
+     ]
+    },
+    {
+     "text": "Go into the basement again. Follow Kazgar to travel to Mistag."
+    },
+    {
+     "text": "Talk to Mistag, with the peace treaty in your inventory, and a cutscene will play."
+    }
+   ]
+  }
+ ]
+}

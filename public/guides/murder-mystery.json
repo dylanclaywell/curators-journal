@@ -1,0 +1,133 @@
+{
+ "id": "murder-mystery",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Murder_Mystery%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to the guard out front of Sinclair Mansion and agree to help.",
+     "chat": [
+      "1. Sure, I'll help."
+     ]
+    },
+    {
+     "text": "Go north-west and investigate the sacks in the shed, take 4 flypapers."
+    },
+    {
+     "text": "Go inside the mansion and take the pungent pot and criminal's dagger."
+    },
+    {
+     "text": "Investigate the smashed window on the eastern side for the criminal's thread."
+    },
+    {
+     "text": "Search the barrels in the bedroom owned by the following two suspects to get 2 silver items."
+    },
+    {
+     "text": "If the thread is red, search the barrels belonging to Bob and Carol.",
+     "depth": 1
+    },
+    {
+     "text": "If the thread is green, search the barrels belonging to Anna and David.",
+     "depth": 1
+    },
+    {
+     "text": "If the thread is blue, search the barrels belonging to Elizabeth and Frank.",
+     "depth": 1
+    },
+    {
+     "text": "Go to the kitchen and fill your pot with flour from the barrel."
+    },
+    {
+     "text": "Use flour and flypaper to dust each silver item and the dagger."
+    },
+    {
+     "text": "Use the silver items' prints on the dagger's print until you get a match. Remember who it is."
+    },
+    {
+     "text": "Anna",
+     "depth": 1
+    },
+    {
+     "text": "Bob",
+     "depth": 1
+    },
+    {
+     "text": "Frank",
+     "depth": 1
+    },
+    {
+     "text": "David",
+     "depth": 1
+    },
+    {
+     "text": "Carol",
+     "depth": 1
+    },
+    {
+     "text": "Elizabeth",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Gossip outside the front gate of the mansion and ask who he thinks is responsible.",
+     "chat": [
+      "2. Who do you think was responsible?"
+     ]
+    },
+    {
+     "text": "Talk to the poison salesman in the Seers' Village pub, ask who he sold poison to. (Select Murder Mystery quest) (Be sure to not select the Fremennik Trials option.)",
+     "chat": [
+      "2. Who did you sell Poison to at the house?"
+     ]
+    },
+    {
+     "text": "Talk to the person whose prints matched, ask why they bought poison.",
+     "chat": [
+      "4. Why'd you buy poison the other day?"
+     ]
+    },
+    {
+     "text": "Search the item they say they used the poison on."
+    },
+    {
+     "text": "Anna - Compost heap",
+     "depth": 1
+    },
+    {
+     "text": "Bob - Beehive in cow pen",
+     "depth": 1
+    },
+    {
+     "text": "Frank - Family Crest, east of the front door",
+     "depth": 1
+    },
+    {
+     "text": "David - Spiders' nest, upstairs between the two rooms with three beds each in them",
+     "depth": 1
+    },
+    {
+     "text": "Carol - Kitchen drain, west of the front door",
+     "depth": 1
+    },
+    {
+     "text": "Elizabeth - The fountain",
+     "depth": 1
+    },
+    {
+     "text": "Drop the silver necklace (if you took it from Anna's barrel) before talking to the guard if you want to keep it, you can't get it back afterward."
+    },
+    {
+     "text": "Talk to a guard.",
+     "chat": [
+      "3. I know who did it!"
+     ]
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

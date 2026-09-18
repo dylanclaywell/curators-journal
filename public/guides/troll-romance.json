@@ -1,0 +1,125 @@
+{
+ "id": "troll-romance",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Troll_Romance%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [
+    "Note: Use fairy ring AJR, or a slayer ring to quickly get to Troll Stronghold through the Secret Door just north-east of the Fremennik Slayer Dungeon in the Fremennik Province. (Climbing boots are needed for a shortcut if you are taking this path to the Secret Door!)"
+   ],
+   "steps": []
+  },
+  {
+   "title": "Hitch",
+   "notes": [
+    "Items Required: Climbing boots."
+   ],
+   "steps": [
+    {
+     "text": "Talk to Ug in the south-west corner of the Troll Stronghold's middle level. Offer him your help.",
+     "chat": [
+      "1. Aww, you poor troll. What seems to be the problem?",
+      "3. Don't worry now, I'll see what I can do."
+     ]
+    },
+    {
+     "text": "Talk to Aga in the room to the north.",
+     "chat": [
+      "2. So... how's your... um... love life?",
+      "1. Errr... I've got to go."
+     ]
+    },
+    {
+     "text": "Talk to Ug again."
+    }
+   ]
+  },
+  {
+   "title": "Survival Techniques",
+   "notes": [
+    "Items Required: rope, maple or yew logs, iron bar, swamp tar, bucket of wax, cake tin."
+   ],
+   "steps": [
+    {
+     "text": "Talk to Tenzing in the hut west of the Warriors' Guild in Burthorpe.",
+     "chat": [
+      "4. Do you know where I can find Trollweiss?",
+      "2. What would I need to make such a sled?"
+     ]
+    },
+    {
+     "text": "Talk to Dunstan at the anvil in north-eastern Burthorpe.",
+     "chat": [
+      "1. Talk about a quest.",
+      "2. I need a sled!!",
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Talk to him again to get the sled.",
+     "chat": [
+      "1. Talk about a quest."
+     ]
+    },
+    {
+     "text": "Use the swamp tar on the bucket of wax to get Wax."
+    },
+    {
+     "text": "Use the Wax on your Sled."
+    }
+   ]
+  },
+  {
+   "title": "Sledding",
+   "notes": [
+    "Items Required: sled, climbing Boots(If not teleporting), Recommended: armour, stamina potions, energy potions."
+   ],
+   "steps": [
+    {
+     "text": "Run north-west from the Trollheim teleport to reach a cave just north-west of the Troll family (Troll child if you haven't done Desert Treasure.)"
+    },
+    {
+     "text": "Enter the cave to the north-west (Not through the icy gate) then run north-west past the ice trolls."
+    },
+    {
+     "text": "Run to the end and exit through the crevasse."
+    },
+    {
+     "text": "Equip your sled, go south, and click to slide down the slope."
+    },
+    {
+     "text": "After the first Sled ride cutscene, walk west and pick some of the rare flowers. (Warning: don't start the next cutscene before collecting the flowers)"
+    }
+   ]
+  },
+  {
+   "title": "The Things We Do For Love",
+   "notes": [
+    "Items Required: Trollweiss, Food, Armour, and a Weapon.",
+    ": Arrg will attack immediately after the next step, using a combination of melee AND ranged attacks that can hit in the 30s, so be prepared!",
+    "::Arrg can de-spawn if not killed fast enough using the safe-spot, so killing him could be difficult on a low level account."
+   ],
+   "steps": [
+    {
+     "text": "Return to Ug."
+    },
+    {
+     "text": "Talk to Arrg. He will teleport you into the arena.",
+     "chat": [
+      "1. I am here to kill you!"
+     ]
+    },
+    {
+     "text": "Kill Arrg."
+    },
+    {
+     "text": "Return to Ug."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

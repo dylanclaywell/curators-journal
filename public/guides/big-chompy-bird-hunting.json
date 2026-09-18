@@ -1,0 +1,141 @@
+{
+ "id": "big-chompy-bird-hunting",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Big_Chompy_Bird_Hunting%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Getting started",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Rantz East-north-east of Feldip Hills (fairy ring AKS).",
+     "chat": [
+      "1. Yes."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Fletching some arrows",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Note: You must make the arrows yourself to progress."
+    },
+    {
+     "text": "Chop down at least 3 achey trees immediately south-west of Rantz."
+    },
+    {
+     "text": "Use a knife on the logs to make ogre arrow shafts."
+    },
+    {
+     "text": "Use 100 feathers on the ogre arrow shafts."
+    },
+    {
+     "text": "Obtain 4 wolf bones (south-west from Rantz)."
+    },
+    {
+     "text": "Use a chisel on the bones."
+    },
+    {
+     "text": "Use the wolfbone arrowtips on the flighted ogre arrows."
+    },
+    {
+     "text": "Use the ogre arrows on Rantz."
+    }
+   ]
+  },
+  {
+   "title": "Bloated toads",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Ask Rantz all possible questions.",
+     "chat": [
+      "1. How do we make the chompies come?",
+      "2. What are 'fatsy toadies'?",
+      "3. Where do we put the fatsy toadies?",
+      "4. What do you mean 'sneaky..sneaky, stick da chompy?'",
+      "5. Ok, thanks."
+     ]
+    },
+    {
+     "text": "Enter the cave north of Rantz."
+    },
+    {
+     "text": "Attempt to unlock the chest until it opens and search it to obtain ogre bellows."
+    },
+    {
+     "text": "At the nearby swamp (south-west), look for swamp bubbles and click on them to fill up the ogre bellow."
+    },
+    {
+     "text": "Use the ogre bellows on a swamp toad to obtain a \"bloated toad\"."
+    },
+    {
+     "text": "Collect 3 Bloated toads to save you a trip in future. You can only hold 3 at one time.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Hunting",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Rantz."
+    },
+    {
+     "text": "Drop a bloated toad where the arrow points."
+    },
+    {
+     "text": "It should be noted that it may take some time for the chompy bird to appear even after the arrow disappears, however the dropped toad will eventually burst. If this happens, simply drop another bloated toad in the clearing.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Rantz again and wait for the chompy bird to appear."
+    },
+    {
+     "text": "After Rantz fires his bow, talk to him to receive an ogre bow.",
+     "chat": [
+      "2. Come on, let me have a go...",
+      "1. I'm actually quite strong...please let me try."
+     ]
+    },
+    {
+     "text": "If you are fast enough, you can attempt to kill the chompy bird that Rantz tried to hunt. Otherwise, place another toad in the clearing."
+    },
+    {
+     "text": "Kill the chompy bird that appears with the ogre bow.",
+     "depth": 1
+    },
+    {
+     "text": "Pluck the carcass and take the raw chompy."
+    },
+    {
+     "text": "Talk to Rantz."
+    }
+   ]
+  },
+  {
+   "title": "Cooking the bird",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Go back into the cave and talk to Fycie and Bugs."
+    },
+    {
+     "text": "Obtain the ingredients that they've asked for. The image on this page shows their location."
+    },
+    {
+     "text": "Use the raw chompy on the spit-roast north of Rantz (the fire outside of the cave)."
+    },
+    {
+     "text": "Talk to Rantz."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

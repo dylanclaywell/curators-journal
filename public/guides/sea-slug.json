@@ -1,0 +1,113 @@
+{
+ "id": "sea-slug",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Sea_Slug%2FQuick_guide",
+ "sections": [
+  {
+   "title": "The platform",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Speak with Caroline in Witchaven.",
+     "chat": [
+      "1. I suppose so, how do I get there?"
+     ]
+    },
+    {
+     "text": "Talk to Holgart (right next to Caroline) and give him the Swamp paste."
+    },
+    {
+     "text": "Right-click Holgart and select the Travel option to travel to the fishing platform."
+    },
+    {
+     "text": "Pick up the Broken glass on the floor (hut to the west)."
+    },
+    {
+     "text": "Go to the north-east corner of the platform and pick up some Damp sticks."
+    },
+    {
+     "text": "Climb the ladder right next to the sticks."
+    }
+   ]
+  },
+  {
+   "title": "Upper platform",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Go inside the cabin on the west side of the platform and talk to Kennith."
+    },
+    {
+     "text": "Go back down the ladder to the sea level."
+    }
+   ]
+  },
+  {
+   "title": "Remote island",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Travel or speak with Holgart for a trip to a remote island."
+    },
+    {
+     "text": "Talk to Kent."
+    },
+    {
+     "text": "Talk to Holgart again to go back to the Fishing Platform."
+    }
+   ]
+  },
+  {
+   "title": "Saving Kennith",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Speak with Bailey in the south-west cabin for an Unlit torch."
+    },
+    {
+     "text": "Use the Broken glass on the Damp sticks to dry them."
+    },
+    {
+     "text": "Rub the Dry sticks together to light the torch."
+    },
+    {
+     "text": "Go back up the ladder."
+    },
+    {
+     "text": "Go talk to Kennith again."
+    },
+    {
+     "text": "From outside of the cabin, kick the badly repaired wall to make an opening."
+    },
+    {
+     "text": "Talk to Kennith again."
+    },
+    {
+     "text": "Just outside of Kennith's cabin, activate the crane controls to rotate it (a cutscene will play if you've followed the steps correctly - make sure you've talked to Kennith after you've kicked in the wall)."
+    },
+    {
+     "text": "Go back down the ladder to the sea level."
+    },
+    {
+     "text": "Tip: Before leaving, you can catch a fish with a small fishing net on the downstairs platform to complete a task for the Ardougne Medium Diary.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Finishing up",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Speak with Holgart again to return to the shore."
+    },
+    {
+     "text": "Report to Caroline."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

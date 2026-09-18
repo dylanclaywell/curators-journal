@@ -1,0 +1,66 @@
+{
+ "id": "sheep-herder",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Sheep_Herder%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Councillor Halgrive outside the East Ardougne church. Ensure that you have at least 1 empty inventory slot.",
+     "chat": [
+      "1. What's wrong?",
+      "1. I can do that for you."
+     ]
+    },
+    {
+     "text": "Talk to Doctor Orbon in the church.",
+     "chat": [
+      "1. Okay, I'll take it."
+     ]
+    },
+    {
+     "text": "Put on the plague jacket and trousers and go to the enclosure north-west of the Ardougne north bank."
+    },
+    {
+     "text": "Pick up & wield the cattleprod next to the incinerator."
+    },
+    {
+     "text": "There are sheep to the north-west (blue), north (yellow), east (green), and south (red) of the incinerator."
+    },
+    {
+     "text": "Prod one sheep of each colour through the gate."
+    },
+    {
+     "text": "Blue sheep",
+     "depth": 1
+    },
+    {
+     "text": "Yellow sheep",
+     "depth": 1
+    },
+    {
+     "text": "Green sheep",
+     "depth": 1
+    },
+    {
+     "text": "Red sheep",
+     "depth": 1
+    },
+    {
+     "text": "Feed your sheep sheep feed until they're all dead."
+    },
+    {
+     "text": "Pick up the bones and use them on the incinerator."
+    },
+    {
+     "text": "Return to Councillor Halgrive to complete the quest."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

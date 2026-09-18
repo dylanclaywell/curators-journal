@@ -1,0 +1,46 @@
+{
+ "id": "recipe-for-disaster-freeing-the-mountain-dwarf",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Recipe_for_Disaster%2FFreeing_the_Mountain_Dwarf%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [
+    "Items required: 316 coins, a bucket of milk, flour, an egg, a bowl of water, 4 Asgarnian Ales, gloves (ice gloves recommended), runes for telegrab (unless you have gloves), and 2 Falador teleports (1 if you have ice gloves)."
+   ],
+   "steps": [
+    {
+     "text": "Inspect the dwarf in Lumbridge Castle's dining room."
+    },
+    {
+     "text": "Go to the Rising Sun Inn in Falador and talk to Emily or Kaylee. Pay her to learn how to make Asgoldian ale.",
+     "chat": [
+      "2. What can you tell me about dwarves and ale?",
+      "2. I could offer you some in return, how about 200 gold?"
+     ]
+    },
+    {
+     "text": "Use coins on your Asgarnian ales to get Asgoldian ales."
+    },
+    {
+     "text": "Go to the tunnel under White Wolf Mountain."
+    },
+    {
+     "text": "Talk to \"An old Dwarf\" located in the bar and give him Asgoldian ales until he agrees to make a dwarven rock cake."
+    },
+    {
+     "text": "Talk to him 3 times and he will place a dwarven rock cake on the table. (His name will change to Rohak)"
+    },
+    {
+     "text": "If you have ice gloves, equip them and pick up the cake. Otherwise either telegrab the cake or equip other gloves and pick it up, then kill an icefiend (at Ice Mountain) to cool the cake."
+    },
+    {
+     "text": "Give the dwarven rock cake to the dwarf in Lumbridge."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

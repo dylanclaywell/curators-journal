@@ -1,0 +1,53 @@
+{
+ "id": "monks-friend",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Monk's_Friend%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [
+    "Players may wish to grab a jug of water from the cooking shop in Yanille if they do not have one to avoid a trip to Al Kharid."
+   ],
+   "steps": [
+    {
+     "text": "Talk to Brother Omad at the Monastery south of Ardougne.",
+     "chat": [
+      "1. Why can't you sleep, what's wrong?",
+      "1. Yes"
+     ]
+    },
+    {
+     "text": "Go west of the monastery, slightly south-west of the Clock Tower, to a perfect stone circle, enter it and go down the ladder in the middle."
+    },
+    {
+     "text": "Follow the first path south and pick up the Child's blanket."
+    },
+    {
+     "text": "Return to Brother Omad and talk to him twice.",
+     "chat": [
+      "1. Who's Brother Cedric?",
+      "2. Where should I look?"
+     ]
+    },
+    {
+     "text": "Go north and talk to Brother Cedric, who is directly south of the Ardougne Zoo, near the well."
+    },
+    {
+     "text": "Talk to him again to give him a jug of water.",
+     "chat": [
+      "2. Yes, I'd be happy to!"
+     ]
+    },
+    {
+     "text": "Speak to him again and give him the logs or plank."
+    },
+    {
+     "text": "Return to Brother Omad."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

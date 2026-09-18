@@ -1,0 +1,53 @@
+{
+ "id": "witchs-potion",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Witch's_Potion%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting off",
+   "notes": [],
+   "steps": [
+    {
+     "text": "To start, talk to Hetty in her house in Rimmington.",
+     "chat": [
+      "1. I am in search of a quest.",
+      "1. Yes, help me become one with my darker side."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Collecting the items",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Kill a rat in the archery store directly west of Hetty to get a rat's tail."
+    },
+    {
+     "text": "Buy an eye of newt from Betty for 3gp."
+    },
+    {
+     "text": "Run to the chapel south of Port Sarim. Kill a giant rat and take the raw rat meat. Run back to Hetty's house. Use the raw rat meat on the fireplace. If you accidentally cook the meat you can re-cook it on the fireplace again to burn it."
+    },
+    {
+     "text": "Pick an onion from the field north of Rimmington."
+    }
+   ]
+  },
+  {
+   "title": "Finishing up",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Hetty while carrying all four items."
+    },
+    {
+     "text": "Drink from the cauldron."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

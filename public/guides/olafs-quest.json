@@ -1,0 +1,115 @@
+{
+ "id": "olafs-quest",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Olaf's_Quest%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting out",
+   "notes": [
+    "Items required: any axe"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Olaf Hradson west of fairy ring DKS."
+    },
+    {
+     "text": "Chop the windswept tree up the mountain to the east and just north of the fairy ring and obtain Windswept Logs."
+    },
+    {
+     "text": "Take the logs back to Olaf."
+    }
+   ]
+  },
+  {
+   "title": "Helping Olaf",
+   "notes": [
+    "Items Required: tinderbox",
+    "Recommended: stamina potions, super energy potion"
+   ],
+   "steps": [
+    {
+     "text": "Travel to Rellekka and talk to Ingrid Hradson who is near the well (water drop on map) (Enchanted Lyre or Fremennik sea boots 1)."
+    },
+    {
+     "text": "Talk to Volf Olafson who is outside the helmet shop to the north."
+    },
+    {
+     "text": "Return to, and talk to Olaf (Teleport to a Fairy Ring, or use the agility shortcut to the East)"
+    },
+    {
+     "text": "Use the damp planks on the fire pit (embers) next to Olaf."
+    },
+    {
+     "text": "Talk to Olaf again."
+    }
+   ]
+  },
+  {
+   "title": "Treasure trail",
+   "notes": [
+    "Items required: spade, weapon, armour, food",
+    "Recommended: agility potions, stamina potions, super energy potions"
+   ],
+   "steps": [
+    {
+     "text": "Return to the tree and dig next to it."
+    },
+    {
+     "text": "Go all the way east in the tunnel and then north."
+    },
+    {
+     "text": "(Optional): Kill a brine rat here to complete a Fremennik Medium Diary achievement (requires 47 Slayer)."
+    },
+    {
+     "text": "Kill a skeleton fremennik and pick up the key it drops."
+    },
+    {
+     "text": "Search the picture wall to the far west."
+    },
+    {
+     "text": "East, North, West, South, and then the very bottom (\"Confirm\").",
+     "depth": 1
+    },
+    {
+     "text": "Search the wall again to walk through."
+    },
+    {
+     "text": "Pick up two rotten barrels and six ropes in the next room."
+    },
+    {
+     "text": "Go to the bridge to the north-east and use the barrels on the missing portions; a higher level Agility helps (If you fall, you will need to go through the cave again.) (Recommended: stamina potions.)"
+    },
+    {
+     "text": "Open the gate."
+    },
+    {
+     "text": "Pick the shape that matches the loop part of the shown key. If you fall after opening the gate, you will need to retrieve a new key.",
+     "depth": 1
+    },
+    {
+     "text": "If you fall off the bridge after opening the gate, you have to reobtain a key to open the gate in the middle again.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Finishing up",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Search the chest located in the old ship and kill Ulfric (level 100, uses melee)."
+    },
+    {
+     "text": "The safespot for Ulfric is the dirt north of his grave stone",
+     "depth": 1
+    },
+    {
+     "text": "Search the chest again."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

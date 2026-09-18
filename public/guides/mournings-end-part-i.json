@@ -1,0 +1,211 @@
+{
+ "id": "mournings-end-part-i",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Mourning's_End_Part_I%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting the quest",
+   "notes": [
+    "Recommended items: a weapon, food, necklace of passage to teleport to the Outpost to get to Arandar, 8 free inventory spaces, a ring of dueling (optional, recommended to teleport out after you kill the Mourner) energy potions or stamina potions (optional, bring these throughout the entire quest)"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Eluned.",
+     "chat": [
+      "1. Yes, I should go see him now."
+     ]
+    },
+    {
+     "text": "Talk to Arianwyn in Lletya."
+    },
+    {
+     "text": "Teleport to the Outpost using your necklace of passage."
+    },
+    {
+     "text": "Go to the Arandar Pass gate, west of the Outpost, and kill a mourner (this will drain your stats including hp to 20)."
+    },
+    {
+     "text": "Take everything it drops (7 items), and hold onto them."
+    },
+    {
+     "text": "(Optional) Use a ring of dueling teleport to Ferox Enclave and drink from the Pool of Refreshment to negate mourner potion resetting stats and hp"
+    }
+   ]
+  },
+  {
+   "title": "Top",
+   "notes": [
+    "Needed: A bucket of water, bloody mourner top",
+    "Recommended: teleportation method to Taverley and to a bank"
+   ],
+   "steps": [
+    {
+     "text": "Make your way to Tegid by the Taverley lake, and talk to him."
+    },
+    {
+     "text": "Search his laundry basket to get Tegid's soap.",
+     "chat": [
+      "1. Steal the soap."
+     ]
+    },
+    {
+     "text": "Use the soap on the bloody mourner top with a bucket of water in your inventory to clean it."
+    }
+   ]
+  },
+  {
+   "title": "Trousers",
+   "notes": [
+    "Needed: 2 pieces of silk, bear fur, mourner trousers, coins (if you need dyes), teleport crystal"
+   ],
+   "steps": [
+    {
+     "text": "Teleport to Lletya using the teleport crystal."
+    },
+    {
+     "text": "Talk to Arianwyn."
+    },
+    {
+     "text": "Talk to Oronwen who is directly north-west of the teleport crystal's destination.",
+     "chat": [
+      "3. Do you mend clothes?"
+     ]
+    },
+    {
+     "text": "Give her the silk, bear fur, and trousers."
+    },
+    {
+     "text": "Buy dyes here if needed, you'll need more than 1 of each if you miss the target later on.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "The mourners",
+   "notes": [
+    "Needed: Mourner outfit, mourner letter, feather, soft leather, magic log, toad crunchies or premade t'd crunch, 1 free inventory space",
+    "Recommended: West Ardougne Teleport, or East Ardougne Teleport and walk west; alternatively, use the Edgeville Wilderness teleport lever to reach Ardougne"
+   ],
+   "steps": [
+    {
+     "text": "Go to West Ardougne."
+    },
+    {
+     "text": "Equip the full mourner outfit."
+    },
+    {
+     "text": "Enter the mourner HQ in the north-east corner of West Ardougne."
+    },
+    {
+     "text": "Go down the trapdoor and talk to Essyllt in the basement. (2 free inventory spaces needed)"
+    },
+    {
+     "text": "Talk to the gnome on a rack. Select the chat option about being tickled and toad crunchies.",
+     "chat": [
+      "3. You said about toad crunchies and being tickled."
+     ]
+    },
+    {
+     "text": "Use the feather on him."
+    },
+    {
+     "text": "Release the gnome and talk to him with soft leather, a magic log, and either toad crunchies or premade t'd crunch."
+    }
+   ]
+  },
+  {
+   "title": "The sheep",
+   "notes": [
+    "Needed: at least 1 red, green, blue, and yellow dye; ogre bellows; fixed device",
+    "Recommended: West Ardougne Teleport, or East Ardougne Teleport and walk west; alternatively, use the Edgeville Wilderness teleport lever to reach Ardougne"
+   ],
+   "steps": [
+    {
+     "text": "Go to the Feldip Hills swamp (east of fairy ring AKS) or the less dangerous swamp south-west of Castle Wars (north-east of fairy ring BKP)"
+    },
+    {
+     "text": "Use the desired dye on an empty ogre bellow, then the dyed ogre bellows on a swamp toad to get a coloured toad (at least 1 of each colour)."
+    },
+    {
+     "text": "Re-dye one sheep in each group their respective colour."
+    },
+    {
+     "text": "Go to a coloured sheep herd north of East Ardougne used in the Sheep Herder quest.",
+     "depth": 1
+    },
+    {
+     "text": "Use the respective coloured toad on the fixed device and equip it.",
+     "depth": 1
+    },
+    {
+     "text": "Select the Aim and Fire attack style.",
+     "depth": 1
+    },
+    {
+     "text": "Use the controls to aim at a coloured sheep and fire the fixed device.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Poisoning the food supply",
+   "notes": [
+    "Items needed: barrel of naphtha, mourner gear, teleport crystal, rotten apple (optional: necklace of passage, Ardougne teleport, & a teleport out)"
+   ],
+   "steps": [
+    {
+     "text": "Talk to the head mourner, Essyllt."
+    },
+    {
+     "text": "Take the rotten apple, located north-west of the Mourner Headquarters by squeezing through the gap in the western fence."
+    },
+    {
+     "text": "Talk to Elena west of Ardougne log balance shortcut, you'll be given a sieve."
+    },
+    {
+     "text": "Go to the apple orchard to the north-west, west of the Combat Training Camp. North-east of The Outpost using a necklace of passage."
+    },
+    {
+     "text": "Pick up an empty barrel inside the orchard and use it on one of the Rotten Apple Piles."
+    },
+    {
+     "text": "Use your barrel of rotten apples on the apple press (slightly west of the rotten apple piles) to mash them."
+    },
+    {
+     "text": "Use your barrel of naphtha on your mushed apple barrel (in your inventory); then, use your sieve on it."
+    },
+    {
+     "text": "See the full guide if you do not have a barrel of naphtha.",
+     "depth": 1
+    },
+    {
+     "text": "Use the toxic naphtha on a range, not a fire. Make sure you have two open inventory spaces to receive both toxic powders."
+    },
+    {
+     "text": "There is a range in the mourner HQ that you can use to save time.",
+     "depth": 1
+    },
+    {
+     "text": "Add the toxic powder to grain sacks to poison any 2 of the food stores in West Ardougne. The closest 2 are:"
+    },
+    {
+     "text": "The western room of the main building north of the town square.",
+     "depth": 1
+    },
+    {
+     "text": "The church south of the town square.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Essyllt."
+    },
+    {
+     "text": "Talk to Arianwyn in Lletya."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

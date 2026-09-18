@@ -1,0 +1,164 @@
+{
+ "id": "kings-ransom",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/King's_Ransom%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Sinclair's Mansion",
+   "notes": [
+    "Grab all the required items at the start. You do not have to make bank trips during this quest."
+   ],
+   "steps": [
+    {
+     "text": "Speak with Gossip outside of Sinclair Mansion."
+    },
+    {
+     "text": "Speak with the guard in the courtyard to the north."
+    },
+    {
+     "text": "Break into the Smashed Window on the East side of the mansion."
+    },
+    {
+     "text": "Grab the Scrap paper in the dining room next to the fire place."
+    },
+    {
+     "text": "Go up the stairs to the and then to the library in the centre."
+    },
+    {
+     "text": "Take the Address Form off the table and read it."
+    },
+    {
+     "text": "Search the bookcase on the Western wall for a Black knight helm."
+    },
+    {
+     "text": "Return to the guard via the smashed window."
+    },
+    {
+     "text": "Speak to him, using all three options so that he takes each of your three items"
+    },
+    {
+     "text": "Speak with the Gossip using all three options."
+    }
+   ]
+  },
+  {
+   "title": "Anna's Trial",
+   "notes": [
+    "For this part you need to speak to the Judge in order to call next witness and then speak to the witnesses to ask them questions.",
+    "(If done correctly Anna should be pronounced not guilty and balloons will fall.)"
+   ],
+   "steps": [
+    {
+     "text": "Travel south to the Seer's Village courthouse. (South-East of the bank)."
+    },
+    {
+     "text": "Speak to Anna."
+    },
+    {
+     "text": "Walk down the stairs to begin the trial."
+    },
+    {
+     "text": "Call the Dog Handler as a witness. Ask him about the poison."
+    },
+    {
+     "text": "Call the Butler as a witness by speaking to the judge. Ask him about the dagger."
+    },
+    {
+     "text": "Call the Maid as a witness. Ask her about the night of the murder."
+    },
+    {
+     "text": "Ask the Maid (or anyone else) about the thread."
+    },
+    {
+     "text": "Exit the courtroom by clicking on the gate."
+    },
+    {
+     "text": "Speak again with Anna in her cell."
+    }
+   ]
+  },
+  {
+   "title": "Camelot Castle's Prison",
+   "notes": [
+    "Items needed: Telekinetic grab runes",
+    "Clicking anywhere will end the cutscene and you will need to go through it again."
+   ],
+   "steps": [
+    {
+     "text": "Head east around Camelot Castle, past the gate and to the north-east. Search the statue to start a cutscene."
+    },
+    {
+     "text": "Speak with Merlin inside the cell.",
+     "chat": [
+      "3. What do we do now?"
+     ]
+    },
+    {
+     "text": "Reach for the vent at the north of the cell."
+    },
+    {
+     "text": "Use Telekinetic Grab on the guard fixing his hair outside the cell"
+    },
+    {
+     "text": "You can speak to the knights in the cell to receive a lockpick or runes for telekinetic grab.",
+     "depth": 1
+    },
+    {
+     "text": "Use the Hair clip or lockpick on the door to start a puzzle."
+    },
+    {
+     "text": "To complete this puzzle, you must set each of four tumblers to the correct height. The most foolproof way to do this (not necessarily the quickest) is to set all tumblers to the lowest height, and try the lock. If a tumbler shows a green circle, do not change that tumbler anymore (red and blue circles can be ignored). Increase the height by one on each other tumbler and try again. Continue until the lock unlocks. This method will take at most six attempts.",
+     "depth": 1
+    },
+    {
+     "text": "Climb up the staircases until you reach the top floor."
+    },
+    {
+     "text": "Search the table."
+    },
+    {
+     "text": "Choose the round purple box second from the right."
+    }
+   ]
+  },
+  {
+   "title": "Black Knights' Fortress",
+   "notes": [
+    "Items needed: bronze med helm, iron chainbody, full black armour, granite, holy grail"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Wizard Cromperty in Ardougne to receive an Animate rock scroll."
+    },
+    {
+     "text": "You might already have the item in your bank from the quest One Small Favour. However, you must still talk to Cromperty. Be sure to go through all dialogue or else you will need to speak to him again.",
+     "depth": 1
+    },
+    {
+     "text": "Travel to the Black Knights' Fortress west of Edgeville/north of Ice Mountain. (Amulet of glory or combat bracelet (Monastery) provide convenient teleports)"
+    },
+    {
+     "text": "Equip the black armour and enter the Black Knights' Fortress through the Sturdy door on the south wall."
+    },
+    {
+     "text": "Push the wall to the north."
+    },
+    {
+     "text": "Climb down the ladder."
+    },
+    {
+     "text": "Free King Arthur from his statue (requires the granite)."
+    },
+    {
+     "text": "Talk to King Arthur to give him the bronze med helm and iron chainbody."
+    },
+    {
+     "text": "Return to Camelot and speak to King Arthur in the castle by the round table."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

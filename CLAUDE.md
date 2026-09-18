@@ -62,6 +62,7 @@ npm run lint           # eslint --fix   (lint:check = no fix)
 npm run format         # prettier --write   (format:check = verify)
 npm run build:icons    # rasterize public/icons/icon.svg -> PWA/iOS PNGs
 npm run build:icon-set # regenerate src/lib/icons.ts from the vendored packs
+npm run build:guides   # regenerate public/guides/*.json from the wiki's quick guides
 ```
 
 Tests run in **workerd**, not Node — `vitest` with
@@ -183,10 +184,25 @@ fragile live wiki query. Regenerate deliberately with `npm run build:quests` /
 `npm run build:diaries` (`-- --check` reports whether the wiki has moved);
 never fetch either at runtime.
 
-**Regenerate quests before diaries.** `build-diaries` resolves every diary
-prerequisite against `quests.json` and fails loud on one it can't find, so
-running it against a stale quest list turns a renamed quest into a failed diary
-build.
+**Quest walkthroughs are static and committed too, but served rather than
+bundled.** `public/guides/<quest-id>.json` comes from the wiki's
+`<quest>/Quick guide` pages via `scripts/build-guides.ts` — 204 of 214 quests
+have one (two pages don't exist, eight redirect to the quest page), and a quest
+without one falls back to the wiki link. They are **static assets fetched on
+demand, not an imported dataset**, because at ~870 KB they outweigh
+`quests.json` and `diaries.json` combined and would roughly double the precache
+to ship 204 walkthroughs a player reads one at a time. `vite.config.ts` keeps
+them out of the precache with `globIgnores` and gives them a
+stale-while-revalidate runtime rule instead; drop that `globIgnores` and the
+`json` in `globPatterns` silently swallows all 204.
+
+**Regenerate quests first, then diaries, then guides.** `build-diaries` resolves
+every diary prerequisite against `quests.json` and fails loud on one it can't
+find, so running it against a stale quest list turns a renamed quest into a
+failed diary build. `build-guides` reads both the ids and the canonical page
+titles out of `quests.sources.json` — that lock is the only file carrying page
+titles, and the ten Recipe for Disaster subquests are filed under names that
+don't match their display names.
 
 **Both generators exit 0 / 1 / 2**, and the distinction is load-bearing rather
 than decorative: `0` current, `1` a finding that wants a human (stale data, or
@@ -215,7 +231,11 @@ twice once, and the two copies disagreed.
 After `npm run build`, grep the `index-*.js` named in `dist/client/index.html`
 for `cooks-assistant`, `ardougne-easy` and `localforage`. All three must be
 absent. Together the two datasets are most of the ~1.1 MB precache, so a third
-wants weighing rather than adding.
+wants weighing rather than adding — the quest walkthroughs were weighed and
+kept _out_, which is why they're served from `public/guides/` instead. Check
+that too: `npm run build` must still report **58 precache entries, ~1129 KiB**,
+and `dist/client/sw.js` must mention `guides/` only in the runtime rule, never
+in the precache manifest.
 
 **Anything a panel needs, it gets by calling one `ensure*` on a store.**
 `useQuestsStore().ensureReady()` loads the dataset _and_ the levels. The
@@ -397,7 +417,15 @@ The workflow is four steps and calls one script — `npm run check:drift`,
 block so that it reads the generators' exit codes against the constants they
 are defined with instead of re-encoding them as numbers in YAML, and so that it
 is type-checked, linted and runnable by hand. Without `--open-pr` it reports
-and writes nothing, which is what makes it safe to run locally.
+and writes nothing, which is what makes it safe to run locally. It drives all
+three generators from one `GENERATORS` list and stages `GENERATED_PATHS` —
+adding a generator means adding it to both, or the refresh PR carries a lock
+file claiming a change it doesn't contain.
+
+Quick guides churn far harder than requirements do, so expect this PR to be
+mostly walkthrough prose. That does not make the tick worth more: the guides
+are the part a wiki vandal would reach first, and they're the part the player
+reads and acts on.
 
 On drift it regenerates, then runs typecheck and tests **inside the job**,
 because GitHub does not trigger workflows from events created by

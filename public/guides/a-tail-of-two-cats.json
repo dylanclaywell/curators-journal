@@ -1,0 +1,141 @@
+{
+ "id": "a-tail-of-two-cats",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/A_Tail_of_Two_Cats%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting the quest",
+   "notes": [
+    "Items required: a cat or kitten, 5 death runes, a catspeak amulet"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Unferth in his house in northern Burthorpe with the catspeak amulet equipped and your cat with you.",
+     "chat": [
+      "1. I'll help you."
+     ]
+    },
+    {
+     "text": "Speak to Hild in the building north-east of Unferth's house."
+    },
+    {
+     "text": "Hild requires 5 death runes to enchant the catspeak amulet."
+    }
+   ]
+  },
+  {
+   "title": "Cat hunt",
+   "notes": [
+    "Needed: catspeak amulet(e)"
+   ],
+   "steps": [
+    {
+     "text": "Locate Bob the cat. The fastest way is to world hop at the Catherby archery shop, as he commonly gets stuck there. Alternatively, follow the steps to use the catspeak amulet to locate him:"
+    },
+    {
+     "text": "Right click on the 'Locate' option on the amulet in your equipped items.",
+     "depth": 1
+    },
+    {
+     "text": "Click on the whiskers until the arrow and the eyes glow white.",
+     "depth": 1
+    },
+    {
+     "text": "Follow the arrow until you find Bob.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Strong lineage",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Gertrude in her house west of Varrock.",
+     "chat": [
+      "1. Ask about Bob's parents."
+     ]
+    },
+    {
+     "text": "Speak to Reldo in the Varrock Palace library.",
+     "chat": [
+      "1. Ask about Robert the Strong."
+     ]
+    },
+    {
+     "text": "Find and speak to Bob the cat again."
+    },
+    {
+     "text": "Bob may be in the same location you previously found him, so check there first.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Memories and Bob's list",
+   "notes": [
+    "Items required: Catspeak amulet (wear it), logs, a tinderbox, a bucket of milk, a chocolate cake (must be a full cake), shears, a rake, a seed dibber, 4 potato seeds",
+    "Recommended items: Varrock teleport, games necklace, Desert Amulet, Nardah teleport AND coins for the magic carpets OR Desert clothing AND waterskins. Fairy ring AKP can also be used if Beneath Cursed Sands has been completed to the point where the player enters the necropolis."
+   ],
+   "steps": [
+    {
+     "text": "Go to Sophanem and speak to the Sphinx",
+     "chat": [
+      "1. Ask the Sphinx for help for Bob."
+     ]
+    },
+    {
+     "text": "Return to Unferth's house in Burthorpe and do the following:"
+    },
+    {
+     "text": "Use your rake on the patch and plant potato seeds in it and wait until they are grown. Your cat will notify you when they are done (the patch will take 15–35 minutes to grow).",
+     "depth": 1
+    },
+    {
+     "text": "Make the bed.",
+     "depth": 1
+    },
+    {
+     "text": "Use the logs on the fireplace. Then light the fireplace.",
+     "depth": 1
+    },
+    {
+     "text": "Use the chocolate cake and bucket of milk on the southern table.",
+     "depth": 1
+    },
+    {
+     "text": "Use your shears on Unferth to cut his hair. You will continue this animation until he becomes bald.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Unferth once all the chores are done."
+    }
+   ]
+  },
+  {
+   "title": "Down with the \"sickness\"",
+   "notes": [
+    "Items required: White robe top and bottom (Desert clothing and Druid robes are fine, but Desert legs do not work), Catspeak amulet(e), vial of water",
+    "Recommended items: Varrock teleport",
+    "Congratulations, quest complete!"
+   ],
+   "steps": [
+    {
+     "text": "Travel to Varrock and speak with the Apothecary.",
+     "chat": [
+      "2. Talk about A Tail of Two Cats."
+     ]
+    },
+    {
+     "text": "Go to Unferth, unequip any weapons and equip the doctor's hat or nurse hat and desert clothing (top and bottom, make sure the clothing is white) and speak to him with a vial of water in your inventory."
+    },
+    {
+     "text": "Locate Bob the cat again and talk to him. (Note that left clicking on Bob or Neite will interrupt the cutscene, putting you in Burthorpe but requiring you to find Bob and start it again)."
+    },
+    {
+     "text": "After the cutscene, talk to Unferth again."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,68 @@
+{
+ "id": "mage-arena-ii",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Mage_Arena_II%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [
+    "Beware: Caution must be taken in the Wilderness getting to the arena and during large parts of the miniquest where player killers can attack you."
+   ],
+   "steps": []
+  },
+  {
+   "title": "Starting out",
+   "notes": [
+    "Needed: Item to cut web outside of Mage Arena bank, such as knife, slash weapon or any Wilderness sword."
+   ],
+   "steps": [
+    {
+     "text": "Talk to Kolodion at the Mage Arena bank located in level 53 Wilderness to receive an enchanted symbol.",
+     "chat": [
+      "3. Are there any more challenges available?",
+      "1. Great, I've been waiting for an improvement!"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Locating the followers",
+   "notes": [
+    "Needed: Enchanted symbol, energy potions such as stamina, food, item to cut web",
+    "Recommended: Teleport item such as amulet of glory, an antipoison."
+   ],
+   "steps": [
+    {
+     "text": "Use the enchanted symbol in various areas in the Wilderness by process of \"hot & cold\", to find the location a follower spawns in. The location is random and different for each player, and changes occasionally."
+    }
+   ]
+  },
+  {
+   "title": "Killing the followers",
+   "notes": [
+    "Needed: Enchanted symbol, god staff, runes for 50+ casts of a god spell ( blood runes, fire runes, air runes), food, restore potions, energy potions such as stamina, item to cut web",
+    "Recommended: Teleport item such as amulet of glory, an antipoison potion if near poison spiders."
+   ],
+   "steps": [
+    {
+     "text": "Bring the appropriate god staff for the first follower you choose to kill and enough runes for at least 50 casts of the respective god spell."
+    },
+    {
+     "text": "Go to the location of the follower you choose to kill and use the enchanted symbol to spawn the follower."
+    },
+    {
+     "text": "Kill the follower that spawns and pick up the remains it drops."
+    },
+    {
+     "text": "Go to Kolodion and give him the remains. This can be done one at a time or all at once."
+    },
+    {
+     "text": "At the bank, refill your runes and supplies and switch to the god staff that matches your next follower. Repeat the above for the remaining two followers, going to Kolodion after each kill to give the dropped remains."
+    },
+    {
+     "text": "Congratulations, miniquest complete!"
+    }
+   ]
+  }
+ ]
+}

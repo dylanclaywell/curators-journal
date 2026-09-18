@@ -1,0 +1,199 @@
+{
+ "id": "the-eyes-of-glouphrie",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/The_Eyes_of_Glouphrie%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Digression",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Brimstail in the cave found in the south-west corner of the Gnome Stronghold.",
+     "chat": [
+      "1. What's that cute creature wandering around?",
+      "1. Yes, that sounds fascinating...",
+      "1. Oh, yes I love a bit of History.",
+      "1. Of course!"
+     ]
+    },
+    {
+     "text": "Optionally right click teleport on Brimstail for an easy Western Provinces Diary completion",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Elven Mystery",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Inspect the singing bowl in the western portion of the cave."
+    },
+    {
+     "text": "To the north, attempt to unlock Oaknock's Machine."
+    },
+    {
+     "text": "Talk to Brimstail.",
+     "chat": [
+      "1. I've had a look in the other room now.",
+      "1. Of course, I'd love to!"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Memories",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Hazelmere, located upstairs in his house (on the small island east of Yanille, fairy ring code CLS goes directly to his house, Nightmare Zone minigame teleport or Watchtower Teleport). There will be several cutscenes, the last being King Healthorg and the white Spirit Tree Argento. You'll know you're done when you get a Violet pentagon in your backpack."
+    },
+    {
+     "text": "Return to Brimstail.",
+     "chat": [
+      "1. I've visited Hazelmere, he told me all sorts of interesting things."
+     ]
+    },
+    {
+     "text": "Get the bucket of sap outside of Brimstail's cave on your way back.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Incapacitated",
+   "notes": [
+    "Needed: Hammer, Pestle and Mortar, Saw, Mud rune, Bucket of sap, Maple logs, Oak logs"
+   ],
+   "steps": [
+    {
+     "text": "Use your Mud Rune on the Pestle and Mortar to make Ground Mud Runes."
+    },
+    {
+     "text": "Add the Ground Mud Runes to the Bucket of Sap to make Magic glue."
+    },
+    {
+     "text": "Repair Oaknock's machine (click on the machine twice)."
+    },
+    {
+     "text": "Talk to Brimstail.",
+     "chat": [
+      "1. I think I've fixed the machine now!"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Anti-Illusion",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Brimstail twice more to receive more discs.",
+     "chat": [
+      "1. I"
+     ]
+    },
+    {
+     "text": "Optional: Drop the discs and talk to Brimstail to receive even more discs.",
+     "chat": [
+      "1. I can't work out what to do with these discs!"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Front Panel",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Head back to the Oaknock's machine and unlock the machine."
+    }
+   ]
+  },
+  {
+   "title": "Control Panel",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Unlock the front panel by inserting a disc with a value equal to the green number. (When done, click the green box next to the number.)"
+    },
+    {
+     "text": "You will need to exchange some of the tokens to obtain certain values. (see full guide here).",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Brimstail for more discs.",
+     "chat": [
+      "1. I"
+     ]
+    },
+    {
+     "text": "Complete the three puzzles inside the unlocked machine"
+    },
+    {
+     "text": "You need to fill up every slot, the first puzzle's single slot, the second's two slots, and the last puzzle's three slots.",
+     "depth": 1
+    },
+    {
+     "text": "You will need to exchange some of the tokens to obtain certain values. (see full guide here).",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Brimstail.",
+     "chat": [
+      "1. Phew! I've got that machine working now. What do I need to do now?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Assassination",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Brimstail again.",
+     "chat": [
+      "2. Phew! I've got that machine working now. What do I need to do now?"
+     ]
+    },
+    {
+     "text": "Kill all Evil Creatures: (wait for the whole death animation to end before running or teleporting away!). Their colour is now black."
+    },
+    {
+     "text": "The one by Brimstail, if you haven't killed it already.",
+     "depth": 1
+    },
+    {
+     "text": "One outside of the main gate (south-east from Brimstail's cave). Note: It must be killed within stronghold walls. If it is outside, simply kill it, let it spawn, and kill it again for credit.",
+     "depth": 1
+    },
+    {
+     "text": "One by the gnome agility course entrance (near the spirit tree).",
+     "depth": 1
+    },
+    {
+     "text": "One by King Narnode, at the bottom of the Grand Tree. If it is stuck behind a trapdoor, kill it with mage or range, or hop worlds. Make sure you wait a few seconds after killing before using the ladder.",
+     "depth": 1
+    },
+    {
+     "text": "One at the top of the Grand Tree, by the prison. Make sure you wait a few seconds after killing before using the ladder.",
+     "depth": 1
+    },
+    {
+     "text": "One by the giant tortoises north-west of the Grand Tree (in the pen north of the swamp).",
+     "depth": 1
+    },
+    {
+     "text": "Talk to King Narnode."
+    },
+    {
+     "text": "Optional: Use the crystal saw seed on the singing bowl by Brimstail to get an enchanted crystal saw, and complete a medium Western Provinces diary task.",
+     "depth": 1
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

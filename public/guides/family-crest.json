@@ -1,0 +1,164 @@
+{
+ "id": "family-crest",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Family_Crest%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [
+    "It is recommended to bring all the required quest items with you from the start of the quest along with some food and the following teleports if possible: Varrock, Camelot, Ardougne, Falador, Edgeville (Amulet of glory), Al Kharid (Ring of dueling)."
+   ],
+   "steps": []
+  },
+  {
+   "title": "Starting out",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Dimintheis in a house south-east of the east bank (along city wall) in Varrock and north of the fancy dress shop.",
+     "chat": [
+      "3. Hi, I am a bold adventurer.",
+      "2. So where is this crest?",
+      "1. Ok, I will help you."
+     ]
+    },
+    {
+     "text": "Head to Catherby and talk to Caleb in the building north-east of the bank.",
+     "chat": [
+      "1. Are you Caleb Fitzharmon?",
+      "2. So can I have your bit?",
+      "1. Ok, I will get those."
+     ]
+    },
+    {
+     "text": "Speak to him again and give him all the fish. Note: Ask of the whereabouts of the other crest parts, or you will not be able to progress!",
+     "chat": [
+      "1. Uh... what happened to the rest of it?"
+     ]
+    },
+    {
+     "text": "Speak to the Gem Trader in Al Kharid.",
+     "chat": [
+      "3. I'm in search of a man named Avan Fitzharmon."
+     ]
+    },
+    {
+     "text": "Go north of the Gem Trader to the scorpion mining pit, and speak to the 'Man' with the yellow cape there (Avan).",
+     "chat": [
+      "2. I'm looking for a man named Avan Fitzharmon."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The 'perfect' necklace and ring",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Head into the Dwarven Mine underneath Ice Mountain and run to the far most western end and speak to Boot.",
+     "chat": [
+      "1. Hello. I'm in search of very high quality gold."
+     ]
+    },
+    {
+     "text": "Teleport to Ardougne, head east and climb down the old ruin entrance to the Witchaven Dungeon near Witchaven and Ardougne ship port. (Labelled on the world map by the icon. You may need to defend yourself against some hellhounds, so come prepared)."
+    },
+    {
+     "text": "Enter the dungeon. Do not enter the wall to the east. There is a north room, a south room, and a locked eastern room that contains hellhounds and the perfect gold ore."
+    },
+    {
+     "text": "To unlock the east gate:"
+    },
+    {
+     "text": "Go to the north and lift the lever outside (up)",
+     "depth": 1
+    },
+    {
+     "text": "Then to the south room through the eastern door and lift that lever (up). Exit through the western door.",
+     "depth": 1
+    },
+    {
+     "text": "Back north and pull the outer lever (down), enter and lift the inner lever (up)",
+     "depth": 1
+    },
+    {
+     "text": "Exit the room and lift the lever (up)",
+     "depth": 1
+    },
+    {
+     "text": "Enter the south room by the western door and lower the lever (down). Exit through the eastern door.",
+     "depth": 1
+    },
+    {
+     "text": "Go into the hellhound room and mine 2 'perfect' gold ores. Their aggro range is short so try to zigzag through them. Anticipating hits will manageably yield the ores with a rune pickaxe. Alternatively, low level players can stand in a safespot for 10 minutes so the hellhounds stop being aggressive."
+    },
+    {
+     "text": "Go to a furnace (northern Lumbridge - use the home teleport) and smelt the ores into bars, then use the bars on the furnace again and make one 'perfect' ruby necklace and 'perfect' ruby ring. Be careful not to use make-all as it will make two rings or necklaces"
+    },
+    {
+     "text": "Go back to the 'Man' (Avan) and give him the jewellery to receive the second crest piece."
+    }
+   ]
+  },
+  {
+   "title": "Fighting Chronozon",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Teleport to Varrock (lumberyard teleport), and head north-east to the Jolly Boar Inn near the lumberyard. Go upstairs and speak to Johnathon. Speak to him, and use your anti-poison on him to learn the location of the final crest piece."
+    },
+    {
+     "text": "Prepare for the fight:"
+    },
+    {
+     "text": "Bring runes for each of the four blast spells: Wind Blast, Water Blast, Earth Blast, and Fire Blast as you need to deal damage with each spell.",
+     "depth": 1
+    },
+    {
+     "text": "Be aware that Chronozon's fight takes place in part of the Wilderness and other players may attack you there.",
+     "depth": 1
+    },
+    {
+     "text": "Maging is recommended. You will have to kill a poison spider to use the safespots, so anti-poison is recommended.",
+     "depth": 1
+    },
+    {
+     "text": "Diary tasks: Since Chronozon is at the Earth Obelisk and the Air Obelisk is to the north, you can bring two Unpowered orbs, 6 Cosmic runes, 60 Earth runes, 60 air runes to respectively complete a medium and hard Wilderness task (with 60/66 Magic).",
+     "depth": 1
+    },
+    {
+     "text": "Go to Edgeville or the small hut west of Varrock if you have a brass key to enter the Edgeville Dungeon."
+    },
+    {
+     "text": "Head to the gate dividing the Wilderness from the rest of the dungeon."
+    },
+    {
+     "text": "Travel slightly north, then make a left past the thugs and Chaos druids, through a second gate."
+    },
+    {
+     "text": "Travel west, then south past the poison spiders and Black demons, where you will find Chronozon."
+    },
+    {
+     "text": "Safespot him between the southern rocks. You may have to kill a poison spider first."
+    },
+    {
+     "text": "You must successfully cast each blast spell on Chronozon (No splashes or zeroes. Twinflame Staff will prohibit you from changing spells).",
+     "depth": 1
+    },
+    {
+     "text": "Once he has been weakened by each blast spell, kill him with any spell, melee, or ranged.",
+     "depth": 1
+    },
+    {
+     "text": "Pick up the last crest piece and teleport out."
+    },
+    {
+     "text": "Assemble the Family crest and head back to Dimintheis in Varrock to conclude."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

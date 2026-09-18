@@ -1,0 +1,243 @@
+{
+ "id": "cabin-fever",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Cabin_Fever%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Setting sail",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Travel to Port Phasmatys (take a charter ship if you don't have Ectophial)."
+    },
+    {
+     "text": "Talk to Bill Teach in the inn.",
+     "chat": [
+      "1. Yes, I've always wanted to be a pirate!",
+      "1. Yes, I am a man of my word."
+     ]
+    },
+    {
+     "text": "Run to the dock, board the eastern-most ship."
+    },
+    {
+     "text": "Talk to Bill Teach.",
+     "chat": [
+      "1. Let's go Cap'n!"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Sabotage",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Open the repair locker, take 4 ropes."
+    },
+    {
+     "text": "Open the gun locker, take 1 fuse."
+    },
+    {
+     "text": "Take the tinderbox spawn at the south end of the ship"
+    },
+    {
+     "text": "Climb the ship's ladder, then use the climbing net connected to the mast."
+    },
+    {
+     "text": "Use rope on the hoisted sail."
+    },
+    {
+     "text": "Use the fuse on their powder barrel."
+    },
+    {
+     "text": "Use the tinderbox to light the fuse (this can fail)."
+    },
+    {
+     "text": "Climb their climbing net and use a rope on the hoisted sail."
+    },
+    {
+     "text": "Talk to Bill Teach."
+    }
+   ]
+  },
+  {
+   "title": "Fixing the leaks",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Descend the ship's ladder."
+    },
+    {
+     "text": "Take from the repair locker:"
+    },
+    {
+     "text": "6 planks.",
+     "depth": 1
+    },
+    {
+     "text": "A hammer.",
+     "depth": 1
+    },
+    {
+     "text": "30 tacks.",
+     "depth": 1
+    },
+    {
+     "text": "3 swamp paste.",
+     "depth": 1
+    },
+    {
+     "text": "Repair the leaky holes and use swamp paste to waterproof them."
+    },
+    {
+     "text": "Talk to Bill Teach."
+    }
+   ]
+  },
+  {
+   "title": "Pirate plunder",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Swing back over to the enemy ship."
+    },
+    {
+     "text": "Climb down their ladder."
+    },
+    {
+     "text": "Gather 10 plunder by:"
+    },
+    {
+     "text": "Plunder their chest,",
+     "depth": 1
+    },
+    {
+     "text": "Ransack their barrel,",
+     "depth": 1
+    },
+    {
+     "text": "Loot their crate,",
+     "depth": 1
+    },
+    {
+     "text": "Hop worlds to collect more plunder quickly.",
+     "depth": 1
+    },
+    {
+     "text": "Swing across with the plunder."
+    },
+    {
+     "text": "Deposit the plunder in the chest on the lower deck."
+    },
+    {
+     "text": "Talk to Bill Teach."
+    }
+   ]
+  },
+  {
+   "title": "Cannon",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Search the gun locker and take a cannon barrel."
+    },
+    {
+     "text": "Repair the broken cannon on the top deck."
+    },
+    {
+     "text": "Talk to Bill Teach."
+    },
+    {
+     "text": "Search the gun locker, take a ramrod, a few fuses, and some cannon canisters."
+    },
+    {
+     "text": "Take some powder from the barrel next to the cannon."
+    },
+    {
+     "text": "Use gunpowder on the cannon.",
+     "depth": 1
+    },
+    {
+     "text": "Then the ramrod.",
+     "depth": 1
+    },
+    {
+     "text": "Then the canister.",
+     "depth": 1
+    },
+    {
+     "text": "Then a fuse.",
+     "depth": 1
+    },
+    {
+     "text": "Fire the cannon! (Make sure pirates line up with your cannon before firing)",
+     "depth": 1
+    },
+    {
+     "text": "Note: If you have your \"NPC 'Attack' option\" set to \"Hidden\" you will not be able to damage the pirates.",
+     "depth": 2
+    },
+    {
+     "text": "Use the ramrod on the cannon again to clean it.",
+     "depth": 1
+    },
+    {
+     "text": "Repeat until 3 pirates die (OR until you run out of cannon canisters in your inventory, and when you try to take more it will say \"you do not need a canister round right now\" move on to the next step: Talk to Bill Teach)."
+    },
+    {
+     "text": "Note: it may be faster to intentionally run out of canisters.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Bill Teach."
+    },
+    {
+     "text": "Search the gun locker, take several cannon balls, fuses, and cannon barrels. Take gunpowder from the barrel next to the cannon."
+    },
+    {
+     "text": "Fire the cannon with cannonballs until you put three holes in the enemy's ship. This is done with the same sequence above except instead of a canister, a cannonball is used instead - you will likely have to fire it more than three times and possibly repair it multiple times."
+    },
+    {
+     "text": "The sequence goes:",
+     "depth": 1
+    },
+    {
+     "text": "Right-click Empty-Out Cannon",
+     "depth": 2
+    },
+    {
+     "text": "Ramrod to clean",
+     "depth": 2
+    },
+    {
+     "text": "Add powder",
+     "depth": 2
+    },
+    {
+     "text": "Ramrod the powder down",
+     "depth": 2
+    },
+    {
+     "text": "Cannon ball",
+     "depth": 2
+    },
+    {
+     "text": "Fuse",
+     "depth": 2
+    },
+    {
+     "text": "Fire",
+     "depth": 2
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    },
+    {
+     "text": "Talk to Bill Teach in the pub afterwards to get your share of the loot, 10,000 coins.",
+     "depth": 1
+    }
+   ]
+  }
+ ]
+}

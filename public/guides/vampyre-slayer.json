@@ -1,0 +1,63 @@
+{
+ "id": "vampyre-slayer",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Vampyre_Slayer%2FQuick_guide",
+ "sections": [
+  {
+   "title": "A vampyre threat",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Morgan in Draynor Village.",
+     "chat": [
+      "1. Yes"
+     ]
+    },
+    {
+     "text": "Go upstairs in Morgan's house and take garlic from the cupboard."
+    }
+   ]
+  },
+  {
+   "title": "The ex-slayer",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Dr Harlow in the Blue Moon Inn in Varrock, south of Varrock Centre.",
+     "chat": [
+      "1. I need your help dealing with a vampyre."
+     ]
+    },
+    {
+     "text": "Buy a beer if you haven't already.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Dr Harlow again and receive a stake."
+    },
+    {
+     "text": "Buy a hammer from the general store just north of the bar if you haven't already.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Count Draynor",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Bring your combat gear (food recommended), garlic, hammer, and stake to Draynor Manor."
+    },
+    {
+     "text": "Go to the basement (east stairs, not through the west room)."
+    },
+    {
+     "text": "Open the coffin and kill Count Draynor. (You do not need to use the hammer/stake on him. Just kill him with them in your inventory)."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

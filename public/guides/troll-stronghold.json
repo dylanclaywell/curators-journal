@@ -1,0 +1,72 @@
+{
+ "id": "troll-stronghold",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Troll_Stronghold%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting out",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Speak to Denulth directly South of the Burthorpe Teleport.",
+     "chat": [
+      "1. How goes your fight with the trolls?",
+      "1. Is there anything I can do to help?",
+      "1. I'll get Godric back!"
+     ]
+    },
+    {
+     "text": "Follow the path to the stronghold. You can buy the climbing boots along the way from Tenzing. (Note: If you have completed The Easy Combat Achievements you can skip this section, including the fight with Dad, by teleporting with Ghommal's hilt 1)"
+    },
+    {
+     "text": "Enter the arena and attempt to kill Dad. The fight will end before Dad is killed (can be safespotted from the gate; magic or a halberd are good choices due to his high range defence)."
+    },
+    {
+     "text": "After nearly killing Dad exit the arena through the north gate."
+    },
+    {
+     "text": "Go through the cave and continue the path to the stronghold; Thrower trolls can be dealt with by:"
+    },
+    {
+     "text": "Sprinting past them.",
+     "depth": 1
+    },
+    {
+     "text": "Protecting from Missiles against them.",
+     "depth": 1
+    },
+    {
+     "text": "Taking agility shortcuts around them.",
+     "depth": 1
+    },
+    {
+     "text": "Enter the stronghold through the cave entrance."
+    }
+   ]
+  },
+  {
+   "title": "Stronghold Dungeon",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Follow the red path to Troll General. Kill one and loot the prison key. (Can be safespotted with a halberd, magic, or a ranged weapon behind the counter) (Hardcore Ironmen beware! The general is aggressive and his max hit is 38)"
+    },
+    {
+     "text": "Follow the green path to jail."
+    },
+    {
+     "text": "Pickpocket (30+ ) or kill the sleeping Twig and Berry (this can be safespotted through the open cell doors either side of them), free both of the prisoners."
+    },
+    {
+     "text": "Teleport to Burthorpe with the games necklace OR follow them out the secret exit and once outside climb over the south-east rocks."
+    },
+    {
+     "text": "Talk to Dunstan."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,110 @@
+{
+ "id": "below-ice-mountain",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Below_Ice_Mountain%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting off",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Willow on the path south of Ice Mountain, north of Falador.",
+     "chat": [
+      "1. Yes."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Checkal",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Speak to Checkal in Barbarian Village near the pottery oven building."
+    },
+    {
+     "text": "Speak to Atlas in The Long Hall tavern in Barbarian Village and complete training.",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Take some cooked meat and a beer from the tables in The Long Hall if you do not have them already.",
+     "depth": 1
+    },
+    {
+     "text": "Return to Checkal and use the Flex emote when prompted."
+    }
+   ]
+  },
+  {
+   "title": "Marley",
+   "notes": [
+    "Items required: a knife, cooked meat and bread."
+   ],
+   "steps": [
+    {
+     "text": "Speak to Marley in Edgeville at the yew trees. You MUST speak to Marley first or the cook wont give you the recipe."
+    },
+    {
+     "text": "Speak to the cook in the east room of Blue Moon Inn in Varrock. He will give you the steak sandwich recipe.",
+     "chat": [
+      "1. I was wondering if you'd be able to make me a Steak sandwich?"
+     ]
+    },
+    {
+     "text": "Create a steak sandwich by using a knife on cooked meat while having bread in your inventory."
+    },
+    {
+     "text": "Speak to Marley in Edgeville at the yew trees with the steak sandwich in your inventory."
+    }
+   ]
+  },
+  {
+   "title": "Burntof",
+   "notes": [
+    "Items required: a beer or 3 coins."
+   ],
+   "steps": [
+    {
+     "text": "Speak to Burntof in the Rising Sun Inn in Falador."
+    },
+    {
+     "text": "If you do not have a beer, buy any beer for 3 coins by talking to Emily or Kaylee.",
+     "depth": 1,
+     "chat": [
+      "1. What ales are you serving?",
+      "1. One Asgarnian Ale, please."
+     ]
+    },
+    {
+     "text": "Choose any option in the game of rock paper scissors."
+    }
+   ]
+  },
+  {
+   "title": "Entering the dungeon",
+   "notes": [
+    "Items recommended: Some food for low combat players, and any pickaxe or a weapon and armour to kill a level 25 monster."
+   ],
+   "steps": [
+    {
+     "text": "Go to the entrance of the Ruins of Camdozaal, at the west side of the Ice Mountain, and talk to Willow (dungeon icon on minimap).",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "After the cutscene, kill the level 25 Ancient Guardian by attacking it or mining the 4 structural pillars in the corners."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    },
+    {
+     "text": "After the quest is complete, your character will speak with Ramarno, an Imcando dwarf found in the ruins.",
+     "depth": 1
+    }
+   ]
+  }
+ ]
+}

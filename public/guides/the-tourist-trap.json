@@ -1,0 +1,234 @@
+{
+ "id": "the-tourist-trap",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/The_Tourist_Trap%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Getting started",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Begin the quest by talking to Irena, located just south of Shantay Pass (fairy ring BIQ, then run north-east).",
+     "chat": [
+      "1. What's the matter?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Getting into the camp",
+   "notes": [
+    "Recommended: Food and combat equipment.",
+    ": You will be arrested if you skip the dialogue and attack him, or sent into the desert without waterskins during which time heat damage can be queued instantly killing players with low health.",
+    "Note: A dwarf multicannon can be set up west of the gate and the mercenary captain can be lured to the edge of his roaming area where the cannon will be able to hit him.",
+    "Note: Graceful outfit does not get you jailed as long as its not worn in place of the desert clothing.: You will be jailed if you equip armour or weapons or unequip your slave clothing while inside the camp! Guards are also occasionally aggressive toward the player, so low-levels should be careful."
+   ],
+   "steps": [
+    {
+     "text": "Go to the Desert Mining Camp entrance (south of Irena)."
+    },
+    {
+     "text": "Talk to the Mercenary Captain.",
+     "chat": [
+      "1. Wow! A real captain!",
+      "2. I'd love to work for a tough guy like you!",
+      "2. Can't I do something for a strong Captain like you?",
+      "2. Sorry Sir, I don't think I can do that.",
+      "1. It's a funny captain who can't fight his own battles!"
+     ]
+    },
+    {
+     "text": "He will attack you. Kill him and get the key of the gate. (All damage can be dealt via recoil)"
+    },
+    {
+     "text": "Unequip any weapons AND armour and enter the gate."
+    }
+   ]
+  },
+  {
+   "title": "Getting into the mine",
+   "notes": [
+    "Warning: There are aggressive NPCs in this mine be careful if you are low level",
+    ": You will be jailed if you don't unequip your slave robes before leaving the camp through the front gate OR if you exit the mine through the doors with them unequipped!"
+   ],
+   "steps": [
+    {
+     "text": "Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. If you've already talked to him. If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.",
+     "chat": [
+      "1. I've just arrived.",
+      "2. Oh yes, that sounds interesting.",
+      "1. What's that then?",
+      "1. I can try to undo them for you.",
+      "1. It's funny you should say that...",
+      "1. Yeah, okay, let's give it a go.",
+      "1. Yeah, okay, let's give it a go.",
+      "1. Yes, I'll trade."
+     ]
+    },
+    {
+     "text": "Equip the slave's clothes"
+    },
+    {
+     "text": "Enter the mine to the north"
+    },
+    {
+     "text": "Follow the path until you reach a guarded cave entrance."
+    },
+    {
+     "text": "Talk to one of the guards until he mentions a Tenti pineapple.",
+     "chat": [
+      "2. I'd like to mine in a different area.",
+      "2. Yes sir, you're quite right sir.",
+      "2. Yes sir, we understand each other perfectly."
+     ]
+    },
+    {
+     "text": "Run back to the surface, unequip ALL pieces of your slave robes and leave the desert camp through the front gate, or return to fairy ring BIQ."
+    }
+   ]
+  },
+  {
+   "title": "The plans",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Al Shabim in the south tent in the Bedabin Camp (directly west of the Desert Mining Camp). You will be given a Bedabin key.",
+     "chat": [
+      "1. I am looking for a pineapple.",
+      "1. Yes, I'm interested."
+     ]
+    },
+    {
+     "text": "Go back to the Desert Mining Camp. (Make sure to put on your slave outfit (and unequip anything else) before entering the gate. If you inadvertently dropped your slave outfit, you can get another one from a slave by repeating the earlier trade with the desert clothing.)"
+    },
+    {
+     "text": "Go up the ladder in the jail building and search the southernmost bookcase on the western wall. A message should pop up stating \"You notice several books on the subject of sailing.\""
+    },
+    {
+     "text": "In the same room, talk to Captain Siad.",
+     "chat": [
+      "1. I wanted to have a chat?",
+      "5. You seem to have a lot of books!",
+      "3. So, you're interested in sailing?",
+      "1. I could tell by the cut of your jib."
+     ]
+    },
+    {
+     "text": "Open the chest to obtain the technical plans. (Make sure you click continue, so the plans go to your inventory)"
+    },
+    {
+     "text": "Go back to the Bedabin Camp and show Al Shabim the plans.",
+     "chat": [
+      "1. Yes, I'm very interested.",
+      "1. Yes, I'm kind of curious."
+     ]
+    },
+    {
+     "text": "Use the anvil in the northern tent. Following the plans, create a prototype dart."
+    },
+    {
+     "text": "Use a bronze bar to create a prototype dart tip.",
+     "depth": 1
+    },
+    {
+     "text": "Use 10 feathers on the tip to create the dart.",
+     "depth": 1
+    },
+    {
+     "text": "Take the dart to Al Shabim, who will in return give you the Tenti pineapple."
+    }
+   ]
+  },
+  {
+   "title": "Finding Ana",
+   "notes": [
+    ": Do not talk to Ana, she will alert the guards.",
+    ": Do not try to teleport with Ana in your inventory, the barrel will drop first."
+   ],
+   "steps": [
+    {
+     "text": "Equip your Slave outfit and head back to the guards in the mine with your pineapple and give it to one of them."
+    },
+    {
+     "text": "Go through the cave entrance and head east until you're beside the mine cart."
+    },
+    {
+     "text": "Right-click search the nearby barrels to get a barrel.",
+     "chat": [
+      "1. Yeah, cool!"
+     ]
+    },
+    {
+     "text": "Get into the mine cart by right-click searching it. (If you fail to start the cutscene redo this step)",
+     "chat": [
+      "1. Yes, of course."
+     ]
+    },
+    {
+     "text": "Take the west-north-west path and use a barrel on Ana (blonde hair at the end of the second north-western path)."
+    }
+   ]
+  },
+  {
+   "title": "Saving Ana",
+   "notes": [
+    ": Do not remove clothes to go to jail. If you do, you will have to mine 15 rocks to get out."
+   ],
+   "steps": [
+    {
+     "text": "Head back to the mine cart. Put Ana in the mine cart, then take the cart yourself.",
+     "chat": [
+      "1. Yes, of course."
+     ]
+    },
+    {
+     "text": "Search nearby barrels to find Ana."
+    },
+    {
+     "text": "Put Ana on the winch bucket (north-west area of room)."
+    },
+    {
+     "text": "Don't raise the guard's suspicions when he offers help.",
+     "chat": [
+      "1. Yes please.",
+      "1. I said you were very gregarious!"
+     ]
+    },
+    {
+     "text": "Head back to the surface."
+    },
+    {
+     "text": "Operate the winch (south-west in the camp), then search the barrel west of the winch to find Ana. (Do not go through the gate)"
+    },
+    {
+     "text": "Put Ana on the wooden cart at the centre of the Camp."
+    },
+    {
+     "text": "Talk to the mine cart driver.",
+     "chat": [
+      "2. Nice cart.",
+      "2. One wagon wheel says to the other, 'I'll see you around'.",
+      "1. 'One good turn deserves another.'",
+      "3. Fired... no, shot perhaps!",
+      "3. In for a penny in for a pound.",
+      "3. Well, you see, it's like this...",
+      "1. Prison riot in ten minutes, get your cart out of here!",
+      "2. You can't leave me here, I'll get killed!"
+     ]
+    },
+    {
+     "text": "Get on the cart by searching it.",
+     "chat": [
+      "1. Yes, I'll get on."
+     ]
+    },
+    {
+     "text": "Head back to Irena for your reward."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

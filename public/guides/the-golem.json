@@ -1,0 +1,165 @@
+{
+ "id": "the-golem",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/The_Golem%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting the quest",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Travel to the Ruins of Uzer via the necklace of passage teleport to Eagle's Eyrie and run south-east. You can alternatively use a fairy ring (DLQ) and go north-east."
+    },
+    {
+     "text": "Pick up and read the Letter west of the broken clay golem"
+    },
+    {
+     "text": "Talk to the golem.",
+     "chat": [
+      "1. Shall I try to repair you?"
+     ]
+    },
+    {
+     "text": "Use four soft clay on the golem. If you chose to bring a pickaxe and a bracelet of clay, clay rocks can be found to the north-west, near the shore. The phoenix can be found there as well."
+    },
+    {
+     "text": "Optional: Mine 5 clay for easy Desert Diary, and steal the Desert Phoenix's feather while nearby.",
+     "depth": 1
+    },
+    {
+     "text": "Optional: Catch a Golden Warbler near the Desert Phoenix with a Bird Snare (requiring Level 5 Hunter) for an easy Desert Diary task",
+     "depth": 1
+    },
+    {
+     "text": "Talk to the golem again.",
+     "chat": [
+      "1. How do I open the portal?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The statuette",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Pick a black mushroom near the stairs east of the golem before heading down (or downstairs at your right)."
+    },
+    {
+     "text": "Use the black mushroom on the pestle and mortar to get black dye. You can do this later if you don't have your pestle and mortar.",
+     "depth": 1
+    },
+    {
+     "text": "Note: Take an extra black mushroom if you plan on completing Shadow of the Storm soon afterwards.",
+     "depth": 1
+    },
+    {
+     "text": "Climb down the stairs in the ruins."
+    },
+    {
+     "text": "Take the strange implement from the north-western room."
+    },
+    {
+     "text": "Note: Keep the strange implement if you plan on completing Shadow of the Storm soon afterwards.",
+     "depth": 1
+    },
+    {
+     "text": "Speak to the Golem again",
+     "chat": [
+      "1. How do I open the portal?"
+     ]
+    },
+    {
+     "text": "Head to the most north-eastern part of the Digsite, near the large buried skeleton, and talk to Elissa. (make sure to read the letter if no 3rd option is seen)",
+     "chat": [
+      "3. I found a letter in the desert with your name on."
+     ]
+    },
+    {
+     "text": "Head to the Exam Centre just south of the Digsite."
+    },
+    {
+     "text": "Search the bookcase in the south-east corner and read Varmen's notes."
+    },
+    {
+     "text": "Note: If you have not repaired the golem up to this point, or read Varmen's Notes the curator will not speak to you about the quest.",
+     "depth": 1,
+     "chat": [
+      "3. Where is the statuette that Varmen took back from Uzer?"
+     ]
+    },
+    {
+     "text": "Talk to Curator Haig Halen in the Varrock Museum about the statuette. ( if Bone Voyage is started)",
+     "chat": [
+      "2. I'm looking for a statuette recovered from the city of Uzer.",
+      "1. I want to open a portal to the lair of an elder-demon."
+     ]
+    },
+    {
+     "text": "Pickpocket him for the display cabinet key."
+    },
+    {
+     "text": "Head upstairs, and open the second-most western case in the northern-most row. You will get a statuette."
+    }
+   ]
+  },
+  {
+   "title": "The portal",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Return to the Kharidian Desert (fairy ring DLQ), or teleport to Eagle's Eyrie with Necklace of passage."
+    },
+    {
+     "text": "If you still need the Phoenix feather, run north to the clay rocks east of River Elid and grab a feather from the Phoenix.",
+     "depth": 1
+    },
+    {
+     "text": "Return to the ruins of Uzer where you started the quest and again go down the stairs."
+    },
+    {
+     "text": "In the centre of the room will be four alcoves. Place the statuette in the empty one."
+    },
+    {
+     "text": "Turn the statues until they all point north."
+    },
+    {
+     "text": "Go north, through the double doors."
+    },
+    {
+     "text": "Optional: Use your chisel and hammer on the throne for 2 sapphires, emeralds, and rubies."
+    },
+    {
+     "text": "Otherwise, immediately go back through the south portal."
+    }
+   ]
+  },
+  {
+   "title": "The golem",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Go back upstairs and talk to the golem."
+    },
+    {
+     "text": "With an empty vial in your inventory, grind the black mushroom using a Pestle and mortar."
+    },
+    {
+     "text": "Use the phoenix feather on the black dye to make a phoenix quill pen."
+    },
+    {
+     "text": "Talk to the golem"
+    },
+    {
+     "text": "Use the phoenix quill pen on a piece of papyrus to get the golem program."
+    },
+    {
+     "text": "Use the strange implement on the golem then quickly use the newly acquired golem program on the golem."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,119 @@
+{
+ "id": "the-garden-of-death",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/The_Garden_of_Death%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Start the quest by searching the tent for Kasonde's journal (Fairy ring with code BLS and head south east).",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Read the journal."
+    },
+    {
+     "text": "Search the camping equipment to receive secateurs."
+    },
+    {
+     "text": "Climb down the nearby hole."
+    },
+    {
+     "text": "Search the stone table labelled \"1\" in the image below to receive the first stone tablet."
+    },
+    {
+     "text": "Read the stone tablet and take the note to receive the word translations scroll.",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Read the word translations scroll and click \"Attempt Translation\". Input the following words and press enter for each: Island, Water, Time, Vessel, North."
+    },
+    {
+     "text": "Chat will show a prompt about having translated enough once you enter all words. The hole on Molch Island will not appear if any words are missing."
+    },
+    {
+     "text": "Climb-up the rope to exit the hole."
+    },
+    {
+     "text": "Travel to Lake Molch via Boaty and select Molch Island. (Fairy ring with code DJR and head west.)",
+     "chat": [
+      "1. Molch Island"
+     ]
+    },
+    {
+     "text": "Enter the hole on Molch Island."
+    },
+    {
+     "text": "Inspect the vines for a dirty note."
+    },
+    {
+     "text": "Cut the vines with your secateurs and squeeze through them."
+    },
+    {
+     "text": "Search the stone table labelled \"1\" in the image below to receive the second stone tablet."
+    },
+    {
+     "text": "Read the stone tablet, then input the following words on the word translations scroll: West, Poison, Body, Food, Earth."
+    },
+    {
+     "text": "Climb-up the rope to exit the hole."
+    },
+    {
+     "text": "Travel to Xeric's Shrine."
+    },
+    {
+     "text": "Board Boaty and select Molch.",
+     "depth": 1,
+     "chat": [
+      "1. Molch"
+     ]
+    },
+    {
+     "text": "Run west and then south to the altar.",
+     "depth": 1
+    },
+    {
+     "text": "Enter the hole at Xeric's Shrine."
+    },
+    {
+     "text": "Search the stone table labelled \"1\" in the image below to receive the third stone tablet."
+    },
+    {
+     "text": "Read the stone tablet, then input the following words on the word translations scroll: Make, Yes, No, Move, Arrive, East, South."
+    },
+    {
+     "text": "Make your way to the Ruins of Morra. Enter the hole there."
+    },
+    {
+     "text": "Board Boaty and select Shayzien.",
+     "depth": 1,
+     "chat": [
+      "3. Shayzien"
+     ]
+    },
+    {
+     "text": "Run south to the ruins.",
+     "depth": 1
+    },
+    {
+     "text": "Search the stone table labelled \"1\" in the image below to receive the final stone tablet."
+    },
+    {
+     "text": "Read the stone tablet, then input the following words on the word translations scroll: Few, Big, Sun, Moon, Life, Death, Mind, Home, Air, Fire."
+    },
+    {
+     "text": "Read the stone tablet again and then read the warning note."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

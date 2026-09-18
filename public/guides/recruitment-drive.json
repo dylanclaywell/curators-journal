@@ -1,0 +1,220 @@
+{
+ "id": "recruitment-drive",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Recruitment_Drive%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Speak to Sir Amik Varze on the of the western section of the White Knights' Castle.",
+     "chat": [
+      "1. Yes please"
+     ]
+    },
+    {
+     "text": "Bank all equipped items and inventory."
+    },
+    {
+     "text": ": Hardcore Ironmen will lose Hardcore status if they die to Sir Leye."
+    },
+    {
+     "text": "Important: Be prepared for Lady Table as you only have 10 seconds after entering to learn the answer."
+    },
+    {
+     "text": "Speak to Sir Tiffy Cashien in the park to begin test.",
+     "chat": [
+      "3. Yes, let's go!"
+     ]
+    },
+    {
+     "text": "5 of the following 7 puzzle rooms will appear in a random order. You will always fight Sir Leye."
+    },
+    {
+     "text": "Sir Kuam Ferentse",
+     "depth": 1
+    },
+    {
+     "text": "Pick up the Steel warhammer and equip.",
+     "depth": 2
+    },
+    {
+     "text": "Defeat Sir Leye. Prayer is allowed.",
+     "depth": 2
+    },
+    {
+     "text": "Lady Table (statue room):",
+     "depth": 1
+    },
+    {
+     "text": "Quickly look for the colour (bronze, silver, gold) that only has three statues.",
+     "depth": 2
+    },
+    {
+     "text": "Check which weapon is missing from that colour. (sword, halberd, axe, mace)",
+     "depth": 2
+    },
+    {
+     "text": "Select the one that was added after the time is up.",
+     "depth": 2
+    },
+    {
+     "text": "OR, simply take a screenshot to figure out which statue is missing.",
+     "depth": 2
+    },
+    {
+     "text": "Sir Ren Itchood (standing on a crate):",
+     "depth": 1
+    },
+    {
+     "text": "Ask for the clue to the door.",
+     "depth": 2
+    },
+    {
+     "text": "The answer is the first letter of each sentence.",
+     "depth": 2
+    },
+    {
+     "text": "Sir Tinley:",
+     "depth": 1
+    },
+    {
+     "text": "Left-click on Sir Tinley, finish the conversation. Press nothing until he speaks to you again.",
+     "depth": 2
+    },
+    {
+     "text": "Sir Spishyus (Grain, Chicken and Fox):",
+     "depth": 1
+    },
+    {
+     "text": "Grab chicken and cross. Unequip the chicken and cross back over.",
+     "depth": 2
+    },
+    {
+     "text": "Grab grain and cross. Unequip grain and pick up the chicken. Cross back over.",
+     "depth": 2
+    },
+    {
+     "text": "Unequip chicken, grab fox and cross. Unequip fox and cross back over.",
+     "depth": 2
+    },
+    {
+     "text": "Grab chicken and cross and unequip chicken.",
+     "depth": 2
+    },
+    {
+     "text": "Walk to the door.",
+     "depth": 2
+    },
+    {
+     "text": "Ms. Hynn Terprett (sitting on throne):",
+     "depth": 1
+    },
+    {
+     "text": "\"Death sentence\" riddle – Fed to wolves",
+     "depth": 2
+    },
+    {
+     "text": "\"Husband and daughter\" riddle – 10",
+     "depth": 2
+    },
+    {
+     "text": "\"Identical stones\" riddle – Bucket A (32 degrees)",
+     "depth": 2
+    },
+    {
+     "text": "\"Fingers on left hand\" riddle – 0",
+     "depth": 2
+    },
+    {
+     "text": "\"Which is true\" riddle – Three False",
+     "depth": 2
+    },
+    {
+     "text": "Miss Cheevers (Bookshelf room):",
+     "depth": 1
+    },
+    {
+     "text": "First door:",
+     "depth": 2
+    },
+    {
+     "text": "Starting from the south-western corner, search:",
+     "depth": 3
+    },
+    {
+     "text": "The most south-western bookshelf for a knife.",
+     "depth": 4
+    },
+    {
+     "text": "All four of the most southern shelves with vials, take all of them.",
+     "depth": 4
+    },
+    {
+     "text": "In the north-eastern corner, search the middle-sized crate next to the chest for a cake tin.",
+     "depth": 4
+    },
+    {
+     "text": "All four northern shelves for the remaining vials, take all of them.",
+     "depth": 4
+    },
+    {
+     "text": "Take the spade from the table and use it on the bunsen burner.",
+     "depth": 3
+    },
+    {
+     "text": "Use the spade on the door.",
+     "depth": 3
+    },
+    {
+     "text": "Use cupric sulfate on door.",
+     "depth": 3
+    },
+    {
+     "text": "Use a vial of liquid on door.",
+     "depth": 3
+    },
+    {
+     "text": "Open the first door (do not walk through).",
+     "depth": 3
+    },
+    {
+     "text": "Second door: (Note: Nitrous oxide and tin ore powder resemble an empty vial!)",
+     "depth": 2
+    },
+    {
+     "text": "Use a vial of liquid on the cake tin. You may need to get another vial from the south shelves.",
+     "depth": 3
+    },
+    {
+     "text": "Use gypsum on tin (you may need to Use another vial of liquid on the tin after.)",
+     "depth": 3
+    },
+    {
+     "text": "Use tin on a key on the ground by the entrance portal.",
+     "depth": 3
+    },
+    {
+     "text": "Use cupric ore powder and tin ore powder on the tin.",
+     "depth": 3
+    },
+    {
+     "text": "Use tin on Bunsen burner.",
+     "depth": 3
+    },
+    {
+     "text": "Use knife on tin.",
+     "depth": 3
+    },
+    {
+     "text": "Use key on door and exit.",
+     "depth": 3
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

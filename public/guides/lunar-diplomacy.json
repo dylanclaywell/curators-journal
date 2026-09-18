@@ -1,0 +1,470 @@
+{
+ "id": "lunar-diplomacy",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Lunar_Diplomacy%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [
+    "Note: You must keep your Seal of Passage, once obtained, on you at all times while on the Lunar Isle. If you do not, you will be teleported off of the isle if you try to talk to any NPC.",
+    "The lantern given during the quest does not come with oil in it, so bring a lightable regular bullseye lantern. If you put the emerald lens in the given lantern, drop it and ask for a new lens, which you then use on your working brought bullseye lantern."
+   ],
+   "steps": []
+  },
+  {
+   "title": "Starting out",
+   "notes": [
+    "Needed: Tinderbox, Bullseye lantern (one that you can light)",
+    "Recommended: House teleport tablet or runes.",
+    "===Talking to the crew==="
+   ],
+   "steps": [
+    {
+     "text": "Talk to Lokar Searunner on the western most Rellekka docks. D*K*S closest fairy ring.",
+     "chat": [
+      "2. You've been away from these parts a while?",
+      "1. Why did you leave?",
+      "1. Why not, I've always wondered what the state of my innards are!"
+     ]
+    },
+    {
+     "text": "Speak to Brundt the Chieftain in the Longhall for a Seal of Passage.",
+     "chat": [
+      "1. Ask about a Seal of Passage."
+     ]
+    },
+    {
+     "text": "Return to Lokar Searunner.",
+     "chat": [
+      "1. Arrr! Yar! Let's be on our way, yar!"
+     ]
+    },
+    {
+     "text": "Climb the ladders, and board the pirate ship. Talk to Captain Bentley about sailing to Lunar Isle.",
+     "chat": [
+      "4. Can we sail to Lunar Isle now?"
+     ]
+    },
+    {
+     "text": "Speak to Captain Bentley again."
+    },
+    {
+     "text": "Climb down the nearby south stairs through the door, talk to 'Birds-Eye' Jack."
+    },
+    {
+     "text": "Climb back up the stairs and talk to Captain Bentley again.",
+     "chat": [
+      "2. Perhaps it's the Navigator's fault?"
+     ]
+    },
+    {
+     "text": "Climb back down the stairs and return to 'Birds-Eye' Jack again."
+    }
+   ]
+  },
+  {
+   "title": "Talking to the crew",
+   "notes": [
+    "NOTE: You must talk to them in order."
+   ],
+   "steps": [
+    {
+     "text": "Talk to 'Eagle-eye' Shultz at the very front (north-end deckside) of the ship."
+    },
+    {
+     "text": "Talk to the Cabin boy up one deck from the captain (south)."
+    },
+    {
+     "text": "Talk to 'Beefy' Burns on the lowest level of the ship."
+    },
+    {
+     "text": "Talk to 'Lecherous' Lee at the very top-rear of the ship."
+    },
+    {
+     "text": "Talk to First mate 'Davey-boy', on the deck level, south room."
+    },
+    {
+     "text": "Climb back up to the top, talk to the Cabin boy (2 inventory spaces required)."
+    }
+   ]
+  },
+  {
+   "title": "Searching for clues",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Use the emerald lens on the bullseye lantern you brought. Light it with your tinderbox."
+    },
+    {
+     "text": "If you didn't bring a lightable lantern, you can make lamp oil in Rimmington and add it to the bullseye lantern (unf) given by the Cabin boy, after using the emerald lens on it. If you lose your emerald lens for any reason, you can ask the Cabin boy for another one.",
+     "depth": 1
+    },
+    {
+     "text": "If you still own a sapphire lantern from the Tears of Guthix quest, you can use the emerald lens on the sapphire lantern.",
+     "depth": 1
+    },
+    {
+     "text": "Use the lantern on the following objects, and rub away the symbols:"
+    },
+    {
+     "text": "Cannon: Eastern cannon a few steps away (same level as Cabin boy).",
+     "depth": 1
+    },
+    {
+     "text": "Wallchart: Climb down the stairs, southern-most room (on the wallchart north of the long wooden table).",
+     "depth": 1
+    },
+    {
+     "text": "Chest: Lowest level of the ship, northern chest.",
+     "depth": 1
+    },
+    {
+     "text": "Support pillar: Also lowest level, just north of Beefy Burns, the cook.",
+     "depth": 1
+    },
+    {
+     "text": "Crate: Directly east of the cooking range.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Captain Bentley."
+    }
+   ]
+  },
+  {
+   "title": "Lunar Isle",
+   "notes": [
+    "Needed: Guam leaf, marrentill, a pestle and mortar, Seal of Passage, and combat equipment and food for Suqah. There is a bank available on the island."
+   ],
+   "steps": [
+    {
+     "text": "Climb down the ladders and walk into the city (there will be a small cut-scene)."
+    },
+    {
+     "text": "Run out of the city to the south-east part of the island. Talk to the Oneiromancer."
+    },
+    {
+     "text": "Kill Suqah (safespottable), until you've received a suqah tooth. Keep any hides you get as drops (you will need a total of 4 hides later in the quest, which you can also collect later)."
+    },
+    {
+     "text": "Return to the city, northern section. Enter the chicken house and talk to Baba Yaga (1 inventory space required).",
+     "chat": [
+      "2. The Oneiromancer told me you may be able to help..."
+     ]
+    },
+    {
+     "text": "Exit the house and use the vial on a nearby water source."
+    },
+    {
+     "text": "Add the Guam leaf and marrentill to your vial.",
+     "depth": 1
+    },
+    {
+     "text": "Ironmen: If you have guam and marrentill to get rid of, now is a good time do so for Herblore experience (~10,000 xp/hr). Destroy the vial after creating the guam-marr vial, reobtain one from Baba Yaga, and repeat.",
+     "depth": 1
+    },
+    {
+     "text": "Grind the Suqah tooth and use it on the vial to complete the potion.",
+     "depth": 1
+    },
+    {
+     "text": "Return to the Oneiromancer with the potion."
+    }
+   ]
+  },
+  {
+   "title": "Lunar Staff",
+   "notes": [
+    "Needed: Dramen staff, (air, fire, water, and earth talisman) or (air, fire, water, and earth tiara) or (elemental talisman) or access to the Abyss.",
+    "Recommended: Amulet of glory or ring of dueling (if using the abyss)",
+    "Note: if using fairy rings, you can not use lunar staves for fairy ring transport at this point in the quest."
+   ],
+   "steps": [
+    {
+     "text": "Use your Dramen staff/staves on the following altars in order:"
+    },
+    {
+     "text": "Air Altar (south of Falador).",
+     "depth": 1
+    },
+    {
+     "text": "Fire Altar (north of Al Kharid entrance of Emir's Arena).",
+     "depth": 1
+    },
+    {
+     "text": "Water Altar (Lumbridge Swamp).",
+     "depth": 1
+    },
+    {
+     "text": "Earth Altar (north-east of Varrock).",
+     "depth": 1
+    },
+    {
+     "text": "Travel back to Lunar Isle and give the Lunar staff to the Oneiromancer. Do not forget to bring your Seal of Passage."
+    }
+   ]
+  },
+  {
+   "title": "Ceremonial clothes",
+   "notes": [
+    "Needed: 600 coins, Seal of Passage, a pickaxe, hammer, a needle, 2 thread, a spade, 4 Suqah hide, and combat equipment and food for Suqah",
+    "Recommended: Amulet of glory or ring of dueling (if using the abyss), runes for Superheat Item"
+   ],
+   "steps": [
+    {
+     "text": "In the north-eastern part of the isle, climb down ladder to the Lunar Mine."
+    },
+    {
+     "text": "Mine a stalagmite for 1 lunar ore. Grab three extra ores to save time during The Fremennik Exiles quest."
+    },
+    {
+     "text": "Smelt the ore at a furnace or superheat the ore to receive a lunar bar (closest furnace and anvil is in Rellekka)."
+    },
+    {
+     "text": "With a hammer, use the bar on an anvil to make the helm."
+    },
+    {
+     "text": "Go back to the Lunar Isle."
+    },
+    {
+     "text": "North-west in the city, talk to Pauline Polaris (1 inventory space required) Note: The chat options appear in a random order when guessing her real name. First guess must be Pauline. Pick the option that says \"Jane Blud-Hagic-Maid.\""
+    },
+    {
+     "text": "South in the city, talk to Meteora."
+    },
+    {
+     "text": "Kill Suqahs until one drops a special tiara. Keep up to 4 hides the Suqahs drop. Make sure you have at least 4 hides."
+    },
+    {
+     "text": "Give Meteora the tiara."
+    },
+    {
+     "text": "South of the bank, talk to Rimae Sirsalis about ceremonial clothes.",
+     "chat": [
+      "2. You know the ceremonial clothes?"
+     ]
+    },
+    {
+     "text": "Talk to Rimae Sirsalis again, she will tan your hides.",
+     "chat": [
+      "2. You know the ceremonial clothes?",
+      "1. That seems like a fair deal."
+     ]
+    },
+    {
+     "text": "Craft a Lunar torso, trousers, gloves and boots from your hides."
+    },
+    {
+     "text": "Centre of the city, talk to Selene.",
+     "chat": [
+      "2. I'm looking for a ring."
+     ]
+    },
+    {
+     "text": "Exit the city and run south then west past the two bridges. With your spade, dig up the blue flowers furthest west to receive the lunar ring. (You must click continue on the chatbox!)"
+    },
+    {
+     "text": "Give the Oneiromancer all your lunar gear. She will then give you all the items back. You will need to have 11 inventory spaces free (8 for your lunar gear and 3 other spaces) or you cannot continue."
+    }
+   ]
+  },
+  {
+   "title": "Dreamville",
+   "notes": [
+    "Needed: Tinderbox, axe (optional), Seal of Passage, kindling, lunar gear, Waking sleep vial, combat spells to fight Me (level 79), food (recommended)"
+   ],
+   "steps": [
+    {
+     "text": "Use the Waking sleep vial on the kindling you received."
+    },
+    {
+     "text": "Get your combat runes and supplies and wear all your lunar items (but do NOT bank your Seal of Passage). 4 inventory spaces are required."
+    },
+    {
+     "text": "Enter a long building on the western side of the village that has a ceremonial brazier and a staircase inside."
+    },
+    {
+     "text": "Light the ceremonial brazier then use the kindling on it."
+    },
+    {
+     "text": "Talk to the Ethereal Being."
+    },
+    {
+     "text": "If you logout during the dream state you will have to speak to the Oneiromancer again to retrieve the Waking sleep vial and kindling."
+    }
+   ]
+  },
+  {
+   "title": "Dicing",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Step on the south-western yellow platform."
+    },
+    {
+     "text": "Talk to Ethereal Fluke."
+    },
+    {
+     "text": "He will call out a number, you need to make the dice add up to the number he called. Roll the dice for the numbers in the answer that are not on the dice. E.g. for number 12, roll any dice that are numbers 4, 5 or 6."
+    },
+    {
+     "text": "He will teleport you back to the centre area after 5-6 correct answers."
+    },
+    {
+     "text": "Talk to the Ethereal Being."
+    }
+   ]
+  },
+  {
+   "title": "Number sequence",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Step on the south-eastern purple platform."
+    },
+    {
+     "text": "Talk to Ethereal Numerator."
+    },
+    {
+     "text": "Click on the numbers to complete the patterns:"
+    },
+    {
+     "text": "He eventually teleports you back to the middle."
+    },
+    {
+     "text": "Talk to the Ethereal Being."
+    }
+   ]
+  },
+  {
+   "title": "Logging race",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Step on the north-eastern blue platform."
+    },
+    {
+     "text": "Talk to Ethereal Perceptive. If you don't have an axe, he'll give you one.",
+     "chat": [
+      "1. Ok, let's go!"
+     ]
+    },
+    {
+     "text": "Run west and chop 20 logs, depositing them on your log pile. (Warning: Pick up any items you dropped before handing in last log or you will be teleported away without time to grab them.)"
+    },
+    {
+     "text": "He will teleport you once you've won the competition."
+    },
+    {
+     "text": "Talk to the Ethereal Being."
+    }
+   ]
+  },
+  {
+   "title": "Memorization",
+   "depth": 1,
+   "notes": [
+    "Patterns are when facing north."
+   ],
+   "steps": [
+    {
+     "text": "Step on the north-western grey platform."
+    },
+    {
+     "text": "Talk to Ethereal Guide."
+    },
+    {
+     "text": "Cross the chasm by jumping on the correct combination of Dream Puffs. Keep a note of the correct steps!"
+    },
+    {
+     "text": "Once complete, talk to the Ethereal Being."
+    }
+   ]
+  },
+  {
+   "title": "The race",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Step on the eastern grey platform."
+    },
+    {
+     "text": "Talk to Ethereal Expert and start the race.",
+     "chat": [
+      "1. Ok."
+     ]
+    },
+    {
+     "text": "Turn on run, and keep it on while jumping the hurdles."
+    },
+    {
+     "text": "Jump over the Hurdles. If you fail 3 times you will lose the race."
+    },
+    {
+     "text": "After you have won talk to the Ethereal Being."
+    }
+   ]
+  },
+  {
+   "title": "Copy cat",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Step on the south-eastern green platform."
+    },
+    {
+     "text": "Talk to Ethereal Mimic.",
+     "chat": [
+      "1. Suppose I may as well have a go."
+     ]
+    },
+    {
+     "text": "Click on him, then copy the emote that he performs. He teleports after each correct emote."
+    },
+    {
+     "text": "After 5 correct emotes, he'll teleport you back."
+    }
+   ]
+  },
+  {
+   "title": "Defeating Me",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to the Ethereal Being to begin the final fight.",
+     "chat": [
+      "1. Of course. I'm ready."
+     ]
+    },
+    {
+     "text": "Kill Me (level 79, safespottable). (Cannot tele from this area, must kill Me or log out.)"
+    },
+    {
+     "text": "You cannot equip any different equipment when fighting Me, however you can bring combat runes to make the fight drastically easier. A tome of fire or any shield slot item can be used if equipped before entering the dream.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Finishing up",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Read the lectern to return to Lunar Isle."
+    },
+    {
+     "text": "With the seal of passage equipped or in your inventory talk to the Oneiromancer."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

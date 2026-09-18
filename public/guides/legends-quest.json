@@ -1,0 +1,414 @@
+{
+ "id": "legends-quest",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Legends'_Quest%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Radimus Erkle",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to a Legends' Guard east of Ardougne. Fairy ring BLR.",
+     "chat": [
+      "3. Can I speak to someone in charge?",
+      "1. Can I go on the quest?",
+      "2. Yes, I'd like to talk to Grand Vizier Erkle."
+     ]
+    },
+    {
+     "text": "Talk to Radimus. (A machete can be obtained from the cupboards next to Radimus Erkle. Papyrus can be obtained on the table next to him.)",
+     "chat": [
+      "1. Yes actually, what's involved?",
+      "1. Yes, it sounds great!"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Kharazi Jungle",
+   "notes": [
+    "Items needed: Radimus notes or 30 coins if lost, 3-5 papyrus, 1-3 charcoal, an axe, a machete, agility potion or summer pie (for boosting to 50 Agility). Recommended: Antipoison+"
+   ],
+   "steps": [
+    {
+     "text": "Head to the Kharazi Jungle, south of Shilo Village (fairy ring CKR or gnome glider to Karamja (aka Gandius) then cross the stepping stones towards the south-west). You will need to chop through the jungle bush. (You can get papyrus and charcoal from Shilo village General store, if needed)"
+    },
+    {
+     "text": "Note: The vanilla pod needed for Recipe for Disaster/Freeing Sir Amik Varze is accessible at this point. It is on the southern coast between the West and Middle sections of the jungle. Finish the mapping before leaving to save yourself a trip. You do not need to have started the subquest in order to pick the vanilla pod."
+    },
+    {
+     "text": "Start mapping on either the east or west to save having to backtrack. For each part of the jungle (west, middle, and east), right-click Radimus notes and select the 'complete' option. Make sure you successfully map a section before moving to the next."
+    },
+    {
+     "text": "Use the notes on a Jungle forester south of Shilo to obtain the bullroarer. (If they don't want it, read the map first)",
+     "chat": [
+      "1. Yes, go ahead make a copy!"
+     ]
+    },
+    {
+     "text": "Cut your way back into the Kharazi Jungle."
+    },
+    {
+     "text": "Swing the bullroarer by a totem pole to summon Gujuo (if it doesn't work, try another totem pole)."
+    },
+    {
+     "text": "Talk to Gujuo.",
+     "chat": [
+      "1. I was hoping to attract the attention of a native.",
+      "1. I want to develop friendly relations with your people.",
+      "1. Can you get your people together?",
+      "1. What can we do instead then?",
+      "1. How do we make the totem pole?",
+      "1. I will release Ungadulu..."
+     ]
+    },
+    {
+     "text": "Search the Mossy rock at the north-western section of the jungle and crawl inside. (50 Agility required)"
+    },
+    {
+     "text": "Investigate the Fire Wall.",
+     "chat": [
+      "1. How can I extinguish the flames?",
+      "1. Where do I get pure water from?"
+     ]
+    },
+    {
+     "text": "Leave the cave and use the bullroarer again.",
+     "chat": [
+      "4. I need some pure water to douse some magic flames.",
+      "5. Where is the pool of sacred water?",
+      "5. What kind of a vessel?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Sacred pool",
+   "notes": [
+    "Items needed: Radimus notes, lockpick, soul rune, mind rune, earth rune, 2 law runes (bring extra runes to avoid an extra trip if lost), opal, jade, red topaz, sapphire, emerald, ruby, diamond, 2 gold bars, hammer, at least 42 prayer points, sketch, a pickaxe, an axe, machete, bullroarer. You need at least 42 prayer points to attempt to enchant the golden bowl, so you may need to boost as failing causes you to lose prayer points. (If you are boosting mining with a Dwarven stout(m) bring a restore for the next gate - requiring 50 strength)"
+   ],
+   "steps": [
+    {
+     "text": "Use 2 gold bars on an anvil (barbarian anvils do not work) with a hammer to smith a golden bowl. You can fail this. You no longer need a hammer nor the sketch after this step."
+    },
+    {
+     "text": "Use the bullroarer in Kharazi Jungle and have Gujuo enchant the bowl.",
+     "chat": [
+      "1. Yes, I'd like you to bless my gold bowl."
+     ]
+    },
+    {
+     "text": "This requires 42 prayer points, and you can fail this.",
+     "depth": 1
+    },
+    {
+     "text": "Go to the Water Pool (west of the centre of the jungle), use your machete on the nearby reeds, and use the reeds on the pool."
+    },
+    {
+     "text": "Enter the cave to the north-west again and search the eastern bookcase to squeeze through the crevice behind it."
+    },
+    {
+     "text": "Use your lockpick on the gate, then smash the three boulders (failing to smash a boulder can reduce your Mining level by 1, bring a restore potion if needed)."
+    },
+    {
+     "text": "Push open the next gate (requires 50 Strength) then walk south-west then north-west until you reach a marked wall, jumping over the jagged walls on the way. (Kill a death wing for the Hard Karamja Diary if needed)"
+    },
+    {
+     "text": "Search the marked wall. If you fail to do this first, your runes will be consumed and you'll need more."
+    },
+    {
+     "text": "Use your runes on the marked wall in order (Soul, Mind, Earth, Law, Law)."
+    },
+    {
+     "text": "Use the cut gems on the carved rocks (not the ore rocks). Use the map on the right to see which gem goes where."
+    },
+    {
+     "text": "Pick up the binding book and read it."
+    }
+   ]
+  },
+  {
+   "title": "Fighting Nezikchened",
+   "notes": [
+    "Items needed: Radimus notes, axe, machete, binding book, golden bowl, bullroarer, combat equipment; Prayer potions are highly recommended as prayer is drained at the start of the fight"
+   ],
+   "steps": [
+    {
+     "text": "Teleport out to prepare for the fight against Nezikchened, and return to the first room of the cave."
+    },
+    {
+     "text": "Refill your bowl with sacred water, if needed. (Leaving the jungle has a chance to evaporate the water.)"
+    },
+    {
+     "text": "Use the golden bowl (be sure it is filled with sacred water) on the fire surrounding Ungadulu."
+    },
+    {
+     "text": "Use the binding book on Ungadulu (careful not to left-click attack him)."
+    },
+    {
+     "text": "Defeat Nezikchened. (Lvl-187)."
+    },
+    {
+     "text": "Your prayer will be drained to 1/10 of your level at the beginning of the fight. If you take too long to kill Nezikchened, he will de-spawn and you must leave the circle and repeat the water & binding book steps.",
+     "depth": 1
+    },
+    {
+     "text": "Ranged or melee with Protect from Melee activated is recommended, as he has high magic resistance.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Ungadulu (careful not to left-click attack).",
+     "chat": [
+      "1. I need to collect some Yommi tree seeds for Gujuo.",
+      "1. How do I grow the Yommi tree?",
+      "1. What will you do now?",
+      "2. How do I get out of here?",
+      "3. Ok, thanks..."
+     ]
+    },
+    {
+     "text": "Exit, then summon and speak with Gujuo.",
+     "chat": [
+      "1. Ungadulu is free, he was possessed by a demon and I killed it.",
+      "2. What do I do now?",
+      "3. Ok thanks for your help."
+     ]
+    },
+    {
+     "text": "Use your bowl of water on the seeds."
+    },
+    {
+     "text": "Cut some more reeds and attempt to refill the bowl."
+    },
+    {
+     "text": "Call and talk with Gujuo.",
+     "chat": [
+      "1. The water pool has dried up and I need more water.",
+      "2. Where is the source of the spring of pure water?",
+      "2. If I went, could you help me?",
+      "5. Ok thanks for your help."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Restoring the pool",
+   "notes": [
+    "Items needed: Radimus notes, ardrigal, snake weed, vial of water, means to cast any Charge Orb spell (double amount if choosing long/\"good\" path), an unpowered orb (two if choosing long/\"good\" path), blessed gold bowl, Yommi tree seeds, a lockpick, a rope, a pickaxe, combat equipment, food, prayer potion(s), Rune or Dragon axe (Any other axe will not work) and a machete. It is recommended to bring more than 1 lockpick if you can, in case you break it."
+   ],
+   "steps": [
+    {
+     "text": "Using the map above, collect the ardrigal (search the large-leaved palm trees) and snake weed (search one of the marshy jungle vines) if extra were not obtained during Jungle Potion. Mix them with a vial of water for a bravery potion."
+    },
+    {
+     "text": "Drink the potion now to save space. Prepare to go through the cave again. You do not need the SMELL runes."
+    },
+    {
+     "text": "Go through the cave to the chamber with the gem-pools where you found the binding book. Cast the charge orb spell on the north gate."
+    },
+    {
+     "text": "Use your rope on the winch and climb down. Drink the bravery potion first if you haven't already"
+    },
+    {
+     "text": "If you forgot a rope, smash a barrel. A monster may spawn from the barrel.",
+     "depth": 1
+    },
+    {
+     "text": "You can fall and will take a large amount of damage (10-20), so be sure your health is high.",
+     "depth": 1
+    },
+    {
+     "text": "The rope is not needed for future visits; search the winch to find your rope again.",
+     "depth": 1
+    },
+    {
+     "text": "Do not interact with the blue hat if you wish to choose the \"good\" path."
+    },
+    {
+     "text": "Climb over the rocks to reach the bottom. You can again fall and take a lot of damage (40+)."
+    },
+    {
+     "text": "Kill each of the 3 different skeletons (Lvl-106, Lvl-100, and Lvl-92) to get the 3 crystal pieces."
+    },
+    {
+     "text": "Use each crystal piece on the north-east furnace."
+    },
+    {
+     "text": "There is 1 searchable mossy rock in the middle of this room. Use the heart on it."
+    },
+    {
+     "text": "Run south-east and use the heart on the recess next to the barrier. Walk through the barrier."
+    },
+    {
+     "text": "Push one of the boulders to the west and then talk to Echned Zekin.",
+     "chat": [
+      "2. Who's asking?",
+      "1. What can I do about that?",
+      "1. I'll do what I must to get the water.",
+      "1. Ok, I'll do it."
+     ]
+    },
+    {
+     "text": "For the \"evil\" short path:"
+    },
+    {
+     "text": "Climb back to the top of the ridge, equip the dagger, try to take the hat, and kill Viyeldi by attacking him during the dialogue. Your dagger will be glowing after this step. Make sure this is the case before you go back down the ridge.",
+     "depth": 1
+    },
+    {
+     "text": "Warning: a level 187 demon will spawn as soon as this step is complete and drain your prayer points prior to the fight",
+     "depth": 1
+    },
+    {
+     "text": "Go back and push the boulder. The ghost will take the dagger from you.",
+     "depth": 1
+    },
+    {
+     "text": "Defeat Nezikchened.",
+     "depth": 1
+    },
+    {
+     "text": "Push the boulder.",
+     "depth": 1
+    },
+    {
+     "text": "Fill your bowl with water and use it on your seeds if you haven't done so already.",
+     "depth": 1
+    },
+    {
+     "text": "Note: Teleporting will evaporate the water! However, the water pool is now restored and you can get the water from there.",
+     "depth": 1
+    },
+    {
+     "text": "For the \"good\" long path:"
+    },
+    {
+     "text": "Do not try to pick up the blue hat or talk to Viyeldi.",
+     "depth": 1
+    },
+    {
+     "text": "Teleport out and bank if desired for traversing the cave again.",
+     "depth": 1
+    },
+    {
+     "text": "Go back to the beginning of the cave. Investigate the fire wall to pass through.",
+     "depth": 1
+    },
+    {
+     "text": "Use the dark dagger on Ungadulu.",
+     "depth": 1
+    },
+    {
+     "text": "Head back into the cave as before, using another Charge Orb spell on the door.",
+     "depth": 1
+    },
+    {
+     "text": "Push the boulder.",
+     "depth": 1
+    },
+    {
+     "text": "Do not tell Zekin you lost the dagger; instead, cast the Holy Force spell to reveal his true form.",
+     "depth": 1
+    },
+    {
+     "text": "Defeat Nezikchened.",
+     "depth": 1
+    },
+    {
+     "text": "Push the far west boulder out of the way, and collect sacred water.",
+     "depth": 1
+    },
+    {
+     "text": "Note: Teleporting will evaporate the water! However, the water pool is now restored and you can get the water from there.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Yommi tree & the final fight",
+   "notes": [
+    "Items needed: Yommi totem, Radimus notes, bullroarer, combat equipment, axe & machete (if you banked before fight) (You need the sacred water and seeds at this step since the totem isn't created yet.)"
+   ],
+   "steps": [
+    {
+     "text": "Skills needed: 45 Herblore (boostable) Use the germinated seeds on the fertile soil patch (8 steps north and 5 steps west of the pool). Note: It is possible to be unsuccessful when planting the seeds. Plant the seeds again until a sapling grows. If more seeds are needed, visit the cave and speak to Ungadulu for more."
+    },
+    {
+     "text": "Once planted, the yommi bush will grow leaves. Use the sacred water on it and it will become an adult yommi tree."
+    },
+    {
+     "text": "Use your axe on the adult yommi tree. Use your axe on the downed tree twice to make it into a totem."
+    },
+    {
+     "text": "The yommi tree will rot if you take too much time before carving it and you will need to redo the process, including getting sacred water.",
+     "depth": 1
+    },
+    {
+     "text": "Lift it from the ground and you will now have a yommi totem in your inventory."
+    },
+    {
+     "text": "If \"evil\" path was chosen:"
+    },
+    {
+     "text": "Turn on Protection from Melee before the next step, as you will take 4 hits without being able to move, eat, or turn on prayers - you can get hit for up to 72 damage all on the same tick. It is recommended to keep praying at all times.",
+     "depth": 1
+    },
+    {
+     "text": "Use your totem on any old, brown totem pole.",
+     "depth": 1
+    },
+    {
+     "text": "Kill the three skeletons that appear one at a time, then kill Nezikchened. Keep your prayer active after each skeleton dies, as Nezikchened will reappear and hit you four more times.",
+     "depth": 1
+    },
+    {
+     "text": "If \"good\" path was chosen:"
+    },
+    {
+     "text": "Turn on Protection from Melee before the next step, as you will take 4 hits without being able to move, eat, or turn on prayers - you can get hit for up to 72 damage all on the same tick. It is recommended to keep praying at all times.",
+     "depth": 1
+    },
+    {
+     "text": "Use your totem on any old, brown totem pole.",
+     "depth": 1
+    },
+    {
+     "text": "Turn on Protect from Melee and defeat Nezikchened.",
+     "depth": 1
+    },
+    {
+     "text": "Use your totem on the pole again."
+    },
+    {
+     "text": "Gujuo will appear and give you a gilded totem. If he doesn't show up, swing the bullroarer."
+    },
+    {
+     "text": "Collect 5 palm leaves by shaking a Leafy Palm Tree near the Water Pool for the Karamja Hard Diary if needed (you can drop and pick up the same palm leaf several times)."
+    },
+    {
+     "text": "Collect a vanilla pod south-west of the Water Pool for Recipe for Disaster if needed."
+    }
+   ]
+  },
+  {
+   "title": "Finishing up",
+   "notes": [
+    "Items needed: Gilded totem, Radimus notes"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Radimus at the Legends Guild (fairy ring BLR) with the gilded totem AND Radimus notes."
+    },
+    {
+     "text": "Talk to Radimus again in the main guild hall and select four skills for training."
+    },
+    {
+     "text": "Talk to Radimus one more time."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

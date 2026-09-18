@@ -1,0 +1,254 @@
+{
+ "id": "the-forsaken-tower",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/The_Forsaken_Tower%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Start",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Lady Vulcana Lovakengj in the Lovakengj Assembly building to the west of the southern bank. (Xeric's Talisman, Xeric's Inferno)",
+     "chat": [
+      "1. Yes.",
+      "3. I'll get going."
+     ]
+    },
+    {
+     "text": "Go to the Wintertodt camp (Games necklace teleport)."
+    },
+    {
+     "text": "Talk to Ignisia in the north-east of the camp if you haven't previously done so.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to the dwarf Undor inside the camp.",
+     "chat": [
+      "4. I've been sent to help you."
+     ]
+    },
+    {
+     "text": "If he tells you to talk to the \"Fiery lass\" Talk to Ignisia just to the north east, before returning to him.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Powergrid",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Go to The Forsaken Tower to the east of Mount Karuulm, west of Lovakengj (north-east of fairy ring CIR, Battlefront Teleport or Skills necklace to Farming Guild)."
+    },
+    {
+     "text": "Inspect the Display Case."
+    },
+    {
+     "text": "Go down the ladder behind the Display Case and open the north-eastern door."
+    },
+    {
+     "text": "Search the north-north-east crate for a generator crank."
+    },
+    {
+     "text": "Inspect the steam generator in the south.",
+     "chat": [
+      "1. Start the generator."
+     ]
+    },
+    {
+     "text": "Start the generator.",
+     "depth": 1
+    },
+    {
+     "text": "Inspect the Power Grid.",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Align the Power Grid as shown below.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Furnace",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Go up the ladder and then into the northern room. Search the cupboards for a tinderbox, 5-gallon jug, and 8-gallon jug."
+    },
+    {
+     "text": "Fill the 5-gallon jug with coolant through the coolant dispenser in the west.",
+     "depth": 1
+    },
+    {
+     "text": "Use the 5-gallon jug on the empty 8 gallon jug.",
+     "depth": 1
+    },
+    {
+     "text": "Fill the 5-gallon jug with coolant.",
+     "depth": 1
+    },
+    {
+     "text": "Use the 5-gallon jug on the 8 gallon jug.",
+     "depth": 1
+    },
+    {
+     "text": "Empty the 8 gallon jug (right-click check).",
+     "depth": 1
+    },
+    {
+     "text": "Use the 5-gallon jug on the empty 8 gallon jug (there should be 2 gallons in the jug).",
+     "depth": 1
+    },
+    {
+     "text": "Fill the 5-gallon jug with coolant.",
+     "depth": 1
+    },
+    {
+     "text": "Use the 5-gallon jug on the 8 gallon jug.",
+     "depth": 1
+    },
+    {
+     "text": "Fill the 5-gallon jug with coolant.",
+     "depth": 1
+    },
+    {
+     "text": "Use the 5-gallon jug on the 8 gallon jug.",
+     "depth": 1
+    },
+    {
+     "text": "You should now have 4 gallons of coolant in the 5-gallon jug. Use it on the furnace coolant west of the furnace, then light the furnace with the tinderbox.",
+     "depth": 1
+    },
+    {
+     "text": "If doing the diary task, smelt the adamantite bar now."
+    }
+   ]
+  },
+  {
+   "title": "Potion",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Go upstairs."
+    },
+    {
+     "text": "Open the door, then take the notes from the eastern cupboard."
+    },
+    {
+     "text": "Take the cleansing fluid from the northern table. The position will be random for everyone. Look at the notes to see the riddle: the fluids are listed in order of 1-2-3-4-5 (e.g. if cleansing fluid is the second potion mentioned in the fourth sentence, it is number 5)."
+    },
+    {
+     "text": "Warning: If you choose the wrong potion, you will take high damage (25+) and become poisoned. This can be avoided by logging out before advancing the dialogue.",
+     "depth": 1
+    },
+    {
+     "text": "Use the cleansing fluid on the refinery to the south, then activate it",
+     "chat": [
+      "1. Yes.",
+      "1. Yes."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Altar",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Go up the ladder."
+    },
+    {
+     "text": "There are four discs. In the following order, remove a disc from a pylon and place it on another pylon:"
+    },
+    {
+     "text": "From West (W) to East (E)",
+     "depth": 1
+    },
+    {
+     "text": "From W to Centre (C)",
+     "depth": 1
+    },
+    {
+     "text": "From E to C",
+     "depth": 1
+    },
+    {
+     "text": "From W to E",
+     "depth": 1
+    },
+    {
+     "text": "From C to W",
+     "depth": 1
+    },
+    {
+     "text": "From C to E",
+     "depth": 1
+    },
+    {
+     "text": "From W to E",
+     "depth": 1
+    },
+    {
+     "text": "From W to C",
+     "depth": 1
+    },
+    {
+     "text": "From E to C",
+     "depth": 1
+    },
+    {
+     "text": "From E to W",
+     "depth": 1
+    },
+    {
+     "text": "From C to W",
+     "depth": 1
+    },
+    {
+     "text": "From E to C",
+     "depth": 1
+    },
+    {
+     "text": "From W to E",
+     "depth": 1
+    },
+    {
+     "text": "From W to C",
+     "depth": 1
+    },
+    {
+     "text": "From E to C",
+     "depth": 1
+    },
+    {
+     "text": "Go downstairs and get Dinh's hammer from the display case."
+    }
+   ]
+  },
+  {
+   "title": "Finishing up",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Return to Wintertodt Camp."
+    },
+    {
+     "text": "Use the hammer on Undor."
+    },
+    {
+     "text": "Return to Lady Vulcana Lovakengj."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

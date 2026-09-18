@@ -1,0 +1,119 @@
+{
+ "id": "prying-times",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Prying_Times%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Crate of looty",
+   "notes": [
+    "Needed: Captain's log"
+   ],
+   "steps": [
+    {
+     "text": "With your Captain's log in your inventory and an open task slot, talk to 'Squawking' Steve Beanie in the Pandemonium Pub to accept the courier task.",
+     "chat": [
+      "3. Got any work that needs doing here?",
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Sail to Port Sarim, dock, and disembark."
+    },
+    {
+     "text": "With both hands empty, take the crate of looty from the ledger table.",
+     "depth": 1
+    },
+    {
+     "text": "Board your vessel and deposit the crate into the cargo hold."
+    },
+    {
+     "text": "Sail back south to The Pandemonium."
+    },
+    {
+     "text": "Dock your vessel, withdraw the crate from the cargo hold, and disembark.",
+     "depth": 1
+    },
+    {
+     "text": "Deposit the crate at the ledger table on the docks.",
+     "depth": 1
+    },
+    {
+     "text": "Return to 'Squawking' Steve Beanie.",
+     "chat": [
+      "3. I delivered that cargo for you."
+     ]
+    },
+    {
+     "text": "If needed, take a hammer from the crate next to Junior Jim before leaving The Pandemonium.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Crowbar",
+   "notes": [
+    "Needed: Steel bar, hammer, redberry pie"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Thurgo at Mudskipper Point, south of Port Sarim.",
+     "chat": [
+      "3. I need some help with a 'special key'.",
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "If Below Ice Mountain has been completed, select option 4 instead of 3.",
+     "depth": 1
+    },
+    {
+     "text": "The fairy ring AIQ is closest to Thurgo.",
+     "depth": 1
+    },
+    {
+     "text": "With the hammer in your inventory, give him the steel bar and redberry pie to receive a crowbar.",
+     "depth": 1
+    },
+    {
+     "text": "Return to 'Squawking' Steve Beanie in the Pandemonium Pub.",
+     "chat": [
+      "3. I made that 'special key' you needed."
+     ]
+    },
+    {
+     "text": "Captain Tobias can take you from Port Sarim to The Pandemonium for 30 coins.",
+     "depth": 1
+    },
+    {
+     "text": "Sail to the small island north-west of The Pandemonium and find the floating sealed crate."
+    },
+    {
+     "text": "Withdraw the crowbar from your cargo hold and pry open the crate while aboard your vessel.",
+     "depth": 1
+    },
+    {
+     "text": "Drink the bottle of fish bladder stout.",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Defeat the drink troll that spawns, or disembark from your vessel to avoid the fight.",
+     "depth": 1
+    },
+    {
+     "text": "Sail back to The Pandemonium and talk to 'Squawking' Steve Beanie.",
+     "chat": [
+      "3. About that crate..."
+     ]
+    },
+    {
+     "text": "Open the sealed crate behind Steve with the crowbar."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

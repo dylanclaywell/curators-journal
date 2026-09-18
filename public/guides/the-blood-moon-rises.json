@@ -1,0 +1,742 @@
+{
+ "id": "the-blood-moon-rises",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/The_Blood_Moon_Rises%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting off",
+   "notes": [
+    "Needed: Vyre noble outfit, combat supplies.",
+    "Recommended: Drakan's medallion and to buy the blisterwood flail, if needed."
+   ],
+   "steps": [
+    {
+     "text": "Head to the Icyene Graveyard, accessed via the boat in either southern Burgh de Rott, Meiyerditch, or Slepe. Players can also use the Drakan's medallion teleport to Ver Sinhaza, exit into Meiyerditch, then run to the boat in the south-western corner of the area."
+    },
+    {
+     "text": "Bring 40,000 coins with you if you do not have a flail already.",
+     "depth": 1
+    },
+    {
+     "text": "Speak to Sarius Guile.",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Head to the hideout under Old Man Ral's house in Meiyerditch Via the Trap Door Located In the House."
+    },
+    {
+     "text": "Search the nearby chest to obtain a vyre noble outfit if you forgot to bring it."
+    },
+    {
+     "text": "Wear the vyre noble outfit, then inspect the makeshift shrine for a cutscene."
+    },
+    {
+     "text": "Talk to Ivan Strom.",
+     "chat": [
+      "1. So you're ready to go to Darkmeyer?",
+      "1. I'm ready."
+     ]
+    },
+    {
+     "text": "Prepare for a fight. The fight is a battle of endurance, you are required to protect yourself and Ivan from multiple vyrewatch and vyrewatch sentinels for several minutes."
+    },
+    {
+     "text": "Pray Protect from Melee, and attack all the vyrewatch to keep them from damaging Ivan.",
+     "depth": 1
+    },
+    {
+     "text": "You can heal Ivan with food when he is low health.",
+     "depth": 1
+    },
+    {
+     "text": "Acidic bloodveld will spawn which you must kill before they reach Ivan.",
+     "depth": 1
+    },
+    {
+     "text": "You will initially be attacked by 3 vyrewatch. If you kill one, another will spawn. As the fight progresses, a magic-using vyrewatch sentinel will spawn, with two further sentinels spawning throughout the encounter.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Ivan afterwards, and he'll tell you to meet up at the church in Slepe."
+    }
+   ]
+  },
+  {
+   "title": "The Truth Hurtz",
+   "notes": [
+    "Needed: Pickaxe (obtainable from Ivan) and combat supplies.",
+    "Recommended: Drakan's medallion, Stamina Potion, Dramen Staff, Fairy Ring Teleport / Teleport To House",
+    "Those with lower stats should consider bringing a method of stat restoration such as a Super Restore Potion as the Monks of Zamorak below will lower your stats temporarily. Leave six inventory spaces free and make sure you do not have a pet out."
+   ],
+   "steps": [
+    {
+     "text": "Travel to Slepe, either via Drakan's medallion teleport to Slepe, or if that is not unlocked, teleport to Ver Sinhaza and run north to Slepe."
+    },
+    {
+     "text": "Talk to Ivan Strom in Slepe, just west of the church.",
+     "chat": [
+      "1. Let's get going."
+     ]
+    },
+    {
+     "text": "Go into the Slepe pub and ask the bartender Roy about a friend.",
+     "chat": [
+      "2. We're looking for a friend of ours."
+     ]
+    },
+    {
+     "text": "Enter the Sisterhood Sanctuary through the stairs south of the church's graveyard."
+    },
+    {
+     "text": "Head north until reaching Kroy's laboratory, then climb the ladder to enter Crombwick Manor."
+    },
+    {
+     "text": "Help Veliaf Hurtz kill the five vyrewatches."
+    },
+    {
+     "text": "Talk to Veliaf."
+    },
+    {
+     "text": "Make your way to Drezel in Paterdomus Temple, which can be quickly reached via fairy ring (CKS)."
+    },
+    {
+     "text": "Talk to Ivan, read the squire's journal, then talk to Ivan again."
+    },
+    {
+     "text": "Head west through the mausoleum and up to the temple, then kill all the monks of Zamorak."
+    },
+    {
+     "text": "Head upstairs and talk to Ivan."
+    },
+    {
+     "text": "Search through the bookcases for six books. Place them books on the plinths in the following order (from north to south):"
+    },
+    {
+     "text": "Talk to Ivan to obtain Ivandis' writings, then read it."
+    },
+    {
+     "text": "Talk with him again to return to the mausoleum."
+    },
+    {
+     "text": "Stock up on supplies for a fight with multiple vyrewatches and sentinels."
+    },
+    {
+     "text": "When ready, return to Paterdomus and talk to Ivan or Veliaf.",
+     "chat": [
+      "1. Lead the way."
+     ]
+    },
+    {
+     "text": "Mine away the blockage immediately south of Ivan. If you do not have a pickaxe, talk to Ivan for a bronze pickaxe.",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Enter the blockage and head north-east through the tunnel."
+    },
+    {
+     "text": "There will be a few vyrewatches and vyrewatch sentinels to defeat inside. Focus on the sentinels first while praying protect from magic. They will occasionally spawn a blood orb that will do passive damage."
+    },
+    {
+     "text": "You can lure the vyrewatches into the blood orb to deal massive damage. Be sure to stay at least two tiles away from the orbs, or you will take damage as well.",
+     "depth": 1
+    },
+    {
+     "text": "If you die or teleport out of the fight, you can find it again by going into the Myreque Hideout, south of Canifis, then going through the closest hole after the hidden door. If you die, the grave is in Ivandis' Tomb.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Ivan."
+    },
+    {
+     "text": "Head north through the entry."
+    },
+    {
+     "text": "Head north-west and climb up either of the stairs."
+    },
+    {
+     "text": "Head east and pray to the shrine to unlock a teleport back here with Drakan's medallion."
+    },
+    {
+     "text": "Enter the portal at the centre of the room."
+    }
+   ]
+  },
+  {
+   "title": "Escape from Castle Drakan",
+   "notes": [
+    "During your time in Vampyrium, you will have access to unique supplies. Some of the supplies can be found as individual spawns or by searching chests in the castle.",
+    "Players can obtain:",
+    "These supplies can only be used within Vampyrium and cannot be banked.",
+    "Additionally before each major fight there is an object, e.g. a tent or table, which can be looted for an unlimited number of the supplies. These supply locations are usually located near where you spawn following a death. During fights with Drakan, players are supplied with unlimited quantities of the aforementioned Vampyrium combat supplies, allowing indefinite attempts at defeating him without needing to leave Vampyrium for supply runs.",
+    "Death also differs here in that you will respawn at predetermined checkpoints with all your items kept. However, hardcore ironmen will still lose their status if they die at any point during the quest.",
+    "The world map icon will be replaced with one of the castle, which shows the rooms you've visited, unlocked doors, and puzzles left to solve."
+   ],
+   "steps": [
+    {
+     "text": "Mysterious jerky, a high-healing food."
+    },
+    {
+     "text": "Smelly kebab, a fast food."
+    },
+    {
+     "text": "Foul chunky potions, a mix of super restore and prayer regeneration potions."
+    },
+    {
+     "text": "Putrid sticky potions, the equivalent of stamina potions."
+    },
+    {
+     "text": "Rank frothy potions, the equivalent of super combat potion."
+    },
+    {
+     "text": "Rancid slimy potions, similar to a Saradomin brew but drains the same stats by 1 instead."
+    },
+    {
+     "text": "Jars of congealed blood, which immediately restores all Hitpoints and Prayer. Although only one of these may be taken from the supply chest at a time, more can be picked up throughout the castle regardless of how many you already have."
+    }
+   ]
+  },
+  {
+   "title": "Fixing the clocks",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "With (A) as the starting point on the map, Pick up and read the poem scroll on the table just south (B)."
+    },
+    {
+     "text": "Go through the east door and then search the throne (C), which will reveal four levers in the busts to the east."
+    },
+    {
+     "text": "From north to south, pull the 3rd, 4th, 1st, and 2nd busts in that order"
+    },
+    {
+     "text": "Search the throne again for the half moon key."
+    },
+    {
+     "text": "Go through the south door, then search the shelves (D) to the south-west to find the small clock hand."
+    },
+    {
+     "text": "Go through the doors to the north, then west, to return to the dining room."
+    },
+    {
+     "text": "Go through the west door using the half moon key to arrive in a corridor. Walk around the traps to avoid them."
+    },
+    {
+     "text": "Optionally, search the crate in the corridor to find mysterious jerky.",
+     "depth": 1
+    },
+    {
+     "text": "Go through the west door. Quickly search the crate for a tinderbox (E), then climb up the stairs."
+    },
+    {
+     "text": "Take the explosive barrel (F), then enter the south door. Search the crate for a Drakan emblem (G), then exit the room."
+    },
+    {
+     "text": "Go through the east door, then through the north door."
+    },
+    {
+     "text": "From the of the main entrance hall, go through either of the north doors."
+    },
+    {
+     "text": "Go through the north unmarked door (not the crescent moon door), then head to the south door (next to empty receptacle) while avoiding traps."
+    },
+    {
+     "text": "Place the Drakan emblem on the receptacle (H), then enter. Search the crate in the north-west corner for a large clock hand (I)."
+    },
+    {
+     "text": "Exit the room, then return through the western door while avoiding traps."
+    },
+    {
+     "text": "To the east of the crescent moon door is a lever (J); pull it to open a portal."
+    },
+    {
+     "text": "Enter the portal which will teleport you to (K), then use the south door, then the west door, to return to the dining room fireplace (L)"
+    },
+    {
+     "text": "Place the small hand on the western grandfather clock. Set the big hand to 11, and the small hand to 9."
+    },
+    {
+     "text": "Place the large hand on the eastern grandfather clock. Set the big hand to 12, and the small hand to 4."
+    },
+    {
+     "text": "Inspect the fireplace and select \"search\" to receive a second Drakan emblem."
+    }
+   ]
+  },
+  {
+   "title": "Crescent moon key",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Starting from (A), go through the west door, then north door, then up the stairs, then enter either north door."
+    },
+    {
+     "text": "Go through the north door next to the crescent moon door, then enter the south door (D)."
+    },
+    {
+     "text": "Place the Drakan emblem on the receptacle next to the east door (E)."
+    },
+    {
+     "text": "Enter the east door, then use the explosive barrel on the cracked wall to the south-east (C) to open a hole."
+    },
+    {
+     "text": "Enter the hole, run past or kill the venator."
+    },
+    {
+     "text": "Take the emblem out from the receptacle by the north door (F)."
+    },
+    {
+     "text": "Use the hole in wall again."
+    },
+    {
+     "text": "Use the west door. Take the emblem out from the door you just exited (E)."
+    },
+    {
+     "text": "Enter the north door, and take the emblem out from the door you just exited (D). You should have three emblems."
+    },
+    {
+     "text": "Place a Drakan emblem on the receptacle next to the east door (B), then enter."
+    },
+    {
+     "text": "Place a Drakan emblem on the door to the north, then enter."
+    },
+    {
+     "text": "Take the ornate skull off the table (G). Leave, and remove the emblem from the receptacle."
+    },
+    {
+     "text": "Climb down the stairs (H)."
+    },
+    {
+     "text": "While avoiding the trap in the corridor, place a Drakan emblem on the receptacle next to the only door in the corridor (I), then enter."
+    },
+    {
+     "text": "Place a Drakan emblem on the receptacle next to the west door (J), then enter to find Veliaf. Talk to him."
+    },
+    {
+     "text": "Search the chest on the northern wall (K) and enter the code: right, down, right, left, left. Unlocking the chest gives the crescent moon key, which can be used to unlock crescent moon doors."
+    },
+    {
+     "text": "The code to the chest is based on the order of the vampyres listed on the southern plaque, and the direction each is pointing in their respective painting.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "New moon key",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "From the chest room (A), go through the west door, then the south-westernmost door to enter a laboratory (B). Kill all the sanguidae."
+    },
+    {
+     "text": "Take the syringe barrel from the table."
+    },
+    {
+     "text": "Search the crate to the south-east for a venator stomach."
+    },
+    {
+     "text": "Inspect the sink to the west, and remove the sink plug."
+    },
+    {
+     "text": "Enter the north-west door (C). Use the sink plug on the sink, then turn the tap on when prompted."
+    },
+    {
+     "text": "Take the broken pipe from the sink. Use it on the nearby cabinet to receive a sharp knife."
+    },
+    {
+     "text": "Search the crate near the sink for the syringe plunger."
+    },
+    {
+     "text": "Return to the laboratory (B) through the south door."
+    },
+    {
+     "text": "Use the sharp knife on the venator corpse to receive a pair of tongs."
+    },
+    {
+     "text": "Use the tongs on the sink for a syringe needle. Use one of the syringe parts on another to assemble an empty syringe."
+    },
+    {
+     "text": "Use the empty syringe on the venator stomach to receive a full syringe."
+    },
+    {
+     "text": "Use the full syringe on the chest to receive a left crest half."
+    },
+    {
+     "text": "From the laboratory, exit through the north-east crescent moon door, then go through the nearest door to return to the main hall."
+    },
+    {
+     "text": "Climb down the stairs (D), then enter the first door on the south side (E). Deal with the venator; pray Protect from Melee or Missiles depending on distance, and turn it off when it is about to screech to avoid damage."
+    },
+    {
+     "text": "Search the weapons rack at the east end of the room."
+    },
+    {
+     "text": "The statues must be mirrored on the north and south sides of the rooms. From east to west, they should be holding battleaxes, spears, maces, and swords."
+    },
+    {
+     "text": "Search the chest to receive a right crest half. Combine it with the left to create the full crest."
+    },
+    {
+     "text": "Exit the basement through the north-west door, then up the stairs to the west, then from the portal room, go through the doors to the south-east, east, then north."
+    },
+    {
+     "text": "Use the full crest on the fireplace. Inspect the fireplace and select \"search\" to receive a new moon key."
+    }
+   ]
+  },
+  {
+   "title": "Gilded key",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "From the fireplace, return to the main hall by going through the south, west, then north doors."
+    },
+    {
+     "text": "Climb down the stairs to the basement, then enter the either of the doors on the north side (A) to initiate a cutscene where you free Safalaan and Vanescula."
+    },
+    {
+     "text": "Pick up the gibbous moon key."
+    },
+    {
+     "text": "Leave the jail room through either south door, climb up the stairs to the main hall, then climb up the stairs again to the."
+    },
+    {
+     "text": "Enter the south-east door (the gibbous moon door)."
+    },
+    {
+     "text": "Go through the east, south, then south-east doors. Search the crate for an ornate knife (B)."
+    },
+    {
+     "text": "Pull the lever on the western wall. Enter the portal, teleporting to (C). Then go through the north door."
+    },
+    {
+     "text": "Enter the gibbous moon door on the eastern wall. Kill the venator to prevent being disrupted from solving the room puzzle or just run past it."
+    },
+    {
+     "text": "Light the fireplace, then search the chest (D) just east for a lockbox."
+    },
+    {
+     "text": "Open the lockbox with the code (from left to right): the ⠿, the ᴟ, and symbol that looks like ⁘, to get a fancy gem."
+    },
+    {
+     "text": "The hint for this is obtained by inspecting the venator head for the code \"426\". The 4 banners in the room have the first symbol. The 2 shields have the second symbol. Lastly, the 6 braziers have the third symbol.",
+     "depth": 1
+    },
+    {
+     "text": "Enter the south-west door (E) by inputting the passcode \"SPEAR\"."
+    },
+    {
+     "text": "The hint for the south-west door's passcode is obtained by inspecting the ancestral dagger and reading the grid note, both of which are in the room.",
+     "depth": 1
+    },
+    {
+     "text": "One of the bookcases (F) will be searchable; do so for a mysterious book."
+    },
+    {
+     "text": "Open the book for another fancy gem, then leave the room."
+    },
+    {
+     "text": "Use both fancy gems on the mounted venator head to the east (G)."
+    },
+    {
+     "text": "Search the head for an ornate hourglass, then go through the west door."
+    },
+    {
+     "text": "Use the ornate skull, hourglass, and knife on the display case to the west (H). The order does not matter."
+    },
+    {
+     "text": "Search the display case for a gilded key."
+    }
+   ]
+  },
+  {
+   "title": "Full moon key",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "From the display case, climb down the staircase, then through the north door - beware of Sanguidae, quickly go through the west door after entering."
+    },
+    {
+     "text": "After this west door (the gilded door), go through the north-west door."
+    },
+    {
+     "text": "Kill the venator in the room, then talk to Ivan."
+    },
+    {
+     "text": "Search the northern bookcase for a gilded book."
+    },
+    {
+     "text": "Search the south-eastern bookcase for a vampyre book."
+    },
+    {
+     "text": "Use the gilded book on the western gilded bookcase, then inspect the books when prompted."
+    },
+    {
+     "text": "Rearrange the symbols of the Vampyric Houses in alphabetical order."
+    },
+    {
+     "text": "Enter the secret passage to the south. Take the full moon key from the table."
+    }
+   ]
+  },
+  {
+   "title": "Solid key",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Enter the east door, then the east gilded door."
+    },
+    {
+     "text": "Enter the unmarked north door."
+    },
+    {
+     "text": "Enter the easternmost door, while avoiding the traps."
+    },
+    {
+     "text": "Climb down the stairs, then run west and enter the door."
+    },
+    {
+     "text": "Enter the east full moon door. Kill the webbed-winged crows if necessary."
+    },
+    {
+     "text": "Search the north-west shelves and take one of each potion: cloudy grey, weightless black, thick red, and cold bluish-white."
+    },
+    {
+     "text": "Based on the inscriptions on the basin, place the potions in the following basins:"
+    },
+    {
+     "text": "Cloudy grey: south-west (To rise without wings and choke all who are there.)",
+     "depth": 1
+    },
+    {
+     "text": "Weightless black: north-east (To be a faithful follower that flees the light.)",
+     "depth": 1
+    },
+    {
+     "text": "Thick red: north-west (To be a river that runs through the body's land.)",
+     "depth": 1
+    },
+    {
+     "text": "Cold bluish-white: south-east (To crack with no voice and slip with no legs.)",
+     "depth": 1
+    },
+    {
+     "text": "Search the altar for an ancient symbol."
+    },
+    {
+     "text": "Enter the east door, then pull the lever in the north-west corner."
+    },
+    {
+     "text": "Enter the portal, then go through the south door."
+    },
+    {
+     "text": "Go through the east, east, south-east, then north doors."
+    },
+    {
+     "text": "Search the crate by the window for an ancient shield."
+    },
+    {
+     "text": "Combine the shield and symbol to create the shield with symbol."
+    },
+    {
+     "text": "Go through the south, west, and north doors, then head upstairs."
+    },
+    {
+     "text": "Go through the south-east (the southern door on the eastern wall) gibbous moon door, then through the south-east full moon door."
+    },
+    {
+     "text": "Use the shield on the empty mount at the southern wall, then search it for a solid key."
+    }
+   ]
+  },
+  {
+   "title": "Destroying the stockpile",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Go through the north and west doors, then go through the east full moon door."
+    },
+    {
+     "text": "Enter the solid door directly across to reach a laboratory."
+    },
+    {
+     "text": "Search the shelves to the north-west. Take 2 vials of water, 3 vials of blood, and 3 pure essence."
+    },
+    {
+     "text": "Follow the next steps to place a chemical vial onto the basin until the panel reads 53 HP (haemalchemic potential)."
+    },
+    {
+     "text": "Use a vial of blood and pure essence on the refiner to receive a chemical vial measuring 17 HP. Do this twice.",
+     "depth": 1
+    },
+    {
+     "text": "Use a vial of blood and vial of water on the refiner for a vial measuring 13 HP.",
+     "depth": 1
+    },
+    {
+     "text": "Use a pure essence and vial of water on the refiner for a vial measuring 6 HP.",
+     "depth": 1
+    },
+    {
+     "text": "Use all four chemical vials on the basin.",
+     "depth": 1
+    },
+    {
+     "text": "Go through the unlocked north door and destroy the blood stockpile."
+    }
+   ]
+  },
+  {
+   "title": "Blood Hunt",
+   "notes": [
+    "If you leave the area, you can re-enter the portal in Castle Drakan, appearing near Ivan and the group."
+   ],
+   "steps": [
+    {
+     "text": "Pick up the crank wheel in the small building 3 houses east of the prayer altar."
+    },
+    {
+     "text": "Go to the building north of the altar and operate the crank base located just outside the house. After you operate the crank, Drakan will start chasing you. Click the crank several times to unlock the door."
+    },
+    {
+     "text": "Enter the house and search the bookshelf for a dusty book, then read it to retrieve the Vitur key."
+    },
+    {
+     "text": "Exit and head to the north-easternmost house with the Vitur door."
+    },
+    {
+     "text": "Search the shed input the passcode \"TOOLS\" for a pair of bolt cutters."
+    },
+    {
+     "text": "Head to the building east of the altar to and pick up the tooth half of key from the table."
+    },
+    {
+     "text": "Head to the building directly south of the well ( map icon). Use the bolt cutters on the chained doors on the north side."
+    },
+    {
+     "text": "Pick up the loop half of key."
+    },
+    {
+     "text": "Use the loop and tooth halves together to obtain a Myrmel key."
+    },
+    {
+     "text": "Use the Myrmel key to enter the building north-east of the well ( map icon), and take the Bucket in the back left corner. Use the use Bucket on the well, then go back inside the Myrmel house and use the Bucket of water on the Northern barrel to get the Shadum key."
+    },
+    {
+     "text": "Use the Shadum key on the house south-west of Ivan and the group, then pick up the trapdoor key on the crate."
+    },
+    {
+     "text": "Enter the bank directly south-east of the red fountain to the west and operate the crank (spam click the crank) to open the gate."
+    },
+    {
+     "text": "Enter the trapdoor to arrive in the house with the altar."
+    },
+    {
+     "text": "Open the chest to the west with the passcode \"35158\" to receive the Jovkai key."
+    },
+    {
+     "text": "Enter the house with the Jovkai door ( map icon) to find the old cog on a crate."
+    },
+    {
+     "text": "Once you leave this house, Drakan will start pursuing the player at running speed, so wait until he is as far from you as possible before rushing back to Ivan and the group. If you teleport out, you'll need to get the old cog again."
+    },
+    {
+     "text": "Take some supplies from Ivan if needed, as you'll be facing Drakan."
+    },
+    {
+     "text": "Talk to Veliaf or Vanescula to initiate a cutscene."
+    }
+   ]
+  },
+  {
+   "title": "Fleeing Through the Woods",
+   "notes": [],
+   "steps": [
+    {
+     "text": "After the cutscene, you will be fighting Drakan. You will be assisted by both Vanescula and Veliaf, but don't expect them to deal a lot of damage."
+    },
+    {
+     "text": "Alongside melee attacks, Drakan will frequently use spear lunges that are preceded by a visual cue. The timing of this is precise and so requires tick perfect movements to avoid damage."
+    },
+    {
+     "text": "For a detailed breakdown of the fight, see here."
+    },
+    {
+     "text": "You must continue dodging his attacks until you are finally able to damage him."
+    },
+    {
+     "text": "Resupply at the tent if needed after your encounter with Drakan. You must use the escape option to access this tent. You can always escape and return here, and you'll respawn in this area if you die."
+    },
+    {
+     "text": "Enter the west darkwood trees."
+    },
+    {
+     "text": "Two ancient feral vyres will spawn and attack with melee. When fighting multiple of them at once, one will swap places with the other and begin healing, whilst forcing you to attack the vyre that took its place. Simply switch targets to resume attacking the initial vyre."
+    },
+    {
+     "text": "Kill the additional two vyres that spawn, then proceed to the next area."
+    },
+    {
+     "text": "To fell the darkwood trees blocking your path, they must be chopped from two different sides; you may need to jump over the tree stumps multiple times from different sides in order to reach another side of a tree."
+    },
+    {
+     "text": "A bronze axe can be taken from the nearby stump.",
+     "depth": 1
+    },
+    {
+     "text": "Occasionally, ticks may crawl into your inventory and begin dealing 1 damage in fixed intervals; to remove them, simply find the tick in your inventory and click on it.",
+     "depth": 1
+    },
+    {
+     "text": "Optionally, you may chop one of the darkwood trees at the southern end of the area to receive a rotten diary.",
+     "depth": 1
+    },
+    {
+     "text": "Chop your way until you reach the north-east corner of the area, from which you can enter the next part of the forest."
+    },
+    {
+     "text": "To avoid the maxilla beasts, you must disable run and walk along the path until you reach the cave. If you are running or are too close to them, they will deal 30-50 damage."
+    },
+    {
+     "text": "Head south-east and enter the cave."
+    },
+    {
+     "text": "Follow the path north and enter the Exit."
+    },
+    {
+     "text": "Waves of nylocas will spawn from two corners. They behave the same way as their Theatre equivalents, becoming immune to attacks if attacked with the wrong style (melee against white, ranged against green), and exploding if left alone long enough."
+    },
+    {
+     "text": "There are throwable spines on the ground, so there is no need to re-gear for range. You can also harvest the dead venator for more spines if required.",
+     "depth": 1
+    },
+    {
+     "text": "It is recommended to leave and return with fast hitting weapons, such as the toxic blowpipe and event rpg, if players are having trouble making it through this section.",
+     "depth": 1
+    },
+    {
+     "text": "After defeating all the nylocas enter the darkwood trees to the north."
+    },
+    {
+     "text": "Stand behind each of the three blood serpents and \"wrangle\" them to collect them. Catching them from the front will cause them to attack for 5 poison damage."
+    },
+    {
+     "text": "Use three dead blood serpents on each other to make a serpent rope."
+    },
+    {
+     "text": "Use the serpent rope on the long branched tree to the south-east to progress."
+    }
+   ]
+  }
+ ]
+}

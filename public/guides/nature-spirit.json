@@ -1,0 +1,111 @@
+{
+ "id": "nature-spirit",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Nature_Spirit%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting out",
+   "notes": [
+    "Needed: Ghostspeak amulet"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Drezel to get three meat pies and three apple pies.",
+     "chat": [
+      "1. Well, what is it, I may be able to help?",
+      "1. Yes.",
+      "4. I'd better get going."
+     ]
+    },
+    {
+     "text": "Leave the temple and run south through Mort Myre Swamp to the Nature Grotto north-west of Mort'ton. Note: You must enter Mort Myre through the gate, or Filliman will not appear."
+    },
+    {
+     "text": "Attempt to enter the grotto and Filliman will come out. Wear your amulet of ghostspeak and talk to him.. Note that Filliman will disappear after a while so you need to be actively interacting with him.",
+     "chat": [
+      "2. How long have you been a ghost?"
+     ]
+    },
+    {
+     "text": "Take the washing bowl off the nearby bench to find a mirror underneath."
+    },
+    {
+     "text": "Use the mirror on Filliman, he then tells you to find his journal. If using does not work, try talking him again, it should do the trick."
+    },
+    {
+     "text": "Search (right-click) the grotto tree to get his journal then use it on him to give it to him. He'll give you a druidic spell.",
+     "chat": [
+      "4. How can I help?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The Nature Spirit",
+   "notes": [
+    "Needed: Silver sickle, Ghostspeak amulet"
+   ],
+   "steps": [
+    {
+     "text": "Run back to Drezel and ask him to bless you."
+    },
+    {
+     "text": "UIM Note: If you discarded your Wolfbane, you will first have to take the replacement dagger and then speak to him to be blessed.",
+     "depth": 1
+    },
+    {
+     "text": "Enter the swamp, stand next to a rotting log in the swamp and cast the druidic spell."
+    },
+    {
+     "text": "Quickly pick a mushroom growing from the log and bring it back to Filliman's camp."
+    },
+    {
+     "text": "Talk to Filliman to ensure he is standing outside between all 3 stones."
+    },
+    {
+     "text": "Use the mushroom on the light-brown stone."
+    },
+    {
+     "text": "Use the used spell card on the grey stone."
+    },
+    {
+     "text": "Stand on the orange stone and tell Filliman you've solved the puzzle.",
+     "chat": [
+      "3. I think I've solved the puzzle!"
+     ]
+    },
+    {
+     "text": "Enter the hole under the tree then search the grotto in the middle of the cave."
+    },
+    {
+     "text": "Give the nature spirit your silver sickle by talking to him and he will give you a druid pouch."
+    }
+   ]
+  },
+  {
+   "title": "Killing the Ghasts",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Leave the grotto and stand next to rotting plants (logs, bushes, branches) in the swamp."
+    },
+    {
+     "text": "Using the silver sickle (b)'s Bloom ability (requires prayer points), harvest the swamp plants and fill your druid pouch with them."
+    },
+    {
+     "text": "Use your filled druid pouch on Ghasts to make them attackable, kill three of them."
+    },
+    {
+     "text": "Return to the nature spirit by clicking the grotto in the cave and he'll redecorate the grotto."
+    },
+    {
+     "text": "If you plan on completing the Morytania Diary, pray at the altar now.",
+     "depth": 1
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

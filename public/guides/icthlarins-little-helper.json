@@ -1,0 +1,191 @@
+{
+ "id": "icthlarins-little-helper",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Icthlarin's_Little_Helper%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [
+    "Note: If you need to leave Sophanem at any point during the quest, there is a hole you can crawl through on the eastern wall. To get back in, enter the rocks on the east side of the Wanderer's tent. There is a bank in Nardah if needed.",
+    "Note: For the pit jump: 20% run energy is required and it will be drained. Higher agility increases the chances of success."
+   ],
+   "steps": []
+  },
+  {
+   "title": "Starting out",
+   "notes": [
+    "Needed: Waterskin (4), tinderbox and a cat (or kitten)."
+   ],
+   "steps": [
+    {
+     "text": "Talk to the Wanderer north-east of Sophanem (see picture) and ask why she has a problem with your cat.",
+     "chat": [
+      "2. Why? What's your problem with it?",
+      "1. Ok I'll get your supplies."
+     ]
+    },
+    {
+     "text": "Talk to the Wanderer again to give her a tinderbox and waterskin(4).",
+     "chat": [
+      "4. Yes. I have them all here."
+     ]
+    },
+    {
+     "text": "Touch the door of the pyramid where you wake up."
+    }
+   ]
+  },
+  {
+   "title": "The first flashback",
+   "notes": [
+    "Recommended: Several stamina potion or super energy and some food.",
+    ": You cannot teleport out of this area! There are aggressive Level 84 Mummies scattered throughout the map, and Scarabs that can inflict poison (it is possible to run past the scarabs without taking damage or being poisoned by spam-clicking the minimap). If you need to leave you must walk back to the entrance and use the ladder."
+   ],
+   "steps": [
+    {
+     "text": "Navigate by clicking the minimap to automatically avoid the traps."
+    },
+    {
+     "text": "Jump the pit (20% minimum energy required, higher Agility increases your chances)."
+    },
+    {
+     "text": "Go west and open the door."
+    },
+    {
+     "text": "Click on the large golden bird to reset the puzzle until it lands on the solution shown in the image on this page. Then click the tiles indicated on the picture."
+    }
+   ]
+  },
+  {
+   "title": "The sphinx",
+   "notes": [
+    "Needed: A cat."
+   ],
+   "steps": [
+    {
+     "text": "Drop your cat and talk to the Sphinx, ask for help.",
+     "chat": [
+      "1. I need help.",
+      "1. Okay, that sounds fair."
+     ]
+    },
+    {
+     "text": "Riddle answer: 9. (if you give the wrong answer your cat will disappear)",
+     "chat": [
+      "2. 9.",
+      "1. Totally positive."
+     ]
+    },
+    {
+     "text": "Talk to the High Priest to the south-west."
+    }
+   ]
+  },
+  {
+   "title": "The second flashback",
+   "notes": [
+    "Needed: A cat, combat equipment.",
+    "Recommended: Several stamina potion or super energy and some food."
+   ],
+   "steps": [
+    {
+     "text": "Return to the pyramid (right-click door and open) and jump the pit again to trigger the next flashback."
+    },
+    {
+     "text": "Open the western door (directly south of you) and take the canopic jar back (you can only pick up the correct one)."
+    },
+    {
+     "text": "A level 75 or 81 enemy (see the guardians in the info box above) will appear, kill it and take the jar."
+    },
+    {
+     "text": "Leave the room and jump across the pit."
+    },
+    {
+     "text": "Jump back across the pit."
+    },
+    {
+     "text": "Solve the western door puzzle and drop the jar where you found it."
+    },
+    {
+     "text": "Leave the room again and jump across the pit once more."
+    },
+    {
+     "text": "Exit the pyramid via the entrance ladder."
+    }
+   ]
+  },
+  {
+   "title": "Preparing for the ceremony",
+   "notes": [
+    "Needed: Bucket of sap, pile of salt or bag of salt, linen, willow logs."
+   ],
+   "steps": [
+    {
+     "text": "Talk to the High Priest.",
+     "chat": [
+      "1. Sure, no problem."
+     ]
+    },
+    {
+     "text": "Go to the house south of the church and talk to the Embalmer to give him the linen, salt, and sap."
+    },
+    {
+     "text": "If you don't have a linen, go north-east to the Spinning Wheel and talk to Raetul to buy linen for 30 coins. (Must need to ask the embalmer where to find linen befor Reatul let you buy linen)",
+     "depth": 1
+    },
+    {
+     "text": "If you need a pile of salt, it can be found by using an empty bucket on the pond north of Sophanem and then using the full bucket on the suntrap east of the Embalmer.",
+     "depth": 1
+    },
+    {
+     "text": "Go east and talk to the Carpenter. He will take your willow logs and give you a holy symbol."
+    }
+   ]
+  },
+  {
+   "title": "The third flashback",
+   "notes": [
+    "Needed: A cat, combat equipment.",
+    "Recommended: Several stamina potion or super energy and some food."
+   ],
+   "steps": [
+    {
+     "text": "Enter the pyramid (right click, open door)."
+    },
+    {
+     "text": "Jump the gap again to trigger the 3rd flashback."
+    },
+    {
+     "text": "Enter the east door and use the holy/unholy symbol on any sarcophagus. Exit the room."
+    },
+    {
+     "text": "Jump back across the pit and enter the eastern room again."
+    },
+    {
+     "text": "Kill the level 91 Possessed Priest."
+    },
+    {
+     "text": "Talk to the High Priest."
+    }
+   ]
+  },
+  {
+   "title": "The fourth flashback",
+   "notes": [
+    "Note: If you equip your catspeak amulet and then talk to your cat about being confused, you will unlock another cutscene! Talking with your cat again about being confused will tell you the story of the quest as it understands it. If asked again, your cat will refuse to explain it again and instead tells you to ask one of your adventuring buddies and the chat option will go away.",
+    "Talking to your cat to trigger the cutscene may result in your cat disappearing completely, which will require you to re-log into the game. It may seem like the cat has disappeared completely but it's still with you, just not visible to you."
+   ],
+   "steps": [
+    {
+     "text": "Exit the pyramid."
+    },
+    {
+     "text": "Talk to the High Priest in the temple."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

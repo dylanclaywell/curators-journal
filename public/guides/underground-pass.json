@@ -1,0 +1,284 @@
+{
+ "id": "underground-pass",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Underground_Pass%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting out",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to King Lathas on the of Ardougne Castle.",
+     "chat": [
+      "1. I am. What's our plan?",
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Talk to Koftik in the westernmost part of West Ardougne next to the cave.",
+     "chat": [
+      "1. I'll take my chances."
+     ]
+    },
+    {
+     "text": "Bring the rest of your supplies now, as after this section there is no turning back unless you want to restart the entire dungeon.",
+     "depth": 1
+    },
+    {
+     "text": "Enter the cave and run south at the first junction."
+    },
+    {
+     "text": "Talk to Koftik for a cloth. Use it on an arrow, then use your tinderbox on it or use the arrow on the fire on the ground."
+    },
+    {
+     "text": "Go north to the gated area."
+    },
+    {
+     "text": ": If you dropped any items pick them up before you shoot the rope because you cannot pick them up afterwards, unless you pull the lever to go back across the bridge. If dropped close to the bridge they can be telegrabbed",
+     "depth": 1
+    },
+    {
+     "text": "Equip your bow and fire arrow (be sure to light the arrow with your tinderbox), then shoot the guide rope attached to the bridge."
+    },
+    {
+     "text": "Once across the bridge, take the plank in the north room (if you did not bring one)."
+    },
+    {
+     "text": "Continue through the cave until you reach a section with water and a pit. Ignore the water, use a rope on the rock above the pit. If you fail, you will lose your rope."
+    },
+    {
+     "text": "Continue through the cave until you reach a large grid."
+    },
+    {
+     "text": "Walk across the grid and use trial and error to find your path. You will fall through some of the tiles. Some paths are not possible, see the full guide for solving this optimally."
+    },
+    {
+     "text": ": Keep your Hitpoints above 15 when crossing the grid.",
+     "depth": 1
+    },
+    {
+     "text": "Pull the lever next to the gate."
+    }
+   ]
+  },
+  {
+   "title": "Orbs of light",
+   "notes": [
+    "Items required: A plank, a spade, and 4 inventory spaces needed"
+   ],
+   "steps": [
+    {
+     "text": "You can now pray Rapid Heal for the duration of this step (there is an altar up ahead). Run west past the zombie camp, there will be five sets of odd markings along the walls of the corridor (You must attempt to disable the wall traps or walk past them)."
+    },
+    {
+     "text": "Grab the plank by the furnace if you did not grab one earlier.",
+     "depth": 1
+    },
+    {
+     "text": "You will reach an altar, take the north path using the plank on the flat rocks."
+    },
+    {
+     "text": "Take the orb and walk back to the altar."
+    },
+    {
+     "text": "Take the north-west path with the ogres and blessed spiders. Take the orb."
+    },
+    {
+     "text": "Take the centre-most west path, traversing the flat rocks using the plank. Take the orb."
+    },
+    {
+     "text": "Take the final path, do not pick up the orb, but search the rock beneath instead and disarm the trap to get the orb."
+    },
+    {
+     "text": "Return to the zombie camp to the east."
+    },
+    {
+     "text": "Use the 4 orbs on the furnace."
+    },
+    {
+     "text": "Return to the altar, turn off Rapid Heal/pray at altar and climb down the well."
+    },
+    {
+     "text": "Optional: Search the two stacked crates in the room you landed in to find 2 salmon and 2 meat pies."
+    },
+    {
+     "text": "Go west and picklock the south-east slave cage gate."
+    },
+    {
+     "text": "Use your spade on the loose mud at (2)."
+    },
+    {
+     "text": "Go west and cross the ledge at (3)."
+    },
+    {
+     "text": "Note: You may fall down off the ledge and have to go back to the slave cage again at (2).",
+     "depth": 1
+    },
+    {
+     "text": "If you have 50 thieving, take the short cut at (5) - avoid the bubbles!"
+    },
+    {
+     "text": "If you lack 50 thieving, cross the stone bridge maze to get to the other side. (4)"
+    },
+    {
+     "text": "Squeeze-through the pipe at (6)."
+    }
+   ]
+  },
+  {
+   "title": "Cold blooded killing",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Search the unicorn cage."
+    },
+    {
+     "text": "Walk through the path south of the cage and use the piece of railing on the boulder above the unicorn."
+    },
+    {
+     "text": "Search the cage again to get the Unicorn horn. You can drop the piece of railing."
+    },
+    {
+     "text": "Pass-through the tunnel and follow the cave until you reach the 3 knights."
+    },
+    {
+     "text": "Optional: Talk to any of the knights (Sir Jerro, Sir Carl, or Sir Harry) to receive 2 meat pie, 2 bread, a stew, a Attack potion(2), and a Prayer potion(2).",
+     "depth": 1
+    },
+    {
+     "text": "Kill them and take their badges."
+    },
+    {
+     "text": "You can safespot them by standing in the hallway to the south.",
+     "depth": 1
+    },
+    {
+     "text": "Continue forward, using your plank on either flat rock, until you see a well."
+    },
+    {
+     "text": "Use the badges and unicorn horn on the well."
+    },
+    {
+     "text": "Open the door."
+    }
+   ]
+  },
+  {
+   "title": "Iban's cavern",
+   "notes": [
+    "Note: You can now drop your spade and plank (and the extra rope, if you brought 2 in the beginning)."
+   ],
+   "steps": [
+    {
+     "text": "Run south as far as you can (see map), and descend into the cave (yellow dot on map)."
+    },
+    {
+     "text": "Talk to Niloof the dwarf, you will also receive 2 meat pies and a meat pizza."
+    },
+    {
+     "text": "Note: You can also talk to Kamen and either accept his beer (reduces Agility level and causes damage) or decline and purchase the food for 75 coins. If you accept his beer, you take 5 damage and your Agility level is reduced by 3 each time you do. You need 4 free inventory slots in the next section.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Klank the dwarf. (Make sure to have one inventory slot available to receive his gauntlets.)"
+    },
+    {
+     "text": "Go upstairs and search the Witch's window from outside her house (Cross the broken bridge north-east of the house. Use the map pictured to find her)."
+    },
+    {
+     "text": "Pick up the Witch's cat (use the map)."
+    },
+    {
+     "text": "Use the cat on the Witch's door and then open the door."
+    },
+    {
+     "text": "Open the chest in her house for a few items (do not skip chat option on chest)."
+    },
+    {
+     "text": "Note: You will need 4 inventory spaces.",
+     "depth": 1
+    },
+    {
+     "text": "Kill the three demons west of the Witch and take their amulets."
+    },
+    {
+     "text": "Open the chest north of the middle demon."
+    },
+    {
+     "text": "Return to the Dwarf encampment on the lower level. Use a bucket on the brew barrel in the eastern house."
+    },
+    {
+     "text": "Note: There is a bucket in the corner of the larger house to the west if you did not bring one.",
+     "depth": 1
+    },
+    {
+     "text": "Note: If you did not bring a tinderbox, grab one from the eastern house for the next step.",
+     "depth": 1
+    },
+    {
+     "text": "Run to the south-east corner of the lower level and use the dwarf brew and the tinderbox on the tomb."
+    }
+   ]
+  },
+  {
+   "title": "Kalrag the Spider & The Soulless",
+   "notes": [
+    "Note: You can now drop your tinderbox and bucket."
+   ],
+   "steps": [
+    {
+     "text": "Run north to the spider pit, kill Kalrag the spider and run out of its pit."
+    },
+    {
+     "text": "Head north-west and ascend through the cave entrance to reach the half souless area."
+    },
+    {
+     "text": "Wear Klank's gauntlets and search the cage circled on the map for Iban's dove. (It is applied to the doll automatically and will not go into the inventory)."
+    }
+   ]
+  },
+  {
+   "title": "Confronting Iban",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Head south from where you obtain Iban's dove until you reach the broken bridge you used to get over, from there head east and then south to the Disciples of Iban."
+    },
+    {
+     "text": "Kill a disciple of Iban in the middle of the maze and pick up his robes."
+    },
+    {
+     "text": "Equip the robes. (Following updates prior to the release of the Song of the Elves quest, you only need to equip the robes to enter the doors)"
+    },
+    {
+     "text": "Do not drop anything that you are not willing to lose as using the doll on the well will teleport you to the entrance of the tunnels.",
+     "depth": 1
+    },
+    {
+     "text": "Enter Iban's temple, (Following updates prior to the release of the Song of the Elves quest Iban now has a chat dialogue) use this time to click one tile north of the well so that you can avoid any potential damage, right click use on the doll on the well, do not click investigate."
+    },
+    {
+     "text": ": Iban can deal a lot of damage quickly so be prepared.",
+     "depth": 1
+    },
+    {
+     "text": "Iban's spikes deal around 8 damage each and cannot be blocked with prayers. Running directly to the well should be fairly easy with one or two food items.",
+     "depth": 1
+    },
+    {
+     "text": "Use the Doll of Iban on the well in the centre of the room. You may have to do this a few times, as his attacks may interrupt you. When you do manage to get the doll into the well, Iban will be destroyed and the temple will begin to collapse.",
+     "depth": 1
+    },
+    {
+     "text": "Speak to Koftik to be transported back through the pass."
+    },
+    {
+     "text": "Head back to Ardougne Castle and speak with King Lathas."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

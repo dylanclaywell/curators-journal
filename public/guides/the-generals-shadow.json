@@ -1,0 +1,65 @@
+{
+ "id": "the-generals-shadow",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/The_General's_Shadow%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Equip all ghostly robes, the ring of visibility and a Ghostspeak amulet."
+    },
+    {
+     "text": "Talk to the ghost of General Khazard, north of the log balance, south-east of Rellekka. (Fairy ring CJR if 48 agility, otherwise AJR is faster)",
+     "chat": [
+      "1. I'm a very trustworthy person."
+     ]
+    },
+    {
+     "text": "Talk to Sin Seer in Seers' Village. She is upstairs in the spinning wheel house. You need an empty inventory spot and 40 coins.",
+     "chat": [
+      "1. Here's the money."
+     ]
+    },
+    {
+     "text": "Return to General Khazard."
+    },
+    {
+     "text": "Talk to the ghost Scout south of Shantay Pass. (Fairy ring BIQ and run east)"
+    },
+    {
+     "text": "Talk to the ghost Scout south of the Gnome Stronghold entrance. Use a Spirit tree or a Necklace of passage to the Outpost."
+    },
+    {
+     "text": "Talk to the ghost Scout in the area between Falador and Draynor Manor. Use an Explorer's ring 2 or better to teleport south of him."
+    },
+    {
+     "text": "Talk to the ghost Scout east of Tai Bwo Wannai, south of the hardwood grove. (Fairy ring CKR and run north-east) or Tai bwo wannai teleport and run east."
+    },
+    {
+     "text": "Return to General Khazard."
+    },
+    {
+     "text": "Prepare for battle against a level 160 Bouncer (You need to have the severed leg in your inventory to enter the wall)"
+    },
+    {
+     "text": "Enter the Goblin Cave east of the Fishing Guild."
+    },
+    {
+     "text": "Run to the north-east area and enter the crack in the southern wall."
+    },
+    {
+     "text": "You cannot use prayer in this cave.",
+     "depth": 1
+    },
+    {
+     "text": "Lower Bouncer's health to 0 and your character will automatically throw the severed leg."
+    },
+    {
+     "text": "Congratulations, miniquest complete!"
+    }
+   ]
+  }
+ ]
+}

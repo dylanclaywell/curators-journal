@@ -1,0 +1,159 @@
+{
+ "id": "recipe-for-disaster-freeing-the-lumbridge-guide",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Recipe_for_Disaster%2FFreeing_the_Lumbridge_Guide%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Inspect the Lumbridge Guide.",
+     "chat": [
+      "1. Yes, I'm sure I can make a cake."
+     ]
+    },
+    {
+     "text": "Talk to Wizard Traiborn on the of the Wizards' Tower. (fairy ring DIS)",
+     "chat": [
+      "1. Ask about helping the Lumbridge Guide."
+     ]
+    },
+    {
+     "text": "Talk to him again to enchant the egg by identifying 3 mystery NPCs.",
+     "chat": [
+      "1. Ask about helping the Lumbridge Guide.",
+      "1. Ok. Let's start!"
+     ]
+    },
+    {
+     "text": "Man with ponytail and book - Reldo",
+     "depth": 1
+    },
+    {
+     "text": "Ghostly green woman - Velorina",
+     "depth": 1
+    },
+    {
+     "text": "Man with desert robes and white beard - Ali Morrisane",
+     "depth": 1
+    },
+    {
+     "text": "Elf - Islwyn",
+     "depth": 1
+    },
+    {
+     "text": "Man with purple shirt - Unferth",
+     "depth": 1
+    },
+    {
+     "text": "Man with brown vest - Professor Gronigen",
+     "depth": 1
+    },
+    {
+     "text": "Woman with pink top - Gertrude",
+     "depth": 1
+    },
+    {
+     "text": "Woman (green witch) - Hetty",
+     "depth": 1
+    },
+    {
+     "text": "Man (hooded) - Pirate Pete",
+     "depth": 1
+    },
+    {
+     "text": "Man with a crown - King Lathas",
+     "depth": 1
+    },
+    {
+     "text": "Talk to him again to enchant the milk by answering trivia.",
+     "chat": [
+      "1. Ask about helping the Lumbridge Guide.",
+      "1. Ok. I'm ready!"
+     ]
+    },
+    {
+     "text": "Defence requirements to wear a Mystic hat - 20",
+     "depth": 1
+    },
+    {
+     "text": "Ingredients in a cake - Flour, egg, milk",
+     "depth": 1
+    },
+    {
+     "text": "Combat level of Goblins near Lumbridge - 2",
+     "depth": 1
+    },
+    {
+     "text": "GP to bribe an Al Kharid gate guard - 10",
+     "depth": 1
+    },
+    {
+     "text": "What is the nearest guild to the Fishing Platform (as the seagull flies) - Legends'",
+     "depth": 1
+    },
+    {
+     "text": "What doesn't lie between Morytania and Asgarnia - Keep Le Faye",
+     "depth": 1
+    },
+    {
+     "text": "Gold ring is to 5 as a holy symbol is to - 16",
+     "depth": 1
+    },
+    {
+     "text": "Glass vial is to 33 as a glass orb is to - 46",
+     "depth": 1
+    },
+    {
+     "text": "Guild closest to Fishing Platform - Legends'",
+     "depth": 1
+    },
+    {
+     "text": "I'm in a bar west of Pollnivneach. Where am I? - Bandit Camp",
+     "depth": 1
+    },
+    {
+     "text": "The River Salve runs from - north to south",
+     "depth": 1
+    },
+    {
+     "text": "I can hear howling in one direction and buzzing in the other—where am I? - Catherby",
+     "depth": 1
+    },
+    {
+     "text": "If I'm going to need glass, first I will need - Sand, bucket, soda ash, glassblowing pipe",
+     "depth": 1
+    },
+    {
+     "text": "Which tower is closest to the Crafting Guild - Dark Wizards' Tower",
+     "depth": 1
+    },
+    {
+     "text": "Take the number of fire runes required to cast Fire Strike, and multiply by the number of air runes used to cast Wind Strike before adding the number of earth runes used to cast Earth Wave - 10",
+     "depth": 1
+    },
+    {
+     "text": "Talk to him a third time to enchant the flour with a memory test.",
+     "chat": [
+      "1. Ask about helping the Lumbridge Guide.",
+      "1. Quiz me!"
+     ]
+    },
+    {
+     "text": "Once you have taken a screenshot for reference, close the interface via the X button to answer the questions."
+    },
+    {
+     "text": "Do not use the ESC key to close the interface as it will reset that portion of the test!",
+     "depth": 1
+    },
+    {
+     "text": "Cook the cake (use the milk on the cake tin and then on a range) and give it to the Lumbridge guide."
+    },
+    {
+     "text": "Congratulations, section complete!"
+    }
+   ]
+  }
+ ]
+}

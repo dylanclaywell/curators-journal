@@ -1,0 +1,42 @@
+{
+ "id": "recipe-for-disaster-another-cooks-quest",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Recipe_for_Disaster%2FAnother_Cook's_Quest%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Obtain the following:"
+    },
+    {
+     "text": "Eye of newt",
+     "depth": 1
+    },
+    {
+     "text": "Greenman's ale",
+     "depth": 1
+    },
+    {
+     "text": "Rotten tomato",
+     "depth": 1
+    },
+    {
+     "text": "Dirty blast",
+     "depth": 1
+    },
+    {
+     "text": "Use ashes on a fruit blast (a premade fr' blast will not work)",
+     "depth": 2
+    },
+    {
+     "text": "Talk to the Cook again."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

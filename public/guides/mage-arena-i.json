@@ -1,0 +1,62 @@
+{
+ "id": "mage-arena-i",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Mage_Arena_I%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [
+    "Needed: Slash weapon or knife if using Edgeville or Ardougne lever",
+    ": caution must be taken not only getting to the Mage arena but also during the miniquest. PKers are able to attack you while you are fighting Kolodion."
+   ],
+   "steps": [
+    {
+     "text": "Travel to the Mage Arena bank."
+    },
+    {
+     "text": "If using the Edgeville or Ardougne levers, bring something to slash the web with and bring nothing or low-risk items, and go to the Mage Arena bank located in level 53 Wilderness.",
+     "depth": 1
+    },
+    {
+     "text": "If available, using Ice Plateau (53 Wilderness) or Ghorrock Teleports (45 Wilderness) are other quick methods of travel.",
+     "depth": 1
+    },
+    {
+     "text": "Gear up in low-risk items in preparation for the fight, which will take place in deep Wilderness."
+    },
+    {
+     "text": "Talk to Kolodion at the Mage Arena bank. (: You will be teleported into the arena which is in level 54 wilderness.)",
+     "chat": [
+      "1. Can I fight here?",
+      "1. Yes indeedy.",
+      "1. Okay, let's fight."
+     ]
+    },
+    {
+     "text": "Kill Kolodion's 5 forms. (Note: You may safespot Kolodion by trapping him behind a skeleton within the arena.)"
+    },
+    {
+     "text": "Step-into Sparkling pool north-east."
+    },
+    {
+     "text": "Go north and pray-at the Statue of Saradomin, Guthix, or Zamorak."
+    },
+    {
+     "text": "Pick up the corresponding Saradomin, Guthix, or Zamorak cape."
+    },
+    {
+     "text": "Go south and talk to the Chamber Guardian to receive the corresponding Saradomin, Guthix, or Zamorak staff."
+    },
+    {
+     "text": "Step-into Sparkling pool south."
+    },
+    {
+     "text": "Talk to Kolodion."
+    },
+    {
+     "text": "Congratulations, miniquest complete!"
+    }
+   ]
+  }
+ ]
+}

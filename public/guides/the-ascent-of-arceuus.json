@@ -1,0 +1,79 @@
+{
+ "id": "the-ascent-of-arceuus",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/The_Ascent_of_Arceuus%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Speak to Mori in the centre of Arceuus.",
+     "chat": [
+      "1. What can I do to help?",
+      "2. We should let someone know about this.",
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Head south-west to Kourend Castle and speak to Councillor Andrews on east side of the.",
+     "chat": [
+      "2. There's been a death in Arceuus."
+     ]
+    },
+    {
+     "text": "Return and speak to Mori.",
+     "chat": [
+      "2. What should we do now?"
+     ]
+    },
+    {
+     "text": "Walk north-west to the Tower of Magic west of the Arceuus Library and speak to the Tower Mage outside the doors."
+    },
+    {
+     "text": "Enter the tower and defeat the 5 Tormented Souls."
+    },
+    {
+     "text": "After the fight, head upstairs."
+    },
+    {
+     "text": "Speak to Asteros Arceuus."
+    },
+    {
+     "text": "Head to Mount Karuulm. (Fairy ring code CIR)"
+    },
+    {
+     "text": "[OPTIONAL] If you are planning to do the Kourend & Kebos Diary, bring a pickaxe and mine an Iron ore from the Mount Karuulm Mine to complete an Easy task.",
+     "depth": 1
+    },
+    {
+     "text": "Go to the centre of Mount Karuulm and activate the elevator."
+    },
+    {
+     "text": "Speak to Kaal-Xil-Dar."
+    },
+    {
+     "text": "Exit to the south and head to the grave located south-east of the mountain, just west of the Battlefront. It is south of the water source. (By the Battlefront teleport tablet or Arceuus spell location.)"
+    },
+    {
+     "text": "Inspect the Ancient Grave then follow the tracks, searching bushes and plants nearby to where the tracks end."
+    },
+    {
+     "text": "Eventually you'll reach the hiding spot of the Trapped Soul. Defeat it."
+    },
+    {
+     "text": "Return to Mount Karuulm and speak to Kaal-Xil-Dar once more."
+    },
+    {
+     "text": "Head to the Dark Altar north of Arceuus (fairy ring code CIS, or use a games necklace teleport to Wintertodt then run south) and inspect the rocks that surround the altar until you find a device; it will automatically be destroyed upon being found."
+    },
+    {
+     "text": "Return to the Tower of Magic and head upstairs, talk to Lord Trobin Arceuus."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

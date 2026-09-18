@@ -1,0 +1,65 @@
+{
+ "id": "a-porcine-of-interest",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/A_Porcine_of_Interest%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [
+    "Needed: Rope, knife or slash weapon (not a whip or claws), combat equipment (Sourhog is resistant to slash and magic)",
+    "Recommended: Amulet of glory, Explorer's ring 2 or above, stamina potion"
+   ],
+   "steps": [
+    {
+     "text": "Check the noticeboard on the wall behind the Wine Stall in the Draynor Village market.",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Talk to Sarah located near the loom at the South Falador Farm north of Port Sarim.",
+     "chat": [
+      "1. Talk about the bounty."
+     ]
+    },
+    {
+     "text": "(Optional) Trade Sarah to complete an easy Falador Diary task.",
+     "depth": 1
+    },
+    {
+     "text": "Go to the crossroads north of Draynor Village and south of Draynor Manor."
+    },
+    {
+     "text": "Follow the cabbages and carrots on the ground north-east towards the strange hole."
+    },
+    {
+     "text": "Use your rope on the strange hole, then climb down."
+    },
+    {
+     "text": "Follow the cave to the end and investigate the skeleton."
+    },
+    {
+     "text": "After the cut-scene, talk to Spria to receive reinforced goggles."
+    },
+    {
+     "text": "Equip the goggles and return to the hole in the ground and kill Sourhog (level 37)."
+    },
+    {
+     "text": "Remove the foot from the dead Sourhog."
+    },
+    {
+     "text": "Return to Sarah at Falador farm.",
+     "chat": [
+      "1. Talk about the bounty."
+     ]
+    },
+    {
+     "text": "Return to Spria in Draynor Village."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

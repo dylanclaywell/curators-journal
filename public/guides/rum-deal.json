@@ -1,0 +1,147 @@
+{
+ "id": "rum-deal",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Rum_Deal%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting out",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Take a rake and a seed dibber from the leprechaun if you haven't got one already."
+    },
+    {
+     "text": "Talk to Pirate Pete on the dock north-east of the Ectofuntus, decline the money.",
+     "chat": [
+      "1. Yes!",
+      "1. Of course, I fear no demon!",
+      "1. Nonsense! Keep the money!"
+     ]
+    },
+    {
+     "text": "Finish talking to Captain Braindeath. Make sure you have at least one inventory space available to get the Blindweed seed (don't cancel the dialogue after the cutscene)."
+    }
+   ]
+  },
+  {
+   "title": "Blindweed",
+   "notes": [],
+   "steps": [
+    {
+     "text": "If you still do not have a rake and a seed dibber, go down the ladder in the north-west corner. Head south-east past the spiders, and search the cupboard there for the tools. Go back upstairs."
+    },
+    {
+     "text": "Leave the building to the south, down the stairs."
+    },
+    {
+     "text": "Go south past the zombies and plant the blindweed in the south-eastern-most patch."
+    },
+    {
+     "text": "Wait about 5 minutes (or a few seconds) for it to grow. (Warning: Nearby Zombie swabs can attack low and mid-levelled players. You can simply log out while waiting.) You'll receive an in-game message when it finishes growing. Pick the plant."
+    },
+    {
+     "text": "Talk to Captain Braindeath."
+    },
+    {
+     "text": "Climb-up the ladder in the south-east corner of the big room."
+    },
+    {
+     "text": "Put the blindweed in the hopper (next to the pressure barrel) in the north-west corner of the room."
+    }
+   ]
+  },
+  {
+   "title": "Stagnant water",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Captain Braindeath. You will automatically get a bucket in your inventory if you don't have one."
+    },
+    {
+     "text": "Leave the building using the stairs to the south, head west to the bridge, and open the gate north of 50% Luke."
+    },
+    {
+     "text": "Head north to the water source on the map, and fill the bucket with stagnant water."
+    },
+    {
+     "text": "Return to the brewery and add the stagnant water to the hopper. (Ectophial and talking to Pirate Pete is faster than walking back.)"
+    }
+   ]
+  },
+  {
+   "title": "Sluglings",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Captain Braindeath."
+    },
+    {
+     "text": "Fish 5 sluglings. Fishing spots can be found east, south-east, and west of the farming patch. (Note: do not untangle the Fishbowl and net, if you do then use one on the other to retangle.)"
+    },
+    {
+     "text": "Put the sluglings in the pressure barrel by the hopper."
+    },
+    {
+     "text": "Pull the lever."
+    }
+   ]
+  },
+  {
+   "title": "The evil spirit",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Captain Braindeath."
+    },
+    {
+     "text": "Talk to Davey in the room to the west, with all the bunk beds. (Note: He will only bless the wrench if you have 47 or more Prayer points)"
+    },
+    {
+     "text": "Use the holy wrench on the shaking brewing control."
+    },
+    {
+     "text": "Kill the level 150 Evil spirit. (Can be safespotted)"
+    }
+   ]
+  },
+  {
+   "title": "The spider carcass",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Captain Braindeath. (Complete the dialogue or the fever spider corpse won't drop)"
+    },
+    {
+     "text": "Climb down the nearby ladder."
+    },
+    {
+     "text": "Kill a fever spider (can be safespotted by standing north-west of the ladder)"
+    },
+    {
+     "text": "Put its body in the hopper on the top floor."
+    }
+   ]
+  },
+  {
+   "title": "Finishing up",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Captain Braindeath."
+    },
+    {
+     "text": "Collect some 'Unsanitary Swill' from the output tap (south end of the brewing machine) using the bucket used for the stagnant water. (if you dropped the first one, he will give you a second one here)"
+    },
+    {
+     "text": "Give it to Captain Donnie outside, amongst the protesters."
+    },
+    {
+     "text": "Talk to Captain Braindeath."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

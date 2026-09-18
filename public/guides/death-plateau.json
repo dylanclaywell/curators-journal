@@ -1,0 +1,119 @@
+{
+ "id": "death-plateau",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Death_Plateau%2FQuick_guide",
+ "sections": [
+  {
+   "title": "The Equipment Room",
+   "notes": [
+    "Needed: Asgarnian ale, 60+ coins",
+    "Recommended: Blurberry special or Premade blurb' sp."
+   ],
+   "steps": [
+    {
+     "text": "Speak to Denulth in the Burthorpe camp.",
+     "chat": [
+      "1. Do you have any quests for me?",
+      "1. No, but perhaps I could try and find one?"
+     ]
+    },
+    {
+     "text": "Ask Eohric on the of the castle about the guard that was on duty last night.",
+     "chat": [
+      "1. I'm looking for the guard that was on last night."
+     ]
+    },
+    {
+     "text": "Speak to Harold upstairs in the bar in Burthorpe.",
+     "chat": [
+      "1. You're the guard that was on duty last night?"
+     ]
+    },
+    {
+     "text": "Speak to Eohric again."
+    },
+    {
+     "text": "Go back to Harold."
+    },
+    {
+     "text": "Give him an Asgarnian ale."
+    },
+    {
+     "text": "(Optional) Give him a Blurberry special or Premade blurb' sp. to automatically win the gamble. If by chance, you have not brought the Blurberry special, just talk to him again and offer to gamble. This will leave you at the mercy of luck when bankrupting him and can become extremely frustrating if you go on a losing streak.",
+     "depth": 1,
+     "chat": [
+      "3. Can I buy you a drink?"
+     ]
+    },
+    {
+     "text": "Bet with Harold, you must bet over 60 gold (101 to immediately bankrupt him).",
+     "chat": [
+      "2. Would you like to gamble?"
+     ]
+    },
+    {
+     "text": "Continue to gamble until Harold is bankrupt.",
+     "depth": 1
+    },
+    {
+     "text": "Gamble until he gives you an \"IOU\". Read it to receive the combination."
+    },
+    {
+     "text": "Go to the castle and place the 5 coloured balls as shown in the image. The door will unlock (you have to read the note for this to work). Keep the note as you will need it to finish the quest, though if lost it can be reclaimed from Harold for free."
+    }
+   ]
+  },
+  {
+   "title": "The Secret Path",
+   "notes": [
+    "Needed: Iron bar and two empty inventory slots. (If you need to drop an item to free up a space, drop the combination as you can receive another from Harold.)",
+    "Needed: 10 loaves of bread, 10 cooked trout, combination, and Tenzing's spiked climbing boots"
+   ],
+   "steps": [
+    {
+     "text": "Go north-west of Burthorpe, enter the cave."
+    },
+    {
+     "text": "Ask Saba about another way up Death Plateau.",
+     "chat": [
+      "2. Do you know of another way up Death Plateau?"
+     ]
+    },
+    {
+     "text": "Leave the cave, continue north-west then go south at the fork."
+    },
+    {
+     "text": "Talk to Tenzing.",
+     "chat": [
+      "1. OK, I'll get those for you."
+     ]
+    },
+    {
+     "text": "Talk to Dunstan by the anvil in north-east Burthorpe."
+    },
+    {
+     "text": "Talk to Denulth where you started the quest, who will give you a certificate."
+    },
+    {
+     "text": "Talk to Dunstan to exchange your climbing boots, certificate and iron bar for spiked boots. (If you already own a pair of spiked boots, Dunstan will take the certificate, and then continue to the next step)"
+    },
+    {
+     "text": "Return to Tenzing; give him 10 bread, 10 trout and the spiked boots to get the map. The bread and trout must be un-noted, and the items must be given all in one go."
+    },
+    {
+     "text": "Exit Tenzing's house through the north door and then climb over the stile. Take the path north and around to the east (past the second mountain goat) until the message \"I think this is far enough\" appears in the chat box (NOT the Death Plateau warning, this is another message; you can ignore the warning, since the trolls only attack you on the main path)."
+    },
+    {
+     "text": "Talk to Denulth (make sure you have the combination with you when you do)."
+    },
+    {
+     "text": "If you lost the combination it can be re-obtained from Harold for free without gambling.",
+     "depth": 1
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

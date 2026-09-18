@@ -1,0 +1,109 @@
+{
+ "id": "recipe-for-disaster-freeing-pirate-pete",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Recipe_for_Disaster%2FFreeing_Pirate_Pete%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting off",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Inspect Pirate Pete."
+    },
+    {
+     "text": "Talk to the cook in the next room about protecting the pirate.",
+     "chat": [
+      "3. Protecting the Pirate"
+     ]
+    },
+    {
+     "text": "Go through all 5 chat options.",
+     "chat": [
+      "1. Where do I get Ground Cod?",
+      "1. Where do I get Ground Kelp?",
+      "2. Where do I get Ground Giant Crab Meat?3",
+      "3. Where do I get Breadcrumbs?",
+      "4. What do I do with all of it?",
+      "5. Thanks!"
+     ]
+    },
+    {
+     "text": "Use your pestle and mortar on the raw cod."
+    },
+    {
+     "text": "Use your knife on the bread to make breadcrumbs."
+    },
+    {
+     "text": "Talk to Murphy in Port Khazard. (Fishing Trawler minigame teleport is the easiest way to get there - requires 15 Fishing)",
+     "chat": [
+      "1. Talk about Recipe for Disaster."
+     ]
+    },
+    {
+     "text": "Talk to Murphy again.",
+     "chat": [
+      "1. Yes, Let's go diving."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Under the Sea",
+   "notes": [
+    "Note: Before diving your weight must be under 27&nbsp;kg and you must have at least 7 free inventory spaces (10 recommended). Paired with pieces of the Graceful outfit, you can easily match this weight while still bringing a weapon and armour such as the Varrock armour from the easy Varrock Diary, which weighs 1 kg. You also cannot go underwater with a pet following you or in your inventory. You may also wish to acquire multiple ingredients in case the fishcake is burnt."
+   ],
+   "steps": [
+    {
+     "text": "Equip your fishbowl helmet and diving apparatus, Bring the needle and three bronze wire. Agree to go diving."
+    },
+    {
+     "text": "Pick some kelp. (It's highly recommended to pick at least 3 kelp as the fishcake can burn)."
+    },
+    {
+     "text": "If you don't have at least 5 inventory spaces, skip this until leaving as you must gather 5 hide.",
+     "depth": 1
+    },
+    {
+     "text": "Go north and talk to Nung."
+    },
+    {
+     "text": "Go west and pick up 5 rocks, then enter the cave."
+    },
+    {
+     "text": "Kill 5 mudskippers (level 30/31) for 5 hides."
+    },
+    {
+     "text": "You can give the hide in more than one trip",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Nung twice."
+    },
+    {
+     "text": "Enter the crab pen, kill a crab and take its meat. (It's highly recommended to get at least 3 Crab meat as the fishcake can burn)."
+    },
+    {
+     "text": "Grind the kelp and crab meat with a pestle and mortar."
+    },
+    {
+     "text": "Teleport away, or go south and climb the anchor"
+    },
+    {
+     "text": "Talk to the Cook in Lumbridge about freeing the pirate again.",
+     "chat": [
+      "3. Protecting the Pirate"
+     ]
+    },
+    {
+     "text": "Use the ingredients on each other then cook the fishcake."
+    },
+    {
+     "text": "Give the fishcake to Pirate Pete in Lumbridge."
+    },
+    {
+     "text": "Congratulations, section complete!"
+    }
+   ]
+  }
+ ]
+}

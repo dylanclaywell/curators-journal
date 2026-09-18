@@ -1,0 +1,103 @@
+{
+ "id": "witchs-house",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Witch's_House%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Entering the house",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to the Boy south-east of the long garden in Taverley, next to the members gate.",
+     "chat": [
+      "1. What's the matter?",
+      "1. Ok, I'll see what I can do."
+     ]
+    },
+    {
+     "text": "Head west, then north to the front door of the house, across from the player-owned house portal."
+    },
+    {
+     "text": "Look-under the potted plant closest to the door for a door key and enter the door."
+    },
+    {
+     "text": "Read the Diary on the table"
+    },
+    {
+     "text": "Climb down the ladder to the north, equip gloves, and enter the gate. (The boxes can be searched for a pair of leather gloves.)"
+    },
+    {
+     "text": "Equip your leather gloves before opening the gate."
+    },
+    {
+     "text": "Search the cupboard for a magnet."
+    },
+    {
+     "text": "Climb up the ladder and go to the small southern room."
+    },
+    {
+     "text": "Drop cheese in the room and a mouse will come out."
+    },
+    {
+     "text": "Use the magnet on the mouse."
+    }
+   ]
+  },
+  {
+   "title": "Retrieving the ball",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Go around the garden to the fountain without being caught by the Witch. (Full run energy or a stamina potion may be useful.)"
+    },
+    {
+     "text": "Note: Use the hedges, getting caught means repeating all previous steps except for getting the door key. You cannot walk over the grass.",
+     "depth": 1
+    },
+    {
+     "text": "Check the fountain."
+    },
+    {
+     "text": "Go to the shed on the east and use the key on the door."
+    },
+    {
+     "text": "Warning: Attempting to take the ball now makes the Witch's experiment lower your combat stats.",
+     "depth": 1
+    },
+    {
+     "text": "Kill the Witch's experiment in all four forms."
+    },
+    {
+     "text": "Low levels can use the north-eastern corner to step under the first and second forms of the Witch's experiment until it goes north where it is safespottable with magic 1 tile south-west.",
+     "depth": 1
+    },
+    {
+     "text": "The third and fourth forms can be safespotted in the south of the shed past the ball.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Finishing up",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Take the ball."
+    },
+    {
+     "text": "Leave the Witch's house by teleporting out, or by exiting through the garden then the front door."
+    },
+    {
+     "text": "Do not get caught or you will have to get the ball again. If the ball does not spawn when you lose it, hop worlds.",
+     "depth": 1
+    },
+    {
+     "text": "Go back to the boy and give him the ball."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

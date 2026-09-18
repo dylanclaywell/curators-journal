@@ -1,0 +1,220 @@
+{
+ "id": "mountain-daughter",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Mountain_Daughter%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting out",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Head to the entrance of the mountain camp east of Rellekka or north of the AJR fairy ring."
+    },
+    {
+     "text": "Take the path north, past the guard, and use your rope on a boulder you can push to get around."
+    },
+    {
+     "text": "Head into the camp and talk to Hamal the Chieftain. (or with The Fremennik Trials completed)",
+     "chat": [
+      "1. Why is everyone so hostile?",
+      "1. So what are you doing up here?",
+      "1. I will search for her!",
+      "2. Why is everyone so hostile?",
+      "1. So what are you doing up here?",
+      "1. I will search for her!"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Crisis",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Dig some mud from the mud pond south of Hamal's house."
+    },
+    {
+     "text": "If you do not have a staff, go north of Hamal's house and take a pole. Keep this throughout the quest.",
+     "depth": 1
+    },
+    {
+     "text": "Go north, following the path along the lake westward."
+    },
+    {
+     "text": "Use the mud on the tall tree then climb it. You do *not* need to do this again for subsequent climbs."
+    },
+    {
+     "text": "Use your pole or staff on the clump of rocks to pole vault over."
+    },
+    {
+     "text": "Use your plank on the flat stones. Keep this throughout the quest."
+    },
+    {
+     "text": "Listen to the shining pool.",
+     "chat": [
+      "2. Hello! Who are you?",
+      "2. So what exactly do you want from me?",
+      "1. That sounds like something I can do.",
+      "1. I'll get right on it."
+     ]
+    },
+    {
+     "text": "Use your plank on the flat stone to return to shore."
+    }
+   ]
+  },
+  {
+   "title": "Making Peace",
+   "notes": [
+    "Note: Both tasks requested by Asleif (regarding Rellekka and finding a new food source) can be started at the same time. This reduces going back to the Mountain Camp multiple times. (Make sure that you speak to Jokul before leaving the camp to speak to Svidi.)"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Hamal the Chieftain about the people of Rellekka.",
+     "chat": [
+      "2. About the people of Rellekka...",
+      "1. Why do you hate them so much?"
+     ]
+    },
+    {
+     "text": "Speak to Jokul north of the Cheiftains tent before leaving the camp to speak to Svidi."
+    },
+    {
+     "text": "Search for Svidi between Rellekka and the entrance to Keldagrim.",
+     "chat": [
+      "2. Can't I persuade you to go in there somehow?"
+     ]
+    },
+    {
+     "text": "Go to Rellekka and talk to Brundt the Chieftain in the longhall. or if Lunar Diplomacy started/completed.",
+     "chat": [
+      "1. Ask about the mountain camp.",
+      "1. Did it contain vast magical powers?",
+      "2. Ask about the mountain camp.",
+      "1. Did it contain vast magical powers?"
+     ]
+    },
+    {
+     "text": "Return to the Mountain Camp, and enter the large tent south-west of Hamal the Chieftain."
+    },
+    {
+     "text": "Use your pickaxe on the Ancient Rock located in the southern tent to get half a rock."
+    },
+    {
+     "text": "Take this back to Rellekka, and talk to Brundt the Chieftain or if Lunar Diplomacy started/completed, who will give you the guarantee of safe passage.",
+     "chat": [
+      "1. Ask about the mountain camp.",
+      "2. Ask about the mountain camp."
+     ]
+    },
+    {
+     "text": "(optional) While you still have your pickaxe, mine some coal in the Rellekka mine for a Fremennik diary task. (requires completion of The Fremmenik Trials)",
+     "depth": 1
+    },
+    {
+     "text": "Take the guarantee to Svidi. You do not need to check on Svidi afterward."
+    },
+    {
+     "text": "Return to Hamal the Chieftain.",
+     "chat": [
+      "2. About the people of Rellekka..."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The White Pearl",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Hamal the Chieftan again, this time about food supplies.",
+     "chat": [
+      "3. About your food supplies...",
+      "1. Never mind."
+     ]
+    },
+    {
+     "text": "Talk to Jokul just north of Hamal. If you spoke to him earlier you do not need to do this. He will tell you of a White Pearl plant that is very hardy."
+    },
+    {
+     "text": "Travel to White Wolf Mountain (Keldagrim minecart system if The Giant Dwarf is completed, or Gnome glider if The Grand Tree completed.)"
+    },
+    {
+     "text": "Equip gloves and pick-from the thorny bushes by the gnome glider."
+    },
+    {
+     "text": "Eat the white pearl you picked to get the white pearl seed."
+    },
+    {
+     "text": "Speak to Hamal the Chieftain to give him the white pearl seed.",
+     "chat": [
+      "2. About your food supplies..."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The Kendal",
+   "notes": [
+    "Item required: Axe, Pole/Staff, Plank",
+    "Prepare to fight a level 70 creature that only uses melee."
+   ],
+   "steps": [
+    {
+     "text": "Speak to the shining pool again (remember to use the pole/staff and plank)."
+    },
+    {
+     "text": "Cross the gap back to shore"
+    },
+    {
+     "text": "Follow the northern path east to a cave."
+    },
+    {
+     "text": "Chop down the trees blocking your path (make sure you are facing east)"
+    },
+    {
+     "text": "Enter the cave"
+    },
+    {
+     "text": "Talk to The Kendal.",
+     "chat": [
+      "1. It's just me, no one special.",
+      "2. You mean a sacrifice?",
+      "3. You look like a man in a bearsuit!",
+      "2. Can I see that corpse?",
+      "2. I humbly request to be given the remains.",
+      "1. I will kill you myself!"
+     ]
+    },
+    {
+     "text": "Kill The Kendal. He can be safespotted utilizing skeletons around the room."
+    },
+    {
+     "text": "Take the corpse of woman"
+    },
+    {
+     "text": "Return to Hamal the Chieftain.",
+     "chat": [
+      "1. But he's not a god!",
+      "1. I will."
+     ]
+    },
+    {
+     "text": "Gather 5 muddy rocks from around the camp."
+    },
+    {
+     "text": "Talk to Ragnar near the tall tree by the lake to get Asleif's necklace."
+    },
+    {
+     "text": "Return to the shining pool and bury the corpse on the island."
+    },
+    {
+     "text": "Use the muddy rocks on the burial mound. (You make the mound by burying the corpse on the island.)"
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

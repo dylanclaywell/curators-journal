@@ -1,0 +1,95 @@
+{
+ "id": "devious-minds",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Devious_Minds%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting out",
+   "notes": [
+    "Items required: None"
+   ],
+   "steps": [
+    {
+     "text": "Talk to the monk outside of the Paterdomus Temple, which is east of Varrock. (You can use fairy ring code CKS and then run west and climb the shortcut to arrive there quickly).",
+     "chat": [
+      "1. Yes."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "A strange weapon",
+   "notes": [
+    "Items required: bow string, Mithril 2h sword or 3 mithril bars and a hammer"
+   ],
+   "steps": [
+    {
+     "text": "Go to Doric's house north of Falador."
+    },
+    {
+     "text": "Use the mithril 2h sword on Doric's Whetstone to make a slender blade."
+    },
+    {
+     "text": "Attach the bow string to it to make the bow-sword."
+    }
+   ]
+  },
+  {
+   "title": "A gift for Entrana",
+   "notes": [
+    "Items required: Large pouch, food/prayer for the Abyss enemies"
+   ],
+   "steps": [
+    {
+     "text": "Talk to the monk again with the bow-sword."
+    },
+    {
+     "text": "Use the orb on the Large pouch."
+    },
+    {
+     "text": "Ultimate Ironmen: The Large pouch is lost upon death if the orb is inside it. Use the orb on the pouch only after 'banking' for Entrana.",
+     "depth": 1
+    },
+    {
+     "text": "Bank your weapons and armour and take out supplies to protect against the monsters in the Abyss."
+    },
+    {
+     "text": "Go to the Law Altar through the Abyss."
+    },
+    {
+     "text": "Exit the portal and head to the church on Entrana."
+    }
+   ]
+  },
+  {
+   "title": "Surprise!",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Use the pouch on the church altar and wait for the cut-scene to finish."
+    },
+    {
+     "text": "Talk to the High Priest."
+    },
+    {
+     "text": "Head back to the monk in Paterdomus."
+    },
+    {
+     "text": "Search the Dead Monk."
+    },
+    {
+     "text": "Go back to Entrana and speak with the High Priest. (Rat Pits Minigame Teleport will take players to Port Sarim. Requires Ratcatchers quest. Players can also use the Minigame Pest Control teleport which is very close to Port Sarim)"
+    },
+    {
+     "text": "Head to Falador Park and talk to Sir Tiffy Cashien.",
+     "chat": [
+      "1. Devious Minds."
+     ]
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

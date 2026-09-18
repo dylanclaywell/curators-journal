@@ -1,0 +1,39 @@
+{
+ "id": "druidic-ritual",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Druidic_Ritual%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Kaqemeex in the stone circle north of Taverley.",
+     "chat": [
+      "2. I'm in search of a quest.",
+      "1. Okay, I will try and help."
+     ]
+    },
+    {
+     "text": "Talk to Sanfew, who is upstairs in the Herb shop in Taverley.",
+     "chat": [
+      "1. I've been sent to help purify the Varrock stone circle.",
+      "2. Ok, I'll do that then."
+     ]
+    },
+    {
+     "text": "Bring the four meats to the Cauldron in Taverley Dungeon, and use them on the Cauldron to enchant them."
+    },
+    {
+     "text": "Talk to Sanfew."
+    },
+    {
+     "text": "Talk to Kaqemeex."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

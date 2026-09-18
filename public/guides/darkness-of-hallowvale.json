@@ -1,0 +1,436 @@
+{
+ "id": "darkness-of-hallowvale",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Darkness_of_Hallowvale%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting out",
+   "notes": [
+    "Items needed: 2 planks, 8 nails and a hammer"
+   ],
+   "steps": [
+    {
+     "text": "Travel to Burgh de Rott."
+    },
+    {
+     "text": "Talk to Veliaf Hurtz in the pub basement.",
+     "chat": [
+      "4. Is there something I can do to help out?",
+      "1. Yes, please tell me more.",
+      "1. What is the Sanguinesti region?",
+      "2. How can I search for the Sanguinesti order of the Myreque?",
+      "3. Can you tell me about the Sanguinesti Myreque?",
+      "4. How should I get into the Sanguinesti region?",
+      "5. Okay, thanks."
+     ]
+    },
+    {
+     "text": "Go south-east to the docks where there's a hut with a boat in it."
+    },
+    {
+     "text": "Use a plank on the boat."
+    },
+    {
+     "text": "Use a plank on the boat chute."
+    },
+    {
+     "text": "Push the boat down the chute."
+    },
+    {
+     "text": "Board the boat."
+    }
+   ]
+  },
+  {
+   "title": "Welcome to Meiyerditch",
+   "notes": [
+    "Note: while in Meiyerditch if you are provoked by a Vyrewatch you can log out to avoid any interactions with them."
+   ],
+   "steps": [
+    {
+     "text": "Go north-west a short distance (still on the pier), search the floor then kick it down and climb down."
+    },
+    {
+     "text": "Climb over the wall rubble and talk to any Meiyerditch citizen.",
+     "chat": [
+      "4. (whisper) Do you know about the Myreque?",
+      "4. (whisper) I really need to meet the Myreque.",
+      "4. How can Old Man Ral help me?"
+     ]
+    },
+    {
+     "text": "Talk to Old Man Ral to the north.",
+     "chat": [
+      "4. Someone said you could help me.",
+      "4. Old Man Ral, the sage of Sanguinesti."
+     ]
+    },
+    {
+     "text": "Climb up the ladder in the building south-west of Old Man Ral."
+    }
+   ]
+  },
+  {
+   "title": "The sickle logo agility course",
+   "notes": [
+    "Items Needed: Knife (obtainable during the course)"
+   ],
+   "steps": [
+    {
+     "text": "Jump south to the floorboards."
+    },
+    {
+     "text": "Jump east to the floorboards."
+    },
+    {
+     "text": "Go to the north-east corner of the room, push the wall and go across the gap."
+    },
+    {
+     "text": "Crawl under the wall to the north."
+    },
+    {
+     "text": "Go north to the second room, look on the west side, push the wall and walk across it."
+    },
+    {
+     "text": "Climb down the ladder."
+    },
+    {
+     "text": "Search the table next to the wall, open the trapdoor table, and climb into it."
+    },
+    {
+     "text": "Climb up the shelf."
+    },
+    {
+     "text": "Crawl under the wall to the east side."
+    },
+    {
+     "text": "Jump to the floorboards to the east."
+    },
+    {
+     "text": "Climb down the ladder."
+    },
+    {
+     "text": "Search the pots near the eastern door to get a door key and use it to open the door."
+    },
+    {
+     "text": "Climb up the ladder in the room to the east."
+    },
+    {
+     "text": "Jump south to the floorboards."
+    },
+    {
+     "text": "Go east, south, west and climb up the shelf."
+    },
+    {
+     "text": "Climb up the ladder."
+    },
+    {
+     "text": "Jump south again to the floorboards."
+    },
+    {
+     "text": "Climb down the ladder."
+    },
+    {
+     "text": "Go east through the rooms and walk across the washing line."
+    },
+    {
+     "text": "Climb down the ladder."
+    },
+    {
+     "text": "Push the wall to the north and walk across the floor."
+    },
+    {
+     "text": "Climb up the shelf to the north."
+    },
+    {
+     "text": "Climb down the shelf on the north-eastern side, below the floor."
+    },
+    {
+     "text": "Jump to the floorboards to the north-west."
+    },
+    {
+     "text": "Jump to the floorboards to the north."
+    },
+    {
+     "text": "Go north-west and then east (around a gap in the floor) and jump to the floorboards."
+    },
+    {
+     "text": "Climb up the ladder."
+    },
+    {
+     "text": "Search the western wall to find a ladder top."
+    },
+    {
+     "text": "Climb down the ladder you came up, then repair the nearby broken ladder using the ladder top. Then climb down the fixed ladder. You are now in sector three."
+    },
+    {
+     "text": "Open the door and go north and slightly west, then north to a house with a fireplace in it. (go up the ladder if you need a knife)"
+    },
+    {
+     "text": "Go west through the door into the next room, then north out of the house until you see a barricade."
+    },
+    {
+     "text": "Go east past the sickle logo and the house directly south should have a ladder inside. Climb up the ladder."
+    },
+    {
+     "text": "Jump to the floorboards to the east."
+    },
+    {
+     "text": "Climb down the stairs."
+    },
+    {
+     "text": "Go south along the eastern side of the stairs. Search the wall. Use your knife on the wall, then push it."
+    },
+    {
+     "text": "Press the decorated wall on the northern side."
+    },
+    {
+     "text": "Open the lumpy rug (south-east square of the green rug)."
+    },
+    {
+     "text": "Climb down the trapdoor to enter the hideout."
+    }
+   ]
+  },
+  {
+   "title": "Myreque meetings",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Run north and talk to Vertida Sefalatis."
+    },
+    {
+     "text": "Note: you may have to select chat option in order to receive the note from Vertida. Double check your quest log to make sure it's updated, or else you'll have to re-run the entire course again!",
+     "depth": 1
+    },
+    {
+     "text": "Travel back to Burgh de Rott."
+    },
+    {
+     "text": "Talk to Veliaf Hurtz in the pub basement."
+    }
+   ]
+  },
+  {
+   "title": "Urgent business",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Travel to the Paterdomus Temple (fairy ring CKS)."
+    },
+    {
+     "text": "Talk to Drezel in Paterdomus, underneath the temple."
+    },
+    {
+     "text": "Take the west exit, past the monuments."
+    },
+    {
+     "text": "Optionally, with Agility 65, instead exit toward Canifis and take the shortcut up the side of the temple.",
+     "depth": 1
+    },
+    {
+     "text": "Search the bush slightly south-west of the steps leading to the temple."
+    },
+    {
+     "text": "Wait for the cutscene to finish."
+    },
+    {
+     "text": "Return to speak with Drezel. He will give you runes to use Varrock Teleport."
+    },
+    {
+     "text": "Teleport or travel to Varrock and talk to King Roald in the palace. The king will teleport you back to Paterdomus if you ask the right question.",
+     "chat": [
+      "1. Talk to the King about Morytania.",
+      "4. What should I do now?"
+     ]
+    },
+    {
+     "text": "Travel back to Burgh de Rott."
+    },
+    {
+     "text": "Talk to Veliaf Hurtz in the pub basement."
+    }
+   ]
+  },
+  {
+   "title": "Back to Meiyerditch",
+   "notes": [
+    "Items Needed: Pickaxe (obtainable from Meiyerditch miner), knife, 4 free inventory spaces.",
+    "Recommended: Combat equipment to protect and heal against Vanstrom Klause",
+    "Note: if using RuneLite, switch off low detail when searching for sickle logos on the castle wall."
+   ],
+   "steps": [
+    {
+     "text": "Return to Meiyerditch and speak to a Vyrewatch.",
+     "chat": [
+      "1. Send me to the mines!"
+     ]
+    },
+    {
+     "text": "Talk to a Meiyerditch miner to get a pickaxe if you don't have one.",
+     "chat": [
+      "3. How do you get out of here?"
+     ]
+    },
+    {
+     "text": "Mine the daeyalt rocks on the walls until you get 15 daeyalt ore."
+    },
+    {
+     "text": "Use all 15 ores on the mine cart, then talk to a Vampyre Juvinate."
+    },
+    {
+     "text": "Run to the Myreque Hideout, marked on the map to the right. Follow the blue path from north to south."
+    },
+    {
+     "text": "Go south through 3 doors and up the ladder."
+    },
+    {
+     "text": "Jump to the floorboards to the east, climb down the stairs and enter the hideout."
+    },
+    {
+     "text": "Talk to Vertida.",
+     "chat": [
+      "1. Okay, lead the way."
+     ]
+    },
+    {
+     "text": "Climb down the ladder, out the door, run south and climb over the wall rubble where you came in to Meiyerditch."
+    },
+    {
+     "text": "Run south and climb up the floor."
+    },
+    {
+     "text": "Run north up the slope and climb down the ladder."
+    },
+    {
+     "text": "Search the rocky surface."
+    },
+    {
+     "text": "Go north through the barricade."
+    },
+    {
+     "text": "Climb up the ladder."
+    },
+    {
+     "text": "Run north along the wall and climb up the ladder."
+    },
+    {
+     "text": "Climb down the next ladder."
+    },
+    {
+     "text": "Climb the castle wall to the north."
+    },
+    {
+     "text": "Run west along the wall clockwise and talk to Safalaan. Make sure you have 4 free inventory spaces."
+    },
+    {
+     "text": "Run west along the wall clockwise until you see a sickle logo on the floor of the wall you're walking on, on the north side of the castle."
+    },
+    {
+     "text": "Use the papyrus on the charcoal for the first sketch."
+    },
+    {
+     "text": "Run west counter-clockwise and do the same for the west sickle for the second sketch."
+    },
+    {
+     "text": "Wait for the cutscene to finish."
+    },
+    {
+     "text": "Run west counter-clockwise and do the same for the south sickle."
+    },
+    {
+     "text": "Note: use Protect from Melee when the cutscene begins to avoid taking damage from Vanstrom Klause. Prayers activated before the cutscene will be deactivate when you are attacked.",
+     "depth": 1
+    },
+    {
+     "text": "Let Vanstrom attack you five times, which will knock you out."
+    },
+    {
+     "text": "Go back and finish your final sketch."
+    },
+    {
+     "text": "Talk to Sarius Guile if she didn't automatically talk to you when Vanstrom knocked you out."
+    },
+    {
+     "text": "Speak to a nearby Vyrewatch and use the mine technique to get back to the base."
+    },
+    {
+     "text": "Walk to the house directly south-west of the house with the ladder leading to the Myreque Hideout. It contains a fireplace and a portrait on its south wall."
+    },
+    {
+     "text": "Use your knife on the fireplace for a message."
+    },
+    {
+     "text": "Note: if needed, there is a knife spawn upstairs.",
+     "depth": 1
+    },
+    {
+     "text": "Use your knife on the portrait for a large ornate key."
+    },
+    {
+     "text": "Note: if you don't automatically obtain the key, inspect the portrait.",
+     "depth": 1
+    },
+    {
+     "text": "Return to the Myreque Hideout."
+    },
+    {
+     "text": "Talk to Safalaan.. Afterwards, give him the message.",
+     "chat": [
+      "2. I have a message for you Safalaan - it may be important."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Locating the laboratory",
+   "notes": [
+    "Items Needed: Knife, message, large ornate key; and one law rune and one air rune for Telekinetic Grab (standard spellbook) (can be obtained in the Broken rune case)."
+   ],
+   "steps": [
+    {
+     "text": "Exit the base, climb up the stairs, jump the gap, then climb down the ladder"
+    },
+    {
+     "text": "Travel north towards the mine until you find a bright, red and yellow tapestry inside a building adjacent to the Eastern city wall."
+    },
+    {
+     "text": "Slash the tapestry with your knife."
+    },
+    {
+     "text": "Walk through it and use the large ornate key on the statue."
+    },
+    {
+     "text": "Open the door, climb-down the staircase and use Telekinetic Grab on Haemalchemy volume 1."
+    },
+    {
+     "text": "Note: If needed, runes for Telekinetic Grab can be found in the Broken rune case.",
+     "depth": 1
+    },
+    {
+     "text": "Return to the base and talk to Safalaan one final time and give him Haemalchemy volume 1."
+    }
+   ]
+  },
+  {
+   "title": "Finishing up",
+   "notes": [
+    "Items Needed: Sealed message"
+   ],
+   "steps": [
+    {
+     "text": "Travel back to Burgh de Rott."
+    },
+    {
+     "text": "Talk to Veliaf Hurtz in the pub basement.",
+     "chat": [
+      "1. I have a message for you from Safalaan."
+     ]
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

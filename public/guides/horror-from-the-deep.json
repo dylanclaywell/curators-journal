@@ -1,0 +1,63 @@
+{
+ "id": "horror-from-the-deep",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Horror_from_the_Deep%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "To begin the quest use the fairy ring code ALP to teleport to the lighthouse. Alternatively, one could teleport to the Barbarian Outpost using a games necklace or Grouping teleport then hop over the rocks to the north to reach the lighthouse."
+    },
+    {
+     "text": "Talk to Larrissa.",
+     "chat": [
+      "1. With what?",
+      "1. But how can I help?",
+      "1. Okay, I'll help!",
+      "3. I'll see what I can do"
+     ]
+    },
+    {
+     "text": "Run east to the second bridge, use a plank on it."
+    },
+    {
+     "text": "Jump the bridge and use a second plank on it."
+    },
+    {
+     "text": "Head over to Barbarian Outpost, enter the Barbarian Outpost Agility arena and talk to Gunnjorn for a key. In order to enter the arena, you need to have completed the barcrawl miniquest."
+    },
+    {
+     "text": "While at the outpost, prepare for the battle against the Dagannoth and Dagannoth Mother.",
+     "depth": 1
+    },
+    {
+     "text": "(Optional) Complete a lap of the Agility course to complete a medium Kandarin task.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Larrissa again."
+    },
+    {
+     "text": "Go to the roof of the lighthouse and use the swamp tar, tinderbox, and molten glass on the lighting mechanism."
+    },
+    {
+     "text": "Climb down to the basement, use 1 of each elemental rune, any sword, and any arrow on the strange wall."
+    },
+    {
+     "text": "Open the eastern strange wall of the doorway, climb down the ladder and talk to Jossik."
+    },
+    {
+     "text": "Kill the level 100 Dagannoth then the level 100 Dagannoth Mother by using any elemental magic attack from the table below."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    },
+    {
+     "text": "Take the rusty casket you received from killing the Dagannoth mother to Jossik upstairs to receive a damaged prayer book (choose any, you can buy the others from him afterwards for 5000 coins each). If you didn't receive a casket, he will give you one during the conversation."
+    }
+   ]
+  }
+ ]
+}

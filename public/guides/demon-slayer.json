@@ -1,0 +1,127 @@
+{
+ "id": "demon-slayer",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Demon_Slayer%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Speak with Aris in her tent in Varrock Square and give her 1 gp., or if you've started Recipe for Disaster",
+     "chat": [
+      "1. Yes.",
+      "2. Okay, where is he? I'll kill him for you!",
+      "3. So how did Wally kill Delrith?",
+      "4. Where can I find Silverlight?",
+      "1. The Demon Slayer Quest",
+      "1. Ok, here you go.",
+      "2. Okay, where is he? I'll kill him for you!",
+      "3. So how did Wally kill Delrith?",
+      "4. Where can I find Silverlight?"
+     ]
+    },
+    {
+     "text": "Remember the incantation Wally chants in the cutscene as it varies from player to player. If you forget it speak to Aris again and ask her about what the magical incantation was.",
+     "depth": 1
+    },
+    {
+     "text": "Speak to Sir Prysin on the at the south-west corner of Varrock palace",
+     "chat": [
+      "3. Aris said I should come and talk to you.",
+      "1. I need to find Silverlight.",
+      "2. He's back and unfortunately I've got to deal with him.",
+      "2. And why is this a problem?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "First key",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Go to north-west corner of the palace and go up two flights of stairs."
+    },
+    {
+     "text": "Speak to Captain Rovin in the north-west tower on the about the demon.",
+     "chat": [
+      "3. Yes I know, but this is important.",
+      "1. There's a demon who wants to invade this city.",
+      "2. Yes, very.",
+      "2. It's not them who are going to fight the demon, it's me.",
+      "3. Sir Prysin said you would give me the key.",
+      "1. Why did he give you one of the keys then?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Second key",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Go to the kitchen to the north-east, on the."
+    },
+    {
+     "text": "If you don't have a bucket of water, head up the staircase in the kitchen and grab one from the room to the east. Head back down to the kitchen and fill the bucket from the sink.",
+     "depth": 1
+    },
+    {
+     "text": "Use a bucket of water on the drain outside of the eastern kitchen wall."
+    },
+    {
+     "text": "Climb down the manhole east of the palace, just outside the wall near the tree patch."
+    },
+    {
+     "text": "Take the north-west path down to the end and take the rusty Silverlight key from the floor. (It does not appear on the minimap)"
+    }
+   ]
+  },
+  {
+   "title": "Third key",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Take 25 un-noted bones from your bank."
+    },
+    {
+     "text": "Ultimate Ironmen: You can deliver the bones a few at a time. You do not have to deliver all 25 at once.",
+     "depth": 1
+    },
+    {
+     "text": "Go to Wizards' Tower (south of Draynor Village) (fairy ring code DIS)."
+    },
+    {
+     "text": "Climb up the stairs and talk to Wizard Traiborn.",
+     "chat": [
+      "1. Talk about Demon Slayer.",
+      "3. Well, have you got any keys knocking around?",
+      "2. I'll get the bones for you."
+     ]
+    },
+    {
+     "text": "He will ask for 25 bones (noted will not work); bring him these and he will give you his key."
+    }
+   ]
+  },
+  {
+   "title": "Delrith",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Return to Sir Prysin (south-west room of Varrock Castle) and give him the keys."
+    },
+    {
+     "text": "Wield Silverlight and go to the Dark wizards by Varrock's south entrance. A cutscene will occur."
+    },
+    {
+     "text": "Defeat Delrith; right-click Delrith and banish him with the incantation seen earlier. The incantation varies from player to player; Aris will remind players of the incantation if forgotten."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

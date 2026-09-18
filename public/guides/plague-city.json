@@ -1,0 +1,135 @@
+{
+ "id": "plague-city",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Plague_City%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting the quest",
+   "notes": [
+    "Bring all items with you. Make the hangover cure now by putting chocolate dust in a bucket of milk, then add snape grass, being careful not to drink or eat anything."
+   ],
+   "steps": [
+    {
+     "text": "Speak to Edmond.",
+     "chat": [
+      "1. What's happened to her?",
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Speak to Alrena inside or near the house."
+    },
+    {
+     "text": "Take the Picture of Elena off the table in the house."
+    },
+    {
+     "text": "Speak to Edmond."
+    },
+    {
+     "text": "Use 4 buckets of water on the mud patch behind the house (between the cabbages and potatoes)."
+    },
+    {
+     "text": "Dig with a spade on the softened ground."
+    },
+    {
+     "text": "Go south to the farthest pipe."
+    },
+    {
+     "text": "Attempt to open the grill."
+    },
+    {
+     "text": "Use a rope on the grill."
+    },
+    {
+     "text": "Speak to Edmond."
+    },
+    {
+     "text": "Put on the gas mask and climb up the pipe."
+    }
+   ]
+  },
+  {
+   "title": "Finding Elena",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Go east and speak to Jethick; he will give you a book.",
+     "chat": [
+      "1. Yes, I'll return it for you."
+     ]
+    },
+    {
+     "text": "Go north to the house against the wall (next to the rotten apple spawn)."
+    },
+    {
+     "text": "Attempt to open the door."
+    },
+    {
+     "text": "Speak to Martha Rehnison or Ted Rehnison in the house."
+    },
+    {
+     "text": "Go upstairs and speak to Milli Rehnison."
+    },
+    {
+     "text": "Go south of the town square to the large building along the southern wall with an \"X\" on the doors and a staircase inside going down. Attempt to open the door.",
+     "chat": [
+      "2. I fear not a mere plague."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Getting inside",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Go to the large main building on the north side of the town square, north of the manhole."
+    },
+    {
+     "text": "Talk to the Clerk in the main room.",
+     "chat": [
+      "1. Who is through that door?",
+      "3. This is urgent though! Someone's been kidnapped!"
+     ]
+    },
+    {
+     "text": "Speak to Bravek.",
+     "chat": [
+      "1. This is really important though!",
+      "3. Do you know what's in the cure?"
+     ]
+    },
+    {
+     "text": ":He will give you a scruffy note for a hangover cure."
+    },
+    {
+     "text": "Use the hangover cure on Bravek; he will give you a warrant.",
+     "chat": [
+      "3. They won't listen to me!"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Finishing up",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Return to the Mourner house, the one with \"X\" on the doors and the stairwell."
+    },
+    {
+     "text": "Search the barrel west of the staircase for a small key."
+    },
+    {
+     "text": "Go downstairs, enter the cell, and speak to Elena."
+    },
+    {
+     "text": "Return to the town square, go down the manhole, through the sewer, climb the mud pile, and speak to Edmond at his house."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

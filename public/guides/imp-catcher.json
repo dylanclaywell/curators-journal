@@ -1,0 +1,34 @@
+{
+ "id": "imp-catcher",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Imp_Catcher%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Obtain the black, red, white, and yellow beads:"
+    },
+    {
+     "text": "Buy them from the Grand Exchange",
+     "depth": 1
+    },
+    {
+     "text": "Kill imps, recommended for free players either near the southern entrance to Falador or the top of the Karamja volcano; or for members east of the Ardougne Monastery, at the entrance of Chasm of Fire, or around the Charcoal furnace",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Wizard Mizgog on the top floor of the Wizards' Tower with all four beads in your inventory.",
+     "chat": [
+      "1. Give me a quest please.",
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

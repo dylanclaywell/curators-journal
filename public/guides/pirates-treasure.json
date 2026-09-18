@@ -1,0 +1,105 @@
+{
+ "id": "pirates-treasure",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Pirate's_Treasure%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Captain Redbeard",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Redbeard Frank by the pub to the north Port Sarim dock.",
+     "chat": [
+      "1. I'm in search of treasure.",
+      "1. Ok, I will bring you some rum"
+     ]
+    },
+    {
+     "text": "Travel to Karamja for 30 coins (talk to Seaman Thresnor, Seaman Lorris, or Captain Tobias on the south-west docks)."
+    }
+   ]
+  },
+  {
+   "title": "The island of Karamja",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Head west to the Karamja Wines, Spirits, and Beers bar and buy one Karamjan rum for 30 coins. (Do not try to leave the island with the rum.)"
+    },
+    {
+     "text": "Grab 10 Bananas from the nearby trees."
+    },
+    {
+     "text": "Talk to Luthas the banana farmer about the customs workers, then talk to him again to ask for a job.",
+     "chat": [
+      "2. That customs officer is annoying isn't she?",
+      "1. Could you offer me employment on your plantation?"
+     ]
+    },
+    {
+     "text": "Place your rum in the crate outside, then right-click Fill to add the 10 bananas (the crate outside, not in the bedroom. Careful not to eat the bananas)."
+    },
+    {
+     "text": "Talk to Luthas and get your payment from him."
+    },
+    {
+     "text": "Take the boat back to Port Sarim.",
+     "chat": [
+      "1. Can I journey on this ship?",
+      "2. Search away, I have nothing to hide.",
+      "1. 0k."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Back at Port Sarim",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Take a white apron from the fishing store Gerrant's Fishy Business.."
+    },
+    {
+     "text": "Talk to Wydin in the food store South of Gerrant's and get a job while wearing your white apron.",
+     "chat": [
+      "4. Well, can I get a job here?"
+     ]
+    },
+    {
+     "text": "Search the crate with the banana on it to get the rum."
+    },
+    {
+     "text": "Give the rum to Redbeard Frank, he will give you a key.",
+     "chat": [
+      "1. Ok thanks, I'll go and get it."
+     ]
+    },
+    {
+     "text": "Go upstairs in the Blue Moon Inn in Varrock and use your key on the chest in the room directly west. Read the pirate message."
+    }
+   ]
+  },
+  {
+   "title": "Buried treasure",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Head to Falador Park."
+    },
+    {
+     "text": "If you didn't have a spade already, you can get one from the Estate agent's house on the south-west side of the park, right next to the study desk.",
+     "depth": 1
+    },
+    {
+     "text": "Dig in Falador park, kill the Gardener (or run away to despawn him)."
+    },
+    {
+     "text": "Dig again to get a casket."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

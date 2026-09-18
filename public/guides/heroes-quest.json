@@ -1,0 +1,255 @@
+{
+ "id": "heroes-quest",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Heroes'_Quest%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting out",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Achietties outside the Heroes' Guild in Burthorpe.",
+     "chat": [
+      "1. I'm a hero, may I apply to join?",
+      "4. I'll start looking for all those things then."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Lava eel",
+   "notes": [
+    "(Note: Bring a Summer Pie if boosting Agility for Taverley Dungeon shortcut and an Admiral's Pie if you need to boost Fishing. )'Items needed: 1: Vial of water and Harralander or Harralander potion (unf), Fishing Rod, Fishing Bait, Dusty Key",
+    "If you already have a dusty key (steel key ring with dusty key works), or 70 Agility, skip the next step."
+   ],
+   "steps": [
+    {
+     "text": "Talk to Gerrant, the fishing shop owner in Port Sarim about lava eels. He'll give you a bottle of blamish snail slime.",
+     "chat": [
+      "3. I want to find out how to catch a lava eel."
+     ]
+    },
+    {
+     "text": "Use the blamish snail slime on your harralander potion (unf) to create blamish oil."
+    },
+    {
+     "text": "Buy a fishing rod and some bait if you do not have them."
+    },
+    {
+     "text": "Right-click to use the oil on your fishing rod."
+    },
+    {
+     "text": "Travel to the Taverley Dungeon."
+    },
+    {
+     "text": "You can visit the Wilderness Lava Maze to obtain the eel, but it is advised against due to its location unless you want to also complete the hard Wilderness Diary task.",
+     "depth": 1
+    },
+    {
+     "text": "Alternatively, players with 60 Sailing (non boostable) can go to the Charred Dungeon located at the Charred Island, the route is closer and doesn't require agility nor a key like Taverley Dungeon does but players will need to pass throught a bunch of lava Strykewyrms.",
+     "depth": 1
+    },
+    {
+     "text": "To obtain a dusty key:"
+    },
+    {
+     "text": "Use the map (pictured right) to find Velrak the explorer. He is in the southern part of the dungeon.",
+     "depth": 1
+    },
+    {
+     "text": "Kill the Jailer standing by the prison and use the key he drops to get into Velrak's cell.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to him for the dusty key. Do not ask for a reward.",
+     "depth": 1,
+     "chat": [
+      "1. So do you know any good places to explore?",
+      "1. Yes please!"
+     ]
+    },
+    {
+     "text": "Enter the area with the blue dragons, either by using your key on the locked door or take the agility shortcut."
+    },
+    {
+     "text": "Run to the southernmost lava pool."
+    },
+    {
+     "text": "Catch a lava eel. You only need one, as they cannot be burned. (Catch extra in case you accidentally eat it.)"
+    },
+    {
+     "text": "Cook the eel on a range or fire."
+    }
+   ]
+  },
+  {
+   "title": "Master thieves' armband",
+   "notes": [
+    "The next part of this quest requires a companion who belongs to the opposite gang from the Shield of Arrav quest. Please note that characters who have already completed Heroes' Quest can still help friends complete the quest!",
+    "*Joining the official Jagex clan chat channel \"Osrs Soa\" may be beneficial for those who are trying to find a partner in the opposite gang.",
+    "If you have NOT yet completed the quest, follow the steps below:"
+   ],
+   "steps": [
+    {
+     "text": "Go to south-west Varrock and talk to Katrine in the Black Arm gang headquarters.",
+     "chat": [
+      "2. Is there any way I can get the rank of master thief?"
+     ]
+    },
+    {
+     "text": "Go to Brimhaven, the building directly south of the agility arena entrance."
+    },
+    {
+     "text": "Gang password: Four leaved clover"
+    },
+    {
+     "text": "Talk to Trobert.",
+     "chat": [
+      "1. So can you help me get Scarface Pete's candlesticks?",
+      "1. I volunteer to undertake that mission!"
+     ]
+    },
+    {
+     "text": "Equip your Black armour."
+    },
+    {
+     "text": "Enter the large mansion in the north-west part of town."
+    },
+    {
+     "text": "Talk to Grip to receive a Miscellaneous key. If you already have a key in your bank, Grip will not give you another one.",
+     "chat": [
+      "2. So what do my duties involve?",
+      "3. Anything I can do now?"
+     ]
+    },
+    {
+     "text": "Go to Varrock and talk to Straven in the Phoenix hideout"
+    },
+    {
+     "text": "Gang password: Gherkin"
+    },
+    {
+     "text": "Inside Brimhaven food shop, talk to Alfonse the Waiter about gherkins",
+     "chat": [
+      "3. Do you sell Gherkins?"
+     ]
+    },
+    {
+     "text": "Go through the door, talk to Charlie",
+     "chat": [
+      "1. I'm looking for a gherkin...",
+      "2. I want to steal Scarface Pete's candlesticks."
+     ]
+    },
+    {
+     "text": "Enter the secret wall panel by the range, through the yard, into the side door, then use the key on the north door"
+    },
+    {
+     "text": "Enter the room north of the entrance and search the cupboard",
+     "chat": [
+      "1. He won't notice me having a quick look."
+     ]
+    },
+    {
+     "text": "Grip will then come into the room. Close the door behind him"
+    },
+    {
+     "text": "Take Grip's key"
+    },
+    {
+     "text": "Go to the north-west part of the building, use the key on the door"
+    },
+    {
+     "text": "Take 2 candlesticks from the chest"
+    },
+    {
+     "text": "Give your partner 1 candlestick"
+    },
+    {
+     "text": "Take your candlestick back to Katrine to receive the Thieves' armband",
+     "chat": [
+      "2. I have a candlestick now."
+     ]
+    },
+    {
+     "text": "Trade your partner for a candlestick"
+    },
+    {
+     "text": "Take your candlestick back to Straven to receive the Thieves' armband",
+     "chat": [
+      "1. I have a candlestick now."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Fire feather",
+   "notes": [
+    "Items Required: Pickaxe (if you do not have ice gloves); Stamina Potions recommended",
+    "If you already have the ice gloves, skip the first step."
+   ],
+   "steps": [
+    {
+     "text": "To obtain the ice gloves:"
+    },
+    {
+     "text": "Equip combat gear and food to kill a level 111 Ice Queen.",
+     "depth": 1
+    },
+    {
+     "text": "Go to White Wolf Mountain. Note: If you need to boost your mining to 50, bring the boost with you.",
+     "depth": 1
+    },
+    {
+     "text": "Walk to the northern part of the mountain, mine the rockslide.",
+     "depth": 1
+    },
+    {
+     "text": "Take the southern ladder.",
+     "depth": 1
+    },
+    {
+     "text": "Follow the tunnel south, go up the ladder.",
+     "depth": 1
+    },
+    {
+     "text": "Take the eastern ladder down.",
+     "depth": 1
+    },
+    {
+     "text": "Go through the long tunnel.",
+     "depth": 1
+    },
+    {
+     "text": "Go up the ladder.",
+     "depth": 1
+    },
+    {
+     "text": "Go down the northern ladder. Run north and kill the queen for her gloves.",
+     "depth": 1
+    },
+    {
+     "text": "Equip the ice gloves."
+    },
+    {
+     "text": "Travel to Entrana."
+    },
+    {
+     "text": "Kill the Firebird near the Law Altar, take the fire feather."
+    }
+   ]
+  },
+  {
+   "title": "Finishing up",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Take the feather, eel, and armband to Achietties."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

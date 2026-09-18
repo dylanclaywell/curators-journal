@@ -1,0 +1,192 @@
+{
+ "id": "making-history",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Making_History%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting out",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Walk to or use the necklace of passage to teleport to the outpost north-west of Ardougne."
+    },
+    {
+     "text": "Talk to Jorral.",
+     "chat": [
+      "1. Tell me more.",
+      "1. Ok, I'll make a stand for history!"
+     ]
+    },
+    {
+     "text": "Complete the next 3 segments in any order."
+    }
+   ]
+  },
+  {
+   "title": "Erin the silver merchant",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to the Silver merchant in the East Ardougne market.",
+     "chat": [
+      "2. Ask about the outpost."
+     ]
+    },
+    {
+     "text": "Dig with your spade to find the chest buried north of Castle Wars."
+    },
+    {
+     "text": "Open the chest with the enchanted key to get a journal."
+    }
+   ]
+  },
+  {
+   "title": "Droalak the Ghost",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Equip your Ghostspeak amulet and talk to Droalak outside the Port Phasmatys general store."
+    },
+    {
+     "text": "In the building east of the general store, directly south of the pub, give Melina a strung sapphire amulet."
+    },
+    {
+     "text": "Talk to Droalak to receive a scroll."
+    }
+   ]
+  },
+  {
+   "title": "Dron the Warrior",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Go to Rellekka and talk to Blanin east of the longhall."
+    },
+    {
+     "text": "Talk to Dron north of the longhall. Answers:",
+     "chat": [
+      "3. I'm after important answers.",
+      "2. Why, you're the famous warrior Dron!"
+     ]
+    },
+    {
+     "text": "Quick answers:",
+     "depth": 1,
+     "chat": [
+      "2. An iron mace",
+      "1. Breakfast",
+      "2. Lunch",
+      "1. Bunnies",
+      "2. Red",
+      "2. 36",
+      "1. 8",
+      "3. Fifth and Fourth",
+      "3. North East side of town",
+      "1. Blanin",
+      "1. Fluffy",
+      "1. 12, but what does that have to do with anything?"
+     ]
+    },
+    {
+     "text": "He wields an iron mace in battle.",
+     "depth": 1,
+     "chat": [
+      "2. An iron mace"
+     ]
+    },
+    {
+     "text": "He eats rats for breakfast.",
+     "depth": 1,
+     "chat": [
+      "1. Breakfast"
+     ]
+    },
+    {
+     "text": "He eats kittens for lunch.",
+     "depth": 1,
+     "chat": [
+      "2. Lunch"
+     ]
+    },
+    {
+     "text": "He eats bunnies for tea.",
+     "depth": 1,
+     "chat": [
+      "1. Bunnies"
+     ]
+    },
+    {
+     "text": "His favourite drink is red spider blood.",
+     "depth": 1,
+     "chat": [
+      "2. Red"
+     ]
+    },
+    {
+     "text": "He is 36 years, 8 months (21 days) old.",
+     "depth": 1,
+     "chat": [
+      "2. 36",
+      "1. 8"
+     ]
+    },
+    {
+     "text": "He studies the Fifth and Fourth ages.",
+     "depth": 1,
+     "chat": [
+      "3. Fifth and Fourth"
+     ]
+    },
+    {
+     "text": "His house is on the north-east side of town.",
+     "depth": 1,
+     "chat": [
+      "3. North East side of town"
+     ]
+    },
+    {
+     "text": "His brother's name is Blanin.",
+     "depth": 1,
+     "chat": [
+      "1. Blanin"
+     ]
+    },
+    {
+     "text": "His pet cat is named Fluffy.",
+     "depth": 1,
+     "chat": [
+      "1. Fluffy"
+     ]
+    },
+    {
+     "text": "5 plus 7 is 12",
+     "depth": 1,
+     "chat": [
+      "1. 12, but what does that have to do with anything?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Reporting back",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Jorral, back at the outpost, with the scroll and journal."
+    },
+    {
+     "text": "Talk to King Lathas, located on the of the Ardougne Castle.",
+     "chat": [
+      "1. F"
+     ]
+    },
+    {
+     "text": "Talk to Jorral, back at the outpost."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,246 @@
+{
+ "id": "the-feud",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/The_Feud%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Getting Started",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Ali Morrisane next to the Silk Stall in Al Kharid.",
+     "chat": [
+      "1. If you are, then why are you still selling goods from a stall?",
+      "2. I'd like to help you but.....",
+      "1. Yes.",
+      "2. Okay."
+     ]
+    },
+    {
+     "text": "Buy a kharidian headpiece and a fake beard and combine them."
+    }
+   ]
+  },
+  {
+   "title": "Pollnivneach",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Head to Pollnivneach."
+    },
+    {
+     "text": "Use the 3 beers on Drunken Ali at the bar. (Make sure to use one beer on him, then talk to him in full, then use the second beer, talk in full, then finally the third beer, and talk in full.)"
+    },
+    {
+     "text": "Note: Don't skip dialogue after giving a beer. You can buy them from Ali the Barman.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to the bandits in Pollnivneach by the general store."
+    },
+    {
+     "text": "Go west of the bar and question the Menaphite Thugs."
+    }
+   ]
+  },
+  {
+   "title": "Camels",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Head to the camel store just north-west of the bar."
+    },
+    {
+     "text": "Talk to Ali the Camel Man to buy the camels for 500 coins. You will need two free spaces in your inventory.",
+     "chat": [
+      "4. Are those camels around the side for sale?",
+      "2. What price do you want for both of them?",
+      "3. Would 500 gold coins for the pair of them do?"
+     ]
+    },
+    {
+     "text": "Talk to a Menaphite and a bandit to give them each a receipt."
+    }
+   ]
+  },
+  {
+   "title": "Pickpocketing",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Go to Ali the Operator and ask to join his gang (big purple tent, south-west)",
+     "chat": [
+      "1. Yes, of course, those bandits should be taught a lesson.",
+      "2. No thanks."
+     ]
+    },
+    {
+     "text": "Attempt to pickpocket a villager once then return to Ali the Operator.",
+     "chat": [
+      "1. Yeah, I could do with a bit of advice.",
+      "2. No thanks."
+     ]
+    },
+    {
+     "text": "Talk to the street urchin near the centre town well."
+    },
+    {
+     "text": "Pay him ten coins",
+     "depth": 1
+    },
+    {
+     "text": "Pickpocket the villager with an arrow over their head."
+    },
+    {
+     "text": "Talk to Ali the Operator",
+     "chat": [
+      "1. Yeah, I could do with a bit of advice."
+     ]
+    },
+    {
+     "text": "Equip the oak blackjack and then lure a villager into a secluded area."
+    },
+    {
+     "text": "Knock out the villager with the blackjack equipped",
+     "depth": 1
+    },
+    {
+     "text": "Pickpocket the villager",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Jewels",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Ali the Operator."
+    },
+    {
+     "text": "Put on the desert disguise and gloves."
+    },
+    {
+     "text": "Hide behind the large cactus near the mayor's house (the large house to the East by the fountain)."
+    },
+    {
+     "text": "Use the keys on the door."
+    },
+    {
+     "text": "Go up the stairs in the north-eastern corner."
+    },
+    {
+     "text": "Search the landscape picture near the bed."
+    },
+    {
+     "text": "Hit the button on the dial to reset it."
+    },
+    {
+     "text": "Click on 1, 1, 2, 3, 5, 8, in that order, clockwise.",
+     "depth": 1
+    },
+    {
+     "text": "Give the jewels to Ali the Operator."
+    }
+   ]
+  },
+  {
+   "title": "Traitor",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Ali the Operator."
+    },
+    {
+     "text": "Talk to a Menaphite Thug."
+    },
+    {
+     "text": "Talk to Ali the Operator.",
+     "chat": [
+      "2. No thanks."
+     ]
+    },
+    {
+     "text": "Talk to Ali the barman.",
+     "chat": [
+      "3. I'm looking for Traitorous Ali.",
+      "1. No thanks I'm ok."
+     ]
+    },
+    {
+     "text": "Buy special sauce from the kebab seller. He can be found north-west of the well in the middle of the town.",
+     "chat": [
+      "3. Would you sell me that bottle of special kebab sauce?",
+      "2. No thanks, I'm good."
+     ]
+    },
+    {
+     "text": "Use it on a trough behind the camel shop."
+    },
+    {
+     "text": "Use a bucket on the dung if it is brown. Obtain three more buckets of dung if you plan to complete My Arm's Big Adventure."
+    },
+    {
+     "text": "Use a coin on the snake charmer's money pot, sitting south of the bar with 2 free inventory spaces to get a snake charm and a snake basket.",
+     "chat": [
+      "1. Wow, a snake charmer. Can I have a go? Can I have a go? Please?"
+     ]
+    },
+    {
+     "text": "Use the snake charm on a desert snake north of the Menaphite tent until it goes into the snake basket."
+    },
+    {
+     "text": "Go to Ali the Hag north-west of the kebab seller. Talk to her twice to give her the snake basket and Ugthanki dung to receive the hag's poison in exchange."
+    },
+    {
+     "text": "Use the hag's poison on the table with a beer in the bar."
+    },
+    {
+     "text": "Talk to Ali the Operator."
+    }
+   ]
+  },
+  {
+   "title": "Dealing with the thugs",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Prepare for battle and talk to the Menaphite Leader (just outside the tent)."
+    },
+    {
+     "text": "Kill the Tough Guy (level 75) (safespot behind bush). He drops a willow blackjack."
+    },
+    {
+     "text": "Talk to a villager.",
+     "chat": [
+      "2. Ok I'll get to it."
+     ]
+    },
+    {
+     "text": "Talk to the Bandit Leader wandering around the northern magic carpet station."
+    },
+    {
+     "text": "Kill the bandit champion (level 70) (safespot behind chair in house to the east). He drops an adamant scimitar (if you have a willow blackjack in your inventory)."
+    },
+    {
+     "text": "Talk to a villager."
+    },
+    {
+     "text": "Talk to Ali the Mayor by the well in village centre."
+    },
+    {
+     "text": "Return to Ali Morrisane (with whom you started the quest).",
+     "chat": [
+      "1. No, I'm really too busy."
+     ]
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

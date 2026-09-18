@@ -1,0 +1,58 @@
+{
+ "id": "tribal-totem",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Tribal_Totem%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Kangai Mau in the Brimhaven food store.",
+     "chat": [
+      "2. I'm in search of adventure!",
+      "1. Ok, I will get it back."
+     ]
+    },
+    {
+     "text": "Travel to Ardougne (you can take a ship from Brimhaven to complete an easy Karamja Diary task), and head to the GPDT depot just south of the eastern bank."
+    },
+    {
+     "text": "Investigate the most north-eastern crate for the address label."
+    },
+    {
+     "text": "Use the label on the crate located 2 tiles to the south of the first crate."
+    },
+    {
+     "text": "Talk to a GPDT employee.",
+     "chat": [
+      "1. So, when are you going to deliver this crate?"
+     ]
+    },
+    {
+     "text": "Talk to Wizard Cromperty in the house north-east of the Ardougne market with the checkered floor., or if you have completed the medium or higher Ardougne diaries.",
+     "chat": [
+      "2. So what have you invented?",
+      "2. Can I be teleported please?",
+      "1. Yes, that sounds good. Teleport me!"
+     ]
+    },
+    {
+     "text": "Go west 2 doors and enter the password KURT. If you click too quickly it will say \"This combination is incorrect\", try again slower."
+    },
+    {
+     "text": "Right-click Investigate the stairs, requiring 21 Thieving, then climb them."
+    },
+    {
+     "text": "Search the chest on the top floor for the totem. You must finish the dialogue."
+    },
+    {
+     "text": "Return to Kangai Mau."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

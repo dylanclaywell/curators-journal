@@ -1,0 +1,79 @@
+{
+ "id": "fallen-from-grace",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Fallen_From_Grace%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [
+    "Bring all combat equipment with you, as you will be unable to bank or teleport to the island until the quest is complete."
+   ],
+   "steps": [
+    {
+     "text": "To begin, sail to Wyrmscraig, found slightly south-west of Charred Island. Be sure not to bring a sloop, as it will not fit in a cave entered later in the quest."
+    },
+    {
+     "text": "Dock at the island and try to run onto the island, and you will be stopped by Ffion."
+    },
+    {
+     "text": "Run to Auchrie and speak to Cormac in the centre hut."
+    },
+    {
+     "text": "Speak to Muriel in the building immediately north-east of Cormac's hut, then run to the closest area marked on the map with the Mining icon."
+    },
+    {
+     "text": "Search the tent for a pickaxe, hammer, and chisel if needed, then inspect the sunstone monolith."
+    },
+    {
+     "text": "Mine a piece off the sunstone monolith, and chisel it into a sunstone core. The scrawled notebook may be dropped."
+    },
+    {
+     "text": "Follow the trail of dust to the south-west tip of the island and investigate the large hat."
+    },
+    {
+     "text": "Head back to Cormac and speak to him."
+    },
+    {
+     "text": "Sail into Wyrmscraig Cavern on the south-west side of the island with either a skiff or raft."
+    },
+    {
+     "text": "Kill the three mountain trolls nearest to Mortimer in the cavern. The area is multicombat, lower levelled players may consider praying Protect from Melee."
+    },
+    {
+     "text": "Speak to Mortimer again, then follow the path north until you see a golem. ( You may exit the cave, via the western exit from the north path, to mine the rocks to gain access to the agility shortcut for ease of access to the cathedral later)"
+    },
+    {
+     "text": "Investigate the golem, use the sunstone core you mined on the golem, then open the chest inside the room (combination: right, left, down, down)."
+    },
+    {
+     "text": "Use a chisel on (or destroy) the ancient sunstone core to get a key, and climb the stairs."
+    },
+    {
+     "text": "You must now fight the Mad Angel."
+    },
+    {
+     "text": "Pray against melee, moving behind the angel when she brings her sword back slowly.",
+     "depth": 1
+    },
+    {
+     "text": "When she launches a spiky ball, run to the spot where it lands to avoid taking heavy damage. It will bounce twice to another spot, run to each.",
+     "depth": 1
+    },
+    {
+     "text": "When she starts charging a blue lightning attack, pray Protect from Magic. This will reduce the damage by 50% normally, but will negate all damage if only activated 4 ticks (2.4s) after the charging begins.",
+     "depth": 1
+    },
+    {
+     "text": "\"...!\" will indicate she is entering her enraged phase. Special attacks will be performed faster, with her lightning attack in three strikes. The third strike will have a delay of 2 ticks (1.2s) rather than 4.",
+     "depth": 1
+    },
+    {
+     "text": "Search the body after defeating her and read the note, then return to Cormac."
+    },
+    {
+     "text": "Quest complete!"
+    }
+   ]
+  }
+ ]
+}

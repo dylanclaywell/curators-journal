@@ -1,0 +1,161 @@
+{
+ "id": "shadow-of-the-storm",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Shadow_of_the_Storm%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting out",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Father Reen outside Al Kharid bank.",
+     "chat": [
+      "1. That's me!"
+     ]
+    },
+    {
+     "text": "Travel to the Ruins of Uzer via the magic carpet south of Al Kharid (or use the necklace of passage teleport to Eagle's Eyrie and run south-east). You can also use a fairy ring (DLQ) and go north-east."
+    },
+    {
+     "text": "Talk to Father Badden near the ruin entrance. Be sure to have Silverlight in your inventory.",
+     "chat": [
+      "1. Reen sent me.",
+      "3. So what do you want me to do?",
+      "1. How can I do that?"
+     ]
+    },
+    {
+     "text": "Pick and use a black mushroom (or black dye) on Silverlight to dye it black (you can find some beside the staircase)."
+    },
+    {
+     "text": "Go down the stairs and grab a copy of the Strange implement in the north-west corner of the ruin."
+    },
+    {
+     "text": "Talk to Evil Dave in the dungeon wearing your 3 black items and your dyed Silverlight.",
+     "chat": [
+      "2. I want to join your group.",
+      "1. I'm evil!"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Ritual",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Denath on the other side of the portal.",
+     "chat": [
+      "4. What do I have to do?"
+     ]
+    },
+    {
+     "text": "Talk to Jennifer to get a demonic sigil mould.",
+     "chat": [
+      "2. Do you have the demonic sigil mould?"
+     ]
+    },
+    {
+     "text": "Talk to Matthew.",
+     "chat": [
+      "3. Do you know what happened to Josef?"
+     ]
+    },
+    {
+     "text": "Go to any furnace and smelt a demonic sigil (use silver bar on furnace and select 'demonic sigil')."
+    },
+    {
+     "text": "Your black outfit can now be discarded and replaced with combat gear (keep Silverlight with you)."
+    },
+    {
+     "text": "Head back to Uzer and talk to the clay golem outside about last night.",
+     "chat": [
+      "3. Did you see anything happen last night?"
+     ]
+    },
+    {
+     "text": "Search the nearby kilns for a book (there are four kilns – the last two are on the east side of the ruin, and by the magic carpet)."
+    },
+    {
+     "text": "Read the book, and take it to Matthew on the other side of the portal"
+    },
+    {
+     "text": "Go north and talk to Denath. (or during the ritual). Write down the incantation he tells you as it is used twice during the quest.",
+     "chat": [
+      "4. I forgot the incantation.",
+      "2. I forgot the incantation."
+     ]
+    },
+    {
+     "text": "Complete the circle and click the sigil in your inventory to chant the incantation (unequip the Silverlight if nothing happens)."
+    },
+    {
+     "text": "TAKE THE DEMONIC SIGIL DENATH DROPPED ON THE FLOOR. (If you do not, you will have to create another Demonic sigil)"
+    },
+    {
+     "text": "Enter the portal to exit the room and take Tanya's sigil."
+    },
+    {
+     "text": "Tell Evil Dave to return to the lair – you should have 4 sigils now.",
+     "chat": [
+      "2. You've got to get back to the throne room!"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Rallying the troops",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Father Badden outside."
+    },
+    {
+     "text": "Convince Father Reen to join the ritual.",
+     "chat": [
+      "3. Oh, don't be so simple-minded!"
+     ]
+    },
+    {
+     "text": "Talk to the golem, he will refuse to help.",
+     "chat": [
+      "3. I could just reprogram you again."
+     ]
+    },
+    {
+     "text": "Use the Strange implement on the golem to reprogram him."
+    },
+    {
+     "text": "Talk to the golem again to make him enter the dungeon."
+    }
+   ]
+  },
+  {
+   "title": "The final fight",
+   "notes": [
+    "NOTE: this boss can be flinched by standing behind the north-western torch.",
+    "UIM concerns: If you die during the fight, all your items will appear on the ground outside the portal in the temple."
+   ],
+   "steps": [
+    {
+     "text": "Talk to Matthew to start the incantation, say it backwards.",
+     "chat": [
+      "1. Yes"
+     ]
+    },
+    {
+     "text": "Kill Agrith Naar with any weapon, but the final blow must be with Silverlight. The demon will heal if you run away as the final blow is being dealt."
+    },
+    {
+     "text": "Unequip Silverlight."
+    },
+    {
+     "text": "Choose your reward to finish the quest."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

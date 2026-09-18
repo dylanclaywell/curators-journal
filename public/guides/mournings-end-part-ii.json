@@ -1,0 +1,406 @@
+{
+ "id": "mournings-end-part-ii",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Mourning's_End_Part_II%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Entering the temple",
+   "notes": [
+    "Needed: Full mourner gear, chisel.",
+    "Recommended: Elf teleport crystal, teleport to Ardougne, food and armour/prayer potions to run past high level monsters, 3 free inventory spaces"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Arianwyn in Lletya."
+    },
+    {
+     "text": "(optional) Note to Ironmen: if you do not have a death talisman, search the bookshelves for a book titled Prifddinas' history. You might need it later as part of the 50 items and this will allow you to potentially save time and a charge on your teleport."
+    },
+    {
+     "text": "Wearing your mourner gear, talk to Essyllt under the hideout in West Ardougne (north-east corner of town). He gives you the new key."
+    },
+    {
+     "text": "Run west through the cave, keep going until you find the dead bodies. There will be a cutscene."
+    },
+    {
+     "text": "Search a guard corpse for Edern's journal."
+    },
+    {
+     "text": "Follow the red line in the map to get to the black crystal."
+    },
+    {
+     "text": "Use your chisel to chip off a piece."
+    },
+    {
+     "text": "Return and talk to Arianwyn in Lletya to enchant your crystal."
+    }
+   ]
+  },
+  {
+   "title": "The light puzzles",
+   "notes": [
+    "Needed: Full mourner gear, the new key, rope. If you're planning to complete the puzzles in a single trip, bring a death talisman/death tiara/catalytic talisman and the newly made crystal too. A death talisman can be obtained from dark beasts. Ironmen without a death talisman will have to bring a list of 50 items instead after completing the puzzles.",
+    "Recommended: Weight-reducing clothing, high prayer bonus gear, prayer potions, stamina potions, food, summer pies/agility potions, pure essence (for the hard Ardougne Diary task), 5 empty inventory spaces."
+   ],
+   "steps": []
+  },
+  {
+   "title": "Chest #1",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Go back to the Temple of Light."
+    },
+    {
+     "text": "Take the eastern set stairs, that are directly in front of the entrance, to the middle floor."
+    },
+    {
+     "text": "Head to the area indicated by the rope on the guide map and use your rope on the rocks."
+    },
+    {
+     "text": "Drop your new key."
+    },
+    {
+     "text": "Head to the area marked with mirror #1 just east of the stairs."
+    },
+    {
+     "text": "Pull the crystal dispenser on the wall to reset the puzzle and then collect all of the items which includes mirrors and a.",
+     "chat": [
+      "1. Pull the lever.",
+      "1. Pull it.",
+      "3. Take all the items."
+     ]
+    },
+    {
+     "text": "Place Mirror #1 to shine the light north."
+    },
+    {
+     "text": "Mirror #2 points west."
+    },
+    {
+     "text": "Mirror #3 points south."
+    },
+    {
+     "text": "Place the. The light will turn yellow."
+    },
+    {
+     "text": "Mirror #4 points east."
+    },
+    {
+     "text": "Cross the gap to the other side. Use any agility boosts you have. You will have to cross this gap a second time later."
+    },
+    {
+     "text": "Open the chest to obtain 2 mirrors and a."
+    }
+   ]
+  },
+  {
+   "title": "Chest #2",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Reset the puzzle at the crystal dispenser and collect all items."
+    },
+    {
+     "text": "Mirror #1 points north."
+    },
+    {
+     "text": "Mirror #2 points west."
+    },
+    {
+     "text": "Place the. The light will turn cyan."
+    },
+    {
+     "text": "Mirror #3 points north."
+    },
+    {
+     "text": "Mirror #4 points east."
+    },
+    {
+     "text": "Place the. The light will turn green."
+    },
+    {
+     "text": "Open the chest to obtain 2 mirrors."
+    },
+    {
+     "text": "Do NOT reset the puzzle."
+    }
+   ]
+  },
+  {
+   "title": "Chest #3",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Pick up the and replace it with Mirror #5 pointing up to the top floor. Long side of the mirror should be pointing east."
+    },
+    {
+     "text": "Climb the north ladder to the top floor."
+    },
+    {
+     "text": "Mirror #6 points west. The light to the west turns blue."
+    },
+    {
+     "text": "Go back to the middle floor and take the south stairs up to the top floor."
+    },
+    {
+     "text": "Mirror #7 points down toward the middle floor. Long side of the mirror should be pointing east."
+    },
+    {
+     "text": "Climb to the bottom floor."
+    },
+    {
+     "text": "Head to Mirror #8, going through the eastern yellow barrier. Turn Mirror #8 to point south."
+    },
+    {
+     "text": "Go through the southern barrier and follow the path. Open the chest to obtain 2 mirrors and a."
+    },
+    {
+     "text": "Go back through the southern barrier and rotate the mirror to point east."
+    },
+    {
+     "text": "Exit through the eastern barrier."
+    },
+    {
+     "text": "Do NOT reset the puzzle."
+    }
+   ]
+  },
+  {
+   "title": "Chest #4",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Take the east stairs to the middle floor."
+    },
+    {
+     "text": "Take out the and place the instead. The light will now be yellow."
+    },
+    {
+     "text": "Climb up the south ladder to the top floor."
+    },
+    {
+     "text": "Rotate Mirror #7 to shine the light south. This light should be red. Run south to mirror 8."
+    },
+    {
+     "text": "Mirror #8 point down toward the middle floor. Long side of the mirror should be pointing north."
+    },
+    {
+     "text": "Climb down the south ladder to the middle floor."
+    },
+    {
+     "text": "Use the rope shortcut to reach the bottom floor."
+    },
+    {
+     "text": "Head to Mirror #9 and open the chest to obtain a."
+    }
+   ]
+  },
+  {
+   "title": "=Part 1=",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Reset the puzzle"
+    },
+    {
+     "text": "Mirror #1 points north."
+    },
+    {
+     "text": "Mirror #2 points west."
+    },
+    {
+     "text": "Mirror #3 points south."
+    },
+    {
+     "text": "Place the. The light will turn yellow."
+    },
+    {
+     "text": "Mirror #4 points east."
+    },
+    {
+     "text": "Cross the gap to the other side."
+    },
+    {
+     "text": "Place the."
+    },
+    {
+     "text": "Remove Mirror #4."
+    },
+    {
+     "text": "Rotate Mirror #3 points up."
+    },
+    {
+     "text": "Use the south stairs to head to the top floor."
+    }
+   ]
+  },
+  {
+   "title": "=Part 2=",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Place Mirror #4 in the new position pointing south."
+    },
+    {
+     "text": "Place the."
+    },
+    {
+     "text": "Mirror #5 makes the western light point down. Long side of the mirror should be pointing east."
+    },
+    {
+     "text": "Mirror #6 makes the southern light point east."
+    },
+    {
+     "text": "Mirror #7 points down. Long side of the mirror should be pointing west."
+    },
+    {
+     "text": "Go to the bottom floor."
+    },
+    {
+     "text": "Mirror #8 points south."
+    },
+    {
+     "text": "Mirror #9 points east."
+    },
+    {
+     "text": "Mirror #10 points north."
+    },
+    {
+     "text": "Open the chest to obtain 3 mirrors and a second."
+    }
+   ]
+  },
+  {
+   "title": "Death Altar Puzzle",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Reset the puzzle."
+    },
+    {
+     "text": "Mirror #1 points north."
+    },
+    {
+     "text": "Mirror #2 points down. Long side of the mirror should be pointing south."
+    },
+    {
+     "text": "Use the east stairs to go down to the bottom floor."
+    },
+    {
+     "text": "Mirror #3 points west."
+    },
+    {
+     "text": "Place the."
+    },
+    {
+     "text": "Mirror #4 points the northern light up."
+    },
+    {
+     "text": "Place the."
+    },
+    {
+     "text": "Mirror #5 points the western light up."
+    },
+    {
+     "text": "Mirror #6 points the eastern light up."
+    },
+    {
+     "text": "Climb the east stairs to the middle floor."
+    },
+    {
+     "text": "Place the. The light will turn yellow."
+    },
+    {
+     "text": "Climb up the north ladder to the top floor."
+    },
+    {
+     "text": "Mirror #7 points west. You should see the light turn red at the pillar to the west."
+    },
+    {
+     "text": "Climb down the north ladder to the middle floor."
+    },
+    {
+     "text": "Climb up the south ladder to the top floor."
+    },
+    {
+     "text": "Mirror #8 points west."
+    },
+    {
+     "text": "Mirror #9 points west."
+    },
+    {
+     "text": "Mirror #10 points north."
+    },
+    {
+     "text": "Cross to the north part of the top floor via the middle stairs."
+    },
+    {
+     "text": "Mirror #11 points west."
+    },
+    {
+     "text": "Place the. The light will turn blue."
+    },
+    {
+     "text": "Mirror #12 points south."
+    },
+    {
+     "text": "Mirror #13 points east."
+    },
+    {
+     "text": "Go down the middle stairs twice to the inner part of the ground floor."
+    },
+    {
+     "text": "Rotate Mirror #14 so it points west."
+    },
+    {
+     "text": "Go through to the Death Altar."
+    },
+    {
+     "text": "When you're ready to leave, make sure to turn Mirror #14 back towards the entrance door, otherwise to get back in here you will need to go through the Underground Pass."
+    }
+   ]
+  },
+  {
+   "title": "Finishing up",
+   "notes": [],
+   "steps": [
+    {
+     "text": "If you do not have a death talisman/tiara or catalytic talisman/tiara, refer to the full guide to get the 50 required items."
+    },
+    {
+     "text": "Returning to Thorgel: go up the eastern stairs, then south and up the ladder to the top floor to return to Thorgel. Climb the stairs down to the altar twice.",
+     "depth": 1
+    },
+    {
+     "text": "Make sure to bring your newly made crystal you obtained at the start of the quest."
+    },
+    {
+     "text": "Enter the Death Altar."
+    },
+    {
+     "text": "Use the uncharged newly made crystal on the altar."
+    },
+    {
+     "text": "Use the charged newly made crystal on the black crystal on the top floor."
+    },
+    {
+     "text": "Travel to Lletya."
+    },
+    {
+     "text": "Talk to Arianwyn."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

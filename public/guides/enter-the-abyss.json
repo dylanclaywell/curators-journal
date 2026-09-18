@@ -1,0 +1,48 @@
+{
+ "id": "enter-the-abyss",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Enter_the_Abyss%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to the Mage of Zamorak in level 4-7 Wilderness near the river (Cannot be wearing a non-Zamorak God item)."
+    },
+    {
+     "text": "Talk to the Mage of Zamorak in the Altar of Zamorak in south-eastern Varrock. (Note: If you have started (but not completed) the quest Wanted!, you'll be given an additional dialogue option at the beginning where you will have to select what to discuss with the Mage. ) Be sure to have a free inventory space for the scrying orb!",
+     "chat": [
+      "2. Where do you get your runes from?",
+      "1. Yes",
+      "1. Runecrafting"
+     ]
+    },
+    {
+     "text": "Go to the nearby runeshop and teleport to rune essence mine. (Aubury)"
+    },
+    {
+     "text": "Go to the bottom floor of Wizards' Tower (fairy ring DIS) and teleport to rune essence mine. (Archmage Sedridor)"
+    },
+    {
+     "text": "Go to north-eastern Ardougne and teleport to rune essence mine. (Wizard Cromperty)"
+    },
+    {
+     "text": "Talk to the Mage of Zamorak in the Chaos Temple in south-eastern Varrock."
+    },
+    {
+     "text": "Talk to him again to complete the miniquest."
+    },
+    {
+     "text": "Talk to him again about the dangers of the Abyss.",
+     "chat": [
+      "1. So what is this 'abyss' stuff?"
+     ]
+    },
+    {
+     "text": "Congratulations, miniquest complete!"
+    }
+   ]
+  }
+ ]
+}

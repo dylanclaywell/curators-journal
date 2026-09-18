@@ -1,0 +1,128 @@
+{
+ "id": "bone-voyage",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Bone_Voyage%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting out",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Speak to Curator Haig Halen in the Varrock Museum.",
+     "chat": [
+      "1. Have you any interesting news?",
+      "1. Sign me up!"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The finishing touches",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Go to the canal barge north of The Digsite and speak to the barge foreman."
+    },
+    {
+     "text": "Speak to the sawmill operator in the Lumber Yard.",
+     "chat": [
+      "3. I'm here on behalf of the museum archaeological team."
+     ]
+    },
+    {
+     "text": "Bring the sawmill proposal to the sawmill operator in the Woodcutting Guild.",
+     "chat": [
+      "3. I'm here on behalf of the museum archaeological team."
+     ]
+    },
+    {
+     "text": "If you don't have the requirements to enter, just try and open the eastern gate of the guild to complete this step.",
+     "depth": 1
+    },
+    {
+     "text": "Bring the sawmill agreement back to the Lumber Yard's sawmill operator.",
+     "chat": [
+      "3. I'm here on behalf of the museum archaeological team."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The cursed voyage",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Speak to the barge foreman."
+    },
+    {
+     "text": "Right click the Embark option on the barge guard."
+    },
+    {
+     "text": "Speak to the Lead Navigator.",
+     "chat": [
+      "1. Yep, that would be me.",
+      "2. I'm aware, no need to tell me about them."
+     ]
+    },
+    {
+     "text": "Talk to Jack Seagull in the Rusty Anchor Inn in Port Sarim. or",
+     "chat": [
+      "2. Ever made any cursed voyages?",
+      "3. Ever made any cursed voyages?"
+     ]
+    },
+    {
+     "text": "Return to the northern part of the digsite and board the boat through the barge guard."
+    },
+    {
+     "text": "Talk to the Lead Navigator."
+    },
+    {
+     "text": "Speak to the Odd Old Man at the limestone mine to the north. You can get there by deboarding the boat and walking west, north, then east. He will give you the Bone charm.",
+     "chat": [
+      "1. Talk about lucky charms.",
+      "2. I'm making a cursed voyage."
+     ]
+    },
+    {
+     "text": "Speak to the Apothecary in Varrock. Bring your two bottles of vodka and your Marrentill potion (unf)"
+    },
+    {
+     "text": "Chat options depend on quests completed. Pick Talk about something else., then pick Talk about Bone Voyage.",
+     "depth": 1
+    },
+    {
+     "text": "Speak to him again, selecting the same chat options as before."
+    },
+    {
+     "text": "Return to the Lead Navigator to give him the Potion of Sealegs."
+    },
+    {
+     "text": "Speak to the Junior Navigator to give him the bone charm.",
+     "chat": [
+      "1. I'm ready, let's go."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The \"cursed\" voyage",
+   "notes": [
+    "When the top arrow tilts to the left, click on the right arrow.",
+    "When the top arrow tilts to the right, click on the left arrow.",
+    "Changing the height of the sails will alter how drastically the boat shifts from side to side. Having the boat's sails as large as possible when going in a straight line will allow for a more consistent travel route."
+   ],
+   "steps": [
+    {
+     "text": "You will have to steer left or right using the controls on the interface. The progress bar will indicate how far you have to go to reach the island."
+    },
+    {
+     "text": "Once the progress bar is filled, you will arrive at Fossil Island."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

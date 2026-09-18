@@ -1,0 +1,105 @@
+{
+ "id": "elemental-workshop-i",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Elemental_Workshop_I%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Getting Started",
+   "notes": [],
+   "steps": [
+    {
+     "text": "In Seers' Village, go to the house immediately south of the anvil."
+    },
+    {
+     "text": "Search the bookcase on the eastern wall to find a battered book."
+    },
+    {
+     "text": "Read the book, then use a knife on it to get a Battered key."
+    },
+    {
+     "text": "There is a knife spawn in the house north of the church if you forgot to bring one.",
+     "depth": 1
+    },
+    {
+     "text": "Note: You'll need the book later, so don't get rid of it.",
+     "depth": 1
+    },
+    {
+     "text": "Go to the building with anvil and open the Odd looking wall in the north (with the key in inventory)."
+    },
+    {
+     "text": "Go down the stairs."
+    }
+   ]
+  },
+  {
+   "title": "Repairing the Workshop",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Go into the room to the north."
+    },
+    {
+     "text": "Turn the water controls east of the water wheel."
+    },
+    {
+     "text": "Turn the water controls west of the water wheel."
+    },
+    {
+     "text": "Pull the lever by the water wheel."
+    },
+    {
+     "text": "(Optional) Kill one of each of the Elemental to complete Kandarin Easy Task. For the Earth Elemental, you must defeat one of the actual Elementals walking around; the rock that turns into the Elemental won't count towards the requirement."
+    },
+    {
+     "text": "(Optional) To obtain leather, search a crate north of the staircase in the middle room."
+    },
+    {
+     "text": "(Optional) To obtain a needle, search the two stacked crates on the left as you enter the west room."
+    },
+    {
+     "text": "Go to the eastern room."
+    },
+    {
+     "text": "With a needle, thread, and leather, fix the bellows."
+    },
+    {
+     "text": "Pull the lever by the bellows."
+    },
+    {
+     "text": "Go to the middle room and search the boxes in the north-east to get a stone bowl."
+    },
+    {
+     "text": "Go to the south room."
+    },
+    {
+     "text": "Use a stone bowl on the lava trough to the south."
+    },
+    {
+     "text": "Use the bowl of lava on the Furnace in the room."
+    }
+   ]
+  },
+  {
+   "title": "Finishing up",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Go to the western room and mine an elemental rock."
+    },
+    {
+     "text": "Kill the Earth elemental and pick up the elemental ore it drops (get 2 more ores if you are planning to do Elemental Workshop II)."
+    },
+    {
+     "text": "Use the elemental ore and four coal on the furnace in the southern room. You will get an Elemental metal."
+    },
+    {
+     "text": "With the slashed book, go to the middle room and smith an elemental shield by using the elemental metal on the workbench."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,69 @@
+{
+ "id": "the-ides-of-milk",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/The_Ides_of_Milk%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [
+    "After completing the quest, return to Gillie Groats to receive the additional quest rewards."
+   ],
+   "steps": [
+    {
+     "text": "Speak to Cassius by the Lumbridge pond, south of the windmill.",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Speak to Gillie Groats in the Lumbridge cow field, just north of the entrance.",
+     "chat": [
+      "3. Can you share what makes your cows so productive?"
+     ]
+    },
+    {
+     "text": "Speak to Seth Groats in the farmhouse by the chicken coop, north-west of the cow field."
+    },
+    {
+     "text": "Search the shelves on the southern wall for The groats principles."
+    },
+    {
+     "text": "Return the book to Cassius to receive a milk sample."
+    },
+    {
+     "text": "Drink the milk sample in front of Cassius, then speak to him again to receive another sample for Duke Horacio."
+    },
+    {
+     "text": "Speak to Duke Horacio upstairs in Lumbridge Castle about the permit."
+    },
+    {
+     "text": "Return to Gillie Groats and drink the milk sample when prompted."
+    },
+    {
+     "text": "Open the gate directly north-east of Gillie and defeat the bull."
+    },
+    {
+     "text": "Its normal attacks cannot kill you during the quest, but its special attacks can hit up to 19 and cannot be prayed against.",
+     "depth": 1
+    },
+    {
+     "text": "When it snorts, move two tiles to either side or one tile backwards.",
+     "depth": 1
+    },
+    {
+     "text": "When it growls, move two tiles to either side.",
+     "depth": 1
+    },
+    {
+     "text": "Speak to Gillie Groats about the bull."
+    },
+    {
+     "text": "Return to Cassius and confront him."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

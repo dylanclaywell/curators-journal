@@ -1,0 +1,168 @@
+{
+ "id": "the-grand-tree",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/The_Grand_Tree%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Getting started",
+   "notes": [
+    "Recommended: Teleportation methods to Tree Gnome Stronghold and Yanille."
+   ],
+   "steps": [
+    {
+     "text": "Speak to King Shareen in the Grand Tree with two empty slots to receive a translation book and a bark sample.",
+     "chat": [
+      "1. You seem worried, what's up?",
+      "1. I'd be happy to help!"
+     ]
+    },
+    {
+     "text": "Talk to Hazelmere in his house on the island east of Yanille (fairy ring code: CLS). He will take your bark sample and give you a message for the king."
+    }
+   ]
+  },
+  {
+   "title": "Glough",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Return to King Shareen. He will ask what the message says. Tell him:",
+     "chat": [
+      "1. I think so.",
+      "5. None of the above.",
+      "5. None of the above.",
+      "2. A man came to me with the King's seal.",
+      "1. I gave the man Daconia rocks.",
+      "4. And Daconia rocks will kill the tree!"
+     ]
+    },
+    {
+     "text": "Head south. At the bottom of the incline, turn east and go up the ladder to speak with Glough."
+    }
+   ]
+  },
+  {
+   "title": "Investigation",
+   "notes": [
+    "Needed: 1000 coins (if you haven't helped Femi).",
+    "Recommended: A teleport out of Karamja."
+   ],
+   "steps": [
+    {
+     "text": "Return to King Shareen, and he will tell you that Glough has caught a human. Ask to see the prisoner."
+    },
+    {
+     "text": "Talk to the prisoner Charlie on the top floor of the Grand Tree. Make sure to finish the entire conversation!"
+    },
+    {
+     "text": "Go to Glough's house. Search the cupboard, and you will find his journal."
+    },
+    {
+     "text": "Talk to Glough and wait to be arrested."
+    },
+    {
+     "text": "Talk to Charlie; he will tell you about the shipyard on Karamja; the password is Ka-Lu-Min."
+    },
+    {
+     "text": "The king appears and tells you to escape using the gnome glider on top of the tree."
+    },
+    {
+     "text": "Travel with the glider."
+    }
+   ]
+  },
+  {
+   "title": "Karamja",
+   "notes": [],
+   "steps": [
+    {
+     "text": "The glider will crash near the Ship Yard. Run east past the level 53 jogres to the Ship Yard gate."
+    },
+    {
+     "text": "Open the gate and tell the worker Glough sent you, then give the password Ka-Lu-Min.",
+     "chat": [
+      "2. Glough sent me.",
+      "1. Ka.",
+      "2. Lu.",
+      "2. Min."
+     ]
+    },
+    {
+     "text": "Find the Foreman on the southern dock. Kill him or talk to him to get a lumber order."
+    },
+    {
+     "text": "If you talk to him, he will ask you some security questions.",
+     "depth": 1,
+     "chat": [
+      "3. Sadly his wife is no longer with us!",
+      "2. He loves worm holes.",
+      "1. Anita."
+     ]
+    },
+    {
+     "text": "Take the lumber order to the king. (Teleport into the stronghold or get Femi to sneak you in, costing 1,000 coins if you didn't help her earlier). The king will not believe you when you show him the lumber order."
+    }
+   ]
+  },
+  {
+   "title": "Tuzo",
+   "notes": [
+    "Needed: Lumber order."
+   ],
+   "steps": [
+    {
+     "text": "Speak to Charlie again on the top floor of the Grand Tree."
+    },
+    {
+     "text": "Speak to Anita up the stairs west of the swamp, north-west of the Grand Tree. She will give you a key."
+    },
+    {
+     "text": "Go to Glough's house, and use the key to open the chest and take the invasion plans. Make sure to complete the dialogue window to receive the plans!"
+    },
+    {
+     "text": "Take the invasion plans to the king. He will give you four letters made of sticks (you'll need 4 empty inventory spaces)."
+    },
+    {
+     "text": "Climb the watchtower in Glough's house (tree in the east part of his house). Use the sticks with the four pillars to spell out TUZO. If you are under 25 Agility, eat your summer pie now."
+    },
+    {
+     "text": "Bank if needed and prepare for the battle, then go down the trapdoor."
+    }
+   ]
+  },
+  {
+   "title": "Encountering the Black demon",
+   "notes": [
+    "Needed: Combat equipment and food to last in a fight against a level 172 black demon."
+   ],
+   "steps": [
+    {
+     "text": "After you enter and talk to Glough, a level 172 black demon will appear and attack you."
+    },
+    {
+     "text": "Immediately after the cutscene ends, run to the tile directly north of the ladder. The black demon will become stuck behind the daconia rocks in front of you as he approaches. Attack with ranged, magic, or a halberd.",
+     "depth": 1
+    },
+    {
+     "text": "Warning: The demon will despawn after a while if it is not killed within 10 minutes exactly. If this happens, you'll have to exit through the ladder in the centre of the cave and go through Glough's trapdoor again.",
+     "depth": 1
+    },
+    {
+     "text": "Kill the demon. Walk along the passage until you find King Shareen standing by a ladder."
+    },
+    {
+     "text": "Talk to the king, and he will ask you to locate the last daconia rock. Fully complete the dialogue; otherwise, you cannot continue."
+    },
+    {
+     "text": "Search the roots until you find it (make sure to click continue on the dialogue when you find the stone)."
+    },
+    {
+     "text": "Talk to the king one last time."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

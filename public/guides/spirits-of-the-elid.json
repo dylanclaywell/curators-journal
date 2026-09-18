@@ -1,0 +1,148 @@
+{
+ "id": "spirits-of-the-elid",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Spirits_of_the_Elid%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [
+    "Players must be on the standard spellbook to complete this quest (or have Spellbook Swap available)."
+   ],
+   "steps": []
+  },
+  {
+   "title": "Getting started",
+   "notes": [
+    "Items required: Tele Grab runes, needle and thread."
+   ],
+   "steps": [
+    {
+     "text": "Head to Nardah, south of fairy ring DLQ, and talk to Awusah the Mayor."
+    },
+    {
+     "text": "Head to the house to the north and talk to Ghaslor the Elder. Make sure to receive ballad.",
+     "chat": [
+      "1. I am trying to find out the cause of this town's curse.",
+      "1. River spirits, what are they?"
+     ]
+    },
+    {
+     "text": "Head to the building north of the fountain and west of Ghaslor's house."
+    },
+    {
+     "text": "Search the north-west cupboard for a torn robe top and bottom. Click here to continue when searching or you must search it twice."
+    },
+    {
+     "text": "Use a needle and thread on the torn robes (make sure you grab both top and bottom) and equip them"
+    },
+    {
+     "text": "Telegrab the ancestral key on the table in the east side of the building."
+    }
+   ]
+  },
+  {
+   "title": "The Golems",
+   "notes": [
+    "Items required: Ancestral key, Robes of Elidinis, Rope, Pickaxe, ranged weapon and ammo OR runes for magic, crush, slash and stab weapon."
+   ],
+   "steps": [
+    {
+     "text": "Follow the river north until you reach a dungeon's cave opening with a waterfall coming out of it. (Alternatively: Necklace of passage Eagle's Eyrie teleport and go south-west)"
+    },
+    {
+     "text": "Alternatively, take the carpet ride ride back to Shantay Pass, head east, cross the bridge, and follow the River Elid north to the red exclamation point.",
+     "depth": 1
+    },
+    {
+     "text": "Pluck a Phoenix feather from a desert phoenix for a medium task in the Desert Diary. It is also used in The Golem.",
+     "depth": 1
+    },
+    {
+     "text": "(You can find bronze arrows and a bronze pickaxe south of the cave entrance and a shortbow to the east)"
+    },
+    {
+     "text": "Use your rope on the root which overhangs the cave."
+    },
+    {
+     "text": "Equip the robes of Elidinis and use the ancestral key on the door."
+    },
+    {
+     "text": "Note: If the door will not open, make sure you have both the robes on also you may have to talk to Ghaslor the Elder and attempt to open it again afterward.",
+     "depth": 1
+    },
+    {
+     "text": "Head east to the three doors."
+    },
+    {
+     "text": "Kill the white golem to the south which is weak to stab."
+    },
+    {
+     "text": "Enter the room and clear the water channel via Thieving."
+    },
+    {
+     "text": "Kill the Grey golem to the east which is weak to slash."
+    },
+    {
+     "text": "Enter the room and clear the water channel with a pickaxe."
+    },
+    {
+     "text": "Kill the Black golem to the north-east which is weak to crush."
+    },
+    {
+     "text": "Enter the room and clear the water channel by attacking the target on the other side with Ranged or Magic (37 ranged required even if using Magic)."
+    },
+    {
+     "text": "Go through the north door and talk to one of the spirits.",
+     "chat": [
+      "4. I come as an emissary from the people of Nardah.",
+      "1. Is there anything they can do to get their fountain working again?"
+     ]
+    },
+    {
+     "text": "Head back to Nardah."
+    },
+    {
+     "text": ":Note: It is possible to be bugged when exiting the cave. To get out of the bug, simply use the Home teleport spell"
+    }
+   ]
+  },
+  {
+   "title": "The Genie",
+   "notes": [
+    "Items required: Light source, Knife, Rope",
+    "Note: Praying at the Nardah Shrine is a Desert Medium Achievement Diary Requirement. You must not have full prayer points to get credit."
+   ],
+   "steps": [
+    {
+     "text": "Talk to Awusah the Mayor."
+    },
+    {
+     "text": "Take the shoes by his door and use a knife on them whilst outside of the house to obtain sole."
+    },
+    {
+     "text": "Head west from the Nardah General Store to a crevice. Make sure you have a light source."
+    },
+    {
+     "text": "Use a rope on it and head through the door to the north."
+    },
+    {
+     "text": "Talk to the Genie to the north. Visiting the Genie is a Medium task in the Desert Diary.",
+     "chat": [
+      "1. I'm after a statue that was thrown down here.",
+      "1. Maybe I can make a deal for it?",
+      "3. Ok I agree to the deal."
+     ]
+    },
+    {
+     "text": "Talk to Genie again."
+    },
+    {
+     "text": "Head back to Nardah and use the statuette on the plinth in the Shrine to Elidinis north of the fountain."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

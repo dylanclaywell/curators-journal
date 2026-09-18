@@ -1,0 +1,41 @@
+{
+ "id": "bear-your-soul",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Bear_Your_Soul%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Find and read the book Soul Journey in the Arceuus Library. fairy code CIS."
+    },
+    {
+     "text": "Talk to Aretha at the Soul Altar.",
+     "chat": [
+      "3. I've been reading your book...",
+      "1. Yes please."
+     ]
+    },
+    {
+     "text": "Go to the Arceuus church east of the library and climb up a staircase to get inside."
+    },
+    {
+     "text": "Climb down the inner staircase to the courtyard in the centre."
+    },
+    {
+     "text": "Dig anywhere to get the Damaged soul bearer."
+    },
+    {
+     "text": "Speak to the Key Master, who is found in Cerberus' Lair within the Taverley Dungeon."
+    },
+    {
+     "text": "Receive the Soul bearer."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

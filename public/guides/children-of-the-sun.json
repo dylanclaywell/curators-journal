@@ -1,0 +1,68 @@
+{
+ "id": "children-of-the-sun",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Children_of_the_Sun%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to either Noah or Alina east of Varrock Square. Ask when the delegation will arrive.",
+     "chat": [
+      "1. Yes.",
+      "3. When will this delegation arrive?"
+     ]
+    },
+    {
+     "text": "Follow the guard without being seen by him:"
+    },
+    {
+     "text": "Run inside Lowe's Archery Emporium and wait.",
+     "depth": 1
+    },
+    {
+     "text": "Hide behind the northern wall of the building south of the archery shop.",
+     "depth": 1
+    },
+    {
+     "text": "Walk to the south-eastern corner of the building.",
+     "depth": 1
+    },
+    {
+     "text": "Hide behind the western wall of Old Man Yarlo's house.",
+     "depth": 1
+    },
+    {
+     "text": "Hide either inside Old Man Yarlo's house or near the building south of Aubury's Rune Shop.",
+     "depth": 1
+    },
+    {
+     "text": "Return to Varrock Square and talk to the Sergeant Tobyn by the castle wall."
+    },
+    {
+     "text": "Identify the bandits posing as guards. Click on these guards to 'mark' them. They are in the following locations:"
+    },
+    {
+     "text": "The first guard can be found directly outside Aris's tent. He is standing with his hands on his hips with no weapon.",
+     "depth": 1
+    },
+    {
+     "text": "The second guard is found near Benny and his news stand. She is not wearing a helmet.",
+     "depth": 1
+    },
+    {
+     "text": "The third guard can be found directly outside Lowe's Archery Emporium on the east path. He is leaning on the wall with his arms crossed, without a weapon.",
+     "depth": 1
+    },
+    {
+     "text": "The fourth guard can be found further along the east path between the archery shop and Varrock east bank. He wields a mace instead of a sword.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to the sergeant again."
+    }
+   ]
+  }
+ ]
+}

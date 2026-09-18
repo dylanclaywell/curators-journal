@@ -1,0 +1,758 @@
+{
+ "id": "song-of-the-elves",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Song_of_the_Elves%2FQuick_guide",
+ "sections": [
+  {
+   "title": "The escape of Elena",
+   "notes": [
+    "Items required: Steel full helm, Steel platebody, Steel platelegs, Red dye, Purple dye, Silk. Recommended: Stamina potion, West Ardougne Teleport."
+   ],
+   "steps": [
+    {
+     "text": "Talk to Edmond, in the garden of the house north of the Flying Horse Inn in East Ardougne.",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Talk to King Lathas in Ardougne Castle. (He will not talk to you if you are wearing full mourner gear.)"
+    },
+    {
+     "text": "Talk to Edmond.",
+     "chat": [
+      "2. How do I get this disguise?"
+     ]
+    },
+    {
+     "text": "Use the red dye on the steel full helm to create an Ardougne knight helm."
+    },
+    {
+     "text": "Speak to Alrena who is inside or just outside Edmond's house with purple dye and silk to get the Ardougne knight tabard.",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Use the tabard on the steel platebody to create an Ardougne knight platebody."
+    },
+    {
+     "text": "Pures who do not have 5 Defence must talk to Edmond to polish the steel platelegs into Ardougne knight platelegs.",
+     "depth": 1
+    },
+    {
+     "text": "Go to Ardougne Castle, wear the 3 steel items (Ardougne knight armour) and go downstairs. (You can have other equipment in the rest of the armour slots.)"
+    },
+    {
+     "text": "Talk to Elena through the cell door of the most northern cell."
+    },
+    {
+     "text": "Go to Elena's house in East Ardougne (the house where you start Biohazard, immediately west of the log balance)."
+    },
+    {
+     "text": "Search the cabinet and take the thick clear liquid.",
+     "chat": [
+      "3. The thick clear liquid."
+     ]
+    },
+    {
+     "text": "Return to Ardougne Castle, talk to Elena.",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Talk to Edmond."
+    },
+    {
+     "text": "Pick a cabbage for later if you don't already have one.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Causing an insurrection",
+   "notes": [
+    "Items required: Ardougne knight helm, Ardougne knight platebody, Steel platelegs or Ardougne knight platelegs, Mourner gear, Tinderbox.",
+    "===Causing an insurrection==="
+   ],
+   "steps": [
+    {
+     "text": "Go to the Rehnison household in West Ardougne. It is on the north side of town, just west of the Mourner headquarters."
+    },
+    {
+     "text": "Search the bed.",
+     "chat": [
+      "1. Climb through it."
+     ]
+    },
+    {
+     "text": "Go through the dialogue with Elena and Councillor Halgrive.",
+     "chat": [
+      "1. I am."
+     ]
+    },
+    {
+     "text": "Equip the mourner gear. (To get a new set go downstairs in the mourner HQ, most top right building in west Ardougne. Kill a level 108 Mourner. You will need a Slayer ring to gain entry via the dark beasts teleport as the mourners won't allow entry without the set)"
+    },
+    {
+     "text": "West Ardougne tasks:"
+    },
+    {
+     "text": "Use a tinderbox on the grain sacks in the large building north of the church, near the Clerk.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to the Priest in the West Ardougne church.",
+     "depth": 1
+    },
+    {
+     "text": "Use a Tinderbox on the grain sacks in the West Ardougne church.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Nurse Sarah, found in a building south-west of the church.",
+     "depth": 1
+    },
+    {
+     "text": "Use a Tinderbox on the grain sacks, far south-west corner, outside of the West Ardougne General Store.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Chadwell in the general store about new taxes.",
+     "depth": 1,
+     "chat": [
+      "2. I'm here to tell you about some new taxes."
+     ]
+    },
+    {
+     "text": "Equip the Ardougne knight helm, Ardougne knight platebody, and Ardougne knight platelegs/Steel platelegs. (You can have other equipment in the rest of the armour slots.)"
+    },
+    {
+     "text": "East Ardougne tasks:"
+    },
+    {
+     "text": "Go to Ardougne Market and talk to the:",
+     "depth": 1
+    },
+    {
+     "text": "Silver merchant",
+     "depth": 2,
+     "chat": [
+      "2. I'm here to tell you about some new taxes."
+     ]
+    },
+    {
+     "text": "East Baker",
+     "depth": 2,
+     "chat": [
+      "2. I'm here to tell you about some new taxes."
+     ]
+    },
+    {
+     "text": "West Baker",
+     "depth": 2,
+     "chat": [
+      "2. I'm here to tell you about some new taxes."
+     ]
+    },
+    {
+     "text": "Gem merchant",
+     "depth": 2,
+     "chat": [
+      "2. I'm here to tell you about some new taxes."
+     ]
+    },
+    {
+     "text": "Fur trader",
+     "depth": 2,
+     "chat": [
+      "2. I'm here to tell you about some new taxes."
+     ]
+    },
+    {
+     "text": "Spice seller",
+     "depth": 2,
+     "chat": [
+      "2. I'm here to tell you about some new taxes."
+     ]
+    },
+    {
+     "text": "Silk merchant",
+     "depth": 2
+    },
+    {
+     "text": "Talk to the Town Crier.",
+     "depth": 1,
+     "chat": [
+      "2. I'm here to tell you about some new taxes."
+     ]
+    },
+    {
+     "text": "Talk to Zenesha in the platebody shop.",
+     "depth": 1,
+     "chat": [
+      "2. I'm here to tell you about some new taxes."
+     ]
+    },
+    {
+     "text": "Talk to the Estate agent located west of the market.",
+     "depth": 1,
+     "chat": [
+      "3. I'm here to tell you about some new taxes."
+     ]
+    },
+    {
+     "text": "Talk to Probita the pet insurer located west of the Estate Agent.",
+     "depth": 1,
+     "chat": [
+      "3. I'm here to tell you about some new taxes."
+     ]
+    },
+    {
+     "text": "Talk to Aemad or Kortan at Aemad's Adventuring Supplies. west of Probita.",
+     "depth": 1,
+     "chat": [
+      "2. I'm here to tell you about some new taxes."
+     ]
+    },
+    {
+     "text": "Talk to the Priest in the East Ardougne church.",
+     "depth": 1,
+     "chat": [
+      "2. I'm here to tell you about some new taxes."
+     ]
+    },
+    {
+     "text": "If you have not yet converted enough people, you may talk to Doctor Orbon in the East Ardougne church and the Bartender at the Flying Horse Inn south of Edmond's house.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Causing an insurrection",
+   "notes": [
+    "Recommended: Food, potions, and combat equipment. Protect from Melee can be used to negate all damage during this section."
+   ],
+   "steps": [
+    {
+     "text": "Speak with Elena in the Rehnison household basement hideout to start The Battle of West Ardougne.",
+     "chat": [
+      "1. Are you sure you're okay with this Elenva?",
+      "1. I'm ready."
+     ]
+    },
+    {
+     "text": "Defeat the 10 Mourners at the Mourner headquarters."
+    },
+    {
+     "text": "Go through the trapdoor in the north building."
+    },
+    {
+     "text": "Defeat the 11 Mourners in the Mourner headquarters basement."
+    },
+    {
+     "text": "Speak with Elena to start The Battle of East Ardougne.",
+     "chat": [
+      "1. I'm ready."
+     ]
+    },
+    {
+     "text": "Defeat the 15 Knights of Ardougne and Paladins in the castle. (some are upstairs)"
+    },
+    {
+     "text": "Speak to King Lathas.",
+     "chat": [
+      "4. We're done here, take him away."
+     ]
+    },
+    {
+     "text": "Watch the cutscene to its completion"
+    }
+   ]
+  },
+  {
+   "title": "Arianwyn's plan",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Speak to Arianwyn after being transported to Lletya."
+    },
+    {
+     "text": "Speak to Ysgawyn on the upper middle platform in Lletya."
+    },
+    {
+     "text": "Speak to Elena in the south-west corner in Lletya, near the pond.",
+     "chat": [
+      "1. Go ahead.",
+      "5. I don't know"
+     ]
+    },
+    {
+     "text": "Speak to Arianwyn located at the quest icon just north of the bank in Lletya."
+    },
+    {
+     "text": "Speak to Arianwyn once the meeting has finished."
+    }
+   ]
+  },
+  {
+   "title": "Visiting Baxtorian Falls",
+   "notes": [
+    "Items required: Rope, Flowers or Irit leaf, Cabbage, Wine of Zamorak or Zamorak brew, Nature rune, Adamant chainbody, Black knife or Black dagger. Recommended: Teleport crystal, games necklace."
+   ],
+   "steps": [
+    {
+     "text": "Go to the Waterfall Dungeon by boarding the log raft, using rope on the rock to the south, and finally using rope on the dead tree near the waterfall's edge to get to its entrance. [use games necklace to teleport to barbarian outpost for quick access to the waterfalls.]"
+    },
+    {
+     "text": "Go to the eastern room and search the northernmost crates for the key."
+    },
+    {
+     "text": "Go to the western room and past the two doors."
+    },
+    {
+     "text": "Talk to Arianwyn.",
+     "chat": [
+      "3. Let's just crack on."
+     ]
+    },
+    {
+     "text": "Read the \"Ode to eternity\" book"
+    },
+    {
+     "text": "Inspect each pillar and then use the items in order on the pillars, the number of each pillar is different for everyone."
+    },
+    {
+     "text": "SW will say its number.",
+     "depth": 1
+    },
+    {
+     "text": "W will say what number it isn't opposite. This is the item to place on the SE pillar.",
+     "depth": 1
+    },
+    {
+     "text": "NW will say the number it is next to. This is the item to place on the W pillar.",
+     "depth": 1
+    },
+    {
+     "text": "NE will say what it is opposite. This is the item to place on the NW pillar.",
+     "depth": 1
+    },
+    {
+     "text": "E will say what number it isn't next to. This is the item to place on the E pillar itself.",
+     "depth": 1
+    },
+    {
+     "text": "SE will say what it isn't. This is the item to place on the NE pillar.",
+     "depth": 1
+    },
+    {
+     "text": "1 - Nature rune",
+     "depth": 1
+    },
+    {
+     "text": "2 - Flowers/Irit leaf",
+     "depth": 1
+    },
+    {
+     "text": "3 - Black knife/dagger",
+     "depth": 1
+    },
+    {
+     "text": "4 - Wine of Zamorak/Zamorak brew",
+     "depth": 1
+    },
+    {
+     "text": "5 - Adamant chainbody",
+     "depth": 1
+    },
+    {
+     "text": "6 - Cabbage (be careful not to eat the cabbage!)",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Preparing to enter Prifddinas",
+   "notes": [
+    "Items required: Cadantine seed, Seed dibber, Hammer, Runite bar, Pickaxe, Pestle and mortar, Vial of water, Recommended: Antipoison, Teleport crystal (only if searching for Lord Amlodd before Lady Trahaearn)"
+   ],
+   "steps": [
+    {
+     "text": "Return to Lletya."
+    },
+    {
+     "text": "Talk to Arianwyn."
+    },
+    {
+     "text": "Talk to Elena near the pond.",
+     "chat": [
+      "2. Now's not the time for stories."
+     ]
+    },
+    {
+     "text": "Plant the Cadantine seed in the nearby farming patch. (Note: if you have unlocked Barbarian Farming, you do not need a Seed dibber.)"
+    },
+    {
+     "text": "Speak with Baxtorian in the central building, north of the bank, and ask how to find Lord Amlodd to get a crystal seed.",
+     "chat": [
+      "1. How do I find Lord Amlodd?",
+      "1. How do I find Lady Trahaearn?",
+      "2. I'll be back later."
+     ]
+    },
+    {
+     "text": "Ask how to find Lady Trahaearn to receive her clue.",
+     "chat": [
+      "1. How do I find Lady Trahaearn?",
+      "2. I'll be back later."
+     ]
+    },
+    {
+     "text": "Bring the crystal seed to Eluned, found just south of Lletya Archery Shop, north of the pond.",
+     "chat": [
+      "1. I have a seed from Baxtorian that I think needs enchanting."
+     ]
+    },
+    {
+     "text": "Travel north of Lletya to the cave entrance of the Underground Pass, accessible from the east side of Tirannwn, and go inside."
+    },
+    {
+     "text": "Walk south of the Well of Voyage and inspect the blocked crevice."
+    },
+    {
+     "text": "Use a pickaxe to break through the crevice and enter."
+    },
+    {
+     "text": "Use the hammer and runite bar to fix the exoskeleton of the Elderly Elf."
+    },
+    {
+     "text": "Talk to Lady Tangwen Trahaearn."
+    },
+    {
+     "text": "Rub the crystal seed, taking you to the Enchanted Valley."
+    },
+    {
+     "text": "Speak to the Mysterious Figure and choose any option to return with Lord Ieuan Amlodd to Lletya."
+    },
+    {
+     "text": "Talk to Elena and get the elder cadantine."
+    },
+    {
+     "text": "Talk to Arianwyn to get the old crystal."
+    },
+    {
+     "text": "Use the pestle and mortar on the crystal to get crystal dust."
+    },
+    {
+     "text": "Use the elder cadantine on a vial of water to create the elder cadantine potion (unf)."
+    },
+    {
+     "text": "Use the crystal dust on the unfinished potion to create the inversion potion."
+    },
+    {
+     "text": "Speak to Arianwyn."
+    }
+   ]
+  },
+  {
+   "title": "Finding Lord Crwys and Lady Hefin",
+   "notes": [
+    "Items needed: An axe",
+    "Items recommended: Iorwerth camp teleport, teleport crystal, weight-reducing clothing."
+   ],
+   "steps": [
+    {
+     "text": "Return to Lletya, and speak with Arianwyn."
+    },
+    {
+     "text": "Speak with Baxtorian. Be sure you ask about how to find BOTH Lord Crwys and Lady Hefin or else the option to chop the tree and jump on the skipping stones will not appear.",
+     "chat": [
+      "1. Lady Hefin",
+      "1. Lord Crwys"
+     ]
+    },
+    {
+     "text": "Exit Lletya and run south past the magic trees and continue until you reach the Poison Waste. Cross stepping stones until you reach Lady Hefin (initially Elf Hermit). Talk to her."
+    },
+    {
+     "text": "Go to the western side of Isafdar, south of the Iorwerth Camp, use the Iorwerth camp teleport to get there quickly. Be cautious as Iorwerth elves will attack you now. Pass the log balance and the stick trap south-west of it to get to the clearing. Then chop the dead tree north of the pond, directly west of the stick trap. Lord Crwys will appear, you'll automatically speak with him."
+    },
+    {
+     "text": "Return to Lletya and speak with Baxtorian."
+    }
+   ]
+  },
+  {
+   "title": "Recovering the orb",
+   "notes": [
+    "Items recommended: Iorwerth camp teleport, teleport crystal, combat gear, food, potions."
+   ],
+   "steps": [
+    {
+     "text": "Equip yourself with combat gear and go to the Iorwerth Camp."
+    },
+    {
+     "text": "Enter the cave on the north side of camp, and slay the two guards within. You can trap the warrior behind the archer and kill them one at a time, taking no damage as long as you use the correct protection prayers."
+    },
+    {
+     "text": "Kill the Iorwerth Archer (level 90).",
+     "depth": 1
+    },
+    {
+     "text": "Kill the Iorwerth Warrior (level 108).",
+     "depth": 1
+    },
+    {
+     "text": "Search the chest and receive the orb of light."
+    },
+    {
+     "text": "Return to Lletya and speak with Baxtorian.",
+     "chat": [
+      "2. I'll get going then."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Tracking down Ysgawyn",
+   "notes": [
+    "Items recommended: Iorwerth camp teleport, teleport crystal, combat gear, food, potions (drink 1 dose of antidote++ before leaving Lletya to save inventory space)."
+   ],
+   "steps": [
+    {
+     "text": "Speak with Elena near the pond.",
+     "chat": [
+      "2. That's fair. Anyway, I wanted to ask you about Ysgawyn."
+     ]
+    },
+    {
+     "text": "Exit out of Lletya's entrance north-west."
+    },
+    {
+     "text": "Inspect the mushrooms near the entrance."
+    },
+    {
+     "text": "Follow the footsteps, inspecting rocks, mushrooms and lamps along the way. They should lead you to a spot near the whiteberry spawn in the centre of Isafdar."
+    },
+    {
+     "text": "Speak with Ysgawyn.",
+     "chat": [
+      "2. So what have you been discussing?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The attack on Lletya",
+   "notes": [
+    "Note: If you die during this fight, you can collect your items from the Rebel Scout outside of Lletya for 80,000 coins. Using a teleport crystal to teleport back doesn't restart the fight, but places you next to the Rebel Scout.",
+    "Dying again before collecting your items from the Rebel Scout will delete your items.",
+    "Near death Arianwyn will animate an arrow which will lead to a cutscene."
+   ],
+   "steps": [
+    {
+     "text": "Enter the house to the south and search the east table to find Eoin."
+    },
+    {
+     "text": "Go up the ladder and search the Cooking Pots by the South Cooking Range to find Iona."
+    },
+    {
+     "text": "You will now have to fight Arianwyn."
+    },
+    {
+     "text": "Range or melee are suggested, as magic is inaccurate against him",
+     "depth": 1
+    },
+    {
+     "text": "Protect from Range will completely nullify his normal attacks",
+     "depth": 1
+    },
+    {
+     "text": "Purple arrows will turn off any prayers, so make sure to turn them back on.",
+     "depth": 1
+    },
+    {
+     "text": "Orange arrows are 1x1 bombs, and will hit high amounts of damage even through prayer. Move to a different tile after the arrow starts flying to avoid them.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Finding Lady Ithell and Lady Meilyr",
+   "notes": [
+    "Needed: Spade, 8 limestone bricks, saw, hammer",
+    "Recommended: Anti-poison, stamina potions, charged teleport crystal to Lletya, Iorwerth camp teleport, fairy ring access and 76 Agility (71 with summer pie) or a Zul-andra teleport. To save banking, for the next part bring combat gear, food, super restores."
+   ],
+   "steps": [
+    {
+     "text": "Talk to Baxtorian to receive a clue scroll.",
+     "chat": [
+      "1. What's Lady Ithell's clue?",
+      "1. What's Lady Meilyr's clue?"
+     ]
+    },
+    {
+     "text": "Search Lletya for the five glowing symbols on the walls:"
+    },
+    {
+     "text": "First symbol is inside the bank on west wall, glowing white.",
+     "depth": 1
+    },
+    {
+     "text": "Second symbol is inside the building north of Elena in the south-west section.",
+     "depth": 1
+    },
+    {
+     "text": "Third symbol is on the south wall of the general store to the north.",
+     "depth": 1
+    },
+    {
+     "text": "Fourth symbol is in the upper floor of the general store, on the north wall.",
+     "depth": 1
+    },
+    {
+     "text": "Fifth and final symbol is on the west wall of the upper floor prayer altar room.",
+     "depth": 1
+    },
+    {
+     "text": "Take the limestone bricks, hammer, and saw, and build the statue in the centre of the village. (Make sure to finish the dialogue or you won't be able to continue the next part)"
+    },
+    {
+     "text": "Speak with Lady Ithell at her statue on Lletya."
+    },
+    {
+     "text": "Bank the hammer/saw and get the rest of your supplies now. (You will still need your spade!)"
+    },
+    {
+     "text": "Go to the south of Isafdar, near the swamp, and dig there. (see picture)"
+    },
+    {
+     "text": "Dig two steps north of the STASH unit near Zul-Andra (BJS and run east, 76 Agility OR Zul-andra teleport OR charter a ship to Port Tyras and run South East)"
+    },
+    {
+     "text": "Dig outside the south gates of Prifddinas (Iorwerth camp teleport)"
+    },
+    {
+     "text": "Spin outside the western entry to the Underground Pass with nothing equipped (Teleport Crystal to Lletya)."
+    },
+    {
+     "text": "Bank now if you did not bring combat gear"
+    }
+   ]
+  },
+  {
+   "title": "Sealing the Underground Pass",
+   "notes": [
+    "Required items: Combat gear, food, Super restores or Restore potions. A teleport to a bank to gear up for the final battle, You also need 1 inventory space to hold the 'Explosive Potions'."
+   ],
+   "steps": [
+    {
+     "text": "Enter the Underground Pass from the Isafdar side, and enter the Well of voyage. Proceed south along the winding path (see dungeon map for path) from Iban chamber to stairs, eventually travelling through a cave to dwarf camp at the ground level."
+    },
+    {
+     "text": "Speak with Baxtorian."
+    },
+    {
+     "text": "Speak with Elena.",
+     "chat": [
+      "2. Baxtorian said you had an idea to help our defence."
+     ]
+    },
+    {
+     "text": "Fill the seven holes outside of the camp with the Explosive potions."
+    },
+    {
+     "text": "Speak with Baxtorian.",
+     "chat": [
+      "1. I'm ready."
+     ]
+    },
+    {
+     "text": "Defend the Dwarf camp for four minutes."
+    },
+    {
+     "text": "You do not need to kill every attacker, simply keep them from destroying the barricade. A new archer/melee spawns randomly after killing one.",
+     "depth": 1
+    },
+    {
+     "text": "Attack any elf that is attacking the barricade, to draw their attention towards you instead. Alternatively you can kill off all the rangers until there's only melee attackers left and block the path to the gate.",
+     "depth": 1
+    },
+    {
+     "text": "Protect from Melee is recommended, to protect from the higher levelled Elf warriors, switch to Protect from Missiles once the warriors pile up and stop attacking you.",
+     "depth": 1
+    },
+    {
+     "text": "Defeat Essyllt."
+    },
+    {
+     "text": "Protect from Melee will nullify most of his damage. Can quickly change to Protect from Range after his stun attack to avoid all damage.",
+     "depth": 1
+    },
+    {
+     "text": "After his potion attack, drink a restore to counteract the stat drain.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Fighting The Fragment",
+   "notes": [
+    "Needed: Combat gear",
+    "Recommended: Magic gear, Saradomin brews, super restores, fast ranged weapons such knives, darts, or chinchompas."
+   ],
+   "steps": [
+    {
+     "text": "After a cutscene, you will automatically enter the Temple of Light. If you are not equipped for this fight immediately teleport out, you can re-enter the Temple of Light through the Underground Pass, through the same crack that you entered the Dwarven camp with."
+    },
+    {
+     "text": "Defeat the Fragment of Seren."
+    },
+    {
+     "text": "Magic is the only form of combat that is effective against the Fragment.",
+     "depth": 1
+    },
+    {
+     "text": "Protect from Range reduces most of its damage from normal attacks.",
+     "depth": 1
+    },
+    {
+     "text": "Equipment lost on death while in the instance can be reclaimed from an elf NPC standing outside of the cave entrance for the cost of 80,000 coins. If the player dies elsewhere before reclaiming their items, their unclaimed items will be permanently lost.",
+     "depth": 1
+    },
+    {
+     "text": "Magic attack and damage bonus should be prioritised. High-level magic equipment such as Ancestral robes, Ahrim's robes, or void knight equipment along with the trident of the swamp and Ancient Magicks blood spells are an effective combination.",
+     "depth": 1
+    },
+    {
+     "text": "The Fragment has four special attacks that always occur in the following order, repeating until The Fragment is defeated:",
+     "depth": 1
+    },
+    {
+     "text": "1. An orb that teleports you to The Fragment. Simply run away after being teleported to maintain a safe distance from a melee attack.",
+     "depth": 2
+    },
+    {
+     "text": "2. The Fragment will split into multiple parts, and you must attack the correct one. The real Fragment will have crystals underneath it, and a lighter shade of aura.",
+     "depth": 2
+    },
+    {
+     "text": "3. The Fragment will summon healing spells. Simply attack the spells once with any attack to defeat them. Fast-hitting weapons such as throwing knives or darts are excellent here. Chinchompas are a great choice as their long range makes it easier to stay out of melee range while only being 1 tick slower than knives/darts.",
+     "depth": 2
+    },
+    {
+     "text": "4. The Fragment will teleport you to one place and freeze you there while she winds up an attack. Then, she will unleash a heavy attack that hits for 99% of your max hp. If your hitpoints are at or below 99% of your max hp, you will be killed in 1 shot. It is highly recommended to bring Saradomin brews or anglerfish to heal above 100% health prior to the attack landing to avoid being killed.",
+     "depth": 2
+    },
+    {
+     "text": "After defeating the Fragment of Seren, Baxtorian will invite you into Prifddinas."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

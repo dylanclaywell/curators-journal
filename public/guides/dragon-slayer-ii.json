@@ -1,0 +1,697 @@
+{
+ "id": "dragon-slayer-ii",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Dragon_Slayer_II%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting off",
+   "notes": [
+    "Items required: Pickaxe, gear for killing a level 100 monster. Recommended: Amulet of glory, digsite pendant."
+   ],
+   "steps": [
+    {
+     "text": "Talk to Alec Kincade outside the Myths' Guild (spirit tree to Feldip Hills) to start the quest.",
+     "chat": [
+      "2. How can I gain access to the Guild?",
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Talk to Dallas Jones at the Karamja pub at Musa Point. The fastest way there is amulet of glory to karamja, alternativley to take the boat from Port Sarim.",
+     "chat": [
+      "2. Yes I know it well."
+     ]
+    },
+    {
+     "text": "Go to Elvarg's Lair under Crandor and talk to Dallas Jones (shortcut via the volcano on Karamja)."
+    },
+    {
+     "text": "Right-click use your pickaxe on the Northern wall in the room you defeated Elvarg, then enter the tunnel. (Marked on minimap red wall line)"
+    },
+    {
+     "text": "Investigate the Ancient Mural to the north. A level 100 spawn will attack you. Kill it."
+    },
+    {
+     "text": "Investigate the mural again."
+    },
+    {
+     "text": "Talk to Dallas Jones."
+    }
+   ]
+  },
+  {
+   "title": "The House on the Hill",
+   "notes": [
+    "Recommended: Hand in the map pieces received in the house before heading outside the house (Open Stone Chest upstairs and downstairs)"
+   ],
+   "steps": [
+    {
+     "text": "Head to Fossil Island in the basement of the House on the Hill and talk to Dallas Jones.",
+     "chat": [
+      "1. Ask about the island."
+     ]
+    },
+    {
+     "text": "Find the missing 24 map pieces and use them on the map in the middle of the room. Note: You can hand your pieces to Dallas to save inventory space - Hand in 8 map pieces within the house before heading outside to save time."
+    },
+    {
+     "text": "Search the open chest north of the map for 5 pieces.",
+     "depth": 1
+    },
+    {
+     "text": "Go upstairs, search the open stone chest on the north wall for 3 pieces.",
+     "depth": 1
+    },
+    {
+     "text": "Go outside, search the Fungi just north of the staircase for 4 pieces.",
+     "depth": 1
+    },
+    {
+     "text": "Search the Hook briar south of the house for 7 pieces.",
+     "depth": 1
+    },
+    {
+     "text": "Run to the east, search the mushtree for 5 pieces.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Dallas Jones and solve the map puzzle.",
+     "chat": [
+      "1. Let's talk about the investigation.",
+      "1. Let's do it!"
+     ]
+    },
+    {
+     "text": "Pieces can be clicked to rotate them, and also dragged to swap them.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Dallas Jones again."
+    },
+    {
+     "text": "Talk to Jardric at the museum camp."
+    }
+   ]
+  },
+  {
+   "title": "To Lithkren!",
+   "notes": [
+    "Items required: 8 oak planks, 10 swamp paste, at least 12 nails, a hammer and a saw."
+   ],
+   "steps": [
+    {
+     "text": "Bring 8 oak planks, 10 swamp paste, 12 nails (more may be needed as you may bend them), a hammer, and a saw to the west side of the island (on the coast just south-west of the \"Mushroom Meadow\" Magic Mushtree) and build a rowboat."
+    },
+    {
+     "text": "Talk to Dallas Jones and board the boat.",
+     "chat": [
+      "1. I'm ready."
+     ]
+    },
+    {
+     "text": "Head north-west from the boat to the ruined courtyard, and climb up the western stairs."
+    },
+    {
+     "text": "Climb down the trapdoor to the south, down the staircase to the north, and north down another staircase."
+    },
+    {
+     "text": "Talk to Dallas Jones."
+    },
+    {
+     "text": "Search the skeleton to the east and read Aivas' diary."
+    },
+    {
+     "text": "Talk to Dallas Jones again."
+    }
+   ]
+  },
+  {
+   "title": "Bob the Cat",
+   "notes": [
+    "Items required: Catspeak amulet (e). Recommended: Quick transportation to Sophanem."
+   ],
+   "steps": [
+    {
+     "text": "Find Bob the Cat with your Catspeak amulet (e) and talk to him. You may choose to world hop at the Catherby archery shop to find him quickly."
+    },
+    {
+     "text": "Talk to the Sphinx in Sophanem.",
+     "chat": [
+      "1. Ask the Sphinx for help with Bob's memories."
+     ]
+    },
+    {
+     "text": "The sphinx will enchant you. You can now talk to cats without the catspeak amulet!",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Robert the Strong",
+   "notes": [
+    "Items required: Seal of Passage, 1 astral rune, a hammer, a pestle and mortar, goutweed, dream vial, a tinderbox, melee gear (keep gear in the bank until lighting the brazier to save run energy).",
+    "Recommended: A good crush weapon, food and prayer potion as the fight at the end might need it. An emergency teleport DOES work here."
+   ],
+   "steps": [
+    {
+     "text": "Bring your seal of passage and make sure you have 1 free inventory space! Note: You can still use the bank run by 'Bird's-Eye' Jack without the seal; however, it is needed to speak to the Oneiromancer."
+    },
+    {
+     "text": "Head to Lunar Isle and talk to the Oneiromancer.",
+     "chat": [
+      "3. Bob's memories.",
+      "1. .Yes."
+     ]
+    },
+    {
+     "text": "Crush the astral rune with a hammer, then grind the astral rune shards with a pestle and mortar."
+    },
+    {
+     "text": "Make a dream potion by filling the dream vial with water (sink west of bank in town) and adding your goutweed and ground astral rune."
+    },
+    {
+     "text": "Gear up for a fight, light the Ceremonial Brazier (located in the largest building on the island), and use your Dream potion on the flame."
+    },
+    {
+     "text": "You may leave to prepare by using the giant history book at the entrance, then rejoin the fight at any time by talking to Bob again.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Bob and Not Bob, then exit out of the dream to gear up if you are not fully prepared. This also allows you to clear out the tinderbox and fill up with combat supplies."
+    },
+    {
+     "text": "Re-enter the dream by talking to Bob outside the brazier, and then head through the barrier and kill Robert the Strong."
+    },
+    {
+     "text": "He can't be fought with ranged or magic, bring melee gear and a crush weapon.",
+     "depth": 1
+    },
+    {
+     "text": "He can hit heavy damage through Protect from Missiles but it reduces damage taken. Using chivalry or piety is recommended to speed up the fight, as the most challenging part about this fight is lasting long enough through the damage taken.",
+     "depth": 1
+    },
+    {
+     "text": "When he shouts, run behind one of the pillars to avoid his special attack. If it hits you, it can deal up to 60 damage and will knock off your prayers.",
+     "depth": 1
+    },
+    {
+     "text": "Super combat potion, an inventory full of food and a prayer potion are highly recommended. Do not underestimate this fight!",
+     "depth": 1
+    },
+    {
+     "text": "Note: If you leave the dream, you do NOT have to remake the dream potion! Talk to Bob to re-enter the dream."
+    }
+   ]
+  },
+  {
+   "title": "The dragon key",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Bob again."
+    },
+    {
+     "text": "You now need to collect the four parts of the key to open the door on Lithkren."
+    }
+   ]
+  },
+  {
+   "title": "Karamja key piece",
+   "depth": 1,
+   "notes": [
+    "Items required: Food to survive traps, prayer potions to keep prayer on for long amounts of time, Machete, any axe Note: Players with 79 Agility (boostable) can access a vine shortcut into the Kharazi Jungle without needing an axe or machete. Recommended: Bring plenty of food and stamina potions as well as at least one prayer potion! Take the gnome glider to Karamja or bring for the Brimhaven cart ride. You can also teleport to the Gem Mine beneath Shilo Village using Karamja Gloves 3 or 4."
+   ],
+   "steps": [
+    {
+     "text": "Head to the south-eastern coast of the Kharazi Jungle and down the staircase into the maze. Turn off Auto Retaliate."
+    },
+    {
+     "text": "Navigate to the centre of the maze and take the key piece."
+    },
+    {
+     "text": "Avoid spikes and traps with thieving and agility.",
+     "depth": 1
+    },
+    {
+     "text": "Use protection prayers to protect from the golems' attacks.",
+     "depth": 1
+    },
+    {
+     "text": "Red: Melee",
+     "depth": 2
+    },
+    {
+     "text": "Green: Ranged",
+     "depth": 2
+    },
+    {
+     "text": "Blue: Magic",
+     "depth": 2
+    },
+    {
+     "text": "Once you have taken the Dragon key piece, the plinth can be used to transport you out."
+    }
+   ]
+  },
+  {
+   "title": "Morytania key piece",
+   "depth": 1,
+   "notes": [
+    "Items required: Ghostspeak amulet, a dragonstone, 2 molten glass, glassblowing pipe, chisel, and a spade. Recommended: Ectophial, amulet of glory or Draynor Manor tab, plenty of food (and filled druid pouches if you have not lit the fire of dehumidification), stamina potion."
+   ],
+   "steps": [
+    {
+     "text": "Talk to Reldo in the Varrock Castle library.",
+     "chat": [
+      "1. Ask about Tristan."
+     ]
+    },
+    {
+     "text": "Search the second bookcase from the north on the west side of the central row (see this image)."
+    },
+    {
+     "text": "Talk to Reldo again.",
+     "chat": [
+      "1. Ask about Tristan."
+     ]
+    },
+    {
+     "text": "Go to Port Phasmatys and speak to Sarah, west of the bank."
+    },
+    {
+     "text": "Bring a dragonstone, 2 molten glass, a glassblowing pipe, and a chisel to Ava in Draynor Manor.",
+     "chat": [
+      "3. I need your help with a key piece."
+     ]
+    },
+    {
+     "text": "Use your glassblowing pipe on your dragonstone and use the inert locator orb on Ava to get a locator orb."
+    },
+    {
+     "text": "Head to Mort Myre Swamp and use the locator to find the buried key piece. Bring food as the locator hurts you every time you use it."
+    },
+    {
+     "text": "The location is random inside the swamp. Each time you use the locator it will tell you which direction to go.",
+     "depth": 1
+    },
+    {
+     "text": "Start at BKR and feel your locator device.",
+     "depth": 1
+    },
+    {
+     "text": "If you get north-east, it will always be the lone purple spot that you need to cross the bridge to get to.",
+     "depth": 1
+    },
+    {
+     "text": "If you get south-west, south, or south-east, go to the centre of the subdivided area and scan again. For example, if you got west, go to the centre of the blue subdivision and scan there again. If you get west again, you've narrowed it down to a single dig spot.",
+     "depth": 1
+    },
+    {
+     "text": "Dig up the dragon key piece."
+    }
+   ]
+  },
+  {
+   "title": "Ungael key piece",
+   "depth": 1,
+   "notes": [
+    "Items required: Ranged gear, dragonfire and venom protection, food, and prayer. Recommended: Crumble Undead runes, toxic blowpipe, salve amulet(ei), super antifire potion, anti-venom+, ranging potion, prayer potion, karambwans and dark crabs or similar high healing foods."
+   ],
+   "steps": [
+    {
+     "text": "Ask Brundt the Chieftain in Rellekka about the dragonkin fortress. or if you don't own a Seal of Passage or if you haven't started the Fremennik Exiles quest, whichever refers to the fortress.",
+     "chat": [
+      "2. Ask about the dragonkin fortress.",
+      "3. Ask about the dragonkin fortress.",
+      "4. Ask about the dragonkin fortress."
+     ]
+    },
+    {
+     "text": "Prepare for a fight with Vorkath. See Vorkath/Strategies for recommended setups."
+    },
+    {
+     "text": "Super antifires and Anti-venom+ potions are highly recommended.",
+     "depth": 1
+    },
+    {
+     "text": "Set your quick prayers to protect from Magic and your best ranged attack prayer to allow easy re-enabling prayers.",
+     "depth": 1
+    },
+    {
+     "text": "Elite Void Knight equipment together with a crossbow and ruby/diamond bolts is recommended.",
+     "depth": 1
+    },
+    {
+     "text": "Turn off run to make evading the fire barrage special attack easier. Use Ctrl+click on tiles to run to that tile whenever necessary.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Torfinn on the dock to the north to go to Ungael.",
+     "chat": [
+      "1. Yes please."
+     ]
+    },
+    {
+     "text": "Kill Vorkath."
+    },
+    {
+     "text": "Before the fight, put on Protect from Magic and drink your Anti-venom+, Super antifire, and Ranging potions.",
+     "depth": 1
+    },
+    {
+     "text": "Make sure to re-pot during the fight, Super antifire and anti-venom has a short duration (both 3 minutes).",
+     "depth": 2
+    },
+    {
+     "text": "Vorkath has several different regular attacks, including a melee attack. The two important ones are:",
+     "depth": 1
+    },
+    {
+     "text": "Orange fireball shot into the air - Move at least two squares away from your current location.",
+     "depth": 2
+    },
+    {
+     "text": "Pink fireball shot at you - Your prayers will be knocked off, turn them back on (using quick prayers).",
+     "depth": 2
+    },
+    {
+     "text": "After every six regular attacks, Vorkath will use one of his special attacks:",
+     "depth": 1
+    },
+    {
+     "text": "He will spit acid all over the crater and start firing fireballs very rapidly at your current location. Find a straight line clear of acid spots and walk back and forth along it to avoid the fireballs. See the Vorkath strategy page for advanced tactics.",
+     "depth": 2
+    },
+    {
+     "text": "He will hit you with Dragonfire barrage, freezing you in an ice block. He will then summon a Zombified spawn that slowly walks to you, if it reaches you it will deal 30 damage. Kill it before it gets you, using Crumble Undead will guarantee a one-hit kill. You will stay frozen and Vorkath will stop attacking you until you kill the spawn or it reaches you. A possible strategy is to bring a slayer staff and setting the auto-cast to Crumble Undead, to reduce the need to click as accurately right away.",
+     "depth": 2
+    },
+    {
+     "text": "After you kill him, climb over the ice chunks in the north of the crater (if required you can teleport out to restock for a dungeon part, Vorkath will remain dead)."
+    },
+    {
+     "text": "Walk along the path to the north-west of the island and enter the cave."
+    },
+    {
+     "text": "There are venomous spiders inside, don't forget your Anti-venom+.",
+     "depth": 1
+    },
+    {
+     "text": "Pull the lever in the south-west section, then run to the room on the east wall before the timer runs out (you must have at least 15% run energy)."
+    },
+    {
+     "text": "Search the stone chest for a dragon key piece and an ancient key."
+    }
+   ]
+  },
+  {
+   "title": "Kourend key piece",
+   "depth": 1,
+   "notes": [
+    "Items required: Food, light source, gear to protect from high level skeletons.",
+    "Recommended: Stamina potions"
+   ],
+   "steps": [
+    {
+     "text": "Enter the crypt whose entrance is found in the southern part of the Graveyard of Heroes. Follow the dirt path south to a small building."
+    },
+    {
+     "text": "Caution: The crypt is full of powerful aggressive skeletons and zombies that attack with all three combat styles.",
+     "depth": 1
+    },
+    {
+     "text": "Head to the bottom of the crypt and inspect the tomb to find the puzzle."
+    },
+    {
+     "text": "The solution to the puzzle is different for everyone. Refer to the table below to solve this puzzle."
+    },
+    {
+     "text": "\"The one from [Location] sat at the north of the table\": Place this statue north.",
+     "depth": 1
+    },
+    {
+     "text": "\"Opposite the one with [Weapon]\": Place this statue south.",
+     "depth": 1
+    },
+    {
+     "text": "\"The one with [Weapon] asked the.....\": Place this statue west.",
+     "depth": 1
+    },
+    {
+     "text": "Place the final statue east.",
+     "depth": 1
+    },
+    {
+     "text": "Search the tomb to get the Dragon key piece."
+    }
+   ]
+  },
+  {
+   "title": "Reforging the key",
+   "depth": 1,
+   "notes": [
+    "Items required: The 4 dragon key pieces, hammer, ancient key, 3 casts of Fire Wave (21 fire runes, 15 air runes, 3 blood runes). Recommended: Food, dragonfire protection, games necklace, digsite pendant."
+   ],
+   "steps": [
+    {
+     "text": "Go to the Ancient Cavern (use a games necklace to teleport to Barbarian Outpost and run south to the whirlpool)."
+    },
+    {
+     "text": "Descend the stairs and run south to another set of stairs which lead to the mithril dragon area."
+    },
+    {
+     "text": "Run west and open the mithril door in the middle of the area (with the three mithril dragons clumped together). You need the ancient key to open this door."
+    },
+    {
+     "text": "Cast Fire Wave or Fire Surge on the three dragon heads."
+    },
+    {
+     "text": "Leave the room and go east down the staircase, and then go to the south-western area of the caverns, and climb up the rough hewn steps there."
+    },
+    {
+     "text": "Use one of the anvils here to forge the dragon key."
+    },
+    {
+     "text": "Return to Fossil Island and use the Rowboat to Lithkren (west of Mushroom Meadow Mushtree). Return to the area where Dallas Jones is."
+    },
+    {
+     "text": "Use the Dragon key on the ancient doors."
+    },
+    {
+     "text": "Enter the doors and head up north and speak to Dallas to start a cutscene."
+    },
+    {
+     "text": "After the cutscene, make sure to finish the dialogue with Jardric and Bob."
+    }
+   ]
+  },
+  {
+   "title": "A World United",
+   "notes": [
+    "Recommended: Teleports to Falador, Ardougne, Rellekka, and 2 teleports to Varrock."
+   ],
+   "steps": [
+    {
+     "text": "Travel to Varrock and speak with King Roald about the dragon threat.",
+     "chat": [
+      "1. Talk about the dragon threat."
+     ]
+    },
+    {
+     "text": "Speak with the following rulers \"about the dragon threat\" in any order:"
+    },
+    {
+     "text": "Sir Amik Varze in Falador",
+     "depth": 1,
+     "chat": [
+      "1. Talk about the dragon threat."
+     ]
+    },
+    {
+     "text": "King Lathas (King Thoros after Song of the Elves) in East Ardougne",
+     "depth": 1,
+     "chat": [
+      "1. Talk about the dragon threat."
+     ]
+    },
+    {
+     "text": "Brundt the Chieftain in Rellekka or if you completed The Fremennik Exiles, whichever refers to the threat.",
+     "depth": 1,
+     "chat": [
+      "2. Talk about the dragon threat.",
+      "3. Talk about the dragon threat."
+     ]
+    },
+    {
+     "text": "Return to Varrock and enter the dining room north of the throne room.",
+     "chat": [
+      "1. It's a good plan."
+     ]
+    },
+    {
+     "text": "Make sure to talk to Bob after exiting the dining room."
+    }
+   ]
+  },
+  {
+   "title": "The Assault",
+   "notes": [
+    "Items required: 4 free inventory spaces, dragonfire protection, combat gear, plenty of food. Recommended: Antidote++, ranged gear, toxic blowpipe, super antifire potion, stamina potion, insulated boots."
+   ],
+   "steps": [
+    {
+     "text": "Return to Rellekka and take the boat back to Ungael by speaking to Torfinn."
+    },
+    {
+     "text": "Hold off the assault on your ship for 4 minutes."
+    },
+    {
+     "text": "Click leaks to fill them.",
+     "depth": 1
+    },
+    {
+     "text": "Click fires to douse them.",
+     "depth": 1
+    },
+    {
+     "text": "Click injured Fremennik warriors to heal them.",
+     "depth": 1
+    },
+    {
+     "text": "Click damaged masts to repair them.",
+     "depth": 1
+    },
+    {
+     "text": "There is a checkpoint after defending the ship from the assault."
+    },
+    {
+     "text": "Put on your dragonfire protection."
+    },
+    {
+     "text": "Make your way towards Varrock's grand ship, fighting a red dragon, iron dragon, and brutal green dragon on the way."
+    },
+    {
+     "text": "Kill the two green and two blue dragons battling the Varrockian soldiers."
+    },
+    {
+     "text": "There is a checkpoint after killing these four dragons. If necessary, teleport out and prepare for the next wave."
+    },
+    {
+     "text": "Kill the black, steel then brutal red dragons that arrive on the ship one at a time."
+    },
+    {
+     "text": "When Galvek does a casting animation, run away from your current location.",
+     "depth": 1
+    },
+    {
+     "text": "There is a checkpoint after killing the brutal red dragon. If necessary, teleport out to prepare for the next three dragons."
+    },
+    {
+     "text": "Kill the mithril, adamant then rune dragons that arrive on the ship one at a time."
+    },
+    {
+     "text": "When Galvek does a casting animation, run away from your current location.",
+     "depth": 1
+    },
+    {
+     "text": "These three dragons have a melee, ranged, magic, and dragonfire attack.",
+     "depth": 1
+    },
+    {
+     "text": "The adamant dragon also has two special attacks:",
+     "depth": 1
+    },
+    {
+     "text": "A ranged attack with the Blood Forfeit effect (hits through Protect from Missiles).",
+     "depth": 2
+    },
+    {
+     "text": "A poison attack that splashes and lands on nearby squares dealing lots of damage.",
+     "depth": 2
+    },
+    {
+     "text": "It is recommended to use Antidote++ or other poison immunity to minimise this damage.",
+     "depth": 3
+    },
+    {
+     "text": "The rune dragon also has two special attacks:",
+     "depth": 1
+    },
+    {
+     "text": "A ranged attack with the Life Leech effect (hits through Protect from Missiles).",
+     "depth": 2
+    },
+    {
+     "text": "An electric attack that hits nearby squares and arcs around the player, dealing rapid damage.",
+     "depth": 2
+    },
+    {
+     "text": "It is recommended to wear Insulated boots to minimise this damage.",
+     "depth": 3
+    },
+    {
+     "text": "There is a checkpoint after killing the rune dragon. Teleport out and stock up for the final battle."
+    }
+   ]
+  },
+  {
+   "title": "The Final Battle",
+   "depth": 1,
+   "notes": [
+    "Items required: Dragonfire protection (both shield and potion are required, super antifire potions do not provide full protection!), ranged gear. Recommended: Ruby bolts (e) or ruby dragon bolts (e), 3-4 super restore(4), ranging potion(4), high-healing food, stamina potion, one-click teleport. (TURN AUTO RETALIATE OFF IN ADVANCE as it is not really necessary for the fight and is likely to get you killed in the third phase). Thralls cannot be summoned in this fight."
+   ],
+   "steps": [
+    {
+     "text": "Kill Galvek - he has four phases that have 300 hitpoints each."
+    },
+    {
+     "text": "Keep avoiding his ground-targeted fireballs.",
+     "depth": 1
+    },
+    {
+     "text": "Turn your prayers back on after his pink dragonfire knocks them off.",
+     "depth": 1
+    },
+    {
+     "text": "Setting your quick prayers to Protect from Magic and Eagle Eye/Rigour is beneficial to counter this attack.",
+     "depth": 2
+    },
+    {
+     "text": "Use Protect from Magic in phase 1, use Protect from Missiles in phases 2, 3 and 4.",
+     "depth": 1
+    },
+    {
+     "text": "Phase 1: Drops eight fire traps- don't get near them or you will be hit for all your health. Stay along the north side of the ship, one square directly south of Galvek, and run two squares south from your location to avoid the fireball, and return to your original position once the attack has failed to hit you.",
+     "depth": 2
+    },
+    {
+     "text": "Phase 2: Launches transparent projectile which drains stats, especially run energy.",
+     "depth": 2
+    },
+    {
+     "text": "Phase 3: Summons waves from either the north or south end, avoid them by standing in the gap. Turn off auto retaliate to not get pulled away from the gap.",
+     "depth": 2
+    },
+    {
+     "text": "Phase 4: Launches earth projectiles. Avoid these or you will be bound, and probably die.",
+     "depth": 2
+    }
+   ]
+  },
+  {
+   "title": "Ending",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Return to Alec Kincade outside the Myths' Guild.",
+     "chat": [
+      "2. Let's talk about my quest."
+     ]
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "id": "client-of-kourend",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Client_of_Kourend%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Getting started",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Travel to Port Piscarilius by talking to Veos at the northernmost dock of Port Sarim just south of the pub. (Use amulet of glory to travel to Draynor Village then run around the wall to the west of the village to the docks)"
+    },
+    {
+     "text": "Once there, talk to Veos again to start.",
+     "chat": [
+      "4. Have you got any quests for me?",
+      "1. Sounds interesting! How can I help?"
+     ]
+    },
+    {
+     "text": "He will give you an enchanted scroll."
+    },
+    {
+     "text": "Use your feather on the enchanted scroll to get an enchanted quill."
+    }
+   ]
+  },
+  {
+   "title": "Speaking to the store owners",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Visit the following districts and speak to their respective store owners about their city:"
+    },
+    {
+     "text": "Return to Veos in Port Piscarilius after speaking with all store owners.",
+     "chat": [
+      "4. Let's talk about your client..."
+     ]
+    },
+    {
+     "text": "Use your Games necklace Wintertodt Camp teleport and run south until you reach the dark terrain with purple crystals, then east. Alternatively, if you have access to fairy rings, use code CIS."
+    },
+    {
+     "text": "Activate the mysterious orb in your inventory while near the Dark Altar, east of Trossa and north of the fairy ring."
+    },
+    {
+     "text": "Return to Veos.",
+     "chat": [
+      "4. Let's talk about your client..."
+     ]
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

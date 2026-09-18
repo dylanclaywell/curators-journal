@@ -1,0 +1,81 @@
+{
+ "id": "sleeping-giants",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Sleeping_Giants%2FQuick_guide",
+ "sections": [
+  {
+   "title": "What is this? A workshop for giants?",
+   "notes": [
+    "Needed: 3 oak logs, 1 wool, 10 nails, 1 hammer, 1 chisel, 1 bucket of water or ice gloves, 20 free inventory spaces after the repairs (there is a bank)"
+   ],
+   "steps": [
+    {
+     "text": "Minigame Teleport to \"Giants' Foundry\""
+    },
+    {
+     "text": "Speak to Kovac (strike the Hill Giant) in the Giants' Plateau.",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Once inside, repair the polishing wheel, grindstone, and trip hammer using the required items."
+    },
+    {
+     "text": "Speak to Kovac twice."
+    },
+    {
+     "text": "Search the crate for items."
+    },
+    {
+     "text": "Deposit all the items into the crucible (large bucket) hanging to the east by the bank. Different items are input separately."
+    }
+   ]
+  },
+  {
+   "title": "Make-A-Sword",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Speak to Kovac to learn how to select the moulds (in red text)."
+    },
+    {
+     "text": "Select the fitting mould Kovac described for the forte, blade and tip at the mould jig."
+    },
+    {
+     "text": "Speak to Kovac again. He will tell you to pour the metal."
+    },
+    {
+     "text": "Pour the metal from the crucible into the mould."
+    },
+    {
+     "text": "Get a bucket of water (grab a bucket from the pile of buckets and use it on the waterfall), and pour it on the sword. You can also use ice gloves for this step. Your hands must be free to pick up the preform."
+    },
+    {
+     "text": "Heat the preform to maximum by using it on the lava pool. The \"Heat-preform\" option will increase the heat by small increments, while the \"Dunk-preform\" option will heat it faster. The temperature should be red."
+    },
+    {
+     "text": "Hit the preform with the Trip Hammer repaired earlier, repeating until progress bar is onto the yellow section. Be sure to keep the temperature in the red while doing this, otherwise the quality of the sword will decrease. Using the Trip Hammer will cool the preform."
+    },
+    {
+     "text": "Cool the preform using the waterfall until its temperature is almost green. The \"Cool-preform\" option will cool the preform slowly, while the \"Quench-preform\" option cools is more quickly."
+    },
+    {
+     "text": "Use the preform on Grindstone repaired earlier, repeating until progress is onto green section. Be sure to watch the temperature as the Grindstone will heat the preform during use."
+    },
+    {
+     "text": "Cool the preform in the waterfall until its temperature is high green."
+    },
+    {
+     "text": "Use the preform on the Polishing Wheel, repeating until the sword is complete. The Polishing Wheel will cool the preform during use, so be sure to watch the temperature."
+    },
+    {
+     "text": "Speak to Kovac."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

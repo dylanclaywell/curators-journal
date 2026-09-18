@@ -1,0 +1,177 @@
+{
+ "id": "scrambled",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Scrambled!%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [
+    "Congratulations, quest complete!"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Alan, Tal Teok Temple north of Tal Teklan",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Talk to Alan again.",
+     "chat": [
+      "1. Of course!."
+     ]
+    },
+    {
+     "text": "Inspect the egg"
+    },
+    {
+     "text": "Talk to King, the bartender in The King's Inn west of the bank.",
+     "chat": [
+      "2. Scrumpty Rumpty fell off a wall!."
+     ]
+    },
+    {
+     "text": "Talk to Acatzin in the inn",
+     "chat": [
+      "1. I can talk to the blacksmith!."
+     ]
+    },
+    {
+     "text": "Talk to the blacksmith, west of the inn.",
+     "depth": 1
+    },
+    {
+     "text": "Repair the whetstone with a hammer; one spawns in the building. Keep it!",
+     "depth": 1
+    },
+    {
+     "text": "Talk to the blacksmith again for Acatzin's axe, then repair it on the whetstone.",
+     "depth": 1
+    },
+    {
+     "text": "Return to Acatzin. Take a bowl from the table before you leave.",
+     "depth": 1
+    },
+    {
+     "text": "Fill the bowl with water at the fountain outside."
+    },
+    {
+     "text": "Talk to Nezketi at the temple directly south of the inn for an empty cup.",
+     "chat": [
+      "1. I can get you some tea!."
+     ]
+    },
+    {
+     "text": "Pick damiana leaves from the damiana directly outside of the south-eastern walls of Tal Teklan.",
+     "depth": 1
+    },
+    {
+     "text": "While you are there, head a bit further south-west and pick up the two planks.",
+     "depth": 1
+    },
+    {
+     "text": "Add the damiana leaves to the bowl of water.",
+     "depth": 1
+    },
+    {
+     "text": "Head to the Tal Teklan General Store just south of the bank.",
+     "depth": 1
+    },
+    {
+     "text": "Use the bowl on the oven to boil the damiana water.",
+     "depth": 1
+    },
+    {
+     "text": "Use the bowl on the empty cup, then return to Nezketi with the damiana tea.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Kauayotl, outside the eastern entrance of Tal Teklan.",
+     "chat": [
+      "1. I see. Well, maybe I can help out with that?"
+     ]
+    },
+    {
+     "text": "Return to the blacksmith; pick up the hammer if you dropped it.",
+     "depth": 1
+    },
+    {
+     "text": "Search his workbench for 20 iron nails.",
+     "depth": 1
+    },
+    {
+     "text": "Pick up a saw at Arcuani's Archery Supplies just south of the blacksmith.",
+     "depth": 1
+    },
+    {
+     "text": "Repair the racing cart next to Kauayotl.",
+     "depth": 1,
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Talk to Kauayotl again.",
+     "depth": 1
+    },
+    {
+     "text": "Return to Tal Teok Temple and speak to any of King's men."
+    },
+    {
+     "text": "Large egg:"
+    },
+    {
+     "text": "Search the eggs at the chicken farm directly south.",
+     "depth": 1
+    },
+    {
+     "text": "Defeat the large chicken and search the eggs again.",
+     "depth": 1
+    },
+    {
+     "text": "Dragon egg:"
+    },
+    {
+     "text": "Head to the bank for some combat equipment and dragonfire protection.",
+     "depth": 1
+    },
+    {
+     "text": "Enter the cave entrance to the Dragon Nest to the east (marked on the world map as )",
+     "depth": 1
+    },
+    {
+     "text": "Search the eggs in the south-east corner of the nest. Defeat the red dragon, who can be safespotted by using the eggs.",
+     "depth": 1
+    },
+    {
+     "text": "Search the eggs again and head back outside.",
+     "depth": 1
+    },
+    {
+     "text": "Jaguar egg:"
+    },
+    {
+     "text": "From the Dragon Nest, run eastwards until you reach a campsite.",
+     "depth": 1
+    },
+    {
+     "text": "Search the eggs and defeat the black jaguar; it has routefinding capabilities, however it can be safespotted if you stand directly west of the Tropical tree closest to the river (RuneLite's Quest Helper will mark this square for you).",
+     "depth": 1
+    },
+    {
+     "text": "Search the eggs again and return to Tal Teok.",
+     "depth": 1
+    },
+    {
+     "text": "Speak to each of King's men to initiate a cutscene."
+    },
+    {
+     "text": "Put the egg together - players can hover over the puzzle piece icon to view the solution. When a piece is rotated in the correct orientation and placed in the correct location, it will stay in place indicating the correct placement."
+    },
+    {
+     "text": "Watch the final cutscene."
+    }
+   ]
+  }
+ ]
+}

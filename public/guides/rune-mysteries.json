@@ -1,0 +1,40 @@
+{
+ "id": "rune-mysteries",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Rune_Mysteries%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Ask Duke Horacio in Lumbridge Castle for a quest and he'll give you an air talisman.",
+     "chat": [
+      "1. Have you any quests for me?",
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Talk to Archmage Sedridor in the Wizards' Tower basement and give him the air talisman.",
+     "chat": [
+      "1. Okay, here you are.",
+      "2. Actually, I'm not interested.",
+      "1. Yes, certainly."
+     ]
+    },
+    {
+     "text": "Talk to Aubury south of Varrock east bank in the Varrock rune shop and give him the research package.",
+     "chat": [
+      "1. I've been sent here with a package for you."
+     ]
+    },
+    {
+     "text": "Take the research notes back to Sedridor."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

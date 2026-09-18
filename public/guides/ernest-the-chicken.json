@@ -1,0 +1,129 @@
+{
+ "id": "ernest-the-chicken",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Ernest_the_Chicken%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Veronica.",
+     "chat": [
+      "1. Aha, sounds like a quest. I'll help."
+     ]
+    },
+    {
+     "text": "Enter the manor."
+    },
+    {
+     "text": "Pick up poison from the room south of the kitchen, on the west side of the."
+    },
+    {
+     "text": "Pick up the fish food on the, in the room south of the stairs containing the ghost."
+    },
+    {
+     "text": "Use the fish food on the poison to make poisoned fish food."
+    },
+    {
+     "text": "Search the bookcase on the western."
+    },
+    {
+     "text": "Climb down the ladder and complete the lever puzzle."
+    },
+    {
+     "text": "Pull levers B then A down.",
+     "depth": 1
+    },
+    {
+     "text": "Enter door 1.",
+     "depth": 1
+    },
+    {
+     "text": "Pull lever D down.",
+     "depth": 1
+    },
+    {
+     "text": "Enter door 1.",
+     "depth": 1
+    },
+    {
+     "text": "Pull levers B, then A up.",
+     "depth": 1
+    },
+    {
+     "text": "Enter doors 3, 4, and 5.",
+     "depth": 1
+    },
+    {
+     "text": "Pull levers E, then F down.",
+     "depth": 1
+    },
+    {
+     "text": "Enter doors 6 and 7.",
+     "depth": 1
+    },
+    {
+     "text": "Pull lever C down.",
+     "depth": 1
+    },
+    {
+     "text": "Enter doors 7 and 6.",
+     "depth": 1
+    },
+    {
+     "text": "Pull lever E up.",
+     "depth": 1
+    },
+    {
+     "text": "Enter doors 6, 8, and 3.",
+     "depth": 1
+    },
+    {
+     "text": "Go through door 9 and grab the oil can.",
+     "depth": 1
+    },
+    {
+     "text": "Go up the ladder and pull the lever."
+    },
+    {
+     "text": "Pick up the spade in the far eastern room on the."
+    },
+    {
+     "text": "Exit out the back door in the same room."
+    },
+    {
+     "text": "Go north around the back of the manor to the west to the compost heap."
+    },
+    {
+     "text": "Search the compost heap to get a key."
+    },
+    {
+     "text": "Go south and use the poisoned fish food on the fountain in the south-west corner of the grounds."
+    },
+    {
+     "text": "Search the poisoned fountain to retrieve a pressure gauge."
+    },
+    {
+     "text": "Return to the manor and pick up the rubber tube in the room north of the stairs on the containing an aggressive skeleton."
+    },
+    {
+     "text": "Climb up the stairs, then climb up the spiral staircase to the west."
+    },
+    {
+     "text": "Talk to Professor Oddenstein.",
+     "chat": [
+      "1. I'm looking for a guy called Ernest.",
+      "2. Change him back this instant!"
+     ]
+    },
+    {
+     "text": "Talk to him again to give him the items."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

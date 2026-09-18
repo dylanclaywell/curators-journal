@@ -1,0 +1,114 @@
+{
+ "id": "priest-in-peril",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Priest_in_Peril%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting out",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Speak to King Roald.",
+     "chat": [
+      "1. I'm looking for a quest!",
+      "1. Yes, I think I've heard of it.",
+      "1. Yes.",
+      "3. I'll get going."
+     ]
+    },
+    {
+     "text": "Bring a ranged or melee weapon for the next part, to kill the Temple Guardian."
+    },
+    {
+     "text": "Magic attacks and the Dwarf Multicannon will not work.",
+     "depth": 1
+    },
+    {
+     "text": "Head to the temple east of Varrock by the river."
+    },
+    {
+     "text": "Click on the large door.",
+     "chat": [
+      "1. King Roald sent me to check on Drezel."
+     ]
+    },
+    {
+     "text": "Climb down the trapdoor just to the north.",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Kill the Temple Guardian. Players may safespot it by getting it stuck in the middle section of the room against the east wall and standing on the east wall one section north."
+    }
+   ]
+  },
+  {
+   "title": "The vampyre",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Go back and speak to King Roald."
+    },
+    {
+     "text": "Take 25 unnoted pure or rune essence, a bucket, a weapon and 1 free inventory slot."
+    },
+    {
+     "text": "As a low level, you may need to make more than two trips if you will be taking food, although the Monk can be safespotted over the pews using ranged or magic.",
+     "depth": 1
+    },
+    {
+     "text": "Enter the temple again and proceed up the stairs, then the ladder until you reach the. Talk to Drezel.",
+     "chat": [
+      "2. What do we do?"
+     ]
+    },
+    {
+     "text": "Kill the hooded level 30 Monk of Zamorak to obtain a golden key."
+    },
+    {
+     "text": "Go back to the trapdoor where you killed the Temple Guardian, climb down, and go through the first door."
+    },
+    {
+     "text": "Study the monuments until you find one with a key."
+    },
+    {
+     "text": "Use the golden key on the monument."
+    },
+    {
+     "text": "Use the bucket on the well in the middle of the monuments."
+    },
+    {
+     "text": "Go back to the top floor of the temple where Drezel is located."
+    },
+    {
+     "text": "Use the Iron key on the cell door and open it."
+    },
+    {
+     "text": "Talk to Drezel."
+    },
+    {
+     "text": "Use the blessed bucket of water on the coffin."
+    }
+   ]
+  },
+  {
+   "title": "The River Salve",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Drezel again."
+    },
+    {
+     "text": "Go back down the trapdoor, through the monument room, and proceed through the eastern door. Talk to Drezel."
+    },
+    {
+     "text": "Give him 50 unnoted essence (this will take a few trips without using pouches)."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

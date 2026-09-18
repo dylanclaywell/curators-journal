@@ -1,0 +1,77 @@
+{
+ "id": "rag-and-bone-man-ii",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Rag_and_Bone_Man_II%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting out",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to the Odd Old Man north of the Digsite, north of the Limestone mine"
+    }
+   ]
+  },
+  {
+   "title": "Gathering the bones",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Gather the following bones by killing the appropriate monsters (listed locations are the most convenient ones):"
+    },
+    {
+     "text": "Note: 40 Slayer and a mirror shield are required to kill basilisks."
+    },
+    {
+     "text": "Note: It is possible to kill Basilisks without a Mirror shield by using poison and multiple rings of recoil for melee, or by using a safespot across some rocks for ranged or magic."
+    }
+   ]
+  },
+  {
+   "title": "Polishing the bones",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Fortunato located in Draynor marketplace and buy 27 jug of vinegar."
+    },
+    {
+     "text": "Use all of the jugs of vinegar with all the pots to make 27 pots of vinegar."
+    },
+    {
+     "text": "Use all of the bones with your pots of vinegar to get 27 bones in vinegar."
+    },
+    {
+     "text": "Withdraw a tinderbox and either logs or an axe. Each bones in vinegar will require 1 set of logs. There are trees nearby that can be cut for logs."
+    },
+    {
+     "text": "Return back to the Odd Old Man and talk to him."
+    },
+    {
+     "text": "For each bone in vinegar do the following:"
+    },
+    {
+     "text": "Place a set of logs on the pot-boiler next to the old man.",
+     "depth": 1
+    },
+    {
+     "text": "Use a bone in vinegar with the pot-boiler.",
+     "depth": 1
+    },
+    {
+     "text": "Light the set of logs with your tinderbox.",
+     "depth": 1
+    },
+    {
+     "text": "Wait 12 seconds until the fire is consumed and remove the pot from the pot-boiler. (Alternatively, hop worlds after lighting the logs for them to be finished when you log back in)",
+     "depth": 1
+    },
+    {
+     "text": "Talk to the Odd Old Man."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

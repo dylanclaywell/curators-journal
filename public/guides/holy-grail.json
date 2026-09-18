@@ -1,0 +1,140 @@
+{
+ "id": "holy-grail",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Holy_Grail%2FQuick_guide",
+ "sections": [
+  {
+   "title": "King Arthur & Merlin",
+   "notes": [
+    ":Note: If you start the quest with the required/recommended weapons and armour, you will have to bank everything before travelling to Entrana."
+   ],
+   "steps": [
+    {
+     "text": "Talk to King Arthur.",
+     "chat": [
+      "1. Tell me of this quest.",
+      "1. I'd enjoy trying that."
+     ]
+    },
+    {
+     "text": "Talk to Merlin.",
+     "chat": [
+      "1. Thank you for the advice."
+     ]
+    },
+    {
+     "text": "He will now be found on the, in the room with the cauldron. Go up the main staircase and head to the eastern room. He won't show up as a yellow dot on the minimap until you have entered the room.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Searching for the Holy Grail",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Bank all weapons and armour. Travel to Entrana."
+    },
+    {
+     "text": "Talk to the High Priest in the chapel.",
+     "chat": [
+      "3. Ok, I will go searching."
+     ]
+    },
+    {
+     "text": "Travel to Galahad's house west of McGrubor's Wood (fairy ring code ALS) or combat bracelet to Ranging Guild."
+    },
+    {
+     "text": "Talk to Galahad and receive the holy table napkin.",
+     "chat": [
+      "4. I seek an item from the realm of the Fisher King."
+     ]
+    },
+    {
+     "text": "(Talk to Galahad again to complete a task in the Kandarin easy diary )",
+     "depth": 1,
+     "chat": [
+      "3. Do you get lonely here on your own?"
+     ]
+    },
+    {
+     "text": "Travel to Draynor Manor's southern-most room with the holy table napkin in your inventory and pick up 2 magic whistles from the table. The whistles will not be visible until you enter the room."
+    }
+   ]
+  },
+  {
+   "title": "The Fisher Realm",
+   "notes": [
+    "To fight the Black Knight Titan, bring armour, Excalibur, food, and one magic whistle. Note he is extremely resistant to Ranged and Magic, so melee is recommended. Bring antipoison if your combat level is lower than 41. You can use another weapon for a majority of the fight with the Black Knight Titan, but you must use Excalibur for the last hits. Note: He will heal to full health if your last attack is with something other than the Excalibur. Bring pick axe for Karamja Easy Diary Task"
+   ],
+   "steps": [
+    {
+     "text": "Prepare for the fight against the Black Knight Titan."
+    },
+    {
+     "text": "Travel north-west of Brimhaven to the north-western peninsula (see the minimap image)."
+    },
+    {
+     "text": "optional* mine gold ore south west of pillars for Easy Karamja Diary Task"
+    },
+    {
+     "text": "Stand under the tower and blow a magic whistle to be teleported to the Fisher Realm."
+    },
+    {
+     "text": "Fight the Black Knight Titan nearby on the bridge and kill the titan with Excalibur. See the in-depth quest guide for details."
+    },
+    {
+     "text": "Head south along the river and talk to the fisherman.",
+     "chat": [
+      "2. Any ideas how to get into the castle?"
+     ]
+    },
+    {
+     "text": "Head to the castle, south-west of the fisherman, pick up the Grail bell from the ground and ring it. (You must stand in front of the bricks to gain access to the castle. Make sure NOT to use the Magic Whistle or you will be teleported outside and you will have to fight the Black Knight Titan again.)"
+    },
+    {
+     "text": "Take the stairs to the south, and talk to the Fisher King. (Make sure to talk to him about both options or you will have to kill the Black Knight Titan again if you leave.)",
+     "chat": [
+      "2. I seek the Holy Grail.",
+      "1. You don't look too well."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Finishing up",
+   "notes": [
+    "Needed: 2 magic whistles, Falador teleport"
+   ],
+   "steps": [
+    {
+     "text": "Travel to Camelot and talk to King Arthur. Make sure to have 1 empty slot in your inventory for Magic gold feather he gives you."
+    },
+    {
+     "text": "Travel to Goblin Village."
+    },
+    {
+     "text": "Use the Open option on the sacks in the house in the east side of Goblin Village."
+    },
+    {
+     "text": "Talk to Sir Percival, he will take your magic whistle. Make sure you have another to get to the Fisher Realm yourself.",
+     "chat": [
+      "2. Come with me, I shall make you a king."
+     ]
+    },
+    {
+     "text": "Travel back to the Fisher Realm (via Brimhaven or using the fairy ring code BJR. You do not need to fight the Titan again either way)"
+    },
+    {
+     "text": "Head to the top floor of the castle's eastern tower and take the Holy grail."
+    },
+    {
+     "text": "Return to King Arthur."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

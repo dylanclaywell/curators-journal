@@ -1,0 +1,130 @@
+{
+ "id": "prince-ali-rescue",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Prince_Ali_Rescue%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Getting started",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Begin the quest by talking to Chancellor Hassan, who is in the southern room on the of Al Kharid palace. Grab the jug of water off the table in the eastern room if you did not bring your own.",
+     "chat": [
+      "1. Is there anything I can help you with?"
+     ]
+    },
+    {
+     "text": "Talk to Osman just north of the palace.",
+     "chat": [
+      "1. What is the first thing I must do?",
+      "2. What is the second thing you need?",
+      "3. Okay, I better find some things."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Obtaining a disguise",
+   "notes": [
+    "Needed: 3 balls of wool, ashes, pot of flour, Bucket of water, yellow dye (or 2 onions and coins), and redberries"
+   ],
+   "steps": [
+    {
+     "text": "Go to Ned's house with 3 ball of wool (just west of Leela in Draynor Village) and obtain the wig from him. if Dragon Slayer I is not started or if Dragon Slayer I is completed or started.",
+     "chat": [
+      "1. Could you make other things apart from rope?",
+      "2. How about some sort of wig?",
+      "1. I have them here. Please make me a wig.",
+      "2. Could you make other things apart from rope?",
+      "2. How about some sort of wig?",
+      "1. I have them here. Please make me a wig."
+     ]
+    },
+    {
+     "text": "You may buy a rope from Ned for 15 coins through dialogue, or 18 coins from his shop if you do not already have one.",
+     "depth": 1
+    },
+    {
+     "text": "Go to Aggie's house (just west of Ned's house)"
+    },
+    {
+     "text": "If needed, use the 2 onions on Aggie to get yellow dye.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to her to get the skin paste (ash, pot of flour, bucket of water and redberries).",
+     "chat": [
+      "3. Can you make skin paste?",
+      "1. Yes please. Mix me some skin paste."
+     ]
+    },
+    {
+     "text": "Use the yellow dye on the wig."
+    }
+   ]
+  },
+  {
+   "title": "Obtaining a key",
+   "notes": [
+    "Needed: soft clay, and a bronze bar"
+   ],
+   "steps": [
+    {
+     "text": "Go to the jailhouse east of Draynor Village (big red exclamation mark east of Draynor bank)."
+    },
+    {
+     "text": "Talk to Lady Keli.",
+     "chat": [
+      "1. Heard of you? You're famous in Gielinor!",
+      "1. What is your latest plan then?",
+      "2. How do you know someone won't try to free him?",
+      "1. Could I see the key please?",
+      "1. Could I touch the key for a moment please?"
+     ]
+    },
+    {
+     "text": "Take the key print and bronze bar to any furnace to smelt the bronze key."
+    },
+    {
+     "text": "The closest is in Lumbridge. Members may use a Amulet of glory to teleport to the Edgeville furnace, and then to teleport to Draynor Village for the next section.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Leela south of the wheat fields in Draynor Village and talk to her. She will ask you to find the guard's weakness."
+    }
+   ]
+  },
+  {
+   "title": "Breaking out",
+   "notes": [
+    "Needed: 3 beers, rope, bronze key, wig, paste, and a pink skirt"
+   ],
+   "steps": [
+    {
+     "text": "Go to the jailhouse."
+    },
+    {
+     "text": "Talk to Joe and offer him the 3 drinks.",
+     "chat": [
+      "1. I have some beer here, fancy one?"
+     ]
+    },
+    {
+     "text": "Use the rope on Lady Keli."
+    },
+    {
+     "text": "Open the prison door with the key."
+    },
+    {
+     "text": "Talk to Prince Ali. He will take the wig, skin paste, and pink skirt."
+    },
+    {
+     "text": "Report back to Chancellor Hassan."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

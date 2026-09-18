@@ -1,0 +1,67 @@
+{
+ "id": "recipe-for-disaster-freeing-sir-amik-varze",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Recipe_for_Disaster%2FFreeing_Sir_Amik_Varze%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [
+    "Items required: A bucket of milk, pot of cream, a pot of cornflour, any axe, a machete, Radimus notes (only if you haven't completed the Legends' Quest), a vanilla pod, a dramen branch, a dramen staff, a pestle and mortar, ice gloves, a raw chicken, combat equipment to kill a black dragon and the evil chicken. Completion of Lost City and started Legends Quest."
+   ],
+   "steps": [
+    {
+     "text": "Inspect Sir Amik."
+    },
+    {
+     "text": "Ask the cook how you helped Sir Amik Varze.",
+     "chat": [
+      "4. More...",
+      "5. More...",
+      "2. Protecting Sir Amik Varze"
+     ]
+    },
+    {
+     "text": "Use milk on cream."
+    },
+    {
+     "text": "Use the pot of cornflour on the milky mixture to receive cornflour mixture."
+    },
+    {
+     "text": "Pick a vanilla pod in the Kharazi Jungle (SW of the pool used in Legends' Quest), add it to the cornflour mixture."
+    },
+    {
+     "text": "Talk to the Wise Old Man in Draynor, ask about strange beasts, then the Evil Chicken. Make sure you finish the dialogue or you will not be able to proceed. If you have started Swan Song you will have to travel to Piscatoris Fishing Colony and talk to him in the shack. Bank the brulee as it will be lost if you die in the next step.",
+     "chat": [
+      "3. I'd just like to ask you something.",
+      "2. Strange beasts",
+      "5. The Evil Chicken"
+     ]
+    },
+    {
+     "text": "Use a raw chicken on the Evil Chicken shrine in northern Zanaris (where you arrive from the swamp.)"
+    },
+    {
+     "text": "Run north past the dragons and kill the Evil Chicken, pick up its egg and add it to the brulee."
+    },
+    {
+     "text": "Kill a black dragon, there is a safespot to the east, pick up the dragon token."
+    },
+    {
+     "text": "Grind a dramen branch with a pestle and mortar to make cinnamon, add it to the brulee."
+    },
+    {
+     "text": "Equip ice gloves then rub the token. (It will still work if you don't have ice gloves however you will take some damage)",
+     "chat": [
+      "1. Please flambe this creme brulee for me."
+     ]
+    },
+    {
+     "text": "Give the Brulee supreme to Sir Amik in Lumbridge."
+    },
+    {
+     "text": "Congratulations, section complete!"
+    }
+   ]
+  }
+ ]
+}

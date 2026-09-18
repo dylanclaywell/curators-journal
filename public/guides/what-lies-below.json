@@ -1,0 +1,82 @@
+{
+ "id": "what-lies-below",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/What_Lies_Below%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Rat Burgiss at the crossing south of Varrock.",
+     "chat": [
+      "3. Shall I get them back for you?",
+      "1. Of course! Tell me what you need me to do."
+     ]
+    },
+    {
+     "text": "Kill 5 Outlaws just west of the Grand Exchange (from Grand Exchange, use the tunnel and walk south) and collect 5 rat's paper."
+    },
+    {
+     "text": "Fill the folder with 5 papers."
+    },
+    {
+     "text": "Return the folder to Rat Burgiss."
+    },
+    {
+     "text": "Talk to Surok Magis in the Varrock library (the northern-most room in Varrock Palace).",
+     "chat": [
+      "1. Go on, then!"
+     ]
+    },
+    {
+     "text": "Read Sin'keth's diary."
+    },
+    {
+     "text": "Enter the Chaos Altar and use the wand on the altar with 15 chaos runes in your inventory."
+    },
+    {
+     "text": "To avoid entering the wilderness, see an alternative entrance in the full guide.",
+     "depth": 1
+    },
+    {
+     "text": "Return to Surok Magis with the infused wand and an empty bowl.",
+     "chat": [
+      "1. I have the things you wanted!"
+     ]
+    },
+    {
+     "text": "Talk to Rat Burgiss.",
+     "chat": [
+      "1. Yes! I have a letter for you!"
+     ]
+    },
+    {
+     "text": "Talk to Zaff.",
+     "chat": [
+      "4. Rat Burgiss sent me!"
+     ]
+    },
+    {
+     "text": "Talk to Surok Magis.",
+     "chat": [
+      "1. Bring it on!"
+     ]
+    },
+    {
+     "text": "Bring King Roald to low health (2 hitpoints or less) then operate the Beacon ring. Your chatbox will show \"Now would be a good time to summon Zaff!\" when the ring is ready to be operated. (Instanced)"
+    },
+    {
+     "text": "Take the Dagon'hai history from the north-east bookshelf to bring to Historian Minas for 5 Kudos after the quest.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Rat Burgiss."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

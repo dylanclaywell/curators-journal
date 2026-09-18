@@ -1,0 +1,208 @@
+{
+ "id": "dragon-slayer-i",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Dragon_Slayer_I%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Beginning",
+   "notes": [
+    "Recommended: Chronicle or combat bracelet (members) with at least 2 charges, amulet of glory (members) with at least 1 charge, Lumbridge teleport (if you need anti-dragon shield)"
+   ],
+   "steps": [
+    {
+     "text": "Talk to the Guildmaster in the Champions' Guild.",
+     "chat": [
+      "2. Can I have a quest?"
+     ]
+    },
+    {
+     "text": "Talk to Oziach in Edgeville.",
+     "chat": [
+      "1. Can you sell me a rune platebody?",
+      "1. The Guildmaster of the Champions' Guild told me.",
+      "1. I thought you were going to give me a quest.",
+      "1. A dragon, that sounds like fun."
+     ]
+    },
+    {
+     "text": "Talk to the Guildmaster in the Champions' Guild. Make sure you get the maze key by asking about Melzar's map piece, and also ask about Thalzar and Lozar's map pieces as well as where to find the right ship.",
+     "chat": [
+      "2. I talked to Oziach...",
+      "1. How can I find the route to Crandor?",
+      "1. Where is Melzar's map piece?",
+      "1. Where is Thalzar's map piece?",
+      "2. Where is Lozar's map piece?",
+      "3. Where can I find the right ship?",
+      "2. How can I protect myself from the dragon's breath?",
+      "3. Okay, I'll get going!"
+     ]
+    },
+    {
+     "text": "If you don't already have an anti-dragon shield, speak to Duke Horacio on the of the Lumbridge Castle.",
+     "chat": [
+      "1. I seek a shield that will protect me from dragonbreath.",
+      "1. Elvarg, the dragon of Crandor island!",
+      "1. Yes",
+      "2. So, are you going to give me the shield or not?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Map pieces",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Map pieces can be obtained in any order."
+    }
+   ]
+  },
+  {
+   "title": "Thalzar's map piece",
+   "depth": 1,
+   "notes": [
+    "Items required: Silk, lobster pot, unfired bowl, and Wizard's mind bomb"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Oracle on Ice Mountain. Make sure you have talked to the Guildmaster about where the Thalzar's map piece is.",
+     "chat": [
+      "1. I seek a piece of the map to the island of Crandor."
+     ]
+    },
+    {
+     "text": "Enter the Dwarven mine and use silk, lobster pot, unfired bowl, (make sure to right click) wizard's mind bomb on the magic door at the north-east side of the mine. You should automatically enter the door."
+    },
+    {
+     "text": "Enter the magic door, open the chest, and search the chest to receive a map piece. Press space or ensure that you finish the dialogue. (Re-entry doesn't require the re-use of the items if you make a mistake.)"
+    }
+   ]
+  },
+  {
+   "title": "Melzar's map piece",
+   "depth": 1,
+   "notes": [
+    "Items required: Maze key, weapon, armour, food, and potions to defeat lvl 82 Lesser demon"
+   ],
+   "steps": [
+    {
+     "text": "Once you've gotten the Maze key from the Guildmaster head to Rimmington."
+    },
+    {
+     "text": "Enter Melzar's Maze."
+    },
+    {
+     "text": "Kill the small zombie rat with a long tail to get the key and enter the north-western door and climb up the ladder."
+    },
+    {
+     "text": "Kill the ghost wearing a hood, a tube top, and no cape to get the key and enter the second door from the north on the eastern wall and climb up the ladder."
+    },
+    {
+     "text": "Kill the skeleton with the round shield to get the key and enter the westmost door on the southern wall and climb down the ladder 3 times."
+    },
+    {
+     "text": "Kill the zombies to get the key and enter the blue door."
+    },
+    {
+     "text": "Kill Melzar the Mad to get the key and enter the purple (magenta) door."
+    },
+    {
+     "text": "Kill the lesser demon to get the key and enter the green door. (Can be safespotted by luring him to the magenta door)"
+    },
+    {
+     "text": "Open and search the chest to receive a map piece."
+    }
+   ]
+  },
+  {
+   "title": "Lozar's map piece",
+   "depth": 1,
+   "notes": [
+    "Items required: Ranged/magic/halberd and telegrab runes to kill Wormbrain or 10,000 coins"
+   ],
+   "steps": [
+    {
+     "text": "Go to the jail in Port Sarim."
+    },
+    {
+     "text": "Either kill Wormbrain with ranged/magic/halberd and telegrab the map piece or pay him 10,000 coins for it. Make sure you have talked to the Guildmaster about where the Lozar's map piece is.",
+     "chat": [
+      "1. I believe you've got a piece of map that I need.",
+      "3. I suppose I could pay you for the map piece...",
+      "2. Alright then, 10,000 it is."
+     ]
+    },
+    {
+     "text": "After obtaining all 3, combine them by using them on each other."
+    }
+   ]
+  },
+  {
+   "title": "Obtaining a boat",
+   "notes": [
+    "Items required: Hammer, 3 planks, 90 steel nails, 2,000 coins, Crandor map. Recommended: Amulet of glory (members) with at least 1 charge for teleport to Draynor Village"
+   ],
+   "steps": [
+    {
+     "text": "Grab 3 wood planks, 90 steel nails, a hammer, and 2,000 coins out of the bank."
+    },
+    {
+     "text": "Talk to Klarense in the southern docks of Port Sarim by the Void Outpost boat and pay him 2,000 coins.",
+     "chat": [
+      "4. I'd like to buy her.",
+      "1. Yep, sounds good."
+     ]
+    },
+    {
+     "text": "Go on board, climb down the ladder and repair the hole 3 times."
+    },
+    {
+     "text": "Talk to Ned in Draynor Village with the map in your inventory.",
+     "chat": [
+      "1. You're a sailor? Could you take me to Crandor?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The fight",
+   "notes": [
+    "Items required: Anti-dragon shield, weapon, armour, food, and potions to defeat Elvarg. Recommended: Antifire potion (members), amulet of glory (members) with at least 1 charge to teleport to Edgeville.",
+    ": if you leave Elvarg's cave for any reason you will need planks and nails again to re-repair the ship; however, if you complete the optional task of opening the wall south of Elvarg's cave, you will gain access to the lair easily through the Karamja volcano dungeon and without the need to travel to Crandor again."
+   ],
+   "steps": [
+    {
+     "text": "Prepare for the fight. Make sure you have your Antifire potion and Anti-dragon shield with you."
+    },
+    {
+     "text": "Return to the boat you previously repaired in Port Sarim. Board the ship and talk to Captain Ned.",
+     "chat": [
+      "1. Yep, sounds good."
+     ]
+    },
+    {
+     "text": "Climb on top of the volcano and enter the hole. (After the cutscene climb back out of the hole for a Karamja medium task.)"
+    },
+    {
+     "text": "(Optional) Before teleporting out, head south from Elvarg's cave and open the wall to unlock another Karamja medium task.",
+     "depth": 1
+    },
+    {
+     "text": "Head south and kill Elvarg. Depending on your level, you may flinch Elvarg in the south-east corner of her cave for a long, but safe fight. You will automatically collect her head as proof of your victory."
+    }
+   ]
+  },
+  {
+   "title": "Finishing up",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Oziach in Edgeville."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

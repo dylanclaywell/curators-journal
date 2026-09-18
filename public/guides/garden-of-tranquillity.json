@@ -1,0 +1,311 @@
+{
+ "id": "garden-of-tranquillity",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Garden_of_Tranquillity%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting out",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Ellamaria at the garden east of the palace.",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Talk to the Wise Old Man in Draynor Village with the Ring of Charos(a).",
+     "chat": [
+      "1. Queen Ellamaria has sent me to seek your guidance."
+     ]
+    },
+    {
+     "text": "Quiz answers:"
+    },
+    {
+     "text": "[C] Show them a range of colours…",
+     "depth": 1
+    },
+    {
+     "text": "[A] Take his generous gift…",
+     "depth": 1
+    },
+    {
+     "text": "[C] It's absolutely...",
+     "depth": 1
+    },
+    {
+     "text": "[B] Put on the silly helmet and jump…",
+     "depth": 1
+    },
+    {
+     "text": "[B] You of course…",
+     "depth": 1
+    },
+    {
+     "text": "[B] Ask me nicely…",
+     "depth": 1
+    },
+    {
+     "text": "[A] No, especially…",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Gathering seeds",
+   "notes": [],
+   "steps": [
+    {
+     "text": "See to the survival of your crops as you see fit. It is strongly recommended to compost all patches as the gardeners will refuse to watch over them."
+    },
+    {
+     "text": "Always have on you: A rake, seed dibber, spade, secateurs, watering can, gardening trowel, and Ring of Charos(a)."
+    }
+   ]
+  },
+  {
+   "title": "Lyra west of Port Phasmatys",
+   "notes": [
+    "Items required: 3-6 onion seeds"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Lyra west of Port Phasmatys.",
+     "chat": [
+      "1. Do you have any orchid seeds to spare?",
+      "2. [Charm] If you tell me your problems, I may be able to help you.",
+      "2. [Charm] Yes, I was wondering about that.",
+      "2. [Charm] Times must be very hard for you.",
+      "2. [Charm] Whatever you've done, I'm sure you had just cause.",
+      "2. [Charm] And what is the nature of this fee that you pay?",
+      "2. [Charm] If not yours, then whose blood are you offering?",
+      "2. [Charm] How can you deal with so much guilt?",
+      "1. That's a deal - I'll grow a patch of onions for you."
+     ]
+    },
+    {
+     "text": "The closest fairy ring to Lyra is ALQ.",
+     "depth": 1
+    },
+    {
+     "text": "Grow onions (takes 40 minutes, planting in both patches reduce chance of failure)."
+    },
+    {
+     "text": "Once grown, talk to Lyra for the orchid seeds."
+    }
+   ]
+  },
+  {
+   "title": "Kragen north of Ardougne",
+   "notes": [
+    "Items required: 3-6 cabbage seeds"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Kragen north of East Ardougne.",
+     "chat": [
+      "1. Do you have any snowdrop seeds to spare?",
+      "2. [Charm] You seem to be a little irritable, my friend.",
+      "2. [Charm] I don't like to see a fellow human being so upset.",
+      "2. [Charm] So what ails you, my friend?",
+      "2. [Charm] Well, is there anything I can do for you?",
+      "2. [Charm] So what can I do for you?",
+      "1. That's a deal - I'll let you know when your cabbages are ready."
+     ]
+    },
+    {
+     "text": "The closest fairy ring to Kragen is BLR.",
+     "depth": 1
+    },
+    {
+     "text": "Grow cabbages (takes 40 minutes, planting in both patches reduce chance of failure)."
+    },
+    {
+     "text": "Once grown, talk to Kragen for the snowdrop seeds."
+    }
+   ]
+  },
+  {
+   "title": "Elstan south of Falador",
+   "notes": [
+    "Item required: a marigold seed"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Elstan south of Falador.",
+     "chat": [
+      "1. Do you have any delphinium seeds to spare?",
+      "2. [Charm] That is why I have come to an expert for advice.",
+      "3. [Charm] Not just AN expert, Elstan - they say you are THE expert.",
+      "2. [Charm] Oh no, I love listening to gardening stories...",
+      "2. [Charm] Millions? Ah, just what I wanted to hear...",
+      "1. Okay, I'll grow you some marigolds."
+     ]
+    },
+    {
+     "text": "Grow marigolds in the patch (takes 20 minutes)."
+    },
+    {
+     "text": "Once grown, give them to Elstan for the delphinium seeds."
+    }
+   ]
+  },
+  {
+   "title": "Dantaera in Catherby",
+   "notes": [
+    "Item required: a filled plant pot (can be bought from Vanessa's Farming shop. nearby for 1 coin)"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Dantaera in Catherby.",
+     "chat": [
+      "1. Do you know how I could grow a White Tree?",
+      "2. [Charm] I think that there is something that you are not telling me.",
+      "2. [Charm] A secret is a dreadful burden to have to keep to yourself.",
+      "2. [Charm] Unless you allow me to do this she will die anyway."
+     ]
+    },
+    {
+     "text": "Travel to Ice Mountain."
+    },
+    {
+     "text": "Use secateurs on the White Tree located on the northern part of the Ice Mountain to get the white tree shoot."
+    },
+    {
+     "text": "Put the cutting in your plant pot and water it."
+    }
+   ]
+  },
+  {
+   "title": "Brother Althric at the Edgeville monastery",
+   "notes": [
+    "Item required: a fishing rod"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Brother Althric at the Edgeville Monastery.",
+     "chat": [
+      "2. [Charm] These are the most beautiful rosebushes I've ever seen."
+     ]
+    },
+    {
+     "text": "Run over to Edgeville and throw the Ring of Charos(a) down the well."
+    },
+    {
+     "text": "Take 4 seeds from the red, pink, and white roses."
+    },
+    {
+     "text": "Retrieve your ring with the fishing rod."
+    }
+   ]
+  },
+  {
+   "title": "Bernald behind the Burthorpe pub",
+   "notes": [
+    "Items required: a rune/pure essence, a hammer/chisel, 2 plant cures, and a pestle and mortar."
+   ],
+   "steps": [
+    {
+     "text": "Talk to Bernald in Burthorpe.",
+     "chat": [
+      "2. [Charm] But it is the only way that these vines will be cured.",
+      "1. I accept the deal."
+     ]
+    },
+    {
+     "text": "Use 1 plant cure on the vines."
+    },
+    {
+     "text": "Talk to Bernald again."
+    },
+    {
+     "text": "Talk to Alain by the Taverley tree patch.",
+     "chat": [
+      "1. I need to ask you about strong plant cures.",
+      "1. Are you sure there's nothing you can suggest?"
+     ]
+    },
+    {
+     "text": "Use a hammer or chisel on the rune/pure essence to get rune shards."
+    },
+    {
+     "text": "Use a pestle and mortar on the rune shards to get rune dust."
+    },
+    {
+     "text": "Use the rune dust on the other plant cure to get the strong plant cure, then use it on the vines."
+    },
+    {
+     "text": "Talk to Bernald to get the vine seeds."
+    }
+   ]
+  },
+  {
+   "title": "The statues",
+   "notes": [
+    "Lumbridge Castle",
+    "Falador Square"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Ellamaria, ask about the statues to get a trolley.",
+     "chat": [
+      "1. How am I supposed to move statues all the way here?"
+     ]
+    },
+    {
+     "text": "Use the trolley on the statue of a king."
+    },
+    {
+     "text": "Push the trolley east over the bridge."
+    },
+    {
+     "text": "Place the statue on the eastern plinth in the garden."
+    },
+    {
+     "text": "Use the trolley on the Saradomin statue."
+    },
+    {
+     "text": "Push the trolley north through the gate."
+    },
+    {
+     "text": "Watch the cutscene."
+    },
+    {
+     "text": "Place the statue on the southern plinth in the garden."
+    }
+   ]
+  },
+  {
+   "title": "Gardening",
+   "notes": [
+    "Items required: 2 buckets of compost or supercompost."
+   ],
+   "steps": [
+    {
+     "text": "Return to Ellamaria's garden and fill the 2 plant pots with compost."
+    },
+    {
+     "text": "Plant everything. They take 10-15 minutes to grow and cannot die."
+    },
+    {
+     "text": "Talk to Ellamaria."
+    },
+    {
+     "text": "Talk to King Roald. (Make sure you have the Ring of Charos(a) equipped when talking to King Roald or he will not follow you into the garden.)",
+     "chat": [
+      "1. Would you like to follow me for a minute?",
+      "2. [Charm] Of course, your majesty - please forgive me.",
+      "2. [Charm] The Queen asked me to bring you."
+     ]
+    },
+    {
+     "text": "Watch the cutscene."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

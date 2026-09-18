@@ -1,0 +1,46 @@
+{
+ "id": "cooks-assistant",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Cook's_Assistant%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Obtain the following items: a bucket of milk, a pot of flour, and an egg:"
+    },
+    {
+     "text": "Buy from the Grand Exchange",
+     "depth": 1
+    },
+    {
+     "text": "Create them yourself:",
+     "depth": 1
+    },
+    {
+     "text": "Bucket of milk: use a bucket (found in the cellar of Lumbridge castle) on a dairy cow in the Lumbridge cow field.",
+     "depth": 2
+    },
+    {
+     "text": "Egg: spawns at the chicken farm north-west of the cow field.",
+     "depth": 2
+    },
+    {
+     "text": "Pot of flour: with an empty pot (found by the Cook in Lumbridge Castle), head to the Mill Lane Mill next to the cow pens and pick some grain from outside. Climb up to the top floor of the mill and use the grain with the hopper, then pull the lever. Climb down and take the flour from the flour bin with an empty pot.",
+     "depth": 2
+    },
+    {
+     "text": "Talk to the Cook in Lumbridge Castle's kitchen with all the items in your inventory.",
+     "chat": [
+      "1. What's Wrong?",
+      "1. Can I help?"
+     ]
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

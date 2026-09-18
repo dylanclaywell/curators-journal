@@ -1,0 +1,48 @@
+{
+ "id": "shield-of-arrav",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Shield_of_Arrav%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Getting started",
+   "notes": [
+    "After this point, you must choose to join either the Phoenix Gang or the Black Arm Gang. (Tip: Join the chat-channel \"osrs soa\" to find a partner before deciding.)"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Reldo, located in the library in Varrock Palace.",
+     "chat": [
+      "1. I'm in search of a quest."
+     ]
+    },
+    {
+     "text": "Check the bookcase with a bright blue book in the top shelf, and read the book."
+    },
+    {
+     "text": "Talk to Reldo again."
+    }
+   ]
+  },
+  {
+   "title": "Finishing up",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Take your half of the shield to Curator Haig Halen, located in the Varrock Museum."
+    },
+    {
+     "text": "Trade your half of the certificate with your partner. (Ironmen: Use the certificate halves on your partner)"
+    },
+    {
+     "text": "Use both halves of the certificate on each other to make a completed certificate."
+    },
+    {
+     "text": "Take the certificate to King Roald in the castle to receive your reward."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

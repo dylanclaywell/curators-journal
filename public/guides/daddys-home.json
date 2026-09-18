@@ -1,0 +1,101 @@
+{
+ "id": "daddys-home",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Daddy's_Home%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Marlo in the Estate agent's house in north-east Varrock.",
+     "chat": [
+      "2. What kind of favour do you want me to do?",
+      "3. Tell me more about the job.",
+      "3. Tell me where he lives, and I'll do the job."
+     ]
+    },
+    {
+     "text": "Pick up the saw in the house if needed.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Old Man Yarlo in his house south-west of Aubury's Rune Shop."
+    },
+    {
+     "text": "Remove all 7 old furnishings:"
+    },
+    {
+     "text": "1 broken chair.",
+     "depth": 1
+    },
+    {
+     "text": "1 rotten carpet.",
+     "depth": 1
+    },
+    {
+     "text": "2 broken stools.",
+     "depth": 1
+    },
+    {
+     "text": "2 broken tables.",
+     "depth": 1
+    },
+    {
+     "text": "1 campbed.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Old Man Yarlo again.",
+     "chat": [
+      "2. Skip Yarlo's lecture. He'll offer it later if you like."
+     ]
+    },
+    {
+     "text": "Search the crates marked with a black symbol, west of the range, for 3 waxwood logs."
+    },
+    {
+     "text": "Go to the Varrock sawmill and talk to the Sawmill operator.",
+     "chat": [
+      "1. I need some waxwood planks for Old Man Yarlo."
+     ]
+    },
+    {
+     "text": "Have the Sawmill operator convert the 3 waxwood logs into 3 waxwood planks.",
+     "depth": 1
+    },
+    {
+     "text": "If needed, use an axe to chop 10 nearby trees and have the Sawmill operator convert the 10 logs into 10 planks for 1,000 coins.",
+     "depth": 1
+    },
+    {
+     "text": "If needed, buy enough supplies from his shop to have 5 bolts of cloth and 100 steel nails.",
+     "depth": 1
+    },
+    {
+     "text": "Return to Old Man Yarlo's house and build the new furniture at every white, translucent hotspot."
+    },
+    {
+     "text": "If you lack a hammer or saw, ask Old Man Yarlo for tools.",
+     "depth": 1,
+     "chat": [
+      "3. I need some tools.",
+      "1. Yes please."
+     ]
+    },
+    {
+     "text": "Talk to Old Man Yarlo after building all the furniture."
+    },
+    {
+     "text": "Return to Marlo and claim the reward.",
+     "chat": [
+      "1. Yeah, what have you got for me?"
+     ]
+    },
+    {
+     "text": "Congratulations, miniquest complete!"
+    }
+   ]
+  }
+ ]
+}

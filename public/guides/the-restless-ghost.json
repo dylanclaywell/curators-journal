@@ -1,0 +1,63 @@
+{
+ "id": "the-restless-ghost",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/The_Restless_Ghost%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Getting started",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Father Aereck in the Lumbridge church. (Lumbridge teleport can be used for quick travel to Lumbridge)",
+     "chat": [
+      "3. I'm looking for a quest!",
+      "1. Ok, let me help then."
+     ]
+    },
+    {
+     "text": "Go through the graveyard's southern exit and head to the hut west of Lumbridge Swamp."
+    }
+   ]
+  },
+  {
+   "title": "Ghostspeak amulet",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Father Urhney inside the hut.",
+     "chat": [
+      "2. Father Aereck sent me to talk to you.",
+      "1. He's got a ghost haunting his graveyard."
+     ]
+    },
+    {
+     "text": "Head to the small room in the Lumbridge graveyard south of the church."
+    },
+    {
+     "text": "Equip the Ghostspeak amulet and click the coffin, talk to the ghost.",
+     "chat": [
+      "1. Yep, now tell me what the problem is."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The skull",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Head to the Wizards' Tower, and climb down the ladder to the basement. (Use Necklace of passage to teleport to Wizards' Tower if you have one.)"
+    },
+    {
+     "text": "Search the altar, and you will receive a ghost's skull. A level 13 skeleton will appear, you don't have to kill it, just leave."
+    },
+    {
+     "text": "Go back to the graveyard and use the skull on the coffin with it open."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,207 @@
+{
+ "id": "haunted-mine",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Haunted_Mine%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting out",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to the Zealot outside the mine.",
+     "chat": [
+      "1. I follow the path of Saradomin.",
+      "1. I come seeking challenges and quests.",
+      "1. What quest is that then?",
+      "3. Why was everyone in the mines slaughtered?",
+      "1. Is there any other way into the mine?",
+      "1. Where is the second entrance to the mines?",
+      "1. Can I borrow your key?"
+     ]
+    },
+    {
+     "text": "Pickpocket him for the zealot's key."
+    },
+    {
+     "text": "Climb over the cart to the south and crawl-down the cart tunnel."
+    }
+   ]
+  },
+  {
+   "title": "Cave level 1",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Run directly west through the cave and crawl-through the cart tunnel."
+    },
+    {
+     "text": "Re-enter the cave via the southern entrance."
+    },
+    {
+     "text": "Descend the nearby ladder."
+    }
+   ]
+  },
+  {
+   "title": "Cave level 2",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Go down the ladder directly east."
+    }
+   ]
+  },
+  {
+   "title": "Cave level 3",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Avoid touching mine carts."
+    },
+    {
+     "text": "Go south along the moving cart's tracks using the alcove for cover, then slightly west."
+    },
+    {
+     "text": "Climb down the ladder."
+    }
+   ]
+  },
+  {
+   "title": "Cave level 4",
+   "notes": [
+    "If you mess up and the cart does not reach the ladder, you will need to grab another fungus, put it in the mine cart, and send it down the track before continuing."
+   ],
+   "steps": [
+    {
+     "text": "Pick a glowing fungus. Don't take any random events that teleport you out of the mine from now on or your fungus will turn to ash."
+    },
+    {
+     "text": "Go NW and place the fungus in the searchable cart."
+    },
+    {
+     "text": "Go NW to check the points settings. (Board on a wall)"
+    },
+    {
+     "text": "Write down which levers need to change to match the correct setting to get to the ladder in the top-right corner."
+    },
+    {
+     "text": "The initial configuration will be different for each player. See pictures for the correct configuration and labels on each lever.",
+     "depth": 1
+    },
+    {
+     "text": "Go south-east and pull the needed levers (between A-E)."
+    },
+    {
+     "text": "Go north-west and pull the needed levers (between F-K)."
+    },
+    {
+     "text": "Return to the point settings and click start."
+    }
+   ]
+  },
+  {
+   "title": "Finding the cart again",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Leave the cave by going back the way you came"
+    },
+    {
+     "text": "Go up the ladder by the glowing fungus spawn.",
+     "depth": 1
+    },
+    {
+     "text": "Go north past the haunted cart, then the first wing east, climb up the ladder.",
+     "depth": 1
+    },
+    {
+     "text": "Go west, climb up the ladder.",
+     "depth": 1
+    },
+    {
+     "text": "Go west and exit the cave.",
+     "depth": 1
+    },
+    {
+     "text": "Crawl-down the Cart tunnel to the north"
+    },
+    {
+     "text": "Climb down the nearby ladder."
+    },
+    {
+     "text": "Go NE and climb down the ladder by the door."
+    },
+    {
+     "text": "Go west then north and climb down the ladder."
+    },
+    {
+     "text": "Search the cart for the fungus and take it. Do not drop until you have completed the quest!"
+    }
+   ]
+  },
+  {
+   "title": "Water valve",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Climb up the ladder and start saving your run energy after you turn the water valve in the next step."
+    },
+    {
+     "text": "Go all the way east then south past the moving cart."
+    },
+    {
+     "text": "Climb down the ladder."
+    },
+    {
+     "text": "Head south and use the Zealot's key on the water valve."
+    },
+    {
+     "text": "Note: If you forgot a chisel be sure to grab the one near the lift before you open the valve; you won't have enough time to pick it up while running there.",
+     "depth": 1
+    },
+    {
+     "text": "Quickly run to the lift and take it down."
+    },
+    {
+     "text": "Go south then East and down the stairs."
+    },
+    {
+     "text": "Go through the door."
+    },
+    {
+     "text": "Pick up the innocent-looking key to start the boss fight."
+    },
+    {
+     "text": "Kill Treus Dayth. It is recommended to pray Protect from Missiles throughout the fight. A good way to fight this boss is to run near him after attacking; the goal is to force him into the north-eastern corner. Once this occurs, run west to the end of the detached northern shaft and attack him from a distance. This prevents him from teleporting around the mine while also negating crane damage, which should make the fight easier."
+    },
+    {
+     "text": "Note: If you teleport away, you will have to get another Glowing fungus.",
+     "depth": 1
+    },
+    {
+     "text": "Note: If you die, you cannot get the Glowing fungus back from your grave in the flooded area. This is not a safe fight.",
+     "depth": 1
+    },
+    {
+     "text": "Note: If you are following the Optimal Quest Guide, using Crumble Undead is the most effective way to kill this boss.",
+     "depth": 1
+    },
+    {
+     "text": "Pick up the key"
+    },
+    {
+     "text": "Go back up the eastern stairs."
+    },
+    {
+     "text": "Go west and down those stairs. You will need the Glowing fungus to act as a light source."
+    },
+    {
+     "text": "Open the door and cut the crystal outcrop to the south-east with your chisel."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

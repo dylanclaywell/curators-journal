@@ -1,0 +1,50 @@
+{
+ "id": "fishing-contest",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Fishing_Contest%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Speak to either dwarves on either side of the White Wolf Mountain. Note: Starting on the west side makes travelling by foot easier.",
+     "chat": [
+      "1. I was wondering what was down those stairs?",
+      "2. Why not?",
+      "3. If you were my friend I wouldn't mind it.",
+      "1. Well, let's be friends!",
+      "1. And how am I meant to do that?"
+     ]
+    },
+    {
+     "text": "If you need garlic, go to Seers' Village and take it from the house south-west of the bank (it spawns on the table)."
+    },
+    {
+     "text": "Bring a spade and make your way to McGrubor's Wood (either enter through the back or teleport to fairy ring ALS if you completed at least half of Fairytale II - Cure a Queen) to gather 3 red vine worm. You can collect them by checking the vine just west of the fairy ring ALS."
+    },
+    {
+     "text": "Either walk south to Hemenster or teleport to the Ranging Guild via your combat bracelet and go north-west."
+    },
+    {
+     "text": "If you don't have a Fishing Rod, purchase one from Grandpa Jack for in the house outside Hemenster entrance."
+    },
+    {
+     "text": "Enter Hemenster with the Fishing pass in your inventory."
+    },
+    {
+     "text": "Put a Garlic in the pipes to the north. Make sure to finish the dialogue."
+    },
+    {
+     "text": "Pay Bonzo 5 coins. Wait for the Sinister Stranger to move away from the pipes. Start fishing and wait for the contest to end."
+    },
+    {
+     "text": "After winning the contest, make your way back to the dwarf and show him the trophy."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,96 @@
+{
+ "id": "getting-ahead",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Getting_Ahead%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting out",
+   "notes": [
+    "Needed: Pot of flour"
+   ],
+   "steps": [
+    {
+     "text": "Speak to Gordon south of the Farming Guild.",
+     "chat": [
+      "1. Need a hand with anything?",
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Speak to Mary inside the main building west of Gordon."
+    }
+   ]
+  },
+  {
+   "title": "Tracking down the beast",
+   "notes": [
+    "Needed: Combat equipment"
+   ],
+   "steps": [
+    {
+     "text": "Use a pot of flour on the southern gate next to the cow pen east of Gordon."
+    },
+    {
+     "text": "Follow the trail of flour south past the bridge then west to the cave at the Kebos Lowlands mine."
+    },
+    {
+     "text": "Kill the Headless Beast."
+    },
+    {
+     "text": "Optional: Mine some clay in the mine and pick up two planks just to the west while you're here.",
+     "depth": 1
+    },
+    {
+     "text": "Go back and speak to Gordon."
+    }
+   ]
+  },
+  {
+   "title": "Making the fake head",
+   "notes": [
+    "Needed: Soft clay, knife, bear fur, needle, thread, red dye, hammer, saw, two planks, six nails of any kind"
+   ],
+   "steps": [
+    {
+     "text": "Speak to Mary."
+    },
+    {
+     "text": "Make a clay head by using a knife on the soft clay.",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Speak to Gordon."
+    },
+    {
+     "text": "Make a fur head by using bear fur or grey wolf fur on the head while having a needle and thread.",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Speak to Gordon again."
+    },
+    {
+     "text": "Make a bloody head by using red dye on the head.",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Speak to Gordon again."
+    },
+    {
+     "text": "Mount the bloody head in the Mounted Head Space on the wall south of the stairs using two planks and six nails."
+    },
+    {
+     "text": "Speak to Gordon one more time."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

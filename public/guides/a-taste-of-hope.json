@@ -1,0 +1,272 @@
+{
+ "id": "a-taste-of-hope",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/A_Taste_of_Hope%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting out",
+   "notes": [
+    "Items required: None Recommended: Pickaxe, Ectophial, and 20,000 coins (to travel quickly to the Theatre of Blood via Andras)",
+    "Start this quest by speaking to Garth, outside Ver Sinhaza (the Theatre of Blood), which is located on the eastern side of Meiyerditch."
+   ],
+   "steps": [
+    {
+     "text": "Speak to Garth.",
+     "chat": [
+      "1. Yes please."
+     ]
+    },
+    {
+     "text": "Travel to the Myreque Hideout in Meiyerditch, the following method can be used to arrive there quickly:"
+    },
+    {
+     "text": "From the Theatre of Blood, go through the western exit into Meiyerditch.",
+     "depth": 1
+    },
+    {
+     "text": "Speak to a nearby Vyrewatch and ask to be sent to the mines.",
+     "depth": 1
+    },
+    {
+     "text": "Mine 15 Daeyalt ores and place them in the nearby minecart. After this, speak to a Vampyre Juvinate to leave. If you have no pickaxe, talk to a miner to obtain a bronze one.",
+     "depth": 1
+    },
+    {
+     "text": "You will appear up on the surface. On the right is a map of the route to take to get to the hideout; follow the blue path down to the leftmost green dot.",
+     "depth": 1
+    },
+    {
+     "text": "Climb up the ladder in the house with the green dot, jump east to the floorboards, and climb down the stairs into the house with the rightmost green dot.",
+     "depth": 1
+    },
+    {
+     "text": "Walk south-east and push the wall to pass through.",
+     "depth": 1
+    },
+    {
+     "text": "Press the decorated wall and then open the lumpy rug south-east of it to reveal a hidden trapdoor.",
+     "depth": 1
+    },
+    {
+     "text": "Climb down the trapdoor and speak to Safalaan in the north part of the underground base."
+    },
+    {
+     "text": "Return to the Theatre of Blood."
+    }
+   ]
+  },
+  {
+   "title": "Vampyric Espionage",
+   "notes": [
+    "Items required: 1,000 coins Recommended: Food (for low HP players)"
+   ],
+   "steps": [
+    {
+     "text": "Attempt to climb up the rubble west of the bank, within Ver Sinhaza."
+    },
+    {
+     "text": "Speak to Harpert west of the bank and pay him 1,000 coins.",
+     "chat": [
+      "1. Fine, here's the money."
+     ]
+    },
+    {
+     "text": "Climb the rubble."
+    },
+    {
+     "text": "Climb the steam vent directly to the north-east when it is inactive."
+    },
+    {
+     "text": "Players may take damage from the boiling hot steam that comes out from the vents. Some food may be necessary for lower level players.",
+     "depth": 1
+    },
+    {
+     "text": "Run to the north and jump off the roof."
+    },
+    {
+     "text": "Continue north and climb up the third vent."
+    },
+    {
+     "text": "Run east and climb up and down the roof section to cross the gap."
+    },
+    {
+     "text": "Run east and then south to the red window, look through it. (Be sure you complete the dialogue once the cut-scene is finished, otherwise your quest log won't update. Your health will be restored upon completing the dialogue.)"
+    }
+   ]
+  },
+  {
+   "title": "The myth of Serafina",
+   "notes": [
+    "Items required: Combat equipment (melee recommended), food Recommended: Vial of water, Pestle and mortar (both obtainable during quest), Restore or Super Restore"
+   ],
+   "steps": [
+    {
+     "text": "Return to Safalaan using the method listed above and speak to him.",
+     "chat": [
+      "1. I do."
+     ]
+    },
+    {
+     "text": "Speak to Flaygian Screwte.",
+     "chat": [
+      "2. Anything to report?",
+      "2. Why?"
+     ]
+    },
+    {
+     "text": "Speak to Safalaan."
+    },
+    {
+     "text": "Go to Serafina's house."
+    },
+    {
+     "text": "Upon exiting the hideout, push the wall, climb up the stairs, jump the gap and then climb down the ladder.",
+     "depth": 1
+    },
+    {
+     "text": "Head north through the first three doors in a line, then head west until you reach the Meiyerditch wall.",
+     "depth": 1
+    },
+    {
+     "text": "Head north-west to reach a broken fountain.",
+     "depth": 1
+    },
+    {
+     "text": "Climb down the stairs of the house south of the fountain.",
+     "depth": 1
+    },
+    {
+     "text": "Speak to Safalaan."
+    },
+    {
+     "text": "Search the crates and barrels around the basement to obtain mysterious meat, mysterious herb, a vial and a pestle and mortar (the last two being optional if you brought them with you)"
+    },
+    {
+     "text": "If you didn't bring a vial of water, fill the vial at the broken fountain upstairs.",
+     "depth": 1
+    },
+    {
+     "text": "Use the mysterious herb on the vial of water."
+    },
+    {
+     "text": "Use the pestle and mortar on the mysterious meat."
+    },
+    {
+     "text": "Use the mysterious crushed meat on the unfinished potion."
+    },
+    {
+     "text": "Use the finished potion on the door."
+    },
+    {
+     "text": "Speak to Safalaan.",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Make the potion again, but this time use the ingredients on the vial of blood instead of a vial of water."
+    },
+    {
+     "text": "Use the blood potion on the door, open and search the chest to receive the old notes.",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Talk to Safalaan with the notes.",
+     "chat": [
+      "1. Here you go."
+     ]
+    },
+    {
+     "text": "Return to the Myreque hideout and speak to Safalaan to start a cutscene."
+    },
+    {
+     "text": "Defeat the abomination. (Note: Complete the post-fight dialogue until the point where the Myreque leave or you'll have to return to the Hideout.)"
+    }
+   ]
+  },
+  {
+   "title": "The legendary weapon",
+   "notes": [
+    "Items required: Emerald, chisel, 3 air runes and 1 cosmic rune, and rod of Ivandis (very important, you must receive Flaygian's notes before you can reclaim the rod of Ivandis from Veliaf)! Recommended: Morytania legs 3 or 4 for quick transport to southern Meiyerditch or Spider cave teleport."
+   ],
+   "steps": [
+    {
+     "text": "Teleport to Burgh de Rott, and take the boat to Meiyerditch."
+    },
+    {
+     "text": "Head to Old Man Ral's house in the centre of southern Meiyerditch. Enter the secondary Myreque base via the trapdoor in the north room."
+    },
+    {
+     "text": "Speak to Safalaan."
+    },
+    {
+     "text": "Speak to Vertida Sefalatis."
+    },
+    {
+     "text": "Read Flaygian's notes."
+    },
+    {
+     "text": "If you haven't made another rod of Ivandis, you can now return to Veliaf Hurtz at Burgh de Rott hideout to reclaim it."
+    },
+    {
+     "text": "In Old Man Ral's basement, search the nearby crates to find a silver sickle (b) and a chain."
+    },
+    {
+     "text": "Attach the emerald to the sickle to create an emerald sickle (b)."
+    },
+    {
+     "text": "Then, cast Lvl-2 Enchant on the emerald sickle, or use an enchant emerald or jade tablet on it."
+    },
+    {
+     "text": "Finally, use the chain on the Enchanted emerald sickle (b) or the rod of Ivandis to create the Ivandis flail."
+    },
+    {
+     "text": "Speak to Safalaan."
+    }
+   ]
+  },
+  {
+   "title": "The Taste of Hope",
+   "notes": [
+    "Items required: Ivandis flail, melee combat equipment Recommended: Food, prayer potions"
+   ],
+   "steps": [
+    {
+     "text": "Go to the Theatre of Blood (run east of Old Man Ral's house and go through the Ver Sinhaza castle walls) and speak to Kael Forshaw by the noticeboard."
+    },
+    {
+     "text": "Defeat Ranis Drakan."
+    },
+    {
+     "text": "Ranis Drakan is level 233, and can only be harmed by the Ivandis flail. He will use melee and magic attacks that can hit up to 20. He can also cast Blood Barrage, which can heal him for half of the damage dealt. Occasionally, he will charge an attack and explode, hitting up to 30. The damage can be reduced by running away from him when he is charging the attack.",
+     "depth": 1
+    },
+    {
+     "text": "After he reaches 65% and 25% of his health, he'll summon two level 87 vyrewatch and will fly airborne. He will regularly launch blood bombs at your current square, which can hit up to 30; you can simply walk backwards one square to lure the vyrewatch to the affected square, so the bombs hurt them instead.",
+     "depth": 1
+    },
+    {
+     "text": "After killing them, he will go berserk and attack the player. During this last phase, his attacks are much faster and accurate, but only have a max hit of 6. Using Protect from Melee will easily defeat him in the last phase.",
+     "depth": 1
+    },
+    {
+     "text": "Speak to Kael Forshaw again."
+    }
+   ]
+  },
+  {
+   "title": "Finishing up",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Speak to Safalaan, found in the hideout under Old Man Ral's house."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

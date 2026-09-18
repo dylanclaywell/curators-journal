@@ -1,0 +1,199 @@
+{
+ "id": "troubled-tortugans",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Troubled_Tortugans%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Finding the stranded Tortugan",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to the Injured Tortugan on the remote island north-west of The Great Conch, far south of The Pandemonium.",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Pick up some seaweed. Shake any palm tree and pick up a palm leaf."
+    },
+    {
+     "text": "Use the seaweed on the palm leaf to make a bandage."
+    },
+    {
+     "text": "Talk to the Injured Tortugan."
+    }
+   ]
+  },
+  {
+   "title": "The Great Conch",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Floopa will board your boat automatically. Sail to the south shore of The Great Conch."
+    },
+    {
+     "text": "Disembark and talk to Floopa on the Docks."
+    },
+    {
+     "text": "Enter the village to the north and speak with Elder Raley (first house on the right, south-east of town) to receive a list of repairs."
+    },
+    {
+     "text": "Acquire the following repair materials; this can be done in batches if low on inventory space:"
+    },
+    {
+     "text": "A saw can be found in Elder Raley's house if you did not bring one.",
+     "depth": 1
+    },
+    {
+     "text": "Take a hammer from the building with the anvil and furnace.",
+     "depth": 1
+    },
+    {
+     "text": "Pick up 6 Tortugan Scute scattered around town.",
+     "depth": 1
+    },
+    {
+     "text": "Run west and chop 10 Jatoba Logs from the Jatoba Trees (there is a bronze axe which can be picked up from a tree stump north of the calquat tree patch).",
+     "depth": 1
+    },
+    {
+     "text": "Pick up 6 sea shells near beach (closest spawn is to the south-east of town).",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Making repairs",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Repair Elder Krill's stall (the fish stall on the north side of the marketplace):"
+    },
+    {
+     "text": "1 sea shell, 1 Tortugan scute, 2 Jatoba logs.",
+     "depth": 1
+    },
+    {
+     "text": "Repair the south wall of Elder Krill's store (directly north of his marketplace stall):"
+    },
+    {
+     "text": "2 Tortugan scute, 2 Jatoba logs.",
+     "depth": 1
+    },
+    {
+     "text": "Repair the north wall of Elder Strom's store (west of the marketplace):"
+    },
+    {
+     "text": "2 Tortugan scutes, 2 Jatoba logs.",
+     "depth": 1
+    },
+    {
+     "text": "Repair Elder Strom's crate (On the west side of the marketplace, east outside of his store):"
+    },
+    {
+     "text": "2 sea shells, 1 Jatoba log.",
+     "depth": 1
+    },
+    {
+     "text": "Repair Elder Coco's stall (on the south side of the marketplace - Crafting stall)"
+    },
+    {
+     "text": "1 sea shell, 1 Tortugan scute, 2 Jatoba logs.",
+     "depth": 1
+    },
+    {
+     "text": "Repair Elder Coco's crate (directly south of his marketplace stall, north of the building)"
+    },
+    {
+     "text": "2 sea shells, 1 Jatoba log.",
+     "depth": 1
+    },
+    {
+     "text": "Speak to Elder Raley again."
+    }
+   ]
+  },
+  {
+   "title": "Tracking the Gryphon",
+   "notes": [
+    "Items required: Any axe, combat gear, and food to defeat a level 95 Gryphon"
+   ],
+   "steps": [
+    {
+     "text": "Track the Gryphon:"
+    },
+    {
+     "text": "Inspect the monument in the centre of the market to reveal footprints.",
+     "depth": 1
+    },
+    {
+     "text": "Where the trail ends, inspect nearby objects like flowers, rockslides, and plants to pick up the trail again.",
+     "depth": 1
+    },
+    {
+     "text": "Clear the roots blocking the cave entrance with your axe.",
+     "depth": 1
+    },
+    {
+     "text": "Enter cave and defeat the Gryphon (level 95)."
+    },
+    {
+     "text": "Exit the cave and return to Elder Raley in town."
+    },
+    {
+     "text": "You can climb the rocks south of the cave (with level 50 Agility) for a quick way back to town.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Attack on the Little Pearl",
+   "notes": [
+    "Items required: Combat gear, food, and prayer to defeat the level 235 Shellbane Gryphon. Your cape slot will be filled with the Tortugan shield."
+   ],
+   "steps": [
+    {
+     "text": "Talk to Elder Blunn at the north-eastern stall in the marketplace to receive a Tortugan shield, a cape-slot item. Keep this equipped for the fight!"
+    },
+    {
+     "text": "Use the bank in town to prepare for battle."
+    },
+    {
+     "text": "Sail to The Little Pearl, south-east of The Great Conch."
+    },
+    {
+     "text": "Disembark and a cutscene will play. Immediately after the cutscene, the battle will begin. Defeat the shellbane gryphon."
+    },
+    {
+     "text": "Use either Protect from Melee or Ranged.",
+     "depth": 1
+    },
+    {
+     "text": "Fighting with Ranged or Magic is recommended to negate one of his mechanics. This fight can be done without taking damage if using ranged and mechanics are handled properly, but supplies are still suggested.",
+     "depth": 1
+    },
+    {
+     "text": "It can charge you and perform a knockback that hits for up to 65 damage if your equipped weight is under 40 kg. If blocked by a tree or eggs, it will not perform this.",
+     "depth": 1
+    },
+    {
+     "text": "It will occasionally spit out an orange orb. Move 1 tile away.",
+     "depth": 1
+    },
+    {
+     "text": "When \"The gryphon aggressively flaps it wings...\" is displayed in the chatbox, whirlwinds will spawn under you for a few seconds and then explode shortly after. Move repeatedly off of the affected tiles to avoid damage.",
+     "depth": 1
+    },
+    {
+     "text": "Don't leave yet: Talk to Korel about the strange ship you saw."
+    },
+    {
+     "text": "Return to The Great Conch and talk to Elder Raley again."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,379 @@
+{
+ "id": "cold-war",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Cold_War%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Penguin spotting",
+   "notes": [
+    "Items needed: 10 Oak planks (unnoted), 10 steel nails, a hammer and a spade. (Note: Followers are not allowed.)"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Larry by the penguin cage in the Ardougne Zoo. (If talking to Larry with all of the items in your inventory, Larry will automatically take you to the iceberg if you select you are ready)",
+     "chat": [
+      "1. Okay, why not?"
+     ]
+    },
+    {
+     "text": "Talk to Larry again.",
+     "chat": [
+      "1. Yes, I have all the materials.",
+      "1. Yes"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Hello world!",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Travel to the dock north-east of Rellekka and speak to Larry to sail to the Iceberg."
+    },
+    {
+     "text": "Use an oak plank on firm snow patch."
+    },
+    {
+     "text": "Use your spade on, or dig next to, the newly built hut to cover it in snow."
+    },
+    {
+     "text": "Talk to Larry to enter the bird hide and PAY ATTENTION to this cutscene."
+    },
+    {
+     "text": "Note: Take note of the 3 emotes the left penguin is doing (you will need this several times later, you can re-enter the snow bird hide to watch again before the next step if needed). If you moved onto next step, you cannot go back. You have to spend a lot of time guessing later.",
+     "depth": 1
+    },
+    {
+     "text": "See the full guide for a reference of emotes.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Larry.",
+     "chat": [
+      "1. That's crazy!"
+     ]
+    },
+    {
+     "text": "Left-click Travel back to Rellekka using the nearby boat.",
+     "chat": [
+      "1. Yes"
+     ]
+    },
+    {
+     "text": "Talk to Larry on the dock."
+    },
+    {
+     "text": "Read the clockwork book."
+    }
+   ]
+  },
+  {
+   "title": "Clockwork penguin",
+   "notes": [
+    "Items needed: A regular plank, a steel bar OR a clockwork mechanism, and a piece of silk, access to a Crafting table 3 or better in a POH."
+   ],
+   "steps": [
+    {
+     "text": "Go to your POH and use your Crafting table 3 to turn your steel bar into a clockwork mechanism.",
+     "chat": [
+      "3. Clockwork mechanism"
+     ]
+    },
+    {
+     "text": "Click on the table again and select clockwork toy and then clockwork penguin.",
+     "chat": [
+      "4. Clockwork toy",
+      "3. Clockwork penguin"
+     ]
+    },
+    {
+     "text": "Return to Ardougne and talk to Larry.",
+     "chat": [
+      "1. Yes, I have it.",
+      "1. Yes"
+     ]
+    },
+    {
+     "text": "Talk to Larry once on the iceberg.",
+     "chat": [
+      "2. It looks like a warning message to keep us away.",
+      "1. Yes"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Suit up!",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Return to Ardougne Zoo once again."
+    },
+    {
+     "text": "Unequip both hands and cape slots and use the tuxedo-time option on Larry."
+    },
+    {
+     "text": "Enter the penguin pen and talk to the penguin. (only one of them has the \"talk-to\" option)"
+    },
+    {
+     "text": "Use the 3 greeting emotes from earlier. Check your quest journal if you have forgotten, the emotes are noted in there.",
+     "depth": 1
+    },
+    {
+     "text": "Read the mission report and exit the pen."
+    },
+    {
+     "text": "Talk to Larry to exit the suit."
+    },
+    {
+     "text": "Talk to Larry about the mission report"
+    }
+   ]
+  },
+  {
+   "title": "Incognito",
+   "notes": [
+    "Items needed: Clockwork suit, mission report, and Ring of Charos(a) or a raw cod"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Larry in Fred the Farmer's sheep pen in Lumbridge."
+    },
+    {
+     "text": "Use the tuxedo-time option on Larry.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to the penguins who are disguised as a sheep."
+    },
+    {
+     "text": "Do the greeting emotes."
+    },
+    {
+     "text": "Exit the penguin suit by talking to Larry."
+    },
+    {
+     "text": "Talk to Larry again so he teleports you to the Zoo.",
+     "chat": [
+      "1. Yes"
+     ]
+    },
+    {
+     "text": "Use the tuxedo-time option on Larry."
+    },
+    {
+     "text": "Enter the penguin pen and talk to penguin. If using Ring of Charos(a), make sure it is equipped. Otherwise, use raw cod on Penguin.",
+     "chat": [
+      "1. The penguins in Lumbridge refuse to talk to me.",
+      "2. I must have left the outpost before they gave out the phrase.",
+      "1. Sure!",
+      "1. The penguins in Lumbridge refuse to talk to me.",
+      "1. Uh, I forgot what the phase was.",
+      "1. Sure!"
+     ]
+    },
+    {
+     "text": "Exit the suit by talking to Larry."
+    },
+    {
+     "text": "Talk to Larry again."
+    }
+   ]
+  },
+  {
+   "title": "Intelligence",
+   "notes": [
+    "Item needed: Clockwork suit. Already bring: 5 feathers, Swamp tar, Mahogany plank, Leather."
+   ],
+   "steps": [
+    {
+     "text": "Go back to Fred the Farmer's sheep pen."
+    },
+    {
+     "text": "Use the tuxedo-time option on Larry."
+    },
+    {
+     "text": "Talk to the sheep penguin."
+    },
+    {
+     "text": "Talk to Larry to exit suit."
+    },
+    {
+     "text": "Talk to Fred the Farmer. ( if you have not completed sheep shearer)",
+     "chat": [
+      "3. I need to talk to you about penguins.",
+      "1. Bully Fred",
+      "4. I need to talk to you about penguins.",
+      "1. Bully Fred"
+     ]
+    },
+    {
+     "text": "Run north between the first field of cows and the mill toward the dairy cow icon on the map, and steal a cowbell from a dairy cow (right click) for later.",
+     "depth": 1
+    },
+    {
+     "text": "Kill a chicken if you need 5 feathers.",
+     "depth": 1
+    },
+    {
+     "text": "Get back into the Penguin suit and talk to the Sheep Penguin.",
+     "chat": [
+      "2. The Farmer is harmless."
+     ]
+    },
+    {
+     "text": "If you do not have swamp tar already, run to the Lumbridge swamp to grab some.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Larry again to get teleported to the iceberg.",
+     "chat": [
+      "1. Yes"
+     ]
+    },
+    {
+     "text": "Talk to Larry once at the iceberg."
+    }
+   ]
+  },
+  {
+   "title": "Surprise, surprise",
+   "notes": [
+    "Items needed: Swamp tar, 5 Feathers, Lumbridge Mission Report, Ardougne Mission Report"
+   ],
+   "steps": [
+    {
+     "text": "Use the tuxedo-time option on Larry"
+    },
+    {
+     "text": "Talk to KGP Agent north-west of Larry while in the penguin suit."
+    },
+    {
+     "text": "Do the greeting emotes."
+    },
+    {
+     "text": "Talk to Noodle."
+    },
+    {
+     "text": "Talk to Noodle again to receive the ID card and a mission report.",
+     "chat": [
+      "1. Yeah, I got it."
+     ]
+    },
+    {
+     "text": "Talk to KGP Agent."
+    },
+    {
+     "text": "Click on the avalanche."
+    },
+    {
+     "text": "Enter the first room to the west and talk to KGP Agent."
+    },
+    {
+     "text": "Exit room through the west door and then through the north door."
+    },
+    {
+     "text": "Walk north once outside to the agility course."
+    }
+   ]
+  },
+  {
+   "title": "Agility course",
+   "notes": [
+    "If you run out of food any time and do not wish to risk losing your items, you could un-equip the penguin suit, resulting in being caught and stunned, but otherwise returned to where Larry is on the Iceberg."
+   ],
+   "steps": [
+    {
+     "text": "Climb down the steps and into the water."
+    },
+    {
+     "text": "Avoid the moving ice in the water."
+    },
+    {
+     "text": "Climb the stepping stone at the end."
+    },
+    {
+     "text": "Jump across the next stones until you reach an ice platform."
+    },
+    {
+     "text": "After you manage to cross, continue on the path until you come to a shelf with icicles on it. Use the tread-softly option to get across. You have to repeat this several times at each shelf. If you fail, you will be hit taking a small amount of damage."
+    },
+    {
+     "text": "Next, you have to climb up the ice using a 'Cross Ice' option. This can be very annoying, as you lose 2 hitpoints each time you fail, and the failure rate is surprisingly high. If you have only the minimal Agility — level 30, for example — a small amount of food may help."
+    },
+    {
+     "text": "After that, you have a small cutscene of you sliding down a hill."
+    },
+    {
+     "text": "Talk to Agility Instructor."
+    },
+    {
+     "text": "Unequip the penguin suit and talk to Larry."
+    }
+   ]
+  },
+  {
+   "title": "'Berg bards",
+   "notes": [
+    "Items needed: Mahogany plank, Leather (not hard leather), and Cowbells"
+   ],
+   "steps": [
+    {
+     "text": "Use the tuxedo-time option on Larry and re-enter the outpost."
+    },
+    {
+     "text": "Talk to the KGP Agent by the control panel at the end of the main hall."
+    },
+    {
+     "text": "Talk to Ping or Pong in the east room."
+    },
+    {
+     "text": "Leave the outpost and head back to Larry."
+    },
+    {
+     "text": "Unequip the penguin suit."
+    },
+    {
+     "text": "Use mahogany plank on the leather to make penguin bongos."
+    },
+    {
+     "text": "Use the tuxedo-time option on Larry."
+    },
+    {
+     "text": "Re-enter the outpost."
+    },
+    {
+     "text": "Talk to Ping or Pong again.",
+     "chat": [
+      "2. Yes."
+     ]
+    },
+    {
+     "text": "Use the Control panel in the main hall."
+    },
+    {
+     "text": "Enter the War Room to the east."
+    }
+   ]
+  },
+  {
+   "title": "Conclusive evidence",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Kill an icicle-wielding Icelord (you will receive a bonus 40 Attack exp upon killing it.) and exit the pen using the door to the west."
+    },
+    {
+     "text": "Use the chasm to the east of the room to return to the surface."
+    },
+    {
+     "text": "Talk to Larry."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

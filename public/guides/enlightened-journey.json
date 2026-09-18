@@ -1,0 +1,186 @@
+{
+ "id": "enlightened-journey",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Enlightened_Journey%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [
+    ":Note: This quest can be completed in two trips to Entrana if inventory space is managed well. Follow the guidance in each section to see what items are needed and when to return to a bank."
+   ],
+   "steps": []
+  },
+  {
+   "title": "Getting started",
+   "notes": [
+    "Needed: 3 Papyrus, unlit candle, ball of wool, sack of potatoes, red and yellow dyes, 10 silk, 8 empty sacks, bowl (obtainable during this section from the house just east of Auguste, up the ladder)"
+   ],
+   "steps": [
+    {
+     "text": "Travel to Entrana (speak to monks on second most northern dock in Port Sarim)"
+    },
+    {
+     "text": "Talk to Auguste on Entrana north of the Herblore shop (3 times)",
+     "chat": [
+      "1. Yes! Sign me up.",
+      "1. Umm, yes. What's your point?",
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Use the papyrus with the ball of wool."
+    },
+    {
+     "text": "Use the unlit candle on the balloon structure."
+    },
+    {
+     "text": "Talk to Auguste again."
+    },
+    {
+     "text": "Talk to Auguste again with the two papyrus and a sack of potatoes in your inventory.",
+     "chat": [
+      "1. Yes, I have them here."
+     ]
+    },
+    {
+     "text": "Go slightly south of Auguste and fill up the sacks with sand."
+    },
+    {
+     "text": "Give Auguste a yellow dye, a red dye, ten silk, a bowl, and eight sandbags."
+    },
+    {
+     "text": "A bowl spawns in the house east of Auguste on the",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "The big balloon",
+   "notes": [
+    "Needed: Tinderbox, 12 willow branches, 10 regular logs (axes cannot be taken to Entrana, obtain the logs before)",
+    "Recommended: additional noted regular/oak/willow/yew/magic logs if you wish to unlock additional routes after the quest"
+   ],
+   "steps": [
+    {
+     "text": "Leave Entrana to retrieve the remaining items. You may consider banking in Pest Control, either using Minigame Teleport or returning to Port Sarim and travelling there and back via the ships."
+    },
+    {
+     "text": "If you still require willow branches, they can be purchased from the Grand Exchange or trimmed with secateurs by using them on the grown sapling given by Auguste or another willow tree you've grown. Do not clear the stump, or cut down the tree until all branches are obtained.",
+     "depth": 1
+    },
+    {
+     "text": "Back on Entrana, use the branches on the balloon frame on the nearby platform."
+    },
+    {
+     "text": "(Optional) Store any additional logs in the log storage."
+    },
+    {
+     "text": "Talk to Auguste.",
+     "chat": [
+      "2. Okay."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "In flight",
+   "notes": [
+    "If you accidentally crash during the balloon flight, bring 10 more logs and talk to Auguste on Entrana to try again."
+   ],
+   "steps": []
+  },
+  {
+   "title": "Screen one",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Drop a sandbag."
+    },
+    {
+     "text": "Burn a log."
+    },
+    {
+     "text": "Relax 9 times."
+    },
+    {
+     "text": "Pull the rope."
+    },
+    {
+     "text": "Relax 2 times."
+    },
+    {
+     "text": "Pull the rope."
+    },
+    {
+     "text": "Relax 5 times."
+    }
+   ]
+  },
+  {
+   "title": "Screen two",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Burn a log."
+    },
+    {
+     "text": "Relax."
+    },
+    {
+     "text": "Burn a log."
+    },
+    {
+     "text": "Relax 10 times."
+    },
+    {
+     "text": "Burn a log."
+    },
+    {
+     "text": "Relax 5 times."
+    }
+   ]
+  },
+  {
+   "title": "Screen three",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Relax 7 times."
+    },
+    {
+     "text": "Pull the rope."
+    },
+    {
+     "text": "Pull the rope."
+    },
+    {
+     "text": "Relax 3 times."
+    },
+    {
+     "text": "Burn a log."
+    },
+    {
+     "text": "Relax 4 times."
+    },
+    {
+     "text": "Pull the rope."
+    }
+   ]
+  },
+  {
+   "title": "Finishing up",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Auguste."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

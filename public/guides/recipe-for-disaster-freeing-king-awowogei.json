@@ -1,0 +1,134 @@
+{
+ "id": "recipe-for-disaster-freeing-king-awowogei",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Recipe_for_Disaster%2FFreeing_King_Awowogei%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [
+    "Recommended items: M'speak amulet, Karamjan monkey greegree (or other greegrees), antipoison and food."
+   ],
+   "steps": [
+    {
+     "text": "Inspect Awowogei at Lumbridge Castle."
+    },
+    {
+     "text": "Travel to Ape Atoll, equip any monkey greegree and M'speak amulet. Speak to Daero in the Grand Tree to get there quickly."
+    },
+    {
+     "text": "Speak to an Elder Guard to be let into Awowogei's Palace. Talk to Awowogei south of the temple.",
+     "chat": [
+      "2. Do you have a favourite dish?"
+     ]
+    },
+    {
+     "text": "If you need a banana and monkey nuts, buy them from the food store now."
+    },
+    {
+     "text": "Talk to all of the 3 monkeys in the north-west corner of the temple.",
+     "chat": [
+      "3. Do you know anything about the King's favourite dish?"
+     ]
+    },
+    {
+     "text": "Use your banana and monkey nuts on any of them. (Ensure you use both your Banana and Monkey nuts on them or else the Tchiki nuts will not appear on the bush.)"
+    }
+   ]
+  },
+  {
+   "title": "Obtaining the Greegrees",
+   "notes": [
+    "Items needed: 3,000 coins or 3 monkey talismans.",
+    "Recommended: Combat equipment to kill a ninja monkey and a zombie monkey, Ranged or Magic equipment to kill a monkey guard, Prayer potion and food for combat and running through Ape Atoll dungeon. A stamina potion is highly recommended to massively reduce the amount of time spent running through the very long dungeon."
+   ],
+   "steps": [
+    {
+     "text": "If you already have a gorilla, ninja, and zombie monkey greegree then skip this part. See the in-depth guide for more details on where to find each type of monkey."
+    },
+    {
+     "text": "Buy 3 blank monkey talismans from the rune store.",
+     "depth": 1
+    },
+    {
+     "text": "Kill a monkey archer in the market and take its bones.",
+     "depth": 1
+    },
+    {
+     "text": "Kill a Monkey Guard in the temple and take its bones.",
+     "depth": 1
+    },
+    {
+     "text": "Kill a zombie monkey under the temple and take its bones.",
+     "depth": 1
+    },
+    {
+     "text": "Bring the bones and talismans to Zooknock at the end of the Ape Atoll Dungeon.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Big Snakes",
+   "notes": [
+    "Recommended: Combat equipment"
+   ],
+   "steps": [
+    {
+     "text": "In the upcoming steps, take at least 3 snake corpses, red bananas, and tchiki nuts in case you burn the stuffed snake (use the drop trick for the nuts and the banana)."
+    },
+    {
+     "text": "Travel to Crash Island."
+    },
+    {
+     "text": "It is strongly recommended to turn on Protect from Melee before entering the pit (especially for Hardcore Ironmen). Climb down, and kill at least 3 level 84 big snakes for their corpses."
+    }
+   ]
+  },
+  {
+   "title": "Stuffing the snake",
+   "notes": [
+    "Items needed: rope, pestle and mortar, snake corpse(s), knife (a scimitar works too)"
+   ],
+   "steps": [
+    {
+     "text": "Return to Ape Atoll and find the red banana tree north-west of the big gate (by the shore)."
+    },
+    {
+     "text": "Equip your gorilla greegree and use a rope on the tree to get some red bananas. Take at least 3 using the drop trick."
+    },
+    {
+     "text": "Equip your ninja greegree and enter the Ape Atoll agility course. Note: you cannot bring a pet or follower."
+    },
+    {
+     "text": "After swinging the rope, enter the hole and pick some tchiki nuts from the bush. The rope obstacle is right next to fairy ring CLR. Take at least three using the drop trick."
+    },
+    {
+     "text": "Grind the tchiki nuts with a pestle and mortar, slice the red banana with a knife, and add them to the snake corpses."
+    },
+    {
+     "text": "Ensure you grind the nuts and slice the banana before adding them to the snake, or you will ruin both and have to get more!",
+     "depth": 1
+    },
+    {
+     "text": "If you forgot a knife, there is an Iron Scimitar in the most north-western crate of the storage building right behind the scimitar shop (where you obtain M'amulet mould/Monkey Dentures in Monkey Madness I). This can be used in place of a knife.",
+     "depth": 1
+    },
+    {
+     "text": "Equip your zombie greegree and enter the temple dungeon through the trapdoor."
+    },
+    {
+     "text": "Go through the crack down the cliff between the two ramps."
+    },
+    {
+     "text": "Lay your stuffed snake on the rock to cook it (requires 70 cooking)."
+    },
+    {
+     "text": "Give the cooked stuffed snake to Awowogei in Lumbridge. Make sure you are wearing your M'speak Amulet when you do so."
+    },
+    {
+     "text": "Congratulations, section complete!"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,172 @@
+{
+ "id": "the-corsair-curse",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/The_Corsair_Curse%2FQuick_guide",
+ "sections": [
+  {
+   "title": "The cursed crew",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Speak to Captain Tock just south of the entrance to Falador farm.",
+     "chat": [
+      "2. What kind of help do you need?",
+      "1. Sure, I'll try to help with your curse."
+     ]
+    },
+    {
+     "text": "Speak to Captain Tock on the single dock just west of Rimmington.",
+     "chat": [
+      "1. Okay, I'm ready to go to Corsair Cove."
+     ]
+    },
+    {
+     "text": "Upon arrival to Corsair, make sure to speak with Ithoi the Navigator first or else the other npc chats will not work correctly. Find Ithoi by travelling west along the beach. Climb the stairs of the southernmost building on the beach.",
+     "chat": [
+      "1. I hear you've been cursed."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Arsen's, Colin's and Gnocci's \"curse\"",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Speak to Arsen the Thief (upstairs in the first house west off the docks).",
+     "chat": [
+      "1. I hear you've been cursed."
+     ]
+    },
+    {
+     "text": "Speak to Cabin Boy Colin (in the same room as Arsen, just east).",
+     "chat": [
+      "1. I hear you've been cursed."
+     ]
+    },
+    {
+     "text": "Speak to Gnocci the Cook (upstairs in the building just north-west).",
+     "chat": [
+      "1. I hear you've been cursed."
+     ]
+    },
+    {
+     "text": "Grab the tinderbox next to him if you don't have one.",
+     "depth": 1
+    },
+    {
+     "text": "Grab the spade found directly south of his hut (right by the tree near the water) if you don't have one.",
+     "depth": 1
+    },
+    {
+     "text": "Speak to Captain Tock back on the boat (cross south gangplank) to receive the ogre artefact.",
+     "chat": [
+      "1. Arsen says he gave you a sacred ogre relic."
+     ]
+    },
+    {
+     "text": "Speak to Chief Tess in the Corsair Cove Dungeon (dungeon entrance is just west, in the middle of four small pillars).",
+     "chat": [
+      "1. I've come to return what Arsen stole."
+     ]
+    },
+    {
+     "text": "Use a Spade to dig the lump of sand next to the tree where Gnocci the Cook fished in the cutscene. (see image)"
+    },
+    {
+     "text": "Three steps east of the tropical tree found west of the fishing spot.",
+     "depth": 1
+    },
+    {
+     "text": "Use the telescope on the deck of Ithoi the Navigator's hut."
+    },
+    {
+     "text": "Return to Gnocci the Cook and speak to him."
+    },
+    {
+     "text": "Speak to Arsen the Thief."
+    },
+    {
+     "text": "Speak to Cabin Boy Colin."
+    }
+   ]
+  },
+  {
+   "title": "Traitor in the midst",
+   "notes": [
+    "Congratulations, quest complete!"
+   ],
+   "steps": [
+    {
+     "text": "Speak to Captain Tock.",
+     "chat": [
+      "1. I've ruled out all the Corsairs' theories...",
+      "1. So what do I do now?"
+     ]
+    },
+    {
+     "text": "Speak to Gnocci the Cook.",
+     "chat": [
+      "1. I hear it happened straight after dinner."
+     ]
+    },
+    {
+     "text": "Speak to Arsen the Thief.",
+     "chat": [
+      "1. I hear Ithoi cooked the meal you ate that night.",
+      "1. What is the mission Francois is doing?"
+     ]
+    },
+    {
+     "text": "Speak to Cabin Boy Colin.",
+     "chat": [
+      "1. I hear the Captain's thinking of firing Ithoi."
+     ]
+    },
+    {
+     "text": "Speak to Ithoi the Navigator.",
+     "chat": [
+      "1. I hear you cooked the meal they ate before getting sick.",
+      "1. Maybe because the Captain's thinking of firing you."
+     ]
+    },
+    {
+     "text": "Speak to Ithoi the Navigator again.",
+     "chat": [
+      "1. I know you've faked the curse.",
+      "1. I bet I can prove you're well enough to get up."
+     ]
+    },
+    {
+     "text": "Use your tinderbox on the driftwood under his hut."
+    },
+    {
+     "text": "Speak to Ithoi the Navigator again.",
+     "chat": [
+      "1. I saw you running around! You're not sick!"
+     ]
+    },
+    {
+     "text": "Speak to Captain Tock.",
+     "chat": [
+      "1. I've seen Ithoi running around. He's not sick at all.",
+      "3. I'll be back."
+     ]
+    },
+    {
+     "text": "Head west again and kill Ithoi the Navigator (level 35)."
+    },
+    {
+     "text": "Use protect from magic to take no damage.",
+     "depth": 1
+    },
+    {
+     "text": "Speak to Captain Tock.",
+     "chat": [
+      "1. I've killed Ithoi for poisoning your crew."
+     ]
+    }
+   ]
+  }
+ ]
+}

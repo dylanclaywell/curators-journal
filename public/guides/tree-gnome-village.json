@@ -1,0 +1,113 @@
+{
+ "id": "tree-gnome-village",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Tree_Gnome_Village%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting off",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to King Bolren in Tree Gnome Village. Accept the quest and you will be taken out of the maze and placed at the north-west corner.",
+     "chat": [
+      "1. Can I help at all?",
+      "1. I would be glad to help."
+     ]
+    },
+    {
+     "text": "Walk slightly north and speak to Commander Montai (red hat) at the south-west edge of the battlefield, south of the river.",
+     "chat": [
+      "1. Ok, I'll gather some wood."
+     ]
+    },
+    {
+     "text": "Talk to him again to give him 6 logs."
+    },
+    {
+     "text": "Then talk to him a third time.",
+     "chat": [
+      "2. I'll try my best."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The three trackers",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to the second tracker gnome in a building towards the east side of the Khazard Stronghold."
+    },
+    {
+     "text": "Talk to the first tracker gnome around the north-west of the Khazard Stronghold."
+    },
+    {
+     "text": "Talk to the third tracker gnome in the south-west corner of the Khazard Stronghold. Pay attention to his dialogue, he will give you the coordinates for the ballista:"
+    },
+    {
+     "text": "\"Less than my hands\" - 0001",
+     "depth": 1
+    },
+    {
+     "text": "\"More than my head less than my fingers\" - 0002",
+     "depth": 1
+    },
+    {
+     "text": "\"More than we, less than our feet\" - 0003",
+     "depth": 1
+    },
+    {
+     "text": "\"My legs and your legs\" - 0004",
+     "depth": 1
+    },
+    {
+     "text": "Fire the ballista located in the south-west corner of the battlefield, past the bridge, and enter the coordinates as given by the third tracker gnome."
+    }
+   ]
+  },
+  {
+   "title": "The orbs",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Walk north to the stronghold (building where Tracker gnome 1 was) and climb over the crumbled wall."
+    },
+    {
+     "text": "You can ignore or kill the level 48 Khazard commanders that will attack you."
+    },
+    {
+     "text": "Climb the ladder, search the chest, and take the orb of protection."
+    },
+    {
+     "text": "Exit the stronghold through the front door."
+    },
+    {
+     "text": "Return to the Tree Gnome Village, and talk to Elkoy to be sent to the centre."
+    },
+    {
+     "text": "King Bolren will ask you to get the other two orbs of protection.",
+     "chat": [
+      "1. I will find the warlord and bring back the orbs."
+     ]
+    },
+    {
+     "text": "Talk to Khazard warlord north-west of the battlefield (below west West Ardougne, outside of the wall underneath the Underground Pass) and then kill him to retrieve the Orbs of protection."
+    },
+    {
+     "text": "To safespot the warlord, begin the fight and head west until he de-aggros near a large dead tree. Move a bit south and attack him from outside his aggro range with Ranged or Magic. This will force him to walk backwards at an angle and get caught between the West Ardougne wall and northern large dead tree. Players can safely continue their attacks as long as they maintain distance.",
+     "depth": 1
+    },
+    {
+     "text": "Melee players can also safespot him by repeatedly stepping in and out of his walking range. One good spot is beside the large skull to the south.",
+     "depth": 1
+    },
+    {
+     "text": "Head back to the village and return the orbs to King Bolren."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

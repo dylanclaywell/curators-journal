@@ -1,0 +1,164 @@
+{
+ "id": "swan-song",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Swan_Song%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [
+    "Note: With a high enough combat level, it is possible to have all required items worn and in a single inventory. There is also an opportunity to use the Yanille bank during the quest if needed."
+   ],
+   "steps": []
+  },
+  {
+   "title": "Trollish",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Herman Caranos at the Piscatoris Fishing Colony (north of Fairy ring AKQ); cutscene is optional.",
+     "chat": [
+      "1. What's the rush?",
+      "1. Do you need any help?",
+      "2. I'm a brave adventurer! Can I try?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The Wise Old Man",
+   "notes": [
+    "Needed: 5 Blood runes, 10 Mist runes, 10 Lava runes."
+   ],
+   "steps": [
+    {
+     "text": "Talk to the Wise Old Man in Draynor Village."
+    }
+   ]
+  },
+  {
+   "title": "Battle at the Colony",
+   "notes": [
+    "Needed: Food, Armour, Melee or Ranged weapon, Prayer potions to kill Sea Trolls."
+   ],
+   "steps": [
+    {
+     "text": "Return to the Colony and talk to the Wise Old Man."
+    },
+    {
+     "text": "Kill the level 79 Sea Trolls and enter the Colony (collect 7 of their bones if needed)."
+    },
+    {
+     "text": "Talk to Herman (east building). Note: You will need to click inside of the building as clicking directly on Herman (or the Wise Old Man later) will make your character run outside the building to the north."
+    }
+   ]
+  },
+  {
+   "title": "Repairing the Colony",
+   "notes": [
+    "Needed: Logs, tinderbox, 5 iron bars, Hammer, small fishing net, Fishing level boosting item if you're below 62, Smithing level boosting item if you're below 45, combat equipment to fight sea trolls"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Franklin Caranos near the entrance."
+    },
+    {
+     "text": "Use a log on the firebox (not the furnace) and light it in the building with the Furnace symbol. (Franklin will give you a tinderbox if you speak to him again.)"
+    },
+    {
+     "text": "Use each of the five iron bars on the Metal Press."
+    },
+    {
+     "text": "Use iron sheets to repair the western colony perimeter's broken walls. (Franklin will give you a hammer.)"
+    },
+    {
+     "text": "Talk to Arnold Lydspor in the bank. (He will give you a Small fishing net if you do not already have one.)"
+    },
+    {
+     "text": "Fish 5 fresh monkfish at the fishing spot to the north-west, you may need a few more if you burn some while cooking."
+    },
+    {
+     "text": "Kill sea trolls when they spawn, as they will increase in difficulty. After 1-3 kills, the sea trolls only drop big bones and cannot be used in the next section of the quest.",
+     "depth": 1
+    },
+    {
+     "text": "Cook the monkfish in the kitchen, south of the fishing spot. Note: you cannot bank with Arnold to make use of cooking gauntlets."
+    },
+    {
+     "text": "Talk to Arnold."
+    },
+    {
+     "text": "Talk to Franklin."
+    },
+    {
+     "text": "Talk to the Wise Old Man and Herman in the far eastern building."
+    }
+   ]
+  },
+  {
+   "title": "Raising an Army",
+   "notes": [
+    "Needed: 7 bones, airtight pot OR pot with pot lid, brown apron (can ask Malignius for one).If not banking afterwards: Food, Armour, Melee or Ranged weapon, Prayer potions.",
+    "Note: You must exit the colony to use the Nightmare Zone minigame teleport to reach Yanille.",
+    "Note: The southern portal on the of the Wizards' Guild will teleport you to the Dark Wizards' Tower, just north-west of Malignius Mortifer.",
+    "Note: Malignius Mortifer will refuse to give you bone seeds if you are wearing or holding Saradomin-affiliated gear. It is not suggested to drop any gear as you will be teleported back to the Fishing Colony."
+   ],
+   "steps": [
+    {
+     "text": "Talk to Wizard Frumscone in the basement of the Wizards' Guild in Yanille.",
+     "chat": [
+      "2. I'll see what the necromancer needs me to do."
+     ]
+    },
+    {
+     "text": "Talk to Malignius Mortifer south of Falador. He will give you a brown apron in order to be allowed entry to the Crafting Guild.",
+     "chat": [
+      "2. I need help with saving a fishing colony."
+     ]
+    },
+    {
+     "text": "Talk to the Master Crafter with dreadlocks in the Crafting Guild on the east side."
+    },
+    {
+     "text": "If you brought soft clay, use it on the potter's wheel, then the potter's oven to make a pot and pot lid. If you brought a pickaxe, mine some clay and follow the step above.",
+     "depth": 1
+    },
+    {
+     "text": "Use Pot and Pot Lid together to make Airtight Pot."
+    },
+    {
+     "text": "Talk to Malignius Mortifer to teleport back to the Fishing Colony.",
+     "chat": [
+      "2. I've spoken to the master crafter..."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The Final Battle",
+   "notes": [
+    "Needed: Food, Armour, Melee or Ranged weapon, Prayer potions, Bone seeds."
+   ],
+   "steps": [
+    {
+     "text": "Talk to Herman to begin the fight.",
+     "chat": [
+      "1. I'm ready. Let's fight!"
+     ]
+    },
+    {
+     "text": "Kill the Sea Troll Queen. (Use Protect from Magic in Melee range, and use Ranged or Melee to kill her)"
+    },
+    {
+     "text": "Talk to Herman."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    },
+    {
+     "text": "(Optional) Catch and cook a monkfish to complete a hard Western Provinces Achievement Diary task.",
+     "depth": 1
+    }
+   ]
+  }
+ ]
+}

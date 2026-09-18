@@ -1,0 +1,171 @@
+{
+ "id": "my-arms-big-adventure",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/My_Arm's_Big_Adventure%2FQuick_guide",
+ "sections": [
+  {
+   "title": "The adventurer",
+   "notes": [
+    "Items needed: Climbing boots or 12 coins"
+   ],
+   "steps": [
+    {
+     "text": "Go to the Troll Stronghold, head south then downstairs into the kitchen (fairycode AJR and enter from the back through the secret door where you freed the prisoners, or utilise a slayer ring and enter the mountain through the secret entrance, or Trollheim teleport and go west)."
+    },
+    {
+     "text": "Speak to Burntmeat.",
+     "chat": [
+      "1. What do you want now?",
+      "2. Alright, I'll lend him a hand."
+     ]
+    },
+    {
+     "text": "Talk to My Arm, east of Burntmeat."
+    }
+   ]
+  },
+  {
+   "title": "Getting the goutweed",
+   "notes": [
+    "Items needed: Three buckets of Ugthanki dung, seven buckets of supercompost (or 7 supercompost stored in the Tool Leprechaun), a spade, climbing boots, empty bucket (no need to bring one, there is one south of the Death Plateau cooking pot), at least one free inventory slot."
+   ],
+   "steps": [
+    {
+     "text": "Reach the Death Plateau. (Games necklace or minigame teleport to Burthorpe). There will be thrower trolls on the way there and on the plateau itself; protect from ranged."
+    },
+    {
+     "text": "Use a bucket on the cooking pot in the middle of the plateau with 1 free inventory space to get the goutweedy lump."
+    },
+    {
+     "text": "A bucket spawns south of the cooking pot, if you forgot to bring one.",
+     "depth": 1
+    },
+    {
+     "text": "Go back to the Troll Stronghold and talk to My Arm."
+    },
+    {
+     "text": "After he brings you to a new area, talk to him again."
+    },
+    {
+     "text": "After reading the book he gave you, talk to him again."
+    },
+    {
+     "text": "Use three buckets of Ugthanki dung and seven buckets of supercompost on the soil patch."
+    },
+    {
+     "text": "Talk to My Arm."
+    },
+    {
+     "text": "Talk to Captain Barnaby.",
+     "chat": [
+      "1. This is My Arm. We'd like to go to Karamja."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Getting the tubers",
+   "notes": [
+    "Items needed: None if you already have 60% favour in Tai Bwo Wannai Cleanup. If not, you'll need a machete, or at least 60 coins to buy one from the store north-west of the village.",
+    "Note: If you plan on completing Karamja medium task diary, you may want to consider getting 100% favour first as you will lose the 60% here."
+   ],
+   "steps": [
+    {
+     "text": "Meet up with My Arm at Tai Bwo Wannai, east of the general store. Talk to him."
+    },
+    {
+     "text": "Talk to Murcaily near the hardwood grove. Make sure you have at least 1 free inventory space.",
+     "chat": [
+      "1. A troll called My Arm wants a favour..."
+     ]
+    },
+    {
+     "text": "If Murcaily cannot be found, log out and log back in.",
+     "depth": 1
+    },
+    {
+     "text": "If you don't have 60% favour, raise it to 60% at least and talk to him again (you can't start the quest if you don't have 60% favour).",
+     "depth": 1
+    },
+    {
+     "text": "After the cutscene speak to My Arm, you will take the boat back to Ardougne where you can access the bank."
+    }
+   ]
+  },
+  {
+   "title": "Teaching a troll to farm",
+   "notes": [
+    "Items needed: Hardy gout tubers, 17 coins or a rake, seed dibber, plant cure, spade, climbing boots and optionally, supercompost or ultracompost (Bottomless Compost Bucket will not work). Remember to bring food for the boss fight to save time."
+   ],
+   "steps": [
+    {
+     "text": "Prepare yourself for a level 75 fight and a level 172 fight."
+    },
+    {
+     "text": "Go back to the roof of the Troll Stronghold by using ladder in the west room on the upper level where the Troll Generals are."
+    },
+    {
+     "text": "Note: Obtain a spade from the Tool leprechaun if you do not already have one.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to My Arm."
+    },
+    {
+     "text": "Give My Arm the tools he needs for farming in this order:"
+    },
+    {
+     "text": "Rake (if My Arm breaks the rake, pick up the pieces, reassemble it, and give it back to him)",
+     "depth": 1
+    },
+    {
+     "text": "Supercompost/Ultracompost (Optional. If ultracompost/supercompost is not used, the patch may become diseased and will need to be cured. Regular compost has no effect.)",
+     "depth": 1
+    },
+    {
+     "text": "Hardy gout tubers",
+     "depth": 1
+    },
+    {
+     "text": "Seed dibber",
+     "depth": 1
+    },
+    {
+     "text": "Plant cure (if patch becomes diseased)",
+     "depth": 1
+    },
+    {
+     "text": "Talk to My Arm."
+    },
+    {
+     "text": "Defeat the two monsters."
+    },
+    {
+     "text": "Note: It is possible to dodge the Giant Roc's attacks by moving back and forth between tiles, but it is not possible to dodge its stun attack.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "The end",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to My Arm."
+    },
+    {
+     "text": "Give him a spade (if you don't have one, you can go back down and up the ladder to get the leprechaun to reappear)."
+    },
+    {
+     "text": "Go back to Burntmeat in the kitchen."
+    },
+    {
+     "text": "Talk to My Arm on the roof."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

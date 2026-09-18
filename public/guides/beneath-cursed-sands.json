@@ -1,0 +1,267 @@
+{
+ "id": "beneath-cursed-sands",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Beneath_Cursed_Sands%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Entranced Menaphites",
+   "notes": [
+    "Needed: Combat equipment, food, combat potions",
+    "Recommended: Stamina potion, Pharaoh's sceptre, and means to combat desert heat"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Jamila in Sophanem ( icon on the minimap) to start the quest.",
+     "chat": [
+      "2. What's this special item?",
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Read the message she gives you."
+    },
+    {
+     "text": "Make your way to the campsite, east of Sophanem, directly north of the small mining site by the cliffs."
+    },
+    {
+     "text": "For a quicker journey, exit from the south-eastern gate in Sophanem.",
+     "depth": 1
+    },
+    {
+     "text": "After entering the Necropolis for the first time, players with level 62 Agility can reach it once more by way of fairy ring using the code AKP.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Maisa",
+     "chat": [
+      "1. Let's go."
+     ]
+    },
+    {
+     "text": "If you have a Pharaoh's sceptre, commune with the obelisk directly north of the necropolis mine to allow teleportation back here, via the \"Jaltevas\" teleport option on the sceptre.",
+     "depth": 1
+    },
+    {
+     "text": "Inspect the blocked entry at the Jaltevas Pyramid."
+    },
+    {
+     "text": "Talk to either a citizen or Menaphite Guard."
+    },
+    {
+     "text": "Fight the Head Menaphite Guard. Do not use Protect from Melee, or he will damage you for 1/3rd of your total hitpoints. Boosting prayers like piety can still be used."
+    },
+    {
+     "text": "Talk to Maisa"
+    }
+   ]
+  },
+  {
+   "title": "The Ruins of Ullek",
+   "notes": [
+    "Needed: Combat equipment, coal, tinderbox (obtainable), spade (obtainable), iron bar",
+    "Recommended: A means to cure/prevent poison, protection from desert heat, Stamina potion and lots of food"
+   ],
+   "steps": [
+    {
+     "text": "Go back to Maisa's camp and talk to her."
+    },
+    {
+     "text": "If you need a tinderbox, you can search the camping equipment by the tent to get one. A spade can be found at the north side of the campsite."
+    },
+    {
+     "text": "From the campsite, head south, east around the cliffs, and then north to a set of stairs to the Ruins of Ullek."
+    },
+    {
+     "text": "Use the coal and tinderbox on the furnace (marked on the minimap) to ignite it."
+    },
+    {
+     "text": "Search the well to receive a stone tablet. Read it."
+    },
+    {
+     "text": "This is a good time to refill waterskins at the well.",
+     "depth": 1
+    },
+    {
+     "text": "Head back down the stairs and head south to the southernmost ritual pillar. Dig in front of it (north)."
+    },
+    {
+     "text": "Open the chest with the passcode \"1118513\"."
+    },
+    {
+     "text": "Return to the furnace with the scarab mould and iron bar, and craft a scarab emblem."
+    },
+    {
+     "text": "Go further north to the pillar, and insert the emblem."
+    },
+    {
+     "text": "Rotate the scarab on the emblem so that it faces downward (pincers facing upward)."
+    },
+    {
+     "text": "Climb down the stairs and defeat the two Scarab Mages. (Logging out will place you outside the cave.)"
+    },
+    {
+     "text": "Climb down the stairs again."
+    },
+    {
+     "text": "Avoid the projectiles and run west to the junction, south, and east to the lever."
+    },
+    {
+     "text": "Pull the lever at the end and run as fast as you can back to the junction, then follow the path north and east."
+    },
+    {
+     "text": "Warning: There is approximately one minute before it resets the lever.",
+     "depth": 1
+    },
+    {
+     "text": "At the other end, pull the other lever. If successful, the traps will be disabled."
+    },
+    {
+     "text": "Go through the door west of the junction."
+    }
+   ]
+  },
+  {
+   "title": "Riddle of the Tomb",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Inspect the south-western plaque to get four emblems."
+    },
+    {
+     "text": "Inspect the north-western plaque and read it."
+    },
+    {
+     "text": "The solution to the puzzle is different for everyone. Refer to the table below to solve this puzzle."
+    },
+    {
+     "text": "– Place the emblem corresponding to item 1 in the centre-south urn.",
+     "depth": 1
+    },
+    {
+     "text": "– Place the emblem corresponding to item 2 in the southernmost urn.",
+     "depth": 1
+    },
+    {
+     "text": "– Place the emblem corresponding to god 1 in the northernmost urn and the emblem corresponding to god 2 in the centre-north urn.",
+     "depth": 1
+    },
+    {
+     "text": "Pull the lever to the south-west and continue to the next area."
+    },
+    {
+     "text": "Speak to the Spirit."
+    },
+    {
+     "text": "Take the rusty key from the urn in the back of the room."
+    }
+   ]
+  },
+  {
+   "title": "The Champion of Scabaras",
+   "notes": [
+    "Needed: Rusty key, Range combat equipment",
+    "Recommended: Stamina potion, Pharaoh's sceptre, anti-poison, and means to combat desert heat",
+    "If players die during the fight, they can return to the entrance to reclaim their items from a grave."
+   ],
+   "steps": [
+    {
+     "text": "Prepare for the next boss fight, who is best fought with ranged. Resupply now if necessary. (Make sure to bring the rusty key, the fight begins immediately after unlocking the door.)"
+    },
+    {
+     "text": "Return to the room where you faced the Scarab Mages, and open the door (it only needs to be unlocked once)."
+    },
+    {
+     "text": "Defeat the Champion of Scabaras. It will attack with magic, or melee when next to the player. It is recommended to use Protect from Magic and stay out of melee range of the boss. After several normal attacks, it will use one of three special attacks."
+    },
+    {
+     "text": "Shadow Burst - The Champion will cast a shadow beneath itself, then proceed to send out a burst of shadow magic. This reaches for 4 tiles, and can hit over 40 damage multiple times (less if further away from the champion). It is advised to stay out of melee range of the Champion throughout the fight to avoid this attack, as you cannot freeze him.",
+     "depth": 1
+    },
+    {
+     "text": "Shadow Rift - The Champion will shout and summon a Shadow Rift within the arena. The rift has 20 Hitpoints and will explode, dealing 35+ damage, so it is recommended to quickly destroy it.",
+     "depth": 1
+    },
+    {
+     "text": "Shadow Flames - The Champion will shout, and a poisonous scarab swarm will appear. The swarm has 5 hp, and leaves dark fire in its path, which will hurt when stood upon. It is advised to kill the swarm as fast as possible as the fire will linger and hinder movement if left unattended.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to the High Priest of Scabaras."
+    }
+   ]
+  },
+  {
+   "title": "Cure Me Pox",
+   "notes": [
+    "Needed: Raw beef or cooked meat (can be purchased)",
+    "Recommended: A means to combat desert heat; teleports to Nardah and Sophanem"
+   ],
+   "steps": [
+    {
+     "text": "Go to Nardah and talk to Maisa or Zahur in the building directly south of the fountain."
+    },
+    {
+     "text": "If you don't already have raw beef or cooked meat, purchase one from the Nardah General Store."
+    },
+    {
+     "text": "Head west until you reach the River Elid and see an island with lilies growing on it."
+    },
+    {
+     "text": "Attempt to jump to the stepping stones, and throw the meat to the crocodile."
+    },
+    {
+     "text": "Pick the Lily of the Elid."
+    },
+    {
+     "text": "Go back to Zahur."
+    },
+    {
+     "text": "Warm up her chemistry equipment by adjusting the individual heats until the overall temperature is at the marked level."
+    },
+    {
+     "text": "Solution: Increase the middle and right-hand bars to their maximum capacities. Then drop the right-hand bar to half way. Finally, lower the middle bar until the puzzle is completed.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Zahur to receive the cure crate then bring it to High Priest in Sophanem."
+    },
+    {
+     "text": "Before leaving for the necropolis, gear up for a fight against a level-351 boss using melee equipment."
+    }
+   ]
+  },
+  {
+   "title": "Fight with the Menaphite Akh",
+   "notes": [
+    "Needed: Melee combat equipment",
+    "Recommended: Means to combat desert heat"
+   ],
+   "steps": [
+    {
+     "text": "Go to the necropolis and talk to Maisa, located directly south of the south-eastern gate of Sophanem by the bend in the path."
+    },
+    {
+     "text": "At the end of the cutscene, defeat the Menaphite Akh. The Menaphite Akh attacks using melee, and will occasionally use special attacks."
+    },
+    {
+     "text": "When she twitches, she will perform a lightning bolt attack and direct it in front of her. This attack can hit 70+ if not evaded. Always be prepared to walk behind or beside her to avoid this attack.",
+     "depth": 1
+    },
+    {
+     "text": "During the fight she will also summon a Menaphite Shadow that attacks with ranged when the Akh is above 50% HP, and switches to magic when the Akh is at or below 50% HP. Run to attack it quickly (but still watch out for the lightning attack). If not killed promptly, the shadow can switch places with the Akh, and the player must attack the real one or suffer large amounts of damage.",
+     "depth": 1
+    },
+    {
+     "text": "If you leave the fight, speak to Osman just outside Maisa's camp to restart the fight. If players die during the fight, they can return here to reclaim their items.",
+     "depth": 1
+    },
+    {
+     "text": "Go back to Sophanem and talk to Maisa or the High Priest."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

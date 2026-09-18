@@ -1,0 +1,166 @@
+{
+ "id": "wanted",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Wanted!%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Tiffy/Amik",
+   "notes": [
+    "Items required: Law rune, Enchanted gem and Molten glass OR 10k Coins."
+   ],
+   "steps": [
+    {
+     "text": "Speak with Sir Tiffy Cashien in Falador Park.",
+     "chat": [
+      "1. Do you have any jobs for me yet?",
+      "1. Yes, I'm interested.",
+      "1. Ask about the Wanted! Quest",
+      "1. How will all that help?"
+     ]
+    },
+    {
+     "text": "Go talk to Sir Amik Varze in the White Knights' Castle on the west side of the.",
+     "chat": [
+      "3. No, not right now..."
+     ]
+    },
+    {
+     "text": "Report back to Sir Tiffy.",
+     "chat": [
+      "1. Ask about the Wanted! Quest"
+     ]
+    },
+    {
+     "text": "Head back to Sir Amik and talk to him again.",
+     "chat": [
+      "3. Sure, I'll help you!"
+     ]
+    },
+    {
+     "text": "Report once more to Tiffy.",
+     "chat": [
+      "1. Ask about the Wanted! Quest"
+     ]
+    },
+    {
+     "text": ": If you want to pay 10k coins for the Commorb.",
+     "depth": 1,
+     "chat": [
+      "1. Buy One"
+     ]
+    },
+    {
+     "text": ": If you have the required materials to make the Commorb.",
+     "depth": 1,
+     "chat": [
+      "2. Have One Made",
+      "1. YES"
+     ]
+    },
+    {
+     "text": "Use the \"contact\" option on the Commorb.",
+     "chat": [
+      "1. Current Assignment"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Daquarius",
+   "notes": [
+    "Items required: Combat equipment, Commorb."
+   ],
+   "steps": [
+    {
+     "text": "Head over to Taverley Dungeon."
+    },
+    {
+     "text": "Follow the dungeon north, then east and then south, down to the Black Knights' Base."
+    },
+    {
+     "text": "Talk to Lord Daquarius in the south-western most room."
+    },
+    {
+     "text": "Kill a level 33 Black Knight; Daquarius will automatically speak to you once a knight is killed. You must finish this dialogue before speaking to him again!"
+    },
+    {
+     "text": "Talk to Lord Daquarius again."
+    }
+   ]
+  },
+  {
+   "title": "Mage of Zamorak",
+   "notes": [
+    "Items required: 20 unnoted rune essence or pure essence (Must all be the same type), Commorb."
+   ],
+   "steps": [
+    {
+     "text": "Talk to the Mage of Zamorak (or if Temple of the Eye is completed.) in Varrock at the Altar of Chaos.",
+     "chat": [
+      "1. Solus Dellagar"
+     ]
+    },
+    {
+     "text": "If you have not yet started the Enter the Abyss miniquest, you must first talk to him in the Wilderness north-east of Edgeville. He will then tell you to talk to him in Varrock.",
+     "depth": 1
+    },
+    {
+     "text": "Speak to him again to give him the 20 rune or pure essence.",
+     "chat": [
+      "1. Solus Dellagar"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Hunt for Solus",
+   "notes": [
+    "Items required: Commorb.",
+    "WARNING: This part of the quest can take 20-30+ minutes (depending on which locations you must scan, and teleport availability), and there is no way to \"click to continue\" through the dialogue with Savant during cut-scenes."
+   ],
+   "steps": [
+    {
+     "text": "Head to Canifis and Savant will call you. (fairy ring CKS)"
+    },
+    {
+     "text": "Use the \"scan\" option of the Commorb near the bank in Canifis to unveil Solus Dellagar."
+    },
+    {
+     "text": "Have a look at the item list in the table below to find Solus Dellagar's location. Scan with the Commorb at the location."
+    },
+    {
+     "text": "Keep tracking down Solus Dellagar by following the item clues until you get the 20 noted pure essence. There are 7 locations in total that you will visit.",
+     "depth": 1
+    },
+    {
+     "text": "Note: On the fourth scan location, Solus will ward the player off with a strong cast of Flames of Zamorak, dealing a high percentage of your current Hitpoints total. This damage will not kill you and Savant will teleport you back to Falador.",
+     "depth": 1
+    },
+    {
+     "text": "Note: On the sixth scan location, Solus will summon a level 32 Black Knight that attempts to kill the player. Be prepared for this, however it is not necessary to kill this Black Knight.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Final Battle",
+   "notes": [
+    "Items required: Combat equipment, Commorb."
+   ],
+   "steps": [
+    {
+     "text": "Head to the rune essence mine by talking to one of the teleporting mages."
+    },
+    {
+     "text": "Kill Solus."
+    },
+    {
+     "text": "Head back to Falador and talk to Sir Amik Varze in the White Knights' Castle."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

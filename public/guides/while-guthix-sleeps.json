@@ -1,0 +1,544 @@
+{
+ "id": "while-guthix-sleeps",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/While_Guthix_Sleeps%2FQuick_guide",
+ "sections": [
+  {
+   "title": "The Crux Eqal",
+   "notes": [
+    "Needed: Combat equipment to kill two assassins, and an antipoison."
+   ],
+   "steps": [
+    {
+     "text": "Speak to Ivy Sophista in Taverley, in the building where the crystal chest is found.",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Climb up the ladder to the east and speak with Thaerisk."
+    },
+    {
+     "text": "Kill the two assassins that appear. Pray Protect from Missiles. Every few attacks the assassin that attacks you will say and launch an arrow towards you; swap to Protect from Melee after the arrow lands, and then focus back on the assassin."
+    },
+    {
+     "text": "Note that there is currently a small glitch where the player may not be able to attack the second assassin, so let Thaerisk kill him off if this occurs. Thaerisk cannot die during this fight.",
+     "depth": 1
+    },
+    {
+     "text": "Finish the conversation with Thaerisk."
+    }
+   ]
+  },
+  {
+   "title": "Monitoring Movario",
+   "notes": [
+    "Needed: 500 coins or ring of Charos(a), logs, knife, 5 free inventory spaces",
+    "Recommended: A teleport back to Taverley and a Dramen Staff; Lunar staff; or completed the Lumbridge Elite Diary"
+   ],
+   "steps": [
+    {
+     "text": "Head to the Fight Arena just north of Yanille."
+    },
+    {
+     "text": "Speak to the Khazard Launderer at the laundry house, two buildings north of the Fight Arena Bar. Charm the launderer with either the ring of Charos(a) or bribe him with 500 coins for information on Movario.",
+     "chat": [
+      "1. Would 500 coins change your mind?"
+     ]
+    },
+    {
+     "text": "Head to Feldip Hills (fairy ring code AKS), and talk to the Hunting Expert. ( if you're 99 Hunter)",
+     "chat": [
+      "2. A creature to help track down a person.",
+      "3. A creature to help track down a person."
+     ]
+    },
+    {
+     "text": "Set up a pit trap to the west and bait it."
+    },
+    {
+     "text": "Dismantle the trap to receive an unconscious broav, then return to the expert to have her train it."
+    },
+    {
+     "text": "With the trained broav, head to the run-down house in the battlefield where a broken table will be found. Drop the broav (not release) and use the dirty shirt on the broav; once it *squeals*, you will be able to right-click \"Search\" on the broken table."
+    },
+    {
+     "text": "Climb-down the trapdoor to Movario's base."
+    },
+    {
+     "text": "Run north-west, and search the open chest for a number of runes."
+    },
+    {
+     "text": "Climb down the stairs."
+    },
+    {
+     "text": "Inspect the old battered door, and pay close attention to the word \"PROHIBITED\"; one of the letters is stylised after a rune, which is the rune you must use to open the door, which is different for every player."
+    },
+    {
+     "text": "Warning: Using an incorrect rune will result in the door dealing 20+ damage to you. However, if you do choose incorrectly, the spell's colour indicates the correct rune:",
+     "depth": 1
+    },
+    {
+     "text": "Upon using the correct rune, open the door. NOTE: You must be above a certain weight. If you're wearing graceful/weight-reducing items, unequip them."
+    },
+    {
+     "text": "Once inside, search the bookcases until the chatbox indicates that you hear a click as you pull a lever (or an audible click sound)."
+    },
+    {
+     "text": "From that initial bookcase, follow the floor wires that illuminate to search the subsequent bookcase, continuing to do so until the chatbox indicates the electric gate deactivating."
+    },
+    {
+     "text": "Open the gate which is no longer electrified. Right-click search the spiral staircase to disable the trap, and then climb the spiral staircase."
+    },
+    {
+     "text": "Search the desk to obtain Movario's notes (volume 1), and read through it (22 pages) (do not interact with the Treasure pile to the north west as it will deal 20+ damage to you)."
+    },
+    {
+     "text": "Pick up the waste-paper basket next to the desk, then search it for a ruby key."
+    },
+    {
+     "text": "Use the key on the north-western most bookcase in the room, against the west wall."
+    },
+    {
+     "text": "Climb the staircase and search the bed, then use the ruby key on the bed chest."
+    },
+    {
+     "text": "Search the bed chest to disable the trap, then attempt to open the bed chest. If you don't do this you will get hit for 18+ damage."
+    },
+    {
+     "text": "Search the bed chest again, then open it for Movario's notes (volume 2); read through it."
+    },
+    {
+     "text": "Head back downstairs and head to the southern side of the room and inspect the painting on the wall, pull the lever and cross over the broken wall."
+    },
+    {
+     "text": "Inside, search the drawers to obtain some notes on pressure, and read through it."
+    },
+    {
+     "text": "Check the pressure gauge, which displays a number in the unit of \"tickits\"; this value represents how much you weighed upon entering the room with the wires in the beginning."
+    },
+    {
+     "text": "Check your weight in the Equipment Stats interface, and take from the pile of weights nearby with 1kg, 2kg, and 5kg being available."
+    },
+    {
+     "text": "Pick out the weights as needed to match the pressure gauge's value. If you weigh more than the required tickit, place weights on the statue in the room by the desk. If you weigh less, pick up weights and keep it in the inventory."
+    },
+    {
+     "text": "If you weigh 11 kg, and the pressure gauge says 9 tickits. You need to pick up a 2 kg stone and place it on the stone statue. If the pressure gauge says 13 kg and you weigh 11 kg, pick up a 2 kg rock and keep it in your inventory.",
+     "depth": 1
+    },
+    {
+     "text": "Exit via the eastern door and leave the base (you will be attacked by the Elite Khazard Guards again upon exit)."
+    }
+   ]
+  },
+  {
+   "title": "Forming a fellowship",
+   "notes": [
+    "Needed: Movario's notes (volume 1), Movario's notes (volume 2), combat equipment, lantern lens, seed dibber (if Barbarian Farming is not unlocked), 20 coins",
+    "Recommended: Several teleports to Falador, a Dramen Staff, Lunar staff, or Lumbridge Elite Diary"
+   ],
+   "steps": [
+    {
+     "text": "Return to Thaerisk in Taverley with both volumes of Movario's notes."
+    },
+    {
+     "text": "Head to McGrubor's Wood (fairy ring code ALS)."
+    },
+    {
+     "text": "Head to the building by way of the loose railing to the east to view a cutscene."
+    },
+    {
+     "text": "Defeat the mercenaries and speak to Idria."
+    },
+    {
+     "text": "Head to White Knights' Castle and speak to Akrisae who is on the ground floor to the east, until you receive a teleorb from him."
+    },
+    {
+     "text": "Speak to Akrisae to receive a one-time teleport to Draynor Village.",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Use the teleorb on any shady strangers in the vicinity. One can be found just south of Diango's Toy Store."
+    },
+    {
+     "text": "After planting the teleorb, return back to White Knights' Castle and speak to Akrisae."
+    },
+    {
+     "text": "After the cutscene, finish the conversation with Thaerisk and *MAKE SURE* to obtain the snapdragon seed from him, before accepting his offer to teleport you to Port Sarim.",
+     "chat": [
+      "1. Could I have that seed?",
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Head west to Betty's Magic Emporium. Purchase a pink dye from Betty in exchange for 20 coins.",
+     "chat": [
+      "3. Could I buy some more pink dye?",
+      "1. Sounds good."
+     ]
+    },
+    {
+     "text": "Use the pink dye on the lantern lens for a rose-tinted lens."
+    },
+    {
+     "text": "Speak to Betty again.",
+     "chat": [
+      "2. Could you help me make some enriched snapdragon?"
+     ]
+    },
+    {
+     "text": "Stand in the doorway of the shop and use the lens on the counter to enrich the snapdragon seed."
+    },
+    {
+     "text": "Take-from the counter to pick up the enriched snapdragon seed."
+    },
+    {
+     "text": "Travel back to Falador and climb up the westernmost stairs of the castle all the way to the top."
+    },
+    {
+     "text": "Plant the enriched snapdragon seed at the special patch."
+    }
+   ]
+  },
+  {
+   "title": "Amassing the masters",
+   "notes": [
+    "Needed: Runes for four casts of Astral Contact (Total: 8 air runes, 4 cosmic runes, 4 astral runes), the Lunar spellbook activated",
+    "Recommended: Combat bracelet, games necklace, or Strength cape to teleport to the Warriors' Guild"
+   ],
+   "steps": [
+    {
+     "text": "Speak to Idria."
+    },
+    {
+     "text": "Cast Astral Contact and contact Turael, Mazchna, Cyrisus, and Duradel each; choose the option regarding Lucien. You can also go and visit Turael, Mazchna, and Duradel in person if necessary, though Astral Contact is needed for Cyrisus."
+    },
+    {
+     "text": "Return to the White Knights' Castle and harvest the enriched snapdragon."
+    },
+    {
+     "text": "Speak to Thaerisk and he'll give you some truth serum."
+    },
+    {
+     "text": "Use the enriched snapdragon on the serum to create the super truth serum."
+    },
+    {
+     "text": "You will now need to obtain charcoal and papyrus from the drawers just south of the jail cell."
+    },
+    {
+     "text": "Enter the jail cell and use the super truth serum on the shady stranger."
+    },
+    {
+     "text": "Once you create a suspect sketch, exit the jail cell and give it to Idria."
+    },
+    {
+     "text": "Head to the Warriors' Guild and recruit Ghommal, Harrallak Menarous, and Sloane (found north-east on the ) by asking about Lucien."
+    },
+    {
+     "text": "Ghommal and Harrallak can be found right by the guild's entrance, whilst Sloane can be found one floor above to the north-east through the heavy door.",
+     "depth": 1
+    },
+    {
+     "text": "Optional: If you do not already have a disguise to enter the Black Knights' Fortress, you can buy a bronze med helm and iron chainbody from the Warrior Guild Armoury on the while here."
+    }
+   ]
+  },
+  {
+   "title": "The Dark Squall",
+   "notes": [
+    "Needed: 9 free inventory spaces, combat equipment for two attack styles as well as standard magic (powered staves don't work), a bronze med helm and iron chainbody (or a black armour set), an unpowered orb, runes to cast a charge orb spell. For the boss fight, you'll need runes for the following spells: multiple casts of all four elemental spells, Snare/Entangle, Weaken/Enfeeble, Telekinetic Grab, and Low/High Level Alchemy; as such, you will need Air, Water, Earth, Fire, Body/Soul, Nature, Law, Cosmic and your choice of catalytic runes).",
+    "Recommended: Emergency teleport for anyone under 100 combat, Stamina Potion, and some food"
+   ],
+   "steps": [
+    {
+     "text": "Return to Akrisae at the White Knights' Castle in Falador. Watch the ensuing cutscene with Hazelmere, then finish the conversation with Akrisae and accept his offer to teleport you to Black Knights' Fortress. If you didn't accept the teleport, Mind Altar Teleport, combat bracelet teleport to the Edgeville Monastery, and Lassar Teleport are the fastest ways to get there."
+    },
+    {
+     "text": "Equip the disguise you brought (bronze med helm and iron chainbody or a black armour set) to enter the Black Knights' Fortress."
+    },
+    {
+     "text": "Push the hidden wall directly ahead and climb down the ladder."
+    },
+    {
+     "text": "Head south towards the tiled flooring, and inspect the carved tile with an orb symbol on it."
+    },
+    {
+     "text": "Cast any charged orb spell on the carved tile, and enter the trapdoor to access the Black Knight Catacombs."
+    },
+    {
+     "text": "Head immediately north to the western, broken bridge whilst praying Protect from Missiles, then jump across it."
+    },
+    {
+     "text": "Pray Protect from Melee and kill the Elite Black Knight that is accompanied by Elite Dark Warriors until you have a full set of elite black armour."
+    },
+    {
+     "text": "Wear the armour, then run to the north-east path and climb up the wall to the second level."
+    },
+    {
+     "text": "Head north and around the barricades, then run north-west until you reach two solid doors. Use the western door to unlock a shortcut back to the Black Knight Catacombs' exit."
+    },
+    {
+     "text": "Enter the northern door to the Dark Squall's inner base."
+    },
+    {
+     "text": "Search the wardrobe north of the entrance for a second set of elite black armour to give to Silif."
+    },
+    {
+     "text": "Search the wardrobe to the south of the room for the Dark Squall's robes."
+    },
+    {
+     "text": "Search the table with the lobster and restore potion to obtain the two items. If you have an additional three inventory spaces, take the strange teleorb alongside the death and law rune; otherwise, you can take them later."
+    },
+    {
+     "text": "Search the key rack in the north wall for a cell key."
+    },
+    {
+     "text": "Head back and use the long, eastern path and attempt to open the gate to Silif's cell."
+    },
+    {
+     "text": "Use the lobster (any food works) and restore potion on Silif."
+    },
+    {
+     "text": "Talk to Silif until you give him the elite black armour. You can equip the Dark Squall's robes now if needed and simply give Silif your set."
+    },
+    {
+     "text": "With Silif following you, head back to the Dark Squall's inner base."
+    },
+    {
+     "text": "Go to the Map board to the south, few steps east of the entrance and Silif will notice the map boards on the wall. Finish the conversation for a teleorb."
+    },
+    {
+     "text": "With the Dark Squall's robes equipped, climb up the ladder at the eastern side of the room. Be prepared for a boss fight. (You can prepare and re-enter the Black Knights' Fortress by wearing the Dark Squall's robes and also prevent enemy aggression)."
+    },
+    {
+     "text": "Defeat Surok with Magic (He CANNOT BE FOUGHT with other styles). He has 450 Hitpoints and is immune to powered staves, so you cannot use weapons such as the trident of the seas and warped sceptre. Pray Protect from Magic to reduce damage taken. He still does chip damage, so take some food. 10-15 karambwans and 1 prayer pot is enough. Surok follows the same attack pattern as Vorkath, performing 6 regular attacks before using one of the special attacks below for every 7th attack."
+    },
+    {
+     "text": "Henchmen: Surok will call in either a Strong Warrior or Agile Warrior to approach and bind you. The Agile Warrior must be bound via Bind and the Strong Warrior must be weakened via Weaken. Kill the warrior after using the proper counter spell. Stronger versions of each respective counter spell will also work. If the warrior reaches you, Surok will launch a spell that deals 40+ damage.",
+     "depth": 1
+    },
+    {
+     "text": "Explosive: Surok will throw an explosive orb around the player. This must be telegrabbed and then alched, or it will explode and deal 45+ damage. Picking it up will cause it to immediately explode.",
+     "depth": 1
+    },
+    {
+     "text": "Surge attack: Surok will cast 1-4 elemental surges at the player. To nullify these attacks, the player must cast a spell of the opposite element on the incoming attack (i.e. air for earth, water for fire, earth for air, and fire for water). Otherwise, they will deal significant damage (45+).",
+     "depth": 1
+    },
+    {
+     "text": "Once defeated, plant the orb on Surok."
+    },
+    {
+     "text": "Finish the conversation and return to Akrisae at White Knights' Castle."
+    },
+    {
+     "text": "Wear the Dark Squall's robes and enter the jail cell."
+    },
+    {
+     "text": "If you didn't do so earlier, take the strange teleorb alongside the death and law rune from the desks downstairs."
+    },
+    {
+     "text": "Run to the middle of the room and activate the strange teleorb whilst standing within the magic circle to teleport to Lucien's camp."
+    },
+    {
+     "text": "Run along the north-east path until you are across the Chaos Temple, then climb up the ice wall and jump to the ledge. This will not take you into the Wilderness, and your items are safe."
+    },
+    {
+     "text": "Walk towards the eastern side of the Chaos Temple's roof to view the cutscene."
+    },
+    {
+     "text": "After the cutscene, return to White Knights' Castle."
+    }
+   ]
+  },
+  {
+   "title": "Into the Chasm",
+   "notes": [
+    "Needed: Dark Squall robes, a lit sapphire lantern, sufficient prayer points to cast Bloom, Silver Sickle (obtained during quest) or Ivandis Flail to cast Bloom",
+    "Recommended: Some means of reaching the Chasm of Tears (ex. a games necklace), filled druid pouches, stamina potions, 8-10 empty inventory slots"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Idria."
+    },
+    {
+     "text": "Head to the Chasm of Tears and speak to Movario whilst wearing the Dark Squall's robes."
+    },
+    {
+     "text": "Use a lit sapphire lantern on a light creature to be transported into the chasm."
+    },
+    {
+     "text": "Search the nearby skeletal remains for the following items: a spade, a hammer, and a chisel."
+    },
+    {
+     "text": "Use the spade on the pile of rocks to uncover a brazier, then use the chisel on it to obtain a fire orb."
+    },
+    {
+     "text": "Head further west and do the same to the lone pile of rocks for an earth orb."
+    },
+    {
+     "text": "Head directly south, and use a chisel on the intact brazier there for an air orb."
+    },
+    {
+     "text": "Head east, and use a chisel on the intact brazier there for a water orb."
+    },
+    {
+     "text": "Head all the way south to reach three skull cavities."
+    },
+    {
+     "text": "Examine each recessed block and use the each of the three corresponding orbs on them for the matching elemental block. (The first three recessed blocks are found right next to the cavity entrances)"
+    },
+    {
+     "text": "Climb up the walls next to the centre skull to find the last recessed block, and use the fourth orb on it for the block."
+    },
+    {
+     "text": "Head back down and unequip items from your weapon and shield slots."
+    },
+    {
+     "text": "Enter each of the skull nose cavities and crawl to the end, using the correct elemental block on each mechanism by matching the symbols. The specific positions are individual to each player."
+    },
+    {
+     "text": "Climb back up to the fourth skull. Use the fire block on the recessed block."
+    },
+    {
+     "text": "Inspect the stone cube and enter the cave opening in the skull. Drop the tools you obtained earlier if more space is needed."
+    },
+    {
+     "text": "Make your way south to the central chamber where the stone table is found, split into multiple forked paths leading to statues."
+    },
+    {
+     "text": "Search the skeleton to receive a silver sickle (b) and six druid pouches."
+    },
+    {
+     "text": "There are 13 possible statues, with 8 being found at the end of these paths, differing between players."
+    },
+    {
+     "text": "Along the paths, use the druid pouch on the druid spirits to receive herblore ingredients that are used for a statue. These are a one-off reward, so make sure to have plenty of inventory space to pick them all up. If you run out of charges, cast Bloom while standing on the vines to get vine flowers for more charges."
+    },
+    {
+     "text": "Examine the statues and use the corresponding ingredients on them, using the table below. The druid spirits should give you the exact amount of ingredients needed. NOTE: If you are using a third-party plugin that hides ground items based on value, you might miss an ingredient!"
+    },
+    {
+     "text": "If you mess up or accidentally use the wrong working combination, teleport out to bank, teleport back to Tears of Guthix and finish the remaining statues.",
+     "depth": 1
+    },
+    {
+     "text": "Once you receive all eight dolmens, use them on the stone table to open the huge door. You may use them one at a time to free up inventory space."
+    }
+   ]
+  },
+  {
+   "title": "Balance Elemental and Lucien's demons",
+   "notes": [
+    "Needed: Combat gear for all three combat styles, lit sapphire lantern",
+    "Recommended: Some means of reaching the Chasm of Tears (ex. a games necklace), food and Super restores for the fight, Menaphite remedy"
+   ],
+   "steps": [
+    {
+     "text": "Leave the temple and prepare for the last fight battles ahead. Bank the Dark Squall's robes and bring your best gear."
+    },
+    {
+     "text": "Bring:"
+    },
+    {
+     "text": "Equipment for all 3 combat styles",
+     "depth": 1
+    },
+    {
+     "text": "3-4 super restores",
+     "depth": 1
+    },
+    {
+     "text": "1 Menaphite remedy (one dose before the fight begins and a second dose if you need more time)",
+     "depth": 1
+    },
+    {
+     "text": "10-12 combo food (sharks and karambwan are fine)",
+     "depth": 1
+    },
+    {
+     "text": "A sapphire lantern to attract a light creature to enter the chasm",
+     "depth": 1
+    },
+    {
+     "text": "An emergency teleport (not runes, as the Elemental can lower your magic to 1 if you run out of supplies)",
+     "depth": 1
+    },
+    {
+     "text": "Proceed past the huge door until you reach the Mysterious Stone."
+    },
+    {
+     "text": "Upon arriving in the room, a small cutscene will happen and the fight with the Balance Elemental will then begin. It can use a magical, stat-lowering attack after every 3-4 attacks, then proceeding to change attack styles based on the player's protection prayer."
+    },
+    {
+     "text": "Fight overview:"
+    },
+    {
+     "text": "Fiery / Orange -> attacks with Ranged",
+     "depth": 1
+    },
+    {
+     "text": "Airy / White -> attacks with Melee",
+     "depth": 1
+    },
+    {
+     "text": "Watery / Blue -> attacks with Magic",
+     "depth": 1
+    },
+    {
+     "text": "The Elemental will start praying against your attack styles at 50% of its hitpoints.",
+     "depth": 1
+    },
+    {
+     "text": "At 25% the Elemental will attack faster, harder and have double prayers up. Be sure to correctly pray against the style it uses, since it can hit high 30s on a 2-tick speed attack whilst switching attack styles as well.",
+     "depth": 1
+    },
+    {
+     "text": "Make sure you drink your restores if the Elemental reduces your stats or bring a menaphite remedy and drink it before the fight starts so it will restore your stats when weakened.",
+     "depth": 1
+    },
+    {
+     "text": "It is recommended that you use one of the pillars at 25% since you can exchange hits 1:1 and take your time to have the right prayer protection up. Or focus on prayers first, and then your switches, as you only have 1 tick to react. If the attack hits you off prayer it will drain your stats and prayer. (You are able to use the pillar the entire fight if you are a lower level/hardcore who is worried about death)",
+     "depth": 1
+    },
+    {
+     "text": "If you die while fighting the Balance Elemental, your grave will appear at the top of the chasm at Tears of Guthix."
+    },
+    {
+     "text": "Upon defeating it, search the Stone again to view a cutscene."
+    },
+    {
+     "text": "Fight the two Tormented Demons alongside the Guardians of Armadyl."
+    },
+    {
+     "text": "They are surrounded by a flame shield that reduces damage done by non-demonbane weapons/spells and non-abyssal weapons by 20%, though this should not be an issue for this fight thanks to the extremely high boost from the Stone of Jas.",
+     "depth": 1
+    },
+    {
+     "text": "They can use protection prayers, switching prayers after taking a certain amount of damage.",
+     "depth": 1
+    },
+    {
+     "text": "They can also switch attack styles based on the player's protection prayers every 16 seconds or so.",
+     "depth": 1
+    },
+    {
+     "text": "Sitting behind the south-western column and waiting for the Guardians of Armadyl to finish off the demons is viable and completely removes any combat from the encounter if you do so wish. (Very slow, but completely safe for HCIM)",
+     "depth": 1
+    },
+    {
+     "text": "Upon defeating the demons, speak to Idria and have her teleport you to White Knights' Castle."
+    },
+    {
+     "text": "Speak to Idria again to complete the quest."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

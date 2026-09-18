@@ -1,0 +1,100 @@
+{
+ "id": "dwarf-cannon",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Dwarf_Cannon%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Getting started",
+   "notes": [
+    "(Fairy ring code ALS, run east and squeeze-through the loose railing and continue west. Alternatively, use a skills necklace teleport to the Fishing Guild, run west and then north.)"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Captain Lawgof by the Coal truck mining site west of Seers' Village.",
+     "chat": [
+      "1. Yes."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Repair and retrieval",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Pick up the hammer in the house to the east if you do not have one."
+    },
+    {
+     "text": "Fix the six bent railings of the west and south sides of the fence."
+    },
+    {
+     "text": "Talk to Captain Lawgof."
+    },
+    {
+     "text": "Go to the tower south of the gate."
+    },
+    {
+     "text": "Climb up two ladders and take the Dwarf remains."
+    },
+    {
+     "text": "Talk to Captain Lawgof."
+    },
+    {
+     "text": "Run south (or teleport to the Fishing Guild) and enter the cave at the south-east corner of the Fishing Guild."
+    },
+    {
+     "text": "In the cave, go as far north-west as possible. In the north-westernmost room, search the northernmost crate by the east wall to find Lollk. You don't need to finish the conversation."
+    },
+    {
+     "text": "Talk to Captain Lawgof.",
+     "chat": [
+      "1. Okay, I'll see what I can do."
+     ]
+    },
+    {
+     "text": "Use the toolkit you got from Captain Lawgof on the broken multicannon next to him. (In this order:)"
+    },
+    {
+     "text": "Use the hook tool (right) on the spring.",
+     "depth": 1
+    },
+    {
+     "text": "Use the pliers (middle) on the safety switch at the bottom.",
+     "depth": 1
+    },
+    {
+     "text": "Use the tooth tool (left) on the gear located at the bottom of the hammer.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Captain Lawgof.",
+     "chat": [
+      "2. Okay then, just for you!"
+     ]
+    },
+    {
+     "text": "Note: This conversation must be completely finished.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Finishing up",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Go to the Dwarven Black Guard camp north-east of Falador / south of Ice Mountain / west of Barbarian village."
+    },
+    {
+     "text": "In the outpost, talk to Nulodion. He is in the house on the west side of the mining camp."
+    },
+    {
+     "text": "Return to Captain Lawgof, bring Nulodion's notes and your cannonball mould with you."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

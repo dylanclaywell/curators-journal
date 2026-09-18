@@ -1,0 +1,48 @@
+{
+ "id": "gertrudes-cat",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Gertrude's_Cat%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Pick up doogle leaves from behind Gertrude's house and use them on your raw sardine to make seasoned sardine."
+    },
+    {
+     "text": "Go to Varrock Square's newsstand and talk to either Shilop or Wilough, you need 100 coins.",
+     "chat": [
+      "2. What will make you tell me?",
+      "2. Okay then, I'll pay."
+     ]
+    },
+    {
+     "text": "Go to the Lumber Yard north-east of Varrock and climb-over the broken fence."
+    },
+    {
+     "text": "Chop down a dying tree to complete an easy Varrock Diary task.",
+     "depth": 1
+    },
+    {
+     "text": "Go up the ladder in the middle of the Lumber Yard."
+    },
+    {
+     "text": "Use a bucket of milk and a Seasoned sardine on Gertrude's cat then go back down the ladder."
+    },
+    {
+     "text": "Search the crates with a yellow \"Search crate\" option and a yellow \"Mew!\" above them until you find Fluffs' kitten. (Searching the same crate repeatedly will not work.)"
+    },
+    {
+     "text": "Go back up the ladder and use Fluffs' kitten on Gertrude's cat."
+    },
+    {
+     "text": "Return to Gertrude."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

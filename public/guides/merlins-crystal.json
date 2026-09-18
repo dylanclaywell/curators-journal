@@ -1,0 +1,162 @@
+{
+ "id": "merlins-crystal",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Merlin's_Crystal%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Getting started",
+   "notes": [
+    "Bring all required items for the quest with you."
+   ],
+   "steps": [
+    {
+     "text": "Talk to King Arthur.",
+     "chat": [
+      "1. I want to become a knight of the round table!"
+     ]
+    },
+    {
+     "text": "Talk to Sir Gawain, who can be found in the courtyard to the south or nearby in the castle.",
+     "chat": [
+      "3. Do you know how Merlin got trapped?"
+     ]
+    },
+    {
+     "text": "Talk to Sir Lancelot upstairs.",
+     "chat": [
+      "3. Any ideas on how to get into Morgan Le Faye's stronghold?"
+     ]
+    },
+    {
+     "text": "Go to Catherby."
+    },
+    {
+     "text": "If you didn't bring a bucket of wax, grab insect repellent in the house north of the bank in Catherby.",
+     "depth": 1
+    },
+    {
+     "text": "Use the insect repellent on one of the beehives to the west with an empty bucket (a bucket can be found near the beehives) in your inventory to get a bucket of wax.",
+     "depth": 1
+    },
+    {
+     "text": "Hide in the crate east of the candle maker's shop. Wait and finish the cutscene. Climb out of the crate.",
+     "chat": [
+      "1. Yes",
+      "1. Yes"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Inside the keep",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Climb to the top floor. The Renegade Knights will attack you on your way up."
+    },
+    {
+     "text": "Attack Sir Mordred. He cannot be safespotted, but he can be flinched using the stairs (position him on the square left of the stairs whilst flinching from the square north-east of him). He can also be killed with rings of recoils or by another account poisoning and attacking right before his death."
+    },
+    {
+     "text": "When Sir Mordred reaches 0 hitpoints, Morgan Le Faye will appear and ask that you spare him. Spare his life to discover how to save Merlin. Do not interrupt the dialogue or you will have to fight Sir Mordred again.",
+     "chat": [
+      "1. Tell me how to untrap Merlin and I might.",
+      "2. OK I will do all that."
+     ]
+    },
+    {
+     "text": "If you don't already have bat bones, exit the keep through the west doors and kill a bat before leaving.",
+     "depth": 1
+    },
+    {
+     "text": "Can be recoiled down after dealing a 0 and not splashing Magic.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Black candle",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to the candle-maker in Catherby.",
+     "chat": [
+      "1. Have you got any black candles?"
+     ]
+    },
+    {
+     "text": "Talk to him again for a black candle."
+    }
+   ]
+  },
+  {
+   "title": "Excalibur",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to The Lady of the Lake south-east of Taverley on the peninsula.",
+     "chat": [
+      "3. I seek the sword Excalibur."
+     ]
+    },
+    {
+     "text": "Go to Port Sarim. (Make sure you have bread in your inventory.)"
+    },
+    {
+     "text": "Enter the jewellery shop to the north."
+    },
+    {
+     "text": "Give the beggar your bread. Finish the conversation.",
+     "chat": [
+      "1. Yes certainly."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Ritual",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Go to the Zamorakian temple in the south-east corner of Varrock."
+    },
+    {
+     "text": "Check the Chaos Altar's inscription."
+    },
+    {
+     "text": "Return to Camelot with a tinderbox and enter the castle gates."
+    },
+    {
+     "text": "Go to the ritual site at the north-east corner of the Camelot castle grounds (a red star in the middle of 8 columns)."
+    },
+    {
+     "text": "Stand on the star and light the black candle."
+    },
+    {
+     "text": "Drop the bat bones on the star."
+    },
+    {
+     "text": "The magic words are \"Snarthon Candtrick Termanto\"."
+    }
+   ]
+  },
+  {
+   "title": "Finishing up",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Enter the castle and climb to the top of the south-east tower."
+    },
+    {
+     "text": "Smash the giant crystal with Excalibur. (Does not require 20 Attack, just use Excalibur on the crystal instead of attempting to wield it)"
+    },
+    {
+     "text": "Talk to King Arthur."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

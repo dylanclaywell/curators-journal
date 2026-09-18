@@ -1,0 +1,98 @@
+{
+ "id": "goblin-diplomacy",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Goblin_Diplomacy%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [
+    "Congratulations, quest complete!"
+   ],
+   "steps": [
+    {
+     "text": "Head to Goblin Village north of Falador."
+    },
+    {
+     "text": "Gather the goblin mails from crates around Goblin Village:"
+    },
+    {
+     "text": "Crate Behind the Generals' Hut to the north-east.",
+     "depth": 1
+    },
+    {
+     "text": "Crate in the hut south-west of the Generals.",
+     "depth": 1
+    },
+    {
+     "text": "Up the southernmost ladder there is a crate to the north of you.",
+     "depth": 1
+    },
+    {
+     "text": "Dye one set of goblin mail blue, another orange, and leave the third set brown."
+    },
+    {
+     "text": "Make orange dye by using red dye on yellow dye. Do not use both dyes separately on the goblin mail.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to the goblin generals and offer to pick a colour for them. ( if Dragon Slayer I is in progress).",
+     "chat": [
+      "3. Do you want me to pick an armour colour for you?",
+      "1. Start the quest?",
+      "3. What about a different colour?",
+      "2. So How is life for the goblins?",
+      "3. Do you want me to pick an armour colour for you?",
+      "3. What about a different colour?"
+     ]
+    },
+    {
+     "text": "Repeat this 2 more times until they settle on the brown armour.",
+     "chat": [
+      "1. I have some blue armour here",
+      "1. I have some brown armour here"
+     ]
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  },
+  {
+   "title": "Ironman version",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Offer to buy 2 woad leaves for 20 gp from Wyson the gardener in Falador Park."
+    },
+    {
+     "text": "Take 2 onions from the farm north of Rimmington."
+    },
+    {
+     "text": "Buy 3 redberries from Wydin's Food Store in Port Sarim (hop worlds to replenish stock). Buy 2 extra Redberries if you plan on doing The Knight's Sword."
+    },
+    {
+     "text": "Take the ingredients, along with 15 gp to Aggie in Draynor Village."
+    },
+    {
+     "text": "Use the woad leaves on her to make a blue dye.",
+     "depth": 1
+    },
+    {
+     "text": "Use the redberries on her to make a red dye.",
+     "depth": 1
+    },
+    {
+     "text": "Use the onions on her to make a yellow dye Do not eat with left-click.",
+     "depth": 1
+    },
+    {
+     "text": "Use the red dye on the yellow dye to create an orange dye.",
+     "depth": 2
+    },
+    {
+     "text": "Continue with the normal guide."
+    }
+   ]
+  }
+ ]
+}

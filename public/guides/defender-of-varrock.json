@@ -1,0 +1,171 @@
+{
+ "id": "defender-of-varrock",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Defender_of_Varrock%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Organised Zombies?",
+   "notes": [
+    "Needed: Combat equipment, 3 free inventory spaces",
+    "Recommended: Varrock Teleports"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Elias White in the Jolly Boar Inn.",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Inspect the plant outside the inn."
+    },
+    {
+     "text": "Follow the trail west, and inspect the rocks."
+    },
+    {
+     "text": "Follow the southern trail, and inspect the plant."
+    },
+    {
+     "text": "Follow the eastern trail, and inspect the spiny bush to get a grubby key."
+    },
+    {
+     "text": "Follow the eastern trail through the gate, and inspect the green bush."
+    },
+    {
+     "text": "Follow the eastern trail, and inspect the small bush."
+    },
+    {
+     "text": "Follow the northern trail, and run past the end to find a trapdoor."
+    },
+    {
+     "text": "Upon entering the dungeon, finish the dialogue with Elias.",
+     "chat": [
+      "1. Let's do it."
+     ]
+    },
+    {
+     "text": "Run north a little bit to the end, then look east over the balcony."
+    },
+    {
+     "text": "After the cutscene, run west and pick up three bottles."
+    },
+    {
+     "text": "Kill three armoured zombies and use a bottle on the red mist they leave behind."
+    },
+    {
+     "text": "After getting three bottles of red mist, open the west door to find Arrav."
+    },
+    {
+     "text": "Once Arrav leaves, head further north through the corridor."
+    },
+    {
+     "text": "Kill three additional armoured zombies and use a bottle on the red mist they leave behind. (Be sure to stop here if you're planning to kill zombies in the quest instance, going further will end the instance and put you with other players)"
+    },
+    {
+     "text": "Open the east door. Run further east a little bit to the end, then look south over the balcony."
+    },
+    {
+     "text": "After the cutscene, leave the dungeon."
+    }
+   ]
+  },
+  {
+   "title": "The Sacred Forge",
+   "notes": [
+    "Needed: Barronite deposit and chaos core or a pickaxe and combat equipment",
+    "Recommended: Mind Altar Teleport, Varrock Teleports"
+   ],
+   "steps": [
+    {
+     "text": "Speak to Elias at Varrock Palace and report your findings."
+    },
+    {
+     "text": "After finishing speaking to Captain Rovin, head to the Ruins of Camdozaal"
+    },
+    {
+     "text": "Speak to Ramarno at the Sacred Forge and ask him about a shield. or or depending on previous quests (If he is not at the Forge, you need to speak to him at the big door shortly after you enter the ruins).",
+     "chat": [
+      "2. I need your help with a shield.",
+      "3. I need your help with a shield.",
+      "4. I need your help with a shield."
+     ]
+    },
+    {
+     "text": "Use a chaos core on a barronite deposit"
+    },
+    {
+     "text": "Chaos cores are dropped by Chaos Golems in the south-eastern end in the ruins, at a rate of 2/15.",
+     "depth": 1
+    },
+    {
+     "text": "Barronite deposits have a 24% chance of being obtained whilst mining barronite rocks at the Camdozaal Mines, just west of the Sacred Forge; a bronze pickaxe can be obtained from a nearby barrel.",
+     "depth": 1
+    },
+    {
+     "text": "Use the imbued barronite on the Sacred Forge."
+    }
+   ]
+  },
+  {
+   "title": "The True Descendant",
+   "notes": [
+    "Needed: None",
+    "Recommended: Stamina or super energy potions",
+    "Congratulations, quest complete!"
+   ],
+   "steps": [
+    {
+     "text": "Head to the Varrock Palace."
+    },
+    {
+     "text": "Speak to Captain Rovin two flights up the north-western staircase to receive the Shield of Arrav."
+    },
+    {
+     "text": "Head to the Varrock Palace library and speak to Reldo."
+    },
+    {
+     "text": "Search the scrolls by the flipped table in the north-east corner to obtain the list of elders."
+    },
+    {
+     "text": "Read the List of elders and the Varrock Census west of the scrolls in the library."
+    },
+    {
+     "text": "Speak to the following NPCs until one of them mentions the Fitzharmon family (Make sure to finish the dialogue or it will not register.):"
+    },
+    {
+     "text": "Aeonisig Raispher - Varrock Palace, throne room",
+     "depth": 1
+    },
+    {
+     "text": "King Roald - Varrock Palace, throne room",
+     "depth": 1
+    },
+    {
+     "text": "Sir Prysin - Varrock Palace, south-west",
+     "depth": 1
+    },
+    {
+     "text": "Romeo - Varrock Square",
+     "depth": 1
+    },
+    {
+     "text": "Horvik - In his Armour Shop",
+     "depth": 1
+    },
+    {
+     "text": "Curator Haig Halen - Varrock Museum",
+     "depth": 1
+    },
+    {
+     "text": "Head to south-east Varrock (you can use the Rat Pits (Varrock) minigame teleport), inside the gated area, and speak to Dimintheis.",
+     "chat": [
+      "2. I need your help with the zombie invasion."
+     ]
+    },
+    {
+     "text": "Watch the cutscene and finish the dialogue with Captain Rovin."
+    }
+   ]
+  }
+ ]
+}

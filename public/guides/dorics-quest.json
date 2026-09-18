@@ -1,0 +1,46 @@
+{
+ "id": "dorics-quest",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Doric's_Quest%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Obtain 2 iron ores, 4 copper ores, and 6 clay un-noted from either of the following methods:"
+    },
+    {
+     "text": "Buy from the Grand Exchange",
+     "depth": 1
+    },
+    {
+     "text": "Head to the Dwarven Mine on the south side of the Ice mountain (east from the quest start) with a pickaxe (Doric will give you a bronze pickaxe at the start of the quest):",
+     "depth": 1
+    },
+    {
+     "text": "2 iron ores and 4 copper ores can be mined at a spot just south-east of the ladder down into the mine.",
+     "depth": 2
+    },
+    {
+     "text": "6 clay can be mined south of the iron and copper, near the Agility shortcut.",
+     "depth": 2
+    },
+    {
+     "text": "Players with very low combat levels should be wary of the aggressive Scorpions and King Scorpions. Bring food if required.",
+     "depth": 2
+    },
+    {
+     "text": "Talk to Doric with the un-noted items in your inventory.",
+     "chat": [
+      "1. I wanted to use your anvils.",
+      "1. Yes, I will get you the materials."
+     ]
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

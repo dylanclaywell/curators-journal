@@ -1,0 +1,162 @@
+{
+ "id": "clock-tower",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Clock_Tower%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting out",
+   "notes": [
+    "Note: When placing the cogs on each respective spindle, merely move your camera so as to be able to see the ends of each spindle. Each spindle has a colour on the end. When ready to place each cog on its respective spindle, all you have to do is look at the ends of the spindles, find the spindle which matches the colour of the cog in your inventory, and use the cog on the corresponding spindle. Players cannot carry more than one cog at a time, regardless of colour."
+   ],
+   "steps": [
+    {
+     "text": "To start, talk to Brother Kojo at the Clock Tower. Note: if he gives you a Watch speak to him again",
+     "chat": [
+      "1. OK old monk, what can I do?"
+     ]
+    },
+    {
+     "text": "Go down the ladder in the middle room."
+    },
+    {
+     "text": "Follow the path to a hub with four doors."
+    }
+   ]
+  },
+  {
+   "title": "Obtaining the red cog",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Head through the south-eastern door."
+    },
+    {
+     "text": "Walk down the passageway until you see some Ogres."
+    },
+    {
+     "text": "Pick up the red cog."
+    },
+    {
+     "text": "Head back to the ladder."
+    },
+    {
+     "text": "Climb up to the and use the red cog on the red spindle (located on the column beside the ladder, facing north)."
+    }
+   ]
+  },
+  {
+   "title": "Obtaining the blue cog",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Go outside of the Clock Tower and head east to where Brother Cedric is (South of Ardougne zoo)."
+    },
+    {
+     "text": "If you did not bring a bucket of water or ice gloves for the next section, take the bucket nearby and use it on the nearby well.",
+     "depth": 1
+    },
+    {
+     "text": "Go down the ladder east of Brother Cedric."
+    },
+    {
+     "text": "Follow the tunnel to the end."
+    },
+    {
+     "text": "Push the wall to get inside and pick up the blue cog."
+    },
+    {
+     "text": "Climb up the ladder."
+    },
+    {
+     "text": "Head to the centre room of the Clocktower and climb the staircase to the."
+    },
+    {
+     "text": "Use the blue cog with the blue spindle (the spindle on the south side of the column)."
+    }
+   ]
+  },
+  {
+   "title": "Obtaining the black cog",
+   "notes": [
+    "Needed: Ice Gloves or Bucket of water."
+   ],
+   "steps": [
+    {
+     "text": "Head back to the basement and go through the north-eastern door"
+    },
+    {
+     "text": "Go as far east as you can, to the fire.",
+     "depth": 1
+    },
+    {
+     "text": "Use the bucket of water with the cog or simply wear your ice gloves to pick up the cog. Make sure to finish the dialogue or you will not pick up the cog."
+    },
+    {
+     "text": "Head back to the ladder. (Do not climb up the ladder)"
+    },
+    {
+     "text": "Use the black cog with the black spindle. (In the basement of the Clock Tower on the east side of the column)."
+    }
+   ]
+  },
+  {
+   "title": "Obtaining the white cog",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Head through the north-western door."
+    },
+    {
+     "text": "Pick up the rat poison to the north-west."
+    },
+    {
+     "text": "Take an extra for Ratcatchers if not already completed.",
+     "depth": 1
+    },
+    {
+     "text": "Head to the end of the tunnel"
+    },
+    {
+     "text": "On the north wall of the dungeon rat cage are two levers.",
+     "depth": 1
+    },
+    {
+     "text": "Pull the levers up to open the rat cage."
+    },
+    {
+     "text": "Use the rat poison with the food trough."
+    },
+    {
+     "text": "Wait until all the rats have died."
+    },
+    {
+     "text": "Head through the western gate."
+    },
+    {
+     "text": "Pick up the white cog."
+    },
+    {
+     "text": "Climb-up the ladder."
+    },
+    {
+     "text": "Head inside to the top floor."
+    },
+    {
+     "text": "Use the white cog with the white spindle at the top of the clocktower (the spindle on the west side of the column)."
+    }
+   ]
+  },
+  {
+   "title": "Finishing off",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Head back down and talk to Brother Kojo for your reward."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

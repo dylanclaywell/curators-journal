@@ -1,0 +1,87 @@
+{
+ "id": "recipe-for-disaster-freeing-skrach-uglogwee",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Recipe_for_Disaster%2FFreeing_Skrach_Uglogwee%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [
+    "Items required: Any log, Any axe, any pickaxe, 1+ raw chompy, an iron spit, logs, a tinderbox, ogre bellows, a ball of wool (Bring 2-3 just in case), and an ogre bow with ogre arrows. (20 Firemaking required) Completion of Big Chompy Bird Hunting."
+   ],
+   "steps": [
+    {
+     "text": "Inspect Skrach Uglogwee.",
+     "chat": [
+      "1. Yes, I'm sure I can get some Jubbly Chompy.",
+      "2. Oh Ok then, I guess I'll talk to Rantz."
+     ]
+    },
+    {
+     "text": "Talk to Rantz. (You can use the fairy ring code AKS and run east)",
+     "chat": [
+      "2. I'm trying to free Skrach, can you help?",
+      "3. Ok, I'll do it."
+     ]
+    },
+    {
+     "text": "Go South-East to the transportation icon on the minimap and talk to Rantz by the coast.",
+     "chat": [
+      "2. Ok, here I am...I guess this is the watery place? What now?"
+     ]
+    },
+    {
+     "text": "Use your woodcutting axe on the fallen tree twice."
+    },
+    {
+     "text": "Talk to him again.",
+     "chat": [
+      "2. Ok, the boat's ready, now tell me how to get a Jubbly?"
+     ]
+    },
+    {
+     "text": "Collect a raw chompy the same way you did in Big Chompy Bird Hunting, except this time drop the inflated toad to the west as Rantz doesn't want you hunting on his turf. If you have a low cooking level, collect several."
+    },
+    {
+     "text": "Go to Karamja and find the tree with an arrow in it (by transportation icon west of Tai Bwo Wannai)."
+    },
+    {
+     "text": "You can use the fairy ring code CKR and run north along the coast to the west to find it, or teleport to the Brimhaven house portal and run south. It's just west of the Tai Bwo Wannai Trio quest icon on the world map.",
+     "depth": 1
+    },
+    {
+     "text": "Light a fire next to the tree, use your iron spit on a raw chompy, then cook it."
+    },
+    {
+     "text": "Board the ogre boat."
+    },
+    {
+     "text": "Talk to Rantz south-east near the coast.",
+     "chat": [
+      "2. Ok, now tell me how to get Jubbly!"
+     ]
+    },
+    {
+     "text": "Collect several bloated toads from the nearby swamp (in case you fail). Refill ogre bellows."
+    },
+    {
+     "text": "Mine several rocks from the Pile of Rock east of Rantz' cave."
+    },
+    {
+     "text": "Use the ogre bellows on the bloated toad for a balloon toad."
+    },
+    {
+     "text": "Drop the balloon toad and kill the Jubbly with ogre arrows."
+    },
+    {
+     "text": "Cook the Jubbly on Rantz's spit-roast. If you burn the Jubbly, repeat the process."
+    },
+    {
+     "text": "Give the Cooked jubbly to Skrach Uglogwee in Lumbridge."
+    },
+    {
+     "text": "Congratulations, section complete!"
+    }
+   ]
+  }
+ ]
+}

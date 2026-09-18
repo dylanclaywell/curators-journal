@@ -1,0 +1,242 @@
+{
+ "id": "in-aid-of-the-myreque",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/In_Aid_of_the_Myreque%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting out",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Climb down the trapdoor behind the Canifis pub."
+    },
+    {
+     "text": "Search the wall and enter the cave entrance just south-east."
+    },
+    {
+     "text": "Talk to Veliaf Hurtz.",
+     "chat": [
+      "1. I want to join your organisation."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Patching up Burgh De Rott",
+   "notes": [
+    "Needed: At least 1 piece of food you don't mind losing (5 pieces is recommended if running past ghasts without a druid pouch), a pickaxe, a spade, 1-5 buckets, a hammer, 44 nails, 11 planks, 1 swamp paste, 3 tinderboxes, 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked).If Shades of Mort'ton has been completed, a hammer, planks, and swamp paste can be purchased from Razmire Builders Merchants in Mort'ton and the tinderboxes, axes, and mackerels/snails can be brought noted then sold to Razmire General Store to unnote them. If using this trick make sure you bring extra gold for the buy back process and to do it fast as the quantities deteriorate if you do not. You cannot use the general store trick as an ironman.",
+    "Recommended: Mort'ton teleport or fairy ring BIP",
+    "You now have access to the Burgh de Rott bank."
+   ],
+   "steps": [
+    {
+     "text": "Talk to Florin through the gate to Burgh de Rott."
+    },
+    {
+     "text": "Put a piece of food into the open chest, then open the gate."
+    },
+    {
+     "text": "Talk to Razvan near the pub.",
+     "chat": [
+      "4. Are there any 'out of the way' places in here?"
+     ]
+    },
+    {
+     "text": "Enter the pub, climb over the broken wall, then use your pickaxe on the rubble blocking the trapdoor."
+    },
+    {
+     "text": "Climb down and mine the rest of the rubble. Anything you drop in the basement will be lost upon leaving."
+    },
+    {
+     "text": "Use your spade on the remnants to fill the buckets. There is enough here to fill five buckets."
+    },
+    {
+     "text": "Upon mining the rubble, you will find a plaster fragment and a dusty scroll.",
+     "depth": 1
+    },
+    {
+     "text": "The items dug up can be safely dropped, unless you need the nails.",
+     "depth": 1
+    },
+    {
+     "text": "When finished, use the buckets of rubble on the rubble pile outside the pub."
+    },
+    {
+     "text": "Talk to Razvan again.",
+     "chat": [
+      "3. I'd like to help fix up the town."
+     ]
+    },
+    {
+     "text": "Talk to Aurel in the general store to the north-east.",
+     "chat": [
+      "3. I'd like to help fix up the town."
+     ]
+    },
+    {
+     "text": "Climb up the ladder right outside."
+    },
+    {
+     "text": "Use 3 planks and 12 nails on the broken roof of the store."
+    },
+    {
+     "text": "Climb back down and Use 3 planks and 12 nails on the damaged wall of the general store."
+    },
+    {
+     "text": "Talk to Aurel again to get a crate.",
+     "chat": [
+      "3. What should I do now?"
+     ]
+    },
+    {
+     "text": "Tip: If you are asked for items you aren't satisfied with before receiving the crate, you can disrupt the dialogue by walking away to re-roll the requested items.",
+     "depth": 1
+    },
+    {
+     "text": "If you weren't able to bring all of the items, head to a bank now to get the remaining items for this section.",
+     "depth": 1
+    },
+    {
+     "text": "Add 10 bronze axes, 10 raw mackerels or 10 snails (depending on what is asked), and 3 tinderboxes to the crate."
+    },
+    {
+     "text": "Talk to Aurel."
+    },
+    {
+     "text": "Talk to Cornelius in the bank.",
+     "chat": [
+      "4. What should I do now?"
+     ]
+    },
+    {
+     "text": "Use a hammer with 2 planks, 1 swamp paste, and 8 nails on the broken bank booth"
+    },
+    {
+     "text": "Use a hammer with 3 planks and 12 nails on the damaged wall outside."
+    },
+    {
+     "text": "Talk to Cornelius to recruit him."
+    }
+   ]
+  },
+  {
+   "title": "Defending the village",
+   "notes": [
+    "Needed: Hammer, tinderbox, 2 steel bars, 1 coal, Efaritay's aid or a silver weaponry such as a silver sickle (b), and some food for lower-levelled players."
+   ],
+   "steps": [
+    {
+     "text": "Talk to Razvan.",
+     "chat": [
+      "4. What should I do now?"
+     ]
+    },
+    {
+     "text": "Repair the furnace to the south-east. Use your steel bars, then coal, then tinderbox on the furnace."
+    },
+    {
+     "text": "Talk to Gadderanks in the general store."
+    },
+    {
+     "text": "Talk to the Vampyre Juvinate in the store."
+    },
+    {
+     "text": "Talk to Wiskit."
+    },
+    {
+     "text": "Kill the two juvinates and then Gadderanks (you'll need a silver weapon or Wolfbane dagger or Efaritay's aid to damage them)."
+    },
+    {
+     "text": "Talk to Gadderanks."
+    },
+    {
+     "text": "Talk to Veliaf Hurtz."
+    }
+   ]
+  },
+  {
+   "title": "Transporting Ivan",
+   "notes": [
+    "Needed: Combat equipment, including silver weaponry or Efaritay's aid to defeat 2 level 75 or 4 level 50 Vampyre Juvinates. Deposit any followers you have into your bank as Ivan Strom will refuse to leave if you have one, even in your inventory.",
+    "Recommended: To give to Ivan Strom: Steel med helm, Steel chainbody, Steel platelegs, Silver sickle, 15 pieces of cooked food (snail, salmon, slimy eel, or stew)"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Veliaf Hurtz in the hideout where the quest started. (The room under the Canifis pub)"
+    },
+    {
+     "text": "Talk to Polmafi Ferdygris."
+    },
+    {
+     "text": "Highly Recommended: Give Ivan Strom some food (he only takes snail, salmon, slimy eel, or stew) and steel armour (he only takes a steel med helm, steel chainbody, and steel platelegs) before leaving.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Ivan Strom to go on a simplified version of Temple Trekking and take either the short or long route. (you can't bring a pet - it must be banked!)"
+    },
+    {
+     "text": "Route 1 features two level 75 Vampyre Juvinates, whereas route 2 features 4 level 50 Juvinates.",
+     "depth": 1
+    },
+    {
+     "text": "Kill the Vampyre Juvinates before they can kill Ivan Strom."
+    },
+    {
+     "text": "Tip: Alternate your attacks between them so they stay focused on you. Also, it may be possible to talk to Ivan to prevent the vampyre from attacking him",
+     "depth": 1
+    },
+    {
+     "text": "After you're done escorting Ivan, talk to Drezel in the underground temple for a key.",
+     "chat": [
+      "1. Veliaf told me about Ivandis.",
+      "4. Is there somewhere that I might get more information about Ivandis?",
+      "3. The lives of those pitiful few left in Morytania could rest on this!"
+     ]
+    },
+    {
+     "text": "Use the key on the keyhole on the eastern wall and climb down the trapdoor."
+    },
+    {
+     "text": "Search the bookcases in the hidden room until you find The sleeping seven (The title of the book at the top when reading it is \"The Sleeping Seven\"). Read it."
+    }
+   ]
+  },
+  {
+   "title": "The rod of Ivandis",
+   "notes": [
+    "Needed: Hammer, soft clay, mithril bar, silver bar, a water rune or staff, a cosmic rune, a cut sapphire, and a rope.",
+    "Recommended: Teleports to a furnace and back to Burgh de Rott"
+   ],
+   "steps": [
+    {
+     "text": "Return to the room under the Canifis pub, then go to the blockaded cave entrance just south-east of the wall."
+    },
+    {
+     "text": "Use a hammer on the wooden boards and enter the cave."
+    },
+    {
+     "text": "Use your soft clay on the coffin to make a rod mould."
+    },
+    {
+     "text": "Go to any furnace with your mould, a silver bar, a mithril bar and a sapphire, and craft a silvthrill rod. (Fairy ring DKR for Edgeville Furnace.)"
+    },
+    {
+     "text": "Cast Lvl-1 Enchant on the rod."
+    },
+    {
+     "text": "Use the rod on the well underneath the Paterdomus Temple (where Drezel was) with a rope in your inventory. (Nearest fairy ring CKS)"
+    },
+    {
+     "text": "Return to the Burgh de Rott pub basement with the Rod of Ivandis (it must be in your inventory, not equipped), then speak to Veliaf.",
+     "chat": [
+      "1. I have brought you the Rod of Ivandis!",
+      "1. Yes, I've come to give the Rod of Ivandis to you!"
+     ]
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

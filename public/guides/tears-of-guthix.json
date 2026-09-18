@@ -1,0 +1,50 @@
+{
+ "id": "tears-of-guthix",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Tears_of_Guthix%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Getting started",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Note: If you've already completed The Lost Tribe, you can get to Juna via the Lumbridge Castle cave. This negates the need for the Spiny helmet or Slayer helmet. Having a lit Sapphire lantern with oil saves time as well."
+    },
+    {
+     "text": "Simply squeeze through the hole, run south past Kazgar, use your pickaxe on the hole to clear it and climb through. Run straight south and jump across the stepping stones. Enter the south tunnel.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Juna in the Lumbridge Swamp Caves.",
+     "chat": [
+      "1. Okay..."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The Bowl of Stone",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Use a cut Sapphire on a Bullseye lantern frame."
+    },
+    {
+     "text": "Light the Sapphire lantern with a tinderbox."
+    },
+    {
+     "text": "Climb back up the rock to the north and then use the lantern on one of the Light creatures above the chasm."
+    },
+    {
+     "text": "Mine a rock, use a chisel on it and climb down the rocks to the east."
+    },
+    {
+     "text": "Talk to Juna."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

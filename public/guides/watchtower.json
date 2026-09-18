@@ -1,0 +1,371 @@
+{
+ "id": "watchtower",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Watchtower%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting out",
+   "notes": [
+    "Needed: 1 inventory space. Either bat bones or a slash weapon or a knife."
+   ],
+   "steps": [
+    {
+     "text": "Enter the top floor of the Watchtower."
+    },
+    {
+     "text": "It is possible to use another player's Watchtower portal to get here. Use World 330 (House Party) to find a host, look for the \"Yanille portal\".",
+     "depth": 1
+    },
+    {
+     "text": "Otherwise, use the Nightmare Zone Minigame Teleport or use fairy ring CIQ. Climb the trellis outside the Watchtower and climb up the ladder to the second floor.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to the Watchtower Wizard.",
+     "chat": [
+      "1. What's the matter?",
+      "1. So how come the spell doesn't work?",
+      "1. Can I be of help?"
+     ]
+    },
+    {
+     "text": "Climb down 2 ladders and search the far north-west bush to find fingernails."
+    },
+    {
+     "text": "Kill a giant bat in the Yanille dungeon for bat bones if needed.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to the Watchtower Wizard.",
+     "chat": [
+      "1. What do you suggest I do?",
+      "1. So what do I do?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Getting the relic pieces and the first crystal",
+   "notes": [
+    "Needed: 2 ropes, dragon bones, combat equipment to defeat a level 68 enemy and 3 empty inventory space. (Ironmen: dragon bones can be obtained by defeating Elvarg in the Nightmare Zone after Dragon Slayer I.)"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Og north-west of Yanille to receive Toban's key.",
+     "chat": [
+      "1. I seek entrance to the city of ogres."
+     ]
+    },
+    {
+     "text": "Fairy ring CIQ and head west.",
+     "depth": 1
+    },
+    {
+     "text": "If you use a ring of dueling, teleport to Castle Wars and head south past the bridges and then north-east until you find a tribe of ogres.",
+     "depth": 1
+    },
+    {
+     "text": "Head south and get onto the island by using a rope with the branch (not the tree) of the long-branched tree that is west of the island."
+    },
+    {
+     "text": "Talk to Grew.",
+     "chat": [
+      "1. Don't eat me; I can help you."
+     ]
+    },
+    {
+     "text": "Enter the hole south of Gu'Tanoth (the \"Tunnel to Toban\" on map above, dungeon icon south of Jiggig, and north-west of some ruins)."
+    },
+    {
+     "text": "To get there, use a Feldip Hills teleport and run north, use fairy ring AKS or use a ring of dueling teleport to Castle Wars and run south past Jiggig.",
+     "depth": 1
+    },
+    {
+     "text": "Pick up the death rune south of the hole if needed.",
+     "depth": 1
+    },
+    {
+     "text": "Kill Gorad and take his tooth (be sure to have room in your inventory or you won't receive the tooth)."
+    },
+    {
+     "text": "Talk to Toban.",
+     "chat": [
+      "1. I seek entrance to the city of ogres.",
+      "1. I could do something for you..."
+     ]
+    },
+    {
+     "text": "Talk to Toban again with dragon bones in your inventory to receive Relic part 3."
+    },
+    {
+     "text": "Search the chest and take Toban's stolen gold."
+    },
+    {
+     "text": "Take the rope if you need a second one.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Grew back on the Jangerberry island."
+    },
+    {
+     "text": "Take some jangerberries if needed.",
+     "depth": 1
+    },
+    {
+     "text": "Go back and talk to Og."
+    },
+    {
+     "text": "Talk to the Watchtower Wizard, who will put the three relics together and give you an ogre relic."
+    },
+    {
+     "text": "Take the lit candle if a light source is needed.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "The Skavids and the second crystal",
+   "notes": [
+    "Needed: Ogre relic, a gold bar, 20 coins, vial, pestle & mortar (27 coins if buying the vial and pestle & mortar), death rune, light source (depending on your light source you may need a tinderbox as well), 3 empty inventory spaces."
+   ],
+   "steps": [
+    {
+     "text": "Enter Gu'Tanoth via the path on the north-east corner of the hills, then head west towards the gate. Enter by talking to the Ogre Guard with the ogre relic in your inventory."
+    },
+    {
+     "text": "Go south-east to the market in the central area and steal a rock cake from the counter on the southern side."
+    },
+    {
+     "text": "If you need a pestle and mortar and a vial, buy them from the Ogre merchant before stealing the rock cake.",
+     "depth": 1
+    },
+    {
+     "text": "Go back to the upper walkway, then head around south until you encounter guards at a battlement. Climb the battlement.",
+     "chat": [
+      "1. But I am a friend to ogres..."
+     ]
+    },
+    {
+     "text": "Talk to the guard again with the rock cake in your inventory."
+    },
+    {
+     "text": "Head north-east and attempt to jump the bridge, then agree to give the guards 20 coins.",
+     "chat": [
+      "1. Okay, I'll pay it."
+     ]
+    },
+    {
+     "text": "Talk to a City guard.",
+     "chat": [
+      "2. I seek passage into the skavid caves."
+     ]
+    },
+    {
+     "text": "Talk to a City guard again with a death rune in your inventory to receive a skavid map."
+    },
+    {
+     "text": "Return back across the bridges, over the battlement, and through the north-west gate where you entered the city."
+    },
+    {
+     "text": "Walk east, then turn south towards the second city gate."
+    },
+    {
+     "text": "Enter the Skavid caves just north of the gate."
+    },
+    {
+     "text": "Speak with the scared skavid.",
+     "chat": [
+      "2. Okay, okay, I'm not going to hurt you."
+     ]
+    },
+    {
+     "text": "Exit the cave, and speak with each regular Skavid inside the following 4 caves:"
+    },
+    {
+     "text": "East of Gu'Tanoth outside the city around the east side of the mountain.",
+     "depth": 1
+    },
+    {
+     "text": "North-east of Gu'Tanoth along the main entrance path.",
+     "depth": 1
+    },
+    {
+     "text": "North of Gu'Tanoth and south of the cluster of trees.",
+     "depth": 1
+    },
+    {
+     "text": "North of Gu'Tanoth south of the west gate to Yanille. Grab one nightshade, which will complete an Ardougne Medium task.",
+     "depth": 1
+    },
+    {
+     "text": "The following responses should work. The first part is what the Skavid says. You must respond with the second part:"
+    },
+    {
+     "text": "Tanath gor...Nod",
+     "depth": 1
+    },
+    {
+     "text": "Bidith tanath...Cur",
+     "depth": 1
+    },
+    {
+     "text": "Gor cur...Ar",
+     "depth": 1
+    },
+    {
+     "text": "Cur bidith...Ig",
+     "depth": 1
+    },
+    {
+     "text": "Exit the cave and go south to the Eastern City gate. Click on the gate to give a gold bar to the guard and gain access to the gate."
+    },
+    {
+     "text": "Continue past the gate and across the bridge into the cave. Speak to the Mad Skavid, who will say one of these options. Repeat with the second part again."
+    },
+    {
+     "text": "Ar cur...Gor",
+     "depth": 1
+    },
+    {
+     "text": "Bidith ig...Cur",
+     "depth": 1
+    },
+    {
+     "text": "Gor nod...Tanath",
+     "depth": 1
+    },
+    {
+     "text": "Cur tanath...Bidith",
+     "depth": 1
+    },
+    {
+     "text": "Bidith tanath...Cur",
+     "depth": 1
+    },
+    {
+     "text": "Tanath gor...Nod",
+     "depth": 1
+    },
+    {
+     "text": "Cur bidith...Ig",
+     "depth": 1
+    },
+    {
+     "text": "Gor cur...Ar",
+     "depth": 1
+    },
+    {
+     "text": "Take another cave nightshade. Make sure you have two of them. You can hop worlds for the second one."
+    },
+    {
+     "text": "Leave the way you came in (do not climb down the hole)."
+    },
+    {
+     "text": "Return to the Gu'Tanoth market."
+    },
+    {
+     "text": "Use one nightshade on one of the Enclave guards (be sure to complete the dialogue)."
+    },
+    {
+     "text": "Enter the cave and watch the cutscene."
+    },
+    {
+     "text": "Teleport out or run north to the exit."
+    }
+   ]
+  },
+  {
+   "title": "The magic ogre potion",
+   "notes": [
+    "Needed: guam potion (unf), jangerberries, bat bones, and a pestle and mortar."
+   ],
+   "steps": [
+    {
+     "text": "Go back to the Watchtower wizard and talk to him."
+    },
+    {
+     "text": "If needed, fill a vial with water at the fountain in front of the watchtower.",
+     "depth": 1
+    },
+    {
+     "text": "To create a vial of water add in the following order (do not use the ground bat bones first or the water will evaporate and you will need more bones):"
+    },
+    {
+     "text": "Guam leaf – to make a guam potion (unf)",
+     "depth": 1
+    },
+    {
+     "text": "Jangerberries (make sure to use, not eat)",
+     "depth": 1
+    },
+    {
+     "text": "Ground bat bones (make sure to use, not bury)",
+     "depth": 1
+    },
+    {
+     "text": "Use pestle and mortar on the bat bones now if you haven't already",
+     "depth": 2
+    },
+    {
+     "text": "Talk to the Watchtower wizard again, with the unfinished potion in your inventory."
+    }
+   ]
+  },
+  {
+   "title": "Getting the other crystals",
+   "notes": [
+    "Needed: Magic ogre potion, an anti-dragon shield, Cave nightshade, a pickaxe, and combat equipment."
+   ],
+   "steps": [
+    {
+     "text": "Prepare to defend yourself against the various ogres and a blue dragon in the Ogre Enclave. Don't forget your anti-dragon shield."
+    },
+    {
+     "text": "Return to the market square of Gu'Tanoth."
+    },
+    {
+     "text": "Use your nightshade on an Enclave guard to enter the cave again."
+    },
+    {
+     "text": "Use the magic ogre potion on all 6 ogre shamans to get the 3rd crystal."
+    },
+    {
+     "text": "The pouring animation is a stall, activate protection from melee before using the potion to avoid taking stacked hits from the demons and dragons in the area.",
+     "depth": 1
+    },
+    {
+     "text": "You could aggro a skeleton or a spider to avoid taking hits from a dragon while using the potion.",
+     "depth": 1
+    },
+    {
+     "text": "Right-click mine the Rock of Dalgroth in the centre of the Enclave for the 4th crystal."
+    },
+    {
+     "text": "Talk to the Watchtower wizard and return the crystals. (Leave the room and return if crystals remain on pillars before you have placed them.)"
+    },
+    {
+     "text": "NE: Magenta",
+     "depth": 1
+    },
+    {
+     "text": "SE: Grey",
+     "depth": 1
+    },
+    {
+     "text": "SW: Yellow",
+     "depth": 1
+    },
+    {
+     "text": "NW: Cyan",
+     "depth": 1
+    },
+    {
+     "text": "Pull the lever to the west."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

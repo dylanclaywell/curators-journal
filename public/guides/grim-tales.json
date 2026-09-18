@@ -1,0 +1,158 @@
+{
+ "id": "grim-tales",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Grim_Tales%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Griffin's feather",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Sylas by the POH portal in Taverley."
+    },
+    {
+     "text": "Talk to Grimgnash the griffin on the NE side of White Wolf Mountain (see map).",
+     "chat": [
+      "1. I heard you were a great and mighty Griffin!",
+      "1. There once was a graveyard filled with undead.",
+      "2. There lived a skeleton named Skullrot.",
+      "4. Skullrot was insane!",
+      "4. Skullrot hungrily grabbed the gnome's hair.",
+      "3. Started to strangle the poor gnome.",
+      "1. He saw a hole he could just fit through."
+     ]
+    },
+    {
+     "text": "Steal a feather from next to his nest."
+    },
+    {
+     "text": "Return to Sylas and give him the feather.",
+     "chat": [
+      "3. I should be off, I think."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Rupert's helmet",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Go to the stone tower south of the Mind Altar."
+    },
+    {
+     "text": "Climb over the crumbling wall on the East side (58 Thieving)"
+    },
+    {
+     "text": "Talk-into to the drain pipe. Then talk into it again",
+     "chat": [
+      "2. I think I might have an idea!",
+      "2. I could try and climb up.",
+      "2. Is there anything up there that can help?"
+     ]
+    },
+    {
+     "text": "Climb the beard and talk to Rupert the Beard. (59 Agility)"
+    },
+    {
+     "text": "Climb down the beard and talk to Miazrqa behind the tower.",
+     "chat": [
+      "2. I see there is an embarrassed-looking dwarf...",
+      "4. Your second-cousin, twice removed?",
+      "4. I need a key for the house.",
+      "4. I should be off, I think."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Miazrqa's pendant",
+   "notes": [
+    "Needed: Leather gloves (optional, to avoid an electric shock from the gate), 2 tarromin potions (unf), door key from witch's house, 3 free inventory spaces",
+    "Note: Ensure that your pet is banked or in your inventory as it will prevent you from drinking the shrinking potion",
+    "Note: Level 95 mice will attack you while in this area, hitting up to 9 damage. Protect from Melee prayer is advised if in low armour gear.",
+    "Warning: Do not exit the area with the level 95 mice until you've collected the pendant."
+   ],
+   "steps": [
+    {
+     "text": "Enter the basement of the witch's house next to the POH portal in Taverley."
+    },
+    {
+     "text": "Go to the piano on the southern wall, play the notes E-F-E-D-C on the right side (upper), then A-E-G-A on the left side (lower)."
+    },
+    {
+     "text": "Search the piano."
+    },
+    {
+     "text": "Add the Shrunk ogleroot to your unfinished potions (52 Herblore)."
+    },
+    {
+     "text": "Go through the south door on and drink a shrinking potion by the mouse hole."
+    },
+    {
+     "text": "Climb up the nails to the north-east."
+    },
+    {
+     "text": "Climb up the nails to the south-west."
+    },
+    {
+     "text": "Climb up the nails to the south."
+    },
+    {
+     "text": "Climb down the nails to the north-east."
+    },
+    {
+     "text": "Climb up the nails to the north-east."
+    },
+    {
+     "text": "Take the pendant."
+    },
+    {
+     "text": "Travel back to the tower and give the pendant to Miazrqa."
+    },
+    {
+     "text": "Talk to Rupert."
+    },
+    {
+     "text": "Optional: You can talk to Miazrqa and Rupert again to unlock extra humorous dialogue."
+    }
+   ]
+  },
+  {
+   "title": "The beanstalk",
+   "notes": [
+    "Needed: Combat equipment, any woodcutting axe, a seed dibber, a watering can, Rupert's helmet and a shrink potion."
+   ],
+   "steps": [
+    {
+     "text": "Give Rupert's helmet to Sylas."
+    },
+    {
+     "text": "Plant and water the beans in the plot south-west of the Taverley tree patch (45 Farming)."
+    },
+    {
+     "text": "Climb up the beanstalk (59 Agility). You cannot climb with a follower/pet, even if it's in your inventory."
+    },
+    {
+     "text": "Defeat Glod and pick up the golden goblin."
+    },
+    {
+     "text": "Talk to Sylas."
+    },
+    {
+     "text": "Use a shrinking potion on the beanstalk then chop it down (71 Woodcutting). Be careful not to drink it!"
+    },
+    {
+     "text": "If you're stat-boosting make sure you use the shrinking potion before you stat boost - an animation plays and this could cause your stat boost to expire",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Sylas."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,168 @@
+{
+ "id": "dream-mentor",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Dream_Mentor%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Helping the fallen man",
+   "notes": [
+    "Items required: 3 Kinds of food, 6-7 of each, Seal of Passage.",
+    "Use Astral Contact spell to make sure you get the right things for him. If your combat level is determined by your magic level, use robin hood hat, dragon chainbody, black d'hide chaps, infinity boots and ancient staff. For ranged use splitbark helm, Karil's leathertop, Torag's platelegs, adamant boots and magic shortbow."
+   ],
+   "steps": [
+    {
+     "text": "Travel to Lunar Isle."
+    },
+    {
+     "text": "Enter the mine in the north-east area of Lunar Isle."
+    },
+    {
+     "text": "Crawl through the cave entrance ( Quest minimap icon)."
+    },
+    {
+     "text": "Talk to the fallen man, follow the dialogue and close the interface when it appears."
+    },
+    {
+     "text": "Feed him 4 food, starting with one you have seven of, while cycling through your different foods. Avoid using the same food twice in a row."
+    },
+    {
+     "text": "Talk to him again.",
+     "chat": [
+      "1. Just don't worry.",
+      "1. Of course."
+     ]
+    },
+    {
+     "text": "Feed him 4 more food as before."
+    },
+    {
+     "text": "Talk to him and keep reassuring him with positive responses until he sits up (cutscene)."
+    },
+    {
+     "text": "Feed him 6 more food."
+    },
+    {
+     "text": "Talk again multiple times using positive responses until he stands up (cutscene), and once more after he stands up."
+    },
+    {
+     "text": "Talk to 'Bird's-Eye' Jack in the bank.",
+     "chat": [
+      "2. Cyrisus in the mine"
+     ]
+    },
+    {
+     "text": "Select the following equipment (if your combat level is determined by your melee skills):"
+    },
+    {
+     "text": "Dragon med helm",
+     "depth": 1
+    },
+    {
+     "text": "Abyssal whip",
+     "depth": 1
+    },
+    {
+     "text": "Ahrim's robetop",
+     "depth": 1
+    },
+    {
+     "text": "Ahrim's robeskirt",
+     "depth": 1
+    },
+    {
+     "text": "Ranger boots",
+     "depth": 1
+    },
+    {
+     "text": "Return and talk to Cyrisus for a cutscene.",
+     "chat": [
+      "1. Talk about the Armament"
+     ]
+    },
+    {
+     "text": "Use food on him until his health is at 100%."
+    },
+    {
+     "text": "Talk to him again multiple times, giving positive responses until you receive a cutscene. If you don't receive it, feed him a couple more times."
+    }
+   ]
+  },
+  {
+   "title": "Dream potion",
+   "notes": [
+    "Items required: Goutweed, a hammer, a pestle and mortar, an astral rune, and a Seal of Passage."
+   ],
+   "steps": [
+    {
+     "text": "Talk to the Oneiromancer at the Astral Altar for a dream vial.",
+     "chat": [
+      "2. Cyrisus."
+     ]
+    },
+    {
+     "text": "(Optional) Change your spellbook as necessary if you wish to use magic in the final fight."
+    },
+    {
+     "text": "Fill the vial with water, add a goutweed."
+    },
+    {
+     "text": "Use your hammer on an Astral rune, then grind the shards with a pestle and mortar."
+    },
+    {
+     "text": "Add your ground astral rune to the dream vial to complete the potion."
+    },
+    {
+     "text": "Prepare for 4 fights. Prayers and emergency teleports won't work. Do not bank your Seal of Passage; not even 'Birds-Eye' Jack will serve you without it yet."
+    }
+   ]
+  },
+  {
+   "title": "Dreamland",
+   "notes": [
+    "Items required: Dream potion, good food, armour, weapon, a tinderbox, and to save a trip the Seal of Passage.",
+    "For a detailed explanation of how to combat the upcoming enemies, refer to the full quest guide.",
+    "Note: You cannot use Prayer. You cannot use emergency teleports - the only way to leave during the fight is using the lectern, however, you'll have to start over from the beginning.",
+    "Magic Strategy 1: If you have Ancient Magicks unlocked, a simple strategy would be to bring runes for Blood Burst and Ice Burst. Setting your staff to autocast Blood Burst while manually casting Ice Burst to freeze the enemy as needed. The Burst spells area of effect damage works well against the multiple Doubt's which spawn around you. The healing effect of Blood Burst can keep you alive if you run out of food."
+   ],
+   "steps": [
+    {
+     "text": "Light the Ceremonial Brazier in the dream hall building."
+    },
+    {
+     "text": "Talk to Cyrisus.",
+     "chat": [
+      "1. Yes, let's go!"
+     ]
+    },
+    {
+     "text": "During the fight, you can leave at any time by using the lectern, although this will force you to re-battle any defeated bosses."
+    },
+    {
+     "text": "Kill The Inadequacy",
+     "depth": 1
+    },
+    {
+     "text": "Kill The Everlasting - can be safespotted by the lectern to the north",
+     "depth": 1
+    },
+    {
+     "text": "Kill The Untouchable - can be safespotted by the lectern to the north",
+     "depth": 1
+    },
+    {
+     "text": "Kill The Illusive",
+     "depth": 1
+    },
+    {
+     "text": "Return to the Oneiromancer.",
+     "chat": [
+      "2. Cyrisus."
+     ]
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

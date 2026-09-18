@@ -1,0 +1,138 @@
+{
+ "id": "a-night-at-the-theatre",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/A_Night_at_the_Theatre%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Memories of a \"Friend\"",
+   "notes": [
+    "Needed: Combat gear, some food, ivandis flail or blisterwood flail, Saw, one dose of anti-venom or two doses of antipoison",
+    "Recommended: Ectophial for fast access to Port Phasmatys, Drakan's medallion, Super energy or Stamina potions"
+   ],
+   "steps": [
+    {
+     "text": "Talk to the Mysterious Stranger by the entrance to the Theatre of Blood."
+    },
+    {
+     "text": "No Theatre of Blood raids completed:",
+     "depth": 1,
+     "chat": [
+      "2. What's all this really about?",
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Completed at least 1 Theatre of Blood raid:",
+     "depth": 1,
+     "chat": [
+      "1. Speaking of your associates, what's all this really about?",
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Go down the stairs to the north-east of the Mysterious Stranger. Bring a saw and blisterwood flail."
+    },
+    {
+     "text": "Kill a vyrewatch for a key."
+    },
+    {
+     "text": "Unlock the gate to the south and open the coffin."
+    },
+    {
+     "text": "Return to the Mysterious Stranger with Ranis' head and watch the cutscene.",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Go to the dungeon (cave) north of Darkmeyer (south of Port Phasmatys)."
+    },
+    {
+     "text": "Follow the path north, then east to the egg sac."
+    },
+    {
+     "text": "Search the nearby skeleton."
+    },
+    {
+     "text": "Read the sticky note."
+    },
+    {
+     "text": "Speak to Daer Krand in the Sisterhood Sanctuary to obtain sulphuric acid.",
+     "chat": [
+      "3. Got any sulphuric acid?"
+     ]
+    },
+    {
+     "text": "The entrance is located south of the graveyard in Slepe.",
+     "depth": 1
+    },
+    {
+     "text": "To reach Daer Krand, make your way toward the centre of the sanctuary, then follow the path east, then north. He is located upstairs.",
+     "depth": 1
+    },
+    {
+     "text": "Return to the dungeon (cave) north of Darkmeyer."
+    },
+    {
+     "text": "Use sulphuric acid on the egg sac. You do not need to kill any spiders."
+    },
+    {
+     "text": "The spiders here can envenom you. Drink a dose of anti-venom or two doses of anti-poison to cure it.",
+     "depth": 1
+    },
+    {
+     "text": "Return to the Mysterious Stranger with the strange spider eggs. Watch two cutscenes.",
+     "chat": [
+      "1. I found some of those eggs."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "In Touch with Nature",
+   "notes": [
+    "Needed: Ghostspeak amulet or Morytania legs 2+, any axe, equipment and food to kill a level 302 hespori",
+    "Recommended: Dramen staff for fast travel to the Grotto, Super combat potion, Antipoison, Drakan's medallion, Druid pouch or a lit Fire of Dehumidification to protect food from ghasts"
+   ],
+   "steps": [
+    {
+     "text": "With ghostspeak amulet or Morytania legs 2+ (and druid pouch to protect food), go to the Nature Grotto (fairy ring BIP), and speak to the Nature Spirit Filliman Tarlock inside the grotto."
+    },
+    {
+     "text": "Go to the island on the east side of Mort Myre (directly east of the grotto, just west of Castle Drakan)."
+    },
+    {
+     "text": "Look for the island north of the Shades of Mort'ton minigame symbol.",
+     "depth": 1
+    },
+    {
+     "text": "Cross the stepping stone and kill the hespori and chop it afterwards to obtain hespori bark."
+    },
+    {
+     "text": "Return to the Mysterious Stranger. Watch two cutscenes.",
+     "chat": [
+      "1. I found a hespori."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Theatre of Blood",
+   "notes": [
+    "Needed: High-level combat gear of all styles, a method to inflict poison, food, potions, etc. to do a Theatre of Blood raid if never completed one, optionally more party members if you have trouble alone",
+    "Note: If you have completed the Theatre of Blood before (any mode), you will be given the option to skip this section."
+   ],
+   "steps": [
+    {
+     "text": "Complete a Theatre of Blood raid (any mode works, although entry mode is recommended). See this page for details on mechanics of the bosses."
+    },
+    {
+     "text": "Talk to the Mysterious Stranger again after completing the raid. Watch two cutscenes."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

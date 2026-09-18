@@ -1,0 +1,52 @@
+{
+ "id": "romeo-and-juliet",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Romeo_%26_Juliet%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Romeo in Varrock Square.",
+     "chat": [
+      "1. Perhaps I could help to find her for you?",
+      "1. Yes, ok, I'll let her know."
+     ]
+    },
+    {
+     "text": "Talk to Juliet on the upper floor balcony of the mansion west of Varrock west bank. or she will provide you a letter if Recipe for Disaster is incomplete."
+    },
+    {
+     "text": "Give Juliet's letter to Romeo."
+    },
+    {
+     "text": "Talk to Father Lawrence in the church east of the Varrock Palace."
+    },
+    {
+     "text": "If you don't already have cadava berries, you can pick them directly west of the South-east Varrock mine."
+    },
+    {
+     "text": "Talk to the Apothecary south of Varrock west bank. ( If you have done Ratcatchers, If you have done A Tail of Two Cats.)",
+     "chat": [
+      "2. Talk about something else.",
+      "1. Talk about Romeo & Juliet.",
+      "2. Talk about something else.",
+      "2. Talk about Romeo & Juliet.",
+      "3. Talk about something else.",
+      "2. Talk about Romeo & Juliet."
+     ]
+    },
+    {
+     "text": "Give the potion to Juliet."
+    },
+    {
+     "text": "Go back to Romeo and tell him to meet Juliet in the crypt."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

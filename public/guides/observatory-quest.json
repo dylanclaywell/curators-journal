@@ -1,0 +1,84 @@
+{
+ "id": "observatory-quest",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Observatory_Quest%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Fixing the Observatory",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Speak with the Observatory professor.",
+     "chat": [
+      "1. Talk about the Observatory quest.",
+      "2. An Observatory?",
+      "1. Sounds interesting. How can I help?"
+     ]
+    },
+    {
+     "text": "Give the Observatory professor the three planks, bronze bar and molten glass (speak to him 3 separate times each time).",
+     "chat": [
+      "1. Talk about the Observatory quest."
+     ]
+    },
+    {
+     "text": "Speak to the assistant."
+    },
+    {
+     "text": "Go up the east hill and down the stairs."
+    },
+    {
+     "text": "Once downstairs, search all the chests until you find the goblin kitchen key (most commonly found in south-eastern part when you go down the stairs, don't skip the dialogue once you find the key or you will not pick it up. If not found in the two chests directly south-east from the stairs, it is guaranteed to be in the last chest in the dungeon. The other chests will contain poisonous spiders.)."
+    },
+    {
+     "text": "Head north from the entrance in the dungeon, then go west to the kitchen gate and prod the sleeping guard, then kill or trap him."
+    },
+    {
+     "text": "Open the gate and inspect the goblin stove."
+    },
+    {
+     "text": "Go back and speak to the professor with the lens mould in your inventory. He will give back the needed molten glass for the next part.",
+     "chat": [
+      "1. Talk about the Observatory quest."
+     ]
+    },
+    {
+     "text": "Use the molten glass on the lens mould."
+    },
+    {
+     "text": "Speak to the professor to give him the lens mould and the observatory lens.",
+     "chat": [
+      "1. Talk about the Observatory quest."
+     ]
+    },
+    {
+     "text": "Head back into the goblin dungeon."
+    },
+    {
+     "text": "Run past the kitchen and climb up the stairs in the south end of the dungeon. (During the cutscene, DO NOT CLICK on anything in the observatory or you'll have to restart the cutscene)"
+    }
+   ]
+  },
+  {
+   "title": "Finishing up",
+   "notes": [],
+   "steps": [
+    {
+     "text": "After the cutscene, talk to the professor upstairs and view the telescope.",
+     "chat": [
+      "1. Talk about the Observatory quest."
+     ]
+    },
+    {
+     "text": "Talk to the professor again and identify the constellation you saw (see table below).",
+     "chat": [
+      "1. Talk about the Observatory quest."
+     ]
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

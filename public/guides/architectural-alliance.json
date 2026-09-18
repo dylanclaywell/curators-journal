@@ -1,0 +1,132 @@
+{
+ "id": "architectural-alliance",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Architectural_Alliance%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting out",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Speak with Hosa by the statue of King Rada I in Great Kourend to start the miniquest.",
+     "chat": [
+      "1. Can I help?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Gaining favour",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Gain 100% favour with Arceuus."
+    },
+    {
+     "text": "Assist library customers in the Arceuus Library until you have 90% Arceuus Favour (continue searching for books until you find Transportation Incantations to unlock the Kourend Castle Teleport spell).",
+     "depth": 1
+    },
+    {
+     "text": "Complete The Ascent of Arceuus for the final 10% of favour.",
+     "depth": 1
+    },
+    {
+     "text": "Gain 100% favour with Hosidius."
+    },
+    {
+     "text": "Plough the fields in Hosidius until you reach 5% (bring a hammer).",
+     "depth": 1
+    },
+    {
+     "text": "Buy 850 saltpetre and compost and combine them together. Place them in your bank and talk to Clerk to reach 90% favour.",
+     "depth": 1
+    },
+    {
+     "text": "Complete The Depths of Despair for the remaining 10% favour.",
+     "depth": 1
+    },
+    {
+     "text": "Gain 100% favour with Lovakengj."
+    },
+    {
+     "text": "Mine volcanic sulphur until you reach 65% favour (bring a face mask, gas mask or slayer helmet).",
+     "depth": 1
+    },
+    {
+     "text": "Complete The Forsaken Tower for an additional 10% favour.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Miriam and deliver the five minecart control scrolls to the minecart operators to reach 100% favour.",
+     "depth": 1
+    },
+    {
+     "text": "Gain 100% favour with Port Piscarilius."
+    },
+    {
+     "text": "Complete Client of Kourend. Distribute the rewarded 20% favour to Piscarilius.",
+     "depth": 1
+    },
+    {
+     "text": "Complete The Queen of Thieves for another 10%.",
+     "depth": 1
+    },
+    {
+     "text": "Hunt sandworms until you reach 100% in Piscarilius.",
+     "depth": 1
+    },
+    {
+     "text": "Gain 100% favour with Shayzien."
+    },
+    {
+     "text": "Heal wounded soldiers in the Shayzien infirmary until you have 5% favour in Shayzien.",
+     "depth": 1
+    },
+    {
+     "text": "Kill lizardmen until you reach 30% in Shayzien (try to obtain Xeric's talisman by killing lizardmen if you haven't already).",
+     "depth": 1
+    },
+    {
+     "text": "Complete Tale of the Righteous for another 10%.",
+     "depth": 1
+    },
+    {
+     "text": "At 40% favour, tackle organised crime until you reach 100% favour. It is much faster than killing lizardmen, and you can hop worlds once you find a meeting to easily earn more favour.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Architects",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Speak with Arcis after earning 100% favour with Arceuus."
+    },
+    {
+     "text": "Speak with Hosa after earning 100% favour with Hosidius."
+    },
+    {
+     "text": "Speak with Lovada after earning 100% favour with Lovakengj."
+    },
+    {
+     "text": "Speak with Piliar after earning 100% favour with Port Piscarilius."
+    },
+    {
+     "text": "Speak with Shayda after earning 100% favour with Shayzien."
+    }
+   ]
+  },
+  {
+   "title": "Finishing up",
+   "notes": [
+    "Congratulations, miniquest complete!"
+   ],
+   "steps": [
+    {
+     "text": "Speak with one of the architects at the statue of King Rada I."
+    }
+   ]
+  }
+ ]
+}

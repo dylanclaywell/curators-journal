@@ -1,0 +1,331 @@
+{
+ "id": "a-kingdom-divided",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/A_Kingdom_Divided%2FQuick_guide",
+ "sections": [
+  {
+   "title": "The Disgraced Councillor's Escape",
+   "notes": [
+    "Needed: Melee gear, food and potions, 1 free inventory space",
+    "Recommended: Xeric's talisman, Kharedst's memoirs, Arceuus Library Teleport, Kourend Castle Teleport"
+   ],
+   "steps": [
+    {
+     "text": "Go speak to Martin Holt east of the Kourend Castle and start the quest.",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Go to the ground floor of the Kourend Castle and speak to Commander Fullore. A short cutscene will occur.",
+     "chat": [
+      "1. Let's get going."
+     ]
+    },
+    {
+     "text": "Once the cutscene is over, you will be south of a little house that you will need to investigate."
+    },
+    {
+     "text": "Go in the house, go up the stairs, and search the drawers in the eastern room. Read the receipt."
+    },
+    {
+     "text": "Go down the stairs and talk to Tomas Lawry by the roses."
+    },
+    {
+     "text": "Go to the Lovakengj pub north-west of the Kourend Castle and speak to Fuggy.",
+     "chat": [
+      "3. Had any councillors stay here recently?"
+     ]
+    },
+    {
+     "text": "Go to Veos's boat in the south-eastern corner of Port Piscarilius and talk to Cabin Boy Herbert close to the quest and travel marker. A short cutscene will occur.",
+     "chat": [
+      "2. I'm looking for a councillor."
+     ]
+    },
+    {
+     "text": "Combat will immediately follow the cutscene.",
+     "depth": 1
+    },
+    {
+     "text": "After the cutscene you will need to defeat the level 168 demon Judge of Yama. Dodge the fire waves like Galvek by standing away from the fire and running to the boss to melee him. He will have protect from magic & protect from missiles overhead during the entire fight."
+    },
+    {
+     "text": "A good tactic is to use protect from melee and dodge the flames until you get in melee range. Tanking the flames to get into melee range is also a viable option.",
+     "depth": 1
+    },
+    {
+     "text": "After the boss has been killed a cutscene inside Kourend Castle will occur."
+    },
+    {
+     "text": "Go south-west to speak to Commander Fullore outside of the castle after the cutscene. She will be standing just south of the castle, directly north of the Shayzien mine."
+    },
+    {
+     "text": "Speak to Martin Holt again a bit east of Kourend Castle entrance where you started the quest."
+    },
+    {
+     "text": "Head to the ground floor of the Arceuus Library and Right-click teleport on Archeio."
+    },
+    {
+     "text": "Pickpocket Istoria for a Bluish key."
+    },
+    {
+     "text": "Search the pink case in the south-east corner of the room to retrieve Rose's diary."
+    },
+    {
+     "text": "Go back and speak to Martin Holt again with Rose's Diary. A note will fall out of the diary."
+    },
+    {
+     "text": "Read the note and speak to Martin again."
+    }
+   ]
+  },
+  {
+   "title": "Kourend's Last Princess",
+   "notes": [
+    "Needed: Runes for fire bolt or better, any axe, combat equipment",
+    "Recommended: Xeric's talisman or access to one, skills necklace, games necklace, Kharedst's memoirs, use of fairy rings"
+   ],
+   "steps": [
+    {
+     "text": "Go to the Forthos Ruins, north-east of Woodcutting guild."
+    },
+    {
+     "text": "Speak to Martin Holt.",
+     "chat": [
+      "4. I'll get searching."
+     ]
+    },
+    {
+     "text": "Search the Stone Piles around the ruins to find a combination of numbers for the panel. Take note of these (unique to each player)."
+    },
+    {
+     "text": "Cut the vines to the west, squeeze-through the vines, and use the unique combination for 'ROSE' on the panel on the wall."
+    },
+    {
+     "text": "For example, if the piles tell you the following: R - 1, O - 3, S - 3, E - 7, your code will be '1337'.",
+     "depth": 1
+    },
+    {
+     "text": "Read the note then show it to Martin Holt.",
+     "chat": [
+      "4. Alright. I'll see you soon."
+     ]
+    },
+    {
+     "text": "Go to the Settlement Ruins, south-west of Wintertodt."
+    },
+    {
+     "text": "Speak with Martin Holt in the north-west building after running past the Ice Spiders, Ice Giants, and Ice Wolves."
+    },
+    {
+     "text": "Kill the assassin that spawns."
+    },
+    {
+     "text": "Cast fire bolt (or above) on the ice chunks south-west of Martin, search the melted ice chunk and open the panel on the western wall."
+    },
+    {
+     "text": "Read the note and speak to Martin."
+    },
+    {
+     "text": "Go to The Legless Faun, in southern Piscarilius, on land, speak to Martin and climb the southern pillar."
+    },
+    {
+     "text": "Check the panel upstairs. Note the order of each house."
+    },
+    {
+     "text": "Go back down the wall and push the statue panels on the statues in the order specified from the panel."
+    },
+    {
+     "text": "Check the panel upstairs again."
+    },
+    {
+     "text": "After the cutscene, read the note."
+    },
+    {
+     "text": "Head to the shack north-east of the farming guild, directly west of fairy ring CIR, and search the bed."
+    },
+    {
+     "text": "Read the tatty note, then inspect the crates in the north-western corner and climb down the trap door.",
+     "chat": [
+      "1. Climb through it."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The Mysterious Mage",
+   "notes": [
+    "Needed: Combat equipment melee or ranged (as Xamphur has high melee defence, ranged is the preferred method)",
+    "Recommended: Xeric's talisman or access to one, anti-poison, Kharedst's memoirs, use of fairy rings, Arceuus Library Teleport, pickaxe, Facemask"
+   ],
+   "steps": [
+    {
+     "text": "Exit the shack and go south to Molch."
+    },
+    {
+     "text": "Go east to the furthest dwelling in Molch and enter the Lizard dwelling."
+    },
+    {
+     "text": "Go north and talk to Kaht B'alam.",
+     "chat": [
+      "2. Do you think you could help me find a mage?"
+     ]
+    },
+    {
+     "text": "Exit the temple by jumping in the hole to the west."
+    },
+    {
+     "text": "Go south-west into the Kebos Swamp and cross the stone bridge."
+    },
+    {
+     "text": "Search the south-eastern Lizardman eggs, and you will be attacked by a level 75 lizardman brute. You do not need to kill it."
+    },
+    {
+     "text": "Go back into the temple and give the Lizardman egg to Khat B'alam for the key.",
+     "chat": [
+      "1. So, about the key to that door..."
+     ]
+    },
+    {
+     "text": "Open the door that is located on the north wall of the main corridor, south-west of Khat B'alam. The door is indicated by a keyhole on the wall.",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Kill the spirit boss Xamphur."
+    },
+    {
+     "text": "Pray Protect from Magic throughout the fight.",
+     "depth": 1
+    },
+    {
+     "text": "Kill summoned hands to avoid corruption and avoid the falling hand mechanic by walking in a straight line back and forth, similar to Vorkath mechanics.",
+     "depth": 1
+    },
+    {
+     "text": "Search the northern table in the lab."
+    },
+    {
+     "text": "Return to the shack north-east of the farming guild, directly west of fairy ring CIR, and go downstairs by inspecting the crates again."
+    },
+    {
+     "text": "After the cut-scene, go and talk with:"
+    },
+    {
+     "text": "Lord Trobin Arceuus - of the Tower of Magic, west of the Arceuus Library (Kharedst's memoirs - Arceuus or Arceuus Library Teleport).",
+     "depth": 1
+    },
+    {
+     "text": "Lord Kandur Hosidius - In his home in Hosidius, south-east of the bank (Xeric's talisman - 2. Xeric's Glade)",
+     "depth": 1
+    },
+    {
+     "text": "Lady Vulcana Lovakengj - South-western Lovakengj, in the Lovakengj Assembly at The Forsaken Tower quest icon (Kharedst's memoirs - Lovakengj or Xeric's talisman - 3. Xeric's Inferno)",
+     "depth": 1
+    },
+    {
+     "text": "Collect a Volcanic Sulphur from the Sulphur Mine to the north-west if you haven't already.",
+     "depth": 2
+    },
+    {
+     "text": "Lady Shauna Piscarilius - In The Warrens under Port Piscarilius (Kharedst's memoirs - Piscarilius)",
+     "depth": 1
+    },
+    {
+     "text": "Lord Shiro Shayzien - of the War Tent in the Shayzien Encampment, by the northern bank icon (Kharedst's memoirs - Shayzien)",
+     "depth": 1
+    },
+    {
+     "text": "Go to Xeric's Lookout and talk to Commander Fullore (Xeric's talisman - 1. Xeric's Lookout)"
+    },
+    {
+     "text": "After the cut-scene, speak with Commander Fullore again then talk with all 5 Lords again. They are on different floors of the lookout house, including the basement. Lord Arceuus is just outside (make sure you receive the broken redirector from him)."
+    }
+   ]
+  },
+  {
+   "title": "The Council's End",
+   "notes": [
+    "Needed: A defence potion with (3) or (4) doses, volcanic sulphur (face mask/slayer helmet/gas mask required to mine), combat equipment, molten glass, dark essence block (or any pickaxe), broken redirector",
+    "Recommended: Lockpick, chisel, pickaxe, Battlefront teleports or Rada's blessing 3+, games necklace, Xeric's talisman, access to fairy rings, Rada's blessing 1+"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Commander Fullore at the Lookout and ask about Lady Lovakengj.",
+     "chat": [
+      "1. I need some help with Lady Lovakengj."
+     ]
+    },
+    {
+     "text": "Go to Mount Karuulm, go down the elevator, and speak with Kaal-Mej-San."
+    },
+    {
+     "text": "Create a sulphur potion (mix a defence potion with volcanic sulphur)."
+    },
+    {
+     "text": "Speak with Kaal-Mej-San again. They will enchant the sulphur potion into a shielding potion."
+    },
+    {
+     "text": "Go to the Doors of Dinh at the Wintertodt Camp and pour the potion onto them."
+    },
+    {
+     "text": "Go to the Barbarian camp in the Kourend Woodland (south-east of the Rada's blessing teleport), and go down the ladder to the south."
+    },
+    {
+     "text": "A level 91 Barbarian Warlord will attack you. Kill him, and then talk to Phileas Rimor."
+    },
+    {
+     "text": "Go to the prison just outside the Shayzien wall, west of the Graveyard of Heroes, and go down the staircase. (Kharedst's memoirs - Shayzien, then west down into a dungeon icon on the map)"
+    },
+    {
+     "text": "Talk to Martin Holt."
+    },
+    {
+     "text": "Go to the Graveyard of Heroes in Shayzien and go to the south of the church. Talk to Jorra and kill the level 132 assassin that spawns (he attacks with melee and ranged). Speak to Jorra again to receive the declaration.",
+     "chat": [
+      "2. Evil only triumphs when the good do nothing."
+     ]
+    },
+    {
+     "text": "Go to the Arceuus church (get the dark essence block beforehand if you don't already have it), climb up either of the two staircases, run all the way east, climb the stairs, and then talk to Mori. Bring her molten glass and dark essence block. She will give you a dark nullifier."
+    },
+    {
+     "text": "To obtain a dark essence block: bring a pickaxe and a chisel (chisel obtainable at the location) east of the Dark Altar. Chip off the dense runestone to receive a dense essence block, then use it on the Dark Altar to receive a dark essence block.",
+     "depth": 1
+    },
+    {
+     "text": "Go to the Chasm of Fire (north-west of fairy ring DJR). Try to go inside and complete the dialogue."
+    },
+    {
+     "text": "Go to the Hosidius Vinery (fairy ring AKR) and inspect the eastern Wine barrel (west of the fairy ring). Go inside and picklock the chest to get a Shayzien journal.",
+     "chat": [
+      "1. Climb through it."
+     ]
+    },
+    {
+     "text": "Go back to Xeric's Lookout and talk to all five of the lords."
+    },
+    {
+     "text": "Talk with Commander Fullore. A cutscene will follow."
+    },
+    {
+     "text": "Speak with Commander Fullore again."
+    },
+    {
+     "text": "Go down the ladder and speak with Lord Hosidius."
+    },
+    {
+     "text": "Return to Commander Fullore. There will be another long cutscene.",
+     "chat": [
+      "1. Let's do this."
+     ]
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

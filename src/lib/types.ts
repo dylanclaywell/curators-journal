@@ -391,3 +391,70 @@ export interface DiaryDataset {
   sources: string[]
   diaries: Diary[]
 }
+
+/* ------------------------------------------------------------ quest guides */
+
+/**
+ * One bullet of a quick guide's walkthrough.
+ *
+ * Shaped like `QuestItemLine` on purpose — plain text plus a nesting depth —
+ * because the source is the same kind of wiki bullet list and the same reading
+ * applies: a sub-bullet is a detail hanging off the line above, not a step of
+ * its own. Kept a separate interface anyway, since `chat` has no meaning for an
+ * item line and `heading` has none here.
+ */
+export interface QuestGuideStep {
+  /** Plain text, wiki markup already stripped. */
+  text: string
+  /** Nesting depth in the wiki's bullet list; omitted at top level. */
+  depth?: number
+  /**
+   * The dialogue options to pick, in order, written as "1. Yes."
+   *
+   * Extracted from `{{Chat option}}` before the text is flattened, because
+   * `plainText` strips unknown templates wholesale and this one carries the
+   * instruction rather than decorating it — "talk to Alec Kincade" without the
+   * options is a step you have to work out again at the keyboard.
+   */
+  chat?: string[]
+}
+
+/**
+ * A chapter of a walkthrough, from a `===`/`====` heading on the quick guide.
+ *
+ * Short quests have none at all — Cook's Assistant is nine bullets under no
+ * heading — so `title` is null for the one implicit section those produce. Long
+ * ones have up to 15, which is what makes them navigable: Desert Treasure II is
+ * 249 bullets, and an undivided list of that length is not a guide.
+ */
+export interface QuestGuideSection {
+  /** Null for the implicit section of a guide that uses no headings. */
+  title: string | null
+  /** Heading depth: 0 for `===`, 1 for `====`. Omitted at top level. */
+  depth?: number
+  /**
+   * Prose between the heading and the checklist — most often a per-section
+   * "Items required:" line, which is load-bearing and appears nowhere in the
+   * quest's own item list.
+   */
+  notes: string[]
+  steps: QuestGuideStep[]
+}
+
+/**
+ * One quest's walkthrough, emitted to `public/guides/<id>.json`.
+ *
+ * Per-quest files rather than one dataset, and fetched on demand rather than
+ * precached: together these are ~900 KB of wiki prose, which would roughly
+ * double the precache for content the player reads one quest at a time. See
+ * CLAUDE.md's bundle invariants.
+ */
+export interface QuestGuide {
+  /** The quest id in `quests.json`. */
+  id: string
+  /** ISO date this guide was generated. */
+  generatedAt: string
+  /** The `/Quick guide` page this came from, for attribution. */
+  sourceUrl: string
+  sections: QuestGuideSection[]
+}

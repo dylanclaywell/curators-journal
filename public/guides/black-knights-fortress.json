@@ -1,0 +1,60 @@
+{
+ "id": "black-knights-fortress",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Black_Knights'_Fortress%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Sir Amik Varze on the of the western section of the White Knights' Castle in Falador.",
+     "chat": [
+      "1. I seek a quest!",
+      "1. I laugh in the face of danger!",
+      "1. Ok, I'll do my best."
+     ]
+    },
+    {
+     "text": "Head to Black Knights' Fortress with an iron chainbody and bronze med helm."
+    },
+    {
+     "text": "Equip iron chainbody and bronze med helm, and enter the fortress through the sturdy door (toward the south, on the left stretch of the hallway)."
+    },
+    {
+     "text": "Push the wall in front of you and climb-up the ladder twice."
+    },
+    {
+     "text": "Climb-down the ladder to the south, go through the eastern door and climb-up the ladder."
+    },
+    {
+     "text": "Climb-down the eastern ladder, go south through the door and climb-down the ladder."
+    },
+    {
+     "text": "Listen-at grill on the eastern wall."
+    },
+    {
+     "text": "After going through the conversation, go back to the entrance using the same route."
+    },
+    {
+     "text": "Go through the eastern door into the dining area (you need to finish the conversation with the guard. You can kill any black knights attacking you to chat to guard, but can rush through the chat to avoid combat).",
+     "chat": [
+      "2. I don't care. I'm going in anyway."
+     ]
+    },
+    {
+     "text": "Run north and climb-up the ladder, run east and then south, and push the wall."
+    },
+    {
+     "text": "Use cabbage on the hole. BE CAREFUL NOT TO EAT IT."
+    },
+    {
+     "text": "After your character mentions that you should return to Falador, do so and talk to Sir Amik Varze."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

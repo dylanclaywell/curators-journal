@@ -1,0 +1,72 @@
+{
+ "id": "the-knights-sword",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/The_Knight's_Sword%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to the Squire in the White Knights' Castle.",
+     "chat": [
+      "1. And how is life as a squire?",
+      "2. I can make a new sword if you like...",
+      "1. So would these dwarves make another one?",
+      "1. Ok, I'll give it a go."
+     ]
+    },
+    {
+     "text": "Talk to Reldo in the library of Varrock Palace. ( if Shield of Arrav not started.) Skip this step if you already met Thurgo during The Giant Dwarf.",
+     "chat": [
+      "1. . What do you know about the Imcando dwarfs?",
+      "4. . What do you know about the Imcando dwarfs?"
+     ]
+    },
+    {
+     "text": "Talk to Thurgo south of Port Sarim (by the anvil, north of the fairy ring AIQ) and give him a redberry pie. ( if The Giant Dwarf quest is in progress.)",
+     "chat": [
+      "2. Would you like a redberry pie?",
+      "3. Would you like a redberry pie?"
+     ]
+    },
+    {
+     "text": "Talk to him again.",
+     "chat": [
+      "1. Something else."
+     ]
+    },
+    {
+     "text": "Go back and talk to the Squire."
+    },
+    {
+     "text": "Climb-up the ladder on the eastern side of the castle to the. Go west and climb-up the eastern staircase. Search the cupboard in Sir Vyvin's bedroom for a portrait. He must not be looking at you."
+    },
+    {
+     "text": "Proceed back to Thurgo and give him the portrait. Bring iron bars with you.",
+     "chat": [
+      "1. About that sword..."
+     ]
+    },
+    {
+     "text": "Go to the Asgarnian Ice Dungeon using the trapdoor to the east of Thurgo."
+    },
+    {
+     "text": "Once inside, follow the path west, north, and then east. Keep along the southern wall in the icy area and mine a blurite ore. Mine another if planning on doing the Falador Easy Diary."
+    },
+    {
+     "text": "Talk to Thurgo with your iron bars and blurite ore.",
+     "chat": [
+      "1. Can you make that replacement sword now?"
+     ]
+    },
+    {
+     "text": "Bring the sword to the Squire."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

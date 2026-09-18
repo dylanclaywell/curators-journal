@@ -1,0 +1,303 @@
+{
+ "id": "the-fremennik-isles",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/The_Fremennik_Isles%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [
+    "Note: There is a bank on the isles so for the most part you do not have to worry about keeping all items in your inventory."
+   ],
+   "steps": []
+  },
+  {
+   "title": "The jester outfit",
+   "notes": [
+    "Items required: Raw tuna, tin/coal/mithril ores (based on mining levels, see item requirements above)"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Mord Gunnars at the most northern dock in Rellekka to be taken to Jatizso.",
+     "chat": [
+      "3. Can you ferry me to Jatizso?"
+     ]
+    },
+    {
+     "text": "Talk to King Gjuki Sorvott IV in the checkered floor room. His cat will intervene."
+    },
+    {
+     "text": "Use the raw tuna on the King's cat."
+    },
+    {
+     "text": "Speak to the King."
+    },
+    {
+     "text": "Give him the required ores."
+    },
+    {
+     "text": "Take all four pieces of the jester outfit from the chest behind the king's throne."
+    },
+    {
+     "text": "Quick travel back to Rellekka via Mord Gunnars at the docks to the south."
+    }
+   ]
+  },
+  {
+   "title": "The spymaster's first task",
+   "notes": [
+    "Items required: Silly jester hat, silly jester top, silly jester tights, silly jester boots"
+   ],
+   "steps": [
+    {
+     "text": "Quick travel to Neitiznot via Maria Gunnars on the docks next to Mord."
+    },
+    {
+     "text": "Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)"
+    },
+    {
+     "text": "Speak with Slug Hemligssen north of the bank.",
+     "chat": [
+      "4. Free stuff please.",
+      "1. I am ready."
+     ]
+    },
+    {
+     "text": "Talk to Mawnis Burowgar in the building south of the bank."
+    },
+    {
+     "text": "During the cutscene, follow the commands Mawnis gives using the right-side panel."
+    },
+    {
+     "text": "Return to Slug Hemligssen. He will give you 2500 coins.,",
+     "chat": [
+      "1. Yes I have.",
+      "3. They will be ready in two days.",
+      "2. Seventeen militia have been trained.",
+      "1. There are two bridges to repair."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Bridge repairs",
+   "notes": [
+    "Items required: 8 rope, 8 split logs, a knife, one free inventory space",
+    "Optional: Food, Prayer potions, armour to tank the level 85 Ice trolls.",
+    "Note: Keep Protect from Missiles on at all times while repairing the bridges as any damage taken is stacked and applied after the bridge repair animation completes."
+   ],
+   "steps": [
+    {
+     "text": "Speak to Mawnis Burowgar again without the Jester Outfit"
+    },
+    {
+     "text": "Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot."
+    },
+    {
+     "text": "If you do not have split logs, chop Arctic Pine trees until you have eight logs and use them on the Woodcutting stumps just east of the bank.",
+     "depth": 1
+    },
+    {
+     "text": "If you are crafting your own shield, then cut two extra logs now.",
+     "depth": 1
+    },
+    {
+     "text": "If you do not have any rope, kill yaks outside in the yak pen and spin their hair in the south-easternmost building.",
+     "depth": 1
+    },
+    {
+     "text": "Speak to Thakkrad to learn how to repair the bridges.",
+     "chat": [
+      "1. How do I repair these bridges again?"
+     ]
+    },
+    {
+     "text": "Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair)."
+    },
+    {
+     "text": "Talk to Mawnis Burowgar."
+    },
+    {
+     "text": "Quick travel back to Rellekka via Maria Gunnars at the dock to the south-west."
+    }
+   ]
+  },
+  {
+   "title": "The king's tax collector",
+   "notes": [
+    "Optional items: 5000 coins for black market yak trading after the quest"
+   ],
+   "steps": [
+    {
+     "text": "Quick travel to Jatizso via Mord."
+    },
+    {
+     "text": "Speak with King Gjuki Sorvott IV in the building west of the bank."
+    },
+    {
+     "text": "Tax the shop keepers of Jatizso:"
+    },
+    {
+     "text": "Hring Hring must pay 8,000, he is in the south-western most house.",
+     "depth": 1
+    },
+    {
+     "text": "Skuli Myrka must pay 6,000, north from Hring.",
+     "depth": 1
+    },
+    {
+     "text": "Vanligga Gastfrihet must pay 5,000, north from kings palace. (Offer to pay her taxes for her; this provides the capability to trade in black market yak goods after the quest.)",
+     "depth": 1
+    },
+    {
+     "text": "Keepa Kettilon must pay 5,000, east from Vanligga.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to King Gjuki Sorvott IV."
+    },
+    {
+     "text": "Collect taxes from the following people for 1,000:"
+    },
+    {
+     "text": "Hring Hring.",
+     "depth": 1
+    },
+    {
+     "text": "Raum Urda-Stein in the same house as Hring Hring.",
+     "depth": 1
+    },
+    {
+     "text": "Skuli Myrka.",
+     "depth": 1
+    },
+    {
+     "text": "Keepa Kettilon.",
+     "depth": 1
+    },
+    {
+     "text": "Flosi Dalksson in the same house as Keepa Kettilon.",
+     "depth": 1
+    },
+    {
+     "text": "Speak with King Gjuki Sorvott IV."
+    },
+    {
+     "text": "Quick travel back to Rellekka via Mord."
+    }
+   ]
+  },
+  {
+   "title": "The spymaster's second task",
+   "notes": [
+    "Items required: Silly jester hat; Silly jester top; Silly jester tights; Silly jester boots; Yak-hide armour (top) and Yak-hide armour (legs) OR 15 coins, needle, one or more thread, and three yak hide; Neitiznot shield OR two Arctic pine logs, one bronze nail, a hammer, and rope."
+   ],
+   "steps": [
+    {
+     "text": "Quick travel to Neitiznot via Maria."
+    },
+    {
+     "text": "Speak with Spymaster Slug Hemligssen again."
+    },
+    {
+     "text": "Equip only the jester outfit again."
+    },
+    {
+     "text": "Speak with Mawnis to induce another Jester cutscene."
+    },
+    {
+     "text": "Speak with Slug once again.",
+     "chat": [
+      "1. Yes, I am.",
+      "2. They are in a secluded bay, near Etceteria.",
+      "1. They will be given some potions.",
+      "3. I have been helping Neitiznot."
+     ]
+    },
+    {
+     "text": "Ferry back to Rellekka and then to Jatizso."
+    },
+    {
+     "text": "Speak to King Gjuki Sorvott IV to obtain the royal decree (1 inv spot needed, otherwise you have to repeat dialogue)."
+    },
+    {
+     "text": "Travel back to Neitiznot and speak with Mawnis. (Don't forget to take off the jester outfit)"
+    },
+    {
+     "text": "Buy yak-hide armour (top and leggings), along with the Neitiznot shield from the Grand Exchange, or for Ironmen:"
+    },
+    {
+     "text": "Kill three yaks and take their hides.",
+     "depth": 1
+    },
+    {
+     "text": "Have them cured by Thakkrad Sigmundson for 5gp each.",
+     "depth": 1
+    },
+    {
+     "text": "Use thread and needle on the hides to craft a body and leggings.",
+     "depth": 1
+    },
+    {
+     "text": "Speak with Mawnis, who will instruct you to craft a shield. For Ironmen:"
+    },
+    {
+     "text": "Grab two Arctic pine logs, one bronze nail, a hammer, and a rope.",
+     "depth": 1
+    },
+    {
+     "text": "Use these items on the stump in the middle of the village.",
+     "depth": 1
+    },
+    {
+     "text": "Speak with Mawnis again."
+    }
+   ]
+  },
+  {
+   "title": "The troll king",
+   "notes": [
+    "Items required: Neitiznot shield, one-handed weapon, food, Prayer potions, combat potions, emergency teleport.",
+    "Note: Use a Melee weapon as the troll king has high Magic and Ranged Defence.",
+    "Make sure to equip the Neitiznot shield.",
+    "Optional: Make sure to claim the prayer potions from Bork Sigmundson at the entrance."
+   ],
+   "steps": [
+    {
+     "text": "Equip the Neitiznot shield and combat items to fight the Ice Troll King."
+    },
+    {
+     "text": "Equipping it is actually not required to enter the cave, or to fight the king, but it will heavily reduce damage, thus it is highly recommended. Note: This is a multi-combat zone. Melee and Ranged Ice Trolls will attack you.",
+     "depth": 1
+    },
+    {
+     "text": "Use Protect from Melee while running to the east side cave entrance of the farthest north isle."
+    },
+    {
+     "text": "Enter the cave to start a cutscene."
+    },
+    {
+     "text": "Talk to Bork Sigmundson to obtain 8-10 Tuna, 2-4 Prayer potion (3), and 2-4 Strength potion (4). If you do not have enough inventory space when you request the items, you will not be able to obtain them again.",
+     "depth": 1
+    },
+    {
+     "text": "Kill ten trolls, you will see a message saying \"You have defeated enough trolls to attack the King.\""
+    },
+    {
+     "text": "Turn on Protect from Missiles before crossing the bridge."
+    },
+    {
+     "text": "Turn on Protect from Magic for the duration of the fight. Kill the troll king. DO NOT use Protect from Melee because King will use the long distance attack as Dad does."
+    },
+    {
+     "text": "Decapitate the troll king's corpse."
+    },
+    {
+     "text": "Return to Mawnis Burowgar."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

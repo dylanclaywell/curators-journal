@@ -1,0 +1,92 @@
+{
+ "id": "in-search-of-the-myreque",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/In_Search_of_the_Myreque%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Vanstrom Klause in the Canifis pub (near the staircase). CKS",
+     "chat": [
+      "1. Why do they need help? Are they in trouble?",
+      "4. Perhaps I could help you out here."
+     ]
+    },
+    {
+     "text": "Grab the 6 wooden planks, 10 coins, a hammer, all the steel weapons and nails, and fill your Druid Pouch if you haven't done so already before teleporting!"
+    },
+    {
+     "text": "Travel to Mort'ton (Mort'ton teleport, Minigame teleport to Shades of Mort'ton, Barrows teleport, BIP with 50 Agility, BKR and get Swamp Boaty, or run from Canifis)"
+    },
+    {
+     "text": "Talk to Cyreg Paddlehorn (east, by the boat).",
+     "chat": [
+      "2. Well, I guess they'll just die without weapons.",
+      "2. Resourceful enough to get their own steel weapons?",
+      "3. If you don't tell me, their deaths are on your head!",
+      "3. What kind of man are you to say that you don't care?",
+      "1. Give wooden planks to Cyreg"
+     ]
+    },
+    {
+     "text": "Board the boat. (Be sure to have filled your Druid Pouch before attempting to board the boat!)"
+    },
+    {
+     "text": "Go north and climb the tree rope bridge."
+    },
+    {
+     "text": "Repair the bridge."
+    },
+    {
+     "text": "Continue north and talk to Curpile Fyod.",
+     "chat": [
+      "1. I've come to help the Myreque, I've brought weapons."
+     ]
+    },
+    {
+     "text": "Check the spelling of your answers before choosing them.",
+     "depth": 1
+    },
+    {
+     "text": "Go north and enter the wooden doors set into the hill."
+    },
+    {
+     "text": "Head north-west following the eastern wall to the north west until you find an alcove. Enter the cave entrance in the southern wall of this alcove."
+    },
+    {
+     "text": "Talk to Veliaf (no chat options needed)."
+    },
+    {
+     "text": "Talk to everyone else (no chat options needed)."
+    },
+    {
+     "text": "Talk to Veliaf (talk to him and give him your steel weapons)."
+    },
+    {
+     "text": "Kill the level 97 Skeleton Hellhound (you can safespot the hellhound by luring it to the north-east side of the room, to the right of the north barrel or below the north-east bed shown in the picture on the right)."
+    },
+    {
+     "text": "Talk to Veliaf, ask how to get out.",
+     "chat": [
+      "3. How do I get out of here?",
+      "3. Ok, thanks."
+     ]
+    },
+    {
+     "text": "Go back by entering the cave entrance and search the wall to the north."
+    },
+    {
+     "text": "Climb up the ladder in the north side of the room."
+    },
+    {
+     "text": "Talk to the Stranger in the Canifis pub (the one sitting in the chair where Vanstrom Klause was)."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

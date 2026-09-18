@@ -1,0 +1,63 @@
+{
+ "id": "recipe-for-disaster-freeing-evil-dave",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Recipe_for_Disaster%2FFreeing_Evil_Dave%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [
+    "Items required: a cat or wily cat and several bowls of stew (9 at most)."
+   ],
+   "steps": [
+    {
+     "text": "Inspect Evil Dave"
+    },
+    {
+     "text": "Talk to Doris (House west of Edgeville bank).",
+     "chat": [
+      "1. Is Dave in?",
+      "1. Yes, I'm evil!"
+     ]
+    },
+    {
+     "text": "Talk to Evil Dave in Edgeville (Down the trapdoor).",
+     "chat": [
+      "3. What did you eat at the secret council meeting?",
+      "4. You've got to tell me because the magic requires it!"
+     ]
+    },
+    {
+     "text": "Talk to Doris upstairs."
+    },
+    {
+     "text": "Use your cat to catch hell-rats. (Right-click chase). Using a fully grown cat is much more efficient, but using a kitten still works."
+    },
+    {
+     "text": "Collect spices from hell-rats there are 4 spices to collect: yellow, orange, red, brown. You only need a maximum of 6 doses of each colour."
+    },
+    {
+     "text": "The spicy stew required to free Evil Dave consists of all 4 different colour spices, 1-3 dose(s) of spice of each colour need to be added to the stew.",
+     "depth": 1
+    },
+    {
+     "text": "Add 1 dose of one colour and give it to Evil Dave. If he says \"Hmm... I think you've got the amount of one spice right, but the others are wrong\" then make a note that it is 1 dose of that colour.",
+     "depth": 1
+    },
+    {
+     "text": "If he doesn't say this then try again with 2 doses of the same colour, if he says \"Hmm... I think you've got the amount of one spice right, but the others are wrong\" then make a note that it is 2 doses of that colour. If he doesn't say this then make a note that it is 3 doses of that colour.",
+     "depth": 1
+    },
+    {
+     "text": "Repeat this process with the other 3 colours.",
+     "depth": 1
+    },
+    {
+     "text": "When you have made a note of the amount of the 4 colours individually, add these amounts to the same stew and give it to Evil Dave (he will not consume it), then give him the spicy stew in Lumbridge."
+    },
+    {
+     "text": "Congratulations, section complete!"
+    }
+   ]
+  }
+ ]
+}

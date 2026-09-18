@@ -1,0 +1,193 @@
+{
+ "id": "between-a-rock",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Between_a_Rock...%2FQuick_guide",
+ "sections": [
+  {
+   "title": "The rock",
+   "notes": [
+    "Needed: Ring of Charos(a) or 2 coins."
+   ],
+   "steps": [
+    {
+     "text": "Find the Dwarven Ferryman. Either enter the tunnel and subsequent cave just south of the Polar Hunter area (fairy ring DKS) OR go to northern part of Keldagrim and use the Travel option on the Dwarven Boatman."
+    },
+    {
+     "text": "Talk to the Dwarven Ferryman (not the Dwarven Boatman) and use the Ring of Charos(a) or use the Travel option to go across the river.",
+     "chat": [
+      "3. (Charm) I don't have any money on me."
+     ]
+    },
+    {
+     "text": "Run north and east across the bridge and west past the second wooden bridge to talk to Dondakan.",
+     "chat": [
+      "2. Why are you firing a cannon at a wall?",
+      "1. So why were you trying to get through the rock again?",
+      "1. Sounds interesting!"
+     ]
+    },
+    {
+     "text": "Go to western Keldagrim and talk to the Dwarven Engineer in the Trading Consortium's palace smithing shop."
+    },
+    {
+     "text": "Note: The Dwarven Boatman (near the Dwarven Ferryman) will take you quickly to northern Keldagrim and back.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Finding the pages",
+   "notes": [
+    "Needed: Any pickaxe, weapon to kill a scorpion.",
+    "Note: Buy an Ammo mould from Nulodion in the western building if you need one before leaving."
+   ],
+   "steps": [
+    {
+     "text": "Go to the Ice Mountain entrance of the Dwarven Mine and talk to Rolad in the east house (chat will disengage once then re-engage)."
+    },
+    {
+     "text": "(Optional) Purchase the ammo mould from Nulodion here",
+     "depth": 1
+    },
+    {
+     "text": "Go down the trapdoor to the Dwarven Mine. Complete the following in any order until you receive the respective pages:"
+    },
+    {
+     "text": "Kill Scorpions for book page 1.",
+     "depth": 1
+    },
+    {
+     "text": "Search the mine carts for book page 2.",
+     "depth": 1
+    },
+    {
+     "text": "Mine any rocks except Adamantite or Coal for book page 3.",
+     "depth": 1
+    },
+    {
+     "text": "Talk to Rolad. (chat will again disengage then re-engage)",
+     "chat": [
+      "2. Of course. (lie)"
+     ]
+    },
+    {
+     "text": "Read Dwarven lore in its entirety and keep it for later."
+    }
+   ]
+  },
+  {
+   "title": "The golden cannonball",
+   "notes": [
+    "Needed: Ammo mould, 1 gold bar."
+   ],
+   "steps": [
+    {
+     "text": "Go back to the Keldagrim mines and talk to Dondakan."
+    },
+    {
+     "text": "Use a gold bar on him."
+    },
+    {
+     "text": "Go to any furnace and use a gold bar on the furnace to make a golden cannon ball. Edgeville is recommended for easy fairy ring or Keldagrim minecart access."
+    },
+    {
+     "text": "Use the golden cannon ball on Dondakan to receive a Schematic.",
+     "chat": [
+      "1. Yes, I'm sure this will crack open the rock.",
+      "1. So you want to... fire me into the rock?",
+      "2. I can't argue with that, shoot me in!"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The gold helmet and schematics",
+   "notes": [
+    "Needed: Schematic, 3 gold bars, hammer."
+   ],
+   "steps": [
+    {
+     "text": "Read the Dwarven lore book to receive the base schematics.",
+     "chat": [
+      "1. Yes"
+     ]
+    },
+    {
+     "text": "Go back to the Dwarf Engineer at the Western Trade Consortium to get the Schematics."
+    },
+    {
+     "text": "Use your gold bar on the nearby anvil to make a gold helmet."
+    },
+    {
+     "text": "(Optional) Smith the gold helmet in the wilderness Resource Area to complete a Wilderness Diary Medium Achievement.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Completing the schematics",
+   "notes": [
+    "Needed: Gold helmet, Schematic, Schematics, Base schematics.",
+    "Recommended: Camelot Teleport."
+   ],
+   "steps": [
+    {
+     "text": "Go to the pub in the White Wolf Mountain passage and speak to Khorvak.",
+     "chat": [
+      "1. No, I've had enough of buying drinks for people!"
+     ]
+    },
+    {
+     "text": "Assemble the schematics per below to get the completed Schematic:"
+    }
+   ]
+  },
+  {
+   "title": "Final battle",
+   "notes": [
+    "Needed: Gold helmet, Schematics, 2 coins, food, armour, your best wield-able pickaxe, 6 free inventory spaces.",
+    "Recommended: 15 total free inventory spaces.",
+    "Note: At this point, you have eight minutes to finish this part of the quest. If you do not finish within eight minutes, you must restart from this step. Do not remove the Gold helmet or you will be teleported outside and have to restart.",
+    "Tip: If you are going for the Music cape, re-enter the mine before you drop the helmet to unlock the song In Between."
+   ],
+   "steps": [
+    {
+     "text": "Equip your Gold helmet and pickaxe and prepare to kill a level 75-125 Arzinian Avatar."
+    },
+    {
+     "text": "Talk to Dondakan with the schematics.",
+     "chat": [
+      "1. You may fire when ready!"
+     ]
+    },
+    {
+     "text": "Mine 6 OR 15 Gold ore (keep them in your inventory. If you aren't going to get 15, just get 6 as there is no benefit before 15). Getting 15 reduces the boss's level from 125 to 75, so this is recommended for lower-level players."
+    },
+    {
+     "text": "Go to the centre of the area."
+    },
+    {
+     "text": "Go through the first set of flames."
+    },
+    {
+     "text": "Talk to the second set of flames."
+    },
+    {
+     "text": "Kill the Arzinian Avatar. It will be either Arzinian Avatar of Magic (if your highest combat stat is a melee stat), Arzinian Avatar of Ranging (if your highest combat stat is Magic), or Arzinian Avatar of Strength (if your highest combat stat is Ranged). Choose combat equipment and prayers accordingly. See Arzinian Avatar for more details."
+    }
+   ]
+  },
+  {
+   "title": "Finishing up",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Dondakan."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

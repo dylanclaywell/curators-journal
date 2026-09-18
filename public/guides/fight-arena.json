@@ -1,0 +1,85 @@
+{
+ "id": "fight-arena",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Fight_Arena%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting the quest",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Ensure that you have 2 empty inventory slots."
+    },
+    {
+     "text": "Talk to Lady Servil just outside of the north-east corner of the Tree Gnome Village maze.",
+     "chat": [
+      "1. Can I help you?"
+     ]
+    },
+    {
+     "text": "Go to the house in the most north-eastern corner of the area and search the chest for Khazard armour."
+    },
+    {
+     "text": "Equip the armour and head south into the prison (do not unequip the armour inside!)."
+    }
+   ]
+  },
+  {
+   "title": "Inside the arena",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Head inside the south-east room where the jails are located."
+    },
+    {
+     "text": "Talk to the Head Guard in the south most room of the jail near the staircase. The right guard will mention that he wants a \"decent drink,\" saying he will fall asleep with too much Khali brew."
+    },
+    {
+     "text": "Go to outside, and head to the bar, located in the west and buy a Khali brew for five coins from Khazard barman (if you didn't talk to the right guard, the option is not there).",
+     "chat": [
+      "2. I'd like a Khali brew please."
+     ]
+    },
+    {
+     "text": "Go back to the jail and talk to the guard to get the keys."
+    },
+    {
+     "text": "Prepare for a fight. Ranged, mage, or a halberd are recommended to safespot, or the Protect from Melee prayer."
+    },
+    {
+     "text": "Use the keys on Sammy's prison door (the most north-eastern cell) to free him."
+    }
+   ]
+  },
+  {
+   "title": "The battles",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Note: During any cutscene dialogue, between opponents, you may click away and resupply with no need for the Khazard armour to re-enter the prison. All enemies may be safespotted using various skeletons around the arena."
+    },
+    {
+     "text": "Kill the Khazard Ogre (level 63) (if the fight doesn't start, talk to Justin)."
+    },
+    {
+     "text": "You will be locked up again. Talk to your cellmate, Hengrad, to begin the next fight."
+    },
+    {
+     "text": "Kill the Khazard scorpion (level 44)."
+    },
+    {
+     "text": "Kill Bouncer (level 137).: Once you begin the fight with General Khazard you are unable to reenter the arena. Dying in the arena after this point will most likely make the grave inaccessible, thus making them only retrievable from Death"
+    },
+    {
+     "text": "Kill General Khazard (level 142) or run away through the door in the south-east corner of the arena (or just run north until he's not aggressive)."
+    },
+    {
+     "text": "Return to Lady Servil."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

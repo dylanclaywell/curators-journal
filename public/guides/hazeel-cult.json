@@ -1,0 +1,133 @@
+{
+ "id": "hazeel-cult",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Hazeel_Cult%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [
+    "Use the map as a reference for the following steps. When picking a side, the reward is almost the same for both:",
+    "Rewards may only be obtained during or upon completion of the quest, and can never be reclaimed afterward.",
+    "Side with Ceril="
+   ],
+   "steps": [
+    {
+     "text": "Speak with Ceril Carnillean ( of the house south-west of East Ardougne castle)",
+     "chat": [
+      "1. What's wrong?",
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Siding with Ceril will reward 5 additional coins and gives you the option to obtain Carnillean armour, although this armour has lower defensive bonuses than an iron platebody."
+    },
+    {
+     "text": "Siding with Hazeel will reward the Hazeel's mark, which is a purely cosmetic reward."
+    },
+    {
+     "text": "Turn Valve 1 LEFT"
+    },
+    {
+     "text": "Turn Valve 2 RIGHT"
+    },
+    {
+     "text": "Turn Valve 3 RIGHT"
+    },
+    {
+     "text": "Turn Valve 4 RIGHT"
+    },
+    {
+     "text": "Turn Valve 5 RIGHT"
+    },
+    {
+     "text": "Enter the Ardougne Sewers east of the clocktower (south of Valve 3) and talk to Clivet",
+     "chat": [
+      "2. Alright, I've made my decision.",
+      "2. I won't help you."
+     ]
+    },
+    {
+     "text": "Board the raft, and talk to Alomone to the south."
+    },
+    {
+     "text": "Kill Alomone and loot the Carnillean armour from the chest."
+    },
+    {
+     "text": "(Optional) If you want extra pieces of armour, multiple can be obtained using the drop trick. It can not be reobtained after the quest.",
+     "depth": 1
+    },
+    {
+     "text": "Board the raft again and run back to the Carnilleans house."
+    },
+    {
+     "text": "Talk to Ceril Carnillean (quest incomplete!)"
+    },
+    {
+     "text": "Search the cupboard in the room upstairs east of the staircase to find the evidence."
+    },
+    {
+     "text": "Enter the Ardougne Sewers east of the clocktower (south of Valve 3) and talk to Clivet to receive a bottle of poison",
+     "chat": [
+      "2. Alright, I've made my decision.",
+      "1. I'll help you.",
+      "1. Alright, how do I do it?"
+     ]
+    },
+    {
+     "text": "Turn Valve 1 LEFT"
+    },
+    {
+     "text": "Turn Valve 2 RIGHT"
+    },
+    {
+     "text": "Turn Valve 3 RIGHT"
+    },
+    {
+     "text": "Go to the basement of the Carnilleans house (ladder)"
+    },
+    {
+     "text": "Use the bottle of poison on the cooking range."
+    },
+    {
+     "text": "Talk to Ceril on the."
+    },
+    {
+     "text": "Talk to Clivet."
+    },
+    {
+     "text": "Turn Valve 4 RIGHT"
+    },
+    {
+     "text": "Turn Valve 5 RIGHT"
+    },
+    {
+     "text": "Go back to the cave and board the raft."
+    },
+    {
+     "text": "Talk to Alomone."
+    },
+    {
+     "text": "Go back to the Carnilleans' house."
+    },
+    {
+     "text": "Talk to Butler Jones."
+    },
+    {
+     "text": "Go in the basement and search the crate for a Chest key."
+    },
+    {
+     "text": "Go up the ladder and stairs and knock on the wall in the east room, and go up the ladder."
+    },
+    {
+     "text": "Unlock and search the chest to find the scroll."
+    },
+    {
+     "text": "Return to Alomone."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

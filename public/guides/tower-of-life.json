@@ -1,0 +1,296 @@
+{
+ "id": "tower-of-life",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Tower_of_Life%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Effigy south of East Ardougne (south-west of fairy ring DJP, Ardougne cloak monastery teleport and walk east, or minigame teleport to Fishing Trawler and walk north) to begin the quest.",
+     "chat": [
+      "1. Sure, why not."
+     ]
+    },
+    {
+     "text": "Talk to Bonafido at the tower's entrance. He will ask to get a builder's costume."
+    },
+    {
+     "text": "Hat: talk to 'Black-eye' and answer his questions.",
+     "depth": 1,
+     "chat": [
+      "3. Three",
+      "1. Torn curtains",
+      "2. 10 clay pieces"
+     ]
+    },
+    {
+     "text": "Shirt: Give a beer to 'The Guns'.",
+     "depth": 1
+    },
+    {
+     "text": "Trousers: Search the plants to the south-east of the tower. (If none found, search plants in south-west as well.)",
+     "depth": 1
+    },
+    {
+     "text": "Boots: Talk to and then pickpocket 'No fingers'.",
+     "depth": 1
+    },
+    {
+     "text": "Wear the full costume. Talk to Bonafido and answer his questions.",
+     "chat": [
+      "2. Tea",
+      "3. Whistle for attention",
+      "1. Your legs are getting a bit cold",
+      "2. Carry on, it'll fix itself"
+     ]
+    },
+    {
+     "text": "Enter the tower while still wearing the full costume"
+    }
+   ]
+  },
+  {
+   "title": "Fix the pressure machine",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Take the following supplies (by searching the crates inside the tower):"
+    },
+    {
+     "text": "4 Valve wheels",
+     "depth": 1
+    },
+    {
+     "text": "3 Metal sheets",
+     "depth": 1
+    },
+    {
+     "text": "4 Coloured balls",
+     "depth": 1
+    },
+    {
+     "text": "Head up the first staircase on the west side of the tower."
+    },
+    {
+     "text": "Fix the pressure machine on the north side of the room."
+    },
+    {
+     "text": "Complete the puzzle (turn the valves until all holes are plugged, pull the levers when necessary)."
+    },
+    {
+     "text": "Pipe 2: Pull down the left lever, and then turn the 2nd valve left twice. Turn it right until the pipe is filled with water.",
+     "depth": 1
+    },
+    {
+     "text": "Pipe 4: Pull down the right lever and turn the 4th valve right three times, then left once. Turn it right until the pipe is filled with water.",
+     "depth": 1
+    },
+    {
+     "text": "Pipe 3: Lift the right lever back up, and turn the 3rd valve right twice and then left once. Turn it right until the pipe is filled with water.",
+     "depth": 1
+    },
+    {
+     "text": "Pipe 1: Lift up the left lever and turn the 1st valve left twice. Turn it right until the pipe is filled with water.",
+     "depth": 1
+    },
+    {
+     "text": "Once all the holes are plugged, make sure to turn the valves until all of the pipes are filled with water. You should see a message that says \"The machine is working!\" when you have completed the puzzle."
+    }
+   ]
+  },
+  {
+   "title": "Fix the pipe machine",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Take the following supplies:"
+    },
+    {
+     "text": "4 Pipes",
+     "depth": 1
+    },
+    {
+     "text": "5 Pipe rings",
+     "depth": 1
+    },
+    {
+     "text": "6 Rivets (these are stackable)",
+     "depth": 1
+    },
+    {
+     "text": "Head up two floors."
+    },
+    {
+     "text": "Fix the pipe machine on the south side of the room. You should see a message that says \"The machine is working!\" when you have completed the puzzle."
+    }
+   ]
+  },
+  {
+   "title": "Fix the cage",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Take the following supplies:"
+    },
+    {
+     "text": "5 Metal bars",
+     "depth": 1
+    },
+    {
+     "text": "4 Binding fluids",
+     "depth": 1
+    },
+    {
+     "text": "Head up to the top floor of the tower."
+    },
+    {
+     "text": "Fix the cage."
+    },
+    {
+     "text": "Complete the puzzle. You should see a message that says \"The cage is complete!\" when you have completed the puzzle."
+    },
+    {
+     "text": "First side",
+     "depth": 1
+    },
+    {
+     "text": "Horizontal: Size 2",
+     "depth": 2
+    },
+    {
+     "text": "Horizontal: Size 3",
+     "depth": 2
+    },
+    {
+     "text": "Vertical: Size 2",
+     "depth": 2
+    },
+    {
+     "text": "Second side",
+     "depth": 1
+    },
+    {
+     "text": "Horizontal: Size 2",
+     "depth": 2
+    },
+    {
+     "text": "Vertical: Size 2",
+     "depth": 2
+    },
+    {
+     "text": "Vertical: Size 4",
+     "depth": 2
+    },
+    {
+     "text": "Third side",
+     "depth": 1
+    },
+    {
+     "text": "Horizontal: Size 4",
+     "depth": 2
+    },
+    {
+     "text": "Vertical: Size 2",
+     "depth": 2
+    },
+    {
+     "text": "Vertical: Size 3",
+     "depth": 2
+    },
+    {
+     "text": "Fourth side",
+     "depth": 1
+    },
+    {
+     "text": "Horizontal: Size 2",
+     "depth": 2
+    },
+    {
+     "text": "Horizontal: Size 2",
+     "depth": 2
+    },
+    {
+     "text": "Vertical: Size 2",
+     "depth": 2
+    }
+   ]
+  },
+  {
+   "title": "Finishing up",
+   "depth": 1,
+   "notes": [
+    "Congratulations, quest complete!"
+   ],
+   "steps": [
+    {
+     "text": "Talk to Effigy."
+    },
+    {
+     "text": "Go to the top floor for a cutscene involving the alchemists and the Homunculus."
+    },
+    {
+     "text": "Go outside to talk to Effigy."
+    },
+    {
+     "text": "Return to the top floor and answer the Homunculus' questions until the bar is filled with either 'Logic' or 'Magic'."
+    },
+    {
+     "text": "to solve with 'Logic'.",
+     "depth": 1
+    },
+    {
+     "text": "to solve with 'Magic'.",
+     "depth": 1,
+     "chat": [
+      "1. Runecraft, enchant jewellery, perform alchemy.",
+      "3. Turn them into bananas or peaches!",
+      "3. Depends where you are headed, but teleport spells are a safe bet.",
+      "1. Yes, you can make magic potions to boost your skills.",
+      "1. By harnessing the power of the gods!"
+     ]
+    },
+    {
+     "text": "Talk to Effigy again."
+    },
+    {
+     "text": "Go to the dungeon floor inside the tower via the trapdoor to the south and talk to the Homunculus to the north."
+    },
+    {
+     "text": "Optional: Medium Ardougne Diary task - kill a \"swordchick\" (requires 1 raw swordfish and 1 raw chicken."
+    },
+    {
+     "text": "Talk to Homunculus again about creating monsters.",
+     "depth": 1
+    },
+    {
+     "text": "Run south-south-west to the \"Symbol of life\" altar.",
+     "depth": 1
+    },
+    {
+     "text": "Use a raw chicken on the altar.",
+     "depth": 2
+    },
+    {
+     "text": "Use a raw swordfish on the altar.",
+     "depth": 2
+    },
+    {
+     "text": "Activate the altar.",
+     "depth": 2
+    },
+    {
+     "text": "Kill the swordchick.",
+     "depth": 2
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

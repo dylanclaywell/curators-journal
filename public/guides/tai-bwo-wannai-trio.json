@@ -1,0 +1,179 @@
+{
+ "id": "tai-bwo-wannai-trio",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Tai_Bwo_Wannai_Trio%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting out",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Make sure that as many items above are prepared as possible"
+    },
+    {
+     "text": "Head south to Tai Bwo Wannai (or use a Brimhaven house teleport and run south if you have them)"
+    },
+    {
+     "text": "Talk to Timfraku, who is located upstairs in the western hut north of Tai Bwo Wannai., wait, then",
+     "chat": [
+      "3. I am a wandering wayfarer.",
+      "3. Trufitus sent me.",
+      "3. So far??",
+      "1. Yes"
+     ]
+    },
+    {
+     "text": "Use a Brimhaven house teleport or simply run north to Lubufu by the fishing spots south of the Player Owned House portal"
+    },
+    {
+     "text": "Talk to Lubufu.",
+     "chat": [
+      "1. I wasn't going anywhere..."
+     ]
+    },
+    {
+     "text": "Talk to Lubufu again.",
+     "chat": [
+      "1. Talk about him...",
+      "3. What do you do?",
+      "2. How old are you?",
+      "3. I could help collect the bait.",
+      "1. You sound like you could do with the help."
+     ]
+    },
+    {
+     "text": "Talk to him again and give him 20 raw karambwanji."
+    },
+    {
+     "text": "Talk to him again.",
+     "chat": [
+      "3. What do you use to catch Karambwan?",
+      "2. What do you do with your Karambwan?"
+     ]
+    },
+    {
+     "text": "Wait, then accept his gift and learn how to fish Karambwan.",
+     "chat": [
+      "1. Yes!"
+     ]
+    },
+    {
+     "text": "Drop the karambwan vessel he gave you and get another, load it with a raw karambwanji then pick up the first one.",
+     "chat": [
+      "3. Actually, I've lost my Karambwan vessel.",
+      "3. ... it floated away!"
+     ]
+    },
+    {
+     "text": "Drop this vessel as well, and talk to Lubufu once more to obtain a vessel for use after the quest.",
+     "depth": 1,
+     "chat": [
+      "3. Actually, I've lost my Karambwan vessel.",
+      "3. ... it floated away!"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Helping the brothers",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Head to DKP - it is south of Musa point."
+    },
+    {
+     "text": "Grab the seaweed nearby if you don't have one already"
+    },
+    {
+     "text": "Talk to Tiadeche, who is directly north-east of the fairy ring DKP."
+    },
+    {
+     "text": "Use your Raw karambwanji on the Karambwan vessel. Then use the baited Karambwan vessel on Tiadeche.",
+     "chat": [
+      "1. Yes"
+     ]
+    },
+    {
+     "text": "Ironmen: Fish and cook a karambwan until you get a poison karambwan. Use your pestle and mortar on it to create poison karambwan paste, then use that paste on your spear to make a Spear(kp).",
+     "depth": 1
+    },
+    {
+     "text": "Use the fairy ring right next to you and use the code CKR - it's north-west of Shilo village, south of the lake between Shilo village and Tai Bwo Wannai village."
+    },
+    {
+     "text": "Run north-east to the mine. Talk to Tamayu twice and watch a cutscene.",
+     "chat": [
+      "3. When will you succeed?",
+      "1. Yes"
+     ]
+    },
+    {
+     "text": "Right click and use your Agility potion (4 dose) and Spear (kp) on him - make sure he takes both."
+    },
+    {
+     "text": "Talk to him again, watch the cutscene. Make sure he kills the beast or you won't finish the quest,",
+     "chat": [
+      "3. Take me on your next hunt for the Shaikahan."
+     ]
+    },
+    {
+     "text": "Kill a monkey in this area with magic or ranged, take its corpse."
+    },
+    {
+     "text": "Use the corpse on Tamayu."
+    },
+    {
+     "text": "Use your seaweed on the monkey skin to get a seaweed sandwich."
+    },
+    {
+     "text": "Either run south-west or use another fairy ring teleport to go back to CKR."
+    },
+    {
+     "text": "Climb up the hill and cross the bridge onto Cairn Isle, WALK across the bridge."
+    },
+    {
+     "text": "Talk to Tinsay and hand him all the food he requests whenever prompted. (He will ask for the Rum with a banana, a “seaweed in monkey skin sandwich” which is just the seaweed sandwich, and the marinated Jogre bones that you previously created. *DO NOT BURY THEM*",
+     "chat": [
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "After handing him the marinated j' bones, use your empty (or filled) karambwan vessel on him and you'll receive a crafting manual."
+    },
+    {
+     "text": "Head to fairy ring DKP."
+    },
+    {
+     "text": "Talk to Tiadeche, use your manual on him and he will agree to go back to the village (but he'll stay for now)."
+    }
+   ]
+  },
+  {
+   "title": "Finishing up",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Either use a Brimhaven House teleport, fairy ring CKR or simply walk back to the quest start."
+    },
+    {
+     "text": "Talk to Timfraku and finish the quest.",
+     "chat": [
+      "1. Oh it was nothing really."
+     ]
+    },
+    {
+     "text": "(Optional) Before leaving, talk to Tiadeche in the south-western house in Tai Bwo Wannai for 5,000 Fishing experience."
+    },
+    {
+     "text": "(Optional) Before leaving, talk to Tinsay in the middle southern house in Tai Bwo Wannai for the ability to cook karambwans and to receive 5,000 Cooking experience."
+    },
+    {
+     "text": "(Optional) Before leaving, talk to Tamayu in the south-eastern house in Tai Bwo Wannai to receive a karambwan-poisoned rune spear, as well as 2,500 Attack and Strength experience."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

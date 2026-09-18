@@ -1,0 +1,200 @@
+{
+ "id": "royal-trouble",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Royal_Trouble%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Stolen goods",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Speak to Advisor Ghrim. (fairy ring code CIP)",
+     "chat": [
+      "2. Has anything been happening in the kingdom recently?",
+      "1. Very well, I'll sort it out."
+     ]
+    },
+    {
+     "text": "Talk to Princess Astrid or Prince Brand (depending on who you married), watch the cutscene."
+    },
+    {
+     "text": "Talk to King Vargas.",
+     "chat": [
+      "1. Right away, your Majesty."
+     ]
+    },
+    {
+     "text": "Talk to Gardener Gunnhild by the flax patch next to the castle entrance."
+    },
+    {
+     "text": "Talk to Queen Sigrid.",
+     "chat": [
+      "1. Of course, it's my duty."
+     ]
+    },
+    {
+     "text": "Talk to Matilda in/around the southern building inside the castle's walls."
+    },
+    {
+     "text": "Talk to Queen Sigrid.",
+     "chat": [
+      "2. I suppose so..."
+     ]
+    },
+    {
+     "text": "Now is a good time to gear up at the bank at the north part of Etceteria as you won't be coming back here until after the boss fight. Don't forget to take an antipoison to help with the fight. Also take 5 coal or have at least 5 empty spaces. Note: Do not waste time trying to mine coal near Miner Magnus, as you don't actually get any resources. An area to mine coal is provided later on in the quest."
+    }
+   ]
+  },
+  {
+   "title": "The dungeon",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to King Vargas."
+    },
+    {
+     "text": "Talk to Advisor Ghrim.",
+     "chat": [
+      "1. King Vargas asked me to talk to you."
+     ]
+    },
+    {
+     "text": "Talk to the Sailor at the Miscellania docks.",
+     "chat": [
+      "2. I'm looking for a sailor..."
+     ]
+    },
+    {
+     "text": "Talk to King Vargas with one open inventory slot to receive a scroll proving you are Regent of Miscellania."
+    },
+    {
+     "text": "Enter the dungeon, down the ladder in the courtyard (along the castle's south wall)."
+    },
+    {
+     "text": "Talk to Donal in the pub.",
+     "chat": [
+      "1. Of course. Dealing with monsters is what I do best!"
+     ]
+    },
+    {
+     "text": "Go north, take a pick (on the rock next to the dwarves) if you need coal."
+    },
+    {
+     "text": "Use the mining prop on the crevice and proceed through the crevice."
+    },
+    {
+     "text": "Take an engine and put the 5 coal in it."
+    },
+    {
+     "text": "Take the following from the crates:"
+    },
+    {
+     "text": "2 beams.",
+     "depth": 1
+    },
+    {
+     "text": "3 pulley beams.",
+     "depth": 1
+    },
+    {
+     "text": "1 rope.",
+     "depth": 1
+    },
+    {
+     "text": "Use a beam on a pulley beam to get a long pulley beam; use another regular beam on it to make a longer pulley beam."
+    },
+    {
+     "text": "To the broken scaffold add:"
+    },
+    {
+     "text": "A pulley beam.",
+     "depth": 1
+    },
+    {
+     "text": "A longer pulley beam.",
+     "depth": 1
+    },
+    {
+     "text": "A pulley beam.",
+     "depth": 1
+    },
+    {
+     "text": "A rope.",
+     "depth": 1
+    },
+    {
+     "text": "Take:"
+    },
+    {
+     "text": "1 beam.",
+     "depth": 1
+    },
+    {
+     "text": "1 rope.",
+     "depth": 1
+    },
+    {
+     "text": "Add a beam to the platform."
+    },
+    {
+     "text": "Put the engine on the engine platform."
+    },
+    {
+     "text": "If you haven't yet, add your five coal to the engine."
+    },
+    {
+     "text": "Use the lift and take the plank."
+    },
+    {
+     "text": "Enter the tunnel, run east, and use your rope on the rock."
+    },
+    {
+     "text": "Keep running and make sure to continue through your character's dialogue.",
+     "depth": 1
+    },
+    {
+     "text": "Take the diary from the fire remains."
+    },
+    {
+     "text": "Use your plank to cross the rocks, be sure to collect all diary pages by searching the four additional fires through the cave."
+    },
+    {
+     "text": "Continue running and avoid the steam vents as they will damage you."
+    },
+    {
+     "text": "Read the diary and continue through the crevice, watch the cutscene."
+    },
+    {
+     "text": "Talk to Armod."
+    }
+   ]
+  },
+  {
+   "title": "The final battle",
+   "notes": [
+    "Congratulations, quest complete!"
+   ],
+   "steps": [
+    {
+     "text": "Follow the passage north and enter the crevice at the end of the passage"
+    },
+    {
+     "text": "Kill the Giant Sea Snake. Use protect from ranged prayer and attack at a distance (magic preferred)."
+    },
+    {
+     "text": "Take the heavy box."
+    },
+    {
+     "text": "Leave the crevice of the boss room and climb up the rope for a shortcut back to Etceteria castle."
+    },
+    {
+     "text": "Talk to Queen Sigrid to receive a letter and 20000 gold. (You need two free inventory slots.)"
+    },
+    {
+     "text": "Talk to King Vargas."
+    }
+   ]
+  }
+ ]
+}

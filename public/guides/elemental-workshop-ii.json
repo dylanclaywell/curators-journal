@@ -1,0 +1,330 @@
+{
+ "id": "elemental-workshop-ii",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Elemental_Workshop_II%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Starting out",
+   "notes": [
+    "===The second key==="
+   ],
+   "steps": [
+    {
+     "text": "Go to the Exam Centre south of the Digsite. (Varrock teleport then run east; or use a Digsite pendant/ teleport and walk south towards the exam centre; the Senntisten teleport from the Ancient Spellbook is quite close, and can be used from a Portal Nexus in a POH)"
+    },
+    {
+     "text": "Search the most north-eastern of the south-eastern bookcases to find a beaten book."
+    },
+    {
+     "text": "Read the beaten book, then read the scroll."
+    },
+    {
+     "text": "Keep the book."
+    }
+   ]
+  },
+  {
+   "title": "The second key",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Head back to the Anvil building in Seers Village and enter the odd-looking wall and down the staircase to the workshop."
+    },
+    {
+     "text": "using the battered key (Elemental Workshop I) (to re-obtain search the north-eastern bookcase in the house opposite to get both the key and book)",
+     "depth": 1
+    },
+    {
+     "text": "Go north to the water elemental room and search the machinery to the west to get a key."
+    },
+    {
+     "text": "Note: You must read the scroll obtained from the Beaten Book to search Machinery or the option will not appear.",
+     "depth": 1
+    },
+    {
+     "text": "If you didn't bring 2 elemental ores with you, go west and get them by killing 2 Earth elementals (Mine the Elemental Rock for them to spawn)."
+    },
+    {
+     "text": "Go south from the centre room and smelt your ores into bars, at the furnace."
+    },
+    {
+     "text": "Go down the hatch in the centre room with the key in your inventory."
+    }
+   ]
+  },
+  {
+   "title": "Making Repairs",
+   "notes": [
+    "====The crane===="
+   ],
+   "steps": []
+  },
+  {
+   "title": "The crane",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Take-from the schematic crate to the south, take both schematics."
+    },
+    {
+     "text": "Go back upstairs and use one bar on the workbench to make a crane claw. Note: Don't accidentally let it create more than one."
+    },
+    {
+     "text": "Return downstairs to the two crane levers and pull the western one to lower the crane."
+    },
+    {
+     "text": "Use your claw on the old crane."
+    }
+   ]
+  },
+  {
+   "title": "The junction box",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Climb the stairs to the south-west to get on the catwalk."
+    },
+    {
+     "text": "Open the junction box to the west."
+    },
+    {
+     "text": "Click the pipe ends, not the pipe, to connect them as shown."
+    }
+   ]
+  },
+  {
+   "title": "Pipes and cogs",
+   "depth": 1,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Search all crates on the ground floor and the catwalk of the workshop until you find the following. IMPORTANT: Be sure to read the Crane schematic and Lever schematic, or you will be unable to find all the pieces."
+    },
+    {
+     "text": "Pipe",
+     "depth": 1
+    },
+    {
+     "text": "Small cog",
+     "depth": 1
+    },
+    {
+     "text": "Medium cog",
+     "depth": 1
+    },
+    {
+     "text": "Large cog",
+     "depth": 1
+    },
+    {
+     "text": "On the north side of the catwalk use the Pipe on the broken piping."
+    },
+    {
+     "text": "On the east side of the Ground floor use the cogs on the pins on the side of the machine that looks like a wind tunnel as shown."
+    },
+    {
+     "text": "Small cog on upper left pin",
+     "depth": 1
+    },
+    {
+     "text": "Medium cog on lower left pin",
+     "depth": 1
+    },
+    {
+     "text": "Large cog on right pin.",
+     "depth": 1
+    },
+    {
+     "text": "Pull the old lever to the right."
+    },
+    {
+     "text": "Note: The repairs are now complete. You will no longer need to head up to the catwalk again.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "Operating the machine",
+   "notes": [
+    "====The crane===="
+   ],
+   "steps": []
+  },
+  {
+   "title": "The crane",
+   "depth": 1,
+   "notes": [
+    "====The press===="
+   ],
+   "steps": [
+    {
+     "text": "On the south side place an elemental bar on the jig cart. (under the elemental claw)"
+    },
+    {
+     "text": "Note: Crane controls in case you get stuck:",
+     "depth": 1
+    },
+    {
+     "text": "Raise/Lower crane: western lever",
+     "depth": 1
+    },
+    {
+     "text": "Rotate crane: eastern lever",
+     "depth": 1
+    },
+    {
+     "text": "First, use the western lever (by the schematics crate) to raise the crane."
+    },
+    {
+     "text": "Use the eastern lever to rotate the crane."
+    },
+    {
+     "text": "Use the western lever twice to lower the crane into the lava and back up again."
+    },
+    {
+     "text": "At this point the elemental bar should be orange.",
+     "depth": 1
+    },
+    {
+     "text": "Use the eastern lever to rotate the crane over the cart."
+    },
+    {
+     "text": "Use the western lever twice to lower the bar onto the cart and release it."
+    },
+    {
+     "text": "Pull the lever just north of the claw controls to move the cart."
+    },
+    {
+     "text": "Note: The lever in front of the yellow sign moves the cart to the next station.",
+     "depth": 1
+    }
+   ]
+  },
+  {
+   "title": "The press",
+   "depth": 1,
+   "notes": [
+    "====The water tank===="
+   ],
+   "steps": [
+    {
+     "text": "Pull the western-most lever - in front of the press station - to flatten the bar once the cart has stopped."
+    },
+    {
+     "text": "Note: At this point the elemental bar should be flattened.",
+     "depth": 1
+    },
+    {
+     "text": "Pull the yellow sign lever again to move the cart to the next station."
+    }
+   ]
+  },
+  {
+   "title": "The water tank",
+   "depth": 1,
+   "notes": [
+    "====Drying===="
+   ],
+   "steps": [
+    {
+     "text": "Pull the northern-most lever."
+    },
+    {
+     "text": "Turn the corkscrew lever twice."
+    },
+    {
+     "text": "Pull the northern-most lever again."
+    },
+    {
+     "text": "Turn the west water valve twice so that the valve opens and closes. The tank will fill."
+    },
+    {
+     "text": "Turn the east water valve twice so that the valve opens and closes. The tank will empty."
+    },
+    {
+     "text": "Pull the northern-most lever."
+    },
+    {
+     "text": "Note: At this point the elemental bar should be blue.",
+     "depth": 1
+    },
+    {
+     "text": "Turn the corkscrew lever twice."
+    },
+    {
+     "text": "Pull the northern-most lever to close the door."
+    },
+    {
+     "text": "Pull the yellow sign lever again."
+    }
+   ]
+  },
+  {
+   "title": "Drying",
+   "depth": 1,
+   "notes": [
+    "===Finishing up==="
+   ],
+   "steps": [
+    {
+     "text": "Pull the east lever"
+    },
+    {
+     "text": "At this point the elemental bar should be white.",
+     "depth": 1
+    },
+    {
+     "text": "Note: The machine may need to be turned off and back on again for the bar to turn white.",
+     "depth": 1
+    },
+    {
+     "text": "Pull the east lever again to stop the fan."
+    },
+    {
+     "text": "Pull the yellow sign lever again."
+    }
+   ]
+  },
+  {
+   "title": "Finishing up",
+   "notes": [
+    "(Note: Make sure you have the beaten book in your inventory. If you only have the slashed book you will automatically make a mind shield and not the mind helmet.)"
+   ],
+   "steps": [
+    {
+     "text": "Take-from the jig to get a primed bar."
+    },
+    {
+     "text": "Head down the stairs to the north-west."
+    },
+    {
+     "text": "Go through the east door."
+    },
+    {
+     "text": "Use your primed bar with the extractor gun."
+    },
+    {
+     "text": "Operate the Extractor hat with the bar placed under the gun."
+    },
+    {
+     "text": "Note: Your magic level will be drained by 20.",
+     "depth": 1
+    },
+    {
+     "text": "Take-from the extractor gun to get a primed mind bar."
+    },
+    {
+     "text": "Go up both spiral stairs"
+    },
+    {
+     "text": "Use your primed mind bar on the workbench to smith a mind helmet."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

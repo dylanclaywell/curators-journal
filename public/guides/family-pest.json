@@ -1,0 +1,57 @@
+{
+ "id": "family-pest",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Family_Pest%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Speak to Dimintheis (south-east Varrock).",
+     "chat": [
+      "1. Have you got any quests for me?",
+      "2. Oh come on, however menial, I want to help!"
+     ]
+    },
+    {
+     "text": "Speak to the brothers in any order.",
+     "chat": [
+      "1. Family Pest"
+     ]
+    },
+    {
+     "text": "Avan is located in the Al Kharid mine, north of Al Kharid.",
+     "depth": 1,
+     "chat": [
+      "1. Family Pest"
+     ]
+    },
+    {
+     "text": "Caleb is located in Catherby, in the building north-east of the bank.",
+     "depth": 1,
+     "chat": [
+      "1. Family Pest"
+     ]
+    },
+    {
+     "text": "Johnathon is located upstairs in the Jolly Boar Inn, north-east of Varrock.",
+     "depth": 1,
+     "chat": [
+      "1. Family Pest"
+     ]
+    },
+    {
+     "text": "Return and speak to Dimintheis with 500,000 coins.",
+     "chat": [
+      "1. Family Pest",
+      "1. Yes"
+     ]
+    },
+    {
+     "text": "Congratulations, miniquest complete!"
+    }
+   ]
+  }
+ ]
+}

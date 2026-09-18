@@ -1,0 +1,127 @@
+{
+ "id": "creature-of-fenkenstrain",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Creature_of_Fenkenstrain%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Start the quest by reading the signpost in the centre of Canifis or by talking to Dr Fenkenstrain."
+    },
+    {
+     "text": "Take a pickled brain off the table in the tavern in Canifis for 50gp, or by using Telekinetic Grab."
+    },
+    {
+     "text": "Talk to Dr Fenkenstrain inside of Fenkenstrain's Castle.",
+     "chat": [
+      "1. Yes.",
+      "4. Braindead",
+      "4. Grave-digging"
+     ]
+    },
+    {
+     "text": "Go upstairs by the eastern or western staircase to the bookcases and read:"
+    },
+    {
+     "text": "\"The Joy Of Grave Digging\" in the west bookcase.",
+     "depth": 1,
+     "chat": [
+      "4. The Joy of Gravedigging"
+     ]
+    },
+    {
+     "text": "\"Handy Maggot Avoidance Techniques\" in the east bookcase.",
+     "depth": 1,
+     "chat": [
+      "2. Handy Maggot Avoidance Techniques"
+     ]
+    },
+    {
+     "text": "Combine the marble amulet and obsidian amulet to form the star amulet.",
+     "depth": 1
+    },
+    {
+     "text": "Right-click dig at the cross-shaped grave marker in the Haunted Woods, south-east of Fenkenstrain's castle and immediately east of fairy ring ALQ."
+    },
+    {
+     "text": "Be quick, the area is infested with vampyres. Take a holy symbol and food for low levels.",
+     "depth": 1
+    },
+    {
+     "text": "Combine the decapicated head and the pickled brain."
+    },
+    {
+     "text": "Head north out of the Haunted Woods and use your star amulet on the easternmost memorial (south-east of Fenkenstrain's castle)."
+    },
+    {
+     "text": "Push the memorial to enter the Experiment Cave."
+    },
+    {
+     "text": "Inside, kill a level 51 Experiment for the cavern key. If you have started Rag and Bone Man II, kill additional Experiments (level 25) for the Experiment bone."
+    },
+    {
+     "text": "Follow the north-western path to the end."
+    },
+    {
+     "text": "Search the chest and climb the ladder."
+    },
+    {
+     "text": "Right-click Dig at the three graves to get the torso, arms and legs."
+    },
+    {
+     "text": "Return to Dr Fenkenstrain (Fenkenstrain's castle teleport) and give him the body parts.",
+     "chat": [
+      "1. I have some body parts for you."
+     ]
+    },
+    {
+     "text": "Talk to him again to give him the needle and thread."
+    },
+    {
+     "text": "Talk to the Gardener Ghost for the shed key (ensure ghostspeak amulet is equipped).",
+     "chat": [
+      "2. Do you know where the key to the shed is?"
+     ]
+    },
+    {
+     "text": "Search the cupboard inside the shed to get a garden brush."
+    },
+    {
+     "text": "Take 3 canes from the pile of canes next to the shed"
+    },
+    {
+     "text": "Use all the canes (3) on the garden brush to get an extended brush (using a total of 3 bronze wires)."
+    },
+    {
+     "text": "Go upstairs to the western fireplace and use the extended brush on the fireplace for a conductor mould."
+    },
+    {
+     "text": "Go to a furnace (closest is in Port Phasmatys, teleport to Falador, fairy ring to Zanaris, amulet of glory to Al Kharid, or Home Teleport to Lumbridge) and smelt a silver bar into a conductor (lightning rod)."
+    },
+    {
+     "text": "Return to the castle, go upstairs and then climb the southern ladder to reach the lightning conductor."
+    },
+    {
+     "text": "Repair the lightning conductor."
+    },
+    {
+     "text": "Return to Dr Fenkenstrain and talk to him."
+    },
+    {
+     "text": "Go upstairs, then through the metal door, then climb the northern ladder."
+    },
+    {
+     "text": "Talk to Fenkenstrain's monster."
+    },
+    {
+     "text": "Go downstairs, then pickpocket the doctor for the Ring of Charos."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}

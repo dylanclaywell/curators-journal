@@ -224,7 +224,31 @@ export async function fetchWikitext(
  * truncating the requirements.
  */
 export function templateBody(text: string, name: string): string | null {
-  const start = text.indexOf(`{{${name}`)
+  return findTemplate(text, name)?.body ?? null
+}
+
+/**
+ * The same scan, but reporting where the template sat.
+ *
+ * A quick guide holds several `{{Checklist}}` blocks per page with prose
+ * between them, so its parser needs both the next match and the offset to
+ * resume from — and the prose it skipped, which carries the per-section item
+ * lists.
+ */
+export interface TemplateMatch {
+  body: string
+  /** Index of the opening `{{`. */
+  start: number
+  /** Index just past the closing `}}`. */
+  end: number
+}
+
+export function findTemplate(
+  text: string,
+  name: string,
+  from = 0,
+): TemplateMatch | null {
+  const start = text.indexOf(`{{${name}`, from)
   if (start === -1) return null
 
   let depth = 0
@@ -236,7 +260,13 @@ export function templateBody(text: string, name: string): string | null {
     }
     if (text[i] === '}' && text[i + 1] === '}') {
       depth--
-      if (depth === 0) return text.slice(start + 2 + name.length, i)
+      if (depth === 0) {
+        return {
+          body: text.slice(start + 2 + name.length, i),
+          start,
+          end: i + 2,
+        }
+      }
       i++
     }
   }
@@ -244,11 +274,17 @@ export function templateBody(text: string, name: string): string | null {
 }
 
 /**
- * Splits a template body into named params, breaking only at nesting depth 0
- * so a `|` inside a nested template or link doesn't start a bogus param.
+ * Splits a template body into its raw parameters, breaking only at nesting
+ * depth 0 so a `|` inside a nested template or link doesn't start a bogus one.
+ *
+ * Separate from `templateParams` because some templates take their parameters
+ * positionally — `{{Chat option|1Yes.|2No.}}` has no `=` anywhere — and
+ * `templateParams` drops exactly those. Both callers share this one split
+ * rather than each carrying a copy: the depth tracking is the subtle part, and
+ * `exitCodeFor` is already the cautionary tale about writing it twice.
  */
-export function templateParams(body: string | null): Record<string, string> {
-  if (!body) return {}
+export function templateParts(body: string | null): string[] {
+  if (!body) return []
 
   const parts: string[] = []
   let depth = 0
@@ -276,9 +312,16 @@ export function templateParams(body: string | null): Record<string, string> {
     buf += body[i]
   }
   parts.push(buf)
+  return parts
+}
 
+/**
+ * Splits a template body into named params, breaking only at nesting depth 0
+ * so a `|` inside a nested template or link doesn't start a bogus param.
+ */
+export function templateParams(body: string | null): Record<string, string> {
   const out: Record<string, string> = {}
-  for (const part of parts) {
+  for (const part of templateParts(body)) {
     const eq = part.indexOf('=')
     if (eq === -1) continue
     out[part.slice(0, eq).trim().toLowerCase()] = part.slice(eq + 1).trim()

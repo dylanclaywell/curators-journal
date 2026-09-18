@@ -1,0 +1,103 @@
+{
+ "id": "roving-elves",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Roving_Elves%2FQuick_guide",
+ "sections": [
+  {
+   "title": "Tracking Islwyn",
+   "notes": [
+    "Recommended: teleport to Ardougne and either: ring of Charos(a) & 1600gp or 3200gp for each trip."
+   ],
+   "steps": [
+    {
+     "text": "Head to Tirannwn (Catherby teleport (tablet), use charter to Port Tyras)"
+    },
+    {
+     "text": "Track down Islwyn, who will be either west of Lletya or north-east of the Tyras Camp. Use this map to assist you. (If the elves are not there, switch worlds until they appear)"
+    },
+    {
+     "text": "Offer your help to Islwyn.",
+     "chat": [
+      "1. Tell the truth?",
+      "1. Maybe I could help."
+     ]
+    },
+    {
+     "text": "Talk to Eluned."
+    }
+   ]
+  },
+  {
+   "title": "Obtaining the Seed",
+   "notes": [
+    "Needed: Glarial's pebble",
+    "Recommended: skills necklace, food, prayer potions, ring of recoil"
+   ],
+   "steps": [
+    {
+     "text": "Bank all your combat equipment, runes included."
+    },
+    {
+     "text": "Go to Tree Gnome Village dungeon and retrieve Glarial's pebble if you didn't save one from Waterfall Quest.",
+     "depth": 1
+    },
+    {
+     "text": "Travel north-west of the Fishing Guild and use Glarial's pebble on Glarial's tombstone."
+    },
+    {
+     "text": "Kill a Moss Guardian (level 84). It will drop a consecration seed."
+    },
+    {
+     "text": "Take the seed to Eluned."
+    }
+   ]
+  },
+  {
+   "title": "Planting The Seed",
+   "notes": [
+    "Needed: rope, spade, consecration seed",
+    "Recommended: games necklace (to Barbarian Outpost), Ardougne teleport."
+   ],
+   "steps": [
+    {
+     "text": "Enter the Waterfall Dungeon."
+    },
+    {
+     "text": "Board the log raft north of Baxtorian Falls.",
+     "depth": 1
+    },
+    {
+     "text": "Use a rope on the rock.",
+     "depth": 1
+    },
+    {
+     "text": "Use a rope on the dead tree.",
+     "depth": 1
+    },
+    {
+     "text": "Open the door to enter.",
+     "depth": 1
+    },
+    {
+     "text": "(Skip this step if you already have the key.) Search the most northern crates in the east room for a key."
+    },
+    {
+     "text": "Take the west path all the way north."
+    },
+    {
+     "text": "Left click the seed in the final room to plant it."
+    },
+    {
+     "text": "Return to Islwyn to choose your reward."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    },
+    {
+     "text": "Optional: Speak to Eluned to start Mourning's End Part I, which will allow you to receive the teleport crystal to Lletya.",
+     "depth": 1
+    }
+   ]
+  }
+ ]
+}

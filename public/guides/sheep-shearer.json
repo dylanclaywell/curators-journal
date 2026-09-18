@@ -1,0 +1,69 @@
+{
+ "id": "sheep-shearer",
+ "generatedAt": "2026-09-18",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Sheep_Shearer%2FQuick_guide",
+ "sections": [
+  {
+   "title": "If you already have the 20 unnoted balls of wool",
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Fred the Farmer north of Lumbridge.",
+     "chat": [
+      "1. I'm looking for a quest."
+     ]
+    },
+    {
+     "text": "Fred takes the 20 balls of wool."
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  },
+  {
+   "title": "If you don't have the balls of wool",
+   "notes": [
+    "::Note: You cannot shear Rams or \"The Thing\". If you attack a ram and cannot kill it, run out of the pen until it stops targeting you."
+   ],
+   "steps": [
+    {
+     "text": "Talk to Fred the Farmer north of Lumbridge.",
+     "chat": [
+      "1. I'm looking for a quest.",
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "He will give you shears if you do not have them.",
+     "depth": 1
+    },
+    {
+     "text": "Enter the sheep pen to the east, connected to his house and shear sheep for 20 wool."
+    },
+    {
+     "text": "Ultimate Ironmen: You can deliver the balls of wool in several trips. You do not have to deliver all 20 at once.",
+     "depth": 1
+    },
+    {
+     "text": "Go to the of Lumbridge Castle."
+    },
+    {
+     "text": "Click on the spinning wheel in the southern room to spin the wool."
+    },
+    {
+     "text": "With 20 un-noted balls of wool, return to Fred the Farmer."
+    },
+    {
+     "text": "Talk to Fred the Farmer and hand them in.",
+     "chat": [
+      "1. I need to talk to you about shearing these sheep!"
+     ]
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}
