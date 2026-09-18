@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.7.0](https://github.com/dylanclaywell/stagescape/compare/curators-journal-v0.6.0...curators-journal-v0.7.0) (2026-09-18)
+
+
+### Features
+
+* add diary types and share the wiki plumbing between generators ([455afd9](https://github.com/dylanclaywell/stagescape/commit/455afd91340223ed71f69a2ecb015f04c98f553e))
+* check off diary tasks individually, with ids that survive regeneration ([b7d5cd6](https://github.com/dylanclaywell/stagescape/commit/b7d5cd65fd046353cd2c132cca4c33c8ef6d305a))
+* evaluate achievement diary tiers and tasks ([26cfd0c](https://github.com/dylanclaywell/stagescape/commit/26cfd0ca8f1d9bd75b307016dae8f4dba581b08d))
+* generate the achievement diary dataset from the wiki ([aa58321](https://github.com/dylanclaywell/stagescape/commit/aa583214b3ffd37d9b16f473086efb2e5a5443f7))
+* persist diary progress and carry it in the backup ([0a88062](https://github.com/dylanclaywell/stagescape/commit/0a880629035b9ad15a1eff2d541b40927b448022))
+* show achievement diaries, two placements at once ([558ca76](https://github.com/dylanclaywell/stagescape/commit/558ca7611ed62dedff5076c552e5907abd828949))
+
+
+### Chores
+
+* add /checkpoint and take .memories off an MCP server ([181ce94](https://github.com/dylanclaywell/stagescape/commit/181ce94216c004b29e41edb3f329164297e7b73e))
+
 ## [0.6.0](https://github.com/dylanclaywell/stagescape/compare/curators-journal-v0.5.0...curators-journal-v0.6.0) (2026-09-16)
 
 
