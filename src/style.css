@@ -68,6 +68,16 @@
   --color-doing: #8a6612;
   --color-done: #2f6b2a;
 
+  /* Dialogue options in a quick guide — the words you pick out of a chat menu.
+     Blue because nothing else in the journal is, so it reads as "not prose" at
+     a glance without needing a box around it.
+
+     Tempered the same way as the three above rather than dropped in as a pure
+     hue: 5.6:1 on parchment, which clears ink-soft (4.7) and every state colour,
+     so it stays legible at 13px. It is never underlined and never a link —
+     see QuestGuideSteps.vue. */
+  --color-dialogue: #274a78;
+
   --font-display: 'IM Fell English', Georgia, 'Times New Roman', serif;
   --font-body: 'Alegreya Sans', 'Helvetica Neue', Arial, sans-serif;
   /*

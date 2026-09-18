@@ -1,13 +1,15 @@
 <script setup lang="ts">
 import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import AppIcon from '@/components/AppIcon.vue'
+import QuestGuideSteps from '@/components/QuestGuideSteps.vue'
 import QuestItemLines from '@/components/QuestItemLines.vue'
 import { pageHeader } from '@/composables/usePageHeader'
 import { combatLevel, prerequisiteChain } from '@/lib/quests'
 import type { QuestProgress } from '@/lib/quests'
 import type { SkillRequirement } from '@/lib/types'
 import { panelById } from '@/panels/registry'
+import { useGuidesStore } from '@/stores/guides'
 import { useQuestsStore } from '@/stores/quests'
 
 /*
@@ -19,6 +21,7 @@ import { useQuestsStore } from '@/stores/quests'
 const props = defineProps<{ id: string }>()
 
 const quests = useQuestsStore()
+const guides = useGuidesStore()
 onMounted(() => void quests.ensureReady())
 
 const quest = computed(() => quests.index.byId.get(props.id))
@@ -45,6 +48,65 @@ const fromPanel = computed(
 function detailPath(id: string): string {
   return `${fromPanel.value.path}/${id}`
 }
+
+/*
+ * The wiki's walkthrough for this quest.
+ *
+ * Loaded on mount rather than on expand. The "fetched on demand" in the guide
+ * design is about not shipping all 204 in the precache, not about avoiding one
+ * ~4 KB same-origin request for the quest you are currently looking at — and
+ * knowing whether a guide exists is what lets the section hide itself for the
+ * ten quests that have none, instead of offering a toggle that expands into an
+ * apology.
+ */
+const router = useRouter()
+watch(
+  () => props.id,
+  (id) => void guides.ensureGuide(id),
+  { immediate: true },
+)
+
+const guide = computed(() => guides.byId[props.id] ?? null)
+const guideLoading = computed(() => !!guides.loading[props.id])
+const guideFailed = computed(() => !!guides.failed[props.id])
+
+/*
+ * Expansion lives in the query string, not in a ref.
+ *
+ * This is the same rule the back target follows above, and it earns its keep
+ * harder here: the walkthrough is what you have open *while playing*, so it is
+ * the one piece of state most likely to be sitting there when iOS kills the
+ * backgrounded PWA. A `ref` would come back collapsed every time you swapped to
+ * the game and back, which is exactly the cost that stops the app being used.
+ *
+ * `replace`, not `push`: expanding a section is not a place you should have to
+ * press Back out of.
+ */
+const guideOpen = computed(() => route.query.guide === '1')
+
+function toggleGuide(): void {
+  const query = { ...route.query }
+  if (guideOpen.value) delete query.guide
+  else query.guide = '1'
+  void router.replace({ query })
+}
+
+/**
+ * Whether to offer the walkthrough at all.
+ *
+ * A failed fetch still shows the section, because "we couldn't load this" is
+ * worth saying and worth retrying; ten quests genuinely having no guide is not.
+ */
+const hasWalkthrough = computed(
+  () => guideLoading.value || guideFailed.value || !!guide.value,
+)
+
+const stepCount = computed(() =>
+  (guide.value?.sections ?? []).reduce(
+    (total, section) => total + section.steps.length,
+    0,
+  ),
+)
 
 // Watches `quest`, not just mount: Vue Router reuses this component when
 // navigating from one quest straight to another (a prerequisite link below),
@@ -547,6 +609,79 @@ function statusStripeClass(id: string): string {
             muted
           />
         </section>
+      </div>
+
+      <!-- Chapter: the wiki's walkthrough. Sits after "Before you go" because
+           that is the reading order — gather, then go — and before the rewards,
+           which are the only thing here you read when you're finished.
+
+           Collapsed behind a tap rather than always open: Desert Treasure II is
+           249 steps, and unfurled by default it would bury the rewards under a
+           screen-height of walkthrough for every player who only came to check
+           requirements. Vertical space is the scarce resource in the docked
+           case, so the default costs one row. -->
+      <div v-if="hasWalkthrough" class="flex flex-col gap-4">
+        <div class="flex items-baseline gap-2.5">
+          <p class="font-display m-0 text-[19px] text-ink">Walkthrough</p>
+          <span class="h-px min-w-4 flex-1 bg-bevel-dk/30" aria-hidden="true" />
+        </div>
+
+        <!-- A real button on oak, matching the other controls in the panel.
+             `aria-expanded` rather than only the caret's rotation, since the
+             caret is decorative and carries no meaning to a screen reader. -->
+        <button
+          type="button"
+          class="tap pressable bevel-oak flex w-full items-center gap-2 bg-brown px-3.5 text-left font-bold text-gold engraved"
+          :aria-expanded="guideOpen"
+          @click="toggleGuide"
+        >
+          <AppIcon
+            name="caretDown"
+            :size="14"
+            class="shrink-0 transition-transform"
+            :class="guideOpen ? '' : '-rotate-90'"
+          />
+          <span class="min-w-0 flex-1">
+            {{ guideOpen ? 'Hide' : 'Show' }} the quick guide
+          </span>
+          <span v-if="stepCount" class="nums shrink-0 text-[13px] opacity-80">
+            {{ stepCount }} steps
+          </span>
+        </button>
+
+        <template v-if="guideOpen">
+          <p v-if="guideLoading" class="m-0 text-[15px] text-ink-soft">
+            Loading the walkthrough…
+          </p>
+
+          <!-- Distinct from "this quest has no guide", which hides the chapter
+               entirely: this one is worth retrying, and saying the wiki has no
+               walkthrough for Dragon Slayer II because the connection dropped
+               would be telling the player something false. -->
+          <p v-else-if="guideFailed" class="m-0 text-[15px] text-ink-soft">
+            The walkthrough couldn't be loaded. It's fetched when you open it,
+            so this usually means you were offline the first time — tap again
+            once you're back on.
+          </p>
+
+          <template v-else-if="guide">
+            <QuestGuideSteps :sections="guide.sections" />
+
+            <!-- CC BY-NC-SA 3.0 requires attribution that reaches the reader,
+                 not just NOTICE.md. This is that, and it links the exact page
+                 the steps were generated from rather than the quest page. -->
+            <p class="m-0 text-[13px] text-ink-soft">
+              Walkthrough from the
+              <a
+                :href="guide.sourceUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="underline"
+                >OSRS Wiki quick guide</a
+              >, licensed CC BY-NC-SA 3.0. Generated {{ guide.generatedAt }}.
+            </p>
+          </template>
+        </template>
       </div>
 
       <!-- Chapter: the payoff, on its own — nothing above gates on it and
