@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12",
+  "generatedAt": "2026-09-18",
   "sources": [
     "https://oldschool.runescape.wiki/ (quest pages, CC BY-NC-SA 3.0)",
     "https://oldschool.runescape.wiki/w/Module:Questreq/data (cross-check)"
@@ -409,7 +409,7 @@
       ],
       "itemsRecommended": [
         {
-          "text": "A teleport to the the dog shelter - either a combat bracelet or skull sceptre"
+          "text": "A teleport to the dog shelter - either a combat bracelet or skull sceptre"
         },
         {
           "text": "200 coins if adopting a dog after completion of the quest."
@@ -429,10 +429,18 @@
           "text": "Crafting 1,000 experience"
         },
         {
-          "text": "Access to puppies, which can be grown into dogs."
+          "text": "Access to puppies, which can be grown into dogs. Three puppies are available upon quest completion, the others can be found wandering the specified areas in the section below:"
         },
         {
-          "text": "Labrador, pug, and spaniel are available by default. All other lost dogs have a vast wandering radius, but can be found close-by their specified areas.",
+          "text": ", rescued from Picklenose.",
+          "depth": 1
+        },
+        {
+          "text": ", rescued from Toetaller.",
+          "depth": 1
+        },
+        {
+          "text": ", rescued from the outlaws.",
           "depth": 1
         }
       ],
@@ -593,7 +601,7 @@
           "text": "Fast travel to Varrock (Varrock teleport)"
         },
         {
-          "text": "Fast travel to Sophanem (magic carpets, Nardah teleport, or pharaoh's sceptre) or fairy ring and run north (fairy ring requires partial completion of Beneath Cursed Sands and 62 .)"
+          "text": "Fast travel to Sophanem (magic carpets, Nardah teleport, or pharaoh's sceptre) or fairy ring AKP and run north (fairy ring requires partial completion of Beneath Cursed Sands and 62.)"
         },
         {
           "text": "Ring of Charos(a) for discounted magic carpet rides or hard Desert Diary completed",
@@ -950,15 +958,15 @@
           "text": "Fast travel to several locations"
         },
         {
-          "text": "Draynor Manor (Draynor Manor Teleport, amulet of glory to Draynor Village, or fairy ring code to the nearby Wizard's Tower)",
+          "text": "Draynor Manor (Draynor Manor Teleport, amulet of glory to Draynor Village, or fairy ring code DIS to the nearby Wizard's Tower)",
           "depth": 1
         },
         {
-          "text": "Port Phasmatys (Ectophial, charter ships or fairy ring code )",
+          "text": "Port Phasmatys (Ectophial, charter ships or fairy ring code ALQ)",
           "depth": 1
         },
         {
-          "text": "Slayer Tower (Slayer ring, Fenkenstrain's Castle Teleport, Kharyrll Teleport, Salve Graveyard Teleport or fairy ring code )",
+          "text": "Slayer Tower (Slayer ring, Fenkenstrain's Castle Teleport, Kharyrll Teleport, Salve Graveyard Teleport or fairy ring code CKS)",
           "depth": 1
         },
         {
@@ -1459,7 +1467,7 @@
           "text": "Transportation to the Key Master, such as Key master teleport or Falador Teleport"
         },
         {
-          "text": "Transportation to Arceuus via Kharedst's memoirs (Book of the Dead) or the fairy ring code"
+          "text": "Transportation to Arceuus via Kharedst's memoirs (Book of the Dead) or the fairy ring code CIS"
         },
         {
           "text": "Anti-dragon shield if going through Taverley Dungeon with less than Agility 70"
@@ -1628,7 +1636,7 @@
           "text": "Some form of antipoison"
         },
         {
-          "text": "Dramen staff to use fairy ring"
+          "text": "Dramen staff to use fairy ring AKP"
         },
         {
           "text": "A pharaoh's sceptre for a direct teleport to the necropolis (Once you arrive in the necropolis, use the Commune option on the obelisk by the mine)"
@@ -1678,7 +1686,7 @@
           "text": "The circlet of water, an untradeable helm that acts like a waterskin when worn. (If your inventory was full, you may claim one for free from the High Priest in Sophanem.)"
         },
         {
-          "text": "Access to a fairy ring on a small island south-west of the necropolis, code . (Unlocked when entering the necropolis at the beginning of the quest.)"
+          "text": "Access to a fairy ring on a small island south-west of the necropolis, code AKP. (Unlocked when entering the necropolis at the beginning of the quest.)"
         },
         {
           "text": "Jaltevas teleport option on the Pharaoh's sceptre. (Unlocked by selecting Commune on an obelisk in the necropolis, by the mine.)"
@@ -1898,14 +1906,14 @@
           "text": "Stamina or energy potions and some food"
         },
         {
-          "text": "Feldip hills teleport or Fairy Rings to (or gnome glider after completion of One Small Favour)"
+          "text": "Feldip hills teleport or Fairy Rings to AKS (or gnome glider after completion of One Small Favour)"
         }
       ],
       "description": [
         "Rantz the Ogre needs to feed his demanding children, Fycie and Bugs, so he wants to go Big Chompy Bird hunting. Problem is, he's all fingers and thumbs when it comes to making ogre arrows.",
         "Could someone please give him a hand?"
       ],
-      "startPoint": "Talk to Rantz by the eastern coast of Feldip Hills, east of fairy ring .",
+      "startPoint": "Talk to Rantz by the eastern coast of Feldip Hills, east of fairy ring AKS.",
       "kills": [
         {
           "text": "Chompy bird (level 6)"
@@ -1974,7 +1982,7 @@
           "text": "Fast travel to several locations"
         },
         {
-          "text": "East Ardougne to start the quest plus 1-2 trips - Ardougne Teleport or Skills necklace to Fishing Guild or Spirit tree to Battlefield or fairy ring to or Captain Barnaby's ship from Rimmington or Brimhaven",
+          "text": "East Ardougne to start the quest plus 1-2 trips - Ardougne Teleport or Skills necklace to Fishing Guild or Spirit tree to Battlefield or fairy ring to DJP or Captain Barnaby's ship from Rimmington or Brimhaven",
           "depth": 1
         },
         {
@@ -2193,7 +2201,7 @@
           "text": "Combat 35"
         },
         {
-          "text": "If you have not completed Ghosts Ahoy you'll need either 3,500 coins to charter a ship or 2 Ecto-tokens. The charter fee can be reduced to 1,000-1,300 coins by taking the charter ship from The Pandemonium, Port Sarim, or Musa Point."
+          "text": "If you have not completed Ghosts Ahoy you'll need either 3,500 coins to charter a ship or 2 Ecto-tokens and a ghostspeak amulet. The charter fee can be reduced to 1,000-1,300 coins by taking the charter ship from The Pandemonium, Port Sarim, or Musa Point."
         },
         {
           "text": "Food (level 57 pirates will attack you on the ship)"
@@ -2310,23 +2318,23 @@
           "depth": 1
         },
         {
-          "text": "Hosidius (1 trip) - Lovakengj Minecart Network for or Fairy ring to",
+          "text": "Hosidius (1 trip) - Lovakengj Minecart Network for or Fairy ring to AKR",
           "depth": 1
         },
         {
-          "text": "Shayzien (1 trip) - Lovakengj Minecart Network for or Fairy ring to",
+          "text": "Shayzien (1 trip) - Lovakengj Minecart Network for or Fairy ring to DJR",
           "depth": 1
         },
         {
-          "text": "Lovakengj (1 trip) - Lovakengj Minecart Network for or Fairy ring to",
+          "text": "Lovakengj (1 trip) - Lovakengj Minecart Network for or Fairy ring to DJR",
           "depth": 1
         },
         {
-          "text": "Arceuus (1 trip) - Lovakengj Minecart Network for or Fairy ring to",
+          "text": "Arceuus (1 trip) - Lovakengj Minecart Network for or Fairy ring to CIS",
           "depth": 1
         },
         {
-          "text": "Dark Altar (1 trip) - Games necklace or Fairy ring to",
+          "text": "Dark Altar (1 trip) - Games necklace or Fairy ring to CIS",
           "depth": 1
         },
         {
@@ -2385,7 +2393,7 @@
           "text": "Weight-reducing clothing and stamina or energy potions"
         },
         {
-          "text": "Fast travel to Ardougne to start the quest - Ardougne cloak 1-4 or Ardougne Teleport or Spirit tree to Battlefield or fairy ring to or Captain Barnaby's ship from Rimmington or Brimhaven"
+          "text": "Fast travel to Ardougne to start the quest - Ardougne cloak 1-4 or Ardougne Teleport or Spirit tree to Battlefield or fairy ring to DJP or Captain Barnaby's ship from Rimmington or Brimhaven"
         }
       ],
       "description": [
@@ -2758,7 +2766,7 @@
           "text": "Fishing 3,000 experience"
         },
         {
-          "text": "The Shell collection, that can be unpacked into a set of seven shells that can play notes which are audible for other players, allowing you to play music in-game."
+          "text": "The shell collection, that can be unpacked into a set of seven shells that can play notes which are audible for other players, allowing you to play music in-game."
         }
       ],
       "wikiUrl": "https://oldschool.runescape.wiki/w/Crab_Quest"
@@ -2841,7 +2849,7 @@
           "text": "Fast travel to several locations"
         },
         {
-          "text": "Canifis to start the quest - Salve Graveyard Teleport or Kharyrll Teleport or fairy ring",
+          "text": "Canifis to start the quest - Salve Graveyard Teleport or Kharyrll Teleport or fairy ring CKS",
           "depth": 1
         },
         {
@@ -3165,7 +3173,7 @@
           "depth": 1
         },
         {
-          "text": "Paterdomus (1 trip) - Salve Graveyard teleport, fairy ring , or Kharyrll Teleport",
+          "text": "Paterdomus (1 trip) - Salve Graveyard teleport, fairy ring CKS, or Kharyrll Teleport",
           "depth": 1
         },
         {
@@ -4322,7 +4330,7 @@
           "depth": 1
         },
         {
-          "text": "Edgeville (2 trips) - Amulet of glory (Members only), Combat bracelet (Members only), fairy ring (Members only), Varrock Teleport, Canoe",
+          "text": "Edgeville (2 trips) - Amulet of glory (Members only), Combat bracelet (Members only), fairy ring DKR (Members only), Varrock Teleport, Canoe",
           "depth": 1
         },
         {
@@ -4544,7 +4552,7 @@
           "text": "Astral rune"
         },
         {
-          "text": "Seal of passage (or elite Fremennik Diary completion)"
+          "text": "Seal of Passage (or elite Fremennik Diary completion)"
         },
         {
           "text": "Tinderbox"
@@ -4653,7 +4661,7 @@
           "text": "Access to the Myths' Guild"
         },
         {
-          "text": "Access to the pettable dog",
+          "text": "Access to a pettable dog",
           "depth": 1
         },
         {
@@ -4738,7 +4746,7 @@
       ],
       "itemsRequired": [
         {
-          "text": "A seal of passage"
+          "text": "A Seal of Passage"
         },
         {
           "text": "3 different kinds of food: 6 of 1 type and 7 of 2 others for a total of 20 pieces (Sacks of cabbages, potatoes, and onions can be used as they each contain 10 piece of their respective food and only require a total of 3 inventory slots. Fruit baskets also work.)"
@@ -4795,7 +4803,7 @@
           "text": "A dreamy lamp, which awards 15,000 experience in a combat skill of a player's choosing, apart from Attack and Prayer."
         },
         {
-          "text": "'Birds-Eye' Jack will now allow you to use the bank without a seal of passage equipped or in your inventory."
+          "text": "'Birds-Eye' Jack will now allow you to use the bank without a Seal of Passage equipped or in your inventory."
         },
         {
           "text": "Unlocks:",
@@ -5021,7 +5029,7 @@
           "heading": true
         },
         {
-          "text": "Fast travel to Fremennik Slayer Dungeon (Slayer ring or Fairy Rings to )"
+          "text": "Fast travel to Fremennik Slayer Dungeon (Slayer ring or Fairy Rings to AJR)"
         }
       ],
       "description": [
@@ -5086,7 +5094,7 @@
           "text": "Combat 10"
         },
         {
-          "text": "Fast travel to the Eagles' Peak (Fairy Rings to or Piscatoris teleport)"
+          "text": "Fast travel to the Eagles' Peak (Fairy Rings to AKQ or Piscatoris teleport)"
         },
         {
           "text": "Fast travel to Varrock (Varrock teleport, Chronicle, or Rat Pits Minigame Teleport)"
@@ -5181,7 +5189,7 @@
           "text": "Needle (obtainable during the quest, Costume needle works if you have thread)"
         },
         {
-          "text": "Thread (obtainable during the quest)"
+          "text": "Thread"
         },
         {
           "text": "Leather (obtainable during the quest)"
@@ -6238,7 +6246,7 @@
           "depth": 1
         },
         {
-          "text": "Witchaven (1 trip) - Ardougne Teleport, fairy ring , or Ardougne cloak 1-4",
+          "text": "Witchaven (1 trip) - Ardougne Teleport, fairy ring BLR, or Ardougne cloak 1-4",
           "depth": 1
         },
         {
@@ -6246,7 +6254,7 @@
           "depth": 1
         },
         {
-          "text": "Edgeville (1 trip) - Amulet of glory, Combat bracelet to Edgeville Monastery, fairy ring , or Varrock Teleport",
+          "text": "Edgeville (1 trip) - Amulet of glory, Combat bracelet to Edgeville Monastery, fairy ring DKR, or Varrock Teleport",
           "depth": 1
         }
       ],
@@ -6348,7 +6356,7 @@
           "text": "Alternatively: Ranged, Magic or a Halberd to safespot all enemies (all enemies attack with melee)"
         },
         {
-          "text": "Fast travel to Fight Arena to start the quest - Ardougne cloak 1-4 or fairy ring to or Spirit tree to Battlefield or Ardougne Teleport or Captain Barnaby's ship from Rimmington or Brimhaven"
+          "text": "Fast travel to Fight Arena to start the quest - Ardougne cloak 1-4 or fairy ring to DJP or Spirit tree to Battlefield or Ardougne Teleport or Captain Barnaby's ship from Rimmington or Brimhaven"
         }
       ],
       "description": [
@@ -6443,7 +6451,7 @@
           "depth": 1
         },
         {
-          "text": "McGrubor's Wood (1 trip) - Camelot Teleport, combat bracelet to the Ranging Guild or fairy rings to )",
+          "text": "McGrubor's Wood (1 trip) - Camelot Teleport, combat bracelet to the Ranging Guild or fairy rings to ALS)",
           "depth": 1
         },
         {
@@ -6675,7 +6683,7 @@
           "depth": 1
         },
         {
-          "text": "Port Phasmatys farm (Ectophial, or Fenkenstrain's castle teleport and run east, or fairy ring code )",
+          "text": "Port Phasmatys farm (Ectophial, or Fenkenstrain's castle teleport and run east, or fairy ring code ALQ)",
           "depth": 1
         },
         {
@@ -6897,7 +6905,7 @@
           "text": "Combat 45"
         },
         {
-          "text": "Fast travel to the Farming Guild (Skills necklace, Battlefront Teleport, Farming Cape, or Fairy Rings to )"
+          "text": "Fast travel to the Farming Guild (Skills necklace, Battlefront Teleport, Farming Cape, or Fairy Rings to CIR)"
         },
         {
           "text": "Combat equipment to fight a level 82 beast."
@@ -7336,7 +7344,7 @@
           "text": "2 empty inventory spaces, one for Zealot's key and one for the glowing fungus"
         },
         {
-          "text": "Fast travel to Abandoned Mine to start the quest - Mort'ton Teleport, fairy ring (req Agility 50), Shades of Mort'ton minigame teleport, Barrows Teleport, fairy ring and take the swamp boaty (requires completion of In Search of the Myreque)"
+          "text": "Fast travel to Abandoned Mine to start the quest - Mort'ton Teleport, fairy ring BIP (req Agility 50), Shades of Mort'ton minigame teleport, Barrows Teleport, fairy ring BKR and take the swamp boaty (requires completion of In Search of the Myreque)"
         },
         {
           "text": "A filled druid pouch if not using the low fence agility shortcut from Burgh de Rott to skip the swamp section"
@@ -7431,7 +7439,7 @@
           "text": "Weight-reducing clothing and stamina or energy potions"
         },
         {
-          "text": "Fast travel to Ardougne to start the quest - Ardougne cloak 1-4 or Ardougne Teleport or Spirit tree to Battlefield or fairy ring to or Captain Barnaby's ship from Rimmington or Brimhaven"
+          "text": "Fast travel to Ardougne to start the quest - Ardougne cloak 1-4 or Ardougne Teleport or Spirit tree to Battlefield or fairy ring to DJP or Captain Barnaby's ship from Rimmington or Brimhaven"
         }
       ],
       "description": [
@@ -7805,7 +7813,7 @@
           "depth": 1
         },
         {
-          "text": "Fisher Realm (1 trip) - fairy ring or Brimhaven options listed above",
+          "text": "Fisher Realm (1 trip) - fairy ring BJR or Brimhaven options listed above",
           "depth": 1
         },
         {
@@ -8030,7 +8038,7 @@
           "text": "Fast travel to several locations"
         },
         {
-          "text": "Lighthouse to start the quest plus one additional trip - fairy ring , games necklace to Barbarian Outpost or Minigame Teleport to Barbarian Assault",
+          "text": "Lighthouse to start the quest plus one additional trip - fairy ring ALP, games necklace to Barbarian Outpost or Minigame Teleport to Barbarian Assault",
           "depth": 1
         },
         {
@@ -8247,7 +8255,7 @@
       ],
       "itemsRecommended": [
         {
-          "text": "(Members only) Fast travel to the Wizards' Tower (necklace of passage, amulet of glory to Draynor Village, or Fairy Rings to )"
+          "text": "(Members only) Fast travel to the Wizards' Tower (necklace of passage, amulet of glory to Draynor Village, or Fairy Rings to DIS)"
         }
       ],
       "description": [
@@ -8441,11 +8449,11 @@
           "text": "Fast travel to several locations"
         },
         {
-          "text": "Myreque Hideout to start the quest plus 2 additional trips - fairy ring , Kharyrll Teleport, Salve Graveyard Teleport, Slayer ring to Slayer Tower, or Fenkenstrain's Castle Teleport",
+          "text": "Myreque Hideout to start the quest plus 2 additional trips - fairy ring DLS, Kharyrll Teleport, Salve Graveyard Teleport, Slayer ring to Slayer Tower, or Fenkenstrain's Castle Teleport",
           "depth": 1
         },
         {
-          "text": "Burgh de Rott (3 trips) - Mort'ton Teleport, Shades of Mort'ton minigame teleport, Barrows Teleport, or fairy ring and take the swamp boaty",
+          "text": "Burgh de Rott (3 trips) - Mort'ton Teleport, Shades of Mort'ton minigame teleport, Barrows Teleport, or fairy ring BKR and take the swamp boaty",
           "depth": 1
         },
         {
@@ -8453,7 +8461,7 @@
           "depth": 1
         },
         {
-          "text": "Paterdomus Temple west of Canifis (1 trip) - fairy ring , Salve Graveyard Teleport, Kharyrll Teleport, or Slayer ring to Slayer Tower",
+          "text": "Paterdomus Temple west of Canifis (1 trip) - fairy ring CKS, Salve Graveyard Teleport, Kharyrll Teleport, or Slayer ring to Slayer Tower",
           "depth": 1
         }
       ],
@@ -8636,11 +8644,11 @@
           "text": "Fast travel to several locations"
         },
         {
-          "text": "Canifis to start the quest - Kharyrll Teleport, Salve Graveyard Teleport, fairy ring , Slayer ring to Slayer Tower, or Fenkenstrain's Castle Teleport",
+          "text": "Canifis to start the quest - Kharyrll Teleport, Salve Graveyard Teleport, fairy ring CKS, Slayer ring to Slayer Tower, or Fenkenstrain's Castle Teleport",
           "depth": 1
         },
         {
-          "text": "Mort'ton (1 trip) - Mort'ton Teleport, Shades of Mort'ton minigame teleport, Barrows Teleport, or fairy ring and take the swamp boaty",
+          "text": "Mort'ton (1 trip) - Mort'ton Teleport, Shades of Mort'ton minigame teleport, Barrows Teleport, or fairy ring BKR and take the swamp boaty",
           "depth": 1
         }
       ],
@@ -8670,7 +8678,7 @@
           "text": "Crafting 600 experience"
         },
         {
-          "text": "Access to the Hollows and fairy ring"
+          "text": "Access to the Hollows and fairy ring DLS"
         },
         {
           "text": "Unlocks:",
@@ -8789,7 +8797,7 @@
           "text": "Combat equipment to kill a level 53 Jogre for an easy Karamja Diary task"
         },
         {
-          "text": "Fast travel to Tai Bwo Wannai Village to start the quest - Brimhaven teleport, Teleport to House (Brimhaven), Captain Barnaby's ship from Ardougne to Brimhaven, fairy ring or amulet of glory to Karamja"
+          "text": "Fast travel to Tai Bwo Wannai Village to start the quest - Brimhaven teleport, Teleport to House (Brimhaven), Captain Barnaby's ship from Ardougne to Brimhaven, fairy ring CKR or amulet of glory to Karamja"
         }
       ],
       "description": [
@@ -8879,7 +8887,7 @@
           "text": "A combat bracelet, amulet of glory, or Lassar Teleport for fast access to the Black Knights' Fortress."
         },
         {
-          "text": "A Dramen staff or Lunar staff with code for quick travel to Sinclair Mansion"
+          "text": "A Dramen staff or Lunar staff with code CJR for quick travel to Sinclair Mansion"
         },
         {
           "text": "Salve graveyard teleports for quick access to fairy ring"
@@ -9134,7 +9142,7 @@
           "text": "Access to the Goblin Temple (with an altar to recharge prayer points)."
         },
         {
-          "text": "Access to Yu'biusk, using fairy ring code ."
+          "text": "Access to Yu'biusk, using fairy ring code BLQ."
         },
         {
           "text": "Ability to purchase plain of mud spheres that transport you to the Goblin Cave."
@@ -9399,10 +9407,10 @@
           "text": "Weapon, armour, food and several prayer potions"
         },
         {
-          "text": "Fast travel to the Legends' Guild (Ardougne teleport or Fairy rings to )"
+          "text": "Fast travel to the Legends' Guild (Ardougne teleport or Fairy rings to BLR)"
         },
         {
-          "text": "Fast travel to the Karamja jungle (Brimhaven teleport, Teleport to House if it is in Brimhaven, charter ship or ship from Ardougne to Brimhaven, Fairy rings to or amulet of glory to Karamja)"
+          "text": "Fast travel to the Karamja jungle (Brimhaven teleport, Teleport to House if it is in Brimhaven, charter ship or ship from Ardougne to Brimhaven, Fairy rings to CKR or amulet of glory to Karamja)"
         }
       ],
       "description": [
@@ -9425,7 +9433,7 @@
       ],
       "rewards": [
         {
-          "text": "Access to the Legends' Guild (including shop to buy the cape of legends)"
+          "text": "Access to the Legends' Guild (including shop to buy the cape of Legends)"
         },
         {
           "text": "The ability to wield the dragon sq shield"
@@ -9712,7 +9720,7 @@
           "text": "Combat 50"
         },
         {
-          "text": "Fast travel to Rellekka: Enchanted lyre (obtained during The Fremennik Trials), Fremennik sea boots, Rellekka teleport tablets, fairy ring (code ), or Camelot Teleport and run"
+          "text": "Fast travel to Rellekka: Enchanted lyre (obtained during The Fremennik Trials), Fremennik sea boots, Rellekka teleport tablets, fairy ring (code DKS), or Camelot Teleport and run"
         },
         {
           "text": "Fast travel to each of the elemental altars (either via the Abyss, the Guardians of the Rift, or to the Air near the Crafting Guild, Fire near the Emir's Arena, Water in Lumbridge Swamp, Earth near the Sawmill)"
@@ -9751,7 +9759,7 @@
           "text": "Runecraft 5,000 Runecraft experience"
         },
         {
-          "text": "A seal of passage"
+          "text": "A Seal of Passage"
         },
         {
           "text": "Access to Lunar Isle and Lunar equipment"
@@ -10106,15 +10114,15 @@
           "depth": 1
         },
         {
-          "text": "Port Phasmatys (1 trip) - Ectophial or Fairy ring to or Charter ship to Port Phasmatys for",
+          "text": "Port Phasmatys (1 trip) - Ectophial or Fairy ring to ALQ or Charter ship to Port Phasmatys for",
           "depth": 1
         },
         {
-          "text": "Castle Wars (1 trip) - Ring of dueling or Castle Wars minigame teleport or Fairy ring to",
+          "text": "Castle Wars (1 trip) - Ring of dueling or Castle Wars minigame teleport or Fairy ring to BKP",
           "depth": 1
         },
         {
-          "text": "Rellekka (1 trip) - Fremennik sea boots 1-4 or Enchanted lyre or Rellekka teleport or Fairy ring to",
+          "text": "Rellekka (1 trip) - Fremennik sea boots 1-4 or Enchanted lyre or Rellekka teleport or Fairy ring to DKS",
           "depth": 1
         }
       ],
@@ -10710,7 +10718,7 @@
       ],
       "itemsRecommended": [
         {
-          "text": "Fast travel to Ardougne Monastery to start the quest - Ardougne cloak 1-4 or Ardougne Teleport or Spirit tree to Battlefield or fairy ring to or Captain Barnaby's ship from Rimmington or Brimhaven"
+          "text": "Fast travel to Ardougne Monastery to start the quest - Ardougne cloak 1-4 or Ardougne Teleport or Spirit tree to Battlefield or fairy ring to DJP or Captain Barnaby's ship from Rimmington or Brimhaven"
         }
       ],
       "description": [
@@ -10791,7 +10799,7 @@
           "text": "Fast travel to the White Wolf Mountain (gnome glider through Ring of dueling or Royal seed pod, or alternatively a Camelot teleport)"
         },
         {
-          "text": "Fast travel to the Mountain Camp (Slayer ring or Fairy Rings to and head north, or Camelot Teleport)"
+          "text": "Fast travel to the Mountain Camp (Slayer ring or Fairy Rings to AJR and head north, or Camelot Teleport)"
         },
         {
           "text": "Fast travel to Rellekka (Enchanted lyre or Fremennik sea boots, or House teleport if your house is in Rellekka)"
@@ -10939,7 +10947,7 @@
           "text": "Fast travel to Taverley (House teleport, Balloon network, Falador teleport)"
         },
         {
-          "text": "Fast travel to Feldip Hills (Feldip hills teleport, Gnome glider, Fairy rings to or the Eagle transport system to the jungle)"
+          "text": "Fast travel to Feldip Hills (Feldip hills teleport, Gnome glider, Fairy rings to AKS or the Eagle transport system to the jungle)"
         },
         {
           "text": "Fast travel to Rimmington, if you have not yet made a barrel of naphtha (Rimmington teleport or Teleport to House if it located there, Skills necklace to the Crafting Guild or a Falador teleport)"
@@ -11048,7 +11056,7 @@
           "text": "A melee weapon that provides a Prayer bonus, such as any mace, Godsword, Zamorakian hasta, ancient mace, silver sickle (b), crozier, dragon mace, Void Knight mace, the Ivandis flail, blisterwood flail, or Wolfbane. The ancient mace's special attack can be useful as it refills prayer points. The Ivandis and blisterwood flails weigh 0 kg."
         },
         {
-          "text": "One pure essence to craft a Death rune once in the Death Altar at the end of the quest (requires Runecraft 65 , needed for hard Ardougne Diary), can be done easier via the Abyss later but might save time for Ultimate or Hardcore Ironmen"
+          "text": "One pure essence to craft a Death rune once in the Death Altar at the end of the quest (requires Runecraft 65, needed for hard Ardougne Diary), can be done easier via the Abyss later but might save time for Ultimate or Hardcore Ironmen"
         }
       ],
       "description": [
@@ -11412,7 +11420,7 @@
           "text": "Stamina or energy potions"
         },
         {
-          "text": "Fast travel to the Observatory to start the quest - ring of dueling or Minigame Teleport to Castle Wars, Ourania Teleport, Spirit tree to Battlefield, Ardougne cloak to Ardougne Monastery, fairy ring"
+          "text": "Fast travel to the Observatory to start the quest - ring of dueling or Minigame Teleport to Castle Wars, Ourania Teleport, Spirit tree to Battlefield, Ardougne cloak to Ardougne Monastery, fairy ring BKP"
         },
         {
           "text": "Agility 23, Ranged 24, Strength 28 (all stats boostable), a crossbow and mith grapple to create a permanent shortcut to the Observatory after completion of the quest."
@@ -11568,7 +11576,7 @@
           "text": "Stamina or energy potions"
         },
         {
-          "text": "Fast travel to Olaf (Fairy Rings to , Enchanted Lyre, Fremennik sea boots, House teleport if your house is in Rellekka, or Slayer ring to Fremennik Slayer Dungeon)"
+          "text": "Fast travel to Olaf (Fairy Rings to DKS, Enchanted Lyre, Fremennik sea boots, House teleport if your house is in Rellekka, or Slayer ring to Fremennik Slayer Dungeon)"
         }
       ],
       "description": [
@@ -11726,7 +11734,7 @@
           "text": "Fast travel to several locations"
         },
         {
-          "text": "Shilo Village (travel to Brimhaven and take the cart or use Fairy Rings to )",
+          "text": "Shilo Village (travel to Brimhaven and take the cart or use Fairy Rings to CKR)",
           "depth": 1
         },
         {
@@ -11766,7 +11774,7 @@
           "depth": 1
         },
         {
-          "text": "Feldip Hills (Feldip hills teleport or use Fairy Rings to or the jungle Eagle transport system)",
+          "text": "Feldip Hills (Feldip hills teleport or use Fairy Rings to AKS or the jungle Eagle transport system)",
           "depth": 1
         },
         {
@@ -11967,7 +11975,7 @@
           "text": "Combat 75"
         },
         {
-          "text": "60+ , , and"
+          "text": "60+,, and"
         },
         {
           "text": "Hunter 50/Cooking 60 for Cooked moss lizard/Cooked bream health scaling"
@@ -12116,7 +12124,7 @@
       "notes": [],
       "itemsRequired": [
         {
-          "text": "Dwellberries (Spawns in McGrubor's Wood, squeeze through the loose railing, use , or Telekinetic Grab them. They can be bought from Heckel Funch or Hudo in the Tree Gnome Stronghold or grown with 36 Farming.)"
+          "text": "Dwellberries (Spawns in McGrubor's Wood, squeeze through the loose railing, use ALS, or Telekinetic Grab them. They can be bought from Heckel Funch or Hudo in the Tree Gnome Stronghold or grown with 36 Farming.)"
         },
         {
           "text": "Rope (Purchasable in the East Ardougne general store, Port Khazard general store, Ned, or a spawn in Karamja general store.)"
@@ -12156,7 +12164,7 @@
       ],
       "itemsRecommended": [
         {
-          "text": "Fast travel to Ardougne to start the quest - Skills necklace to Fishing Guild or Spirit tree to Battlefield or fairy ring to or Captain Barnaby's ship from Rimmington or Brimhaven"
+          "text": "Fast travel to Ardougne to start the quest - Skills necklace to Fishing Guild or Spirit tree to Battlefield or fairy ring to DJP or Captain Barnaby's ship from Rimmington or Brimhaven"
         }
       ],
       "description": [
@@ -12169,7 +12177,7 @@
           "text": "Mining 2,425 experience"
         },
         {
-          "text": "Ardougne teleport scroll, reading it unlocks the Ardougne Teleport with 51 Magic and use of the Ardougne teletab."
+          "text": "Ardougne teleport scroll, which can be read to unlock the Ardougne Teleport spell"
         }
       ],
       "wikiUrl": "https://oldschool.runescape.wiki/w/Plague_City"
@@ -12758,7 +12766,7 @@
           "depth": 1
         },
         {
-          "text": "Port Sarim (Rimmington teleport, Teleport to House if your house is in Rimmington, Explorer's Ring 2, amulet of glory to Draynor Village, skills necklace to the Crafting Guild or Fairy Rings to )",
+          "text": "Port Sarim (Rimmington teleport, Teleport to House if your house is in Rimmington, Explorer's Ring 2, amulet of glory to Draynor Village, skills necklace to the Crafting Guild or Fairy Rings to AIQ)",
           "depth": 1
         },
         {
@@ -12770,7 +12778,7 @@
           "depth": 1
         },
         {
-          "text": "Keldagrim (Blast Furnace Minigame Teleport, Varrock teleport, ring of wealth to the Grand Exchange or Fairy rings to or )",
+          "text": "Keldagrim (Blast Furnace Minigame Teleport, Varrock teleport, ring of wealth to the Grand Exchange or Fairy rings to DKS or DKR)",
           "depth": 1
         }
       ],
@@ -13017,7 +13025,7 @@
           "text": "Fast travel to Lumbridge (Lumbridge teleport)"
         },
         {
-          "text": "Fast travel to Edgeville (amulet of glory, Fairy Rings to , ring of wealth to the Grand Exchange or a Varrock teleport)"
+          "text": "Fast travel to Edgeville (amulet of glory, Fairy Rings to DKR, ring of wealth to the Grand Exchange or a Varrock teleport)"
         },
         {
           "text": "Fish if using a kitten to catch rats, or if you want to battle hell-rat behemoths after the quest (buckets of milk can also substitute for hell-rat behemoth fights)"
@@ -13480,11 +13488,11 @@
           "depth": 1
         },
         {
-          "text": "Feldip Hills (Feldip Hills teleport, Fairy Rings to or the Eagle Transport System)",
+          "text": "Feldip Hills (Feldip Hills teleport, Fairy Rings to AKS or the Eagle Transport System)",
           "depth": 1
         },
         {
-          "text": "Tai Bwo Wannai (Tai Bwo Wannai teleport, Fairy Rings to or travel via Brimhaven)",
+          "text": "Tai Bwo Wannai (Tai Bwo Wannai teleport, Fairy Rings to CKR or travel via Brimhaven)",
           "depth": 1
         }
       ],
@@ -13675,7 +13683,7 @@
           "text": "Minigame Teleport to Guardians of the Rift"
         },
         {
-          "text": "Necklace of passage or access to fairy rings () and a Lunar/Dramen staff (for quick transportation to Wizards' Tower)"
+          "text": "Necklace of passage or access to fairy rings (DIS) and a Lunar/Dramen staff (for quick transportation to Wizards' Tower)"
         }
       ],
       "itemsRecommended": [],
@@ -14004,7 +14012,7 @@
           "text": "The ability to use Zul-Andra teleport scrolls"
         },
         {
-          "text": "The ability to use the Fairy ring"
+          "text": "The ability to use the BJS Fairy ring"
         },
         {
           "text": "The ability to attempt the Gwenith Glide, a Barracuda Trial"
@@ -14456,7 +14464,7 @@
       ],
       "itemsRequired": [
         {
-          "text": "Dusty key (obtainable during the quest) or Agility 70 ."
+          "text": "Dusty key (obtainable during the quest) or Agility 70."
         }
       ],
       "itemsRecommended": [
@@ -14851,7 +14859,7 @@
           "text": "1 hammer"
         },
         {
-          "text": "Using a Flamtaer hammer is highly recommended in case the minigame is unpopulated, as a regular hammer is insufficient to build the temple alone. An additional 13,000 coins (or {{Coins|}} on the Grand Exchange) allows you to buy a Flamtaer hammer from Razmire.",
+          "text": "Using a Flamtaer hammer is highly recommended in case the minigame is unpopulated, as a regular hammer is insufficient to build the temple alone. An additional 13,000 coins (or on the Grand Exchange) allows you to buy a Flamtaer hammer from Razmire.",
           "depth": 1
         }
       ],
@@ -14872,7 +14880,7 @@
           "text": "11 free inventory slots"
         },
         {
-          "text": "Fast travel to Mort'ton to start the quest - Mort'ton Teleport, Barrows Teleport, fairy ring and take the swamp boaty, or Morytania legs 3+"
+          "text": "Fast travel to Mort'ton to start the quest - Mort'ton Teleport, Barrows Teleport, fairy ring BKR and take the swamp boaty, or Morytania legs 3+"
         }
       ],
       "description": [
@@ -14967,7 +14975,7 @@
           "text": "Fast travel to Al Kharid to start the quest (amulet of glory or ring of dueling)"
         },
         {
-          "text": "Fast travel to Uzer (necklace of passage to Eagles' Eyrie, Fairy Rings to or using the magic carpet transport)"
+          "text": "Fast travel to Uzer (necklace of passage to Eagles' Eyrie, Fairy Rings to DLQ or using the magic carpet transport)"
         },
         {
           "text": "Food and armour to defeat a level 100 demon"
@@ -15134,7 +15142,7 @@
           "text": "Energy restoring items"
         },
         {
-          "text": "Fast travel to East Ardougne to start the quest - Ardougne Teleport or Skills necklace to Fishing Guild or Spirit tree to Battlefield or fairy ring to or Captain Barnaby's ship from Rimmington or Brimhaven"
+          "text": "Fast travel to East Ardougne to start the quest - Ardougne Teleport or Skills necklace to Fishing Guild or Spirit tree to Battlefield or fairy ring to DJP or Captain Barnaby's ship from Rimmington or Brimhaven"
         },
         {
           "text": "Optionally a Skills necklace to save some time when walking from East Ardougne to the Fishing Guild"
@@ -15330,19 +15338,19 @@
           "text": "Fast travel to several locations:"
         },
         {
-          "text": "East of Shilo Village to start the quest - Gnome glider, fairy ring , Tai Bwo Wannai Teleport or Teleport to House (Brimhaven)",
+          "text": "East of Shilo Village to start the quest - Gnome glider, fairy ring CKR, Tai Bwo Wannai Teleport or Teleport to House (Brimhaven)",
           "depth": 1
         },
         {
-          "text": "Tai Bwo Wannai (2 trips) - Tai Bwo Wannai Teleport, fairy ring , or Teleport to House (Brimhaven)",
+          "text": "Tai Bwo Wannai (2 trips) - Tai Bwo Wannai Teleport, fairy ring CKR, or Teleport to House (Brimhaven)",
           "depth": 1
         },
         {
-          "text": "Eastern Karamja (2 trips) - Gnome glider or fairy ring",
+          "text": "Eastern Karamja (2 trips) - Gnome glider or fairy ring DKP",
           "depth": 1
         },
         {
-          "text": "Cairn Isle (2 trips) - fairy ring or Tai Bwo Wannai Teleport (only useful for the second trip)",
+          "text": "Cairn Isle (2 trips) - fairy ring CKR or Tai Bwo Wannai Teleport (only useful for the second trip)",
           "depth": 1
         }
       ],
@@ -15471,7 +15479,7 @@
           "text": "Combat 95"
         },
         {
-          "text": "Teleport to Haunted Woods (fairy ring , Fenkenstrain's Castle Teleport, Kharyrll Teleport, or ectophial will get you close)."
+          "text": "Teleport to Haunted Woods (fairy ring ALQ, Fenkenstrain's Castle Teleport, Kharyrll Teleport, or ectophial will get you close)."
         },
         {
           "text": "Drakan's medallion (optionally, with a Slepey tablet used on it) or 10,000 coins to pay Andras for a trip to Slepe."
@@ -16291,7 +16299,7 @@
           "depth": 1
         },
         {
-          "text": "A Dramen staff or Lunar staff – if using fairy rings",
+          "text": "A Dramen staff or Lunar staff – if using fairy rings AKQ",
           "depth": 1
         },
         {
@@ -16784,7 +16792,7 @@
           "text": "Fast travel to several locations"
         },
         {
-          "text": "The entrance of the Temple of Ikov (skills necklace to the Fishing Guild, combat bracelet to the Ranged Guild or Fairy Rings to )",
+          "text": "The entrance of the Temple of Ikov (skills necklace to the Fishing Guild, combat bracelet to the Ranged Guild or Fairy Rings to BLR)",
           "depth": 1
         },
         {
@@ -16792,7 +16800,7 @@
           "depth": 1
         },
         {
-          "text": "Edgeville (amulet of glory to Edgeville, ring of wealth to Grand Exchange or Fairy Rings to )",
+          "text": "Edgeville (amulet of glory to Edgeville, ring of wealth to Grand Exchange or Fairy Rings to DKR)",
           "depth": 1
         }
       ],
@@ -16935,22 +16943,22 @@
           "text": "Combat 15"
         },
         {
-          "text": "Runes to cast Crumble Undead() on Tormented Souls and Trapped Soul"
+          "text": "Runes to cast Crumble Undead(2 Earth, 2 Air, 1 Chaos) on Tormented Souls and Trapped Soul"
         },
         {
           "text": "Access to fairy rings (Dramen/Lunar staff and started Fairytale II - Cure a Queen)"
         },
         {
-          "text": "Two Battlefront teleports, or use the fairy ring"
+          "text": "Two Battlefront teleports, or use the fairy ring CIR"
         },
         {
           "text": "A Stamina potion"
         },
         {
-          "text": "Xeric's Talisman or runes for Kourend Castle Teleport ()"
+          "text": "Xeric's Talisman or runes for Kourend Castle Teleport (2 Law, 1 Water, 1 Fire)"
         },
         {
-          "text": "Skills necklace for teleportation to the Farming Guild, just south-west of Mount Karuulm, or via fairy ring"
+          "text": "Skills necklace for teleportation to the Farming Guild, just south-west of Mount Karuulm, or via fairy ring CIR"
         },
         {
           "text": "Arceuus library teleport tablets"
@@ -17616,7 +17624,7 @@
           "text": "The ability to do Varrock Museum specimen cleaning to obtain a Digsite pendant."
         },
         {
-          "text": "The Ancient talisman can be viewed in the Digsite Exhibit at the museum on the ."
+          "text": "The Ancient talisman can be viewed in the Digsite Exhibit at the museum on the."
         }
       ],
       "wikiUrl": "https://oldschool.runescape.wiki/w/The_Dig_Site"
@@ -17680,7 +17688,7 @@
           "depth": 1
         },
         {
-          "text": "Mudskipper Point (Rat Pits minigame teleport or Fairy Rings to )",
+          "text": "Mudskipper Point (Rat Pits minigame teleport or Fairy Rings to AIQ)",
           "depth": 1
         },
         {
@@ -17763,7 +17771,7 @@
           "text": "Fast travel to the Tree Gnome Stronghold (Balloon Transport System, gnome glider, Spirit Tree or Slayer ring to the Slayer Cave to directly reach the Stronghold -- alternatively, use a necklace of passage to the Outpost and walk north)"
         },
         {
-          "text": "Fast travel to Hazelmere (Fairy rings to , or Watchtower or Nightmare Zone minigame teleport and walk east if you have no access to fairy rings)"
+          "text": "Fast travel to Hazelmere (Fairy rings to CLS, or Watchtower or Nightmare Zone minigame teleport and walk east if you have no access to fairy rings)"
         },
         {
           "text": "Slayer ring to the Slayer Dungeon or a necklace of passage to the Wizards' Tower for easy access to fairy rings",
@@ -17771,7 +17779,7 @@
         }
       ],
       "description": [
-        "After you foiled a plan to destroy the Grand Tree things have been quiet in the gnome world. Brimstail has found a strange machine, though, built by Oaknock the Engineer during the Gnomes' Golden Age. What does the weird device do? Why on Gielinor was it built? If you agree to help this bookworm gnome get this confusing device working, you will learn a little about gnome magicks, gnome history, and you will start to uncover a new threat (or is it an old one?) to gnome security - a threat that is a lot harder to see ..."
+        "After you foiled a plan to destroy the Grand Tree things have been quiet in the gnome world. Brimstail has found a strange machine, though, built by Oaknock the Engineer during the Gnomes' Golden Age. What does the weird device do? Why on Gielinor was it built? If you agree to help this bookworm gnome get this confusing device working, you will learn a little about gnome magicks, gnome history, and you will start to uncover a new threat (or is it an old one?) to gnome security - a threat that is a lot harder to see..."
       ],
       "startPoint": "Talk to Brimstail in his cave south-west side of the Tree Gnome Stronghold, directly west of the bank near the Stronghold Slayer Cave.",
       "kills": [
@@ -18080,7 +18088,7 @@
           "depth": 1
         },
         {
-          "text": "Fairy ring code , may require a dramen or lunar staff",
+          "text": "Fairy ring code DJR, may require a dramen or lunar staff",
           "depth": 1
         },
         {
@@ -18561,11 +18569,11 @@
           "text": "Rellekka teleport or Teleport to House if your house is located in Rellekka"
         },
         {
-          "text": "Fairy ring or may also be used.",
+          "text": "Fairy ring AJR or CJR may also be used.",
           "depth": 1
         },
         {
-          "text": "Fairy ring might be most useful for players with agility levels above 57 as the fence shortcut, northeast of Rellekka, can be utilized.",
+          "text": "Fairy ring DKS might be most useful for players with agility levels above 57 as the fence shortcut, northeast of Rellekka, can be utilized.",
           "depth": 1
         },
         {
@@ -18804,10 +18812,10 @@
           "text": "Book of the Dead or Kharedst's memoirs (History and Hearsay) to teleport close to the Ruins of Morra"
         },
         {
-          "text": "Fairy ring or Kharedst's memoirs (History and Hearsay) for quick access to Lake Molch"
+          "text": "Fairy ring DJR or Kharedst's memoirs (History and Hearsay) for quick access to Lake Molch"
         },
         {
-          "text": "Fairy ring or Xeric's talisman to Xeric's Honour for fast teleportation around the Kebos Lowlands"
+          "text": "Fairy ring BLS or Xeric's talisman to Xeric's Honour for fast teleportation around the Kebos Lowlands"
         },
         {
           "text": "A few Stamina potions or Super energy potions"
@@ -18876,7 +18884,7 @@
           "text": "Fast travel to several locations:"
         },
         {
-          "text": "South-east of Rellekka to start the quest plus one additional trip - fairy ring , Teleport to House (Rellekka), or Fremennik sea boots 1+",
+          "text": "South-east of Rellekka to start the quest plus one additional trip - fairy ring AJR, Teleport to House (Rellekka), or Fremennik sea boots 1+",
           "depth": 1
         },
         {
@@ -18884,7 +18892,7 @@
           "depth": 1
         },
         {
-          "text": "Tai Bwo Wannai (1 trip) - Tai bwo wannai teleport or fairy ring",
+          "text": "Tai Bwo Wannai (1 trip) - Tai bwo wannai teleport or fairy ring CKR",
           "depth": 1
         },
         {
@@ -18896,7 +18904,7 @@
           "depth": 1
         },
         {
-          "text": "Shantay Pass (1 trip) - Amulet of glory (Al Kharid), fairy ring",
+          "text": "Shantay Pass (1 trip) - Amulet of glory (Al Kharid), fairy ring BIQ",
           "depth": 1
         },
         {
@@ -18989,11 +18997,11 @@
           "text": "Fast travel to several locations"
         },
         {
-          "text": "Keldagrim, east of Rellekka (Fairy rings to , Enchanted Lyre, Rellekka teleport or Teleport to House if your house is in Rellekka)",
+          "text": "Keldagrim, east of Rellekka (Fairy rings to DKS, Enchanted Lyre, Rellekka teleport or Teleport to House if your house is in Rellekka)",
           "depth": 1
         },
         {
-          "text": "Mudskipper Point (Fairy rings to , Rat Pits grouping teleport to Port Sarim, Rimmington teleport or Teleport to House if your house is in Rimmington)",
+          "text": "Mudskipper Point (Fairy rings to AIQ, Rat Pits grouping teleport to Port Sarim, Rimmington teleport or Teleport to House if your house is in Rimmington)",
           "depth": 1
         },
         {
@@ -19164,7 +19172,7 @@
           "text": "Fast travel to several locations:"
         },
         {
-          "text": "Uzer to start the quest plus one additional trip - necklace of passage to Eagles' Eyrie or fairy ring",
+          "text": "Uzer to start the quest plus one additional trip - necklace of passage to Eagles' Eyrie or fairy ring DLQ",
           "depth": 1
         },
         {
@@ -19262,7 +19270,7 @@
           "depth": 1
         },
         {
-          "text": "Hazelmere's house (1 trip) - fairy ring , Watchtower Teleport, Teleport to House (Yanille), Minigame Teleport to Nightmare Zone or Fishing Trawler, Ardougne cloak 1-4 to Ardougne Monastery, or ring of dueling to Castle Wars",
+          "text": "Hazelmere's house (1 trip) - fairy ring CLS, Watchtower Teleport, Teleport to House (Yanille), Minigame Teleport to Nightmare Zone or Fishing Trawler, Ardougne cloak 1-4 to Ardougne Monastery, or ring of dueling to Castle Wars",
           "depth": 1
         }
       ],
@@ -19385,6 +19393,9 @@
         },
         {
           "text": "Access to The Graveyard"
+        },
+        {
+          "text": "A new high-level Agility course offering the fastest rates of marks of grace in the game"
         }
       ],
       "wikiUrl": "https://oldschool.runescape.wiki/w/The_Graveyard"
@@ -19608,7 +19619,7 @@
           "text": "1 extra vial to pay for fast travel to Port Sarim"
         },
         {
-          "text": "Fast travel to Yanille (Yanille teleport, Watchtower teleport, Nightmare Zone Minigame Teleport or House teleport if your house is in Yanille, or Fairy Ring to )"
+          "text": "Fast travel to Yanille (Yanille teleport, Watchtower teleport, Nightmare Zone Minigame Teleport or House teleport if your house is in Yanille, or Fairy Ring to CIQ)"
         },
         {
           "text": "Fast travel to Brimhaven (Brimhaven teleport, Teleport to House if your house is in Brimhaven, via a charter ship or via Captain Barnaby's ship from Ardougne using the Ardougne teleport or Ardougne cloak)"
@@ -19859,7 +19870,7 @@
           "depth": 1
         },
         {
-          "text": "Mudskipper Point (2 trips) - fairy ring (Members only), Teleport to House (Rimmington) (Members only), Rat Pits minigame teleport (Members only), or Falador Teleport",
+          "text": "Mudskipper Point (2 trips) - fairy ring AIQ (Members only), Teleport to House (Rimmington) (Members only), Rat Pits minigame teleport (Members only), or Falador Teleport",
           "depth": 1
         }
       ],
@@ -20060,7 +20071,7 @@
           "text": "Several stamina or energy potions"
         },
         {
-          "text": "A tangled toad's legs to claim an optional mint cake reward from Longramble worth {{Coins|}}"
+          "text": "A tangled toad's legs to claim an optional mint cake reward from Longramble worth"
         },
         {
           "text": "High healing food"
@@ -20508,7 +20519,7 @@
           "depth": 1
         },
         {
-          "text": "Witchaven (Ardougne teleport or fairy rings to )",
+          "text": "Witchaven (Ardougne teleport or fairy rings to BLR)",
           "depth": 1
         },
         {
@@ -20540,11 +20551,11 @@
           "depth": 1
         },
         {
-          "text": "Abyss, if using that method (amulet of glory to Edgeville, ring of wealth to the Grand Exchange, or fairy rings to )",
+          "text": "Abyss, if using that method (amulet of glory to Edgeville, ring of wealth to the Grand Exchange, or fairy rings to DKR)",
           "depth": 1
         },
         {
-          "text": "Wizards' Tower, if using Guardians of the Rift to access the altars (necklace of Passage, amulet of glory to Draynor Village, or fairy rings to )",
+          "text": "Wizards' Tower, if using Guardians of the Rift to access the altars (necklace of Passage, amulet of glory to Draynor Village, or fairy rings to DIS)",
           "depth": 1
         },
         {
@@ -20715,7 +20726,7 @@
           "text": "Iron bar"
         },
         {
-          "text": "Any common, non-silver ring (such as a gold ring) that you're willing to lose (not onyx/dragonstone/explorer/beacon/'perfect' ring/nature/pineapple/Charos/fremennik/ancient)"
+          "text": "Any common, non-silver ring (such as a gold ring) that you're willing to lose (not onyx/dragonstone/explorer/beacon/'perfect' ring/nature/pineapple/Charos/fremennik/ancient/key)"
         },
         {
           "text": "At least one of the following to gain favour during the quest"
@@ -20888,7 +20899,7 @@
           "text": "Weight-reducing clothing and stamina or energy potions"
         },
         {
-          "text": "Fast travel to Tree Gnome Village to start the quest - Castle Wars minigame teleport, ring of dueling to Castle Wars, fairy ring to , Ardougne cloak 1-4, or necklace of passage to The Outpost"
+          "text": "Fast travel to Tree Gnome Village to start the quest - Castle Wars minigame teleport, ring of dueling to Castle Wars, fairy ring to CIQ, Ardougne cloak 1-4, or necklace of passage to The Outpost"
         }
       ],
       "description": [
@@ -21281,7 +21292,7 @@
           "text": "Slayer 8,000 experience"
         },
         {
-          "text": "Access to the Great Conch and its facilities (such as the fairy ring and notice board)"
+          "text": "Access to the Great Conch and its facilities (such as the fairy ring CJQ and notice board)"
         },
         {
           "text": "Ability to fight gryphons"
@@ -21672,7 +21683,7 @@
           "depth": 1
         },
         {
-          "text": "Canifis (Kharyrll Teleport, Ectophial, Salve Graveyard Teleport, Fenkenstrain's Castle Teleport, Fairy Rings to or Slayer ring to the Slayer Tower)",
+          "text": "Canifis (Kharyrll Teleport, Ectophial, Salve Graveyard Teleport, Fenkenstrain's Castle Teleport, Fairy Rings to CKS or Slayer ring to the Slayer Tower)",
           "depth": 1
         },
         {
@@ -21727,7 +21738,7 @@
           "depth": 1
         },
         {
-          "text": "McGrubor's Wood (combat bracelet to Ranging Guild or Fairy Rings to )",
+          "text": "McGrubor's Wood (combat bracelet to Ranging Guild or Fairy Rings to ALS)",
           "depth": 1
         },
         {
@@ -21866,7 +21877,7 @@
           "text": "Prayer 43 for protection prayers"
         },
         {
-          "text": "Fast travel to the Watchtower and the Ogre Enclave (Yanille teleport, Teleport to house if your house is in Yanille, Nightmare Zone or Castle Wars minigame teleport, ring of dueling to Castle Wars or Fairy Rings to )"
+          "text": "Fast travel to the Watchtower and the Ogre Enclave (Yanille teleport, Teleport to house if your house is in Yanille, Nightmare Zone or Castle Wars minigame teleport, ring of dueling to Castle Wars or Fairy Rings to CIQ)"
         },
         {
           "text": "Agility 39, Ranged 21, Strength 38, a crossbow and a mith grapple for the shortcut over Yanille's southern wall"
@@ -21951,7 +21962,7 @@
           "depth": 1
         },
         {
-          "text": "Tree Gnome Village (1 trip) - Spirit tree, fairy ring , Ardougne cloak 1-4 to Ardougne Monastery, Minigame Teleport to Fishing Trawler, or ring of dueling to Castle Wars",
+          "text": "Tree Gnome Village (1 trip) - Spirit tree, fairy ring CIQ, Ardougne cloak 1-4 to Ardougne Monastery, Minigame Teleport to Fishing Trawler, or ring of dueling to Castle Wars",
           "depth": 1
         },
         {
@@ -22241,7 +22252,7 @@
           "text": "Mort myre fungus"
         },
         {
-          "text": "1 log of any type except redwood (you can obtain one using a bronze axe next to the Hunting Expert, but you must not already have an axe in your inventory (a Zombie axe counts, even though it can not be used to cut down trees)"
+          "text": "1 log of any type except redwood (you can obtain one using a bronze axe next to the Hunting Expert, but you must not already have an axe in your inventory (a Zombie axe counts, even though it can not be used to cut down trees))"
         },
         {
           "text": "Pink dye (or 20 coins)"
