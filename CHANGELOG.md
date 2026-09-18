@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.9.0](https://github.com/dylanclaywell/curators-journal/compare/curators-journal-v0.8.0...curators-journal-v0.9.0) (2026-09-18)
+
+
+### Features
+
+* add the wiki's quick guides as per-quest walkthrough data ([4c3b270](https://github.com/dylanclaywell/curators-journal/commit/4c3b2701e7d2e5ea5ca289a3900d1a0fdbee791c))
+* show a quest's quick guide in its detail panel ([eb9a779](https://github.com/dylanclaywell/curators-journal/commit/eb9a77909d8468dd6c1e2ca85aa20d2a7ccb6e0e))
+
+
+### Chores
+
+* refresh the quest and diary datasets from the wiki ([19a0622](https://github.com/dylanclaywell/curators-journal/commit/19a06226e2df58be283a86a4c1e5a9f7b2030825))
+* refresh the quest and diary datasets from the wiki ([e9c2d33](https://github.com/dylanclaywell/curators-journal/commit/e9c2d330351a9223d64118758c8c66d8681e948a))
+
 ## [0.8.0](https://github.com/dylanclaywell/stagescape/compare/curators-journal-v0.7.0...curators-journal-v0.8.0) (2026-09-18)
 
 
