@@ -35,6 +35,10 @@ const ICONS = [
   ['hourglass', 'src/assets/icons/hourglass.svg', 'game-icons'],
   ['padlock', 'src/assets/icons/padlock.svg', 'game-icons'],
   ['openBook', 'src/assets/icons/open-book.svg', 'game-icons'],
+  // Achievement diaries. A trophy rather than another scroll or book: those
+  // two already mean Queue and Quests here, and at 20px a third parchment
+  // shape is indistinguishable from them.
+  ['trophy', 'src/assets/icons/trophy.svg', 'game-icons'],
   // Tab icons come from game-icons even where Phosphor has an equivalent: the
   // tab bar is the app's identity and the four sit together at 20px, so they
   // need one drawing style. Phosphor stays for chrome inside panels.

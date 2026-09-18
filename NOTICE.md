@@ -106,6 +106,7 @@ attribution.
 | `hourglass`       | Lorc        |
 | `padlock`         | Lorc        |
 | `open-book`       | Lorc        |
+| `trophy`          | Lorc        |
 | `progression`     | Delapouite  |
 | `big-gear`        | DarkZaitzev |
 

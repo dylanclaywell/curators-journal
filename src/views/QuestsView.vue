@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
 import AppIcon from '@/components/AppIcon.vue'
+import DiaryList from '@/components/DiaryList.vue'
 import { useQuestsStore } from '@/stores/quests'
 import type { QuestProgress } from '@/lib/quests'
 
@@ -13,6 +14,19 @@ import type { QuestProgress } from '@/lib/quests'
 const quests = useQuestsStore()
 
 onMounted(() => void quests.ensureReady())
+
+/*
+ * Variant B of slice 6e: diaries as a mode inside this panel rather than a
+ * fifth tab. Costs no tab-bar room, at the price of putting two different
+ * kinds of thing behind one label.
+ *
+ * Deliberately NOT persisted and NOT in the route. Both variants are running
+ * at once so they can be compared on the device, and whichever wins gets
+ * wired up properly — a mode that survives a relaunch has to live in the URL
+ * (iOS kills backgrounded PWAs), and that is a decision to make once, not
+ * twice. See ROADMAP.md Phase 6.
+ */
+const mode = ref<'quests' | 'diaries'>('quests')
 
 const search = ref('')
 
@@ -95,66 +109,92 @@ function isBlocked(id: string): boolean {
          order and scroll over this header. The two numbers are solving
          different problems and must not be the same. -->
     <div class="sticky top-0 z-20 flex flex-col gap-2 bg-parchment pb-2">
-      <div class="relative flex">
-        <AppIcon
-          name="search"
-          :size="15"
-          class="pointer-events-none absolute left-2.5 top-1/2 -translate-y-1/2 text-ink-soft"
-        />
-        <input
-          v-model="search"
-          type="text"
-          inputmode="search"
-          autocapitalize="none"
-          autocomplete="off"
-          spellcheck="false"
-          placeholder="Search quests"
-          class="tap bevel-in w-full bg-parchment-2 pl-8 pr-2 text-[16px] text-ink placeholder:text-ink-soft/60"
-        />
-      </div>
-
-      <div class="flex flex-wrap gap-1.5">
+      <!-- Segmented, not two tabs: these are two views of one panel, and the
+           in-out bevel pair already means "selected" everywhere else here. -->
+      <div class="flex gap-1.5">
         <button
-          v-for="opt in STATUS_FILTERS"
-          :key="opt.value"
+          v-for="m in ['quests', 'diaries'] as const"
+          :key="m"
           type="button"
-          class="tap pressable bevel-oak px-3 text-[13px] font-bold"
+          class="tap pressable bevel-oak flex-1 text-[13px] font-bold capitalize"
           :class="
-            statusFilter === opt.value
+            mode === m
               ? 'bevel-oak-in bg-brown text-gold engraved'
               : 'bg-brown-lt text-parchment-3'
           "
-          @click="statusFilter = opt.value"
+          @click="mode = m"
         >
-          {{ opt.label }}
-        </button>
-        <button
-          type="button"
-          :disabled="!quests.levelsKnown"
-          class="tap pressable bevel-oak px-3 text-[13px] font-bold disabled:opacity-50"
-          :class="
-            startableOnly
-              ? 'bevel-oak-in bg-brown text-gold engraved'
-              : 'bg-brown-lt text-parchment-3'
-          "
-          @click="startableOnly = !startableOnly"
-        >
-          Startable now
+          {{ m }}
         </button>
       </div>
 
-      <!-- Visible rather than a disabled-button tooltip — "never put
+      <template v-if="mode === 'quests'">
+        <div class="relative flex">
+          <AppIcon
+            name="search"
+            :size="15"
+            class="pointer-events-none absolute left-2.5 top-1/2 -translate-y-1/2 text-ink-soft"
+          />
+          <input
+            v-model="search"
+            type="text"
+            inputmode="search"
+            autocapitalize="none"
+            autocomplete="off"
+            spellcheck="false"
+            placeholder="Search quests"
+            class="tap bevel-in w-full bg-parchment-2 pl-8 pr-2 text-[16px] text-ink placeholder:text-ink-soft/60"
+          />
+        </div>
+
+        <div class="flex flex-wrap gap-1.5">
+          <button
+            v-for="opt in STATUS_FILTERS"
+            :key="opt.value"
+            type="button"
+            class="tap pressable bevel-oak px-3 text-[13px] font-bold"
+            :class="
+              statusFilter === opt.value
+                ? 'bevel-oak-in bg-brown text-gold engraved'
+                : 'bg-brown-lt text-parchment-3'
+            "
+            @click="statusFilter = opt.value"
+          >
+            {{ opt.label }}
+          </button>
+          <button
+            type="button"
+            :disabled="!quests.levelsKnown"
+            class="tap pressable bevel-oak px-3 text-[13px] font-bold disabled:opacity-50"
+            :class="
+              startableOnly
+                ? 'bevel-oak-in bg-brown text-gold engraved'
+                : 'bg-brown-lt text-parchment-3'
+            "
+            @click="startableOnly = !startableOnly"
+          >
+            Startable now
+          </button>
+        </div>
+
+        <!-- Visible rather than a disabled-button tooltip — "never put
            information behind hover". -->
-      <p v-if="!quests.levelsKnown" class="m-0 text-[13px] text-ink-soft">
-        Add your username in Stats to filter by what you can start.
-      </p>
+        <p v-if="!quests.levelsKnown" class="m-0 text-[13px] text-ink-soft">
+          Add your username in Stats to filter by what you can start.
+        </p>
+      </template>
     </div>
 
-    <p v-if="quests.loading" class="m-0 text-[15px] text-ink-soft">
+    <DiaryList v-if="mode === 'diaries'" />
+
+    <p
+      v-if="mode === 'quests' && quests.loading"
+      class="m-0 text-[15px] text-ink-soft"
+    >
       Loading quests…
     </p>
 
-    <template v-else>
+    <template v-else-if="mode === 'quests'">
       <p class="nums m-0 text-[13px] text-ink-soft">
         {{ filtered.length }} of {{ quests.index.all.length }} quests
       </p>

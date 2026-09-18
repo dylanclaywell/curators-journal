@@ -55,6 +55,18 @@ export const panels: PanelDefinition[] = [
     component: () => import('@/views/StatsView.vue'),
   },
   {
+    // Variant A of slice 6e. Adding this makes five panels, which is the
+    // tab bar's icon-only threshold — so every other tab drops its label to
+    // make room for this one. That cost is the whole question; see
+    // ROADMAP.md Phase 6 before keeping or removing it.
+    id: 'diaries',
+    title: 'Diaries',
+    path: '/diaries',
+    icon: 'trophy',
+    minWidth: 320,
+    component: () => import('@/views/DiariesView.vue'),
+  },
+  {
     // Settings rather than About: the icon has always been a cog, the panel
     // holds username, account type, sync and backup, and Settings is what the
     // game calls its own gear tab. Credits keeps the §8.1 notice prominent
