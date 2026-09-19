@@ -36,11 +36,17 @@ the last slice. The more interesting question now is whether the shell itself
 is right — nothing here has been used on a docked iPad yet, and the collapse
 thresholds and the bottom tab bar are both unmeasured guesses.
 
-**Phase 5 is planned, not started.** A companion RuneLite plugin syncs quest
-state through our own Worker and D1, and the web side merges it into the quest
-panel behind a toggle — the first time anything but the player has written to
-quest progress, which is why the section below spends most of its words on
-keeping the two apart.
+**Phase 5 is half built.** The web and Worker side exists (5a–5c: snapshot
+validator, D1 and `/api/sync`, the sync store and its merge toggle); the
+companion RuneLite plugin (5d–5f) does not. The web side merges synced quest
+state into the quest panel behind a toggle — the first time anything but the
+player has written to quest progress, which is why the section below spends
+most of its words on keeping the two apart.
+
+**Diary sync is in progress** — see "Diary sync: where it stands" in Phase 5.
+The contract, Worker and store are done and committed locally, unpushed. The
+locked-row UI (6d) is next; nothing marks a synced task yet, so tapping one
+silently does nothing.
 
 ## Phases
 
@@ -51,9 +57,11 @@ keeping the two apart.
 | 2 — Hiscores                    | done  | 2a route + parser · 2b store + persistence · 2c skills grid                  |
 | 3 — Quest dataset               | done  | 214 quests committed; `build:quests` fetches · parses · cross-checks · emits |
 | 4 — Quest engine and queue      | done  | Engine, detail, queue, reorder (4e′) and refresh-on-resume (4f) all built    |
-| 5 — RuneLite sync               | next  | Companion plugin pushes quest state to D1; merged read-only into progress    |
+| 5 — RuneLite sync               | half  | Web + Worker side done (5a–5c); the plugin itself (5d–5f) not started        |
+| 5+ — Diary sync (6a–6e)         | now   | Diary tiers ride the sync pipe; 6a–6c done, UI (6d) and docs (6e) next       |
 | Later — ironman requirements    | —     | Currently dropped entirely; see below                                        |
 | Later — prices panel            | —     | `prices.runescape.wiki`, same Worker-proxy shape                             |
+| Later — boss tracking           | —     | Player boss list: kill counts, drops. See "Banked: boss tracking"            |
 | Later — wide-and-shallow layout | —     | Tabs to a left strip when short and wide; see CLAUDE.md                      |
 | Later — plugin manifests        | —     | The panel registry is already the seam                                       |
 
@@ -991,6 +999,84 @@ three days after it was captured, on a device that cannot see the game?
 data then the age of that data is part of the answer, and it currently sits in
 a muted line under the refresh button. That is probably too quiet.
 
+### Diary sync: where it stands
+
+Achievement diary tracking is built (hand-entered, per task, in
+`diaries:tasks`), and ranked first in "What to sync next" above. This puts the
+plugin's diary state on the same pipe as quests. Slices are numbered 6a–6e to
+keep them apart from 5a–5f.
+
+| Slice | Contents                                                                                         | State |
+| ----- | ------------------------------------------------------------------------------------------------ | ----- |
+| 6a    | `lib/sync.ts` tier validator, `reconcileTiers`; `lib/diaries.ts` `expandTiers`, `mergeDoneTasks` | done  |
+| 6b    | Worker stores `{ quests, diaries }`; readback validates it                                       | done  |
+| 6c    | Diaries store: `syncedTiers`, merged `done`, drift report, lock guards                           | done  |
+| 6d    | Locked-row UI for tiers and quests; Settings copy and counts                                     | next  |
+| 6e    | Docs: reword `task-id.ts`, CLAUDE.md, this file                                                  | —     |
+
+6a–6c are committed locally (`1737cca`, `89175f2`, `b69334e`) and **not yet
+pushed**.
+
+**Decisions, and why they aren't obvious from the code:**
+
+- **Tier granularity only.** The backend session found diary state from
+  varbits is strictly binary per tier — done or absent — with no per-task or
+  count data anywhere. So the wire format is
+  `"diaries": { "tiers": ["ardougne-easy", …] }` and carries no tasks. An
+  earlier plan to send both tasks and tiers was dropped when that came out.
+- **Its own shape, not `QuestProgress`.** A tier is present or absent, like
+  `DiaryTaskMap`. A type that could say `doing` would claim visibility the
+  plugin doesn't have.
+- **Schema stays at version 1.** `diaries` is optional on the wire, and a
+  missing key parses as no tiers, so a plugin that predates diaries still
+  validates. It is optional on `SyncSnapshot` too, because snapshots cached in
+  IndexedDB before this have no such key — read it as `diaries?.tiers ?? []`.
+- **The row is fully replaced on every POST.** A quests-only sync clears
+  stored diaries rather than keeping stale ones. Safe because the client merge
+  is additive; it does mean the plugin must always send both.
+- **A synced tier expands to its tasks** (`expandTiers`), so the store keeps
+  exactly one hand-entered fact — a task is done — and a synced tier reads as
+  done through the same derivation. Merge is a union; `doneTasks` is the only
+  thing persisted or backed up, so merge-off is a complete undo.
+- **Synced tiers are locked, not toggleable.** Un-ticking a task the
+  snapshot says is done would edit a local record that never held it, leaving
+  the row checked and the tap apparently ignored. The store guards
+  `toggleTask` and `toggleTier`; the UI has to show why.
+- **Drift is silent until the dataset loads.** With no index every synced id
+  looks unknown, so `syncUnknownTierIds` returns empty rather than accusing
+  the plugin. Same trap `SettingsView` documents for quests.
+
+**Next up — 6d:**
+
+1. Render locked rows for synced tasks and tiers (`isTaskSynced`,
+   `isTierSynced` are exported and unused so far), with a "Synced from
+   RuneLite" note and the tier toggle disabled.
+2. **Fix the same gap for quests, which already exists.** `QuestDetailView` and
+   `QueueView` call `setProgress` with no provenance or lock, so tapping "todo"
+   on a synced-done quest silently does nothing. Proposed as its own commit
+   ahead of the diary UI, since it is a bug independent of diaries.
+3. Settings: "Merge synced quests" becomes quests and diaries, plus a synced
+   tier count and the unknown-tier drift line. Note that showing drift means
+   loading the diaries dataset when Settings opens — a lazy chunk, so the entry
+   bundle is unaffected, but a real fetch of ~256 KB. Weigh it.
+
+**Open, and not blocking:**
+
+- **Plugin side (`curators-journal-runelite`, 5d).** Maps a tier varbit to a
+  fixed tier id like `ardougne-easy`. No task-text hashing is involved, which
+  makes `task-id.ts`'s third-consumer note wrong — fix in 6e.
+- **Store tests don't exist.** The suite covers `lib` and the Worker only, and
+  the config has no `@/` alias or pinia setup. The lock guards and the
+  dataset-loaded drift guard are covered by typecheck alone. Add harness only
+  if the store logic grows.
+- **Fetching is Settings-only.** `quests.ensureReady` doesn't fetch the
+  snapshot; the sync store hydrates its cache on first use and only Settings
+  calls `ensureLoaded`. Diaries follow the same pattern. Existing behaviour,
+  but worth knowing if a cold load into a panel ever shows stale synced state.
+- **CLAUDE.md's precache figure is stale.** It says ~1129 KiB; `HEAD` built at
+  1134.39 KiB before 6c, 1135.13 after. Correct it in 6e. The entry-chunk
+  greps (`cooks-assistant`, `ardougne-easy`, `localforage`) all still pass.
+
 ## Open questions
 
 1. **How often do the hiscores actually recompute?** Unmeasured, and it's the
@@ -1079,6 +1165,38 @@ The ~15/min figure is a community estimate, with IP-block risk on bulk requests.
 
 See [NOTICE.md](NOTICE.md), which covers the licensing position, its limits, and
 what must not change.
+
+## Banked: boss tracking
+
+Wanted: a **boss list** with the player's kill counts, drops and similar —
+another "what have I done" surface alongside quests and diaries. Nothing
+built and nothing decided; this is here so it isn't forgotten.
+
+Starting points to check before designing, none of them verified:
+
+- **Kill counts probably come from the hiscores we already fetch.**
+  CLAUDE.md notes `index_lite.json` returns skills _and activities_, and boss
+  kill counts are activities. If so this needs no new source and no plugin —
+  it is a display problem on data the Worker already proxies. Confirm which
+  bosses the response actually carries and how an unranked (0 KC) boss appears,
+  since hiscores rank cutoffs may hide low counts.
+- **Kill counts are fetched, not hand-entered** — the "fetched, read-only"
+  class with skill levels, not the precious one. So no merge question arises,
+  and the freshness constraints in "Freshness and rate limits" apply as they do
+  to the skills grid.
+- **Drops are a different problem.** The hiscores carry no drop data. A
+  boss's _drop table_ is static wiki data (same shape argument as quests: a
+  committed, diffable dataset, never fetched at runtime); which drops the
+  player has _received_ is not exposed anywhere we can read, short of the
+  collection log via the plugin. That is ranked #3 under "What to sync next"
+  and lower value than diaries by the freshness test — collection log entries
+  are monotonic, so it passes it, just less urgently.
+- **Bundle weight.** Boss drop tables would be another dataset. Follow the
+  quest guides precedent (served from `public/`, fetched on demand) unless it
+  is small, and weigh it against the precache before adding.
+- **Tab count.** A boss panel would be a fifth tab and flip the tab bar to
+  icon-only, per the four-label limit in Phase 4. Decide whether it earns a
+  tab or lives inside Stats.
 
 ## Ideas banked for Phase 4
 
