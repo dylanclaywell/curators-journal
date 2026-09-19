@@ -5,13 +5,17 @@ import {
   completableNow,
   diaryCompletion,
   evaluateDiaryTier,
+  expandTiers,
+  mergeDoneTasks,
   taskIdsOf,
   tierProgressFrom,
 } from '@/lib/diaries'
 import type { DiaryTaskMap, DiaryTierStatus } from '@/lib/diaries'
 import type { Diary, DiaryDataset } from '@/lib/types'
 import type { QuestProgress } from '@/lib/quests'
+import { reconcileTiers } from '@/lib/sync'
 import { useQuestsStore } from './quests'
+import { useSyncStore } from './sync'
 import { read, write } from './persist'
 
 /**
@@ -95,10 +99,68 @@ export const useDiariesStore = defineStore('diaries', () => {
 
   void hydrate()
 
-  const done = computed<DiaryTaskMap>(() => doneTasks.value as DiaryTaskMap)
+  /**
+   * Tiers the RuneLite snapshot reports complete, reduced to ones this build
+   * knows about.
+   *
+   * Empty unless the player turned the merge on, so the toggle is the only
+   * thing standing between synced data and every derived value below. Tier
+   * granularity is all the game exposes — there is nothing per task to sync.
+   */
+  const syncedTiers = computed<string[]>(() => {
+    const sync = useSyncStore()
+    if (!sync.mergeEnabled || !sync.snapshot) return []
+    return reconcileTiers(sync.snapshot, new Set(index.value.tierById.keys()))
+      .tiers
+  })
+
+  /**
+   * Tier ids the snapshot carried that this dataset has no tier for. Expected
+   * to be empty; anything here means the plugin's tier ids and `build:diaries`
+   * have drifted.
+   *
+   * Empty until the dataset loads, not "everything": with no index every
+   * synced id looks unknown, and reporting that would accuse the plugin of
+   * sending tiers that don't exist — the same trap `SettingsView` documents for
+   * quests.
+   */
+  const syncUnknownTierIds = computed<string[]>(() => {
+    const sync = useSyncStore()
+    if (!dataset.value || !sync.snapshot) return []
+    return reconcileTiers(sync.snapshot, new Set(index.value.tierById.keys()))
+      .unknownIds
+  })
+
+  /** Tasks implied by the synced tiers. Not persisted, and never written to `doneTasks`. */
+  const syncedTasks = computed<DiaryTaskMap>(() =>
+    expandTiers(index.value, syncedTiers.value),
+  )
+
+  /**
+   * What the app displays and reasons about: the player's own task record with
+   * the synced tiers' tasks added. Union, so a snapshot can only add.
+   *
+   * **This is a computed and nothing persists it.** `diaries:tasks` is written
+   * only from `doneTasks`, so a bad snapshot cannot reach disk and turning the
+   * merge off restores exactly what the player ticked — the same property
+   * `effectiveProgress` gives quests. See ROADMAP.md Phase 5.
+   */
+  const done = computed<DiaryTaskMap>(() =>
+    mergeDoneTasks(doneTasks.value as DiaryTaskMap, syncedTasks.value),
+  )
+
+  /** True when the snapshot, not the player, is why this tier reads as done. */
+  function isTierSynced(tierId: string): boolean {
+    return syncedTiers.value.includes(tierId)
+  }
+
+  /** True when this task is done only because its tier was synced. */
+  function isTaskSynced(taskId: string): boolean {
+    return Boolean(syncedTasks.value[taskId])
+  }
 
   function isTaskDone(taskId: string): boolean {
-    return Boolean(doneTasks.value[taskId])
+    return Boolean(done.value[taskId])
   }
 
   function setTaskDone(taskId: string, value: boolean): void {
@@ -111,7 +173,14 @@ export const useDiariesStore = defineStore('diaries', () => {
     doneTasks.value = { ...doneTasks.value, [taskId]: true }
   }
 
+  /**
+   * A task the snapshot says is done can't be cleared from here: un-ticking
+   * would edit a local record that never held it, leaving the row checked and
+   * the tap apparently ignored. The UI shows these locked; this guard is what
+   * keeps a stray call from doing nothing silently.
+   */
   function toggleTask(taskId: string): void {
+    if (isTaskSynced(taskId)) return
     setTaskDone(taskId, !isTaskDone(taskId))
   }
 
@@ -140,7 +209,9 @@ export const useDiariesStore = defineStore('diaries', () => {
     doneTasks.value = next
   }
 
+  /** Locked for a synced tier, for the same reason as `toggleTask`. */
   function toggleTier(tierId: string): void {
+    if (isTierSynced(tierId)) return
     setTierDone(tierId, progressOf(tierId) !== 'done')
   }
 
@@ -189,6 +260,9 @@ export const useDiariesStore = defineStore('diaries', () => {
     loading,
     hydrated,
     doneTasks,
+    done,
+    syncedTiers,
+    syncUnknownTierIds,
     index,
     statuses,
     ready,
@@ -196,6 +270,8 @@ export const useDiariesStore = defineStore('diaries', () => {
     ensureDataset,
     ensureReady,
     isTaskDone,
+    isTaskSynced,
+    isTierSynced,
     setTaskDone,
     toggleTask,
     progressOf,
