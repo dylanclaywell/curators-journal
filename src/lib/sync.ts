@@ -38,6 +38,8 @@ export const SYNC_SCHEMA_VERSION = 1
  * against real data and still bounded.
  */
 const MAX_QUEST_ENTRIES = 400
+/** The dataset has 48 tiers; this is generous against that and still bounded. */
+const MAX_TIER_ENTRIES = 100
 const MAX_ID_LENGTH = 64
 
 /** Quest ids derive from wiki titles and are kebab-case throughout. */
@@ -58,6 +60,19 @@ const PROGRESS_STATES: ReadonlySet<string> = new Set([
   'done',
 ] satisfies QuestProgress[])
 
+/**
+ * Achievement diary state, at tier granularity and no finer.
+ *
+ * The game exposes a diary tier as a single done-or-not flag and nothing about
+ * the tasks inside it, so this carries exactly that: the tiers that are
+ * complete, by our tier id (`ardougne-easy`). Absence means "not reported as
+ * done", not "not started" — there is no `doing`, and a type that could say
+ * so would be claiming visibility the plugin does not have.
+ */
+export interface SyncDiaries {
+  tiers: string[]
+}
+
 /** What the plugin sends. */
 export interface SyncSnapshot {
   schemaVersion: typeof SYNC_SCHEMA_VERSION
@@ -69,6 +84,13 @@ export interface SyncSnapshot {
    * absence of an entry, exactly as the quest store persists it.
    */
   quests: Record<string, QuestProgress>
+  /**
+   * Optional on the wire so a plugin that predates diaries still validates at
+   * schema version 1, and always present on a snapshot `parseSyncSnapshot`
+   * returns. Only absent on one cached before diaries existed, which is why
+   * readers should treat a missing value as "no tiers".
+   */
+  diaries?: SyncDiaries
 }
 
 /** What the API returns: the snapshot, plus when the Worker accepted it. */
@@ -139,14 +161,53 @@ export function parseSyncSnapshot(raw: unknown): SyncParseResult {
     if (state !== 'todo') progress[id] = state
   }
 
+  const diaries = parseDiaries(obj.diaries)
+  if (typeof diaries === 'string') return fail(diaries)
+
   return {
     ok: true,
     snapshot: {
       schemaVersion: SYNC_SCHEMA_VERSION,
       accountHash: obj.accountHash,
       quests: progress,
+      diaries,
     },
   }
+}
+
+/**
+ * Validates the optional `diaries` key, returning a message on failure.
+ *
+ * A missing key is an empty list rather than an error: it is what a plugin
+ * that predates diaries sends. A *present* key that is malformed is still
+ * refused whole, for the same reason quests are — nothing is salvaged.
+ */
+function parseDiaries(raw: unknown): SyncDiaries | string {
+  if (raw === undefined) return { tiers: [] }
+
+  if (typeof raw !== 'object' || raw === null || Array.isArray(raw)) {
+    return 'Snapshot has a malformed diaries entry.'
+  }
+  const tiers = (raw as Record<string, unknown>).tiers
+  if (!Array.isArray(tiers)) return 'Snapshot is missing its diary tier list.'
+  if (tiers.length > MAX_TIER_ENTRIES) {
+    return `Snapshot has too many diary tiers (${tiers.length}).`
+  }
+
+  // A set, so a plugin repeating itself can't inflate the row; a tier is done
+  // once however many times it is said.
+  const seen = new Set<string>()
+  for (const id of tiers) {
+    if (
+      typeof id !== 'string' ||
+      id.length > MAX_ID_LENGTH ||
+      !ID_PATTERN.test(id)
+    ) {
+      return `Snapshot has an invalid diary tier id: ${JSON.stringify(id)}.`
+    }
+    seen.add(id)
+  }
+  return { tiers: [...seen] }
 }
 
 /**
@@ -190,6 +251,32 @@ export function reconcileSnapshot(
   }
 
   return { progress, unknownIds }
+}
+
+export interface ReconciledTiers {
+  /** Tier ids the diary dataset knows. */
+  tiers: string[]
+  /** Ids it doesn't — plugin and `build:diaries` have drifted apart. */
+  unknownIds: string[]
+}
+
+/**
+ * The tier counterpart of `reconcileSnapshot`. Tolerates a snapshot with no
+ * `diaries` at all, which is what one cached before diaries existed looks like.
+ */
+export function reconcileTiers(
+  snapshot: SyncSnapshot,
+  knownTierIds: ReadonlySet<string>,
+): ReconciledTiers {
+  const tiers: string[] = []
+  const unknownIds: string[] = []
+
+  for (const id of snapshot.diaries?.tiers ?? []) {
+    if (knownTierIds.has(id)) tiers.push(id)
+    else unknownIds.push(id)
+  }
+
+  return { tiers, unknownIds }
 }
 
 const RANK: Record<QuestProgress, number> = { todo: 0, doing: 1, done: 2 }

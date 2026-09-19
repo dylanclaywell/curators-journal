@@ -229,6 +229,41 @@ export function completableNow(
   return out
 }
 
+/**
+ * The tasks a set of completed tiers implies.
+ *
+ * The plugin can say a tier is done and nothing about its tasks, but the
+ * player's record and every derived value here is per task. Expanding is what
+ * lets one shape carry both without a second, tier-level record that could
+ * disagree with the first. Ids the dataset doesn't know contribute nothing.
+ */
+export function expandTiers(
+  index: DiaryIndex,
+  tierIds: readonly string[],
+): DiaryTaskMap {
+  const out: Record<string, true> = {}
+  for (const id of tierIds) {
+    const entry = index.tierById.get(id)
+    if (!entry) continue
+    for (const taskId of taskIdsOf(entry.tier)) out[taskId] = true
+  }
+  return out
+}
+
+/**
+ * The player's task completions with the synced ones added.
+ *
+ * Union, so it can only ever add: the same property `mergeProgress` has for
+ * quests, and for the same reason — it is what makes switching the merge off a
+ * complete undo. Not persisted; the store computes it on read.
+ */
+export function mergeDoneTasks(
+  local: DiaryTaskMap,
+  synced: DiaryTaskMap,
+): DiaryTaskMap {
+  return { ...local, ...synced }
+}
+
 /** Completed tiers and tasks over their totals, for a progress readout. */
 export function diaryCompletion(
   index: DiaryIndex,

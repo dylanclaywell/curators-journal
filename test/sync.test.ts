@@ -10,6 +10,7 @@ import {
   parseStoredSnapshot,
   parseSyncSnapshot,
   reconcileSnapshot,
+  reconcileTiers,
   SYNC_SCHEMA_VERSION,
 } from '../src/lib/sync'
 
@@ -93,6 +94,69 @@ describe('parseSyncSnapshot', () => {
   })
 })
 
+describe('parseSyncSnapshot diaries', () => {
+  it('treats a missing diaries key as no tiers, not an error', () => {
+    // What a plugin that predates diaries sends, and it must keep validating
+    // at schema version 1.
+    const result = parseSyncSnapshot(valid)
+    expect(result.ok).toBe(true)
+    if (result.ok) expect(result.snapshot.diaries).toEqual({ tiers: [] })
+  })
+
+  it('accepts a list of tier ids', () => {
+    const result = parseSyncSnapshot({
+      ...valid,
+      diaries: { tiers: ['ardougne-easy', 'falador-hard'] },
+    })
+    expect(result.ok).toBe(true)
+    if (result.ok) {
+      expect(result.snapshot.diaries?.tiers).toEqual([
+        'ardougne-easy',
+        'falador-hard',
+      ])
+    }
+  })
+
+  it('collapses a repeated tier to one', () => {
+    const result = parseSyncSnapshot({
+      ...valid,
+      diaries: { tiers: ['ardougne-easy', 'ardougne-easy'] },
+    })
+    expect(result.ok).toBe(true)
+    if (result.ok) {
+      expect(result.snapshot.diaries?.tiers).toEqual(['ardougne-easy'])
+    }
+  })
+
+  it.each([
+    ['null', null],
+    ['an array', []],
+    ['a string', 'ardougne-easy'],
+    ['a missing tier list', {}],
+    ['a tier list that is not an array', { tiers: 'ardougne-easy' }],
+    ['a non-string tier id', { tiers: [1] }],
+    ['a non-kebab-case tier id', { tiers: ['Ardougne Easy'] }],
+    ['an over-long tier id', { tiers: ['a'.repeat(65)] }],
+  ])('rejects %s', (_label, diaries) => {
+    expect(parseSyncSnapshot({ ...valid, diaries }).ok).toBe(false)
+  })
+
+  it('rejects more tiers than the dataset could ever have', () => {
+    const tiers = Array.from({ length: 101 }, (_, i) => `tier-${i}`)
+    expect(parseSyncSnapshot({ ...valid, diaries: { tiers } }).ok).toBe(false)
+  })
+
+  // Refuses whole rather than salvaging the valid tiers: a partial snapshot
+  // that looks successful gets merged and believed.
+  it('refuses a list with one bad id rather than keeping the rest', () => {
+    const result = parseSyncSnapshot({
+      ...valid,
+      diaries: { tiers: ['ardougne-easy', 'NOT VALID'] },
+    })
+    expect(result.ok).toBe(false)
+  })
+})
+
 describe('parseStoredSnapshot', () => {
   it('requires the server-assigned timestamp', () => {
     expect(parseStoredSnapshot(valid).ok).toBe(false)
@@ -129,6 +193,35 @@ describe('reconcileSnapshot', () => {
 
     expect(progress).toEqual({ 'cooks-assistant': 'done' })
     expect(unknownIds).toEqual(['not-a-quest'])
+  })
+})
+
+describe('reconcileTiers', () => {
+  const snapshot = {
+    schemaVersion: SYNC_SCHEMA_VERSION,
+    accountHash: '1',
+    quests: {},
+    diaries: { tiers: ['ardougne-easy', 'atlantis-easy'] },
+  }
+
+  it('keeps known tiers and reports the rest as drift', () => {
+    expect(reconcileTiers(snapshot, new Set(['ardougne-easy']))).toEqual({
+      tiers: ['ardougne-easy'],
+      unknownIds: ['atlantis-easy'],
+    })
+  })
+
+  // A snapshot cached before diaries existed has no such key at all.
+  it('tolerates a snapshot with no diaries', () => {
+    const old = {
+      schemaVersion: SYNC_SCHEMA_VERSION,
+      accountHash: '1',
+      quests: {},
+    }
+    expect(reconcileTiers(old, new Set(['ardougne-easy']))).toEqual({
+      tiers: [],
+      unknownIds: [],
+    })
   })
 })
 

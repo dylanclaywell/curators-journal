@@ -25,6 +25,8 @@ import {
   diaryCompletion,
   evaluateDiary,
   evaluateDiaryTier,
+  expandTiers,
+  mergeDoneTasks,
   taskIdsOf,
   tierProgressFrom,
 } from '../src/lib/diaries'
@@ -442,5 +444,66 @@ describe('the committed dataset', () => {
       .flatMap((d) => evaluateDiary(d, maxed, qi, {}))
       .reduce((n, s) => n + s.blockedTasks, 0)
     expect(blocked).toBe(0)
+  })
+})
+
+describe('expandTiers', () => {
+  const easy = tier('ardougne-easy', 'Easy')
+  const medium = tier('ardougne-medium', 'Medium')
+  const di = buildDiaryIndex([diary([easy, medium])])
+
+  it('marks every task in a done tier', () => {
+    expect(expandTiers(di, ['ardougne-easy'])).toEqual(allDone(easy))
+  })
+
+  it('leaves other tiers alone', () => {
+    const out = expandTiers(di, ['ardougne-easy'])
+    for (const id of taskIdsOf(medium)) expect(out[id]).toBeUndefined()
+  })
+
+  it('ignores ids the dataset does not know', () => {
+    expect(expandTiers(di, ['atlantis-easy'])).toEqual({})
+  })
+
+  // The point of expanding: a synced tier must read as done through the same
+  // derivation the hand-entered record uses, not through a second code path.
+  it('reads as a completed tier through tierProgressFrom', () => {
+    expect(tierProgressFrom(easy, expandTiers(di, ['ardougne-easy']))).toBe(
+      'done',
+    )
+  })
+})
+
+describe('mergeDoneTasks', () => {
+  const easy = tier('ardougne-easy', 'Easy')
+  const [first, second] = taskIdsOf(easy)
+
+  it('adds synced completions to the player’s own', () => {
+    expect(mergeDoneTasks({ [first]: true }, { [second]: true })).toEqual({
+      [first]: true,
+      [second]: true,
+    })
+  })
+
+  it('keeps what the player recorded when the snapshot says nothing', () => {
+    expect(mergeDoneTasks({ [first]: true }, {})).toEqual({ [first]: true })
+  })
+
+  it('does not mutate either input', () => {
+    const local = { [first]: true } as const
+    const synced = { [second]: true } as const
+    mergeDoneTasks(local, synced)
+    expect(local).toEqual({ [first]: true })
+    expect(synced).toEqual({ [second]: true })
+  })
+
+  it('finishes a tier the player had only partly ticked', () => {
+    const di = buildDiaryIndex([diary([easy])])
+    const merged = mergeDoneTasks(
+      { [first]: true },
+      expandTiers(di, ['ardougne-easy']),
+    )
+    expect(tierProgressFrom(easy, { [first]: true })).toBe('doing')
+    expect(tierProgressFrom(easy, merged)).toBe('done')
   })
 })
