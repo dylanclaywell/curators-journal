@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.10.0](https://github.com/dylanclaywell/curators-journal/compare/curators-journal-v0.9.0...curators-journal-v0.10.0) (2026-09-19)
+
+
+### Features
+
+* **diaries:** merge synced tiers into the task record ([b69334e](https://github.com/dylanclaywell/curators-journal/commit/b69334ee9ad997ce5344662cf5c9cd3413037d15))
+* **sync:** add diary tiers to the snapshot contract ([1737cca](https://github.com/dylanclaywell/curators-journal/commit/1737cca5a124e671f89833ef9e510f67e1633f89))
+* **worker:** store diary tiers in the sync snapshot ([89175f2](https://github.com/dylanclaywell/curators-journal/commit/89175f23fceeac1902781f80a8f1f578973cbc1d))
+
 ## [0.9.0](https://github.com/dylanclaywell/curators-journal/compare/curators-journal-v0.8.0...curators-journal-v0.9.0) (2026-09-18)
 
 
