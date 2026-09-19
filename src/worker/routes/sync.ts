@@ -135,7 +135,7 @@ async function writeSnapshot(request: Request, env: Env): Promise<Response> {
   // Server-assigned: the plugin's clock is not trusted, and this is what the
   // client shows as "last synced".
   const receivedAt = new Date().toISOString()
-  const { accountHash, schemaVersion, quests } = result.snapshot
+  const { accountHash, schemaVersion, quests, diaries } = result.snapshot
 
   try {
     await env.DB.prepare(
@@ -146,7 +146,15 @@ async function writeSnapshot(request: Request, env: Env): Promise<Response> {
          payload        = excluded.payload,
          received_at    = excluded.received_at`,
     )
-      .bind(accountHash, schemaVersion, JSON.stringify({ quests }), receivedAt)
+      .bind(
+        accountHash,
+        schemaVersion,
+        // The whole snapshot is replaced on every write, so a plugin that
+        // sends quests alone leaves the row with no diaries rather than
+        // keeping stale ones from an earlier sync.
+        JSON.stringify({ quests, diaries }),
+        receivedAt,
+      )
       .run()
   } catch {
     return fail('storage_error', 'Could not write to the sync store.', 500)

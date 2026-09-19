@@ -43,7 +43,49 @@ describe('POST /api/sync', () => {
       .first<{ payload: string }>()
     expect(JSON.parse(row!.payload)).toEqual({
       quests: { 'cooks-assistant': 'done', 'dragon-slayer-i': 'doing' },
+      diaries: { tiers: [] },
     })
+  })
+
+  it('stores the diary tiers it was sent', async () => {
+    await post(snapshot({ diaries: { tiers: ['ardougne-easy'] } }))
+
+    const row = await env.DB.prepare(
+      'SELECT payload FROM snapshot WHERE account_hash = ?',
+    )
+      .bind(HASH)
+      .first<{ payload: string }>()
+    expect(JSON.parse(row!.payload).diaries).toEqual({
+      tiers: ['ardougne-easy'],
+    })
+  })
+
+  // Full replace, not a merge: the row is whatever the latest POST said. The
+  // client-side merge is additive, but the stored snapshot is not.
+  it('drops earlier diaries when a later snapshot sends none', async () => {
+    await post(snapshot({ diaries: { tiers: ['ardougne-easy'] } }))
+    await post(snapshot())
+
+    const row = await env.DB.prepare(
+      'SELECT payload FROM snapshot WHERE account_hash = ?',
+    )
+      .bind(HASH)
+      .first<{ payload: string }>()
+    expect(JSON.parse(row!.payload).diaries).toEqual({ tiers: [] })
+  })
+
+  it('refuses a malformed diary list and writes nothing', async () => {
+    const res = await post(snapshot({ diaries: { tiers: ['NOT VALID'] } }))
+    expect(res.status).toBe(400)
+
+    const body = await res.json<{ error: string; message: string }>()
+    expect(body.error).toBe('invalid_snapshot')
+    expect(body.message).toMatch(/diary/i)
+
+    const row = await env.DB.prepare(
+      'SELECT count(*) AS n FROM snapshot',
+    ).first<{ n: number }>()
+    expect(row!.n).toBe(0)
   })
 
   it('replaces the previous snapshot rather than adding a row', async () => {
@@ -119,6 +161,53 @@ describe('GET /api/sync', () => {
       'cooks-assistant': 'done',
       'dragon-slayer-i': 'doing',
     })
+  })
+
+  it('reads back the diary tiers that were written', async () => {
+    await post(snapshot({ diaries: { tiers: ['ardougne-easy'] } }))
+    const body = await (
+      await get(HASH)
+    ).json<{ snapshot: { diaries: { tiers: string[] } } }>()
+    expect(body.snapshot.diaries.tiers).toEqual(['ardougne-easy'])
+  })
+
+  // Rows written before diaries existed hold `{ quests }` alone, and must
+  // keep reading back rather than turning into storage errors.
+  it('reads a row stored before diaries existed as having no tiers', async () => {
+    await env.DB.prepare(
+      'INSERT INTO snapshot (account_hash, schema_version, payload, received_at) VALUES (?, ?, ?, ?)',
+    )
+      .bind(
+        HASH,
+        1,
+        '{"quests":{"cooks-assistant":"done"}}',
+        '2026-09-16T12:00:00.000Z',
+      )
+      .run()
+
+    const res = await get(HASH)
+    expect(res.status).toBe(200)
+    const body = await res.json<{
+      snapshot: { diaries: { tiers: string[] } }
+    }>()
+    expect(body.snapshot.diaries.tiers).toEqual([])
+  })
+
+  it('refuses a stored row whose diary list is malformed', async () => {
+    await env.DB.prepare(
+      'INSERT INTO snapshot (account_hash, schema_version, payload, received_at) VALUES (?, ?, ?, ?)',
+    )
+      .bind(
+        HASH,
+        1,
+        '{"quests":{},"diaries":{"tiers":"ardougne-easy"}}',
+        '2026-09-16T12:00:00.000Z',
+      )
+      .run()
+
+    const res = await get(HASH)
+    expect(res.status).toBe(500)
+    expect((await res.json<{ error: string }>()).error).toBe('storage_error')
   })
 
   it('never lets a snapshot be cached', async () => {
