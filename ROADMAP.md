@@ -43,10 +43,12 @@ state into the quest panel behind a toggle — the first time anything but the
 player has written to quest progress, which is why the section below spends
 most of its words on keeping the two apart.
 
-**Diary sync is in progress** — see "Diary sync: where it stands" in Phase 5.
-The contract, Worker and store are done and committed locally, unpushed. The
-locked-row UI (6d) is next; nothing marks a synced task yet, so tapping one
-silently does nothing.
+**The web side of diary sync is done** — see "Diary sync and account-hash
+linking" in Phase 5: diary tiers on the wire, the merge, locked rows in the UI,
+and a `/sync?hash=` link so the plugin's QR code can fill in the account hash.
+None of it has met real plugin data yet, because the plugin (5d–5f) does not
+exist. **Phase 6 (achievement diaries) is built** and has its own section below;
+its one open question is where the diary list lives (6e).
 
 ## Phases
 
@@ -58,7 +60,8 @@ silently does nothing.
 | 3 — Quest dataset               | done  | 214 quests committed; `build:quests` fetches · parses · cross-checks · emits |
 | 4 — Quest engine and queue      | done  | Engine, detail, queue, reorder (4e′) and refresh-on-resume (4f) all built    |
 | 5 — RuneLite sync               | half  | Web + Worker side done (5a–5c); the plugin itself (5d–5f) not started        |
-| 5+ — Diary sync (6a–6e)         | now   | Diary tiers ride the sync pipe; 6a–6c done, UI (6d) and docs (6e) next       |
+| 5+ — Diary sync and linking     | done  | Web side of 5g–5k: diary tiers on the pipe, locked rows, `/sync?hash=` link  |
+| 6 — Achievement diaries         | built | Dataset, engine, store, UI. Panel-or-Quests-mode placement (6e) undecided    |
 | Later — ironman requirements    | —     | Currently dropped entirely; see below                                        |
 | Later — prices panel            | —     | `prices.runescape.wiki`, same Worker-proxy shape                             |
 | Later — boss tracking           | —     | Player boss list: kill counts, drops. See "Banked: boss tracking"            |
@@ -939,7 +942,10 @@ three days after it was captured, on a device that cannot see the game?
    structurally identical to a quest — skill levels plus quest prerequisites —
    so `evaluateQuest` and `buildPlan` need almost nothing new. It is a dataset
    problem, not an engine problem. Give it its own lazy chunk from the start:
-   `quests.json` is already the largest asset by a wide margin.
+   `quests.json` is already the largest asset by a wide margin. **Built, on the
+   web side** — see "Diary sync and account-hash linking" below. One thing this
+   ranking assumed did not hold: the game exposes a diary only as a per-tier
+   done flag, so what syncs is tiers, not tasks.
 2. **Unlocks — fairy rings, spirit trees, lunar teleports, ancient scrolls.**
    Permanent, tedious to track, and they gate _travel_, which gates whether a
    quest's start point is actually reachable. Squarely in this app's lane and
@@ -999,23 +1005,28 @@ three days after it was captured, on a device that cannot see the game?
 data then the age of that data is part of the answer, and it currently sits in
 a muted line under the refresh button. That is probably too quiet.
 
-### Diary sync: where it stands
+### Diary sync and account-hash linking
 
-Achievement diary tracking is built (hand-entered, per task, in
-`diaries:tasks`), and ranked first in "What to sync next" above. This puts the
-plugin's diary state on the same pipe as quests. Slices are numbered 6a–6e to
-keep them apart from 5a–5f.
+Diary tracking (Phase 6, below) is hand-entered, per task. This puts the
+plugin's diary state on the same pipe as quests — ranked first in "What to sync
+next" — and adds a way for a player to get their account hash into the app
+without typing nineteen digits. The **web and Worker side is done**. The
+plugin (5d–5f) does not exist yet, so none of this has met real data.
 
-| Slice | Contents                                                                                         | State |
-| ----- | ------------------------------------------------------------------------------------------------ | ----- |
-| 6a    | `lib/sync.ts` tier validator, `reconcileTiers`; `lib/diaries.ts` `expandTiers`, `mergeDoneTasks` | done  |
-| 6b    | Worker stores `{ quests, diaries }`; readback validates it                                       | done  |
-| 6c    | Diaries store: `syncedTiers`, merged `done`, drift report, lock guards                           | done  |
-| 6d    | Locked-row UI for tiers and quests; Settings copy and counts                                     | next  |
-| 6e    | Docs: reword `task-id.ts`, CLAUDE.md, this file                                                  | —     |
+Slices continue Phase 5's series. They are not "6a–6e": that already means the
+diaries feature itself.
 
-6a–6c are committed locally (`1737cca`, `89175f2`, `b69334e`) and **not yet
-pushed**.
+| Slice | Contents                                                                                                                                                            | State |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| 5g    | Diary tiers on the wire: `lib/sync.ts` validator and `reconcileTiers`; `lib/diaries.ts` `expandTiers` and `mergeDoneTasks`; the Worker stores `{ quests, diaries }` | done  |
+| 5h    | Diaries store: `syncedTiers`, merged `done`, drift report, lock guards                                                                                              | done  |
+| 5i    | Locked rows for quests and diary tiers; Settings copy, counts and drift                                                                                             | done  |
+| 5j    | Link by QR: `isAccountHash`, the `/sync?hash=` route, draft-and-Save field, clipboard paste and copy, copy-first in a tab                                           | done  |
+| 5k    | This docs pass                                                                                                                                                      | done  |
+
+Commits, all local and **not yet pushed** when this was written: 5g `1737cca`
+`89175f2`; 5h `b69334e`; 5i `ea12779` `3af48d8`; 5j `0586149` `2aa7b94`
+`29e8777` `b0c3d54` `c87e7cb`.
 
 **Decisions, and why they aren't obvious from the code:**
 
@@ -1038,44 +1049,154 @@ pushed**.
   exactly one hand-entered fact — a task is done — and a synced tier reads as
   done through the same derivation. Merge is a union; `doneTasks` is the only
   thing persisted or backed up, so merge-off is a complete undo.
-- **Synced tiers are locked, not toggleable.** Un-ticking a task the
-  snapshot says is done would edit a local record that never held it, leaving
-  the row checked and the tap apparently ignored. The store guards
-  `toggleTask` and `toggleTier`; the UI has to show why.
+- **Synced state is locked, not toggleable, and the lock is shown as text.**
+  Un-ticking a task the snapshot says is done would edit a local record that
+  never held it, leaving the row checked and the tap apparently ignored. The
+  store refuses it and the UI disables the control and says why. A note rather
+  than a glyph, because the padlock in the diary list already means
+  "requirements unmet" and one icon should not carry two meanings.
+- **A quest option is locked when the snapshot outranks it** (`isBelowSynced`).
+  Equal is left open, so the player can still pin the synced state locally.
+  `setProgress` refuses locked states as well as the UI disabling them. Only
+  quest detail's three-way picker needed this; the Queue's Start and Finish
+  buttons only ever advance a quest, so they cannot hit it.
 - **Drift is silent until the dataset loads.** With no index every synced id
   looks unknown, so `syncUnknownTierIds` returns empty rather than accusing
-  the plugin. Same trap `SettingsView` documents for quests.
-
-**Next up — 6d:**
-
-1. Render locked rows for synced tasks and tiers (`isTaskSynced`,
-   `isTierSynced` are exported and unused so far), with a "Synced from
-   RuneLite" note and the tier toggle disabled.
-2. **Fix the same gap for quests, which already exists.** `QuestDetailView` and
-   `QueueView` call `setProgress` with no provenance or lock, so tapping "todo"
-   on a synced-done quest silently does nothing. Proposed as its own commit
-   ahead of the diary UI, since it is a bug independent of diaries.
-3. Settings: "Merge synced quests" becomes quests and diaries, plus a synced
-   tier count and the unknown-tier drift line. Note that showing drift means
-   loading the diaries dataset when Settings opens — a lazy chunk, so the entry
-   bundle is unaffected, but a real fetch of ~256 KB. Weigh it.
+  the plugin. Same trap `SettingsView` documents for quests. Settings therefore
+  loads the diaries dataset on open — a lazy chunk, and precached.
+- **`/sync?hash=` is a client route, and that is why it needs no spam
+  protection.** `run_worker_first` covers only `/api/*`, so the Worker is never
+  invoked for it, and `/api/sync` is a different path. The real risk is not
+  volume but a crafted link silently replacing the stored hash, so it **never
+  applies on load**: it always asks, showing the full hash, and skips the
+  prompt only for a hash identical to the one stored. A repeated `hash`
+  parameter is refused as ambiguous rather than "take the first". It leaves
+  through `router.replace`, because an installed PWA relaunches on the URL it
+  was killed holding and a link left in place would re-prompt every launch.
+  `isAccountHash` is the single definition of a valid hash, shared with the
+  Worker, so the link can't accept something the API then rejects.
+- **A scanned code opens Safari, not the installed app.** Tested on an iPad
+  with the PWA installed. There is no link from Safari into an iOS home-screen
+  app, and a page can only tell whether _it_ is running standalone
+  (`display-mode: standalone`), never whether an installed copy exists. So in a
+  browser tab the confirm screen leads with **Copy**, demotes Link to "Link
+  this browser instead", and shows an oak plaque explaining the app is meant to
+  run installed because browsers may clear a site's saved data. The installed
+  app keeps the plain Cancel and Link pair. The clipboard is the only bridge
+  between the two; that Safari and the PWA keep separate storage is believed
+  rather than verified here.
+- **The hash field is a draft, written only on Save.** It used to bind
+  straight to the store, so every keystroke overwrote the saved value, and a
+  slip lost a nineteen-digit number recoverable only from RuneLite. Save is
+  enabled once the draft is a valid hash that differs from the saved one;
+  clearing is allowed and is how a hash is unlinked. `setAccountHash` drops the
+  cached snapshot when the hash changes, since it belongs to the old account,
+  and Save refetches. Paste from clipboard fills the draft and never saves, and
+  never echoes what it found.
 
 **Open, and not blocking:**
 
 - **Plugin side (`curators-journal-runelite`, 5d).** Maps a tier varbit to a
-  fixed tier id like `ardougne-easy`. No task-text hashing is involved, which
-  makes `task-id.ts`'s third-consumer note wrong — fix in 6e.
+  fixed tier id like `ardougne-easy`. No task-text hashing is involved — that
+  was the original plan and `task-id.ts` no longer claims it.
+- **Settings reads zero while merge is off.** The line "N quests and N diary
+  tiers synced" counts the merge-gated values, so with the toggle off it says
+  0 even when a snapshot is cached — hiding exactly what turning it on would
+  give. The fix is to count from the snapshot regardless of the toggle, for
+  both. Existing behaviour for quests, extended to tiers; not yet changed.
+- **D1 migrations are applied by hand, and nothing does it.** No script and no
+  workflow step. A fresh clone's `/api/sync` returns a generic 500 ("Could not
+  read the sync store.") until `wrangler d1 migrations apply --local`, now
+  documented in CLAUDE.md. Whether production has the table applied is
+  unchecked (`migrations list --remote` is read-only). Separately, the route's
+  `catch {}` swallows the D1 error, which is why that failure was hard to read
+  — log the cause server-side without returning it.
+- **Settings' install paragraph is plain text.** The plaque from `/sync` is
+  the better treatment and could replace it.
 - **Store tests don't exist.** The suite covers `lib` and the Worker only, and
   the config has no `@/` alias or pinia setup. The lock guards and the
-  dataset-loaded drift guard are covered by typecheck alone. Add harness only
-  if the store logic grows.
+  dataset-loaded drift guard are covered by typecheck and by hand in a browser.
+  Add harness only if the store logic grows.
 - **Fetching is Settings-only.** `quests.ensureReady` doesn't fetch the
   snapshot; the sync store hydrates its cache on first use and only Settings
   calls `ensureLoaded`. Diaries follow the same pattern. Existing behaviour,
   but worth knowing if a cold load into a panel ever shows stale synced state.
-- **CLAUDE.md's precache figure is stale.** It says ~1129 KiB; `HEAD` built at
-  1134.39 KiB before 6c, 1135.13 after. Correct it in 6e. The entry-chunk
-  greps (`cooks-assistant`, `ardougne-easy`, `localforage`) all still pass.
+- **The precache count moved from 58 to 62 entries** with no new content: the
+  `/sync` view made `sync`, `persist` and `api` shared chunks. Recorded in
+  CLAUDE.md, with the lesson that the count is a tripwire for a new asset and
+  the manifest diff is the real check.
+
+## Phase 6: achievement diaries
+
+Built in slices 6a–6f: the dataset (`scripts/build-diaries.ts` →
+`src/data/diaries.json`, 48 tiers and 492 tasks), the engine
+(`src/lib/diaries.ts`), the store and the UI. Written up after the fact —
+code comments have pointed at this section for a while. The fuller decision
+log, dead ends included, is `.memories/2026-09-18/132031_diaries-phase-6.md`;
+where it disagrees with this file, this file wins. It still says the plugin
+will hash task text, which the varbit finding overturned — see "Diary sync"
+above.
+
+**The tier-totals cross-check was the whole game.** A diary page states a
+tier's requirements twice: once in `{{DiarySkillStats}}` and once across the
+tasks' own cells. Comparing them started at 12 disagreements and converged to
+zero, and every one was a parser bug rather than wiki drift — the totals are a
+precise oracle for whether task parsing is right, and nothing else would have
+caught them, because each produces plausible-looking output. A level is _soft_
+(kept as prose, not a requirement) when "or" sits either side of it, when it is
+in parentheses, when the bullet says "recommended", or when it is a sub-bullet;
+and within one task a repeated skill takes the **minimum**, the opposite of the
+tier aggregation, because one task naming a skill twice can only be offering
+alternative routes. If the cross-check ever reports disagreements again,
+suspect the parser before the wiki.
+
+**Task ids are content-derived** (`src/lib/task-id.ts`): normalise, FNV-1a
+32-bit, prefix with the tier id. Positional ids were rejected because the wiki
+renumbers tasks when Jagex inserts one, and every completion after the
+insertion would shift one place and be silently attributed to the wrong task.
+Content-derived ids fail better: a copyedit orphans one completion, which
+disappears rather than landing somewhere false. The generator asserts
+uniqueness within a tier and **fails the build** on a collision, because two
+tasks sharing an id means ticking one ticks the other forever.
+
+**Tier state is derived, not entered.** The only hand-entered fact is "this
+task is done"; tier state, counts and `rewardsBlockedBy` all derive from it, and
+"mark tier done" writes task completions. Tier progress was originally its own
+map, and the tell that it was the wrong shape was that nobody could say what
+marking a tier actually did. One record, so nothing can disagree with itself.
+An empty tier reads `todo`, never `done`: an empty tier means the dataset
+failed to parse one, and calling that complete would hide the defect and credit
+work never done.
+
+**Done and doable stay independent.** A checked task keeps its padlock — the
+padlock is the wiki's opinion of the requirements, the check is the player's
+record of what they did — and a finished task stops counting toward
+`blockedTasks`. A boost, a game update or a wiki error all produce that state
+legitimately. Diaries never enter `buildPlan`: nothing in the quest graph
+depends on one.
+
+**Dead ends worth keeping:**
+
+- **Tier-only tracking**, built first and rejected on sight. A diary is only
+  useful as a worklist you run down while playing, which needs per-task checks.
+  (Sync is tier-only, but that is a limit of what the game exposes, not a
+  design choice: hand entry is per task, sync is per tier.)
+- **`plus` for "mark all done".** It already means "add to queue" on quest
+  rows. Replaced with the double tick (`checkAll`): single tick is this one,
+  double is all of them.
+- **A "frozen renderer" that does not exist.** The DevTools screenshot call
+  times out on the diary _detail_ view specifically, and its error text
+  speculates the renderer may be frozen. It was reported as a diagnosis and was
+  wrong — the page was fine. Screenshotting that view is unreliable in this
+  setup; the app is not. Do not chase it.
+
+**Open — placement (6e).** Both variants ship right now: a Diaries panel
+(`/diaries`, `DiariesView.vue`) and a segmented mode inside Quests
+(`QuestsView.vue`). The panel makes five tabs, which trips the icon-only
+threshold for _every_ tab. It needs judging docked on the iPad; the loser is
+deleted and the winner's state wired into the route (a `/diaries/:id`
+drill-down for the panel, the mode in the path for the other). `DiaryList.vue`
+survives either way, which is why it is separate.
 
 ## Open questions
 

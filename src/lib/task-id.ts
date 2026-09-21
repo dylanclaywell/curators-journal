@@ -1,17 +1,20 @@
 /**
  * Stable ids for achievement diary tasks, derived from their text.
  *
- * **This is a cross-implementation contract, not an internal detail.** Three
- * things compute or consume these ids, and they must agree exactly:
+ * Two things compute or consume these ids, and they must agree exactly:
  *
  *   1. `scripts/build-diaries.ts`, which bakes them into the dataset;
- *   2. the app, which keys hand-entered task completions on them;
- *   3. the RuneLite plugin (Phase 5), which will read a task's text from the
- *      game and hash it to find the same id — no mapping table, provided both
- *      sides normalize and hash identically.
+ *   2. the app, which keys hand-entered task completions on them.
  *
- * That third consumer is why the algorithm below is deliberately plain: it has
- * to be reimplementable in Java from this comment alone, with no library.
+ * **The RuneLite plugin is not a third consumer, though it was meant to be.**
+ * The plan was for it to read a task's text from the game and hash it to the
+ * same id with no mapping table. It can't: the game exposes diary completion
+ * only per *tier*, as one done-or-not flag, with nothing about the tasks inside
+ * it. So the plugin sends tier ids (`ardougne-easy`, fixed strings) and never
+ * touches a task id, and the sync merge expands a done tier into its tasks on
+ * this side (`expandTiers` in `diaries.ts`). Nothing below needs to be
+ * reimplemented in Java; the algorithm is plain because that keeps it easy to
+ * audit, not because a second implementation depends on it.
  *
  * ## Why content-derived rather than positional
  *
@@ -36,12 +39,11 @@
  *   5. Render as 8 lowercase hex digits, zero-padded.
  *   6. Prefix with the tier id: `ardougne-easy-1f3c9a02`.
  *
- * Step 2 is doing the real work. Wiki prose and in-game text differ in
- * punctuation, capitalisation and stray markup far more often than in words,
- * so reducing to words-and-digits is what lets the plugin's hash land on the
- * dataset's. It will not always: the wiki sometimes rewords a task outright.
- * The plugin is expected to log what it cannot match rather than guess, which
- * makes the mismatch a drift report instead of a silent gap.
+ * Step 2 is doing the real work. Wiki prose changes in punctuation,
+ * capitalisation and stray markup far more often than in words, so reducing to
+ * words-and-digits means a cosmetic copyedit leaves the id alone. A real
+ * reword still changes it, which orphans that one completion visibly — see
+ * above — rather than attributing it to the wrong task.
  *
  * Scoping to the tier means collisions only matter among the ~19 tasks of one
  * tier, which is why a 32-bit hash is ample. The generator asserts uniqueness

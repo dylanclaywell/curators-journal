@@ -417,8 +417,9 @@ describe('the committed dataset', () => {
         for (const task of t.tasks) {
           taskCount++
           taskIds.add(task.id)
-          // The id must be reproducible from the text, or the RuneLite plugin
-          // cannot arrive at it independently — see task-id.ts.
+          // The id must be reproducible from the text: that is what makes it
+          // stable across a regeneration, so a completion survives the wiki
+          // renumbering its tasks — see task-id.ts.
           expect(task.id).toBe(taskIdFor(t.id, task.text))
           for (const prereq of task.requirements.quests) {
             expect(qi.byId.has(prereq.id)).toBe(true)

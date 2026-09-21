@@ -308,9 +308,8 @@ export type DiaryTierName = (typeof DIARY_TIERS)[number]
 export interface DiaryTask {
   /**
    * Content-derived and stable across regeneration: `<tierId>-<8 hex>`, from
-   * `taskIdFor` in `task-id.ts`. Completions are keyed on this, and the
-   * RuneLite plugin is expected to arrive at the same id from the task text
-   * the game gives it — see that module, which documents the contract.
+   * `taskIdFor` in `task-id.ts`. Completions are keyed on this; see that
+   * module for the scheme and why it is content-derived rather than positional.
    */
   id: string
   /** The task text, wiki markup stripped. Numbering is positional, not stored. */

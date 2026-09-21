@@ -63,6 +63,7 @@ npm run format         # prettier --write   (format:check = verify)
 npm run build:icons    # rasterize public/icons/icon.svg -> PWA/iOS PNGs
 npm run build:icon-set # regenerate src/lib/icons.ts from the vendored packs
 npm run build:guides   # regenerate public/guides/*.json from the wiki's quick guides
+npx wrangler d1 migrations apply curators-journal --local   # once per clone, and after a new migration
 ```
 
 Tests run in **workerd**, not Node — `vitest` with
@@ -110,19 +111,25 @@ Three things worth knowing, since examples on the web predate them:
 ## The constraint that shapes everything
 
 **OSRS hiscores do not expose quest state.** `index_lite.json` returns skills and
-activities only — no quest points, no completions. So there are two kinds of data
-and they must not be conflated:
+activities only — no quest points, no completions. So there are three kinds of
+data and they must not be conflated:
 
 - **Fetched, read-only:** skill levels, XP, activity scores, item prices.
 - **User-owned, authoritative, precious:** quest completions and achievement
-  diary tier completions. Hand-entered, only in IndexedDB, and unrecoverable if
+  diary task completions. Hand-entered, only in IndexedDB, and unrecoverable if
   lost. They are separate keyspaces and separate storage keys on purpose —
-  `quests:progress` and `diaries:progress` — because one map would let a tier id
+  `quests:progress` and `diaries:tasks` — because one map would let a task id
   collide with a quest slug, and a collision here marks the wrong thing done
   with no way to notice or undo it. This is why export/import exists
   (slice 4b′, from the Settings panel): `src/lib/backup.ts` builds and validates
   the backup shape. Anything hand-entered that lands in IndexedDB belongs in
   that shape — adding a new one means extending the backup too.
+- **Synced, semi-trusted, disposable:** the RuneLite snapshot (`sync:snapshot`).
+  It arrives over an endpoint that takes no credentials, so it is never written
+  into the precious half. The merge happens in a computed and only ever adds —
+  a synced state can promote a quest or diary tier, never demote one — so
+  turning the merge off is a complete undo. It is deliberately not in the
+  backup; it refetches itself. See ROADMAP.md Phase 5.
 
 ## Architecture
 
@@ -233,9 +240,16 @@ for `cooks-assistant`, `ardougne-easy` and `localforage`. All three must be
 absent. Together the two datasets are most of the ~1.1 MB precache, so a third
 wants weighing rather than adding — the quest walkthroughs were weighed and
 kept _out_, which is why they're served from `public/guides/` instead. Check
-that too: `npm run build` must still report **58 precache entries, ~1129 KiB**,
-and `dist/client/sw.js` must mention `guides/` only in the runtime rule, never
-in the precache manifest.
+that too: `npm run build` should report **62 precache entries, ~1144 KiB**, and
+`dist/client/sw.js` must mention `guides/` only in the runtime rule, never in
+the precache manifest.
+
+The count is a tripwire for a _new asset_, and it moves for a benign reason:
+it was 58 until the `/sync` view became one more lazy consumer of the `sync`,
+`persist` and `api` modules, which made Rollup lift them into shared chunks.
+Nothing new shipped. So when it changes, diff the precache manifest against the
+previous build and look at what the new entries _are_ before trusting or
+resetting the number.
 
 **Anything a panel needs, it gets by calling one `ensure*` on a store.**
 `useQuestsStore().ensureReady()` loads the dataset _and_ the levels. The
