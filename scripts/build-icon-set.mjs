@@ -43,6 +43,12 @@ const ICONS = [
   // tab bar is the app's identity and the four sit together at 20px, so they
   // need one drawing style. Phosphor stays for chrome inside panels.
   ['progression', 'src/assets/icons/progression.svg', 'game-icons'],
+  // Bosses. A dragon head rather than crossed swords or a skull: swords read
+  // as combat or PvP generally, and the tab means a specific list of named
+  // encounters. It is also the densest of the candidates (2727 chars of path
+  // against crossed-swords' 1135), which is what survives the tab bar — see
+  // the note above about strokes turning to smudge at 20px.
+  ['dragonHead', 'src/assets/icons/dragon-head.svg', 'game-icons'],
   // Key is `cog`, file is game-icons' `big-gear`: Lorc's `cog` is too airy at
   // 20px, and Phosphor's `gear` stays reserved for chrome inside panels.
   ['cog', 'src/assets/icons/big-gear.svg', 'game-icons'],

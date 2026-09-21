@@ -211,6 +211,7 @@ attribution.
 | `padlock`         | Lorc        |
 | `open-book`       | Lorc        |
 | `trophy`          | Lorc        |
+| `dragon-head`     | Lorc        |
 | `progression`     | Delapouite  |
 | `big-gear`        | DarkZaitzev |
 

@@ -55,6 +55,18 @@ export const panels: PanelDefinition[] = [
     component: () => import('@/views/StatsView.vue'),
   },
   {
+    // The fifth tab. It used to be unaffordable — five panels tripped the tab
+    // bar's icon-only rule and cost *every* tab its label — until that rule
+    // became width-per-tab (slice 7a). Five labels now fit on the docked iPad
+    // and collapse only at the 375px phone floor.
+    id: 'bosses',
+    title: 'Bosses',
+    path: '/bosses',
+    icon: 'dragonHead',
+    minWidth: 320,
+    component: () => import('@/views/BossesView.vue'),
+  },
+  {
     // Settings rather than About: the icon has always been a cog, the panel
     // holds username, account type, sync and backup, and Settings is what the
     // game calls its own gear tab. Credits keeps the §8.1 notice prominent
