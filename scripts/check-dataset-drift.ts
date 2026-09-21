@@ -39,16 +39,23 @@ const TITLE = 'chore: refresh the generated datasets from the wiki'
  * a failed diary build, a silently missing guide, or a boss requirement that
  * quietly stops resolving.
  *
- * `build-bosses` is last because it is the only one that also reaches a
- * *second* host — it reads the hiscores for the activity names — so putting it
- * behind the three wiki-only generators keeps a Jagex outage from stopping
- * work that would otherwise have succeeded.
+ * `build-bosses` comes after the three wiki-only generators because it is the
+ * first that also reaches a *second* host — it reads the hiscores for the
+ * activity names — so a Jagex outage cannot stop work that would otherwise
+ * have succeeded.
+ *
+ * `build-items` is last and depends on `build-bosses` having run: it derives
+ * which items to keep from the drop tables in `public/boss-detail/`, so against
+ * a stale set it would trim out the items a newly added boss drops. It reaches
+ * a third host again (the price service), which is the same argument for
+ * putting it at the end.
  */
 const GENERATORS = [
   'build-quests.ts',
   'build-diaries.ts',
   'build-guides.ts',
   'build-bosses.ts',
+  'build-items.ts',
 ]
 
 /**
@@ -243,7 +250,7 @@ function main(): void {
   /*
    * In `GENERATORS` order, which quests has to lead — see the note there.
    *
-   * All three fail loud by design, so a non-zero here means the parser met
+   * They all fail loud by design, so a non-zero here means the parser met
    * something new — a different finding from "the wiki moved", and one that
    * wants a person at the parser rather than a merge button. Left to fail the
    * run rather than swallowed.

@@ -26,7 +26,8 @@
     "build:diaries": "node --experimental-strip-types scripts/build-diaries.ts",
     "check:drift": "node --experimental-strip-types scripts/check-dataset-drift.ts",
     "build:guides": "node --experimental-strip-types scripts/build-guides.ts",
-    "build:bosses": "node --experimental-strip-types scripts/build-bosses.ts"
+    "build:bosses": "node --experimental-strip-types scripts/build-bosses.ts",
+    "build:items": "node --experimental-strip-types scripts/build-items.ts"
   },
   "dependencies": {
     "localforage": "^1.10.0",

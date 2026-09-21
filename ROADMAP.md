@@ -1210,7 +1210,7 @@ what made the swap this small.
 
 ## Phase 8: items and prices
 
-**Started 2026-09-21; 8a is built.** Comes out of Phase 7: a drop table
+**Started 2026-09-21; 8a and 8b are built.** Comes out of Phase 7: a drop table
 answers "what does it give", and the next two questions are "what's it worth"
 and "where else do I get it". Both are joins the wiki can't do for you, which
 is the test for whether something belongs in this app at all.
@@ -1221,7 +1221,7 @@ Worker-proxy shape, and the item work needs the proxy anyway.
 | Slice | Contents                                                                                 | State |
 | ----- | ---------------------------------------------------------------------------------------- | ----- |
 | 8a    | `/api/prices` — Worker proxy for `/latest` only, same shape as the hiscores route        | done  |
-| 8b    | `src/data/items.json` from `/mapping`, fetched **at build time**, trimmed to what we use |       |
+| 8b    | `src/data/items.json` from `/mapping`, fetched **at build time**, trimmed to what we use | done  |
 | 8c    | Item → bosses index, inverted from the drop tables we already own                        |       |
 | 8d    | `/items/:id` detail; drop rows link to it                                                |       |
 | 8e    | A prices surface of its own, if 8d doesn't already answer the question                   |       |
@@ -1316,6 +1316,55 @@ in 1970.
   route's comment assumes. It is shared across a file, so the first success
   answered every failure case and they all passed with a 200 until
   `prices-route.test.ts` started evicting the key in `beforeEach`.
+
+**8b as built: the only real decision was what to leave out.** `/mapping` is a
+genuine structured dataset, so `scripts/build-items.ts` has no parser — it
+fetches, trims, and asserts. The trim was weighed rather than assumed, and the
+numbers are the argument:
+
+| Kept                           | Raw    | Gzipped |
+| ------------------------------ | ------ | ------- |
+| All 4662 entries, as published | 844 KB | 139 KB  |
+| All 4662, `icon` dropped       | 705 KB | 117 KB  |
+| The 657 our drop tables name   | 97 KB  | 19 KB   |
+
+The full mapping would be the app's second-largest asset behind `quests.json`,
+to ship 4005 items nothing can reach — there is no item search and no route to
+one. The subset is about the size of `bosses.json`. **The cost is real and will
+come due at 8e: an item search over everything cannot be built on this file.**
+Widening the trim is one edit to `referencedNames` plus a re-measure, but it is
+a 600 KB decision rather than a detail, which is why it is written down here
+and not left to be rediscovered.
+
+**The trim derives from `public/boss-detail/`, not from a list.** The drop
+tables are the only consumer, so a boss added in a later regeneration brings its
+items with it and nobody has to remember. That makes `build-items` depend on
+`build-bosses` having run, so it is last in `GENERATORS` — and last anyway,
+being the second generator to reach a host other than the wiki.
+
+**The name join is safe because the names are unique, and that is asserted.**
+All 4662 mapping names are distinct once normalized, so no drop row can be
+handed the wrong item's id. The generator fails on a duplicate rather than
+taking the last one, because last-one-wins here means a plausible price against
+the wrong item — the same failure mode as the hiscores' renumbering ids in
+Phase 7. `normalizeItemName` lives in `src/lib/items.ts` and is used by both the
+generator's trim and the app's lookup: fold them differently and items are
+present in the file and unfindable at runtime.
+
+The measured join held exactly — 657 of 893 — and the 236 misses are pets, clue
+scrolls, quest items and **coins**, which the GE does not list. Reported on
+every run rather than treated as a defect; a sharp climb in that number means
+the join broke, not that the game changed.
+
+**`icon` is dropped.** The endpoint publishes one and it names a Jagex sprite.
+Carrying a field with no renderer costs 139 KB and takes a licensing decision by
+accident; NOTICE.md asks that those be deliberate. A test asserts the field is
+absent, so it can only come back on purpose.
+
+Still owed from this slice: `items.json` has no consumer yet, so it is not in
+CLAUDE.md's bundle-invariant list. **Add it there when 8d imports it**, via an
+`ensureDataset()` dynamic import like the other three — 97 KB in the entry chunk
+is exactly the mistake that list exists to catch.
 
 **Open questions for the phase:**
 

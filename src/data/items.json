@@ -1,0 +1,6579 @@
+{
+  "generatedAt": "2026-09-21",
+  "sources": [
+    "https://prices.runescape.wiki/api/v1/osrs/mapping (Grand Exchange item mapping)"
+  ],
+  "omitted": 4005,
+  "items": [
+    {
+      "id": 2,
+      "name": "Steel cannonball",
+      "examine": "Ammo suited for a boat's cannon or for a dwarf multicannon.",
+      "members": true,
+      "highalch": 3,
+      "lowalch": 2,
+      "limit": 11000,
+      "value": 5
+    },
+    {
+      "id": 45,
+      "name": "Opal bolt tips",
+      "examine": "Opal bolt tips.",
+      "members": true,
+      "highalch": 4,
+      "lowalch": 2,
+      "limit": 11000,
+      "value": 7
+    },
+    {
+      "id": 46,
+      "name": "Pearl bolt tips",
+      "examine": "Pearl bolt tips.",
+      "members": true,
+      "highalch": 7,
+      "lowalch": 4,
+      "limit": 11000,
+      "value": 12
+    },
+    {
+      "id": 129,
+      "name": "Restore potion(2)",
+      "examine": "2 doses of restore potion.",
+      "members": true,
+      "highalch": 39,
+      "lowalch": 26,
+      "limit": 2000,
+      "value": 66
+    },
+    {
+      "id": 133,
+      "name": "Defence potion(3)",
+      "examine": "3 doses of Defence potion.",
+      "members": true,
+      "highalch": 72,
+      "lowalch": 48,
+      "limit": 2000,
+      "value": 120
+    },
+    {
+      "id": 139,
+      "name": "Prayer potion(3)",
+      "examine": "3 doses of Prayer restore potion.",
+      "members": true,
+      "highalch": 91,
+      "lowalch": 60,
+      "limit": 2000,
+      "value": 152
+    },
+    {
+      "id": 141,
+      "name": "Prayer potion(2)",
+      "examine": "2 doses of Prayer restore potion.",
+      "members": true,
+      "highalch": 68,
+      "lowalch": 45,
+      "limit": 2000,
+      "value": 114
+    },
+    {
+      "id": 145,
+      "name": "Super attack(3)",
+      "examine": "3 doses of super Attack potion.",
+      "members": true,
+      "highalch": 108,
+      "lowalch": 72,
+      "limit": 2000,
+      "value": 180
+    },
+    {
+      "id": 147,
+      "name": "Super attack(2)",
+      "examine": "2 doses of super Attack potion.",
+      "members": true,
+      "highalch": 81,
+      "lowalch": 54,
+      "limit": 2000,
+      "value": 135
+    },
+    {
+      "id": 157,
+      "name": "Super strength(3)",
+      "examine": "3 doses of super Strength potion.",
+      "members": true,
+      "highalch": 132,
+      "lowalch": 88,
+      "limit": 2000,
+      "value": 220
+    },
+    {
+      "id": 159,
+      "name": "Super strength(2)",
+      "examine": "2 doses of super Strength potion.",
+      "members": true,
+      "highalch": 99,
+      "lowalch": 66,
+      "limit": 2000,
+      "value": 165
+    },
+    {
+      "id": 161,
+      "name": "Super strength(1)",
+      "examine": "1 dose of super Strength potion.",
+      "members": true,
+      "highalch": 66,
+      "lowalch": 44,
+      "limit": 2000,
+      "value": 110
+    },
+    {
+      "id": 163,
+      "name": "Super defence(3)",
+      "examine": "3 doses of super Defence potion.",
+      "members": true,
+      "highalch": 158,
+      "lowalch": 105,
+      "limit": 2000,
+      "value": 264
+    },
+    {
+      "id": 165,
+      "name": "Super defence(2)",
+      "examine": "2 doses of super Defence potion.",
+      "members": true,
+      "highalch": 118,
+      "lowalch": 79,
+      "limit": 2000,
+      "value": 198
+    },
+    {
+      "id": 167,
+      "name": "Super defence(1)",
+      "examine": "1 dose of super Defence potion.",
+      "members": true,
+      "highalch": 79,
+      "lowalch": 52,
+      "limit": 2000,
+      "value": 132
+    },
+    {
+      "id": 169,
+      "name": "Ranging potion(3)",
+      "examine": "3 doses of ranging potion.",
+      "members": true,
+      "highalch": 172,
+      "lowalch": 115,
+      "limit": 2000,
+      "value": 288
+    },
+    {
+      "id": 171,
+      "name": "Ranging potion(2)",
+      "examine": "2 doses of ranging potion.",
+      "members": true,
+      "highalch": 129,
+      "lowalch": 86,
+      "limit": 2000,
+      "value": 216
+    },
+    {
+      "id": 173,
+      "name": "Ranging potion(1)",
+      "examine": "1 dose of ranging potion.",
+      "members": true,
+      "highalch": 86,
+      "lowalch": 57,
+      "limit": 2000,
+      "value": 144
+    },
+    {
+      "id": 183,
+      "name": "Superantipoison(2)",
+      "examine": "2 doses of super antipoison potion.",
+      "members": true,
+      "highalch": 129,
+      "lowalch": 86,
+      "limit": 2000,
+      "value": 216
+    },
+    {
+      "id": 189,
+      "name": "Zamorak brew(3)",
+      "examine": "3 doses of Zamorak brew.",
+      "members": true,
+      "highalch": 105,
+      "lowalch": 70,
+      "limit": 2000,
+      "value": 175
+    },
+    {
+      "id": 191,
+      "name": "Zamorak brew(2)",
+      "examine": "2 doses of Zamorak brew.",
+      "members": true,
+      "highalch": 90,
+      "lowalch": 60,
+      "limit": 2000,
+      "value": 150
+    },
+    {
+      "id": 199,
+      "name": "Grimy guam leaf",
+      "examine": "It needs cleaning.",
+      "members": true,
+      "highalch": 7,
+      "lowalch": 5,
+      "limit": 13000,
+      "value": 13
+    },
+    {
+      "id": 201,
+      "name": "Grimy marrentill",
+      "examine": "It needs cleaning.",
+      "members": true,
+      "highalch": 8,
+      "lowalch": 5,
+      "limit": 13000,
+      "value": 14
+    },
+    {
+      "id": 203,
+      "name": "Grimy tarromin",
+      "examine": "It needs cleaning.",
+      "members": true,
+      "highalch": 9,
+      "lowalch": 6,
+      "limit": 13000,
+      "value": 15
+    },
+    {
+      "id": 205,
+      "name": "Grimy harralander",
+      "examine": "It needs cleaning.",
+      "members": true,
+      "highalch": 9,
+      "lowalch": 6,
+      "limit": 13000,
+      "value": 16
+    },
+    {
+      "id": 207,
+      "name": "Grimy ranarr weed",
+      "examine": "It needs cleaning.",
+      "members": true,
+      "highalch": 18,
+      "lowalch": 12,
+      "limit": 11000,
+      "value": 30
+    },
+    {
+      "id": 209,
+      "name": "Grimy irit leaf",
+      "examine": "It needs cleaning.",
+      "members": true,
+      "highalch": 10,
+      "lowalch": 6,
+      "limit": 13000,
+      "value": 17
+    },
+    {
+      "id": 211,
+      "name": "Grimy avantoe",
+      "examine": "It needs cleaning.",
+      "members": true,
+      "highalch": 10,
+      "lowalch": 7,
+      "limit": 13000,
+      "value": 18
+    },
+    {
+      "id": 213,
+      "name": "Grimy kwuarm",
+      "examine": "It needs cleaning.",
+      "members": true,
+      "highalch": 12,
+      "lowalch": 8,
+      "limit": 13000,
+      "value": 20
+    },
+    {
+      "id": 215,
+      "name": "Grimy cadantine",
+      "examine": "It needs cleaning.",
+      "members": true,
+      "highalch": 13,
+      "lowalch": 8,
+      "limit": 11000,
+      "value": 22
+    },
+    {
+      "id": 217,
+      "name": "Grimy dwarf weed",
+      "examine": "It needs cleaning.",
+      "members": true,
+      "highalch": 14,
+      "lowalch": 9,
+      "limit": 11000,
+      "value": 24
+    },
+    {
+      "id": 219,
+      "name": "Grimy torstol",
+      "examine": "It needs cleaning.",
+      "members": true,
+      "highalch": 15,
+      "lowalch": 10,
+      "limit": 11000,
+      "value": 25
+    },
+    {
+      "id": 223,
+      "name": "Red spiders' eggs",
+      "examine": "Ewww!",
+      "members": false,
+      "highalch": 4,
+      "lowalch": 2,
+      "limit": 13000,
+      "value": 7
+    },
+    {
+      "id": 225,
+      "name": "Limpwurt root",
+      "examine": "The root of a limpwurt plant.",
+      "members": false,
+      "highalch": 4,
+      "lowalch": 2,
+      "limit": 13000,
+      "value": 7
+    },
+    {
+      "id": 227,
+      "name": "Vial of water",
+      "examine": "A glass vial containing water.",
+      "members": false,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 13000,
+      "value": 2
+    },
+    {
+      "id": 231,
+      "name": "Snape grass",
+      "examine": "Strange spiky grass.",
+      "members": true,
+      "highalch": 6,
+      "lowalch": 4,
+      "limit": 13000,
+      "value": 10
+    },
+    {
+      "id": 237,
+      "name": "Unicorn horn",
+      "examine": "This horn has restorative properties.",
+      "members": true,
+      "highalch": 12,
+      "lowalch": 8,
+      "limit": 13000,
+      "value": 20
+    },
+    {
+      "id": 239,
+      "name": "White berries",
+      "examine": "Sour berries, used in potions.",
+      "members": true,
+      "highalch": 6,
+      "lowalch": 4,
+      "limit": 13000,
+      "value": 10
+    },
+    {
+      "id": 245,
+      "name": "Wine of Zamorak",
+      "examine": "An evil wine for an evil god.",
+      "members": false,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 11000,
+      "value": 1
+    },
+    {
+      "id": 267,
+      "name": "Dwarf weed",
+      "examine": "A powerful herb.",
+      "members": true,
+      "highalch": 42,
+      "lowalch": 28,
+      "limit": 11000,
+      "value": 70
+    },
+    {
+      "id": 269,
+      "name": "Torstol",
+      "examine": "A powerful herb.",
+      "members": true,
+      "highalch": 45,
+      "lowalch": 30,
+      "limit": 11000,
+      "value": 75
+    },
+    {
+      "id": 311,
+      "name": "Harpoon",
+      "examine": "Useful for catching really big fish.",
+      "members": false,
+      "highalch": 3,
+      "lowalch": 2,
+      "limit": 40,
+      "value": 5
+    },
+    {
+      "id": 313,
+      "name": "Fishing bait",
+      "examine": "For use with a fishing rod.",
+      "members": false,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 8000,
+      "value": 3
+    },
+    {
+      "id": 314,
+      "name": "Feather",
+      "examine": "Used for fly fishing.",
+      "members": false,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 30000,
+      "value": 2
+    },
+    {
+      "id": 333,
+      "name": "Trout",
+      "examine": "Some nicely cooked trout.",
+      "members": false,
+      "highalch": 6,
+      "lowalch": 4,
+      "limit": 6000,
+      "value": 10
+    },
+    {
+      "id": 353,
+      "name": "Raw mackerel",
+      "examine": "I should try cooking this.",
+      "members": true,
+      "highalch": 9,
+      "lowalch": 6,
+      "limit": 15000,
+      "value": 15
+    },
+    {
+      "id": 361,
+      "name": "Tuna",
+      "examine": "Wow, this is a big fish.",
+      "members": false,
+      "highalch": 24,
+      "lowalch": 16,
+      "limit": 6000,
+      "value": 40
+    },
+    {
+      "id": 363,
+      "name": "Raw bass",
+      "examine": "I should try cooking this.",
+      "members": true,
+      "highalch": 24,
+      "lowalch": 16,
+      "limit": 15000,
+      "value": 40
+    },
+    {
+      "id": 365,
+      "name": "Bass",
+      "examine": "Wow, this is a big fish.",
+      "members": true,
+      "highalch": 24,
+      "lowalch": 16,
+      "limit": 6000,
+      "value": 40
+    },
+    {
+      "id": 371,
+      "name": "Raw swordfish",
+      "examine": "I should try cooking this.",
+      "members": false,
+      "highalch": 48,
+      "lowalch": 32,
+      "limit": 15000,
+      "value": 80
+    },
+    {
+      "id": 373,
+      "name": "Swordfish",
+      "examine": "I'd better be careful eating this!",
+      "members": false,
+      "highalch": 48,
+      "lowalch": 32,
+      "limit": 6000,
+      "value": 80
+    },
+    {
+      "id": 377,
+      "name": "Raw lobster",
+      "examine": "I should try cooking this.",
+      "members": false,
+      "highalch": 42,
+      "lowalch": 28,
+      "limit": 15000,
+      "value": 70
+    },
+    {
+      "id": 379,
+      "name": "Lobster",
+      "examine": "This looks tricky to eat.",
+      "members": false,
+      "highalch": 42,
+      "lowalch": 28,
+      "limit": 6000,
+      "value": 70
+    },
+    {
+      "id": 383,
+      "name": "Raw shark",
+      "examine": "I should try cooking this.",
+      "members": true,
+      "highalch": 102,
+      "lowalch": 68,
+      "limit": 15000,
+      "value": 170
+    },
+    {
+      "id": 385,
+      "name": "Shark",
+      "examine": "I'd better be careful eating this.",
+      "members": true,
+      "highalch": 102,
+      "lowalch": 68,
+      "limit": 10000,
+      "value": 170
+    },
+    {
+      "id": 389,
+      "name": "Raw manta ray",
+      "examine": "A rare catch.",
+      "members": true,
+      "highalch": 120,
+      "lowalch": 80,
+      "limit": 15000,
+      "value": 200
+    },
+    {
+      "id": 391,
+      "name": "Manta ray",
+      "examine": "A rare catch.",
+      "members": true,
+      "highalch": 120,
+      "lowalch": 80,
+      "limit": 10000,
+      "value": 200
+    },
+    {
+      "id": 395,
+      "name": "Raw sea turtle",
+      "examine": "A rare catch.",
+      "members": true,
+      "highalch": 120,
+      "lowalch": 80,
+      "limit": 15000,
+      "value": 200
+    },
+    {
+      "id": 397,
+      "name": "Sea turtle",
+      "examine": "Tasty!",
+      "members": true,
+      "highalch": 120,
+      "lowalch": 80,
+      "limit": 10000,
+      "value": 200
+    },
+    {
+      "id": 401,
+      "name": "Seaweed",
+      "examine": "Slightly damp seaweed.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 13000,
+      "value": 2
+    },
+    {
+      "id": 403,
+      "name": "Edible seaweed",
+      "examine": "Slightly damp seaweed.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 13000,
+      "value": 2
+    },
+    {
+      "id": 405,
+      "name": "Casket",
+      "examine": "I hope there's treasure in it.",
+      "members": true,
+      "highalch": 30,
+      "lowalch": 20,
+      "limit": 50,
+      "value": 50
+    },
+    {
+      "id": 411,
+      "name": "Oyster pearl",
+      "examine": "I could work wonders with a chisel on this pearl.",
+      "members": true,
+      "highalch": 67,
+      "lowalch": 44,
+      "limit": 11000,
+      "value": 112
+    },
+    {
+      "id": 413,
+      "name": "Oyster pearls",
+      "examine": "I could work wonders with a chisel on these pearls.",
+      "members": true,
+      "highalch": 840,
+      "lowalch": 560,
+      "limit": 11000,
+      "value": 1400
+    },
+    {
+      "id": 440,
+      "name": "Iron ore",
+      "examine": "This needs refining.",
+      "members": false,
+      "highalch": 10,
+      "lowalch": 6,
+      "limit": 13000,
+      "value": 17
+    },
+    {
+      "id": 442,
+      "name": "Silver ore",
+      "examine": "This needs refining.",
+      "members": false,
+      "highalch": 45,
+      "lowalch": 30,
+      "limit": 13000,
+      "value": 75
+    },
+    {
+      "id": 444,
+      "name": "Gold ore",
+      "examine": "This needs refining.",
+      "members": false,
+      "highalch": 90,
+      "lowalch": 60,
+      "limit": 30000,
+      "value": 150
+    },
+    {
+      "id": 447,
+      "name": "Mithril ore",
+      "examine": "This needs refining.",
+      "members": false,
+      "highalch": 97,
+      "lowalch": 64,
+      "limit": 13000,
+      "value": 162
+    },
+    {
+      "id": 449,
+      "name": "Adamantite ore",
+      "examine": "This needs refining.",
+      "members": false,
+      "highalch": 240,
+      "lowalch": 160,
+      "limit": 4500,
+      "value": 400
+    },
+    {
+      "id": 451,
+      "name": "Runite ore",
+      "examine": "This needs refining.",
+      "members": false,
+      "highalch": 1920,
+      "lowalch": 1280,
+      "limit": 4500,
+      "value": 3200
+    },
+    {
+      "id": 453,
+      "name": "Coal",
+      "examine": "Hmm a non-renewable energy source!",
+      "members": false,
+      "highalch": 27,
+      "lowalch": 18,
+      "limit": 13000,
+      "value": 45
+    },
+    {
+      "id": 464,
+      "name": "Strange fruit",
+      "examine": "I wonder what this tastes like?",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 2000,
+      "value": 1
+    },
+    {
+      "id": 526,
+      "name": "Bones",
+      "examine": "Bones are for burying!",
+      "members": false,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 3000,
+      "value": 1
+    },
+    {
+      "id": 532,
+      "name": "Big bones",
+      "examine": "Ew it's a pile of bones.",
+      "members": false,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 3000,
+      "value": 1
+    },
+    {
+      "id": 536,
+      "name": "Dragon bones",
+      "examine": "These would feed a dog for months!",
+      "members": true,
+      "highalch": 96,
+      "lowalch": 64,
+      "limit": 7500,
+      "value": 160
+    },
+    {
+      "id": 554,
+      "name": "Fire rune",
+      "examine": "One of the 4 basic elemental Runes.",
+      "members": false,
+      "highalch": 2,
+      "lowalch": 1,
+      "limit": 50000,
+      "value": 4
+    },
+    {
+      "id": 555,
+      "name": "Water rune",
+      "examine": "One of the 4 basic elemental Runes.",
+      "members": false,
+      "highalch": 2,
+      "lowalch": 1,
+      "limit": 50000,
+      "value": 4
+    },
+    {
+      "id": 556,
+      "name": "Air rune",
+      "examine": "One of the 4 basic elemental Runes.",
+      "members": false,
+      "highalch": 2,
+      "lowalch": 1,
+      "limit": 50000,
+      "value": 4
+    },
+    {
+      "id": 557,
+      "name": "Earth rune",
+      "examine": "One of the 4 basic elemental Runes.",
+      "members": false,
+      "highalch": 2,
+      "lowalch": 1,
+      "limit": 50000,
+      "value": 4
+    },
+    {
+      "id": 558,
+      "name": "Mind rune",
+      "examine": "Used for basic level missile spells.",
+      "members": false,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 18000,
+      "value": 3
+    },
+    {
+      "id": 559,
+      "name": "Body rune",
+      "examine": "Used for curse spells.",
+      "members": false,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 18000,
+      "value": 3
+    },
+    {
+      "id": 560,
+      "name": "Death rune",
+      "examine": "Used for medium level missile spells.",
+      "members": false,
+      "highalch": 108,
+      "lowalch": 72,
+      "limit": 25000,
+      "value": 180
+    },
+    {
+      "id": 561,
+      "name": "Nature rune",
+      "examine": "Used for alchemy spells.",
+      "members": false,
+      "highalch": 108,
+      "lowalch": 72,
+      "limit": 18000,
+      "value": 180
+    },
+    {
+      "id": 562,
+      "name": "Chaos rune",
+      "examine": "Used for low level missile spells.",
+      "members": false,
+      "highalch": 54,
+      "lowalch": 36,
+      "limit": 18000,
+      "value": 90
+    },
+    {
+      "id": 563,
+      "name": "Law rune",
+      "examine": "Used for teleport spells.",
+      "members": false,
+      "highalch": 144,
+      "lowalch": 96,
+      "limit": 18000,
+      "value": 240
+    },
+    {
+      "id": 564,
+      "name": "Cosmic rune",
+      "examine": "Used for enchant spells.",
+      "members": false,
+      "highalch": 30,
+      "lowalch": 20,
+      "limit": 18000,
+      "value": 50
+    },
+    {
+      "id": 565,
+      "name": "Blood rune",
+      "examine": "Used for high level missile spells.",
+      "members": true,
+      "highalch": 240,
+      "lowalch": 160,
+      "limit": 25000,
+      "value": 400
+    },
+    {
+      "id": 566,
+      "name": "Soul rune",
+      "examine": "Used for high level curse spells.",
+      "members": true,
+      "highalch": 180,
+      "lowalch": 120,
+      "limit": 25000,
+      "value": 300
+    },
+    {
+      "id": 567,
+      "name": "Unpowered orb",
+      "examine": "I'd prefer it if it was powered.",
+      "members": true,
+      "highalch": 60,
+      "lowalch": 40,
+      "limit": 10000,
+      "value": 100
+    },
+    {
+      "id": 569,
+      "name": "Fire orb",
+      "examine": "A magic glowing orb.",
+      "members": true,
+      "highalch": 180,
+      "lowalch": 120,
+      "limit": 11000,
+      "value": 300
+    },
+    {
+      "id": 571,
+      "name": "Water orb",
+      "examine": "A magic glowing orb.",
+      "members": true,
+      "highalch": 180,
+      "lowalch": 120,
+      "limit": 11000,
+      "value": 300
+    },
+    {
+      "id": 573,
+      "name": "Air orb",
+      "examine": "A magic glowing orb.",
+      "members": true,
+      "highalch": 180,
+      "lowalch": 120,
+      "limit": 11000,
+      "value": 300
+    },
+    {
+      "id": 575,
+      "name": "Earth orb",
+      "examine": "A magic glowing orb.",
+      "members": true,
+      "highalch": 180,
+      "lowalch": 120,
+      "limit": 11000,
+      "value": 300
+    },
+    {
+      "id": 590,
+      "name": "Tinderbox",
+      "examine": "Useful for lighting a fire.",
+      "members": false,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 40,
+      "value": 1
+    },
+    {
+      "id": 592,
+      "name": "Ashes",
+      "examine": "A heap of ashes.",
+      "members": false,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 13000,
+      "value": 2
+    },
+    {
+      "id": 805,
+      "name": "Rune thrownaxe",
+      "examine": "A finely balanced throwing axe.",
+      "members": true,
+      "highalch": 264,
+      "lowalch": 176,
+      "limit": 11000,
+      "value": 440
+    },
+    {
+      "id": 810,
+      "name": "Adamant dart",
+      "examine": "A deadly throwing dart with an adamant tip.",
+      "members": true,
+      "highalch": 39,
+      "lowalch": 26,
+      "limit": 11000,
+      "value": 65
+    },
+    {
+      "id": 811,
+      "name": "Rune dart",
+      "examine": "A deadly throwing dart with a rune tip.",
+      "members": true,
+      "highalch": 210,
+      "lowalch": 140,
+      "limit": 11000,
+      "value": 350
+    },
+    {
+      "id": 823,
+      "name": "Adamant dart tip",
+      "examine": "A deadly-looking dart tip made of adamant - needs feathers for flight.",
+      "members": true,
+      "highalch": 21,
+      "lowalch": 14,
+      "limit": 20000,
+      "value": 36
+    },
+    {
+      "id": 824,
+      "name": "Rune dart tip",
+      "examine": "A deadly-looking dart tip made of runite - needs feathers for flight.",
+      "members": true,
+      "highalch": 105,
+      "lowalch": 70,
+      "limit": 11000,
+      "value": 175
+    },
+    {
+      "id": 825,
+      "name": "Bronze javelin",
+      "examine": "A bronze tipped javelin.",
+      "members": true,
+      "highalch": 2,
+      "lowalch": 1,
+      "limit": 7000,
+      "value": 4
+    },
+    {
+      "id": 828,
+      "name": "Mithril javelin",
+      "examine": "A mithril tipped javelin.",
+      "members": true,
+      "highalch": 38,
+      "lowalch": 25,
+      "limit": 7000,
+      "value": 64
+    },
+    {
+      "id": 829,
+      "name": "Adamant javelin",
+      "examine": "An adamant tipped javelin.",
+      "members": true,
+      "highalch": 96,
+      "lowalch": 64,
+      "limit": 11000,
+      "value": 160
+    },
+    {
+      "id": 863,
+      "name": "Iron knife",
+      "examine": "A finely balanced throwing knife.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 7000,
+      "value": 3
+    },
+    {
+      "id": 865,
+      "name": "Steel knife",
+      "examine": "A finely balanced throwing knife.",
+      "members": true,
+      "highalch": 6,
+      "lowalch": 4,
+      "limit": 7000,
+      "value": 11
+    },
+    {
+      "id": 866,
+      "name": "Mithril knife",
+      "examine": "A finely balanced throwing knife.",
+      "members": true,
+      "highalch": 16,
+      "lowalch": 10,
+      "limit": 7000,
+      "value": 27
+    },
+    {
+      "id": 868,
+      "name": "Rune knife",
+      "examine": "A finely balanced throwing knife.",
+      "members": true,
+      "highalch": 100,
+      "lowalch": 66,
+      "limit": 11000,
+      "value": 167
+    },
+    {
+      "id": 882,
+      "name": "Bronze arrow",
+      "examine": "Arrows with bronze heads.",
+      "members": false,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 7000,
+      "value": 1
+    },
+    {
+      "id": 884,
+      "name": "Iron arrow",
+      "examine": "Arrows with iron heads.",
+      "members": false,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 7000,
+      "value": 3
+    },
+    {
+      "id": 886,
+      "name": "Steel arrow",
+      "examine": "Arrows with steel heads.",
+      "members": false,
+      "highalch": 7,
+      "lowalch": 4,
+      "limit": 7000,
+      "value": 12
+    },
+    {
+      "id": 888,
+      "name": "Mithril arrow",
+      "examine": "Arrows with mithril heads.",
+      "members": false,
+      "highalch": 19,
+      "lowalch": 12,
+      "limit": 7000,
+      "value": 32
+    },
+    {
+      "id": 890,
+      "name": "Adamant arrow",
+      "examine": "Arrows with adamant heads.",
+      "members": false,
+      "highalch": 48,
+      "lowalch": 32,
+      "limit": 11000,
+      "value": 80
+    },
+    {
+      "id": 892,
+      "name": "Rune arrow",
+      "examine": "Arrows with rune heads.",
+      "members": true,
+      "highalch": 240,
+      "lowalch": 160,
+      "limit": 11000,
+      "value": 400
+    },
+    {
+      "id": 970,
+      "name": "Papyrus",
+      "examine": "Used for making notes.",
+      "members": true,
+      "highalch": 6,
+      "lowalch": 4,
+      "limit": 13000,
+      "value": 10
+    },
+    {
+      "id": 989,
+      "name": "Crystal key",
+      "examine": "A mysterious key for a mysterious chest.",
+      "members": true,
+      "highalch": 90,
+      "lowalch": 60,
+      "limit": 11000,
+      "value": 150
+    },
+    {
+      "id": 991,
+      "name": "Muddy key",
+      "examine": "It looks like the key to a chest.",
+      "members": false,
+      "highalch": 48,
+      "lowalch": 32,
+      "limit": 11000,
+      "value": 80
+    },
+    {
+      "id": 993,
+      "name": "Sinister key",
+      "examine": "You get a sense of dread from this key.",
+      "members": true,
+      "highalch": 48,
+      "lowalch": 32,
+      "limit": 11000,
+      "value": 80
+    },
+    {
+      "id": 1033,
+      "name": "Zamorak monk bottom",
+      "examine": "A robe worn by worshippers of Zamorak.",
+      "members": false,
+      "highalch": 18,
+      "lowalch": 12,
+      "limit": 15,
+      "value": 30
+    },
+    {
+      "id": 1035,
+      "name": "Zamorak monk top",
+      "examine": "A robe worn by worshippers of Zamorak.",
+      "members": false,
+      "highalch": 24,
+      "lowalch": 16,
+      "limit": 15,
+      "value": 40
+    },
+    {
+      "id": 1067,
+      "name": "Iron platelegs",
+      "examine": "These look pretty heavy.",
+      "members": false,
+      "highalch": 168,
+      "lowalch": 112,
+      "limit": 125,
+      "value": 280
+    },
+    {
+      "id": 1079,
+      "name": "Rune platelegs",
+      "examine": "These look pretty heavy.",
+      "members": false,
+      "highalch": 38400,
+      "lowalch": 25600,
+      "limit": 70,
+      "value": 64000
+    },
+    {
+      "id": 1081,
+      "name": "Iron plateskirt",
+      "examine": "Designer leg protection.",
+      "members": false,
+      "highalch": 168,
+      "lowalch": 112,
+      "limit": 125,
+      "value": 280
+    },
+    {
+      "id": 1093,
+      "name": "Rune plateskirt",
+      "examine": "Designer leg protection.",
+      "members": false,
+      "highalch": 38400,
+      "lowalch": 25600,
+      "limit": 70,
+      "value": 64000
+    },
+    {
+      "id": 1103,
+      "name": "Bronze chainbody",
+      "examine": "A series of connected metal rings.",
+      "members": false,
+      "highalch": 36,
+      "lowalch": 24,
+      "limit": 125,
+      "value": 60
+    },
+    {
+      "id": 1109,
+      "name": "Mithril chainbody",
+      "examine": "A series of connected metal rings.",
+      "members": false,
+      "highalch": 1170,
+      "lowalch": 780,
+      "limit": 125,
+      "value": 1950
+    },
+    {
+      "id": 1111,
+      "name": "Adamant chainbody",
+      "examine": "A series of connected metal rings.",
+      "members": false,
+      "highalch": 2880,
+      "lowalch": 1920,
+      "limit": 125,
+      "value": 4800
+    },
+    {
+      "id": 1113,
+      "name": "Rune chainbody",
+      "examine": "A series of connected metal rings.",
+      "members": false,
+      "highalch": 30000,
+      "lowalch": 20000,
+      "limit": 70,
+      "value": 50000
+    },
+    {
+      "id": 1115,
+      "name": "Iron platebody",
+      "examine": "Provides excellent protection.",
+      "members": false,
+      "highalch": 336,
+      "lowalch": 224,
+      "limit": 125,
+      "value": 560
+    },
+    {
+      "id": 1119,
+      "name": "Steel platebody",
+      "examine": "Provides excellent protection.",
+      "members": false,
+      "highalch": 1200,
+      "lowalch": 800,
+      "limit": 125,
+      "value": 2000
+    },
+    {
+      "id": 1121,
+      "name": "Mithril platebody",
+      "examine": "Provides excellent protection.",
+      "members": false,
+      "highalch": 3120,
+      "lowalch": 2080,
+      "limit": 125,
+      "value": 5200
+    },
+    {
+      "id": 1123,
+      "name": "Adamant platebody",
+      "examine": "Provides excellent protection.",
+      "members": false,
+      "highalch": 9984,
+      "lowalch": 6656,
+      "limit": 125,
+      "value": 16640
+    },
+    {
+      "id": 1127,
+      "name": "Rune platebody",
+      "examine": "Provides excellent protection.",
+      "members": false,
+      "highalch": 39000,
+      "lowalch": 26000,
+      "limit": 70,
+      "value": 65000
+    },
+    {
+      "id": 1141,
+      "name": "Steel med helm",
+      "examine": "A medium sized helmet.",
+      "members": false,
+      "highalch": 180,
+      "lowalch": 120,
+      "limit": 125,
+      "value": 300
+    },
+    {
+      "id": 1145,
+      "name": "Adamant med helm",
+      "examine": "A medium sized helmet.",
+      "members": false,
+      "highalch": 1152,
+      "lowalch": 768,
+      "limit": 125,
+      "value": 1920
+    },
+    {
+      "id": 1147,
+      "name": "Rune med helm",
+      "examine": "A medium sized helmet.",
+      "members": false,
+      "highalch": 11520,
+      "lowalch": 7680,
+      "limit": 70,
+      "value": 19200
+    },
+    {
+      "id": 1149,
+      "name": "Dragon med helm",
+      "examine": "Makes the wearer pretty intimidating.",
+      "members": true,
+      "highalch": 60000,
+      "lowalch": 40000,
+      "limit": 8,
+      "value": 100000
+    },
+    {
+      "id": 1153,
+      "name": "Iron full helm",
+      "examine": "A full face helmet.",
+      "members": false,
+      "highalch": 92,
+      "lowalch": 61,
+      "limit": 125,
+      "value": 154
+    },
+    {
+      "id": 1163,
+      "name": "Rune full helm",
+      "examine": "A full face helmet.",
+      "members": false,
+      "highalch": 21120,
+      "lowalch": 14080,
+      "limit": 70,
+      "value": 35200
+    },
+    {
+      "id": 1179,
+      "name": "Black sq shield",
+      "examine": "A medium square shield.",
+      "members": false,
+      "highalch": 691,
+      "lowalch": 460,
+      "limit": 125,
+      "value": 1152
+    },
+    {
+      "id": 1181,
+      "name": "Mithril sq shield",
+      "examine": "A medium square shield.",
+      "members": false,
+      "highalch": 936,
+      "lowalch": 624,
+      "limit": 125,
+      "value": 1560
+    },
+    {
+      "id": 1185,
+      "name": "Rune sq shield",
+      "examine": "A medium square shield.",
+      "members": false,
+      "highalch": 23040,
+      "lowalch": 15360,
+      "limit": 70,
+      "value": 38400
+    },
+    {
+      "id": 1191,
+      "name": "Iron kiteshield",
+      "examine": "A large metal shield.",
+      "members": false,
+      "highalch": 142,
+      "lowalch": 95,
+      "limit": 125,
+      "value": 238
+    },
+    {
+      "id": 1193,
+      "name": "Steel kiteshield",
+      "examine": "A large metal shield.",
+      "members": false,
+      "highalch": 510,
+      "lowalch": 340,
+      "limit": 125,
+      "value": 850
+    },
+    {
+      "id": 1197,
+      "name": "Mithril kiteshield",
+      "examine": "A large metal shield.",
+      "members": false,
+      "highalch": 1326,
+      "lowalch": 884,
+      "limit": 125,
+      "value": 2210
+    },
+    {
+      "id": 1199,
+      "name": "Adamant kiteshield",
+      "examine": "A large metal shield.",
+      "members": false,
+      "highalch": 3264,
+      "lowalch": 2176,
+      "limit": 125,
+      "value": 5440
+    },
+    {
+      "id": 1201,
+      "name": "Rune kiteshield",
+      "examine": "A large metal shield.",
+      "members": false,
+      "highalch": 32640,
+      "lowalch": 21760,
+      "limit": 70,
+      "value": 54400
+    },
+    {
+      "id": 1203,
+      "name": "Iron dagger",
+      "examine": "Short but pointy.",
+      "members": false,
+      "highalch": 21,
+      "lowalch": 14,
+      "limit": 125,
+      "value": 35
+    },
+    {
+      "id": 1211,
+      "name": "Adamant dagger",
+      "examine": "Short and deadly.",
+      "members": false,
+      "highalch": 480,
+      "lowalch": 320,
+      "limit": 125,
+      "value": 800
+    },
+    {
+      "id": 1213,
+      "name": "Rune dagger",
+      "examine": "A powerful dagger.",
+      "members": false,
+      "highalch": 4800,
+      "lowalch": 3200,
+      "limit": 70,
+      "value": 8000
+    },
+    {
+      "id": 1215,
+      "name": "Dragon dagger",
+      "examine": "A powerful dagger.",
+      "members": true,
+      "highalch": 18000,
+      "lowalch": 12000,
+      "limit": 70,
+      "value": 30000
+    },
+    {
+      "id": 1217,
+      "name": "Black dagger",
+      "examine": "A vicious black dagger.",
+      "members": false,
+      "highalch": 144,
+      "lowalch": 96,
+      "limit": 125,
+      "value": 240
+    },
+    {
+      "id": 1243,
+      "name": "Mithril spear",
+      "examine": "A mithril tipped spear.",
+      "members": true,
+      "highalch": 507,
+      "lowalch": 338,
+      "limit": 125,
+      "value": 845
+    },
+    {
+      "id": 1273,
+      "name": "Mithril pickaxe",
+      "examine": "Used for mining.",
+      "members": false,
+      "highalch": 780,
+      "lowalch": 520,
+      "limit": 40,
+      "value": 1300
+    },
+    {
+      "id": 1275,
+      "name": "Rune pickaxe",
+      "examine": "Used for mining.",
+      "members": false,
+      "highalch": 19200,
+      "lowalch": 12800,
+      "limit": 40,
+      "value": 32000
+    },
+    {
+      "id": 1283,
+      "name": "Black sword",
+      "examine": "A razor sharp sword.",
+      "members": false,
+      "highalch": 374,
+      "lowalch": 249,
+      "limit": 125,
+      "value": 624
+    },
+    {
+      "id": 1285,
+      "name": "Mithril sword",
+      "examine": "A razor sharp sword.",
+      "members": false,
+      "highalch": 507,
+      "lowalch": 338,
+      "limit": 125,
+      "value": 845
+    },
+    {
+      "id": 1289,
+      "name": "Rune sword",
+      "examine": "A razor sharp sword.",
+      "members": false,
+      "highalch": 12480,
+      "lowalch": 8320,
+      "limit": 70,
+      "value": 20800
+    },
+    {
+      "id": 1291,
+      "name": "Bronze longsword",
+      "examine": "A razor sharp longsword.",
+      "members": false,
+      "highalch": 24,
+      "lowalch": 16,
+      "limit": 125,
+      "value": 40
+    },
+    {
+      "id": 1295,
+      "name": "Steel longsword",
+      "examine": "A razor sharp longsword.",
+      "members": false,
+      "highalch": 300,
+      "lowalch": 200,
+      "limit": 125,
+      "value": 500
+    },
+    {
+      "id": 1299,
+      "name": "Mithril longsword",
+      "examine": "A razor sharp longsword.",
+      "members": false,
+      "highalch": 780,
+      "lowalch": 520,
+      "limit": 125,
+      "value": 1300
+    },
+    {
+      "id": 1301,
+      "name": "Adamant longsword",
+      "examine": "A razor sharp longsword.",
+      "members": false,
+      "highalch": 1920,
+      "lowalch": 1280,
+      "limit": 125,
+      "value": 3200
+    },
+    {
+      "id": 1303,
+      "name": "Rune longsword",
+      "examine": "A razor sharp longsword.",
+      "members": false,
+      "highalch": 19200,
+      "lowalch": 12800,
+      "limit": 70,
+      "value": 32000
+    },
+    {
+      "id": 1305,
+      "name": "Dragon longsword",
+      "examine": "A very powerful sword.",
+      "members": true,
+      "highalch": 60000,
+      "lowalch": 40000,
+      "limit": 70,
+      "value": 100000
+    },
+    {
+      "id": 1315,
+      "name": "Mithril 2h sword",
+      "examine": "A two handed sword.",
+      "members": false,
+      "highalch": 1560,
+      "lowalch": 1040,
+      "limit": 125,
+      "value": 2600
+    },
+    {
+      "id": 1319,
+      "name": "Rune 2h sword",
+      "examine": "A two handed sword.",
+      "members": false,
+      "highalch": 38400,
+      "lowalch": 25600,
+      "limit": 70,
+      "value": 64000
+    },
+    {
+      "id": 1333,
+      "name": "Rune scimitar",
+      "examine": "A vicious, curved sword.",
+      "members": false,
+      "highalch": 15360,
+      "lowalch": 10240,
+      "limit": 70,
+      "value": 25600
+    },
+    {
+      "id": 1339,
+      "name": "Steel warhammer",
+      "examine": "I don't think it's intended for joinery.",
+      "members": false,
+      "highalch": 384,
+      "lowalch": 256,
+      "limit": 125,
+      "value": 640
+    },
+    {
+      "id": 1341,
+      "name": "Black warhammer",
+      "examine": "I don't think it's intended for joinery.",
+      "members": false,
+      "highalch": 588,
+      "lowalch": 392,
+      "limit": 125,
+      "value": 980
+    },
+    {
+      "id": 1343,
+      "name": "Mithril warhammer",
+      "examine": "I don't think it's intended for joinery.",
+      "members": false,
+      "highalch": 996,
+      "lowalch": 664,
+      "limit": 125,
+      "value": 1660
+    },
+    {
+      "id": 1345,
+      "name": "Adamant warhammer",
+      "examine": "I don't think it's intended for joinery.",
+      "members": false,
+      "highalch": 2472,
+      "lowalch": 1648,
+      "limit": 125,
+      "value": 4120
+    },
+    {
+      "id": 1347,
+      "name": "Rune warhammer",
+      "examine": "I don't think it's intended for joinery.",
+      "members": false,
+      "highalch": 24900,
+      "lowalch": 16600,
+      "limit": 70,
+      "value": 41500
+    },
+    {
+      "id": 1355,
+      "name": "Mithril axe",
+      "examine": "A powerful axe.",
+      "members": false,
+      "highalch": 312,
+      "lowalch": 208,
+      "limit": 40,
+      "value": 520
+    },
+    {
+      "id": 1357,
+      "name": "Adamant axe",
+      "examine": "A powerful axe.",
+      "members": false,
+      "highalch": 768,
+      "lowalch": 512,
+      "limit": 40,
+      "value": 1280
+    },
+    {
+      "id": 1359,
+      "name": "Rune axe",
+      "examine": "A powerful axe.",
+      "members": false,
+      "highalch": 7680,
+      "lowalch": 5120,
+      "limit": 40,
+      "value": 12800
+    },
+    {
+      "id": 1361,
+      "name": "Black axe",
+      "examine": "A sinister looking axe.",
+      "members": false,
+      "highalch": 230,
+      "lowalch": 153,
+      "limit": 40,
+      "value": 384
+    },
+    {
+      "id": 1365,
+      "name": "Steel battleaxe",
+      "examine": "A vicious looking axe.",
+      "members": false,
+      "highalch": 390,
+      "lowalch": 260,
+      "limit": 125,
+      "value": 650
+    },
+    {
+      "id": 1369,
+      "name": "Mithril battleaxe",
+      "examine": "A vicious looking axe.",
+      "members": false,
+      "highalch": 1014,
+      "lowalch": 676,
+      "limit": 125,
+      "value": 1690
+    },
+    {
+      "id": 1371,
+      "name": "Adamant battleaxe",
+      "examine": "A vicious looking axe.",
+      "members": false,
+      "highalch": 2496,
+      "lowalch": 1664,
+      "limit": 125,
+      "value": 4160
+    },
+    {
+      "id": 1373,
+      "name": "Rune battleaxe",
+      "examine": "A vicious looking axe.",
+      "members": false,
+      "highalch": 24960,
+      "lowalch": 16640,
+      "limit": 70,
+      "value": 41600
+    },
+    {
+      "id": 1377,
+      "name": "Dragon battleaxe",
+      "examine": "A vicious looking axe.",
+      "members": true,
+      "highalch": 120000,
+      "lowalch": 80000,
+      "limit": 70,
+      "value": 200000
+    },
+    {
+      "id": 1389,
+      "name": "Magic staff",
+      "examine": "A Magical staff.",
+      "members": false,
+      "highalch": 120,
+      "lowalch": 80,
+      "limit": 125,
+      "value": 200
+    },
+    {
+      "id": 1391,
+      "name": "Battlestaff",
+      "examine": "It's a slightly magical stick.",
+      "members": true,
+      "highalch": 4200,
+      "lowalch": 2800,
+      "limit": 11000,
+      "value": 7000
+    },
+    {
+      "id": 1393,
+      "name": "Fire battlestaff",
+      "examine": "It's a slightly magical stick.",
+      "members": true,
+      "highalch": 9300,
+      "lowalch": 6200,
+      "limit": 18000,
+      "value": 15500
+    },
+    {
+      "id": 1395,
+      "name": "Water battlestaff",
+      "examine": "It's a slightly magical stick.",
+      "members": true,
+      "highalch": 9300,
+      "lowalch": 6200,
+      "limit": 18000,
+      "value": 15500
+    },
+    {
+      "id": 1397,
+      "name": "Air battlestaff",
+      "examine": "It's a slightly magical stick.",
+      "members": true,
+      "highalch": 9300,
+      "lowalch": 6200,
+      "limit": 18000,
+      "value": 15500
+    },
+    {
+      "id": 1399,
+      "name": "Earth battlestaff",
+      "examine": "It's a slightly magical stick.",
+      "members": true,
+      "highalch": 9300,
+      "lowalch": 6200,
+      "limit": 18000,
+      "value": 15500
+    },
+    {
+      "id": 1401,
+      "name": "Mystic fire staff",
+      "examine": "It's a slightly magical stick.",
+      "members": true,
+      "highalch": 25500,
+      "lowalch": 17000,
+      "limit": 18000,
+      "value": 42500
+    },
+    {
+      "id": 1403,
+      "name": "Mystic water staff",
+      "examine": "It's a slightly magical stick.",
+      "members": true,
+      "highalch": 25500,
+      "lowalch": 17000,
+      "limit": 18000,
+      "value": 42500
+    },
+    {
+      "id": 1405,
+      "name": "Mystic air staff",
+      "examine": "It's a slightly magical stick.",
+      "members": true,
+      "highalch": 25500,
+      "lowalch": 17000,
+      "limit": 18000,
+      "value": 42500
+    },
+    {
+      "id": 1407,
+      "name": "Mystic earth staff",
+      "examine": "It's a slightly magical stick.",
+      "members": true,
+      "highalch": 25500,
+      "lowalch": 17000,
+      "limit": 18000,
+      "value": 42500
+    },
+    {
+      "id": 1432,
+      "name": "Rune mace",
+      "examine": "A spiky mace.",
+      "members": false,
+      "highalch": 8640,
+      "lowalch": 5760,
+      "limit": 70,
+      "value": 14400
+    },
+    {
+      "id": 1434,
+      "name": "Dragon mace",
+      "examine": "A spiky mace.",
+      "members": true,
+      "highalch": 30000,
+      "lowalch": 20000,
+      "limit": 70,
+      "value": 50000
+    },
+    {
+      "id": 1438,
+      "name": "Air talisman",
+      "examine": "A mysterious power emanates from the talisman...",
+      "members": false,
+      "highalch": 2,
+      "lowalch": 1,
+      "limit": 11000,
+      "value": 4
+    },
+    {
+      "id": 1440,
+      "name": "Earth talisman",
+      "examine": "A mysterious power emanates from the talisman...",
+      "members": false,
+      "highalch": 2,
+      "lowalch": 1,
+      "limit": 11000,
+      "value": 4
+    },
+    {
+      "id": 1442,
+      "name": "Fire talisman",
+      "examine": "A mysterious power emanates from the talisman...",
+      "members": false,
+      "highalch": 2,
+      "lowalch": 1,
+      "limit": 11000,
+      "value": 4
+    },
+    {
+      "id": 1444,
+      "name": "Water talisman",
+      "examine": "A mysterious power emanates from the talisman...",
+      "members": false,
+      "highalch": 2,
+      "lowalch": 1,
+      "limit": 11000,
+      "value": 4
+    },
+    {
+      "id": 1446,
+      "name": "Body talisman",
+      "examine": "A mysterious power emanates from the talisman...",
+      "members": false,
+      "highalch": 2,
+      "lowalch": 1,
+      "limit": 11000,
+      "value": 4
+    },
+    {
+      "id": 1452,
+      "name": "Chaos talisman",
+      "examine": "A mysterious power emanates from the talisman...",
+      "members": true,
+      "highalch": 2,
+      "lowalch": 1,
+      "limit": 11000,
+      "value": 4
+    },
+    {
+      "id": 1474,
+      "name": "Black bead",
+      "examine": "A small round black bead.",
+      "members": false,
+      "highalch": 2,
+      "lowalch": 1,
+      "limit": 11000,
+      "value": 4
+    },
+    {
+      "id": 1511,
+      "name": "Logs",
+      "examine": "A number of wooden logs.",
+      "members": false,
+      "highalch": 2,
+      "lowalch": 1,
+      "limit": 15000,
+      "value": 4
+    },
+    {
+      "id": 1513,
+      "name": "Magic logs",
+      "examine": "Logs cut from a magic tree.",
+      "members": true,
+      "highalch": 192,
+      "lowalch": 128,
+      "limit": 12000,
+      "value": 320
+    },
+    {
+      "id": 1515,
+      "name": "Yew logs",
+      "examine": "Logs cut from a yew tree.",
+      "members": false,
+      "highalch": 96,
+      "lowalch": 64,
+      "limit": 12000,
+      "value": 160
+    },
+    {
+      "id": 1517,
+      "name": "Maple logs",
+      "examine": "Logs cut from a maple tree.",
+      "members": false,
+      "highalch": 48,
+      "lowalch": 32,
+      "limit": 15000,
+      "value": 80
+    },
+    {
+      "id": 1521,
+      "name": "Oak logs",
+      "examine": "Logs cut from an oak tree.",
+      "members": false,
+      "highalch": 12,
+      "lowalch": 8,
+      "limit": 15000,
+      "value": 20
+    },
+    {
+      "id": 1601,
+      "name": "Diamond",
+      "examine": "This looks valuable.",
+      "members": false,
+      "highalch": 1200,
+      "lowalch": 800,
+      "limit": 11000,
+      "value": 2000
+    },
+    {
+      "id": 1603,
+      "name": "Ruby",
+      "examine": "This looks valuable.",
+      "members": false,
+      "highalch": 600,
+      "lowalch": 400,
+      "limit": 13000,
+      "value": 1000
+    },
+    {
+      "id": 1605,
+      "name": "Emerald",
+      "examine": "This looks valuable.",
+      "members": false,
+      "highalch": 300,
+      "lowalch": 200,
+      "limit": 13000,
+      "value": 500
+    },
+    {
+      "id": 1607,
+      "name": "Sapphire",
+      "examine": "This looks valuable.",
+      "members": false,
+      "highalch": 150,
+      "lowalch": 100,
+      "limit": 13000,
+      "value": 250
+    },
+    {
+      "id": 1615,
+      "name": "Dragonstone",
+      "examine": "This looks valuable.",
+      "members": true,
+      "highalch": 6000,
+      "lowalch": 4000,
+      "limit": 11000,
+      "value": 10000
+    },
+    {
+      "id": 1617,
+      "name": "Uncut diamond",
+      "examine": "This would be worth more cut.",
+      "members": false,
+      "highalch": 120,
+      "lowalch": 80,
+      "limit": 10000,
+      "value": 200
+    },
+    {
+      "id": 1619,
+      "name": "Uncut ruby",
+      "examine": "This would be worth more cut.",
+      "members": false,
+      "highalch": 60,
+      "lowalch": 40,
+      "limit": 10000,
+      "value": 100
+    },
+    {
+      "id": 1621,
+      "name": "Uncut emerald",
+      "examine": "This would be worth more cut.",
+      "members": false,
+      "highalch": 30,
+      "lowalch": 20,
+      "limit": 10000,
+      "value": 50
+    },
+    {
+      "id": 1623,
+      "name": "Uncut sapphire",
+      "examine": "This would be worth more cut.",
+      "members": false,
+      "highalch": 15,
+      "lowalch": 10,
+      "limit": 10000,
+      "value": 25
+    },
+    {
+      "id": 1625,
+      "name": "Uncut opal",
+      "examine": "This would be worth more cut.",
+      "members": true,
+      "highalch": 12,
+      "lowalch": 8,
+      "limit": 10000,
+      "value": 20
+    },
+    {
+      "id": 1627,
+      "name": "Uncut jade",
+      "examine": "This would be worth more cut.",
+      "members": true,
+      "highalch": 18,
+      "lowalch": 12,
+      "limit": 10000,
+      "value": 30
+    },
+    {
+      "id": 1629,
+      "name": "Uncut red topaz",
+      "examine": "This would be worth more cut.",
+      "members": true,
+      "highalch": 24,
+      "lowalch": 16,
+      "limit": 10000,
+      "value": 40
+    },
+    {
+      "id": 1631,
+      "name": "Uncut dragonstone",
+      "examine": "This would be worth more cut.",
+      "members": true,
+      "highalch": 600,
+      "lowalch": 400,
+      "limit": 10000,
+      "value": 1000
+    },
+    {
+      "id": 1645,
+      "name": "Dragonstone ring",
+      "examine": "A valuable ring.",
+      "members": true,
+      "highalch": 10575,
+      "lowalch": 7050,
+      "limit": 10000,
+      "value": 17625
+    },
+    {
+      "id": 1724,
+      "name": "Unholy symbol",
+      "examine": "An unholy symbol of Zamorak.",
+      "members": true,
+      "highalch": 120,
+      "lowalch": 80,
+      "limit": 125,
+      "value": 200
+    },
+    {
+      "id": 1725,
+      "name": "Amulet of strength",
+      "examine": "An enchanted ruby amulet.",
+      "members": false,
+      "highalch": 1215,
+      "lowalch": 810,
+      "limit": 125,
+      "value": 2025
+    },
+    {
+      "id": 1731,
+      "name": "Amulet of power",
+      "examine": "An enchanted diamond amulet of power.",
+      "members": false,
+      "highalch": 2115,
+      "lowalch": 1410,
+      "limit": 125,
+      "value": 3525
+    },
+    {
+      "id": 1739,
+      "name": "Cowhide",
+      "examine": "I should take this to the tannery.",
+      "members": false,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 13000,
+      "value": 2
+    },
+    {
+      "id": 1747,
+      "name": "Black dragonhide",
+      "examine": "The scaly rough hide from a Black Dragon.",
+      "members": true,
+      "highalch": 90,
+      "lowalch": 60,
+      "limit": 11000,
+      "value": 150
+    },
+    {
+      "id": 1749,
+      "name": "Red dragonhide",
+      "examine": "The scaly rough hide from a Red Dragon.",
+      "members": true,
+      "highalch": 87,
+      "lowalch": 58,
+      "limit": 11000,
+      "value": 145
+    },
+    {
+      "id": 1751,
+      "name": "Blue dragonhide",
+      "examine": "The scaly rough hide from a Blue Dragon.",
+      "members": true,
+      "highalch": 84,
+      "lowalch": 56,
+      "limit": 13000,
+      "value": 140
+    },
+    {
+      "id": 1753,
+      "name": "Green dragonhide",
+      "examine": "The scaly rough hide from a Green Dragon.",
+      "members": true,
+      "highalch": 81,
+      "lowalch": 54,
+      "limit": 13000,
+      "value": 135
+    },
+    {
+      "id": 1761,
+      "name": "Soft clay",
+      "examine": "Clay soft enough to mould.",
+      "members": false,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 13000,
+      "value": 2
+    },
+    {
+      "id": 1775,
+      "name": "Molten glass",
+      "examine": "Hot glass ready to be blown into useful objects.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 13000,
+      "value": 3
+    },
+    {
+      "id": 1779,
+      "name": "Flax",
+      "examine": "I should use this with a spinning wheel.",
+      "members": true,
+      "highalch": 3,
+      "lowalch": 2,
+      "limit": 13000,
+      "value": 5
+    },
+    {
+      "id": 1783,
+      "name": "Bucket of sand",
+      "examine": "One of the ingredients for making glass.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 13000,
+      "value": 2
+    },
+    {
+      "id": 1885,
+      "name": "Ugthanki kebab",
+      "examine": "A fresh kebab made from ugthanki meat.",
+      "members": true,
+      "highalch": 12,
+      "lowalch": 8,
+      "limit": 10000,
+      "value": 20
+    },
+    {
+      "id": 1891,
+      "name": "Cake",
+      "examine": "A plain sponge cake.",
+      "members": false,
+      "highalch": 30,
+      "lowalch": 20,
+      "limit": 6000,
+      "value": 50
+    },
+    {
+      "id": 1897,
+      "name": "Chocolate cake",
+      "examine": "This looks very tasty.",
+      "members": false,
+      "highalch": 42,
+      "lowalch": 28,
+      "limit": 6000,
+      "value": 70
+    },
+    {
+      "id": 1917,
+      "name": "Beer",
+      "examine": "A glass of frothy ale.",
+      "members": false,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 2000,
+      "value": 2
+    },
+    {
+      "id": 1925,
+      "name": "Bucket",
+      "examine": "It's a wooden bucket.",
+      "members": false,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 13000,
+      "value": 2
+    },
+    {
+      "id": 1937,
+      "name": "Jug of water",
+      "examine": "It's full of water.",
+      "members": false,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 13000,
+      "value": 1
+    },
+    {
+      "id": 1939,
+      "name": "Swamp tar",
+      "examine": "A foul smelling thick tar-like substance.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 13000,
+      "value": 1
+    },
+    {
+      "id": 1963,
+      "name": "Banana",
+      "examine": "Mmm this looks tasty.",
+      "members": false,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 13000,
+      "value": 2
+    },
+    {
+      "id": 1965,
+      "name": "Cabbage",
+      "examine": "Yuck I don't like cabbage.",
+      "members": false,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 6000,
+      "value": 1
+    },
+    {
+      "id": 1969,
+      "name": "Spinach roll",
+      "examine": "A home made spinach thing.",
+      "members": false,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 50,
+      "value": 1
+    },
+    {
+      "id": 1975,
+      "name": "Chocolate dust",
+      "examine": "It's ground up chocolate.",
+      "members": false,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 13000,
+      "value": 2
+    },
+    {
+      "id": 1985,
+      "name": "Cheese",
+      "examine": "It's got holes in it.",
+      "members": false,
+      "highalch": 2,
+      "lowalch": 1,
+      "limit": 13000,
+      "value": 4
+    },
+    {
+      "id": 1987,
+      "name": "Grapes",
+      "examine": "Good grapes for wine making.",
+      "members": false,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 20000,
+      "value": 1
+    },
+    {
+      "id": 2134,
+      "name": "Raw rat meat",
+      "examine": "I need to cook this first.",
+      "members": false,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 13000,
+      "value": 1
+    },
+    {
+      "id": 2297,
+      "name": "Anchovy pizza",
+      "examine": "A pizza with anchovies.",
+      "members": false,
+      "highalch": 36,
+      "lowalch": 24,
+      "limit": 10000,
+      "value": 60
+    },
+    {
+      "id": 2301,
+      "name": "Pineapple pizza",
+      "examine": "A tropicana pizza.",
+      "members": true,
+      "highalch": 60,
+      "lowalch": 40,
+      "limit": 10000,
+      "value": 100
+    },
+    {
+      "id": 2349,
+      "name": "Bronze bar",
+      "examine": "It's a bar of bronze.",
+      "members": false,
+      "highalch": 4,
+      "lowalch": 3,
+      "limit": 10000,
+      "value": 8
+    },
+    {
+      "id": 2353,
+      "name": "Steel bar",
+      "examine": "It's a bar of steel.",
+      "members": false,
+      "highalch": 60,
+      "lowalch": 40,
+      "limit": 10000,
+      "value": 100
+    },
+    {
+      "id": 2357,
+      "name": "Gold bar",
+      "examine": "It's a bar of gold.",
+      "members": false,
+      "highalch": 180,
+      "lowalch": 120,
+      "limit": 10000,
+      "value": 300
+    },
+    {
+      "id": 2359,
+      "name": "Mithril bar",
+      "examine": "It's a bar of mithril.",
+      "members": false,
+      "highalch": 180,
+      "lowalch": 120,
+      "limit": 10000,
+      "value": 300
+    },
+    {
+      "id": 2361,
+      "name": "Adamantite bar",
+      "examine": "It's a bar of adamantite.",
+      "members": false,
+      "highalch": 384,
+      "lowalch": 256,
+      "limit": 10000,
+      "value": 640
+    },
+    {
+      "id": 2363,
+      "name": "Runite bar",
+      "examine": "It's a bar of runite.",
+      "members": false,
+      "highalch": 3000,
+      "lowalch": 2000,
+      "limit": 10000,
+      "value": 5000
+    },
+    {
+      "id": 2366,
+      "name": "Shield left half",
+      "examine": "The left half of a dragon square shield.",
+      "members": true,
+      "highalch": 66000,
+      "lowalch": 44000,
+      "limit": 50,
+      "value": 110000
+    },
+    {
+      "id": 2434,
+      "name": "Prayer potion(4)",
+      "examine": "4 doses of Prayer restore potion.",
+      "members": true,
+      "highalch": 114,
+      "lowalch": 76,
+      "limit": 2000,
+      "value": 190
+    },
+    {
+      "id": 2456,
+      "name": "Antifire potion(2)",
+      "examine": "2 doses of anti-firebreath potion.",
+      "members": true,
+      "highalch": 118,
+      "lowalch": 79,
+      "limit": 2000,
+      "value": 198
+    },
+    {
+      "id": 2485,
+      "name": "Grimy lantadyme",
+      "examine": "It needs cleaning.",
+      "members": true,
+      "highalch": 13,
+      "lowalch": 9,
+      "limit": 11000,
+      "value": 23
+    },
+    {
+      "id": 2489,
+      "name": "Red d'hide vambraces",
+      "examine": "Vambraces made from 100% real dragonhide.",
+      "members": true,
+      "highalch": 2160,
+      "lowalch": 1440,
+      "limit": 70,
+      "value": 3600
+    },
+    {
+      "id": 2501,
+      "name": "Red d'hide body",
+      "examine": "Made from 100% real dragonhide.",
+      "members": true,
+      "highalch": 6738,
+      "lowalch": 4492,
+      "limit": 70,
+      "value": 11230
+    },
+    {
+      "id": 2503,
+      "name": "Black d'hide body",
+      "examine": "Made from 100% real dragonhide.",
+      "members": true,
+      "highalch": 8088,
+      "lowalch": 5392,
+      "limit": 70,
+      "value": 13480
+    },
+    {
+      "id": 2570,
+      "name": "Ring of life",
+      "examine": "An enchanted ring.",
+      "members": true,
+      "highalch": 2115,
+      "lowalch": 1410,
+      "limit": 10000,
+      "value": 3525
+    },
+    {
+      "id": 2970,
+      "name": "Mort myre fungus",
+      "examine": "A mushroom from the swamps of Mort Myre.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 13000,
+      "value": 1
+    },
+    {
+      "id": 2998,
+      "name": "Toadflax",
+      "examine": "A useful herb.",
+      "members": true,
+      "highalch": 28,
+      "lowalch": 19,
+      "limit": 13000,
+      "value": 48
+    },
+    {
+      "id": 3000,
+      "name": "Snapdragon",
+      "examine": "A powerful herb.",
+      "members": true,
+      "highalch": 35,
+      "lowalch": 23,
+      "limit": 11000,
+      "value": 59
+    },
+    {
+      "id": 3024,
+      "name": "Super restore(4)",
+      "examine": "4 doses of super restore potion.",
+      "members": true,
+      "highalch": 180,
+      "lowalch": 120,
+      "limit": 2000,
+      "value": 300
+    },
+    {
+      "id": 3026,
+      "name": "Super restore(3)",
+      "examine": "3 doses of super restore potion.",
+      "members": true,
+      "highalch": 144,
+      "lowalch": 96,
+      "limit": 2000,
+      "value": 240
+    },
+    {
+      "id": 3042,
+      "name": "Magic potion(3)",
+      "examine": "3 doses of Magic potion.",
+      "members": true,
+      "highalch": 150,
+      "lowalch": 100,
+      "limit": 2000,
+      "value": 250
+    },
+    {
+      "id": 3044,
+      "name": "Magic potion(2)",
+      "examine": "2 doses of Magic potion.",
+      "members": true,
+      "highalch": 120,
+      "lowalch": 80,
+      "limit": 2000,
+      "value": 200
+    },
+    {
+      "id": 3049,
+      "name": "Grimy toadflax",
+      "examine": "It needs cleaning.",
+      "members": true,
+      "highalch": 11,
+      "lowalch": 7,
+      "limit": 13000,
+      "value": 19
+    },
+    {
+      "id": 3051,
+      "name": "Grimy snapdragon",
+      "examine": "It needs cleaning.",
+      "members": true,
+      "highalch": 12,
+      "lowalch": 8,
+      "limit": 11000,
+      "value": 21
+    },
+    {
+      "id": 3053,
+      "name": "Lava battlestaff",
+      "examine": "It's a slightly magical stick.",
+      "members": true,
+      "highalch": 10200,
+      "lowalch": 6800,
+      "limit": 8,
+      "value": 17000
+    },
+    {
+      "id": 3054,
+      "name": "Mystic lava staff",
+      "examine": "It's a slightly magical stick.",
+      "members": true,
+      "highalch": 27000,
+      "lowalch": 18000,
+      "limit": 8,
+      "value": 45000
+    },
+    {
+      "id": 3101,
+      "name": "Rune claws",
+      "examine": "A set of fighting claws.",
+      "members": true,
+      "highalch": 7200,
+      "lowalch": 4800,
+      "limit": 70,
+      "value": 12000
+    },
+    {
+      "id": 3138,
+      "name": "Potato cactus",
+      "examine": "How am I supposed to eat that?!",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 11000,
+      "value": 1
+    },
+    {
+      "id": 3140,
+      "name": "Dragon chainbody",
+      "examine": "A series of connected metal rings.",
+      "members": true,
+      "highalch": 150000,
+      "lowalch": 100000,
+      "limit": 70,
+      "value": 250000
+    },
+    {
+      "id": 3202,
+      "name": "Rune halberd",
+      "examine": "A rune halberd.",
+      "members": true,
+      "highalch": 38400,
+      "lowalch": 25600,
+      "limit": 70,
+      "value": 64000
+    },
+    {
+      "id": 3204,
+      "name": "Dragon halberd",
+      "examine": "A dragon halberd.",
+      "members": true,
+      "highalch": 150000,
+      "lowalch": 100000,
+      "limit": 70,
+      "value": 250000
+    },
+    {
+      "id": 3239,
+      "name": "Bark",
+      "examine": "Bark from a hollow tree.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 13000,
+      "value": 1
+    },
+    {
+      "id": 3387,
+      "name": "Splitbark body",
+      "examine": "Provides good protection.",
+      "members": true,
+      "highalch": 27000,
+      "lowalch": 18000,
+      "limit": 70,
+      "value": 45000
+    },
+    {
+      "id": 3389,
+      "name": "Splitbark legs",
+      "examine": "These should protect my legs.",
+      "members": true,
+      "highalch": 24000,
+      "lowalch": 16000,
+      "limit": 70,
+      "value": 40000
+    },
+    {
+      "id": 3749,
+      "name": "Archer helm",
+      "examine": "This helmet is worn by archers.",
+      "members": true,
+      "highalch": 36000,
+      "lowalch": 24000,
+      "limit": 70,
+      "value": 60000
+    },
+    {
+      "id": 3755,
+      "name": "Farseer helm",
+      "examine": "This helmet is worn by farseers.",
+      "members": true,
+      "highalch": 36000,
+      "lowalch": 24000,
+      "limit": 70,
+      "value": 60000
+    },
+    {
+      "id": 4087,
+      "name": "Dragon platelegs",
+      "examine": "These look pretty heavy.",
+      "members": true,
+      "highalch": 162000,
+      "lowalch": 108000,
+      "limit": 70,
+      "value": 270000
+    },
+    {
+      "id": 4091,
+      "name": "Mystic robe top",
+      "examine": "The upper half of a magical robe.",
+      "members": true,
+      "highalch": 72000,
+      "lowalch": 48000,
+      "limit": 125,
+      "value": 120000
+    },
+    {
+      "id": 4093,
+      "name": "Mystic robe bottom",
+      "examine": "The lower half of a magical robe.",
+      "members": true,
+      "highalch": 48000,
+      "lowalch": 32000,
+      "limit": 125,
+      "value": 80000
+    },
+    {
+      "id": 4111,
+      "name": "Mystic robe top (light)",
+      "examine": "The upper half of a bright magical robe.",
+      "members": true,
+      "highalch": 72000,
+      "lowalch": 48000,
+      "limit": 70,
+      "value": 120000
+    },
+    {
+      "id": 4113,
+      "name": "Mystic robe bottom (light)",
+      "examine": "The lower half of a bright magical robe.",
+      "members": true,
+      "highalch": 48000,
+      "lowalch": 32000,
+      "limit": 70,
+      "value": 80000
+    },
+    {
+      "id": 4129,
+      "name": "Adamant boots",
+      "examine": "These will protect my feet.",
+      "members": true,
+      "highalch": 1152,
+      "lowalch": 768,
+      "limit": 125,
+      "value": 1920
+    },
+    {
+      "id": 4153,
+      "name": "Granite maul",
+      "examine": "Simplicity is the best weapon.",
+      "members": true,
+      "highalch": 30000,
+      "lowalch": 20000,
+      "limit": 70,
+      "value": 50000
+    },
+    {
+      "id": 4207,
+      "name": "Crystal weapon seed",
+      "examine": "A seed to be sung into the finest crystal weapons.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 70,
+      "value": 1
+    },
+    {
+      "id": 4585,
+      "name": "Dragon plateskirt",
+      "examine": "This looks pretty heavy.",
+      "members": true,
+      "highalch": 162000,
+      "lowalch": 108000,
+      "limit": 70,
+      "value": 270000
+    },
+    {
+      "id": 4587,
+      "name": "Dragon scimitar",
+      "examine": "A vicious, curved sword.",
+      "members": true,
+      "highalch": 60000,
+      "lowalch": 40000,
+      "limit": 70,
+      "value": 100000
+    },
+    {
+      "id": 4675,
+      "name": "Ancient staff",
+      "examine": "A magical staff of ancient origin...",
+      "members": true,
+      "highalch": 60000,
+      "lowalch": 40000,
+      "limit": 70,
+      "value": 100000
+    },
+    {
+      "id": 4694,
+      "name": "Steam rune",
+      "examine": "A combined Water and Fire Rune.",
+      "members": true,
+      "highalch": 12,
+      "lowalch": 8,
+      "limit": 18000,
+      "value": 20
+    },
+    {
+      "id": 4695,
+      "name": "Mist rune",
+      "examine": "A combined Air and Water Rune.",
+      "members": true,
+      "highalch": 12,
+      "lowalch": 8,
+      "limit": 18000,
+      "value": 20
+    },
+    {
+      "id": 4697,
+      "name": "Smoke rune",
+      "examine": "A combined Air and Fire Rune.",
+      "members": true,
+      "highalch": 12,
+      "lowalch": 8,
+      "limit": 18000,
+      "value": 20
+    },
+    {
+      "id": 4698,
+      "name": "Mud rune",
+      "examine": "A combined Earth and Water Rune.",
+      "members": true,
+      "highalch": 12,
+      "lowalch": 8,
+      "limit": 18000,
+      "value": 20
+    },
+    {
+      "id": 4699,
+      "name": "Lava rune",
+      "examine": "A combined Earth and Fire Rune.",
+      "members": true,
+      "highalch": 12,
+      "lowalch": 8,
+      "limit": 18000,
+      "value": 20
+    },
+    {
+      "id": 4812,
+      "name": "Zogre bones",
+      "examine": "A pile of Zombie Ogre bones.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 3000,
+      "value": 1
+    },
+    {
+      "id": 4834,
+      "name": "Ourg bones",
+      "examine": "Ancient ogre bones from the ogre burial tomb.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 7500,
+      "value": 1
+    },
+    {
+      "id": 5100,
+      "name": "Limpwurt seed",
+      "examine": "A limpwurt seed - plant in a flower patch.",
+      "members": true,
+      "highalch": 7,
+      "lowalch": 4,
+      "limit": 600,
+      "value": 12
+    },
+    {
+      "id": 5105,
+      "name": "Whiteberry seed",
+      "examine": "A whiteberry bush seed - plant in a bush patch.",
+      "members": true,
+      "highalch": 79,
+      "lowalch": 53,
+      "limit": 200,
+      "value": 133
+    },
+    {
+      "id": 5106,
+      "name": "Poison ivy seed",
+      "examine": "A poison ivy bush seed - plant in a bush patch.",
+      "members": true,
+      "highalch": 99,
+      "lowalch": 66,
+      "limit": 200,
+      "value": 166
+    },
+    {
+      "id": 5280,
+      "name": "Cactus seed",
+      "examine": "A Cactus seed - plant in a cactus patch.",
+      "members": true,
+      "highalch": 59,
+      "lowalch": 39,
+      "limit": 200,
+      "value": 99
+    },
+    {
+      "id": 5287,
+      "name": "Pineapple seed",
+      "examine": "Plant in a plantpot of soil to grow a sapling.",
+      "members": true,
+      "highalch": 44,
+      "lowalch": 29,
+      "limit": 200,
+      "value": 74
+    },
+    {
+      "id": 5288,
+      "name": "Papaya tree seed",
+      "examine": "Plant in a plantpot of soil to grow a sapling.",
+      "members": true,
+      "highalch": 69,
+      "lowalch": 46,
+      "limit": 200,
+      "value": 115
+    },
+    {
+      "id": 5289,
+      "name": "Palm tree seed",
+      "examine": "Plant in a plantpot of soil to grow a sapling.",
+      "members": true,
+      "highalch": 152,
+      "lowalch": 101,
+      "limit": 200,
+      "value": 254
+    },
+    {
+      "id": 5290,
+      "name": "Calquat tree seed",
+      "examine": "Plant in a plantpot of soil to grow a sapling.",
+      "members": true,
+      "highalch": 204,
+      "lowalch": 136,
+      "limit": 200,
+      "value": 340
+    },
+    {
+      "id": 5295,
+      "name": "Ranarr seed",
+      "examine": "A ranarr seed - plant in a herb patch.",
+      "members": true,
+      "highalch": 30,
+      "lowalch": 20,
+      "limit": 200,
+      "value": 50
+    },
+    {
+      "id": 5296,
+      "name": "Toadflax seed",
+      "examine": "A toadflax seed - plant in a herb patch.",
+      "members": true,
+      "highalch": 6,
+      "lowalch": 4,
+      "limit": 600,
+      "value": 10
+    },
+    {
+      "id": 5297,
+      "name": "Irit seed",
+      "examine": "An irit seed - plant in a herb patch.",
+      "members": true,
+      "highalch": 3,
+      "lowalch": 2,
+      "limit": 600,
+      "value": 5
+    },
+    {
+      "id": 5298,
+      "name": "Avantoe seed",
+      "examine": "An avantoe seed - plant in a herb patch.",
+      "members": true,
+      "highalch": 4,
+      "lowalch": 3,
+      "limit": 200,
+      "value": 8
+    },
+    {
+      "id": 5299,
+      "name": "Kwuarm seed",
+      "examine": "A kwuarm seed - plant in a herb patch.",
+      "members": true,
+      "highalch": 6,
+      "lowalch": 4,
+      "limit": 200,
+      "value": 11
+    },
+    {
+      "id": 5300,
+      "name": "Snapdragon seed",
+      "examine": "A snapdragon seed - plant in a herb patch.",
+      "members": true,
+      "highalch": 36,
+      "lowalch": 24,
+      "limit": 200,
+      "value": 60
+    },
+    {
+      "id": 5301,
+      "name": "Cadantine seed",
+      "examine": "A cadantine seed - plant in a herb patch.",
+      "members": true,
+      "highalch": 4,
+      "lowalch": 2,
+      "limit": 200,
+      "value": 7
+    },
+    {
+      "id": 5302,
+      "name": "Lantadyme seed",
+      "examine": "A lantadyme seed - plant in a herb patch.",
+      "members": true,
+      "highalch": 5,
+      "lowalch": 3,
+      "limit": 200,
+      "value": 9
+    },
+    {
+      "id": 5303,
+      "name": "Dwarf weed seed",
+      "examine": "A dwarf weed seed - plant in a herb patch.",
+      "members": true,
+      "highalch": 3,
+      "lowalch": 2,
+      "limit": 200,
+      "value": 6
+    },
+    {
+      "id": 5304,
+      "name": "Torstol seed",
+      "examine": "A torstol seed - plant in a herb patch.",
+      "members": true,
+      "highalch": 42,
+      "lowalch": 28,
+      "limit": 200,
+      "value": 70
+    },
+    {
+      "id": 5311,
+      "name": "Wildblood seed",
+      "examine": "A Wildblood hop seed - plant in a hops patch.",
+      "members": true,
+      "highalch": 8,
+      "lowalch": 5,
+      "limit": 2000,
+      "value": 14
+    },
+    {
+      "id": 5312,
+      "name": "Acorn",
+      "examine": "Plant this in a plantpot of soil to grow a sapling.",
+      "members": true,
+      "highalch": 3,
+      "lowalch": 2,
+      "limit": 200,
+      "value": 6
+    },
+    {
+      "id": 5313,
+      "name": "Willow seed",
+      "examine": "Plant this in a plantpot of soil to grow a sapling.",
+      "members": true,
+      "highalch": 9,
+      "lowalch": 6,
+      "limit": 200,
+      "value": 16
+    },
+    {
+      "id": 5314,
+      "name": "Maple seed",
+      "examine": "Plant this in a plantpot of soil to grow a sapling.",
+      "members": true,
+      "highalch": 28,
+      "lowalch": 19,
+      "limit": 200,
+      "value": 48
+    },
+    {
+      "id": 5315,
+      "name": "Yew seed",
+      "examine": "Plant this in a plantpot of soil to grow a sapling.",
+      "members": true,
+      "highalch": 85,
+      "lowalch": 57,
+      "limit": 200,
+      "value": 143
+    },
+    {
+      "id": 5316,
+      "name": "Magic seed",
+      "examine": "Plant this in a plantpot of soil to grow a sapling.",
+      "members": true,
+      "highalch": 253,
+      "lowalch": 168,
+      "limit": 200,
+      "value": 422
+    },
+    {
+      "id": 5318,
+      "name": "Potato seed",
+      "examine": "A potato seed - plant in an allotment.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 600,
+      "value": 2
+    },
+    {
+      "id": 5319,
+      "name": "Onion seed",
+      "examine": "An onion seed - plant in an allotment.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 600,
+      "value": 3
+    },
+    {
+      "id": 5320,
+      "name": "Sweetcorn seed",
+      "examine": "A sweetcorn seed - plant in an allotment.",
+      "members": true,
+      "highalch": 4,
+      "lowalch": 3,
+      "limit": 600,
+      "value": 8
+    },
+    {
+      "id": 5321,
+      "name": "Watermelon seed",
+      "examine": "A watermelon seed - plant in an allotment.",
+      "members": true,
+      "highalch": 33,
+      "lowalch": 22,
+      "limit": 200,
+      "value": 56
+    },
+    {
+      "id": 5322,
+      "name": "Tomato seed",
+      "examine": "A tomato seed - plant in an allotment.",
+      "members": true,
+      "highalch": 2,
+      "lowalch": 1,
+      "limit": 600,
+      "value": 4
+    },
+    {
+      "id": 5323,
+      "name": "Strawberry seed",
+      "examine": "A strawberry seed - plant in an allotment.",
+      "members": true,
+      "highalch": 10,
+      "lowalch": 7,
+      "limit": 600,
+      "value": 18
+    },
+    {
+      "id": 5324,
+      "name": "Cabbage seed",
+      "examine": "A cabbage seed - plant in an allotment.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 600,
+      "value": 3
+    },
+    {
+      "id": 5376,
+      "name": "Basket",
+      "examine": "An empty fruit basket.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 10000,
+      "value": 1
+    },
+    {
+      "id": 5521,
+      "name": "Binding necklace",
+      "examine": "A necklace embedded with mystical power.",
+      "members": true,
+      "highalch": 855,
+      "lowalch": 570,
+      "limit": 10000,
+      "value": 1425
+    },
+    {
+      "id": 5626,
+      "name": "Adamant arrow(p++)",
+      "examine": "Venomous-looking arrows.",
+      "members": true,
+      "highalch": 48,
+      "lowalch": 32,
+      "limit": 11000,
+      "value": 80
+    },
+    {
+      "id": 5667,
+      "name": "Rune knife(p++)",
+      "examine": "A finely balanced throwing knife.",
+      "members": true,
+      "highalch": 99,
+      "lowalch": 66,
+      "limit": 7000,
+      "value": 166
+    },
+    {
+      "id": 5698,
+      "name": "Dragon dagger(p++)",
+      "examine": "A powerful dagger.",
+      "members": true,
+      "highalch": 14400,
+      "lowalch": 9600,
+      "limit": 70,
+      "value": 24000
+    },
+    {
+      "id": 5940,
+      "name": "Weapon poison(++)",
+      "examine": "A vial of super strong weapon poison, for spears and daggers.",
+      "members": true,
+      "highalch": 259,
+      "lowalch": 172,
+      "limit": 2000,
+      "value": 432
+    },
+    {
+      "id": 5952,
+      "name": "Antidote++(4)",
+      "examine": "4 doses of super strong antipoison potion.",
+      "members": true,
+      "highalch": 216,
+      "lowalch": 144,
+      "limit": 4000,
+      "value": 360
+    },
+    {
+      "id": 5954,
+      "name": "Antidote++(3)",
+      "examine": "3 doses of super strong antipoison potion.",
+      "members": true,
+      "highalch": 172,
+      "lowalch": 115,
+      "limit": 4000,
+      "value": 288
+    },
+    {
+      "id": 5974,
+      "name": "Coconut",
+      "examine": "It's a coconut.",
+      "members": true,
+      "highalch": 52,
+      "lowalch": 34,
+      "limit": 11000,
+      "value": 87
+    },
+    {
+      "id": 5982,
+      "name": "Watermelon",
+      "examine": "A juicy watermelon.",
+      "members": true,
+      "highalch": 28,
+      "lowalch": 19,
+      "limit": 11000,
+      "value": 48
+    },
+    {
+      "id": 5986,
+      "name": "Sweetcorn",
+      "examine": "Raw sweetcorn.",
+      "members": true,
+      "highalch": 5,
+      "lowalch": 3,
+      "limit": 11000,
+      "value": 9
+    },
+    {
+      "id": 6016,
+      "name": "Cactus spine",
+      "examine": "Don't prick yourself with this.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 11000,
+      "value": 1
+    },
+    {
+      "id": 6034,
+      "name": "Supercompost",
+      "examine": "Super-good for the smallest or largest of plants.",
+      "members": true,
+      "highalch": 51,
+      "lowalch": 34,
+      "limit": 2000,
+      "value": 85
+    },
+    {
+      "id": 6129,
+      "name": "Rock-shell plate",
+      "examine": "A sturdy body armour made from rock crab pieces.",
+      "members": true,
+      "highalch": 39000,
+      "lowalch": 26000,
+      "limit": 70,
+      "value": 65000
+    },
+    {
+      "id": 6130,
+      "name": "Rock-shell legs",
+      "examine": "Some tough leggings made from rock crab parts.",
+      "members": true,
+      "highalch": 38400,
+      "lowalch": 25600,
+      "limit": 70,
+      "value": 64000
+    },
+    {
+      "id": 6133,
+      "name": "Spined body",
+      "examine": "A constant reminder that I'm above a Dagannoth in the food chain.",
+      "members": true,
+      "highalch": 4680,
+      "lowalch": 3120,
+      "limit": 70,
+      "value": 7800
+    },
+    {
+      "id": 6135,
+      "name": "Spined chaps",
+      "examine": "Stylish leg armour for rangers with a lingering smell of raw fish...",
+      "members": true,
+      "highalch": 2340,
+      "lowalch": 1560,
+      "limit": 70,
+      "value": 3900
+    },
+    {
+      "id": 6139,
+      "name": "Skeletal top",
+      "examine": "The bones in this armour seem to vibrate with a magical quality...",
+      "members": true,
+      "highalch": 27000,
+      "lowalch": 18000,
+      "limit": 70,
+      "value": 45000
+    },
+    {
+      "id": 6141,
+      "name": "Skeletal bottoms",
+      "examine": "A superior set of strengthened slacks for any self respecting seer.",
+      "members": true,
+      "highalch": 24000,
+      "lowalch": 16000,
+      "limit": 70,
+      "value": 40000
+    },
+    {
+      "id": 6155,
+      "name": "Dagannoth hide",
+      "examine": "A sturdy piece of dagannoth hide.",
+      "members": true,
+      "highalch": 36,
+      "lowalch": 24,
+      "limit": 11000,
+      "value": 60
+    },
+    {
+      "id": 6289,
+      "name": "Snakeskin",
+      "examine": "Nicely tanned skin from a snake.",
+      "members": true,
+      "highalch": 30,
+      "lowalch": 20,
+      "limit": 13000,
+      "value": 50
+    },
+    {
+      "id": 6291,
+      "name": "Spider carcass",
+      "examine": "Its creeping days are over!",
+      "members": true,
+      "highalch": 9,
+      "lowalch": 6,
+      "limit": 13000,
+      "value": 15
+    },
+    {
+      "id": 6332,
+      "name": "Mahogany logs",
+      "examine": "Some well-cut mahogany logs.",
+      "members": true,
+      "highalch": 30,
+      "lowalch": 20,
+      "limit": 11000,
+      "value": 50
+    },
+    {
+      "id": 6562,
+      "name": "Mud battlestaff",
+      "examine": "It's a slightly magical stick.",
+      "members": true,
+      "highalch": 10200,
+      "lowalch": 6800,
+      "limit": 8,
+      "value": 17000
+    },
+    {
+      "id": 6571,
+      "name": "Uncut onyx",
+      "examine": "This would be worth more cut.",
+      "members": true,
+      "highalch": 120000,
+      "lowalch": 80000,
+      "limit": 11000,
+      "value": 200000
+    },
+    {
+      "id": 6573,
+      "name": "Onyx",
+      "examine": "This looks valuable.",
+      "members": true,
+      "highalch": 120000,
+      "lowalch": 80000,
+      "limit": 11000,
+      "value": 200000
+    },
+    {
+      "id": 6685,
+      "name": "Saradomin brew(4)",
+      "examine": "4 doses of Saradomin brew.",
+      "members": true,
+      "highalch": 120,
+      "lowalch": 80,
+      "limit": 2000,
+      "value": 200
+    },
+    {
+      "id": 6687,
+      "name": "Saradomin brew(3)",
+      "examine": "3 doses of Saradomin brew.",
+      "members": true,
+      "highalch": 105,
+      "lowalch": 70,
+      "limit": 2000,
+      "value": 175
+    },
+    {
+      "id": 6705,
+      "name": "Potato with cheese",
+      "examine": "A baked potato with butter and cheese.",
+      "members": true,
+      "highalch": 4,
+      "lowalch": 3,
+      "limit": 13000,
+      "value": 8
+    },
+    {
+      "id": 6724,
+      "name": "Seercull",
+      "examine": "An ancient Fremennik bow that was once used to battle the Moon Clan.",
+      "members": true,
+      "highalch": 4800,
+      "lowalch": 3200,
+      "limit": 8,
+      "value": 8000
+    },
+    {
+      "id": 6729,
+      "name": "Dagannoth bones",
+      "examine": "These would feed a dogfish for months!",
+      "members": true,
+      "highalch": 90,
+      "lowalch": 60,
+      "limit": 7500,
+      "value": 150
+    },
+    {
+      "id": 6731,
+      "name": "Seers ring",
+      "examine": "A mysterious ring that can fill the wearer with magical power...",
+      "members": true,
+      "highalch": 6000,
+      "lowalch": 4000,
+      "limit": 8,
+      "value": 10000
+    },
+    {
+      "id": 6733,
+      "name": "Archers ring",
+      "examine": "A fabled ring that improves the wearer's skill with a bow...",
+      "members": true,
+      "highalch": 6000,
+      "lowalch": 4000,
+      "limit": 8,
+      "value": 10000
+    },
+    {
+      "id": 6735,
+      "name": "Warrior ring",
+      "examine": "A legendary ring once worn by Fremennik warriors.",
+      "members": true,
+      "highalch": 6000,
+      "lowalch": 4000,
+      "limit": 8,
+      "value": 10000
+    },
+    {
+      "id": 6737,
+      "name": "Berserker ring",
+      "examine": "A ring reputed to bring out a berserk fury in its wearer.",
+      "members": true,
+      "highalch": 6000,
+      "lowalch": 4000,
+      "limit": 8,
+      "value": 10000
+    },
+    {
+      "id": 6739,
+      "name": "Dragon axe",
+      "examine": "A very powerful axe.",
+      "members": true,
+      "highalch": 33000,
+      "lowalch": 22000,
+      "limit": 40,
+      "value": 55000
+    },
+    {
+      "id": 6794,
+      "name": "Choc-ice",
+      "examine": "Better eat this before it melts.",
+      "members": true,
+      "highalch": 18,
+      "lowalch": 12,
+      "limit": 6000,
+      "value": 30
+    },
+    {
+      "id": 7054,
+      "name": "Chilli potato",
+      "examine": "A baked potato with chilli con carne.",
+      "members": true,
+      "highalch": 7,
+      "lowalch": 5,
+      "limit": 13000,
+      "value": 13
+    },
+    {
+      "id": 7056,
+      "name": "Egg potato",
+      "examine": "A baked potato with egg and tomato.",
+      "members": true,
+      "highalch": 7,
+      "lowalch": 4,
+      "limit": 13000,
+      "value": 12
+    },
+    {
+      "id": 7058,
+      "name": "Mushroom potato",
+      "examine": "A baked potato with mushroom and onions.",
+      "members": true,
+      "highalch": 27,
+      "lowalch": 18,
+      "limit": 13000,
+      "value": 45
+    },
+    {
+      "id": 7060,
+      "name": "Tuna potato",
+      "examine": "A baked potato with tuna and sweetcorn.",
+      "members": true,
+      "highalch": 67,
+      "lowalch": 45,
+      "limit": 13000,
+      "value": 113
+    },
+    {
+      "id": 7114,
+      "name": "Pirate boots",
+      "examine": "Not for land lubbers.",
+      "members": true,
+      "highalch": 210,
+      "lowalch": 140,
+      "limit": 150,
+      "value": 350
+    },
+    {
+      "id": 7158,
+      "name": "Dragon 2h sword",
+      "examine": "A two-handed Dragon Sword.",
+      "members": true,
+      "highalch": 132000,
+      "lowalch": 88000,
+      "limit": 8,
+      "value": 220000
+    },
+    {
+      "id": 7208,
+      "name": "Wild pie",
+      "examine": "A triumph of man over nature.",
+      "members": true,
+      "highalch": 109,
+      "lowalch": 72,
+      "limit": 10000,
+      "value": 182
+    },
+    {
+      "id": 7218,
+      "name": "Summer pie",
+      "examine": "All the fruits of a very small forest.",
+      "members": true,
+      "highalch": 84,
+      "lowalch": 56,
+      "limit": 10000,
+      "value": 140
+    },
+    {
+      "id": 7416,
+      "name": "Mole claw",
+      "examine": "A mole claw.",
+      "members": true,
+      "highalch": 360,
+      "lowalch": 240,
+      "limit": 50,
+      "value": 600
+    },
+    {
+      "id": 7418,
+      "name": "Mole skin",
+      "examine": "The skin of a large mole.",
+      "members": true,
+      "highalch": 240,
+      "lowalch": 160,
+      "limit": 50,
+      "value": 400
+    },
+    {
+      "id": 7936,
+      "name": "Pure essence",
+      "examine": "An unimbued rune of extra capability.",
+      "members": false,
+      "highalch": 2,
+      "lowalch": 1,
+      "limit": 30000,
+      "value": 4
+    },
+    {
+      "id": 7944,
+      "name": "Raw monkfish",
+      "examine": "I should try cooking this.",
+      "members": true,
+      "highalch": 138,
+      "lowalch": 92,
+      "limit": 13000,
+      "value": 230
+    },
+    {
+      "id": 7946,
+      "name": "Monkfish",
+      "examine": "A tasty fish.",
+      "members": true,
+      "highalch": 138,
+      "lowalch": 92,
+      "limit": 13000,
+      "value": 230
+    },
+    {
+      "id": 8778,
+      "name": "Oak plank",
+      "examine": "A plank of sturdy oak.",
+      "members": true,
+      "highalch": 150,
+      "lowalch": 100,
+      "limit": 13000,
+      "value": 250
+    },
+    {
+      "id": 8780,
+      "name": "Teak plank",
+      "examine": "A plank of fine teak.",
+      "members": true,
+      "highalch": 300,
+      "lowalch": 200,
+      "limit": 13000,
+      "value": 500
+    },
+    {
+      "id": 8782,
+      "name": "Mahogany plank",
+      "examine": "A plank of expensive mahogany.",
+      "members": true,
+      "highalch": 900,
+      "lowalch": 600,
+      "limit": 13000,
+      "value": 1500
+    },
+    {
+      "id": 9075,
+      "name": "Astral rune",
+      "examine": "Used for Lunar spells.",
+      "members": true,
+      "highalch": 30,
+      "lowalch": 20,
+      "limit": 25000,
+      "value": 50
+    },
+    {
+      "id": 9142,
+      "name": "Mithril bolts",
+      "examine": "Mithril crossbow bolts.",
+      "members": true,
+      "highalch": 12,
+      "lowalch": 8,
+      "limit": 7000,
+      "value": 20
+    },
+    {
+      "id": 9144,
+      "name": "Runite bolts",
+      "examine": "Runite crossbow bolts.",
+      "members": true,
+      "highalch": 180,
+      "lowalch": 120,
+      "limit": 11000,
+      "value": 300
+    },
+    {
+      "id": 9185,
+      "name": "Rune crossbow",
+      "examine": "A runite crossbow.",
+      "members": true,
+      "highalch": 9720,
+      "lowalch": 6480,
+      "limit": 70,
+      "value": 16200
+    },
+    {
+      "id": 9189,
+      "name": "Sapphire bolt tips",
+      "examine": "Sapphire bolt tips.",
+      "members": true,
+      "highalch": 10,
+      "lowalch": 6,
+      "limit": 11000,
+      "value": 17
+    },
+    {
+      "id": 9190,
+      "name": "Emerald bolt tips",
+      "examine": "Emerald bolt tips.",
+      "members": true,
+      "highalch": 19,
+      "lowalch": 13,
+      "limit": 11000,
+      "value": 33
+    },
+    {
+      "id": 9191,
+      "name": "Ruby bolt tips",
+      "examine": "Ruby bolt tips.",
+      "members": true,
+      "highalch": 40,
+      "lowalch": 26,
+      "limit": 11000,
+      "value": 67
+    },
+    {
+      "id": 9192,
+      "name": "Diamond bolt tips",
+      "examine": "Diamond bolt tips.",
+      "members": true,
+      "highalch": 79,
+      "lowalch": 53,
+      "limit": 11000,
+      "value": 133
+    },
+    {
+      "id": 9193,
+      "name": "Dragonstone bolt tips",
+      "examine": "Dragonstone bolt tips.",
+      "members": true,
+      "highalch": 400,
+      "lowalch": 266,
+      "limit": 11000,
+      "value": 667
+    },
+    {
+      "id": 9194,
+      "name": "Onyx bolt tips",
+      "examine": "Onyx bolt tips.",
+      "members": true,
+      "highalch": 600,
+      "lowalch": 400,
+      "limit": 11000,
+      "value": 1000
+    },
+    {
+      "id": 9243,
+      "name": "Diamond bolts (e)",
+      "examine": "Enchanted Diamond tipped Adamantite Crossbow Bolts.",
+      "members": true,
+      "highalch": 126,
+      "lowalch": 84,
+      "limit": 11000,
+      "value": 211
+    },
+    {
+      "id": 9244,
+      "name": "Dragonstone bolts (e)",
+      "examine": "Enchanted Dragonstone tipped Runite Crossbow Bolts.",
+      "members": true,
+      "highalch": 637,
+      "lowalch": 425,
+      "limit": 11000,
+      "value": 1063
+    },
+    {
+      "id": 9245,
+      "name": "Onyx bolts (e)",
+      "examine": "Enchanted Onyx tipped Runite Crossbow Bolts.",
+      "members": true,
+      "highalch": 9000,
+      "lowalch": 6000,
+      "limit": 11000,
+      "value": 15000
+    },
+    {
+      "id": 9342,
+      "name": "Onyx bolts",
+      "examine": "Onyx tipped Runite crossbow bolts.",
+      "members": true,
+      "highalch": 8179,
+      "lowalch": 5453,
+      "limit": 11000,
+      "value": 13633
+    },
+    {
+      "id": 9380,
+      "name": "Adamant bolts(unf)",
+      "examine": "Unfeathered adamantite crossbow bolts.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 13000,
+      "value": 1
+    },
+    {
+      "id": 9381,
+      "name": "Runite bolts (unf)",
+      "examine": "Unfeathered runite crossbow bolts.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 13000,
+      "value": 1
+    },
+    {
+      "id": 9431,
+      "name": "Runite limbs",
+      "examine": "A pair of runite crossbow limbs.",
+      "members": true,
+      "highalch": 9600,
+      "lowalch": 6400,
+      "limit": 10000,
+      "value": 16000
+    },
+    {
+      "id": 9735,
+      "name": "Goat horn",
+      "examine": "Not much good for blowing.",
+      "members": true,
+      "highalch": 7,
+      "lowalch": 4,
+      "limit": 13000,
+      "value": 12
+    },
+    {
+      "id": 10330,
+      "name": "3rd Age range top",
+      "examine": "Fabulously ancient range protection crafted from white dragonhide.",
+      "members": true,
+      "highalch": 30480,
+      "lowalch": 20320,
+      "limit": 8,
+      "value": 50800
+    },
+    {
+      "id": 10332,
+      "name": "3rd Age range legs",
+      "examine": "Fabulously ancient range protection crafted from white dragonhide.",
+      "members": true,
+      "highalch": 30360,
+      "lowalch": 20240,
+      "limit": 8,
+      "value": 50600
+    },
+    {
+      "id": 10334,
+      "name": "3rd Age range coif",
+      "examine": "Fabulously ancient range protection crafted from white dragonhide.",
+      "members": true,
+      "highalch": 30240,
+      "lowalch": 20160,
+      "limit": 8,
+      "value": 50400
+    },
+    {
+      "id": 10336,
+      "name": "3rd Age vambraces",
+      "examine": "Fabulously ancient range protection crafted from white dragonhide.",
+      "members": true,
+      "highalch": 30300,
+      "lowalch": 20200,
+      "limit": 8,
+      "value": 50500
+    },
+    {
+      "id": 10338,
+      "name": "3rd Age robe top",
+      "examine": "Fabulously ancient mage protection enchanted in the 3rd Age.",
+      "members": true,
+      "highalch": 30480,
+      "lowalch": 20320,
+      "limit": 8,
+      "value": 50800
+    },
+    {
+      "id": 10340,
+      "name": "3rd Age robe",
+      "examine": "Fabulously ancient mage protection enchanted in the 3rd Age.",
+      "members": true,
+      "highalch": 30360,
+      "lowalch": 20240,
+      "limit": 8,
+      "value": 50600
+    },
+    {
+      "id": 10342,
+      "name": "3rd Age mage hat",
+      "examine": "Fabulously ancient mage protection enchanted in the 3rd Age.",
+      "members": true,
+      "highalch": 30240,
+      "lowalch": 20160,
+      "limit": 8,
+      "value": 50400
+    },
+    {
+      "id": 10344,
+      "name": "3rd Age amulet",
+      "examine": "Fabulously ancient mage protection enchanted in the 3rd Age.",
+      "members": true,
+      "highalch": 30300,
+      "lowalch": 20200,
+      "limit": 8,
+      "value": 50500
+    },
+    {
+      "id": 10346,
+      "name": "3rd Age platelegs",
+      "examine": "Fabulously ancient armour beaten from magical silver.",
+      "members": true,
+      "highalch": 120000,
+      "lowalch": 80000,
+      "limit": 8,
+      "value": 200000
+    },
+    {
+      "id": 10348,
+      "name": "3rd Age platebody",
+      "examine": "Fabulously ancient armour beaten from magical silver.",
+      "members": true,
+      "highalch": 120000,
+      "lowalch": 80000,
+      "limit": 8,
+      "value": 200000
+    },
+    {
+      "id": 10350,
+      "name": "3rd Age full helmet",
+      "examine": "Fabulously ancient armour beaten from magical silver.",
+      "members": true,
+      "highalch": 54000,
+      "lowalch": 36000,
+      "limit": 8,
+      "value": 90000
+    },
+    {
+      "id": 10352,
+      "name": "3rd Age kiteshield",
+      "examine": "Fabulously ancient armour beaten from magical silver.",
+      "members": true,
+      "highalch": 108000,
+      "lowalch": 72000,
+      "limit": 8,
+      "value": 180000
+    },
+    {
+      "id": 10925,
+      "name": "Sanfew serum(4)",
+      "examine": "A 4 dose Sanfew Serum.",
+      "members": true,
+      "highalch": 180,
+      "lowalch": 120,
+      "limit": 2000,
+      "value": 300
+    },
+    {
+      "id": 10927,
+      "name": "Sanfew serum(3)",
+      "examine": "A 3 dose Sanfew Serum.",
+      "members": true,
+      "highalch": 144,
+      "lowalch": 96,
+      "limit": 2000,
+      "value": 240
+    },
+    {
+      "id": 11212,
+      "name": "Dragon arrow",
+      "examine": "An arrow made using a dragon's talon.",
+      "members": true,
+      "highalch": 480,
+      "lowalch": 320,
+      "limit": 11000,
+      "value": 800
+    },
+    {
+      "id": 11232,
+      "name": "Dragon dart tip",
+      "examine": "A deadly looking dragon dart tip - needs feathers for flight.",
+      "members": true,
+      "highalch": 150,
+      "lowalch": 100,
+      "limit": 11000,
+      "value": 250
+    },
+    {
+      "id": 11237,
+      "name": "Dragon arrowtips",
+      "examine": "Dragon talons, usable as arrowheads.",
+      "members": true,
+      "highalch": 300,
+      "lowalch": 200,
+      "limit": 10000,
+      "value": 500
+    },
+    {
+      "id": 11286,
+      "name": "Draconic visage",
+      "examine": "It looks like this could be attached to a shield somehow.",
+      "members": true,
+      "highalch": 450000,
+      "lowalch": 300000,
+      "limit": 5,
+      "value": 750000
+    },
+    {
+      "id": 11493,
+      "name": "Super restore mix(2)",
+      "examine": "Two doses of fishy super restore potion.",
+      "members": true,
+      "highalch": 108,
+      "lowalch": 72,
+      "limit": 2000,
+      "value": 180
+    },
+    {
+      "id": 11521,
+      "name": "Zamorak mix(2)",
+      "examine": "Two doses of fishy Zamorak brew.",
+      "members": true,
+      "highalch": 90,
+      "lowalch": 60,
+      "limit": 2000,
+      "value": 150
+    },
+    {
+      "id": 11785,
+      "name": "Armadyl crossbow",
+      "examine": "A weapon originally developed for Armadyl's forces.",
+      "members": true,
+      "highalch": 594000,
+      "lowalch": 396000,
+      "limit": 8,
+      "value": 990000
+    },
+    {
+      "id": 11787,
+      "name": "Steam battlestaff",
+      "examine": "It's a slightly magical stick.",
+      "members": true,
+      "highalch": 10200,
+      "lowalch": 6800,
+      "limit": 8,
+      "value": 17000
+    },
+    {
+      "id": 11791,
+      "name": "Staff of the Dead",
+      "examine": "A ghastly weapon with evil origins.",
+      "members": true,
+      "highalch": 600003,
+      "lowalch": 400002,
+      "limit": 8,
+      "value": 1000005
+    },
+    {
+      "id": 11810,
+      "name": "Armadyl hilt",
+      "examine": "Brimming with potential.",
+      "members": true,
+      "highalch": 300000,
+      "lowalch": 200000,
+      "limit": 10000,
+      "value": 500000
+    },
+    {
+      "id": 11812,
+      "name": "Bandos hilt",
+      "examine": "Brimming with potential.",
+      "members": true,
+      "highalch": 300000,
+      "lowalch": 200000,
+      "limit": 10000,
+      "value": 500000
+    },
+    {
+      "id": 11814,
+      "name": "Saradomin hilt",
+      "examine": "Brimming with potential.",
+      "members": true,
+      "highalch": 300000,
+      "lowalch": 200000,
+      "limit": 10000,
+      "value": 500000
+    },
+    {
+      "id": 11816,
+      "name": "Zamorak hilt",
+      "examine": "Brimming with potential.",
+      "members": true,
+      "highalch": 300000,
+      "lowalch": 200000,
+      "limit": 10000,
+      "value": 500000
+    },
+    {
+      "id": 11818,
+      "name": "Godsword shard 1",
+      "examine": "A part of the Godsword blade.",
+      "members": true,
+      "highalch": 150000,
+      "lowalch": 100000,
+      "limit": 11000,
+      "value": 250000
+    },
+    {
+      "id": 11820,
+      "name": "Godsword shard 2",
+      "examine": "A part of the Godsword blade.",
+      "members": true,
+      "highalch": 150000,
+      "lowalch": 100000,
+      "limit": 11000,
+      "value": 250000
+    },
+    {
+      "id": 11822,
+      "name": "Godsword shard 3",
+      "examine": "A part of the Godsword blade.",
+      "members": true,
+      "highalch": 150000,
+      "lowalch": 100000,
+      "limit": 11000,
+      "value": 250000
+    },
+    {
+      "id": 11824,
+      "name": "Zamorakian spear",
+      "examine": "An evil spear.",
+      "members": true,
+      "highalch": 60003,
+      "lowalch": 40002,
+      "limit": 8,
+      "value": 100005
+    },
+    {
+      "id": 11826,
+      "name": "Armadyl helmet",
+      "examine": "A helmet of great craftsmanship.",
+      "members": true,
+      "highalch": 173400,
+      "lowalch": 115600,
+      "limit": 8,
+      "value": 289000
+    },
+    {
+      "id": 11828,
+      "name": "Armadyl chestplate",
+      "examine": "Armour of great craftsmanship.",
+      "members": true,
+      "highalch": 174000,
+      "lowalch": 116000,
+      "limit": 8,
+      "value": 290000
+    },
+    {
+      "id": 11830,
+      "name": "Armadyl chainskirt",
+      "examine": "A chainskirt of great craftsmanship.",
+      "members": true,
+      "highalch": 173940,
+      "lowalch": 115960,
+      "limit": 8,
+      "value": 289900
+    },
+    {
+      "id": 11832,
+      "name": "Bandos chestplate",
+      "examine": "A sturdy chestplate.",
+      "members": true,
+      "highalch": 174006,
+      "lowalch": 116004,
+      "limit": 8,
+      "value": 290010
+    },
+    {
+      "id": 11834,
+      "name": "Bandos tassets",
+      "examine": "A sturdy pair of tassets.",
+      "members": true,
+      "highalch": 173946,
+      "lowalch": 115964,
+      "limit": 8,
+      "value": 289910
+    },
+    {
+      "id": 11836,
+      "name": "Bandos boots",
+      "examine": "Some sturdy boots.",
+      "members": true,
+      "highalch": 173406,
+      "lowalch": 115604,
+      "limit": 8,
+      "value": 289010
+    },
+    {
+      "id": 11838,
+      "name": "Saradomin sword",
+      "examine": "The incredible blade of an Icyene.",
+      "members": true,
+      "highalch": 78000,
+      "lowalch": 52000,
+      "limit": 8,
+      "value": 130000
+    },
+    {
+      "id": 11905,
+      "name": "Trident of the Seas (full)",
+      "examine": "A weapon from the deep.",
+      "members": true,
+      "highalch": 41400,
+      "lowalch": 27600,
+      "limit": 8,
+      "value": 69000
+    },
+    {
+      "id": 11920,
+      "name": "Dragon pickaxe",
+      "examine": "If rocks could feel fear, they'd fear this.",
+      "members": true,
+      "highalch": 58770,
+      "lowalch": 39180,
+      "limit": 40,
+      "value": 97950
+    },
+    {
+      "id": 11928,
+      "name": "Odium shard 1",
+      "examine": "A broken shield piece.",
+      "members": true,
+      "highalch": 18600,
+      "lowalch": 12400,
+      "limit": 10000,
+      "value": 31000
+    },
+    {
+      "id": 11929,
+      "name": "Odium shard 2",
+      "examine": "A broken shield piece.",
+      "members": true,
+      "highalch": 18600,
+      "lowalch": 12400,
+      "limit": 10000,
+      "value": 31000
+    },
+    {
+      "id": 11930,
+      "name": "Odium shard 3",
+      "examine": "A broken shield piece.",
+      "members": true,
+      "highalch": 18600,
+      "lowalch": 12400,
+      "limit": 10000,
+      "value": 31000
+    },
+    {
+      "id": 11931,
+      "name": "Malediction shard 1",
+      "examine": "A broken shield piece.",
+      "members": true,
+      "highalch": 18600,
+      "lowalch": 12400,
+      "limit": 10000,
+      "value": 31000
+    },
+    {
+      "id": 11932,
+      "name": "Malediction shard 2",
+      "examine": "A broken shield piece.",
+      "members": true,
+      "highalch": 18600,
+      "lowalch": 12400,
+      "limit": 10000,
+      "value": 31000
+    },
+    {
+      "id": 11933,
+      "name": "Malediction shard 3",
+      "examine": "A broken shield piece.",
+      "members": true,
+      "highalch": 18600,
+      "lowalch": 12400,
+      "limit": 10000,
+      "value": 31000
+    },
+    {
+      "id": 11936,
+      "name": "Dark crab",
+      "examine": "This looks tricky to eat.",
+      "members": true,
+      "highalch": 192,
+      "lowalch": 128,
+      "limit": 10000,
+      "value": 320
+    },
+    {
+      "id": 11940,
+      "name": "Dark fishing bait",
+      "examine": "What on earth would eat this?",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 8000,
+      "value": 3
+    },
+    {
+      "id": 11990,
+      "name": "Fedora",
+      "examine": "Makes you look fedorable.",
+      "members": true,
+      "highalch": 180,
+      "lowalch": 120,
+      "limit": 4,
+      "value": 300
+    },
+    {
+      "id": 11998,
+      "name": "Smoke battlestaff",
+      "examine": "It gives a 10% accuracy and damage bonus for spells on the standard spellbook.",
+      "members": true,
+      "highalch": 9300,
+      "lowalch": 6200,
+      "limit": 8,
+      "value": 15500
+    },
+    {
+      "id": 12002,
+      "name": "Occult necklace",
+      "examine": "A smokey evil embodies this amulet.",
+      "members": true,
+      "highalch": 27000,
+      "lowalch": 18000,
+      "limit": 8,
+      "value": 45000
+    },
+    {
+      "id": 12004,
+      "name": "Kraken tentacle",
+      "examine": "Ewwww... it's still sucky.",
+      "members": true,
+      "highalch": 50004,
+      "lowalch": 33336,
+      "limit": 70,
+      "value": 83340
+    },
+    {
+      "id": 12007,
+      "name": "Jar of Dirt",
+      "examine": "It's just a jar of dirt.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 4,
+      "value": 1
+    },
+    {
+      "id": 12422,
+      "name": "3rd Age wand",
+      "examine": "A beautifully crafted wand infused by ancient wizards.",
+      "members": true,
+      "highalch": 90000,
+      "lowalch": 60000,
+      "limit": 8,
+      "value": 150000
+    },
+    {
+      "id": 12424,
+      "name": "3rd Age bow",
+      "examine": "A beautifully crafted bow carved by ancient archers.",
+      "members": true,
+      "highalch": 90000,
+      "lowalch": 60000,
+      "limit": 8,
+      "value": 150000
+    },
+    {
+      "id": 12426,
+      "name": "3rd Age longsword",
+      "examine": "A beautifully crafted sword forged by ancient blacksmiths.",
+      "members": true,
+      "highalch": 90000,
+      "lowalch": 60000,
+      "limit": 8,
+      "value": 150000
+    },
+    {
+      "id": 12437,
+      "name": "3rd Age cloak",
+      "examine": "A beautiful cloak woven by ancient tailors.",
+      "members": true,
+      "highalch": 51000,
+      "lowalch": 34000,
+      "limit": 8,
+      "value": 85000
+    },
+    {
+      "id": 12601,
+      "name": "Ring of the gods",
+      "examine": "An ancient ring said to bring you closer to the Gods.",
+      "members": true,
+      "highalch": 30000,
+      "lowalch": 20000,
+      "limit": 8,
+      "value": 50000
+    },
+    {
+      "id": 12603,
+      "name": "Tyrannical ring",
+      "examine": "An incredibly heavy ring.",
+      "members": true,
+      "highalch": 30000,
+      "lowalch": 20000,
+      "limit": 8,
+      "value": 50000
+    },
+    {
+      "id": 12605,
+      "name": "Treasonous ring",
+      "examine": "A razor sharp ring.",
+      "members": true,
+      "highalch": 30000,
+      "lowalch": 20000,
+      "limit": 8,
+      "value": 50000
+    },
+    {
+      "id": 12697,
+      "name": "Super combat potion(3)",
+      "examine": "3 doses of super combat potion.",
+      "members": true,
+      "highalch": 102,
+      "lowalch": 68,
+      "limit": 2000,
+      "value": 170
+    },
+    {
+      "id": 12699,
+      "name": "Super combat potion(2)",
+      "examine": "2 doses of super combat potion.",
+      "members": true,
+      "highalch": 54,
+      "lowalch": 36,
+      "limit": 2000,
+      "value": 90
+    },
+    {
+      "id": 12701,
+      "name": "Super combat potion(1)",
+      "examine": "1 dose of super combat potion.",
+      "members": true,
+      "highalch": 24,
+      "lowalch": 16,
+      "limit": 2000,
+      "value": 40
+    },
+    {
+      "id": 12829,
+      "name": "Spirit shield",
+      "examine": "An ethereal shield.",
+      "members": true,
+      "highalch": 42000,
+      "lowalch": 28000,
+      "limit": 8,
+      "value": 70000
+    },
+    {
+      "id": 12833,
+      "name": "Holy elixir",
+      "examine": "A bottle of holy elixir.",
+      "members": true,
+      "highalch": 450000,
+      "lowalch": 300000,
+      "limit": 5,
+      "value": 750000
+    },
+    {
+      "id": 12885,
+      "name": "Jar of Sand",
+      "examine": "It's just a jar of sand.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 5,
+      "value": 1
+    },
+    {
+      "id": 12922,
+      "name": "Tanzanite fang",
+      "examine": "Maybe you could use a chisel to fletch this into a blowpipe.",
+      "members": true,
+      "highalch": 66000,
+      "lowalch": 44000,
+      "limit": 5,
+      "value": 110000
+    },
+    {
+      "id": 12927,
+      "name": "Serpentine visage",
+      "examine": "Maybe you could use a chisel to craft this into a helmet.",
+      "members": true,
+      "highalch": 63000,
+      "lowalch": 42000,
+      "limit": 5,
+      "value": 105000
+    },
+    {
+      "id": 12932,
+      "name": "Magic fang",
+      "examine": "This can be attached to a Staff of the Dead or a Trident of the Seas.",
+      "members": true,
+      "highalch": 61200,
+      "lowalch": 40800,
+      "limit": 5,
+      "value": 102000
+    },
+    {
+      "id": 12934,
+      "name": "Zulrah's scales",
+      "examine": "Flakes of toxic snakeskin.",
+      "members": true,
+      "highalch": 12,
+      "lowalch": 8,
+      "limit": 30000,
+      "value": 20
+    },
+    {
+      "id": 12936,
+      "name": "Jar of Swamp",
+      "examine": "This is my Swamp!",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 4,
+      "value": 1
+    },
+    {
+      "id": 12938,
+      "name": "Zul-andra teleport",
+      "examine": "Teleports you to Zul-Andra.",
+      "members": true,
+      "highalch": 6,
+      "lowalch": 4,
+      "limit": 10000,
+      "value": 10
+    },
+    {
+      "id": 13227,
+      "name": "Eternal crystal",
+      "examine": "A powerful crystal of magic.",
+      "members": true,
+      "highalch": 27000,
+      "lowalch": 18000,
+      "limit": 15,
+      "value": 45000
+    },
+    {
+      "id": 13229,
+      "name": "Pegasian crystal",
+      "examine": "A powerful crystal of flight.",
+      "members": true,
+      "highalch": 27000,
+      "lowalch": 18000,
+      "limit": 15,
+      "value": 45000
+    },
+    {
+      "id": 13231,
+      "name": "Primordial crystal",
+      "examine": "A powerful crystal of strength.",
+      "members": true,
+      "highalch": 27000,
+      "lowalch": 18000,
+      "limit": 15,
+      "value": 45000
+    },
+    {
+      "id": 13233,
+      "name": "Smouldering stone",
+      "examine": "A smouldering stone from the depths of Hell.",
+      "members": true,
+      "highalch": 27000,
+      "lowalch": 18000,
+      "limit": 5,
+      "value": 45000
+    },
+    {
+      "id": 13245,
+      "name": "Jar of Souls",
+      "examine": "This may be of use for a certain person.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 4,
+      "value": 1
+    },
+    {
+      "id": 13249,
+      "name": "Key master teleport",
+      "examine": "Teleports you to the Key Master.",
+      "members": true,
+      "highalch": 6,
+      "lowalch": 4,
+      "limit": null,
+      "value": 10
+    },
+    {
+      "id": 13256,
+      "name": "Saradomin's light",
+      "examine": "The starlight enlightens your mind to dispel the darkness of Zamorakian evil.",
+      "members": true,
+      "highalch": 20760,
+      "lowalch": 13840,
+      "limit": 5,
+      "value": 34600
+    },
+    {
+      "id": 13439,
+      "name": "Raw anglerfish",
+      "examine": "I should try cooking this.",
+      "members": true,
+      "highalch": 270,
+      "lowalch": 180,
+      "limit": 15000,
+      "value": 450
+    },
+    {
+      "id": 13441,
+      "name": "Anglerfish",
+      "examine": "I hope this tastes better than it looks.",
+      "members": true,
+      "highalch": 270,
+      "lowalch": 180,
+      "limit": 10000,
+      "value": 450
+    },
+    {
+      "id": 13460,
+      "name": "Ensouled scorpion head",
+      "examine": "The creature's soul is still in here.",
+      "members": true,
+      "highalch": 148,
+      "lowalch": 98,
+      "limit": 3000,
+      "value": 247
+    },
+    {
+      "id": 13475,
+      "name": "Ensouled giant head",
+      "examine": "The creature's soul is still in here.",
+      "members": true,
+      "highalch": 191,
+      "lowalch": 127,
+      "limit": 3000,
+      "value": 319
+    },
+    {
+      "id": 13484,
+      "name": "Ensouled troll head",
+      "examine": "The creature's soul is still in here.",
+      "members": true,
+      "highalch": 230,
+      "lowalch": 153,
+      "limit": 7500,
+      "value": 384
+    },
+    {
+      "id": 13490,
+      "name": "Ensouled kalphite head",
+      "examine": "The creature's soul is still in here.",
+      "members": true,
+      "highalch": 259,
+      "lowalch": 173,
+      "limit": 7500,
+      "value": 433
+    },
+    {
+      "id": 13493,
+      "name": "Ensouled dagannoth head",
+      "examine": "The creature's soul is still in here.",
+      "members": true,
+      "highalch": 273,
+      "lowalch": 182,
+      "limit": 7500,
+      "value": 455
+    },
+    {
+      "id": 13502,
+      "name": "Ensouled demon head",
+      "examine": "The creature's soul is still in here.",
+      "members": true,
+      "highalch": 316,
+      "lowalch": 210,
+      "limit": 7500,
+      "value": 527
+    },
+    {
+      "id": 19580,
+      "name": "Rune javelin tips",
+      "examine": "Needs a shaft.",
+      "members": true,
+      "highalch": 810,
+      "lowalch": 540,
+      "limit": 10000,
+      "value": 1350
+    },
+    {
+      "id": 19582,
+      "name": "Dragon javelin tips",
+      "examine": "Needs a shaft.",
+      "members": true,
+      "highalch": 1170,
+      "lowalch": 780,
+      "limit": 10000,
+      "value": 1950
+    },
+    {
+      "id": 19701,
+      "name": "Jar of Darkness",
+      "examine": "It smells like it's been where the sun doesn't shine.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 4,
+      "value": 1
+    },
+    {
+      "id": 20011,
+      "name": "3rd Age axe",
+      "examine": "A beautifully crafted axe, shaped by ancient smiths.",
+      "members": true,
+      "highalch": 33000,
+      "lowalch": 22000,
+      "limit": 40,
+      "value": 55000
+    },
+    {
+      "id": 20014,
+      "name": "3rd Age pickaxe",
+      "examine": "A beautifully crafted pickaxe, shaped by ancient smiths.",
+      "members": true,
+      "highalch": 58770,
+      "lowalch": 39180,
+      "limit": 40,
+      "value": 97950
+    },
+    {
+      "id": 20849,
+      "name": "Dragon thrownaxe",
+      "examine": "A razor sharp throwing axe.",
+      "members": true,
+      "highalch": 450,
+      "lowalch": 300,
+      "limit": 11000,
+      "value": 750
+    },
+    {
+      "id": 21028,
+      "name": "Dragon harpoon",
+      "examine": "A very powerful harpoon.",
+      "members": true,
+      "highalch": 33000,
+      "lowalch": 22000,
+      "limit": 5,
+      "value": 55000
+    },
+    {
+      "id": 21486,
+      "name": "Teak seed",
+      "examine": "Plant this in a plantpot of soil to grow a sapling.",
+      "members": true,
+      "highalch": 28,
+      "lowalch": 19,
+      "limit": 200,
+      "value": 48
+    },
+    {
+      "id": 21488,
+      "name": "Mahogany seed",
+      "examine": "Plant this in a plantpot of soil to grow a sapling.",
+      "members": true,
+      "highalch": 28,
+      "lowalch": 19,
+      "limit": 200,
+      "value": 48
+    },
+    {
+      "id": 21730,
+      "name": "Black tourmaline core",
+      "examine": "The blackened heart of the Grotesque Guardians.",
+      "members": true,
+      "highalch": 24900,
+      "lowalch": 16600,
+      "limit": 5,
+      "value": 41500
+    },
+    {
+      "id": 21736,
+      "name": "Granite gloves",
+      "examine": "Never take these for granite.",
+      "members": true,
+      "highalch": 20400,
+      "lowalch": 13600,
+      "limit": 8,
+      "value": 34000
+    },
+    {
+      "id": 21739,
+      "name": "Granite ring",
+      "examine": "A solid ring.",
+      "members": true,
+      "highalch": 9000,
+      "lowalch": 6000,
+      "limit": 70,
+      "value": 15000
+    },
+    {
+      "id": 21742,
+      "name": "Granite hammer",
+      "examine": "Hammer time.",
+      "members": true,
+      "highalch": 38400,
+      "lowalch": 25600,
+      "limit": 8,
+      "value": 64000
+    },
+    {
+      "id": 21745,
+      "name": "Jar of Stone",
+      "examine": "Stones aren't very useful in this capacity.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 4,
+      "value": 1
+    },
+    {
+      "id": 21880,
+      "name": "Wrath rune",
+      "examine": "Used for very high level missile spells.",
+      "members": true,
+      "highalch": 300,
+      "lowalch": 200,
+      "limit": 25000,
+      "value": 500
+    },
+    {
+      "id": 21930,
+      "name": "Dragon bolts (unf)",
+      "examine": "Unfeathered dragon crossbow bolts.",
+      "members": true,
+      "highalch": 84,
+      "lowalch": 56,
+      "limit": 13000,
+      "value": 141
+    },
+    {
+      "id": 22006,
+      "name": "Skeletal visage",
+      "examine": "It looks like this could be attached to a shield somehow.",
+      "members": true,
+      "highalch": 900000,
+      "lowalch": 600000,
+      "limit": 5,
+      "value": 1500000
+    },
+    {
+      "id": 22106,
+      "name": "Jar of Decay",
+      "examine": "Very healthy.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 4,
+      "value": 1
+    },
+    {
+      "id": 22111,
+      "name": "Dragonbone necklace",
+      "examine": "A necklace made out of dragon bones.",
+      "members": true,
+      "highalch": 48000,
+      "lowalch": 32000,
+      "limit": 8,
+      "value": 80000
+    },
+    {
+      "id": 22118,
+      "name": "Wrath talisman",
+      "examine": "A mysterious power emanates from the talisman...",
+      "members": true,
+      "highalch": 2,
+      "lowalch": 1,
+      "limit": 11000,
+      "value": 4
+    },
+    {
+      "id": 22124,
+      "name": "Superior dragon bones",
+      "examine": "There's something unnatural about these bones.",
+      "members": true,
+      "highalch": 96,
+      "lowalch": 64,
+      "limit": 7500,
+      "value": 160
+    },
+    {
+      "id": 22324,
+      "name": "Ghrazi rapier",
+      "examine": "A razor sharp rapier, smeared with vampyric blood.",
+      "members": true,
+      "highalch": 3000000,
+      "lowalch": 2000000,
+      "limit": 8,
+      "value": 5000000
+    },
+    {
+      "id": 22326,
+      "name": "Justiciar faceguard",
+      "examine": "A helm that once belonged to a Justiciar, a loyal zealot of Saradomin.",
+      "members": true,
+      "highalch": 1200000,
+      "lowalch": 800000,
+      "limit": 8,
+      "value": 2000000
+    },
+    {
+      "id": 22327,
+      "name": "Justiciar chestguard",
+      "examine": "A Justiciar's chestguard. They once roamed the land casting judgements on wrongdoers, their decisions were never questioned.",
+      "members": true,
+      "highalch": 3600000,
+      "lowalch": 2400000,
+      "limit": 8,
+      "value": 6000000
+    },
+    {
+      "id": 22328,
+      "name": "Justiciar legguards",
+      "examine": "A Justiciar's platelegs. Their once bright colours have since faded.",
+      "members": true,
+      "highalch": 2700000,
+      "lowalch": 1800000,
+      "limit": 8,
+      "value": 4500000
+    },
+    {
+      "id": 22477,
+      "name": "Avernic defender hilt",
+      "examine": "Perhaps this could be used to create a defensive weapon.",
+      "members": true,
+      "highalch": 1500000,
+      "lowalch": 1000000,
+      "limit": 8,
+      "value": 2500000
+    },
+    {
+      "id": 22481,
+      "name": "Sanguinesti staff (uncharged)",
+      "examine": "A sacred staff imbued with the power of blood. It is currently uncharged.",
+      "members": true,
+      "highalch": 3000000,
+      "lowalch": 2000000,
+      "limit": 8,
+      "value": 5000000
+    },
+    {
+      "id": 22486,
+      "name": "Scythe of Vitur (uncharged)",
+      "examine": "A powerful scythe. It is currently uncharged.",
+      "members": true,
+      "highalch": 2400000,
+      "lowalch": 1600000,
+      "limit": 8,
+      "value": 4000000
+    },
+    {
+      "id": 22786,
+      "name": "Hydra bones",
+      "examine": "The bones of a hydra.",
+      "members": true,
+      "highalch": 96,
+      "lowalch": 64,
+      "limit": 7500,
+      "value": 160
+    },
+    {
+      "id": 22804,
+      "name": "Dragon knife",
+      "examine": "A finely balanced and powerful throwing knife.",
+      "members": true,
+      "highalch": 100,
+      "lowalch": 66,
+      "limit": 11000,
+      "value": 167
+    },
+    {
+      "id": 22869,
+      "name": "Celastrus seed",
+      "examine": "For growing a Celastrus tree.",
+      "members": true,
+      "highalch": 324,
+      "lowalch": 216,
+      "limit": 200,
+      "value": 540
+    },
+    {
+      "id": 22871,
+      "name": "Redwood tree seed",
+      "examine": "Plant this in a plantpot of soil to grow a sapling.",
+      "members": true,
+      "highalch": 390,
+      "lowalch": 260,
+      "limit": 200,
+      "value": 650
+    },
+    {
+      "id": 22873,
+      "name": "Potato cactus seed",
+      "examine": "A Potato cactus seed - plant in a cactus patch.",
+      "members": true,
+      "highalch": 84,
+      "lowalch": 56,
+      "limit": 200,
+      "value": 140
+    },
+    {
+      "id": 22877,
+      "name": "Dragonfruit tree seed",
+      "examine": "Plant in a plantpot of soil to grow a sapling.",
+      "members": true,
+      "highalch": 258,
+      "lowalch": 172,
+      "limit": 200,
+      "value": 430
+    },
+    {
+      "id": 22879,
+      "name": "Snape grass seed",
+      "examine": "A snape grass seed - plant in an allotment.",
+      "members": true,
+      "highalch": 56,
+      "lowalch": 37,
+      "limit": 200,
+      "value": 94
+    },
+    {
+      "id": 22887,
+      "name": "White lily seed",
+      "examine": "A white lily seed - plant in a flower patch.",
+      "members": true,
+      "highalch": 180,
+      "lowalch": 120,
+      "limit": 600,
+      "value": 300
+    },
+    {
+      "id": 22966,
+      "name": "Hydra's claw",
+      "examine": "The claw of a ferocious hydra.",
+      "members": true,
+      "highalch": 90000,
+      "lowalch": 60000,
+      "limit": 15,
+      "value": 150000
+    },
+    {
+      "id": 22983,
+      "name": "Hydra leather",
+      "examine": "Hide from a ferocious Hydra. It looks pretty tough.",
+      "members": true,
+      "highalch": 60000,
+      "lowalch": 40000,
+      "limit": 15,
+      "value": 100000
+    },
+    {
+      "id": 22988,
+      "name": "Hydra tail",
+      "examine": "Tail of a hydra, can be attached to a bonecrusher.",
+      "members": true,
+      "highalch": 60000,
+      "lowalch": 40000,
+      "limit": 15,
+      "value": 100000
+    },
+    {
+      "id": 22994,
+      "name": "Bottomless compost bucket",
+      "examine": "It's a bucket that can hold a lot of compost at once.",
+      "members": true,
+      "highalch": 27000,
+      "lowalch": 18000,
+      "limit": 5,
+      "value": 45000
+    },
+    {
+      "id": 23064,
+      "name": "Jar of Chemicals",
+      "examine": "Looks unstable.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 4,
+      "value": 1
+    },
+    {
+      "id": 23185,
+      "name": "Ring of 3rd Age",
+      "examine": "Makes you look like something really old, for those moments when you want that.",
+      "members": false,
+      "highalch": 7200,
+      "lowalch": 4800,
+      "limit": 4,
+      "value": 12000
+    },
+    {
+      "id": 23242,
+      "name": "3rd Age plateskirt",
+      "examine": "Fabulously ancient armour beaten from magical silver.",
+      "members": true,
+      "highalch": 120000,
+      "lowalch": 80000,
+      "limit": 8,
+      "value": 200000
+    },
+    {
+      "id": 23336,
+      "name": "3rd Age druidic robe top",
+      "examine": "A fabulously ancient woven robe top as worn by the druids of old.",
+      "members": true,
+      "highalch": 120000,
+      "lowalch": 80000,
+      "limit": 4,
+      "value": 200000
+    },
+    {
+      "id": 23339,
+      "name": "3rd Age druidic robe bottoms",
+      "examine": "A fabulously ancient woven robe as worn by the druids of old.",
+      "members": true,
+      "highalch": 120000,
+      "lowalch": 80000,
+      "limit": 4,
+      "value": 200000
+    },
+    {
+      "id": 23342,
+      "name": "3rd Age druidic staff",
+      "examine": "A fabulously ancient gnarled staff as used by the druids of old.",
+      "members": true,
+      "highalch": 120000,
+      "lowalch": 80000,
+      "limit": 8,
+      "value": 200000
+    },
+    {
+      "id": 23345,
+      "name": "3rd Age druidic cloak",
+      "examine": "A fabulously ancient vine cloak as worn by the druids of old.",
+      "members": true,
+      "highalch": 120000,
+      "lowalch": 80000,
+      "limit": 8,
+      "value": 200000
+    },
+    {
+      "id": 23499,
+      "name": "Grubby key",
+      "examine": "It looks like the key to a chest (Used to open the grubby chest in Forthos Dungeon).",
+      "members": true,
+      "highalch": 19,
+      "lowalch": 12,
+      "limit": 11000,
+      "value": 32
+    },
+    {
+      "id": 23517,
+      "name": "Giant egg sac(full)",
+      "examine": "A giant sac of red spider eggs, hopefully none of them hatch.",
+      "members": true,
+      "highalch": 6,
+      "lowalch": 4,
+      "limit": 100,
+      "value": 10
+    },
+    {
+      "id": 23525,
+      "name": "Jar of Eyes",
+      "examine": "Stop staring!",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 4,
+      "value": 1
+    },
+    {
+      "id": 23528,
+      "name": "Sarachnis cudgel",
+      "examine": "Not to be confused with a Sarachnis cuddle.",
+      "members": true,
+      "highalch": 72000,
+      "lowalch": 48000,
+      "limit": 70,
+      "value": 120001
+    },
+    {
+      "id": 23908,
+      "name": "Zalcano shard",
+      "examine": "Makes a dragon pickaxe more beautiful.",
+      "members": true,
+      "highalch": 960,
+      "lowalch": 640,
+      "limit": 50,
+      "value": 1600
+    },
+    {
+      "id": 23953,
+      "name": "Crystal tool seed",
+      "examine": "A seed to be sung into the best tools of the craft.",
+      "members": true,
+      "highalch": 300000,
+      "lowalch": 200000,
+      "limit": 100,
+      "value": 500000
+    },
+    {
+      "id": 23956,
+      "name": "Crystal armour seed",
+      "examine": "A seed to be sung into the finest crystal armour.",
+      "members": true,
+      "highalch": 300000,
+      "lowalch": 200000,
+      "limit": 100,
+      "value": 500000
+    },
+    {
+      "id": 24251,
+      "name": "Wilderness crabs teleport",
+      "examine": "A teleport to near the dark crab fishing spots, in level 33 Wilderness.",
+      "members": true,
+      "highalch": 37,
+      "lowalch": 25,
+      "limit": null,
+      "value": 63
+    },
+    {
+      "id": 24417,
+      "name": "Inquisitor's mace",
+      "examine": "A powerful mace once wielded by the turncloak Justiciar.",
+      "members": true,
+      "highalch": 3000000,
+      "lowalch": 2000000,
+      "limit": 8,
+      "value": 5000000
+    },
+    {
+      "id": 24419,
+      "name": "Inquisitor's great helm",
+      "examine": "The great helmet of the turncloak Justiciar.",
+      "members": true,
+      "highalch": 300000,
+      "lowalch": 200000,
+      "limit": 8,
+      "value": 500000
+    },
+    {
+      "id": 24420,
+      "name": "Inquisitor's hauberk",
+      "examine": "The hauberk of the turncloak Justiciar.",
+      "members": true,
+      "highalch": 600000,
+      "lowalch": 400000,
+      "limit": 8,
+      "value": 1000000
+    },
+    {
+      "id": 24421,
+      "name": "Inquisitor's plateskirt",
+      "examine": "The plateskirt of the turncloak Justiciar.",
+      "members": true,
+      "highalch": 450000,
+      "lowalch": 300000,
+      "limit": 8,
+      "value": 750000
+    },
+    {
+      "id": 24422,
+      "name": "Nightmare staff",
+      "examine": "An ancient staff corrupted by darkness.",
+      "members": true,
+      "highalch": 360000,
+      "lowalch": 240000,
+      "limit": 8,
+      "value": 600000
+    },
+    {
+      "id": 24495,
+      "name": "Jar of Dreams",
+      "examine": "With this jar, your dreams can come true!",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 4,
+      "value": 1
+    },
+    {
+      "id": 24511,
+      "name": "Harmonised orb",
+      "examine": "An ancient magical orb, corrupted by darkness.",
+      "members": true,
+      "highalch": 2400000,
+      "lowalch": 1600000,
+      "limit": 8,
+      "value": 4000000
+    },
+    {
+      "id": 24514,
+      "name": "Volatile orb",
+      "examine": "An ancient magical orb, corrupted by darkness.",
+      "members": true,
+      "highalch": 2400000,
+      "lowalch": 1600000,
+      "limit": 8,
+      "value": 4000000
+    },
+    {
+      "id": 24517,
+      "name": "Eldritch orb",
+      "examine": "An ancient magical orb, corrupted by darkness.",
+      "members": true,
+      "highalch": 2400000,
+      "lowalch": 1600000,
+      "limit": 8,
+      "value": 4000000
+    },
+    {
+      "id": 24592,
+      "name": "Blighted anglerfish",
+      "examine": "An unappetising fish, now blighted so it can be eaten only in the Wilderness.",
+      "members": true,
+      "highalch": 30,
+      "lowalch": 20,
+      "limit": 10000,
+      "value": 50
+    },
+    {
+      "id": 24595,
+      "name": "Blighted karambwan",
+      "examine": "A nutritious octopus, now blighted so it can be eaten only in the Wilderness.",
+      "members": true,
+      "highalch": 30,
+      "lowalch": 20,
+      "limit": 10000,
+      "value": 50
+    },
+    {
+      "id": 24598,
+      "name": "Blighted super restore(4)",
+      "examine": "4 doses of super restore potion, blighted so it can be used only in the Wilderness.",
+      "members": true,
+      "highalch": 24,
+      "lowalch": 16,
+      "limit": 2000,
+      "value": 40
+    },
+    {
+      "id": 24607,
+      "name": "Blighted ancient ice sack",
+      "examine": "Enough power for any Ice spell, blighted so it can be used only in the Wilderness.",
+      "members": true,
+      "highalch": 21,
+      "lowalch": 14,
+      "limit": 15000,
+      "value": 35
+    },
+    {
+      "id": 25521,
+      "name": "Jar of Spirits",
+      "examine": "How does someone jar this?",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 4,
+      "value": 1
+    },
+    {
+      "id": 25524,
+      "name": "Jar of Smoke",
+      "examine": "Don't breath in.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 4,
+      "value": 1
+    },
+    {
+      "id": 25576,
+      "name": "Tome of Water (empty)",
+      "examine": "An ancient tome containing the secrets of water magic.",
+      "members": true,
+      "highalch": 11700,
+      "lowalch": 7800,
+      "limit": 15,
+      "value": 19500
+    },
+    {
+      "id": 25578,
+      "name": "Soaked page",
+      "examine": "It feels clammy, like second-hand toilet paper.",
+      "members": true,
+      "highalch": 102,
+      "lowalch": 68,
+      "limit": 11000,
+      "value": 170
+    },
+    {
+      "id": 25766,
+      "name": "Fiendish ashes",
+      "examine": "A heap of ashes.",
+      "members": false,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 3000,
+      "value": 1
+    },
+    {
+      "id": 25769,
+      "name": "Vile ashes",
+      "examine": "A heap of ashes.",
+      "members": false,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 3000,
+      "value": 1
+    },
+    {
+      "id": 25772,
+      "name": "Malicious ashes",
+      "examine": "A heap of ashes.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": null,
+      "value": 1
+    },
+    {
+      "id": 25775,
+      "name": "Abyssal ashes",
+      "examine": "A heap of ashes.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 7500,
+      "value": 1
+    },
+    {
+      "id": 25778,
+      "name": "Infernal ashes",
+      "examine": "A heap of ashes.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 7500,
+      "value": 1
+    },
+    {
+      "id": 25859,
+      "name": "Enhanced crystal weapon seed",
+      "examine": "A seed to be sung into the most powerful crystal weaponry.",
+      "members": true,
+      "highalch": 300000,
+      "lowalch": 200000,
+      "limit": 70,
+      "value": 500000
+    },
+    {
+      "id": 26231,
+      "name": "Nihil shard",
+      "examine": "An ancient magical shard.",
+      "members": true,
+      "highalch": 3000,
+      "lowalch": 2000,
+      "limit": 30000,
+      "value": 5000
+    },
+    {
+      "id": 26235,
+      "name": "Zaryte vambraces",
+      "examine": "A pair of ancient vambraces.",
+      "members": true,
+      "highalch": 120000,
+      "lowalch": 80000,
+      "limit": 7,
+      "value": 200000
+    },
+    {
+      "id": 26241,
+      "name": "Virtus mask",
+      "examine": "An ancient mage's mask.",
+      "members": true,
+      "highalch": 120000,
+      "lowalch": 80000,
+      "limit": 8,
+      "value": 200000
+    },
+    {
+      "id": 26243,
+      "name": "Virtus robe top",
+      "examine": "An ancient mage's robe top.",
+      "members": true,
+      "highalch": 360000,
+      "lowalch": 240000,
+      "limit": 8,
+      "value": 600000
+    },
+    {
+      "id": 26245,
+      "name": "Virtus robe bottom",
+      "examine": "An ancient mage's robe bottom.",
+      "members": true,
+      "highalch": 240000,
+      "lowalch": 160000,
+      "limit": 8,
+      "value": 400000
+    },
+    {
+      "id": 26342,
+      "name": "Ancient brew(3)",
+      "examine": "3 doses of ancient brew.",
+      "members": true,
+      "highalch": 105,
+      "lowalch": 70,
+      "limit": 2000,
+      "value": 175
+    },
+    {
+      "id": 26344,
+      "name": "Ancient brew(2)",
+      "examine": "2 doses of ancient brew.",
+      "members": true,
+      "highalch": 90,
+      "lowalch": 60,
+      "limit": 2000,
+      "value": 150
+    },
+    {
+      "id": 26370,
+      "name": "Ancient hilt",
+      "examine": "Brimming with potential.",
+      "members": true,
+      "highalch": 300000,
+      "lowalch": 200000,
+      "limit": null,
+      "value": 500000
+    },
+    {
+      "id": 26372,
+      "name": "Nihil horn",
+      "examine": "The horn of a proud nihil.",
+      "members": true,
+      "highalch": 1200000,
+      "lowalch": 800000,
+      "limit": null,
+      "value": 2000000
+    },
+    {
+      "id": 26376,
+      "name": "Torva full helm (damaged)",
+      "examine": "An ancient warrior's full helm.",
+      "members": true,
+      "highalch": 120000,
+      "lowalch": 80000,
+      "limit": 8,
+      "value": 200000
+    },
+    {
+      "id": 26378,
+      "name": "Torva platebody (damaged)",
+      "examine": "An ancient warrior's platebody.",
+      "members": true,
+      "highalch": 360000,
+      "lowalch": 240000,
+      "limit": 8,
+      "value": 600000
+    },
+    {
+      "id": 26380,
+      "name": "Torva platelegs (damaged)",
+      "examine": "An ancient warrior's platelegs.",
+      "members": true,
+      "highalch": 240000,
+      "lowalch": 160000,
+      "limit": 8,
+      "value": 400000
+    },
+    {
+      "id": 26390,
+      "name": "Blood essence",
+      "examine": "A blood-filled essence with magical properties.",
+      "members": true,
+      "highalch": 60000,
+      "lowalch": 40000,
+      "limit": 500,
+      "value": 100000
+    },
+    {
+      "id": 26997,
+      "name": "Ensouled hellhound head",
+      "examine": "The creature's soul is still in here. I could reanimate it with Expert Reanimation.",
+      "members": true,
+      "highalch": 321,
+      "lowalch": 214,
+      "limit": null,
+      "value": 536
+    },
+    {
+      "id": 27614,
+      "name": "Venator shard",
+      "examine": "A broken shard of an ancient weapon.",
+      "members": true,
+      "highalch": 90000,
+      "lowalch": 60000,
+      "limit": 8,
+      "value": 150000
+    },
+    {
+      "id": 27616,
+      "name": "Ancient essence",
+      "examine": "Pure magical energy filled with a dark power.",
+      "members": true,
+      "highalch": 16,
+      "lowalch": 11,
+      "limit": 300000,
+      "value": 28
+    },
+    {
+      "id": 27667,
+      "name": "Claws of Callisto",
+      "examine": "The claws of a great bear. They seem to maintain some of his power, somehow.",
+      "members": true,
+      "highalch": 48000,
+      "lowalch": 32000,
+      "limit": null,
+      "value": 80000
+    },
+    {
+      "id": 27670,
+      "name": "Fangs of Venenatis",
+      "examine": "The fangs of a matriarch spider. They seem to maintain a sense of her power.",
+      "members": true,
+      "highalch": 48000,
+      "lowalch": 32000,
+      "limit": 8,
+      "value": 80000
+    },
+    {
+      "id": 27673,
+      "name": "Skull of Vet'ion",
+      "examine": "The skull of an oathbound warrior. Severed from its body, it still maintains some power.",
+      "members": true,
+      "highalch": 48000,
+      "lowalch": 32000,
+      "limit": 8,
+      "value": 80000
+    },
+    {
+      "id": 27681,
+      "name": "Voidwaker hilt",
+      "examine": "The hilt of a broken sword.",
+      "members": true,
+      "highalch": 480000,
+      "lowalch": 320000,
+      "limit": 8,
+      "value": 800000
+    },
+    {
+      "id": 27684,
+      "name": "Voidwaker blade",
+      "examine": "The blade of a broken sword.",
+      "members": true,
+      "highalch": 480000,
+      "lowalch": 320000,
+      "limit": 8,
+      "value": 800000
+    },
+    {
+      "id": 27687,
+      "name": "Voidwaker gem",
+      "examine": "The gem of a broken sword.",
+      "members": true,
+      "highalch": 480000,
+      "lowalch": 320000,
+      "limit": 8,
+      "value": 800000
+    },
+    {
+      "id": 27897,
+      "name": "Scaly blue dragonhide",
+      "examine": "A scaled blue dragonhide.",
+      "members": true,
+      "highalch": 60,
+      "lowalch": 40,
+      "limit": null,
+      "value": 100
+    },
+    {
+      "id": 28276,
+      "name": "Chromium ingot",
+      "examine": "A dense clump of corroded metal.",
+      "members": true,
+      "highalch": 30000,
+      "lowalch": 20000,
+      "limit": 8,
+      "value": 50000
+    },
+    {
+      "id": 28334,
+      "name": "Awakener's orb",
+      "examine": "A mysterious orb of unknown power. What could it do?",
+      "members": true,
+      "highalch": 45000,
+      "lowalch": 30000,
+      "limit": 50,
+      "value": 75000
+    },
+    {
+      "id": 28899,
+      "name": "Wyrmling bones",
+      "examine": "Ew it's a pile of bones.",
+      "members": true,
+      "highalch": 1,
+      "lowalch": 1,
+      "limit": 3000,
+      "value": 1
+    },
+    {
+      "id": 28924,
+      "name": "Sunfire splinters",
+      "examine": "Vaporised material from the sun.",
+      "members": true,
+      "highalch": 60,
+      "lowalch": 40,
+      "limit": 30000,
+      "value": 100
+    },
+    {
+      "id": 28988,
+      "name": "Blue Moon spear",
+      "examine": "A magical staff of ancient origin...",
+      "members": true,
+      "highalch": 60000,
+      "lowalch": 40000,
+      "limit": 15,
+      "value": 100000
+    },
+    {
+      "id": 28991,
+      "name": "Atlatl dart",
+      "examine": "Quite big for a dart.",
+      "members": true,
+      "highalch": 294,
+      "lowalch": 196,
+      "limit": 11000,
+      "value": 490
+    },
+    {
+      "id": 28997,
+      "name": "Dual macuahuitl",
+      "examine": "A brutal pair.",
+      "members": true,
+      "highalch": 174006,
+      "lowalch": 116004,
+      "limit": 15,
+      "value": 290010
+    },
+    {
+      "id": 29000,
+      "name": "Eclipse atlatl",
+      "examine": "A powerful thrown weapon forged from an eclipse.",
+      "members": true,
+      "highalch": 96000,
+      "lowalch": 64000,
+      "limit": 15,
+      "value": 160000
+    },
+    {
+      "id": 29004,
+      "name": "Eclipse Moon chestplate",
+      "examine": "The chestplate of the Eclipse Moon.",
+      "members": true,
+      "highalch": 174006,
+      "lowalch": 116004,
+      "limit": 15,
+      "value": 290010
+    },
+    {
+      "id": 29007,
+      "name": "Eclipse Moon tassets",
+      "examine": "The tassets of the Eclipse Moon.",
+      "members": true,
+      "highalch": 173946,
+      "lowalch": 115964,
+      "limit": 15,
+      "value": 289910
+    },
+    {
+      "id": 29010,
+      "name": "Eclipse Moon helm",
+      "examine": "The helm of the Eclipse Moon.",
+      "members": true,
+      "highalch": 61800,
+      "lowalch": 41200,
+      "limit": 15,
+      "value": 103000
+    },
+    {
+      "id": 29013,
+      "name": "Blue Moon chestplate",
+      "examine": "The chestplate of the Blue Moon.",
+      "members": true,
+      "highalch": 174006,
+      "lowalch": 116004,
+      "limit": 15,
+      "value": 290010
+    },
+    {
+      "id": 29016,
+      "name": "Blue Moon tassets",
+      "examine": "The tassets of the Blue Moon.",
+      "members": true,
+      "highalch": 173946,
+      "lowalch": 115964,
+      "limit": 15,
+      "value": 289910
+    },
+    {
+      "id": 29019,
+      "name": "Blue Moon helm",
+      "examine": "The helm of the Blue Moon.",
+      "members": true,
+      "highalch": 61800,
+      "lowalch": 41200,
+      "limit": 15,
+      "value": 103000
+    },
+    {
+      "id": 29022,
+      "name": "Blood Moon chestplate",
+      "examine": "The chestplate of the Blood Moon.",
+      "members": true,
+      "highalch": 174006,
+      "lowalch": 116004,
+      "limit": 15,
+      "value": 290010
+    },
+    {
+      "id": 29025,
+      "name": "Blood Moon tassets",
+      "examine": "The tassets of the Blood Moon.",
+      "members": true,
+      "highalch": 173946,
+      "lowalch": 115964,
+      "limit": 15,
+      "value": 289910
+    },
+    {
+      "id": 29028,
+      "name": "Blood Moon helm",
+      "examine": "The helm of the Blood Moon.",
+      "members": true,
+      "highalch": 61800,
+      "lowalch": 41200,
+      "limit": 15,
+      "value": 103000
+    },
+    {
+      "id": 29782,
+      "name": "Spider cave teleport",
+      "examine": "Teleports you to Morytania Spider Cave.",
+      "members": true,
+      "highalch": 6,
+      "lowalch": 4,
+      "limit": null,
+      "value": 10
+    },
+    {
+      "id": 29784,
+      "name": "Araxyte venom sac",
+      "examine": "Looks spicy!",
+      "members": true,
+      "highalch": 300,
+      "lowalch": 200,
+      "limit": 11000,
+      "value": 500
+    },
+    {
+      "id": 29889,
+      "name": "Glacial temotli",
+      "examine": "It's clobbering time.",
+      "members": true,
+      "highalch": 49800,
+      "lowalch": 33200,
+      "limit": 15,
+      "value": 83000
+    },
+    {
+      "id": 29895,
+      "name": "Frozen tear",
+      "examine": "A strange glowing tear.",
+      "members": true,
+      "highalch": 300,
+      "lowalch": 200,
+      "limit": 13000,
+      "value": 500
+    },
+    {
+      "id": 30066,
+      "name": "Tome of Earth (empty)",
+      "examine": "An ancient tome containing the secrets of earth magic.",
+      "members": true,
+      "highalch": 12000,
+      "lowalch": 8000,
+      "limit": 15,
+      "value": 20000
+    },
+    {
+      "id": 30068,
+      "name": "Soiled page",
+      "examine": "It's a bit dirty.",
+      "members": true,
+      "highalch": 120,
+      "lowalch": 80,
+      "limit": 11000,
+      "value": 200
+    },
+    {
+      "id": 30070,
+      "name": "Dragon hunter wand",
+      "examine": "A wand that is uniquely attuned to draconic creatures.",
+      "members": true,
+      "highalch": 180000,
+      "lowalch": 120000,
+      "limit": 8,
+      "value": 300000
+    },
+    {
+      "id": 30085,
+      "name": "Hueycoatl hide",
+      "examine": "Quite mesmerising to look at.",
+      "members": true,
+      "highalch": 66,
+      "lowalch": 44,
+      "limit": null,
+      "value": 110
+    },
+    {
+      "id": 30088,
+      "name": "Huasca seed",
+      "examine": "A huasca seed - plant in a herb patch.",
+      "members": true,
+      "highalch": 42,
+      "lowalch": 28,
+      "limit": 200,
+      "value": 70
+    },
+    {
+      "id": 30628,
+      "name": "Ice element staff crown",
+      "examine": "A missing piece from a magical staff.",
+      "members": true,
+      "highalch": 6000,
+      "lowalch": 4000,
+      "limit": 8,
+      "value": 10000
+    },
+    {
+      "id": 30631,
+      "name": "Fire element staff crown",
+      "examine": "A missing piece from a magical staff.",
+      "members": true,
+      "highalch": 6000,
+      "lowalch": 4000,
+      "limit": 8,
+      "value": 10000
+    },
+    {
+      "id": 30750,
+      "name": "Oathplate helm",
+      "examine": "A helm forged from infernal metal.",
+      "members": true,
+      "highalch": 120000,
+      "lowalch": 80000,
+      "limit": null,
+      "value": 200000
+    },
+    {
+      "id": 30753,
+      "name": "Oathplate chest",
+      "examine": "A chestplate forged from infernal metal.",
+      "members": true,
+      "highalch": 360000,
+      "lowalch": 240000,
+      "limit": null,
+      "value": 600000
+    },
+    {
+      "id": 30756,
+      "name": "Oathplate legs",
+      "examine": "Platelegs forged from infernal metal.",
+      "members": true,
+      "highalch": 240000,
+      "lowalch": 160000,
+      "limit": null,
+      "value": 400000
+    },
+    {
+      "id": 30759,
+      "name": "Soulflame horn",
+      "examine": "A horn sculpted in the depths of the earth. Its violent reverbrations fan the flames of the soul.",
+      "members": true,
+      "highalch": 132000,
+      "lowalch": 88000,
+      "limit": 5,
+      "value": 220000
+    },
+    {
+      "id": 30765,
+      "name": "Oathplate shards",
+      "examine": "A strange metal from a distant realm. It has long since lost its luster.",
+      "members": true,
+      "highalch": 600,
+      "lowalch": 400,
+      "limit": null,
+      "value": 1000
+    },
+    {
+      "id": 30771,
+      "name": "Aether catalyst",
+      "examine": "A piece of the cosmos' soul? Or souls belonging to the cosmos?",
+      "members": true,
+      "highalch": 120,
+      "lowalch": 80,
+      "limit": 25000,
+      "value": 200
+    },
+    {
+      "id": 30773,
+      "name": "Diabolic worms",
+      "examine": "Their subtle, pulsing glow would be great for catching anglerfish.",
+      "members": true,
+      "highalch": 54,
+      "lowalch": 36,
+      "limit": 8000,
+      "value": 90
+    },
+    {
+      "id": 30775,
+      "name": "Chasm teleport scroll",
+      "examine": "Ancient glyphs cover the paper, resembling those in the chasm of fire.",
+      "members": true,
+      "highalch": 6,
+      "lowalch": 4,
+      "limit": null,
+      "value": 10
+    },
+    {
+      "id": 30795,
+      "name": "Barrel of demonic tallow (full)",
+      "examine": "Somebody's been avoiding their cardio...",
+      "members": true,
+      "highalch": 300,
+      "lowalch": 200,
+      "limit": null,
+      "value": 500
+    },
+    {
+      "id": 30810,
+      "name": "Contract of Glyphic Attenuation",
+      "examine": "A contract issued by Yama. Present it to him to discuss some new terms.",
+      "members": true,
+      "highalch": null,
+      "lowalch": null,
+      "limit": 50,
+      "value": 75000
+    },
+    {
+      "id": 30813,
+      "name": "Contract of Sensory Clouding",
+      "examine": "A contract issued by Yama. Present it to him to discuss some new terms.",
+      "members": true,
+      "highalch": null,
+      "lowalch": null,
+      "limit": 50,
+      "value": 75000
+    },
+    {
+      "id": 30816,
+      "name": "Contract of Bloodied Blows",
+      "examine": "A contract issued by Yama. Present it to him to discuss some new terms.",
+      "members": true,
+      "highalch": null,
+      "lowalch": null,
+      "limit": 50,
+      "value": 75000
+    },
+    {
+      "id": 30819,
+      "name": "Contract of Divine Severance",
+      "examine": "A contract issued by Yama. Present it to him to discuss some new terms.",
+      "members": true,
+      "highalch": null,
+      "lowalch": null,
+      "limit": 50,
+      "value": 75000
+    },
+    {
+      "id": 30822,
+      "name": "Contract of Forfeit Breath",
+      "examine": "A contract issued by Yama. Present it to him to discuss some new terms.",
+      "members": true,
+      "highalch": null,
+      "lowalch": null,
+      "limit": 50,
+      "value": 75000
+    },
+    {
+      "id": 30840,
+      "name": "Contract of Familiar Acquisition",
+      "examine": "A contract issued by Yama. Present it to him to discuss some new terms.",
+      "members": true,
+      "highalch": null,
+      "lowalch": null,
+      "limit": 50,
+      "value": 75000
+    },
+    {
+      "id": 30895,
+      "name": "Steel ring",
+      "examine": "A very old enchanted ring.",
+      "members": true,
+      "highalch": 9000,
+      "lowalch": 6000,
+      "limit": null,
+      "value": 15000
+    },
+    {
+      "id": 30900,
+      "name": "Shark lure",
+      "examine": "Sharks just can't get enough of these",
+      "members": true,
+      "highalch": 6,
+      "lowalch": 4,
+      "limit": 10000,
+      "value": 10
+    },
+    {
+      "id": 31088,
+      "name": "Avernic treads",
+      "examine": "A finely crafted pair of boots.",
+      "members": true,
+      "highalch": 115200,
+      "lowalch": 76800,
+      "limit": 8,
+      "value": 192000
+    },
+    {
+      "id": 31099,
+      "name": "Mokhaiotl waystone",
+      "examine": "A magical shard linked to Mokhaiotl.",
+      "members": true,
+      "highalch": 6000,
+      "lowalch": 4000,
+      "limit": 100,
+      "value": 10000
+    },
+    {
+      "id": 31111,
+      "name": "Demon tear",
+      "examine": "A strange glowing tear.",
+      "members": true,
+      "highalch": 300,
+      "lowalch": 200,
+      "limit": 13000,
+      "value": 500
+    },
+    {
+      "id": 31115,
+      "name": "Eye of Ayak (uncharged)",
+      "examine": "This staff is imbued with demonic power. It is currently uncharged.",
+      "members": true,
+      "highalch": 3600000,
+      "lowalch": 2400000,
+      "limit": 8,
+      "value": 6000000
+    },
+    {
+      "id": 31235,
+      "name": "Gryphon feather",
+      "examine": "A feather from a gryphon.",
+      "members": true,
+      "highalch": 9,
+      "lowalch": 6,
+      "limit": 11000,
+      "value": 15
+    },
+    {
+      "id": 31245,
+      "name": "Belle's folly (tarnished)",
+      "examine": "This blade needs some work before it will be useable.",
+      "members": true,
+      "highalch": 27000,
+      "lowalch": 18000,
+      "limit": null,
+      "value": 45000
+    },
+    {
+      "id": 31511,
+      "name": "Elkhorn frag",
+      "examine": "This can be propagated in a coral nursery.",
+      "members": true,
+      "highalch": 15,
+      "lowalch": 10,
+      "limit": 600,
+      "value": 26
+    },
+    {
+      "id": 31513,
+      "name": "Pillar frag",
+      "examine": "This can be propagated in a coral nursery.",
+      "members": true,
+      "highalch": 31,
+      "lowalch": 20,
+      "limit": 600,
+      "value": 52
+    },
+    {
+      "id": 31912,
+      "name": "Adamant cannonball",
+      "examine": "Ammo suited for a boat's cannon.",
+      "members": true,
+      "highalch": 108,
+      "lowalch": 72,
+      "limit": 11000,
+      "value": 180
+    },
+    {
+      "id": 31914,
+      "name": "Rune cannonball",
+      "examine": "Ammo suited for a boat's cannon.",
+      "members": true,
+      "highalch": 840,
+      "lowalch": 560,
+      "limit": 11000,
+      "value": 1400
+    },
+    {
+      "id": 32328,
+      "name": "Yellowfin",
+      "examine": "Some nicely cooked yellowfin.",
+      "members": true,
+      "highalch": 102,
+      "lowalch": 68,
+      "limit": null,
+      "value": 170
+    },
+    {
+      "id": 32892,
+      "name": "Cupronickel bar",
+      "examine": "It's a bar of cupronickel.",
+      "members": true,
+      "highalch": 16,
+      "lowalch": 11,
+      "limit": 10000,
+      "value": 28
+    },
+    {
+      "id": 33093,
+      "name": "Cow slippers",
+      "examine": "Cute cow slippers.",
+      "members": true,
+      "highalch": 600,
+      "lowalch": 400,
+      "limit": 4,
+      "value": 1000
+    },
+    {
+      "id": 33106,
+      "name": "Raw t-bone steak",
+      "examine": "I need to cook this first.",
+      "members": false,
+      "highalch": 6,
+      "lowalch": 4,
+      "limit": 13000,
+      "value": 10
+    },
+    {
+      "id": 33625,
+      "name": "Letvek",
+      "examine": "Let 'em what?",
+      "members": true,
+      "highalch": 144,
+      "lowalch": 96,
+      "limit": null,
+      "value": 240
+    },
+    {
+      "id": 33631,
+      "name": "Crimson kisten",
+      "examine": "A nasty war implement. I should be careful not to hit myself.",
+      "members": true,
+      "highalch": 144000,
+      "lowalch": 96000,
+      "limit": 5,
+      "value": 240000
+    },
+    {
+      "id": 33651,
+      "name": "Stymphike feather",
+      "examine": "An alien feather from an alien bird.",
+      "members": true,
+      "highalch": 7,
+      "lowalch": 4,
+      "limit": null,
+      "value": 12
+    },
+    {
+      "id": 33657,
+      "name": "Orikalkum gravel",
+      "examine": "Unrefined dragon metal.",
+      "members": true,
+      "highalch": 102000,
+      "lowalch": 68000,
+      "limit": null,
+      "value": 170000
+    },
+    {
+      "id": 33661,
+      "name": "Venator fang",
+      "examine": "A sharp tooth.",
+      "members": true,
+      "highalch": 300,
+      "lowalch": 200,
+      "limit": 10000,
+      "value": 500
+    },
+    {
+      "id": 33663,
+      "name": "Venator tooth",
+      "examine": "A pointy tooth.",
+      "members": true,
+      "highalch": 150,
+      "lowalch": 100,
+      "limit": 10000,
+      "value": 250
+    },
+    {
+      "id": 34027,
+      "name": "Hallowfell",
+      "examine": "This really fells my hallow.",
+      "members": true,
+      "highalch": 750000,
+      "lowalch": 500000,
+      "limit": 100,
+      "value": 1250000
+    },
+    {
+      "id": 34033,
+      "name": "Ardeaglais teleport",
+      "examine": "Teleports you to Ardeaglais.",
+      "members": true,
+      "highalch": 6,
+      "lowalch": 4,
+      "limit": null,
+      "value": 10
+    },
+    {
+      "id": 34410,
+      "name": "Water sapphire",
+      "examine": "Who needs a watering can these days.",
+      "members": true,
+      "highalch": 12000,
+      "lowalch": 8000,
+      "limit": null,
+      "value": 20000
+    }
+  ]
+}

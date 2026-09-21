@@ -64,6 +64,7 @@ npm run build:icons    # rasterize public/icons/icon.svg -> PWA/iOS PNGs
 npm run build:icon-set # regenerate src/lib/icons.ts from the vendored packs
 npm run build:guides   # regenerate public/guides/*.json from the wiki's quick guides
 npm run build:bosses   # regenerate src/data/bosses.json + public/boss-detail/*.json
+npm run build:items    # regenerate src/data/items.json from the GE item mapping
 npx wrangler d1 migrations apply curators-journal --local   # once per clone, and after a new migration
 ```
 
@@ -247,11 +248,32 @@ isn't this id's JSON means there is none. The id check matters as much as the
 parse — a fallback returning some other valid JSON would otherwise render as
 another boss's drop table.
 
-**Regenerate quests first, then diaries, then guides, then bosses.**
+**The item dataset is a deliberate subset.** `src/data/items.json` comes from
+`prices.runescape.wiki/api/v1/osrs/mapping` — a real structured dataset, so
+there is no parsing — and `scripts/build-items.ts` trims it to the 657 items our
+drop tables name. That was weighed: the full mapping is 705 KB (117 KB gzipped)
+without the icon field, which would make it the second-largest asset in the app,
+and nothing can reach the other 4005 items because no item search exists. The
+subset is 97 KB / 19 KB gzipped, about the size of `bosses.json`. **The cost is
+that an item search over everything cannot be built on this file** — widening
+the trim is one edit plus a re-measure, but it is a 600 KB decision, not a
+detail.
+
+The join is by **name**, and it is safe only because all 4662 mapping names are
+distinct once normalized. The generator asserts that and fails on a duplicate
+rather than picking one; `normalizeItemName` lives in `src/lib/items.ts` so the
+generator's trim and the app's lookup cannot fold names differently. The `icon`
+field is deliberately dropped — it names a Jagex sprite, and NOTICE.md's
+position is that those are considered decisions, not defaults.
+
+**Regenerate quests first, then diaries, then guides, then bosses, then items.**
 `build-bosses` resolves each boss's `questAppearances` against `quests.json`,
-so it shares the dependency below; it is last because it is the only generator
-that also reaches a _second_ host (the hiscores, for the activity names), and
-a Jagex outage shouldn't stop work that would otherwise have succeeded.
+so it shares the dependency below; it comes after the wiki-only generators
+because it is the first that also reaches a _second_ host (the hiscores, for the
+activity names), and a Jagex outage shouldn't stop work that would otherwise
+have succeeded. `build-items` is last: it derives its trim from the drop tables
+in `public/boss-detail/`, so against a stale set it silently omits the items a
+newly added boss drops.
 `build-diaries` resolves
 every diary prerequisite against `quests.json` and fails loud on one it can't
 find, so running it against a stale quest list turns a renamed quest into a
@@ -260,7 +282,7 @@ titles out of `quests.sources.json` — that lock is the only file carrying page
 titles, and the ten Recipe for Disaster subquests are filed under names that
 don't match their display names.
 
-**Both generators exit 0 / 1 / 2**, and the distinction is load-bearing rather
+**Every generator exits 0 / 1 / 2**, and the distinction is load-bearing rather
 than decorative: `0` current, `1` a finding that wants a human (stale data, or
 a parse that failed), `2` the wiki was unreachable. A volunteer-run wiki being
 down says nothing about our data, and collapsing that into the same code as a
@@ -498,7 +520,7 @@ block so that it reads the generators' exit codes against the constants they
 are defined with instead of re-encoding them as numbers in YAML, and so that it
 is type-checked, linted and runnable by hand. Without `--open-pr` it reports
 and writes nothing, which is what makes it safe to run locally. It drives all
-four generators from one `GENERATORS` list and stages `GENERATED_PATHS` —
+five generators from one `GENERATORS` list and stages `GENERATED_PATHS` —
 adding a generator means adding it to both, or the refresh PR carries a lock
 file claiming a change it doesn't contain. `GENERATED_PATHS` currently covers
 `src/data`, `public/guides` and `public/boss-detail`.
