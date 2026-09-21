@@ -39,6 +39,18 @@ const router = createRouter({
       meta: { panelId: 'queue' },
       props: true,
     },
+    // Diaries are a mode inside the Quests panel, not a panel of their own
+    // (slice 6e, variant B — a fifth tab cost every other tab its label). The
+    // mode lives in the path for the same reason quest detail's origin does:
+    // iOS kills backgrounded PWAs, and only the URL survives the relaunch. It
+    // also means this path keeps working for anyone whose app was killed
+    // holding the old `/diaries` panel URL.
+    {
+      path: '/diaries',
+      name: 'diaries',
+      component: () => import('@/views/QuestsView.vue'),
+      meta: { panelId: 'quests' },
+    },
     // Where the plugin's QR code lands: `/sync?hash=…`. Not a panel and never in
     // the tab bar; it borrows Settings' identity so the header and tab
     // highlight read as Settings, which is where it always ends up. A client

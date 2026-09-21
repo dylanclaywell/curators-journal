@@ -237,19 +237,23 @@ twice once, and the two copies disagreed.
 
 After `npm run build`, grep the `index-*.js` named in `dist/client/index.html`
 for `cooks-assistant`, `ardougne-easy` and `localforage`. All three must be
-absent. Together the two datasets are most of the ~1.1 MB precache, so a third
-wants weighing rather than adding — the quest walkthroughs were weighed and
-kept _out_, which is why they're served from `public/guides/` instead. Check
-that too: `npm run build` should report **62 precache entries, ~1144 KiB**, and
-`dist/client/sw.js` must mention `guides/` only in the runtime rule, never in
-the precache manifest.
+absent. `dist/client/sw.js` must mention `guides/` only in the runtime rule,
+never in the precache manifest. Those two checks are about _what_ ships, so
+they hold regardless of how the build splits chunks.
 
-The count is a tripwire for a _new asset_, and it moves for a benign reason:
-it was 58 until the `/sync` view became one more lazy consumer of the `sync`,
-`persist` and `api` modules, which made Rollup lift them into shared chunks.
-Nothing new shipped. So when it changes, diff the precache manifest against the
-previous build and look at what the new entries _are_ before trusting or
-resetting the number.
+**There is deliberately no pinned precache entry count or byte budget.** There
+was one, and it was wrong three times running for reasons that shipped nothing
+new: 58 → 62 when the `/sync` view made `sync`, `persist` and `api` shared
+chunks, then → 60 when the Diaries panel was deleted and `DiaryList` folded
+into the Quests chunk. Rollup re-splits whenever the set of lazy consumers
+changes, which is most sessions, so the number measures chunking rather than
+weight and a gate on it only teaches you to reset it unread. The thing actually
+worth protecting is that the two datasets are most of the ~1.1 MB precache and
+a **third** large asset wants weighing rather than adding — the quest
+walkthroughs were weighed and kept _out_, which is why they're served from
+`public/guides/`. That judgement is made when adding an asset, not read off a
+build summary; if it ever needs enforcing, enforce the thing itself (total
+precache bytes with real headroom) rather than an entry count.
 
 **Anything a panel needs, it gets by calling one `ensure*` on a store.**
 `useQuestsStore().ensureReady()` loads the dataset _and_ the levels. The

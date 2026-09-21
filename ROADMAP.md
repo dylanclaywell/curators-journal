@@ -47,26 +47,27 @@ most of its words on keeping the two apart.
 linking" in Phase 5: diary tiers on the wire, the merge, locked rows in the UI,
 and a `/sync?hash=` link so the plugin's QR code can fill in the account hash.
 None of it has met real plugin data yet, because the plugin (5d–5f) does not
-exist. **Phase 6 (achievement diaries) is built** and has its own section below;
-its one open question is where the diary list lives (6e).
+exist. **Phase 6 (achievement diaries) is done** and has its own section below.
+Its one open question — where the diary list lives (6e) — is settled: diaries
+are a mode inside the Quests panel, not a tab of their own.
 
 ## Phases
 
-| Phase                           | State | Notes                                                                        |
-| ------------------------------- | ----- | ---------------------------------------------------------------------------- |
-| 0 — Scaffold                    | done  | Vue 3 + TS, Tailwind v4, PWA, Workers + Static Assets, CI, release-please    |
-| 1 — Shell                       | done  | Panel registry, generated routes, tab bar, Settings panel                    |
-| 2 — Hiscores                    | done  | 2a route + parser · 2b store + persistence · 2c skills grid                  |
-| 3 — Quest dataset               | done  | 214 quests committed; `build:quests` fetches · parses · cross-checks · emits |
-| 4 — Quest engine and queue      | done  | Engine, detail, queue, reorder (4e′) and refresh-on-resume (4f) all built    |
-| 5 — RuneLite sync               | half  | Web + Worker side done (5a–5c); the plugin itself (5d–5f) not started        |
-| 5+ — Diary sync and linking     | done  | Web side of 5g–5k: diary tiers on the pipe, locked rows, `/sync?hash=` link  |
-| 6 — Achievement diaries         | built | Dataset, engine, store, UI. Panel-or-Quests-mode placement (6e) undecided    |
-| Later — ironman requirements    | —     | Currently dropped entirely; see below                                        |
-| Later — prices panel            | —     | `prices.runescape.wiki`, same Worker-proxy shape                             |
-| Later — boss tracking           | —     | Player boss list: kill counts, drops. See "Banked: boss tracking"            |
-| Later — wide-and-shallow layout | —     | Tabs to a left strip when short and wide; see CLAUDE.md                      |
-| Later — plugin manifests        | —     | The panel registry is already the seam                                       |
+| Phase                           | State | Notes                                                                          |
+| ------------------------------- | ----- | ------------------------------------------------------------------------------ |
+| 0 — Scaffold                    | done  | Vue 3 + TS, Tailwind v4, PWA, Workers + Static Assets, CI, release-please      |
+| 1 — Shell                       | done  | Panel registry, generated routes, tab bar, Settings panel                      |
+| 2 — Hiscores                    | done  | 2a route + parser · 2b store + persistence · 2c skills grid                    |
+| 3 — Quest dataset               | done  | 214 quests committed; `build:quests` fetches · parses · cross-checks · emits   |
+| 4 — Quest engine and queue      | done  | Engine, detail, queue, reorder (4e′) and refresh-on-resume (4f) all built      |
+| 5 — RuneLite sync               | half  | Web + Worker side done (5a–5c); the plugin itself (5d–5f) not started          |
+| 5+ — Diary sync and linking     | done  | Web side of 5g–5k: diary tiers on the pipe, locked rows, `/sync?hash=` link    |
+| 6 — Achievement diaries         | done  | Dataset, engine, store, UI. 6e settled: a mode inside Quests, mode in the path |
+| Later — ironman requirements    | —     | Currently dropped entirely; see below                                          |
+| Later — prices panel            | —     | `prices.runescape.wiki`, same Worker-proxy shape                               |
+| Later — boss tracking           | —     | Player boss list: kill counts, drops. See "Banked: boss tracking"              |
+| Later — wide-and-shallow layout | —     | Tabs to a left strip when short and wide; see CLAUDE.md                        |
+| Later — plugin manifests        | —     | The panel registry is already the seam                                         |
 
 ## Phase 3: the quest dataset
 
@@ -1190,13 +1191,21 @@ depends on one.
   wrong — the page was fine. Screenshotting that view is unreliable in this
   setup; the app is not. Do not chase it.
 
-**Open — placement (6e).** Both variants ship right now: a Diaries panel
-(`/diaries`, `DiariesView.vue`) and a segmented mode inside Quests
-(`QuestsView.vue`). The panel makes five tabs, which trips the icon-only
-threshold for _every_ tab. It needs judging docked on the iPad; the loser is
-deleted and the winner's state wired into the route (a `/diaries/:id`
-drill-down for the panel, the mode in the path for the other). `DiaryList.vue`
-survives either way, which is why it is separate.
+**Settled — placement (6e): a mode inside Quests.** Both variants shipped side
+by side for a while; the Diaries panel (`DiariesView.vue`) is deleted and the
+segmented mode in `QuestsView.vue` is the one that stays. Judged on the device:
+a fifth tab trips the tab bar's icon-only threshold, so _every_ panel loses its
+label to buy one tab — too much for a list that is already one tap inside
+Quests. Boss tracking wanting a tab of its own made the trade worse still.
+
+The mode now lives in the path rather than in a ref: `/quests` and `/diaries`
+are two route records on the same component, both carrying
+`meta.panelId: 'quests'`, so the tab bar stays lit on Quests and a PWA killed
+in diary mode relaunches in diary mode. Keeping `/diaries` as the diary path
+also means an app killed holding the old panel URL still opens where it left
+off. Switching modes navigates with `replace`, so toggling doesn't stack
+history. `DiaryList.vue` is unchanged — being separate from either view is
+what made the swap this small.
 
 ## Open questions
 

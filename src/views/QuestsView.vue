@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
+import { useRoute } from 'vue-router'
 import AppIcon from '@/components/AppIcon.vue'
 import DiaryList from '@/components/DiaryList.vue'
 import { useQuestsStore } from '@/stores/quests'
@@ -16,17 +17,24 @@ const quests = useQuestsStore()
 onMounted(() => void quests.ensureReady())
 
 /*
- * Variant B of slice 6e: diaries as a mode inside this panel rather than a
- * fifth tab. Costs no tab-bar room, at the price of putting two different
- * kinds of thing behind one label.
+ * Diaries are a mode inside this panel rather than a fifth tab (slice 6e,
+ * variant B): a Diaries panel tripped the tab bar's icon-only threshold and
+ * cost *every* tab its label, which the mode costs nothing. The price is two
+ * different kinds of thing behind one label, and that is the accepted trade.
  *
- * Deliberately NOT persisted and NOT in the route. Both variants are running
- * at once so they can be compared on the device, and whichever wins gets
- * wired up properly — a mode that survives a relaunch has to live in the URL
- * (iOS kills backgrounded PWAs), and that is a decision to make once, not
- * twice. See ROADMAP.md Phase 6.
+ * The mode is in the path (`/quests` and `/diaries`), not a ref: iOS kills
+ * backgrounded PWAs and only the URL survives the relaunch, so a mode held in
+ * a variable would silently reset a player back to quests. Same reasoning as
+ * quest detail's origin panel — see router/index.ts.
  */
-const mode = ref<'quests' | 'diaries'>('quests')
+const route = useRoute()
+const MODES = [
+  { value: 'quests', path: '/quests' },
+  { value: 'diaries', path: '/diaries' },
+] as const
+const mode = computed<'quests' | 'diaries'>(() =>
+  route.path === '/diaries' ? 'diaries' : 'quests',
+)
 
 const search = ref('')
 
@@ -111,21 +119,25 @@ function isBlocked(id: string): boolean {
     <div class="sticky top-0 z-20 flex flex-col gap-2 bg-parchment pb-2">
       <!-- Segmented, not two tabs: these are two views of one panel, and the
            in-out bevel pair already means "selected" everywhere else here. -->
+      <!-- RouterLinks, not buttons: the mode is the route now, so switching
+           it has to go through navigation or the URL and the view disagree.
+           `replace`, so toggling modes doesn't stack history entries that a
+           back gesture then has to walk through one at a time. -->
       <div class="flex gap-1.5">
-        <button
-          v-for="m in ['quests', 'diaries'] as const"
-          :key="m"
-          type="button"
-          class="tap pressable bevel-oak flex-1 text-[13px] font-bold capitalize"
+        <RouterLink
+          v-for="m in MODES"
+          :key="m.value"
+          :to="m.path"
+          replace
+          class="tap pressable bevel-oak flex flex-1 items-center justify-center text-[13px] font-bold capitalize no-underline"
           :class="
-            mode === m
+            mode === m.value
               ? 'bevel-oak-in bg-brown text-gold engraved'
               : 'bg-brown-lt text-parchment-3'
           "
-          @click="mode = m"
         >
-          {{ m }}
-        </button>
+          {{ m.value }}
+        </RouterLink>
       </div>
 
       <template v-if="mode === 'quests'">
