@@ -60,15 +60,19 @@ watch(
 )
 
 /*
- * Copy, for when this page opened in the browser rather than the installed app.
+ * A scanned code opens in the browser, not the installed app — tested on an
+ * iPad with the app installed, and there is no link that opens a home-screen
+ * app from Safari. The app keeps its own data, so linking *here* sets the hash
+ * where the app never looks. What both do share is the clipboard.
  *
- * A scanned code opens in the browser, and the installed app may keep its own
- * data, so linking here would set the hash in the wrong place. Copying it lets
- * the player paste into the app's Settings instead — a clipboard is shared
- * between the two even where storage is not.
+ * So in a browser tab the page leads with Copy, and Link is demoted to "this
+ * browser instead": still right for someone with no installed app, but the
+ * wrong default for the person this is built for. The page can't tell whether
+ * an installed app exists — only whether *it* is one — so this shows for
+ * everyone in a tab, and says why rather than assuming.
  *
- * Hidden where the browser can't write to it, and the hint is hidden inside
- * the installed app, where there is nowhere else to go.
+ * The installed app keeps the plain Cancel / Link pair: there it is already
+ * the right place, and there is nowhere else to go.
  */
 const canCopy =
   typeof navigator !== 'undefined' &&
@@ -76,6 +80,8 @@ const canCopy =
 const inBrowser =
   typeof window !== 'undefined' &&
   !window.matchMedia('(display-mode: standalone)').matches
+/** Copy leads only where it can work; a tab that can't copy keeps Link. */
+const leadWithCopy = inBrowser && canCopy
 const copyState = ref<'idle' | 'copied' | 'failed'>('idle')
 let copyTimer: ReturnType<typeof setTimeout> | undefined
 
@@ -141,33 +147,38 @@ function cancel(): void {
         plugin's panel.
       </p>
 
-      <div class="flex gap-2">
-        <div
-          class="bevel-in min-w-0 flex-1 bg-parchment-2 px-2 py-2 font-mono text-[16px] break-all"
-        >
-          {{ candidate }}
-        </div>
-        <button
-          v-if="canCopy"
-          type="button"
-          class="tap pressable bevel-oak flex w-20 shrink-0 items-center justify-center bg-brown-lt px-2 font-bold text-parchment-3"
-          @click="copy"
-        >
-          {{
-            copyState === 'copied'
-              ? 'Copied'
-              : copyState === 'failed'
-                ? 'Failed'
-                : 'Copy'
-          }}
-        </button>
+      <div
+        class="bevel-in bg-parchment-2 px-2 py-2 font-mono text-[16px] break-all"
+      >
+        {{ candidate }}
       </div>
 
-      <p v-if="inBrowser" class="m-0 max-w-[52ch] text-[15px] text-ink-soft">
-        Using the installed app? It keeps its own data, separate from this
-        browser, so linking here won't link it. Copy the hash, open the app, and
-        paste it into Settings there.
-      </p>
+      <!-- Oak on a parchment page: the chrome material, so it reads as a
+           plaque set into the page rather than another line of body text.
+           Deliberately not red, amber or green — those mean quest state here,
+           and a notice is not a quest. -->
+      <aside
+        v-if="inBrowser"
+        class="bevel-oak flex flex-col gap-1.5 bg-brown p-3 text-parchment-2"
+      >
+        <h3
+          class="m-0 font-display text-[17px] leading-tight text-gold engraved"
+        >
+          Best used as an installed app
+        </h3>
+        <p class="m-0 text-[15px]">
+          Curator's Journal is meant to run from your home screen. In a browser
+          tab, some browsers — Safari included — clear a site's saved data after
+          about a week without a visit, and your quest and diary progress lives
+          in that data. You can use it here if you'd rather, but it may be
+          wiped.
+        </p>
+        <p class="m-0 text-[15px]">
+          To link the installed app instead, copy the hash, open the app, and
+          paste it into Settings. To install it, use Share, then Add to Home
+          Screen.
+        </p>
+      </aside>
 
       <p v-if="replacing" class="m-0 max-w-[52ch] text-[15px] text-doing">
         This replaces the hash currently set,
@@ -179,7 +190,41 @@ function cancel(): void {
         Your own progress isn't touched, and your merge setting stays as it is.
       </p>
 
-      <div class="flex gap-2">
+      <!-- Copy leads in a tab; Link steps back to a secondary "this browser
+           instead". Two layouts rather than one with reordered classes, so the
+           installed app's pair stays exactly as it was. -->
+      <template v-if="leadWithCopy">
+        <button
+          type="button"
+          class="tap pressable bevel-oak flex items-center justify-center bg-brown px-3 font-bold text-gold engraved"
+          @click="copy"
+        >
+          {{
+            copyState === 'copied'
+              ? 'Copied'
+              : copyState === 'failed'
+                ? "Couldn't copy"
+                : 'Copy hash'
+          }}
+        </button>
+        <div class="flex gap-2">
+          <button
+            type="button"
+            class="tap pressable bevel-oak flex flex-1 items-center justify-center bg-brown-lt px-3 font-bold text-parchment-3"
+            @click="cancel"
+          >
+            Cancel
+          </button>
+          <button
+            type="button"
+            class="tap pressable bevel-oak flex flex-[2] items-center justify-center bg-brown-lt px-3 font-bold text-parchment-3"
+            @click="link"
+          >
+            Link this browser instead
+          </button>
+        </div>
+      </template>
+      <div v-else class="flex gap-2">
         <button
           type="button"
           class="tap pressable bevel-oak flex flex-1 items-center justify-center bg-brown-lt px-3 font-bold text-parchment-3"
