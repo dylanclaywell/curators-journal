@@ -1,0 +1,429 @@
+{
+ "id": "obor",
+ "name": "Obor",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Obor",
+ "overview": [
+  "Lower-level players (with 50 Magic and 40 Prayer) need to remember to always turn on Protect from Missiles before climbing down and starting the fight. Start with Snare to prevent Obor from reaching you and recast it every time Obor is able to walk again. Use the highest available Magic spell to kill him. To efficiently maintain distance and minimise damage taken, wait for Obor to be as close to one end of the room before Snaring, then run to the other side, casting offensive spells in between. Wait until he walks to the opposite wall again before repeating. Even with this strategy, remember to bring enough food. Obor can do serious damage as soon as the Snare wears off. If you are free-to-play you might want to bring an energy potion as well.",
+  "It can be useful to know that Obor does not always keep walking up to melee distance before attacking. This means he might stop walking towards you before standing next to you, giving you the time to snare or bind him without having to run to the other side of the arena. This makes it easier to cast more spells in a shorter amount of time, making the fight more efficient.",
+  "Note: It's been observed that Snare does not seem to immobilize Obor for the full 9.6 seconds on occasion (consistently?). If you're a member, try using higher level binding abilities such as Entangle or the Ice spells.",
+  "As Obor is weak to magic, this is the preferred combat style for members with at least 50 Magic, 60 Defence and 42 in the other combat stats. You should wear void knight or elite void knight equipment with the void mage helm. Stand with your back against a wall to avoid knock-backs. Pray a Defence-boosting prayer such as Steel Skin. Expect to take more damage using this method.",
+  "For free-to-play, at least 50 Defence and 60 Ranged along with 40 Prayer for Protect from Missiles are recommended for Obor. Players should wear a rune chainbody as it provides the best Defence against Obor's crush without lowering Ranged attack bonus. Members with 75 Ranged should use a toxic blowpipe as Obor's low Defence level combined with its fast attack speed makes it the strongest weapon to use against him.",
+  "Melee is also a good option, as it is faster than the magic method (snare) to kill Obor, but it will be more dangerous. At least level 50 Attack/Strength/Defence and 40 Prayer for Protect from Missiles are recommended. Obor's slam attack can knock you back, and your next attack will be slightly delayed whether you are standing next to a wall or not. Members can use an abyssal whip or a dragon scimitar, while free players can use a rune scimitar. You'll also want good melee armour with decent ranged and melee defensive stats. If you are free-to-play, you may also want to bring a Strength potion."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": "Members",
+   "drops": [
+    {
+     "name": "Giant bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Giant key",
+   "version": "Members",
+   "drops": [
+    {
+     "name": "Giant key",
+     "quantity": "1",
+     "rarity": "1/16",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": "Members",
+   "drops": [
+    {
+     "name": "Iron full helm",
+     "quantity": "1",
+     "rarity": "5/135",
+     "rolls": null
+    },
+    {
+     "name": "Iron dagger",
+     "quantity": "1",
+     "rarity": "4/135",
+     "rolls": null
+    },
+    {
+     "name": "Iron kiteshield",
+     "quantity": "1",
+     "rarity": "3/135",
+     "rolls": null
+    },
+    {
+     "name": "Steel longsword",
+     "quantity": "1",
+     "rarity": "2/135",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": "Members",
+   "drops": [
+    {
+     "name": "Iron arrow",
+     "quantity": "3",
+     "rarity": "6/135",
+     "rolls": null
+    },
+    {
+     "name": "Fire rune",
+     "quantity": "15",
+     "rarity": "3/135",
+     "rolls": null
+    },
+    {
+     "name": "Water rune",
+     "quantity": "7",
+     "rarity": "3/135",
+     "rolls": null
+    },
+    {
+     "name": "Law rune",
+     "quantity": "2",
+     "rarity": "3/135",
+     "rolls": null
+    },
+    {
+     "name": "Steel arrow",
+     "quantity": "10",
+     "rarity": "2/135",
+     "rolls": null
+    },
+    {
+     "name": "Mind rune",
+     "quantity": "3",
+     "rarity": "2/135",
+     "rolls": null
+    },
+    {
+     "name": "Cosmic rune",
+     "quantity": "2",
+     "rarity": "2/135",
+     "rolls": null
+    },
+    {
+     "name": "Nature rune",
+     "quantity": "6",
+     "rarity": "2/135",
+     "rolls": null
+    },
+    {
+     "name": "Chaos rune",
+     "quantity": "2",
+     "rarity": "1/135",
+     "rolls": null
+    },
+    {
+     "name": "Death rune",
+     "quantity": "2",
+     "rarity": "1/135",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Coins",
+   "version": "Members",
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "38",
+     "rarity": "14/135",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "52",
+     "rarity": "10/135",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "15",
+     "rarity": "8/135",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "8",
+     "rarity": "6/135",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "88",
+     "rarity": "2/135",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": "Members",
+   "drops": [
+    {
+     "name": "Limpwurt root",
+     "quantity": "1",
+     "rarity": "11/135",
+     "rolls": null
+    },
+    {
+     "name": "Beer",
+     "quantity": "1",
+     "rarity": "6/135",
+     "rolls": null
+    },
+    {
+     "name": "Body talisman",
+     "quantity": "1",
+     "rarity": "2/135",
+     "rolls": null
+    },
+    {
+     "name": "Nothing",
+     "quantity": null,
+     "rarity": "1/135",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": "Members",
+   "drops": [
+    {
+     "name": "Ensouled giant head",
+     "quantity": "1",
+     "rarity": "1/25",
+     "rolls": null
+    },
+    {
+     "name": "Long bone",
+     "quantity": "1",
+     "rarity": "1/400",
+     "rolls": null
+    },
+    {
+     "name": "Giant champion scroll",
+     "quantity": "1",
+     "rarity": "1/5000",
+     "rolls": null
+    },
+    {
+     "name": "Curved bone",
+     "quantity": "1",
+     "rarity": "1/5012.5",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "100%",
+   "version": "Free-to-play",
+   "drops": [
+    {
+     "name": "Big bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Giant key",
+   "version": "Free-to-play",
+   "drops": [
+    {
+     "name": "Giant key",
+     "quantity": "1",
+     "rarity": "1/16",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": "Free-to-play",
+   "drops": [
+    {
+     "name": "Iron full helm",
+     "quantity": "1",
+     "rarity": "5/135",
+     "rolls": null
+    },
+    {
+     "name": "Iron dagger",
+     "quantity": "1",
+     "rarity": "4/135",
+     "rolls": null
+    },
+    {
+     "name": "Iron kiteshield",
+     "quantity": "1",
+     "rarity": "3/135",
+     "rolls": null
+    },
+    {
+     "name": "Steel longsword",
+     "quantity": "1",
+     "rarity": "2/135",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": "Free-to-play",
+   "drops": [
+    {
+     "name": "Iron arrow",
+     "quantity": "3",
+     "rarity": "6/135",
+     "rolls": null
+    },
+    {
+     "name": "Fire rune",
+     "quantity": "15",
+     "rarity": "3/135",
+     "rolls": null
+    },
+    {
+     "name": "Water rune",
+     "quantity": "7",
+     "rarity": "3/135",
+     "rolls": null
+    },
+    {
+     "name": "Law rune",
+     "quantity": "2",
+     "rarity": "3/135",
+     "rolls": null
+    },
+    {
+     "name": "Steel arrow",
+     "quantity": "10",
+     "rarity": "2/135",
+     "rolls": null
+    },
+    {
+     "name": "Mind rune",
+     "quantity": "3",
+     "rarity": "2/135",
+     "rolls": null
+    },
+    {
+     "name": "Cosmic rune",
+     "quantity": "2",
+     "rarity": "2/135",
+     "rolls": null
+    },
+    {
+     "name": "Nature rune",
+     "quantity": "6",
+     "rarity": "2/135",
+     "rolls": null
+    },
+    {
+     "name": "Chaos rune",
+     "quantity": "2",
+     "rarity": "1/135",
+     "rolls": null
+    },
+    {
+     "name": "Death rune",
+     "quantity": "2",
+     "rarity": "1/135",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Coins",
+   "version": "Free-to-play",
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "5",
+     "rarity": "18/135",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "38",
+     "rarity": "14/135",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "52",
+     "rarity": "10/135",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "15",
+     "rarity": "8/135",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "10",
+     "rarity": "7/135",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "8",
+     "rarity": "6/135",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "88",
+     "rarity": "2/135",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": "Free-to-play",
+   "drops": [
+    {
+     "name": "Limpwurt root",
+     "quantity": "1",
+     "rarity": "11/135",
+     "rolls": null
+    },
+    {
+     "name": "Beer",
+     "quantity": "1",
+     "rarity": "6/135",
+     "rolls": null
+    },
+    {
+     "name": "Body talisman",
+     "quantity": "1",
+     "rarity": "2/135",
+     "rolls": null
+    },
+    {
+     "name": "Nothing",
+     "quantity": null,
+     "rarity": "1/135",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

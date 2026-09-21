@@ -1,0 +1,240 @@
+{
+ "id": "doom-of-mokhaiotl",
+ "name": "Doom of Mokhaiotl",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Doom_of_Mokhaiotl",
+ "overview": [
+  "As a delve boss, pursuing the Doom of Mokhaiotl into deeper delve levels will increase the difficulty of the fight, up to delve level 8. In its most basic form (delve level 1), the Doom attacks with ranged and magic similar to that of the Leviathan; orbs from a distance, with blue being magic and green being ranged, blocked by praying before impact and a melee attack if directly next to it. Additionally, it will also use a rock throw attack which disables protection prayers upon shattering, then launching a magic or ranged projectile. Around a minute into the fight, it will then prepare a shockwave attack that the player must counter by making use of the volatile earth around the area.",
+  "As the player descends down the burrow hole, the Doom of Mokhaiotl's health slightly increases; the rest of its stats stay the same. Additionally, new mechanics are added and existing mechanics are enhanced upon, making the fight more challenging. After clearing delve 8, the player is awarded a \"deep delve\" count, and players can continue descending further down. These subsequent levels are level 8 in theory, though the Doom's health is reduced to 625 and hazards from previous levels continue to persist which practically make it more difficult.",
+  "Similar to Yama, players who die fighting the Doom are sent back to the lobby area instead of their respawn point, where their graves are also located. Players will have their reclamation fee reduced by 75% until they have 20 total delves, after which the standard death cost will apply."
+ ],
+ "tables": [
+  {
+   "section": "Uniques",
+   "version": null,
+   "drops": [
+    {
+     "name": "Avernic treads",
+     "quantity": "1",
+     "rarity": "1/1350",
+     "rolls": null
+    },
+    {
+     "name": "Eye of Ayak (uncharged)",
+     "quantity": "1",
+     "rarity": "1/2000",
+     "rolls": null
+    },
+    {
+     "name": "Mokhaiotl cloth",
+     "quantity": "1",
+     "rarity": "1/2500",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Dragon med helm",
+     "quantity": "1 (noted)",
+     "rarity": "5/104",
+     "rolls": null
+    },
+    {
+     "name": "Dragon platelegs",
+     "quantity": "2-4 (noted)",
+     "rarity": "1/104",
+     "rolls": null
+    },
+    {
+     "name": "Mystic earth staff",
+     "quantity": "1 (noted)",
+     "rarity": "5/104",
+     "rolls": null
+    },
+    {
+     "name": "Rune pickaxe",
+     "quantity": "1-3 (noted)",
+     "rarity": "5/104",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": null,
+   "drops": [
+    {
+     "name": "Death rune",
+     "quantity": "50-70",
+     "rarity": "5/104",
+     "rolls": null
+    },
+    {
+     "name": "Chaos rune",
+     "quantity": "50-70",
+     "rarity": "5/104",
+     "rolls": null
+    },
+    {
+     "name": "Earth rune",
+     "quantity": "500-1000",
+     "rarity": "5/104",
+     "rolls": null
+    },
+    {
+     "name": "Fire rune",
+     "quantity": "500-1000",
+     "rarity": "5/104",
+     "rolls": null
+    },
+    {
+     "name": "Steel cannonball",
+     "quantity": "200-600",
+     "rarity": "5/104",
+     "rolls": null
+    },
+    {
+     "name": "Onyx bolts",
+     "quantity": "5-15",
+     "rarity": "5/104",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Ores",
+   "version": null,
+   "drops": [
+    {
+     "name": "Coal",
+     "quantity": "15-50 (noted)",
+     "rarity": "5/104",
+     "rolls": null
+    },
+    {
+     "name": "Gold ore",
+     "quantity": "20-60 (noted)",
+     "rarity": "5/104",
+     "rolls": null
+    },
+    {
+     "name": "Runite ore",
+     "quantity": "3-6 (noted)",
+     "rarity": "5/104",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Seeds",
+   "version": null,
+   "drops": [
+    {
+     "name": "Celastrus seed",
+     "quantity": "1",
+     "rarity": "3/104",
+     "rolls": null
+    },
+    {
+     "name": "Ranarr seed",
+     "quantity": "1-3",
+     "rarity": "2/104",
+     "rolls": null
+    },
+    {
+     "name": "Spirit seed",
+     "quantity": "1",
+     "rarity": "3/104",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Resources",
+   "version": null,
+   "drops": [
+    {
+     "name": "Aether catalyst",
+     "quantity": "151-400",
+     "rarity": "5/104",
+     "rolls": null
+    },
+    {
+     "name": "Dragon dart tip",
+     "quantity": "30-90",
+     "rarity": "5/104",
+     "rolls": null
+    },
+    {
+     "name": "Raw shark",
+     "quantity": "20-35 (noted)",
+     "rarity": "10/312",
+     "rolls": null
+    },
+    {
+     "name": "Shark lure",
+     "quantity": "40-70",
+     "rarity": "5/312",
+     "rolls": null
+    },
+    {
+     "name": "Sun-kissed bones",
+     "quantity": "18-75",
+     "rarity": "5/104",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Tooth half of key (moon key)",
+     "quantity": "1",
+     "rarity": "1/104",
+     "rolls": null
+    },
+    {
+     "name": "Demon tear",
+     "quantity": "100-300",
+     "rarity": "7/104",
+     "rolls": null
+    },
+    {
+     "name": "Mokhaiotl waystone",
+     "quantity": "1-2",
+     "rarity": "7/104",
+     "rolls": null
+    },
+    {
+     "name": "Clue scroll (elite)",
+     "quantity": "1",
+     "rarity": "1/75",
+     "rolls": null
+    },
+    {
+     "name": "Dom",
+     "quantity": "1",
+     "rarity": "1/1000",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Demon tear",
+     "quantity": "50",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

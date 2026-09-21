@@ -110,6 +110,12 @@ So `bosses.json` is mostly facts with short `examine` strings; `quests.json` and
 `diaries.json` carry real prose alongside their facts; and `public/guides/*.json`
 is prose almost end to end, which is why it has its own section below.
 
+`public/boss-detail/*.json` is split down the middle and worth knowing about:
+the drop tables are facts (an item, a quantity, a rate), while the `overview`
+field is the wiki's **"Fight overview" prose**, carried across as written. That
+half sits with the guides rather than with the datasets, and the same three
+letters apply to it at full strength.
+
 **These files are CC BY-NC-SA 3.0. They are not Apache-2.0.** The `LICENSE` at
 the root of this repository covers our own source code and does not — cannot —
 extend to wiki-derived content: we have no right to relicense someone else's

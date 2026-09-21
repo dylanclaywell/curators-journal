@@ -1,0 +1,310 @@
+{
+ "id": "scurrius",
+ "name": "Scurrius",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Scurrius",
+ "overview": [
+  "Scurrius has three attacks: his melee attack with his tail, magic attack with blue lightning being discharged, and a ranged attack of stinky fur balls being thrown at players. The fight is split into three phases; Scurrius may heal from the Food Piles between each phase. While he is eating, he has a slight damage reduction applied to him. Scurrius may also summon six giant rats to aid him during the fight."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": "MVP",
+   "drops": [
+    {
+     "name": "Big bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Raw rat meat",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": "MVP",
+   "drops": [
+    {
+     "name": "Adamant platebody",
+     "quantity": "1",
+     "rarity": "6/100",
+     "rolls": null
+    },
+    {
+     "name": "Rune med helm",
+     "quantity": "1",
+     "rarity": "6/100",
+     "rolls": null
+    },
+    {
+     "name": "Rune full helm",
+     "quantity": "1",
+     "rarity": "6/100",
+     "rolls": null
+    },
+    {
+     "name": "Rune sq shield",
+     "quantity": "1",
+     "rarity": "6/100",
+     "rolls": null
+    },
+    {
+     "name": "Rune chainbody",
+     "quantity": "1",
+     "rarity": "6/100",
+     "rolls": null
+    },
+    {
+     "name": "Rune battleaxe",
+     "quantity": "1",
+     "rarity": "6/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": "MVP",
+   "drops": [
+    {
+     "name": "Adamant arrow",
+     "quantity": "20-50",
+     "rarity": "6/100",
+     "rolls": null
+    },
+    {
+     "name": "Rune arrow",
+     "quantity": "20-50",
+     "rarity": "6/100",
+     "rolls": null
+    },
+    {
+     "name": "Chaos rune",
+     "quantity": "70-125",
+     "rarity": "6/100",
+     "rolls": null
+    },
+    {
+     "name": "Death rune",
+     "quantity": "40-90",
+     "rarity": "3/100",
+     "rolls": null
+    },
+    {
+     "name": "Law rune",
+     "quantity": "10-30",
+     "rarity": "3/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Consumables",
+   "version": "MVP",
+   "drops": [
+    {
+     "name": "Trout",
+     "quantity": "1-3",
+     "rarity": "6/100",
+     "rolls": null
+    },
+    {
+     "name": "Tuna",
+     "quantity": "1-3",
+     "rarity": "6/100",
+     "rolls": null
+    },
+    {
+     "name": "Shark",
+     "quantity": "1",
+     "rarity": "3/100",
+     "rolls": null
+    },
+    {
+     "name": "Lobster",
+     "quantity": "1-3",
+     "rarity": "6/100",
+     "rolls": null
+    },
+    {
+     "name": "Ranging potion(1)",
+     "quantity": "1",
+     "rarity": "3/100",
+     "rolls": null
+    },
+    {
+     "name": "Super strength(1)",
+     "quantity": "1",
+     "rarity": "3/100",
+     "rolls": null
+    },
+    {
+     "name": "Cheese",
+     "quantity": "1",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Prayer potion(4)",
+     "quantity": "1",
+     "rarity": "6/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": "MVP",
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "1000-9000",
+     "rarity": "6/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": "MVP",
+   "drops": [
+    {
+     "name": "Scurrius' spine",
+     "quantity": "1",
+     "rarity": "1/33",
+     "rolls": null
+    },
+    {
+     "name": "Long bone",
+     "quantity": "1",
+     "rarity": "1/400",
+     "rolls": null
+    },
+    {
+     "name": "Curved bone",
+     "quantity": "1",
+     "rarity": "1/5012.5",
+     "rolls": null
+    },
+    {
+     "name": "Scurry",
+     "quantity": "1",
+     "rarity": "1/3000",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "100%",
+   "version": "non-MVP",
+   "drops": [
+    {
+     "name": "Big bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": "non-MVP",
+   "drops": [
+    {
+     "name": "Adamant arrow",
+     "quantity": "20-35",
+     "rarity": "3/33",
+     "rolls": null
+    },
+    {
+     "name": "Rune arrow",
+     "quantity": "20-35",
+     "rarity": "3/33",
+     "rolls": null
+    },
+    {
+     "name": "Chaos rune",
+     "quantity": "40-70",
+     "rarity": "3/33",
+     "rolls": null
+    },
+    {
+     "name": "Death rune",
+     "quantity": "30-50",
+     "rarity": "3/33",
+     "rolls": null
+    },
+    {
+     "name": "Law rune",
+     "quantity": "5-15",
+     "rarity": "3/33",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Consumables",
+   "version": "non-MVP",
+   "drops": [
+    {
+     "name": "Trout",
+     "quantity": "1-3",
+     "rarity": "3/33",
+     "rolls": null
+    },
+    {
+     "name": "Tuna",
+     "quantity": "1-3",
+     "rarity": "3/33",
+     "rolls": null
+    },
+    {
+     "name": "Lobster",
+     "quantity": "1-3",
+     "rarity": "3/33",
+     "rolls": null
+    },
+    {
+     "name": "Shark",
+     "quantity": "1",
+     "rarity": "1/33",
+     "rolls": null
+    },
+    {
+     "name": "Ranging potion(1)",
+     "quantity": "1",
+     "rarity": "3/33",
+     "rolls": null
+    },
+    {
+     "name": "Super strength(1)",
+     "quantity": "1",
+     "rarity": "3/33",
+     "rolls": null
+    },
+    {
+     "name": "Cheese",
+     "quantity": "1",
+     "rarity": "1/33",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": "non-MVP",
+   "drops": [
+    {
+     "name": "Scurrius' spine",
+     "quantity": "1",
+     "rarity": "1/33",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

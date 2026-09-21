@@ -1,0 +1,25 @@
+{
+ "id": "agrith-naar",
+ "name": "Agrith Naar",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Agrith_Naar",
+ "overview": [
+  "Agrith-Naar uses melee up close and fire blast at a distance. He is able to detect protection prayers and will avoid using attacks the player is praying against. He is also capable of teleporting the player within melee distance of him should the player attempt to run or attack from a distance.",
+  "He can only be defeated with the use of Silverlight, but it should be noted that normal weapons and spells can still be used to deplete his health bar. The player must remain in melee distance when finishing him off using Silverlight. On a side note, dependent on one's melee stats, using Silverlight for the entire fight is still a good choice due to its passive damage boost against demonic creatures.",
+  "Normally, one would assume the last hit must be dealt using Silverlight; however, to slay the demon, the player is only required to be in melee distance and wield Silverlight before the demon loses its last hitpoints. The easiest way to accomplish this is to switch to manual spell casting at melee range, while wielding Silverlight.",
+  "If the requirements to finish him off are met, poison damage will also kill Agrith-Naar as if the last hit had been made using Silverlight, making it easier for low combat level accounts and pures to defeat Agrith-Naar. Alternatively, Agrith-Naar can also be flinched using the standing torch north-west of the centre of the room."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Vile ashes",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

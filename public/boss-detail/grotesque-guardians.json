@@ -1,0 +1,330 @@
+{
+ "id": "grotesque-guardians",
+ "name": "Grotesque Guardians",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Grotesque_Guardians",
+ "overview": [
+  "Like gargoyles, players must bring a rock hammer, rock thrownhammer, or granite hammer to finish them off.",
+  "To initiate the fight, players must ring the Cloister Bell in the north side of the roof. This will trigger a cutscene in which the Guardians will awaken, and the fight will begin. If players have killed the Guardians at least five times, the Cloister Bell will have a \"Quick-start\" option, which will skip the cutscene and start the fight directly. Attempting to ring the bell again before the fight is over will yield the message Concentrate on your fight! in the chatbox.",
+  "After being awoken, the Guardians will initiate combat with the player.",
+  "The fight consists of four phases, of which the first and third phases require the player to fight Dawn, and the second and final phases requiring the player to fight Dusk. Dawn is flying and cannot be targeted by non-halberd melee weapons, while Dusk is completely immune to magic and ranged damage. Despite their high combat level and health, the Guardians have near non-existent defence.",
+  "The second phase starts once Dawn's health reaches around 50%, after which she will fly up, leaving Dusk alone. Dusk will periodically launch an explosive wave that damages anyone next to him, while Dawn will drop rubble from above. The rubble has a 3x3 AoE; being caught directly in one will additionally stun the player.",
+  "The next phase starts when Dusk's health reaches around 50%, after which Dawn descends and the two Guardians will emit lightning across the arena.",
+  "After the lightning attacks, Dawn will send out three energy spheres that will grow larger over time, while Dusk covers himself again, so they should focus on Dawn. If players do not absorb these spheres in time, each will heal Dawn for 90 Hitpoints each. Players can optionally ignore the spheres if they can deal enough damage to Dawn and finish her off with the hammer before she absorbs the spheres.",
+  "After killing Dawn, Dusk will absorb her essence, increasing his stats (barring his health) and having the ability to use her ranged attacks alongside his melee ones, initiating the last phase of the fight. At the start of this phase and periodically afterwards, Dusk will grab the player to a random location and imprison them in a prison of flames, which they must escape or take heavy damage which heals him in the process.",
+  "Dusk special attack.png|The player is knocked back by Dusk's explosive attack. Grotesque Guardians lightning attack.png|The Grotesque Guardians perform their lightning special attack. Dusk 2nd form special attack.png|The player is damaged by the prison of purple flames, healing Dusk."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Granite dust",
+     "quantity": "50-100",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Unique",
+   "version": null,
+   "drops": [
+    {
+     "name": "Granite maul",
+     "quantity": "1",
+     "rarity": "1/250",
+     "rolls": 2
+    },
+    {
+     "name": "Granite gloves",
+     "quantity": "1",
+     "rarity": "1/500",
+     "rolls": 2
+    },
+    {
+     "name": "Granite ring",
+     "quantity": "1",
+     "rarity": "1/500",
+     "rolls": 2
+    },
+    {
+     "name": "Granite hammer",
+     "quantity": "1",
+     "rarity": "1/750",
+     "rolls": 2
+    },
+    {
+     "name": "Black tourmaline core",
+     "quantity": "1",
+     "rarity": "1/1000",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Rune pickaxe",
+     "quantity": "1",
+     "rarity": "6/142",
+     "rolls": 2
+    },
+    {
+     "name": "Rune full helm",
+     "quantity": "1",
+     "rarity": "5/142",
+     "rolls": 2
+    },
+    {
+     "name": "Rune platelegs",
+     "quantity": "1",
+     "rarity": "5/142",
+     "rolls": 2
+    },
+    {
+     "name": "Rune 2h sword",
+     "quantity": "1",
+     "rarity": "4/142",
+     "rolls": 2
+    },
+    {
+     "name": "Rune battleaxe",
+     "quantity": "1",
+     "rarity": "3/142",
+     "rolls": 2
+    },
+    {
+     "name": "Dragon longsword",
+     "quantity": "1",
+     "rarity": "1/142",
+     "rolls": 2
+    },
+    {
+     "name": "Adamant boots",
+     "quantity": "1",
+     "rarity": "1/142",
+     "rolls": 2
+    },
+    {
+     "name": "Dragon med helm",
+     "quantity": "1",
+     "rarity": "1/142",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Supplies",
+   "version": null,
+   "drops": [
+    {
+     "name": "Mushroom potato",
+     "quantity": "4-6",
+     "rarity": "10/142",
+     "rolls": 2
+    },
+    {
+     "name": "Saradomin brew(4)",
+     "quantity": "2",
+     "rarity": "8/142",
+     "rolls": 2
+    },
+    {
+     "name": "Magic potion(2)",
+     "quantity": "1",
+     "rarity": "6/142",
+     "rolls": 2
+    },
+    {
+     "name": "Ranging potion(2)",
+     "quantity": "1",
+     "rarity": "6/142",
+     "rolls": 2
+    },
+    {
+     "name": "Super combat potion(2)",
+     "quantity": "1",
+     "rarity": "6/142",
+     "rolls": 2
+    },
+    {
+     "name": "Prayer potion(4)",
+     "quantity": "1-2",
+     "rarity": "4/142",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Resources",
+   "version": null,
+   "drops": [
+    {
+     "name": "Gold ore",
+     "quantity": "40-50 (noted)",
+     "rarity": "7/142",
+     "rolls": 2
+    },
+    {
+     "name": "Adamantite bar",
+     "quantity": "25-40 (noted)",
+     "rarity": "6/142",
+     "rolls": 2
+    },
+    {
+     "name": "Gold bar",
+     "quantity": "35-50 (noted)",
+     "rarity": "6/142",
+     "rolls": 2
+    },
+    {
+     "name": "Mithril bar",
+     "quantity": "35-45 (noted)",
+     "rarity": "6/142",
+     "rolls": 2
+    },
+    {
+     "name": "Coal",
+     "quantity": "180-250 (noted)",
+     "rarity": "5/142",
+     "rolls": 2
+    },
+    {
+     "name": "Runite ore",
+     "quantity": "3-6 (noted)",
+     "rarity": "4/142",
+     "rolls": 2
+    },
+    {
+     "name": "Runite bar",
+     "quantity": "3-5 (noted)",
+     "rarity": "3/142",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Shark drop table",
+   "version": null,
+   "drops": [
+    {
+     "name": "Raw shark",
+     "quantity": "20 (noted)",
+     "rarity": "1.5/142",
+     "rolls": 2
+    },
+    {
+     "name": "Shark lure",
+     "quantity": "40",
+     "rarity": "1.5/142",
+     "rolls": 2
+    },
+    {
+     "name": "Raw sea turtle",
+     "quantity": "20 (noted)",
+     "rarity": "1/142",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "10000-20000",
+     "rarity": "10/142",
+     "rolls": 2
+    },
+    {
+     "name": "Chaos rune",
+     "quantity": "100-150",
+     "rarity": "8/142",
+     "rolls": 2
+    },
+    {
+     "name": "Coins",
+     "quantity": "25000",
+     "rarity": "5/142",
+     "rolls": 2
+    },
+    {
+     "name": "Crystal key",
+     "quantity": "1",
+     "rarity": "5/142",
+     "rolls": 2
+    },
+    {
+     "name": "Death rune",
+     "quantity": "90-130",
+     "rarity": "5/142",
+     "rolls": 2
+    },
+    {
+     "name": "Dragon dart tip",
+     "quantity": "15-25",
+     "rarity": "5/142",
+     "rolls": 2
+    },
+    {
+     "name": "Diamond bolt tips",
+     "quantity": "100-150",
+     "rarity": "3/142",
+     "rolls": 2
+    },
+    {
+     "name": "Dragonstone bolt tips",
+     "quantity": "20-40",
+     "rarity": "2/142",
+     "rolls": 2
+    },
+    {
+     "name": "Onyx bolt tips",
+     "quantity": "10-15",
+     "rarity": "2/142",
+     "rolls": 2
+    },
+    {
+     "name": "Dragon arrowtips",
+     "quantity": "50-150",
+     "rarity": "1/142",
+     "rolls": 2
+    },
+    {
+     "name": "Soul rune",
+     "quantity": "20-40",
+     "rarity": "1/142",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Noon",
+     "quantity": "1",
+     "rarity": "1/3000",
+     "rolls": null
+    },
+    {
+     "name": "Jar of Stone",
+     "quantity": "1",
+     "rarity": "1/5000",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

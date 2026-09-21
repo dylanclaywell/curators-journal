@@ -1307,9 +1307,10 @@ bosses Jagex publishes them for, and stats, requirements and drop tables for all
 | 7a    | Tab bar stage 2 by width-per-tab, so a fifth tab doesn't strip every label (`da5b7aa`)        | done  |
 | 7b    | `src/lib/bosses.ts`: the join, the three states, sorting, drift report (`47c1196`, `6772e3d`) | done  |
 | 7c    | `scripts/build-bosses.ts` → `src/data/bosses.json`, 183 bosses (`a6f79a4`)                    | done  |
-| 7d    | The `/bosses` panel: registry entry, store with a dynamic import, the list                    | next  |
-| 7e    | Drop tables → `public/bosses/<id>.json` fetched on demand, plus the boss detail view          | —     |
-| 7f    | Requirements from the quest-links oracle; **wire `build:bosses` into `check:drift`**; docs    | —     |
+| 7d    | The `/bosses` panel: registry entry, store with a dynamic import, the list (`75a4619`)        | done  |
+| 7e    | Boss detail view; drops, fight prose and locations → `public/boss-detail/<id>.json`           | done  |
+| 7f    | Requirements from the quest-links oracle, **as links to quest detail**; `check:drift`; docs   | next  |
+| 7g    | Items: `/items/:id`, GE prices via the banked Worker proxy, "needed for" from `quests.json`   | —     |
 
 **The wiki is the spine and the hiscores decorate it** — the opposite of quests
 and diaries, and deliberate. The hiscores publish counts for 71 bosses; the
@@ -1376,10 +1377,50 @@ Amascut`. They have their own counts and no page of their own, so they carry
 - **Kill counts are fetched, not hand-entered** — the "fetched, read-only"
   class alongside skill levels, never the precious one. No merge question
   arises and the freshness constraints are the skills grid's.
-- **Drop tables follow the guides precedent.** `{{DropsLine}}` parses cleanly
-  (27–49 per boss, ~200 KB for the set), which is another `diaries.json` in
-  weight — so `public/bosses/`, fetched on demand, not precached. Which drops
-  the player has _received_ is collection-log data and needs the plugin.
+- **Drop tables follow the guides precedent.** `{{DropsLine}}` parses cleanly:
+  123 files, 2525 rows, 219 KB — another `diaries.json` in weight, so
+  `public/boss-detail/`, fetched on demand, not precached. Which drops the player has
+  _received_ is collection-log data and needs the plugin.
+- **The drops directory is `drops/`, not `bosses/`.** `/bosses/:id` is the
+  detail route, and a service-worker runtime rule on `/bosses/` would intercept
+  navigations to it. Caught while writing the rule rather than in testing,
+  which is luck — app routes and asset paths belong in separate namespaces by
+  default.
+- **A rarity the wiki computes is left unknown, not half-parsed.** Some are
+  templates or parser functions — `{{Brimstone rarity|350}}`, or
+  `1/{{#expr:180/(1999/2000*…) round 1}}` — and stripping the template left 34
+  rows reading a bare `1/` and 47 reading nothing. A truncated fraction is
+  worse than a blank because it looks like a rate, so anything still holding a
+  template becomes null and the build reports the count (81). Evaluating them
+  would mean modelling `#expr` and guessing at `{{Brimstone rarity}}`'s
+  semantics, which is inventing a number and attributing it to the wiki.
+- **Variants share their parent's drops file.** They have their own kill counts
+  but no page of their own, so the store fetches `variantOf ?? id`. Writing a
+  duplicate file per variant would be two copies a later regeneration could
+  leave disagreeing.
+- **Fight prose yes, `/Strategies` no.** The main page's `== Fight overview ==`
+  is 112 of 183 bosses at ~2.6 KB each — the paragraph you want on a second
+  screen mid-fight. The `<boss>/Strategies` subpages are 34–47 KB each, ~4 MB
+  across the set: gear setups and tables, a guide you read beforehand, and the
+  wiki is better at it. Per-fetch either would be fine; what rules the subpages
+  out is 4 MB committed to the repo and a weekly drift diff of churning prose.
+- **Location comes from two places, and neither is `{{Infobox Monster}}`** —
+  which has no such field. `{{Infobox NPC}}` carries one (Vorkath's asleep
+  form), and `{{LocLine}}` rows are the locations table most monsters use
+  (Cerberus). Reading only infoboxes found 53 of 183; both together find 110,
+  and Zulrah genuinely has none. It is a list because the table can hold
+  several.
+- **Collapsed sections live in the query string**, like the quest walkthrough's
+  expansion and for the same reason — this page is open while playing, so it is
+  what iOS kills. Closed sections are stored rather than open ones, so a fresh
+  boss opens expanded and the URL stays clean. Holding the set only in
+  `route.query` loses a toggle when two land in the same tick, because
+  `router.replace` doesn't update `route` synchronously; a ref mirrors it.
+- **No per-row wiki links on drops.** 2525 rows, each an exit door, on a page
+  whose premise is not making the player leave — and on an installed PWA
+  leaving can cost the app. One "Read on the wiki" at the bottom is the right
+  number. Item links are worth having as _internal_ ones (7g), where the value
+  is the join the wiki can't do: what it's worth, and what needs it.
 - **Tab count — settled: it gets a tab.** A fifth tab used to flip the whole
   bar to icon-only, which is what made this a question at all. 7a replaced that
   with width-per-tab, so five labels survive on the docked iPad and collapse

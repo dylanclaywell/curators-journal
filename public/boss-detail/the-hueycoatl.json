@@ -1,0 +1,247 @@
+{
+ "id": "the-hueycoatl",
+ "name": "The Hueycoatl",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/The_Hueycoatl",
+ "overview": [
+  "Players initially confront five exposed segments of the Hueycoatl's body at the base of the mountain, all the while avoiding the glowing symbols and using the correct prayers to counter her projectiles. Once all segments are defeated, the tail ascends the mountain, clearing the path to the summit.",
+  "At the summit, players must attack her head directly, again taking care to avoid glowing symbols and pray correctly. Here, teams of three or more can balance their protection prayers in order to allow the seer to light up the braziers, activating a 30% damage bonus for players. This bonus remains in effect as long as the braziers are lit.",
+  "Once players get her to half health, she will shield herself, requiring players to break her tail. The tail is subject to a damage cap of 4 or 9, depending on whether the player's crush attack bonus is their highest, making this phase the longest of the fight for smaller teams. Additionally, the tail will perform a slam attack each time it shifts position, releasing a shockwave that inflicts approximately 25 damage if not evaded.",
+  "Once the tail's health is depleted, the Hueycoatl's shield dissipates, allowing players to resume their attack on her. In this final stage, she will continue her standard attacks (glowing symbols and prayer projectiles) with increased frequency, while also employing her tail slam shockwave attack."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Big bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Uniques",
+   "version": null,
+   "drops": [
+    {
+     "name": "Dragon hunter wand",
+     "quantity": "1",
+     "rarity": "1/105",
+     "rolls": null
+    },
+    {
+     "name": "Hueycoatl hide",
+     "quantity": "3",
+     "rarity": "11/315",
+     "rolls": null
+    },
+    {
+     "name": "Tome of Earth (empty)",
+     "quantity": "1",
+     "rarity": "1/90",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Rune mace",
+     "quantity": "1-26 (noted)",
+     "rarity": "3/68",
+     "rolls": null
+    },
+    {
+     "name": "Rune scimitar",
+     "quantity": "1-20 (noted)",
+     "rarity": "3/68",
+     "rolls": null
+    },
+    {
+     "name": "Rune plateskirt",
+     "quantity": "1-20 (noted)",
+     "rarity": "2/68",
+     "rolls": null
+    },
+    {
+     "name": "Adamant platebody",
+     "quantity": "1-30 (noted)",
+     "rarity": "3/68",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": null,
+   "drops": [
+    {
+     "name": "Death rune",
+     "quantity": "22-450",
+     "rarity": "3/68",
+     "rolls": null
+    },
+    {
+     "name": "Earth rune",
+     "quantity": "150-3000",
+     "rarity": "2/68",
+     "rolls": null
+    },
+    {
+     "name": "Cosmic rune",
+     "quantity": "20-400",
+     "rarity": "2/68",
+     "rolls": null
+    },
+    {
+     "name": "Nature rune",
+     "quantity": "20-400",
+     "rarity": "2/68",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Seeds",
+   "version": null,
+   "drops": [
+    {
+     "name": "Lantadyme seed",
+     "quantity": "3-60",
+     "rarity": "2/68",
+     "rolls": null
+    },
+    {
+     "name": "Huasca seed",
+     "quantity": "1-20",
+     "rarity": "2/68",
+     "rolls": null
+    },
+    {
+     "name": "Toadflax seed",
+     "quantity": "2-40",
+     "rarity": "2/68",
+     "rolls": null
+    },
+    {
+     "name": "Torstol seed",
+     "quantity": "1-20",
+     "rarity": "2/68",
+     "rolls": null
+    },
+    {
+     "name": "Ranarr seed",
+     "quantity": "1-20",
+     "rarity": "2/68",
+     "rolls": null
+    },
+    {
+     "name": "Avantoe seed",
+     "quantity": "1-20",
+     "rarity": "3/68",
+     "rolls": null
+    },
+    {
+     "name": "Kwuarm seed",
+     "quantity": "1-20",
+     "rarity": "3/68",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Soiled page",
+     "quantity": "4-80",
+     "rarity": "5/68",
+     "rolls": null
+    },
+    {
+     "name": "Adamant bolts(unf)",
+     "quantity": "15-300",
+     "rarity": "3/68",
+     "rolls": null
+    },
+    {
+     "name": "Air orb",
+     "quantity": "4-80 (noted)",
+     "rarity": "3/68",
+     "rolls": null
+    },
+    {
+     "name": "Raw shark",
+     "quantity": "9-180 (noted)",
+     "rarity": "3/68",
+     "rolls": null
+    },
+    {
+     "name": "Sunfire splinters",
+     "quantity": "17-350",
+     "rarity": "3/68",
+     "rolls": null
+    },
+    {
+     "name": "Sun-kissed bones",
+     "quantity": "5-100 (noted)",
+     "rarity": "3/68",
+     "rolls": null
+    },
+    {
+     "name": "Dragon bones",
+     "quantity": "2-40 (noted)",
+     "rarity": "3/68",
+     "rolls": null
+    },
+    {
+     "name": "Adamantite ore",
+     "quantity": "6-120 (noted)",
+     "rarity": "2/68",
+     "rolls": null
+    },
+    {
+     "name": "Steel cannonball",
+     "quantity": "60-1200",
+     "rarity": "3/68",
+     "rolls": null
+    },
+    {
+     "name": "Rune dart tip",
+     "quantity": "6-120",
+     "rarity": "2/68",
+     "rolls": null
+    },
+    {
+     "name": "Limpwurt root",
+     "quantity": "10-200 (noted)",
+     "rarity": "2/68",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Tooth half of key (moon key)",
+     "quantity": "1",
+     "rarity": "1/75",
+     "rolls": null
+    },
+    {
+     "name": "Huberte",
+     "quantity": "1",
+     "rarity": "1/400",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

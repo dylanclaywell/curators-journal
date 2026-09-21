@@ -1,0 +1,368 @@
+{
+ "id": "black-demon",
+ "name": "Black demon",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Black_demon",
+ "overview": [],
+ "tables": [
+  {
+   "section": "100%",
+   "version": "Regular",
+   "drops": [
+    {
+     "name": "Malicious ashes",
+     "quantity": "1;2",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": "Regular",
+   "drops": [
+    {
+     "name": "Black sword",
+     "quantity": "1",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Steel battleaxe",
+     "quantity": "1",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Black axe",
+     "quantity": "1",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Mithril kiteshield",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Rune med helm",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Rune chainbody",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes",
+   "version": "Regular",
+   "drops": [
+    {
+     "name": "Air rune",
+     "quantity": "50",
+     "rarity": "8/128",
+     "rolls": null
+    },
+    {
+     "name": "Chaos rune",
+     "quantity": "10",
+     "rarity": "7/128",
+     "rolls": null
+    },
+    {
+     "name": "Blood rune",
+     "quantity": "7",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Fire rune",
+     "quantity": "37",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Law rune",
+     "quantity": "3",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Coins",
+   "version": "Regular",
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "132",
+     "rarity": "40/128",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "30",
+     "rarity": "7/128",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "44",
+     "rarity": "6/128",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "220",
+     "rarity": "6/128",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "460",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": "Regular",
+   "drops": [
+    {
+     "name": "Lobster",
+     "quantity": "1",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Adamantite bar",
+     "quantity": "1",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Defence potion(3)",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": "Regular",
+   "drops": [
+    {
+     "name": "Looting bag",
+     "quantity": "1",
+     "rarity": "1/3",
+     "rolls": null
+    },
+    {
+     "name": "Ensouled demon head",
+     "quantity": "1",
+     "rarity": "1/35",
+     "rolls": null
+    },
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Chasm of Fire tertiary",
+   "version": "Chasm of Fire",
+   "drops": [
+    {
+     "name": "Contract of Glyphic Attenuation",
+     "quantity": "1",
+     "rarity": "1/53",
+     "rolls": null
+    },
+    {
+     "name": "Contract of Bloodied Blows",
+     "quantity": "1",
+     "rarity": "1/53",
+     "rolls": null
+    },
+    {
+     "name": "Contract of Divine Severance",
+     "quantity": "1",
+     "rarity": "1/53",
+     "rolls": null
+    },
+    {
+     "name": "Contract of Forfeit Breath",
+     "quantity": "1",
+     "rarity": "1/53",
+     "rolls": null
+    },
+    {
+     "name": "Contract of Sensory Clouding",
+     "quantity": "1",
+     "rarity": "1/53",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "100%",
+   "version": "Wilderness Slayer Cave",
+   "drops": [
+    {
+     "name": "Malicious ashes",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": "Wilderness Slayer Cave",
+   "drops": [
+    {
+     "name": "Rune sword",
+     "quantity": "1",
+     "rarity": "4/74",
+     "rolls": null
+    },
+    {
+     "name": "Adamant dagger",
+     "quantity": "1",
+     "rarity": "3/74",
+     "rolls": null
+    },
+    {
+     "name": "Adamant battleaxe",
+     "quantity": "1",
+     "rarity": "2/74",
+     "rolls": null
+    },
+    {
+     "name": "Adamant platebody",
+     "quantity": "1",
+     "rarity": "1/74",
+     "rolls": null
+    },
+    {
+     "name": "Rune dagger",
+     "quantity": "1",
+     "rarity": "1/74",
+     "rolls": null
+    },
+    {
+     "name": "Rune med helm",
+     "quantity": "1",
+     "rarity": "1/74",
+     "rolls": null
+    },
+    {
+     "name": "Rune full helm",
+     "quantity": "1",
+     "rarity": "1/74",
+     "rolls": null
+    },
+    {
+     "name": "Rune chainbody",
+     "quantity": "1",
+     "rarity": "1/74",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes",
+   "version": "Wilderness Slayer Cave",
+   "drops": [
+    {
+     "name": "Death rune",
+     "quantity": "5",
+     "rarity": "8/74",
+     "rolls": null
+    },
+    {
+     "name": "Chaos rune",
+     "quantity": "25",
+     "rarity": "7/74",
+     "rolls": null
+    },
+    {
+     "name": "Blood rune",
+     "quantity": "7",
+     "rarity": "4/74",
+     "rolls": null
+    },
+    {
+     "name": "Law rune",
+     "quantity": "15",
+     "rarity": "1/74",
+     "rolls": null
+    },
+    {
+     "name": "Blood rune",
+     "quantity": "5",
+     "rarity": "1/74",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Materials",
+   "version": "Wilderness Slayer Cave",
+   "drops": [
+    {
+     "name": "Adamantite bar",
+     "quantity": "2 (noted)",
+     "rarity": "2/74",
+     "rolls": null
+    },
+    {
+     "name": "Adamantite ore",
+     "quantity": "2 (noted)",
+     "rarity": "1/74",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Coins",
+   "version": "Wilderness Slayer Cave",
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "250",
+     "rarity": "7/74",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": "Wilderness Slayer Cave",
+   "drops": [
+    {
+     "name": "Looting bag",
+     "quantity": "1",
+     "rarity": "1/3",
+     "rolls": null
+    },
+    {
+     "name": "Ensouled demon head",
+     "quantity": "1",
+     "rarity": "1/35",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

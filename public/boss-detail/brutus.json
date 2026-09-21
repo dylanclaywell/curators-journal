@@ -1,0 +1,197 @@
+{
+ "id": "brutus",
+ "name": "Brutus",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Brutus",
+ "overview": [
+  "Aside from a basic melee attack that can be negated through the use of the Protect from Melee prayer, Brutus uses two special attacks, both of which give players a few ticks to move out of the way.",
+  "Additionally, Brutus cannot be flinched, but he can be temporarily safespotted on nearby scenery objects (such as plants or with the nearby warning sign or troughs). After a short while of being safespotted, Brutus can either charge towards the player through obstacles or move around them to reach the player. However, if you stand between both food troughs far south (the square touching the fence), you can safespot Brutus using range or magic."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Bull bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Raw t-bone steak",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Pre-roll",
+   "version": null,
+   "drops": [
+    {
+     "name": "Mooleta",
+     "quantity": "1",
+     "rarity": "5/150",
+     "rolls": null
+    },
+    {
+     "name": "Bottomless milk bucket (empty)",
+     "quantity": "1",
+     "rarity": "4/150",
+     "rolls": null
+    },
+    {
+     "name": "Cow slippers",
+     "quantity": "1",
+     "rarity": "1/150",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Iron full helm",
+     "quantity": "1",
+     "rarity": "2/81",
+     "rolls": null
+    },
+    {
+     "name": "Iron platebody",
+     "quantity": "1",
+     "rarity": "2/81",
+     "rolls": null
+    },
+    {
+     "name": "Iron platelegs",
+     "quantity": "1",
+     "rarity": "1/81",
+     "rolls": null
+    },
+    {
+     "name": "Iron plateskirt",
+     "quantity": "1",
+     "rarity": "1/81",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": null,
+   "drops": [
+    {
+     "name": "Iron arrow",
+     "quantity": "14",
+     "rarity": "10/81",
+     "rolls": null
+    },
+    {
+     "name": "Air rune",
+     "quantity": "29",
+     "rarity": "10/81",
+     "rolls": null
+    },
+    {
+     "name": "Mind rune",
+     "quantity": "18",
+     "rarity": "8/81",
+     "rolls": null
+    },
+    {
+     "name": "Chaos rune",
+     "quantity": "12",
+     "rarity": "2/81",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Seeds",
+   "version": null,
+   "drops": [
+    {
+     "name": "Potato seed",
+     "quantity": "3",
+     "rarity": "10/81",
+     "rolls": null
+    },
+    {
+     "name": "Acorn",
+     "quantity": "2",
+     "rarity": "5/81",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Resources",
+   "version": null,
+   "drops": [
+    {
+     "name": "Raw t-bone steak",
+     "quantity": "3 (noted)",
+     "rarity": "10/81",
+     "rolls": null
+    },
+    {
+     "name": "Cowhide",
+     "quantity": "1",
+     "rarity": "10/81",
+     "rolls": null
+    },
+    {
+     "name": "Oak logs",
+     "quantity": "2",
+     "rarity": "5/81",
+     "rolls": null
+    },
+    {
+     "name": "Logs",
+     "quantity": "2",
+     "rarity": "5/81",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "60-80",
+     "rarity": "15/81",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "80-100",
+     "rarity": "5/81",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "100-120",
+     "rarity": "5/81",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Beef",
+     "quantity": "1",
+     "rarity": "1/1000",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,74 @@
+{
+ "id": "vanguard",
+ "name": "Vanguard",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Vanguard",
+ "overview": [
+  "The three Vanguards originally spawn underground. When a player gets near one of the holes, all three will burst from the ground.",
+  "All Vanguards attack three times with each attack; however, the magic and ranged Vanguards use AoE attacks (one always hitting the main target while two are launched elsewhere). The melee Vanguard simply attacks its target three times for every attack it performs. Protection prayers will not nullify their damage, but they will reduce it by a significant amount. To harm the Vanguards, damage must be spread equally to all three Vanguards. If just one of the Vanguard is heavily damaged while the others have much higher health (a difference of 40% in groups of four or less, and 33.3% in groups of five or more), the Vanguards will immediately shuffle and restore their health to full. As a warning indicator, a swirling mass of energy will appear around the Vanguards, which brightens in colour the closer they are to a forced heal.",
+  "To stop this from occurring, the Vanguards' health must be within similar range of the other Vanguards by the time they shuffle positions. Vanguards will shuffle every 20 to 36 ticks on their own. The Vanguards cannot be attacked while in their shell, but any damage dealt just before they shuffle will still count. When shuffling, they will lose aggression over their current target. If the damage is fatal but hits after the Vanguard goes into its shell, it will survive the hit and restore 1 health.",
+  "As uncontrolled high damage is detrimental, weapons with low damage per hit such as toxic blowpipe are highly recommended. It may also be worthwhile to not activate damage boosting prayers and unequip gear that increases damage if there is a risk of dealing too much damage. Knowing the maximum hit for each weapon used is helpful.",
+  "Stat drains are not recommended for Vanguards, as they will restore all drained stats upon retreating into their shell. Instead, opt for damaging specials."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Vanguard judgement",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Elder (+)(4)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Twisted (+)(4)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Kodai (+)(4)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Xeric's aid (+)(4)",
+     "quantity": "1-2",
+     "rarity": "always",
+     "rolls": null
+    },
+    {
+     "name": "Revitalisation (+)(4)",
+     "quantity": "2",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Prayer enhance (+)(4)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Overload (+)(4)",
+     "quantity": "1",
+     "rarity": "1/3",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

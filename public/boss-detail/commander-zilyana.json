@@ -1,0 +1,203 @@
+{
+ "id": "commander-zilyana",
+ "name": "Commander Zilyana",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Commander_Zilyana",
+ "overview": [
+  "Like other God Wars Dungeon bosses, Zilyana roams around a rectangular room with her bodyguards until a player enters, attacking them on sight. While she has a significantly lower max hit than the other generals, she makes up for it with extremely fast and accurate attacks, and her bodyguards use a different combat style each. She will only use her magic attacks at melee distance, which has a minimum hit of 10 should it successfully hit the player. If all players leave, her health and stats will be reset.",
+  "*Starlight (Melee) *Bree (Ranged) *Growler (Magic)"
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Frozen key piece (Saradomin)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Uniques",
+   "version": null,
+   "drops": [
+    {
+     "name": "Saradomin sword",
+     "quantity": "1",
+     "rarity": "1/127",
+     "rolls": null
+    },
+    {
+     "name": "Saradomin's light",
+     "quantity": "1",
+     "rarity": "1/254",
+     "rolls": null
+    },
+    {
+     "name": "Armadyl crossbow",
+     "quantity": "1",
+     "rarity": "1/508",
+     "rolls": null
+    },
+    {
+     "name": "Saradomin hilt",
+     "quantity": "1",
+     "rarity": "1/508",
+     "rolls": null
+    },
+    {
+     "name": "Godsword shard 1",
+     "quantity": "1",
+     "rarity": "1/762",
+     "rolls": null
+    },
+    {
+     "name": "Godsword shard 2",
+     "quantity": "1",
+     "rarity": "1/762",
+     "rolls": null
+    },
+    {
+     "name": "Godsword shard 3",
+     "quantity": "1",
+     "rarity": "1/762",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Adamant platebody",
+     "quantity": "1",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Rune dart",
+     "quantity": "35-40",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Rune kiteshield",
+     "quantity": "1",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Rune plateskirt",
+     "quantity": "1",
+     "rarity": "8/127",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Potions",
+   "version": null,
+   "drops": [
+    {
+     "name": "Prayer potion(4)",
+     "quantity": "3",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Saradomin brew(3)",
+     "quantity": "3",
+     "rarity": "6/127",
+     "rolls": null
+    },
+    {
+     "name": "Super restore(4)",
+     "quantity": "3",
+     "rarity": "6/127",
+     "rolls": null
+    },
+    {
+     "name": "Super defence(3)",
+     "quantity": "3",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Magic potion(3)",
+     "quantity": "3",
+     "rarity": "8/127",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "19500-20000",
+     "rarity": "31.2/127",
+     "rolls": null
+    },
+    {
+     "name": "Diamond",
+     "quantity": "6 (noted)",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Law rune",
+     "quantity": "95-100",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Grimy ranarr weed",
+     "quantity": "5 (noted)",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Ranarr seed",
+     "quantity": "2",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Magic seed",
+     "quantity": "1",
+     "rarity": "1/127",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Pet Zilyana",
+     "quantity": "1",
+     "rarity": "1/5000",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

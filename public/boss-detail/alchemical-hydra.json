@@ -1,0 +1,332 @@
+{
+ "id": "alchemical-hydra",
+ "name": "Alchemical Hydra",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Alchemical_Hydra",
+ "overview": [
+  "}} The player fights the Hydra in an instanced room upon jumping over the rock barrier. The chamber consists of two rooms; an observation room which is safe from the Hydra, and a set of doors leading into the test chamber where the Hydra resides. The Hydra will become aggressive and attack upon entering the test chamber, and the doors will also lock themselves. This means that the only means of escape are to either kill the boss, die, or teleportation. Players cannot log themselves out of the test chamber either.",
+  "The Alchemical Hydra has four phases throughout the fight, depending on its remaining health. It attacks with Ranged and Magic, alternating between them every three attacks for the first three phases. At the start of each phase, it has a 75% damage reduction, which can be removed if it is lured over a vent on the floor which spews chemical liquid. However, the vent must be the correct one, corresponding to the combat triangle (e.g. when it is green, red will weaken it), otherwise the Hydra's damage is increased by up to 50%.",
+  "When the Alchemical Hydra reaches or falls below 75%, 50%, and 25% of its health (that is, at 825, 550, and 275 Hitpoints), it will lose one of its heads and begin the next phase. Barring the last phase, the damage reduction is reapplied, and so it should be lured over the next vent. It also has special attacks for each phase: poison pools when green and black, electricity when blue and fire when red. These special attacks are avoidable.",
+  "In its final phase, the Hydra will alternate combat styles every attack with increased attack speed and max hit. Its first attack will always be the opposite style to what it most recently used (e.g if its last attack in phase 3 was ranged, it will start phase 4 with magic).",
+  "When the Hydra is killed, it will respawn in approximately 25 seconds, and the doors will unlock during this time."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Hydra bones",
+     "quantity": "2",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Pre-roll",
+   "version": null,
+   "drops": [
+    {
+     "name": "Hydra's eye",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Hydra's fang",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Hydra's heart",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Hydra tail",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Hydra leather",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Hydra's claw",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Dragon thrownaxe",
+     "quantity": "500-1000",
+     "rarity": "1/2000",
+     "rolls": null
+    },
+    {
+     "name": "Dragon knife",
+     "quantity": "500-1000",
+     "rarity": null,
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Mystic fire staff",
+     "quantity": "1",
+     "rarity": "8/101",
+     "rolls": 2
+    },
+    {
+     "name": "Mystic water staff",
+     "quantity": "1",
+     "rarity": "8/101",
+     "rolls": 2
+    },
+    {
+     "name": "Battlestaff",
+     "quantity": "8-12 (noted)",
+     "rarity": "5/101",
+     "rolls": 2
+    },
+    {
+     "name": "Black d'hide body",
+     "quantity": "1",
+     "rarity": "5/101",
+     "rolls": 2
+    },
+    {
+     "name": "Dragon longsword",
+     "quantity": "1",
+     "rarity": "3/101",
+     "rolls": 2
+    },
+    {
+     "name": "Dragon med helm",
+     "quantity": "1",
+     "rarity": "3/101",
+     "rolls": 2
+    },
+    {
+     "name": "Rune platebody",
+     "quantity": "1",
+     "rarity": "3/101",
+     "rolls": 2
+    },
+    {
+     "name": "Dragon battleaxe",
+     "quantity": "1",
+     "rarity": "2/101",
+     "rolls": 2
+    },
+    {
+     "name": "Rune platelegs",
+     "quantity": "1",
+     "rarity": "1.5/101",
+     "rolls": 2
+    },
+    {
+     "name": "Rune plateskirt",
+     "quantity": "1",
+     "rarity": "1.5/101",
+     "rolls": 2
+    },
+    {
+     "name": "Mystic robe top (light)",
+     "quantity": "1",
+     "rarity": "1/101",
+     "rolls": 2
+    },
+    {
+     "name": "Mystic robe bottom (light)",
+     "quantity": "1",
+     "rarity": "1/101",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": null,
+   "drops": [
+    {
+     "name": "Chaos rune",
+     "quantity": "150-300",
+     "rarity": "6/101",
+     "rolls": 2
+    },
+    {
+     "name": "Death rune",
+     "quantity": "150-300",
+     "rarity": "6/101",
+     "rolls": 2
+    },
+    {
+     "name": "Blood rune",
+     "quantity": "150-300",
+     "rarity": "6/101",
+     "rolls": 2
+    },
+    {
+     "name": "Astral rune",
+     "quantity": "150-300",
+     "rarity": "6/101",
+     "rolls": 2
+    },
+    {
+     "name": "Dragonstone bolts (e)",
+     "quantity": "100-120",
+     "rarity": "2/101",
+     "rolls": 2
+    },
+    {
+     "name": "Onyx bolts (e)",
+     "quantity": "35-50",
+     "rarity": "1/101",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Herbs",
+   "version": null,
+   "drops": [
+    {
+     "name": "Grimy avantoe",
+     "quantity": "10-15 (noted)",
+     "rarity": null,
+     "rolls": 2
+    },
+    {
+     "name": "Grimy kwuarm",
+     "quantity": "25-30 (noted)",
+     "rarity": null,
+     "rolls": 2
+    },
+    {
+     "name": "Grimy ranarr weed",
+     "quantity": "10-15 (noted)",
+     "rarity": null,
+     "rolls": 2
+    },
+    {
+     "name": "Grimy snapdragon",
+     "quantity": "10-15 (noted)",
+     "rarity": null,
+     "rolls": 2
+    },
+    {
+     "name": "Grimy cadantine",
+     "quantity": "25-30 (noted)",
+     "rarity": null,
+     "rolls": 2
+    },
+    {
+     "name": "Grimy dwarf weed",
+     "quantity": "25-30 (noted)",
+     "rarity": null,
+     "rolls": 2
+    },
+    {
+     "name": "Grimy lantadyme",
+     "quantity": "25-30 (noted)",
+     "rarity": null,
+     "rolls": 2
+    },
+    {
+     "name": "Grimy torstol",
+     "quantity": "10-15 (noted)",
+     "rarity": null,
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "5550-25550",
+     "rarity": "0.5/101",
+     "rolls": 2
+    },
+    {
+     "name": "Coins",
+     "quantity": "40000-60000",
+     "rarity": "9.5/101",
+     "rolls": 2
+    },
+    {
+     "name": "Shark",
+     "quantity": "2-4",
+     "rarity": "7/101",
+     "rolls": 2
+    },
+    {
+     "name": "Ranging potion(3)",
+     "quantity": "1",
+     "rarity": "7/101",
+     "rolls": 2
+    },
+    {
+     "name": "Super restore(3)",
+     "quantity": "2",
+     "rarity": "7/101",
+     "rolls": 2
+    },
+    {
+     "name": "Dragon bones",
+     "quantity": "30 (noted)",
+     "rarity": "6/101",
+     "rolls": 2
+    },
+    {
+     "name": "Crystal key",
+     "quantity": "1",
+     "rarity": "1/101",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Alchemical hydra heads",
+     "quantity": "1",
+     "rarity": "1/256",
+     "rolls": null
+    },
+    {
+     "name": "Jar of Chemicals",
+     "quantity": "1",
+     "rarity": "1/2000",
+     "rolls": null
+    },
+    {
+     "name": "Ikkle Hydra",
+     "quantity": "1",
+     "rarity": "1/3000",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "id": "culinaromancer",
+ "name": "Culinaromancer",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Culinaromancer",
+ "overview": [
+  "The Culinaromancer uses melee and magic, and has a low combat level of 75. He essentially has no defence but should not be underestimated despite his low combat level, due to his magic attack having a flat 1 in 3 chance of hitting the player successfully and a max hit of 25.",
+  "If you are a low level and want to avoid damage, you can run away from him and attack with ranged or magic; this way he won't be able to hit you if you keep your distance, although it is advised to bring a few energy potions.",
+  "Another approach is to use freezing spells such as Ice spells or Entangle on him and attacking him with ranged or magic. This same method works also for stunning him.",
+  "Note: The player cannot use Prayer in this boss fight or any other Recipe for Disaster boss fight."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Cake",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,144 @@
+{
+ "id": "salarin-the-twisted",
+ "name": "Salarin the twisted",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Salarin_the_twisted",
+ "overview": [
+  "Salarin must be killed with Strike spells; melee and ranged cannot harm him, nor can any other magic attacks. When using wind, water, earth, or fire strike, the spells will always deal 9, 10, 11, or 12 damage, depending on the highest tier of spell unlocked, as long as the player does not splash. This damage is not affected by items that would normally increase spell damage, such as the smoke battlestaff, occult necklace, tome of fire, or the set effect of Ahrim the Blighted's equipment. The sole exception is the Elemental amulet, which increases the player's max hit by 2.",
+  "There is a safespot in the corridor, located on the tile south to the middle skull lantern on the eastern wall. Should the player mage Salarin from this tile, he will try to retreat rather than attack; this can be useful for players with low magic defence. Note, however, that sometimes Salarin will wander out of the safespot range, requiring the player to be able to tank a few hits as they reset the safespot.",
+  "Food is useful for long trips, but high-level players will be able to easily kill Salarin with little or no food.",
+  "In addition to the herbs, the guaranteed max hit from using Strike spells makes Salarin a decent NPC for low-level Magic training through combat, offering over 10,000 experience an hour. However, this is only recommended as a training method for those who need herbs, as other magic training methods at the same level offer more than twice the experience for a lower amount of effort; Salarin's slow respawn timer means that much less damage can be done per hour.",
+  "Salarin's 30-second respawn time means that, assuming no splashes and the highest-level strike spell, it will take a minimum of 80 ticks (48 seconds) for him to die and respawn. This results in a maximum of 75 kills per hour (not including banking) if the player doesn't hop worlds. Killing the nearby chaos druids while waiting for Salarin to respawn can greatly increase your profit and herbs gained per hour, at the cost of needing to bank several times. This is advised over world-hopping, and brings more profit and herbs per hour.",
+  "Players training for profit are advised not pick up the coins, black daggers, vials of water, or the grimy guams, marrentils, or tarromins that Salarin drops, as they only add up to an hour. This will allow players to reduce banking time, and increase profit per hour.",
+  "Those who can complete elite clues, which drop at a rate of 1 in 500, can expect an additional adjusted profit of per hour, on top of the normal herb drops and sinister keys.",
+  "Players with average drop luck will receive just under 6 sinister keys an hour, assuming consistent 48-second kills. For each sinister key used, the player will be rewarded with two harralander, three ranarr, one irit, one kwuarm, one avantoe, and one torstol; this chest will reward players with a total of worth of herbs per chest opened, or worth of herbs per hour, not including the cost of food and runes.",
+  "Cleaning and turning one hour's worth of herbs into potions will give 6628 experience per hour at level 79 Herblore (the level required to fully process all of the herbs). As soon as a herb can be grown, it becomes inefficient to hunt for herbs from Salarin, as long as you can obtain a seed an hour (or two seeds per hour, in the case of harralander and ranarr)."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons",
+   "version": null,
+   "drops": [
+    {
+     "name": "Black dagger",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes",
+   "version": null,
+   "drops": [
+    {
+     "name": "Water rune",
+     "quantity": "12",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Law rune",
+     "quantity": "2",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Nature rune",
+     "quantity": "3",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Fire rune",
+     "quantity": "36",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Materials",
+   "version": null,
+   "drops": [
+    {
+     "name": "White berries",
+     "quantity": "1",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Snape grass",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Vial of water",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Coins",
+   "version": null,
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "3",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "24",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "10",
+     "rarity": "3/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Nothing",
+     "quantity": null,
+     "rarity": "37/128",
+     "rolls": null
+    },
+    {
+     "name": "Super defence(1)",
+     "quantity": "1",
+     "rarity": "11/128",
+     "rolls": null
+    },
+    {
+     "name": "Sinister key",
+     "quantity": "1",
+     "rarity": "10/128",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

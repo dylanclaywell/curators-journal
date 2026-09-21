@@ -1,0 +1,23 @@
+{
+ "id": "dessourt",
+ "name": "Dessourt",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Dessourt",
+ "overview": [
+  "Similar to his Desert Treasure I counterpart, he uses a rapid and fairly strong melee attack, as well as a Magic attack that always hits 5s. The most efficient way to kill him is by using melee-resistant armour such as Barrows and attack with Magic; trident of the seas/swamp or Iban blast are effective.",
+  "Note: The player cannot use Prayer in this boss fight or any other Recipe for Disaster boss fight."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Chocolate dust",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

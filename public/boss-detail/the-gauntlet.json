@@ -1,0 +1,86 @@
+{
+ "id": "the-gauntlet",
+ "name": "The Gauntlet",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/The_Gauntlet",
+ "overview": [],
+ "tables": [
+  {
+   "section": "Unique Rewards (Normal Mode)",
+   "version": null,
+   "drops": [
+    {
+     "name": "Crystal shard",
+     "quantity": "5-9",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Crystal weapon seed",
+     "quantity": "1",
+     "rarity": "1/120",
+     "rolls": null
+    },
+    {
+     "name": "Crystal armour seed",
+     "quantity": "1",
+     "rarity": "1/120",
+     "rolls": null
+    },
+    {
+     "name": "Enhanced crystal weapon seed",
+     "quantity": "1",
+     "rarity": "1/2000",
+     "rolls": null
+    },
+    {
+     "name": "Youngllef",
+     "quantity": "1",
+     "rarity": "1/2000",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Unique Rewards (Corrupted Mode)",
+   "version": null,
+   "drops": [
+    {
+     "name": "Gauntlet cape",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Crystal shard",
+     "quantity": "7-12",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Crystal weapon seed",
+     "quantity": "1",
+     "rarity": "1/50",
+     "rolls": null
+    },
+    {
+     "name": "Crystal armour seed",
+     "quantity": "1",
+     "rarity": "1/50",
+     "rolls": null
+    },
+    {
+     "name": "Enhanced crystal weapon seed",
+     "quantity": "1",
+     "rarity": "1/400",
+     "rolls": null
+    },
+    {
+     "name": "Youngllef",
+     "quantity": "1",
+     "rarity": "1/800",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,288 @@
+{
+ "id": "the-leviathan",
+ "name": "The Leviathan",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/The_Leviathan",
+ "overview": [
+  "The Leviathan is best fought with ranged; attempting to attack The Leviathan with melee will result in the following message: The boss fight is initiated upon climbing into the arena, where it will use a volley of rapid-firing attacks which deal damage upon impact; protection prayers will fully block these attacks. The Leviathan will attack with random volleys of coloured orbs - magic (blue), ranged (green), and melee (orange) - at varying attack speeds throughout the fight. At the end of each volley, the boss will roar and cause debris to fall onto the player, potentially restricting movement and obstructing line of sight. Every subsequent volley of attacks will increase in attack speed, which can become very difficult to switch prayers for players at later volleys. The boss can also bite players in the tiles right next to the pool, which deals melee damage.",
+  "At any point during the sequence, players can cast shadow spells to stun the Leviathan (which will always succeed), where it will stay still for 15 ticks (9 seconds). Damage against it is capped at 10 when stunned, but the player can run around to attack the gaping wound on its backside to deal a large amount of damage, which will cause it to retaliate with a special attack. This also resets the Leviathan's attack speed to the beginning of the 2-tick attacks.",
+  "Upon reaching 180 hitpoints, the Leviathan will begin the enrage phase. Its attack speed will now stay at two ticks, losing the ability to launch orange melee orbs (but still being able to bite players) while an abyssal pathfinder will spawn to the north-west of the arena (or the next clockwise direction if the spawn point is blocked by debris) and will begin to move clockwise. The player must stay within the pathfinder's area-of-effect in order to gain increased accuracy and damage, along with full protection from its attacks; otherwise, its attacks will pierce through prayer."
+ ],
+ "tables": [
+  {
+   "section": "Uniques",
+   "version": null,
+   "drops": [
+    {
+     "name": "Venator vestige",
+     "quantity": "1",
+     "rarity": "1/768",
+     "rolls": null
+    },
+    {
+     "name": "Chromium ingot",
+     "quantity": "1",
+     "rarity": "3/768",
+     "rolls": null
+    },
+    {
+     "name": "Leviathan's lure",
+     "quantity": "1",
+     "rarity": "1/768",
+     "rolls": null
+    },
+    {
+     "name": "Virtus mask",
+     "quantity": "1",
+     "rarity": "1/2304",
+     "rolls": null
+    },
+    {
+     "name": "Virtus robe top",
+     "quantity": "1",
+     "rarity": "1/2304",
+     "rolls": null
+    },
+    {
+     "name": "Virtus robe bottom",
+     "quantity": "1",
+     "rarity": "1/2304",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Secondary uniques",
+   "version": null,
+   "drops": [
+    {
+     "name": "Scarred tablet",
+     "quantity": "1",
+     "rarity": "1/25.8",
+     "rolls": null
+    },
+    {
+     "name": "Awakener's orb",
+     "quantity": "1",
+     "rarity": "1/53.6",
+     "rolls": null
+    },
+    {
+     "name": "Smoke quartz",
+     "quantity": "1",
+     "rarity": "1/206.0",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Supplies",
+   "version": null,
+   "drops": [
+    {
+     "name": "Prayer potion(3)",
+     "quantity": "1",
+     "rarity": "1/5.4",
+     "rolls": null
+    },
+    {
+     "name": "Ranging potion(2)",
+     "quantity": "1",
+     "rarity": "1/5.4",
+     "rolls": null
+    },
+    {
+     "name": "Sea turtle",
+     "quantity": "3-4",
+     "rarity": "1/5.4",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Resources",
+   "version": null,
+   "drops": [
+    {
+     "name": "Aether catalyst",
+     "quantity": "1500,2250",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Iron ore",
+     "quantity": "57,85 (noted)",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Silver ore",
+     "quantity": "57,85 (noted)",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Coal",
+     "quantity": "195,292 (noted)",
+     "rarity": "8/100",
+     "rolls": null
+    },
+    {
+     "name": "Gold ore",
+     "quantity": "67,101 (noted)",
+     "rarity": "8/100",
+     "rolls": null
+    },
+    {
+     "name": "Adamantite ore",
+     "quantity": "57,85 (noted)",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Runite ore",
+     "quantity": "27,40 (noted)",
+     "rarity": "2/100",
+     "rolls": null
+    },
+    {
+     "name": "Sapphire",
+     "quantity": "25,38 (noted)",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Emerald",
+     "quantity": "25,38 (noted)",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Ruby",
+     "quantity": "25,38 (noted)",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Uncut ruby",
+     "quantity": "37,56 (noted)",
+     "rarity": "5/100",
+     "rolls": null
+    },
+    {
+     "name": "Uncut diamond",
+     "quantity": "37,56 (noted)",
+     "rarity": "5/100",
+     "rolls": null
+    },
+    {
+     "name": "Dragon javelin tips",
+     "quantity": "54,81",
+     "rarity": "8/100",
+     "rolls": null
+    },
+    {
+     "name": "Dragon bolts (unf)",
+     "quantity": "150,225",
+     "rarity": "2/100",
+     "rolls": null
+    },
+    {
+     "name": "Onyx bolt tips",
+     "quantity": "90,135",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Raw manta ray",
+     "quantity": "180,270 (noted)",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Anglerfish",
+     "quantity": "4,6",
+     "rarity": "8/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": null,
+   "drops": [
+    {
+     "name": "Bronze arrow",
+     "quantity": "63,94",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Mithril arrow",
+     "quantity": "63,94",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Adamant arrow",
+     "quantity": "63,94",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Rune arrow",
+     "quantity": "54,81",
+     "rarity": "8/100",
+     "rolls": null
+    },
+    {
+     "name": "Body rune",
+     "quantity": "180,270",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Earth rune",
+     "quantity": "180,270",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Smoke rune",
+     "quantity": "300,450",
+     "rarity": "8/100",
+     "rolls": null
+    },
+    {
+     "name": "Soul rune",
+     "quantity": "600,900",
+     "rarity": "2/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Lil'viathan",
+     "quantity": "1",
+     "rarity": "1/2500",
+     "rolls": null
+    },
+    {
+     "name": "Ancient blood ornament kit",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

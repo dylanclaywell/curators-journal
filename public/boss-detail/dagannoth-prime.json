@@ -1,0 +1,253 @@
+{
+ "id": "dagannoth-prime",
+ "name": "Dagannoth Prime",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Dagannoth_Prime",
+ "overview": [
+  "Dagannoth Prime, like the combat triangle suggests, is weak to Ranged attacks. The Zaryte, Armadyl, Dragon hunter, dragon and rune crossbows are effective weapons against him. The toxic blowpipe is also effective, especially on a Slayer task. Wealthier players may opt to use the bow of Faerdhinen or twisted bow due to their high accuracy and damage, especially the twisted bow with its effectiveness against monsters with a high Magic level. The crystal bow is also fairly effective.",
+  "His attack is very powerful and more potent than the other two kings; it can deal up to 50 damage in one hit, so Protect from Magic prayer is a must whenever Prime is attacking. The attack is also AoE-based; any other players stood in a 3x3 tile radius around the main target will also be hit. Meleers are advised to stay away from Dagannoth Prime at all costs and fend off Dagannoth Supreme meanwhile, as Prime can kill any player not using the Protect from Magic prayer within a couple of attacks and is resistant to non-Ranged attacks.",
+  "The most effective way to kill Prime is to stand in the north-east corner of the lair while not being under attack by the other two kings, staying out of their attack radius.",
+  "If players get too close to Dagannoth Rex when they are fighting Dagannoth Prime, they may inadvertently gain Rex's attention, potentially resulting in unnecessary damage. This can be avoided by staying on the western part of the arena, as Rex will rarely (if ever) go there. Dagannoth Supreme may respawn while fighting Prime. Supreme can be avoided by staying in the north-eastern part of the arena by the seaweed. Players will want to use the \"Long-range\" style with their Ranged combat unless the player is sure that they will not get the attention of Supreme. Prime, along with his fellow king Supreme, have a very long-ranged attack, and if both of them focus on one player, the high damage can lead to a quick death. Players should either kill Supreme or leave the area if they find themselves under attack from both Prime and Supreme."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Dagannoth bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Dagannoth hide",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Earth battlestaff",
+     "quantity": "1",
+     "rarity": "10/128",
+     "rolls": null
+    },
+    {
+     "name": "Water battlestaff",
+     "quantity": "1",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Air battlestaff",
+     "quantity": "1",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Battlestaff",
+     "quantity": "1-10 (noted)",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Fremennik blade",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Fremennik shield",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Fremennik helm",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Mud battlestaff",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Dragon axe",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Farseer helm",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Skeletal top",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Skeletal bottoms",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Seers ring",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes",
+   "version": null,
+   "drops": [
+    {
+     "name": "Air rune",
+     "quantity": "100-200",
+     "rarity": "6/128",
+     "rolls": null
+    },
+    {
+     "name": "Earth rune",
+     "quantity": "50-100",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Blood rune",
+     "quantity": "25-75",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Law rune",
+     "quantity": "10-75",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Nature rune",
+     "quantity": "25-75",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Mud rune",
+     "quantity": "25-75",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Death rune",
+     "quantity": "25-85",
+     "rarity": "2/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Talismans (noted)",
+   "version": null,
+   "drops": [
+    {
+     "name": "Earth talisman",
+     "quantity": "25-75 (noted)",
+     "rarity": "10/128",
+     "rolls": null
+    },
+    {
+     "name": "Air talisman",
+     "quantity": "25-75 (noted)",
+     "rarity": "7/128",
+     "rolls": null
+    },
+    {
+     "name": "Water talisman",
+     "quantity": "1-76 (noted)",
+     "rarity": "7/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Shark",
+     "quantity": "5",
+     "rarity": "10/128",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "500-1109",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Oyster pearls",
+     "quantity": "1",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Pure essence",
+     "quantity": "150 (noted)",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Grimy ranarr weed",
+     "quantity": "1",
+     "rarity": "5/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Dagannoth ribs",
+     "quantity": "1",
+     "rarity": "1/4",
+     "rolls": null
+    },
+    {
+     "name": "Ensouled dagannoth head",
+     "quantity": "1",
+     "rarity": "1/20",
+     "rolls": null
+    },
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Pet Dagannoth Prime",
+     "quantity": "1",
+     "rarity": "1/5000",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

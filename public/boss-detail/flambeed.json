@@ -1,0 +1,20 @@
+{
+ "id": "flambeed",
+ "name": "Flambeed",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Flambeed",
+ "overview": [],
+ "tables": [
+  {
+   "section": "Drops",
+   "version": null,
+   "drops": [
+    {
+     "name": "Cake",
+     "quantity": "5",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

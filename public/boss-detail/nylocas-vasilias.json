@@ -1,0 +1,27 @@
+{
+ "id": "nylocas-vasilias",
+ "name": "Nylocas Vasilias",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Nylocas_Vasilias",
+ "overview": [
+  "Vasilias changes its combat style throughout the fight by changing its carapace, which also indicates its weakness: blue for magic, green for ranged and white for melee. Attacking it with the wrong combat style will cause it to reflect the hit back towards the player as well as healing from the hit. It will change every 10 ticks (6 seconds), and it will always change to one of the other two styles (meaning it will not stay on one style twice in a row).",
+  "In hard mode, Vasilias will fire its ranged attack at everyone standing within 2 squares of its target. It is advised to spread out with a 3-tile gap from other players in your party when it turns green.",
+  "Its magic attack also has a special mechanic where it will bounce off of the player it hits and will spread to every other player. This attack deals the same damage to every player it hits for the damage it deals regardless if they have Protect from Magic up or not. This damage is reduced by 50% if standing within two tiles of the target. If the players are all on the same tile then the attack will only damage the target.",
+  "In Entry Mode, all of the nylocas in the encounter can scale down to 20% of their original Hitpoints when done in a solo party. Despite everything dealing lower damage however, this room can prove to be overwhelming to solo players who are not prepared since the number of nylocas the players must kill during the hordes are the same. The room is still failed if all 4 pillars fall.",
+  "The boss takes longer to switch colours compared to regular and hard mode. This gives the players more time to switch their prayer and gear while fighting the boss.",
+  "If a team wipes in Entry Mode, they will be taken back outside of the boss room and have unlimited attempts to fight the boss again. Hardcore ironmen will still lose their status upon death."
+ ],
+ "tables": [
+  {
+   "section": "Drops",
+   "version": null,
+   "drops": [
+    {
+     "name": "Arachnids of Vampyrium",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

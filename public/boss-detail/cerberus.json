@@ -1,0 +1,307 @@
+{
+ "id": "cerberus",
+ "name": "Cerberus",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Cerberus",
+ "overview": [
+  "When approaching her, Cerberus will become aggressive. She may attack with magic, ranged and melee attacks, each with a max hit of 23. The magic attack appears as a grey ball, the ranged attack appears as a ball of spikes, and the melee attack is her biting.",
+  "Cerberus has three special attacks that she may use under certain circumstances: * She attacks in quick succession with magic followed by ranged and melee. The melee attack will hit the player even at a distance. * She summons three souls – indicated by her howling – that come from the river behind her and attack the player with each combat style. Each attack will drain 30 prayer (20 with Ward of Arceuus, 15 with spectral spirit shield equipped, 10 with both) if blocked or 30 hitpoints if not blocked. * She spits three balls of fire on the ground, indicated by a chat text above her head. One lava spot will land on the player and two in random spots around the room. Standing on one will deal continuous damage, which can be reduced with appropriate dragonfire protection.",
+  "If a player has recently fought the boss, a line of fire will spawn between the entrance and the boss; stepping over this will deal 5 damage each way. The line of fire may be bugged, as it will not despawn unless the challenger dies to Cerberus or goes back through the line of fire after it respawns and if the player comes back after teleporting away mid-fight. Cerberus will restore all of her health if there are no players in her lair (she is not attackable and only has an examine option when this happens).",
+  "Once defeated, Cerberus will respawn in nine seconds."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Infernal ashes",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Uniques",
+   "version": null,
+   "drops": [
+    {
+     "name": "Primordial crystal",
+     "quantity": "1",
+     "rarity": "1/520",
+     "rolls": null
+    },
+    {
+     "name": "Pegasian crystal",
+     "quantity": "1",
+     "rarity": "1/520",
+     "rolls": null
+    },
+    {
+     "name": "Eternal crystal",
+     "quantity": "1",
+     "rarity": "1/520",
+     "rolls": null
+    },
+    {
+     "name": "Smouldering stone",
+     "quantity": "1",
+     "rarity": "1/520",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Rune platebody",
+     "quantity": "1",
+     "rarity": "5/130",
+     "rolls": null
+    },
+    {
+     "name": "Rune chainbody",
+     "quantity": "1",
+     "rarity": "4/130",
+     "rolls": null
+    },
+    {
+     "name": "Rune 2h sword",
+     "quantity": "1",
+     "rarity": "4/130",
+     "rolls": null
+    },
+    {
+     "name": "Black d'hide body",
+     "quantity": "1",
+     "rarity": "3/130",
+     "rolls": null
+    },
+    {
+     "name": "Rune axe",
+     "quantity": "1",
+     "rarity": "3/130",
+     "rolls": null
+    },
+    {
+     "name": "Rune pickaxe",
+     "quantity": "1",
+     "rarity": "3/130",
+     "rolls": null
+    },
+    {
+     "name": "Battlestaff",
+     "quantity": "6 (noted)",
+     "rarity": "3/130",
+     "rolls": null
+    },
+    {
+     "name": "Rune full helm",
+     "quantity": "1",
+     "rarity": "3/130",
+     "rolls": null
+    },
+    {
+     "name": "Lava battlestaff",
+     "quantity": "1",
+     "rarity": "2/130",
+     "rolls": null
+    },
+    {
+     "name": "Rune halberd",
+     "quantity": "1",
+     "rarity": "2/130",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": null,
+   "drops": [
+    {
+     "name": "Fire rune",
+     "quantity": "300",
+     "rarity": "6/130",
+     "rolls": null
+    },
+    {
+     "name": "Soul rune",
+     "quantity": "100",
+     "rarity": "6/130",
+     "rolls": null
+    },
+    {
+     "name": "Pure essence",
+     "quantity": "300 (noted)",
+     "rarity": "5/130",
+     "rolls": null
+    },
+    {
+     "name": "Blood rune",
+     "quantity": "60",
+     "rarity": "4/130",
+     "rolls": null
+    },
+    {
+     "name": "Steel cannonball",
+     "quantity": "50",
+     "rarity": "4/130",
+     "rolls": null
+    },
+    {
+     "name": "Runite bolts (unf)",
+     "quantity": "40",
+     "rarity": "4/130",
+     "rolls": null
+    },
+    {
+     "name": "Death rune",
+     "quantity": "100",
+     "rarity": "3/130",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Coal",
+     "quantity": "120 (noted)",
+     "rarity": "6/130",
+     "rolls": null
+    },
+    {
+     "name": "Super restore(4)",
+     "quantity": "2",
+     "rarity": "6/130",
+     "rolls": null
+    },
+    {
+     "name": "Summer pie",
+     "quantity": "3",
+     "rarity": "6/130",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "10000-20000",
+     "rarity": "5/130",
+     "rolls": null
+    },
+    {
+     "name": "Dragon bones",
+     "quantity": "20 (noted)",
+     "rarity": "5/130",
+     "rolls": null
+    },
+    {
+     "name": "Unholy symbol",
+     "quantity": "1",
+     "rarity": "5/130",
+     "rolls": null
+    },
+    {
+     "name": "Wine of Zamorak",
+     "quantity": "15 (noted)",
+     "rarity": "5/130",
+     "rolls": null
+    },
+    {
+     "name": "Ashes",
+     "quantity": "50 (noted)",
+     "rarity": "4/130",
+     "rolls": null
+    },
+    {
+     "name": "Fire orb",
+     "quantity": "20 (noted)",
+     "rarity": "4/130",
+     "rolls": null
+    },
+    {
+     "name": "Grimy torstol",
+     "quantity": "6 (noted)",
+     "rarity": "4/130",
+     "rolls": null
+    },
+    {
+     "name": "Runite ore",
+     "quantity": "5 (noted)",
+     "rarity": "3/130",
+     "rolls": null
+    },
+    {
+     "name": "Uncut diamond",
+     "quantity": "5 (noted)",
+     "rarity": "3/130",
+     "rolls": null
+    },
+    {
+     "name": "Torstol seed",
+     "quantity": "3",
+     "rarity": "2/130",
+     "rolls": null
+    },
+    {
+     "name": "Ranarr seed",
+     "quantity": "2",
+     "rarity": "2/130",
+     "rolls": null
+    },
+    {
+     "name": "Key master teleport",
+     "quantity": "7",
+     "rarity": "2/130",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Ensouled hellhound head",
+     "quantity": "1",
+     "rarity": "1/15",
+     "rolls": null
+    },
+    {
+     "name": "Clue scroll (elite)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Reward casket (elite)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Jar of Souls",
+     "quantity": "1",
+     "rarity": "1/2000",
+     "rolls": null
+    },
+    {
+     "name": "Hellpuppy",
+     "quantity": "1",
+     "rarity": "1/3000",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

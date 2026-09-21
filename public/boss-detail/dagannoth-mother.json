@@ -1,0 +1,26 @@
+{
+ "id": "dagannoth-mother",
+ "name": "Dagannoth mother",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Dagannoth_mother",
+ "overview": [],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Rusty casket",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

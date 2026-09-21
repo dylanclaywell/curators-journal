@@ -1,0 +1,11 @@
+{
+ "id": "dusk",
+ "name": "Dusk",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Dusk",
+ "overview": [
+  "Dusk uses a slash attack that can hit through Protect from Melee, with the damage dealt being reduced by 80%.",
+  "During the final phase of the battle, Dusk has a 1/6 chance each attack to alternate attack styles; that is to say to switch from melee to Ranged or vice versa. However, using the correct protection prayer will increase this chance to 1/3 per attack. For the first attack at the start of the phase, there is a 2/3 chance Dusk will use the opposite attack style of the one the player is praying against.",
+  "Dusk's Ranged attack, which consists of two orbs being fired at the player in succession, has a unique form of damage calculation during this phase. If Dusk succeeds the Ranged accuracy check, the first orb will always hit for 60% of his max hit, or half of that number if the player is praying correctly. The second orb meanwhile will carry out a random damage roll upon succeeding the accuracy check, yet goes on to make a second damage roll ranging between 0 and the damage value rolled directly prior."
+ ],
+ "tables": []
+}

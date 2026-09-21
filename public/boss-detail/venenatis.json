@@ -1,0 +1,367 @@
+{
+ "id": "venenatis",
+ "name": "Venenatis",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Venenatis",
+ "overview": [
+  "Venenatis attacks with melee towards any player that's adjacent to her, and either magic or ranged for any player out of her melee range. Protection prayers will fully block the attacks, however, they will have their effectiveness reduced for every spiderling alive in the chamber.",
+  "Every four attacks, Venenatis will shuffle to another position in her lair. Every two movements will cause her to alternate between ranged and magic attacks.",
+  "When a kill starts, Venenatis begins by summoning two spiderlings, who also increase her max hit along with reducing prayer effectiveness. The spiderlings will drain prayer by 1 for every hit made regardless if it damages or not, however they only have 5 health and players will deal their max hit on them regardless of gear. Venenatis can also launch a sticky web that if stood on, damages and drains prayer by 3 and run energy by 10 every few ticks. Venenatis will always alternate between the spiderlings and the sticky web after moving around twice.",
+  "If there are more than 10 players in Venenatis' lair, she will move more often and perform a special attack every time she moves, as opposed to every other time."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Big bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Unique",
+   "version": null,
+   "drops": [
+    {
+     "name": "Fangs of Venenatis",
+     "quantity": "1",
+     "rarity": "1/196",
+     "rolls": null
+    },
+    {
+     "name": "Dragon 2h sword",
+     "quantity": "1",
+     "rarity": "1/256",
+     "rolls": null
+    },
+    {
+     "name": "Dragon pickaxe",
+     "quantity": "1",
+     "rarity": "1/256",
+     "rolls": null
+    },
+    {
+     "name": "Voidwaker gem",
+     "quantity": "1",
+     "rarity": "1/360",
+     "rolls": null
+    },
+    {
+     "name": "Treasonous ring",
+     "quantity": "1",
+     "rarity": "1/512",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Mystic air staff",
+     "quantity": "4 (noted)",
+     "rarity": "2/126",
+     "rolls": null
+    },
+    {
+     "name": "Rune pickaxe",
+     "quantity": "5 (noted)",
+     "rarity": "8/126",
+     "rolls": null
+    },
+    {
+     "name": "Rune dart",
+     "quantity": "150",
+     "rarity": "3/126",
+     "rolls": null
+    },
+    {
+     "name": "Rune knife",
+     "quantity": "150",
+     "rarity": "5/126",
+     "rolls": null
+    },
+    {
+     "name": "Rune platelegs",
+     "quantity": "4 (noted)",
+     "rarity": "2/126",
+     "rolls": null
+    },
+    {
+     "name": "Rune sq shield",
+     "quantity": "4 (noted)",
+     "rarity": "2/126",
+     "rolls": null
+    },
+    {
+     "name": "Dragon dagger",
+     "quantity": "6 (noted)",
+     "rarity": "2/126",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": null,
+   "drops": [
+    {
+     "name": "Chaos rune",
+     "quantity": "500",
+     "rarity": "7/126",
+     "rolls": null
+    },
+    {
+     "name": "Death rune",
+     "quantity": "700",
+     "rarity": "7/126",
+     "rolls": null
+    },
+    {
+     "name": "Blood rune",
+     "quantity": "900",
+     "rarity": "7/126",
+     "rolls": null
+    },
+    {
+     "name": "Diamond bolts (e)",
+     "quantity": "300",
+     "rarity": "5/126",
+     "rolls": null
+    },
+    {
+     "name": "Steel cannonball",
+     "quantity": "600",
+     "rarity": "4/126",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Materials",
+   "version": null,
+   "drops": [
+    {
+     "name": "Uncut ruby",
+     "quantity": "50 (noted)",
+     "rarity": "1/126",
+     "rolls": null
+    },
+    {
+     "name": "Uncut diamond",
+     "quantity": "25 (noted)",
+     "rarity": "8/126",
+     "rolls": null
+    },
+    {
+     "name": "Gold ore",
+     "quantity": "675 (noted)",
+     "rarity": "6/126",
+     "rolls": null
+    },
+    {
+     "name": "Onyx bolt tips",
+     "quantity": "150",
+     "rarity": "5/126",
+     "rolls": null
+    },
+    {
+     "name": "Magic logs",
+     "quantity": "225 (noted)",
+     "rarity": "5/126",
+     "rolls": null
+    },
+    {
+     "name": "Limpwurt root",
+     "quantity": "100 (noted)",
+     "rarity": "5/126",
+     "rolls": null
+    },
+    {
+     "name": "Red spiders' eggs",
+     "quantity": "500 (noted)",
+     "rarity": "3/126",
+     "rolls": null
+    },
+    {
+     "name": "Unicorn horn",
+     "quantity": "225 (noted)",
+     "rarity": "1/126",
+     "rolls": null
+    },
+    {
+     "name": "Uncut dragonstone",
+     "quantity": "5 (noted)",
+     "rarity": "2/126",
+     "rolls": null
+    },
+    {
+     "name": "Grimy ranarr weed",
+     "quantity": "45 (noted)",
+     "rarity": "1/126",
+     "rolls": null
+    },
+    {
+     "name": "Grimy snapdragon",
+     "quantity": "100 (noted)",
+     "rarity": "1/126",
+     "rolls": null
+    },
+    {
+     "name": "Grimy toadflax",
+     "quantity": "45 (noted)",
+     "rarity": "1/126",
+     "rolls": null
+    },
+    {
+     "name": "Battlestaff",
+     "quantity": "12 (noted)",
+     "rarity": "2/126",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "50000",
+     "rarity": "10/126",
+     "rolls": null
+    },
+    {
+     "name": "Supercompost",
+     "quantity": "225 (noted)",
+     "rarity": "4/126",
+     "rolls": null
+    },
+    {
+     "name": "Antidote++(4)",
+     "quantity": "20 (noted)",
+     "rarity": "3/126",
+     "rolls": null
+    },
+    {
+     "name": "Super restore(4)",
+     "quantity": "10 (noted)",
+     "rarity": "5/126",
+     "rolls": null
+    },
+    {
+     "name": "Dark crab",
+     "quantity": "50 (noted)",
+     "rarity": "5/126",
+     "rolls": null
+    },
+    {
+     "name": "Blighted anglerfish",
+     "quantity": "100 (noted)",
+     "rarity": "1/126",
+     "rolls": null
+    },
+    {
+     "name": "Wilderness crabs teleport",
+     "quantity": "4",
+     "rarity": "3/126",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Secondary Supply roll",
+   "version": null,
+   "drops": [
+    {
+     "name": "Blighted anglerfish",
+     "quantity": "5-6",
+     "rarity": "1/18",
+     "rolls": null
+    },
+    {
+     "name": "Blighted karambwan",
+     "quantity": "5-6",
+     "rarity": "1/18",
+     "rolls": null
+    },
+    {
+     "name": "Blighted super restore(3)",
+     "quantity": "3-4",
+     "rarity": "1/18",
+     "rolls": null
+    },
+    {
+     "name": "Blighted super restore(4)",
+     "quantity": "3-4",
+     "rarity": "1/18",
+     "rolls": null
+    },
+    {
+     "name": "Ranging potion(2)",
+     "quantity": "2-3",
+     "rarity": "1/18",
+     "rolls": null
+    },
+    {
+     "name": "Super combat potion(2)",
+     "quantity": "2-3",
+     "rarity": "1/18",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Looting bag",
+     "quantity": "1",
+     "rarity": "1/3",
+     "rolls": null
+    },
+    {
+     "name": "Strange fruit",
+     "quantity": "1",
+     "rarity": "1/5",
+     "rolls": null
+    },
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Long bone",
+     "quantity": "1",
+     "rarity": "1/400",
+     "rolls": null
+    },
+    {
+     "name": "Venenatis spiderling",
+     "quantity": "1",
+     "rarity": "1/1500",
+     "rolls": null
+    },
+    {
+     "name": "Curved bone",
+     "quantity": "1",
+     "rarity": "1/5012.5",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

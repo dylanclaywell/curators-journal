@@ -1,0 +1,206 @@
+{
+ "id": "deranged-archaeologist",
+ "name": "Deranged archaeologist",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Deranged_archaeologist",
+ "overview": [
+  "The deranged archaeologist attacks primarily with Ranged, only using Melee if the player is next to him. Protect from Ranged and Protect from Melee will nullify each respective attack.",
+  "Periodically, he will yell before launching a special attack, throwing three books in an arc towards the player, which explode on impact with the ground four ticks (2.4 seconds) after he speaks. One will always hit exactly where the player was standing when the books were thrown. This book will burst into two additional books which also explode on impact after another delay.",
+  "This attack hits much harder than his crazed counterpart, dealing a maximum of 92 initial damage if not avoided!",
+  "Fighting from a distance will prevent him from using any melee attacks, allowing the use of Protect from Ranged to nullify all damage from his basic attacks, as well as giving the player more time to move away from his special attack.",
+  "Magic is particularly effective against the boss, as despite his high base Magic defence, he has a negligible Magic level; Magic defence is primarily based on one's Magic level."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Unique",
+   "version": null,
+   "drops": [
+    {
+     "name": "Steel ring",
+     "quantity": "1",
+     "rarity": "3/131",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Black d'hide body",
+     "quantity": "1",
+     "rarity": "6/131",
+     "rolls": null
+    },
+    {
+     "name": "Rune 2h sword",
+     "quantity": "1",
+     "rarity": "3/131",
+     "rolls": null
+    },
+    {
+     "name": "Rune sword",
+     "quantity": "1",
+     "rarity": "4/131",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": null,
+   "drops": [
+    {
+     "name": "Water rune",
+     "quantity": "100",
+     "rarity": "6/131",
+     "rolls": null
+    },
+    {
+     "name": "Mud rune",
+     "quantity": "40",
+     "rarity": "6/131",
+     "rolls": null
+    },
+    {
+     "name": "Rune knife",
+     "quantity": "25",
+     "rarity": "6/131",
+     "rolls": null
+    },
+    {
+     "name": "Dragon arrow",
+     "quantity": "60",
+     "rarity": "1/131",
+     "rolls": null
+    },
+    {
+     "name": "Steel cannonball",
+     "quantity": "80",
+     "rarity": "4/131",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Materials",
+   "version": null,
+   "drops": [
+    {
+     "name": "Grimy dwarf weed",
+     "quantity": "4 (noted)",
+     "rarity": "8/131",
+     "rolls": null
+    },
+    {
+     "name": "White berries",
+     "quantity": "10 (noted)",
+     "rarity": "7/131",
+     "rolls": null
+    },
+    {
+     "name": "Runite limbs",
+     "quantity": "1",
+     "rarity": "5/131",
+     "rolls": null
+    },
+    {
+     "name": "Black dragonhide",
+     "quantity": "8 (noted)",
+     "rarity": "5/131",
+     "rolls": null
+    },
+    {
+     "name": "Gold ore",
+     "quantity": "10 (noted)",
+     "rarity": "6/131",
+     "rolls": null
+    },
+    {
+     "name": "Uncut diamond",
+     "quantity": "5 (noted)",
+     "rarity": "5/131",
+     "rolls": null
+    },
+    {
+     "name": "Onyx bolt tips",
+     "quantity": "6",
+     "rarity": "6/131",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Consumables",
+   "version": null,
+   "drops": [
+    {
+     "name": "Anchovy pizza",
+     "quantity": "2",
+     "rarity": "4/131",
+     "rolls": null
+    },
+    {
+     "name": "Prayer potion(3)",
+     "quantity": "1",
+     "rarity": "8/131",
+     "rolls": null
+    },
+    {
+     "name": "Potato with cheese",
+     "quantity": "3",
+     "rarity": "8/131",
+     "rolls": null
+    },
+    {
+     "name": "Shark",
+     "quantity": "2",
+     "rarity": "8/131",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Crystal key",
+     "quantity": "1",
+     "rarity": "7/131",
+     "rolls": null
+    },
+    {
+     "name": "Long bone",
+     "quantity": "1",
+     "rarity": "2/131",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

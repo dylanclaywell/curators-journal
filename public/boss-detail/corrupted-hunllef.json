@@ -1,0 +1,28 @@
+{
+ "id": "corrupted-hunllef",
+ "name": "Corrupted Hunllef",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Corrupted_Hunllef",
+ "overview": [
+  "Both the Crystalline and Corrupted Hunllef use the same mechanics.",
+  "*Standard attacks: The Hunllef uses two main standard attacks, a range crystal-like attack and a magic based orb attack. The Hunllef will use Ranged as its first attack style. *Stomp attack: If a player is underneath the Hunllef when it tries to attack the player, the Hunllef will perform a stomp attack which deals up to 68 typeless damage, similar to the stomp attack used by the Corporeal Beast. This attack does not count towards one of the Hunllef's four standard attacks it uses before switching. *Prayer Disabling Attack: When the Hunllef is attacking using magic-based attacks, it has a chance to use an attack which turns off prayers. These attacks use a different game sound, hence it is recommended to use sounds during the fight. They are also a different colour, in case audio cues are not used. *Tornadoes: The Hunllef summons multiple tornadoes that chase the player and deal high damage if they reach the player's location. These tornadoes disappear after. The amount of tornadoes summoned increases as the Hunllef takes damage.",
+  "The Hunllef will alternate between mage and ranged standard attacks after any combination of 4 standard, prayer-disabling, or tornado attacks.",
+  "During the fight, the floor will light up in various places. Tiles are initially highlighted in crimson and soon turn orange. If the player stands on an orange tile they will take between 10-20 damage every game tick until they step off of the highlighted tiles.",
+  "As the fight progresses, the tile patterns become more challenging, and the tiles change from crimson to orange more quickly. There are three sets of floor patterns and corresponding speeds, and which set is used is dependent upon the Hunllef's health. From 1000 to 667 health, the patterns will be from the first set and change at a slow speed, from 666 to 333 health the patterns will come from the second set and change at a medium speed, and while the Hunllef has 332 health or below the final set of floor patterns is used and the tiles change rapidly.",
+  "The Hunllef changes its prayer and attack styles on predictable cycles. Every fourth attack performed by the Hunllef (excluding the stomp attack but including summoning tornadoes) will cause the Hunllef to change its standard attack style; it will perform an animation before switching attack styles.",
+  "Every sixth off-prayer attack that the player performs on the Hunllef, including attacks which deal zero damage, will trigger a protection prayer change. The Hunllef will use the protection prayer used on the sixth off-prayer hit. Players can use this cycle to ensure the Hunllef never prays against their strongest attack style."
+ ],
+ "tables": [
+  {
+   "section": "Drops",
+   "version": null,
+   "drops": [
+    {
+     "name": "Nothing",
+     "quantity": null,
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

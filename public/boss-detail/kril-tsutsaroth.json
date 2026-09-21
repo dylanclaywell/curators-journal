@@ -1,0 +1,197 @@
+{
+ "id": "kril-tsutsaroth",
+ "name": "K'ril Tsutsaroth",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/K'ril_Tsutsaroth",
+ "overview": [
+  "Like other God Wars Dungeon bosses, K'ril roams around a rectangular room with his bodyguards until a player enters, attacking them on sight. He attacks with melee and magic, and if his target is praying Protect from Melee, he can use a devastating melee special attack that hits through prayer. The melee attack has a maximum hit of 46, the magic attack hits from 10-30 and the special attack hits from 35-49, as well as draining half of the player's current prayer points, rounded down. The relative occurrences of the attacks are 2/3 for melee and 1/3 for magic. Barring a complex mechanic, K'ril will use his special on 1 in every 9 hits instead of a melee attack, which gives it an incidence of 2/27 in total. If all players leave, his health and stats will be reset.",
+  "*Balfrug Kreeyath (Magic) *Tstanon Karlak (Melee) *Zakl'n Gritch (Ranged)"
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Infernal ashes",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Frozen key piece (Zamorak)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Uniques",
+   "version": null,
+   "drops": [
+    {
+     "name": "Steam battlestaff",
+     "quantity": "1",
+     "rarity": "1/127",
+     "rolls": null
+    },
+    {
+     "name": "Zamorakian spear",
+     "quantity": "1",
+     "rarity": "1/127",
+     "rolls": null
+    },
+    {
+     "name": "Staff of the Dead",
+     "quantity": "1",
+     "rarity": "1/508",
+     "rolls": null
+    },
+    {
+     "name": "Zamorak hilt",
+     "quantity": "1",
+     "rarity": "1/508",
+     "rolls": null
+    },
+    {
+     "name": "Godsword shard 1",
+     "quantity": "1",
+     "rarity": "1/762",
+     "rolls": null
+    },
+    {
+     "name": "Godsword shard 2",
+     "quantity": "1",
+     "rarity": "1/762",
+     "rolls": null
+    },
+    {
+     "name": "Godsword shard 3",
+     "quantity": "1",
+     "rarity": "1/762",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Adamant arrow(p++)",
+     "quantity": "295-300",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Rune scimitar",
+     "quantity": "1",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Adamant platebody",
+     "quantity": "1",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Rune platelegs",
+     "quantity": "1",
+     "rarity": "7/127",
+     "rolls": null
+    },
+    {
+     "name": "Dragon dagger(p++)",
+     "quantity": "1",
+     "rarity": "2/127",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Potions",
+   "version": null,
+   "drops": [
+    {
+     "name": "Super attack(3)",
+     "quantity": "3",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Super strength(3)",
+     "quantity": "3",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Super restore(3)",
+     "quantity": "3",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Zamorak brew(3)",
+     "quantity": "3",
+     "rarity": "8/127",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "19500-20000",
+     "rarity": "36.7/127",
+     "rolls": null
+    },
+    {
+     "name": "Grimy lantadyme",
+     "quantity": "10 (noted)",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Lantadyme seed",
+     "quantity": "3",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Death rune",
+     "quantity": "120-125",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Blood rune",
+     "quantity": "80-85",
+     "rarity": "8/127",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Pet K'ril Tsutsaroth",
+     "quantity": "1",
+     "rarity": "1/5000",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

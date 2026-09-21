@@ -1,0 +1,14 @@
+{
+ "id": "dessous",
+ "name": "Dessous",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Dessous",
+ "overview": [
+  "To begin the fight, players must use a blessed silver pot containing blood, garlic, and spice on his grave. Dessous uses two attacks: a rapid 3-tick melee attack which is accurate and can hit up to 19, and a bat attack indicated by bats flying towards the player with Dessous saying, which is half Magic, half Ranged, each inflicting 5 hitpoints for a total of 10 hitpoints. The delay in which this attack hits the player seems to be random.",
+  "Dessous will detect a player's protection prayers and switch attack style accordingly. Players who will not be wearing melee Barrows armour are advised to activate Protect from Melee, otherwise players who are should use Protect from Magic/Protect from Missiles so that he will only use melee. A flaw in Dessous' mechanics can be taken advantage of so he will not be able to attack the player by switching between Protect from Melee and Ranged every tick (100 beats per minute if using a metronome), causing him to teleport around but not attack (if done correctly).",
+  "If players try to hit Dessous from a long distance away, he will teleport next to them, and if Dessous teleports three times he will get \"bored of toying with you\" and go back to his grave (this means the player will have to refill the silver pot and start the fight again).",
+  "Dessous is weaker to Magic and Ranged than Stab. Iban blast and trident of the seas/swamp are also effective. Efaritay's aid can be worn to gain a 10% damage bonus against Dessous using regular weapons.",
+  "If any part of the quest is not followed correctly (for example, if the pot is not blessed), Dessous will say \"You will never defeat me\" when reduced to 0 hitpoints and regenerate all his hitpoints, ready to fight again, so be careful! To avoid this follow the instructions closely while making the blessed pot of blood.",
+  "Dessous spawns.gif|Dessous comes out of the grave. Dessous prayer flick.gif|A player demonstrating what happens when prayer flicking between Protect from Ranged and Melee against Dessous, causing him to not attack. Dessous bat attack.gif|Dessous using his bat attack."
+ ],
+ "tables": []
+}

@@ -1,0 +1,284 @@
+{
+ "id": "the-nightmare",
+ "name": "The Nightmare",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/The_Nightmare",
+ "overview": [
+  "To begin the fight, approach The Nightmare's unconscious body and select the Disturb option. Players may join in the following 30 seconds before the fight begins: afterwards, players must wait until the fight is over (with The Nightmare or all the players defeated) before they may join.",
+  "Unlike most boss fights, The Nightmare's health and combat stats scale to the number of players in the fight (ranging from 5–80 players), though it may be fought in smaller team sizes. The minimum durability of her shield is 2,000 and caps at 19,600. If the Nightmare is floating in the centre rather than lying on the ground, it is an indication that she is fighting a group of players; the symbols on the ground also indicate the phase she is in.",
+  "The fight against the Nightmare consists of three phases, all three of which involve the player(s) breaking down its shield sufficiently before they can charge the four totems in the corners of the arena, unleashing a magical blast that deals massive damage to her. In each subsequent phase, the Nightmare will change its special attacks. Once the totems are charged a third time, the Nightmare will be defeated, ending the encounter.",
+  "The Nightmare's melee attack ignores accuracy and always hits. In addition, players take 20% of her base damage if using Protect from Melee, and 120% of her base damage if using the incorrect protection prayer. If the Nightmare has very low combat stats, her max hit will be at least a random number between 1-6, subject to the effects of prayer. The Nightmare's defence can be lowered down to a minimum of 120, however, she restores drained stats at a rate of 20 per minute.",
+  "If the player dies while fighting the Nightmare, they will be placed by the Pool of Nightmares and must reclaim their items from Shura. This is a flat regardless of carried wealth."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Big bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Inquisitor's and Nightmare staff table",
+   "version": null,
+   "drops": [
+    {
+     "name": "Nightmare staff",
+     "quantity": "1",
+     "rarity": "1/300",
+     "rolls": null
+    },
+    {
+     "name": "Inquisitor's great helm",
+     "quantity": "1",
+     "rarity": "1/420",
+     "rolls": null
+    },
+    {
+     "name": "Inquisitor's hauberk",
+     "quantity": "1",
+     "rarity": "1/420",
+     "rolls": null
+    },
+    {
+     "name": "Inquisitor's plateskirt",
+     "quantity": "1",
+     "rarity": "1/420",
+     "rolls": null
+    },
+    {
+     "name": "Inquisitor's mace",
+     "quantity": "1",
+     "rarity": "1/750",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Orb table",
+   "version": null,
+   "drops": [
+    {
+     "name": "Eldritch orb",
+     "quantity": "1",
+     "rarity": "1/960",
+     "rolls": null
+    },
+    {
+     "name": "Harmonised orb",
+     "quantity": "1",
+     "rarity": "1/960",
+     "rolls": null
+    },
+    {
+     "name": "Volatile orb",
+     "quantity": "1",
+     "rarity": "1/960",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": null,
+   "drops": [
+    {
+     "name": "Cosmic rune",
+     "quantity": "11-242",
+     "rarity": "4/100",
+     "rolls": null
+    },
+    {
+     "name": "Nature rune",
+     "quantity": "8-176",
+     "rarity": "4/100",
+     "rolls": null
+    },
+    {
+     "name": "Death rune",
+     "quantity": "7-176",
+     "rarity": "4/100",
+     "rolls": null
+    },
+    {
+     "name": "Blood rune",
+     "quantity": "16-440",
+     "rarity": "4/100",
+     "rolls": null
+    },
+    {
+     "name": "Soul rune",
+     "quantity": "8-132",
+     "rarity": "4/100",
+     "rolls": null
+    },
+    {
+     "name": "Steel cannonball",
+     "quantity": "6-220",
+     "rarity": "4/100",
+     "rolls": null
+    },
+    {
+     "name": "Rune arrow",
+     "quantity": "31-547",
+     "rarity": "3/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Resources",
+   "version": null,
+   "drops": [
+    {
+     "name": "Mithril ore",
+     "quantity": "11-176 (noted)",
+     "rarity": "4/100",
+     "rolls": null
+    },
+    {
+     "name": "Coal",
+     "quantity": "15-264 (noted)",
+     "rarity": "4/100",
+     "rolls": null
+    },
+    {
+     "name": "Gold ore",
+     "quantity": "9-176 (noted)",
+     "rarity": "4/100",
+     "rolls": null
+    },
+    {
+     "name": "Adamantite ore",
+     "quantity": "40-95 (noted)",
+     "rarity": "4/100",
+     "rolls": null
+    },
+    {
+     "name": "Magic logs",
+     "quantity": "1-55 (noted)",
+     "rarity": "4/100",
+     "rolls": null
+    },
+    {
+     "name": "Grimy cadantine",
+     "quantity": "1-16 (noted)",
+     "rarity": "4/100",
+     "rolls": null
+    },
+    {
+     "name": "Grimy torstol",
+     "quantity": "1-16 (noted)",
+     "rarity": "4/100",
+     "rolls": null
+    },
+    {
+     "name": "Snapdragon seed",
+     "quantity": "1-7",
+     "rarity": "3/100",
+     "rolls": null
+    },
+    {
+     "name": "Uncut emerald",
+     "quantity": "2-44 (noted)",
+     "rarity": "3/100",
+     "rolls": null
+    },
+    {
+     "name": "Uncut ruby",
+     "quantity": "27-60 (noted)",
+     "rarity": "3/100",
+     "rolls": null
+    },
+    {
+     "name": "Runite ore",
+     "quantity": "1-16 (noted)",
+     "rarity": "2/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Consumables",
+   "version": null,
+   "drops": [
+    {
+     "name": "Bass",
+     "quantity": "1-18",
+     "rarity": "6/100",
+     "rolls": null
+    },
+    {
+     "name": "Shark",
+     "quantity": "1-16",
+     "rarity": "6/100",
+     "rolls": null
+    },
+    {
+     "name": "Prayer potion(3)",
+     "quantity": "1-10",
+     "rarity": "5/100",
+     "rolls": null
+    },
+    {
+     "name": "Sanfew serum(3)",
+     "quantity": "1-8",
+     "rarity": "5/100",
+     "rolls": null
+    },
+    {
+     "name": "Saradomin brew(3)",
+     "quantity": "1-10",
+     "rarity": "5/100",
+     "rolls": null
+    },
+    {
+     "name": "Zamorak brew(3)",
+     "quantity": "1-10",
+     "rarity": "5/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Coins",
+   "version": null,
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "2291-43958",
+     "rarity": "2/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Little Nightmare",
+     "quantity": "1",
+     "rarity": "1/800",
+     "rolls": null
+    },
+    {
+     "name": "Jar of Dreams",
+     "quantity": "1",
+     "rarity": "1/1900",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

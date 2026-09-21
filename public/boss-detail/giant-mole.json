@@ -1,0 +1,199 @@
+{
+ "id": "giant-mole",
+ "name": "Giant Mole",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Giant_Mole",
+ "overview": [
+  "and an ultra-growth potion.]] The Giant Mole is initially unaggressive, and will respawn in the centre of the Mole Hole. She has a basic melee attack with a max hit of 21, and no special attacks.",
+  "Protect from Melee will negate all damage. She may also be safespotted using the various rocks and cavern walls due to her size.",
+  "While between 50% and 5% of her health, every attack from the player has a 25% chance of causing her to burrow into the ground to another area in the lair, losing aggression and forcing players to chase her across the lair. This includes attacks that hit a 0, unless it is a magic attack that splashes. Poison damage does not cause her to burrow. Upon burrowing, there is an additional chance of her throwing dirt at the player, which extinguishes open light sources of players within melee distance, such as candles and torches. Closed sources like the bullseye lantern are unaffected.",
+  "Having a Falador shield 3 or better in your inventory will allow the player to track the location of the mole with a flashing arrow indicator. The Giant Mole must be killed at least once before this item may be obtained, as it is a reward from the hard Falador Diary."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Big bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Mole claw",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Mole skin",
+     "quantity": "1-3",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Adamant longsword",
+     "quantity": "1",
+     "rarity": "10/131",
+     "rolls": null
+    },
+    {
+     "name": "Mithril platebody",
+     "quantity": "1",
+     "rarity": "9/131",
+     "rolls": null
+    },
+    {
+     "name": "Amulet of strength",
+     "quantity": "1",
+     "rarity": "7/131",
+     "rolls": null
+    },
+    {
+     "name": "Mithril axe",
+     "quantity": "1",
+     "rarity": "2/131",
+     "rolls": null
+    },
+    {
+     "name": "Mithril battleaxe",
+     "quantity": "1",
+     "rarity": "1/131",
+     "rolls": null
+    },
+    {
+     "name": "Rune med helm",
+     "quantity": "1",
+     "rarity": "1/131",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": null,
+   "drops": [
+    {
+     "name": "Air rune",
+     "quantity": "105",
+     "rarity": "20/131",
+     "rolls": null
+    },
+    {
+     "name": "Blood rune",
+     "quantity": "15",
+     "rarity": "19/131",
+     "rolls": null
+    },
+    {
+     "name": "Fire rune",
+     "quantity": "105",
+     "rarity": "11/131",
+     "rolls": null
+    },
+    {
+     "name": "Iron arrow",
+     "quantity": "690",
+     "rarity": "10/131",
+     "rolls": null
+    },
+    {
+     "name": "Law rune",
+     "quantity": "15",
+     "rarity": "5/131",
+     "rolls": null
+    },
+    {
+     "name": "Death rune",
+     "quantity": "50",
+     "rarity": "3/131",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Yew logs",
+     "quantity": "100 (noted)",
+     "rarity": "10/131",
+     "rolls": null
+    },
+    {
+     "name": "Shark",
+     "quantity": "4",
+     "rarity": "4/131",
+     "rolls": null
+    },
+    {
+     "name": "Mithril bar",
+     "quantity": "1",
+     "rarity": "3/131",
+     "rolls": null
+    },
+    {
+     "name": "Ranarr seed",
+     "quantity": "1",
+     "rarity": "3/131",
+     "rolls": null
+    },
+    {
+     "name": "Iron ore",
+     "quantity": "100 (noted)",
+     "rarity": "2/131",
+     "rolls": null
+    },
+    {
+     "name": "Oyster pearls",
+     "quantity": "1",
+     "rarity": "1/131",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Immaculate mole skin",
+     "quantity": "1",
+     "rarity": "1/50",
+     "rolls": null
+    },
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Long bone",
+     "quantity": "1",
+     "rarity": "1/400",
+     "rolls": null
+    },
+    {
+     "name": "Baby Mole",
+     "quantity": "1",
+     "rarity": "1/3000",
+     "rolls": null
+    },
+    {
+     "name": "Curved bone",
+     "quantity": "1",
+     "rarity": "1/5012.5",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

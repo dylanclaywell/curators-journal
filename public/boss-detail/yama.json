@@ -1,0 +1,405 @@
+{
+ "id": "yama",
+ "name": "Yama",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Yama",
+ "overview": [
+  "Yama can be fought alone or with another player that has signed the initial contract with him. His stats do not change in either size. When accounting for stat drains, his stats can be drained a maximum of 80 Defence levels (to 145). If using the Emberlight's special attack, his Attack and Strength stats can be drained 120/150 levels respectively to a cap of 200. Not only is Yama considered demonic, he also is more vulnerable to demonbane weapons than other demons; all demonbane modifiers are increased by 20%. This means that Emberlight, for example, has an accuracy and damage increase of 84% against Yama (compared to the usual 70% against demonic creatures).",
+  "Yama utilises all forms of combat; swinging his axe with melee, engulfing players in shadow with ranged or fire with magic. Yama has two distinct combat behaviours in which he checks the weapon being used by his current target; if a melee weapon is used, Yama will close the distance. If a magic or ranged weapon is being used, he will instead stay still and attack from afar. This check additionally influences his magic defence. His melee attacks can hit through prayer and will hit everyone within three tiles of his target, while the ranged and magic attacks are fully blocked with prayer. Yama also inflicts poison starting at 20, the highest possible value. He also makes use of shadow and fire-based elemental attacks, which deal heavy damage. These attacks can only be fully blocked by standing on the according glyph to gain temporary protection against such attacks. Though he only focuses on one player, Yama can change aggression to the other player in duo encounters.",
+  "Shortly after 66.6% and 33.3% of his health, Yama will slam the pommel of his axe to the ground, teleporting the player to the pockets of land to the side of the arena, where a Judge of Yama must be defeated in order to continue the fight. After the threshold is reached but before he teleports the players, he gains 50% damage resistance to any attacks. The Judge prays against two combat styles, with one of them always being ranged, and reactively prays against the last attack, so players must bring melee and magic in order to kill it efficiently. After the judge is slain, Yama begins the next phase.",
+  "In the final phase, Yama will remain static in the centre of the room, increasing all of his defence bonuses and using one of two different combat behaviours; if the target is out of melee range, he will launch three sets of fireballs at everyone in the arena, whereas being in melee range will result in a quick swipe from his axe that additionally summons a flare. Every auto-attack switches between styles (if he used shadow on the previous hit, then he uses magic on the next hit). His ranged and magic attacks will now pierce prayer (although very negligible), while the melee attack deals even more damage. Players must defeat Yama as quickly as possible while handling numerous rapid shadow waves and flares, the latter of which will damage players and heal Yama if not destroyed.",
+  "After Yama is defeated, he will teleport back to his throne and snap his fingers, rewarding players for their efforts. He can be immediately challenged again if desired.",
+  "Unlike most other bosses, players who die fighting Yama are sent back to the Voice of Yama instead of their respawn point, where their graves are also located. Players will have their reclamation fee reduced by 75% until they have 10 kills, after which the standard death cost will apply."
+ ],
+ "tables": [
+  {
+   "section": "Unique",
+   "version": null,
+   "drops": [
+    {
+     "name": "Soulflame horn",
+     "quantity": "1",
+     "rarity": "2/600",
+     "rolls": null
+    },
+    {
+     "name": "Oathplate helm",
+     "quantity": "1",
+     "rarity": "1/600",
+     "rolls": null
+    },
+    {
+     "name": "Oathplate chest",
+     "quantity": "1",
+     "rarity": "1/600",
+     "rolls": null
+    },
+    {
+     "name": "Oathplate legs",
+     "quantity": "1",
+     "rarity": "1/600",
+     "rolls": null
+    },
+    {
+     "name": "Dossier",
+     "quantity": "1",
+     "rarity": "1/12.1",
+     "rolls": null
+    },
+    {
+     "name": "Forgotten lockbox",
+     "quantity": "1",
+     "rarity": "1/33",
+     "rolls": null
+    },
+    {
+     "name": "Oathplate shards",
+     "quantity": "12",
+     "rarity": "1/17.07",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Supplies",
+   "version": null,
+   "drops": [
+    {
+     "name": "Pineapple pizza",
+     "quantity": "3-4",
+     "rarity": "7.5/95.11",
+     "rolls": null
+    },
+    {
+     "name": "Wild pie",
+     "quantity": "3-4",
+     "rarity": "7.5/95.11",
+     "rolls": null
+    },
+    {
+     "name": "Prayer potion(3)",
+     "quantity": "2",
+     "rarity": "7.5/95.11",
+     "rolls": null
+    },
+    {
+     "name": "Super restore mix(2)",
+     "quantity": "2",
+     "rarity": "7.5/95.11",
+     "rolls": null
+    },
+    {
+     "name": "Super combat potion(1)",
+     "quantity": "1",
+     "rarity": "7.5/95.11",
+     "rolls": null
+    },
+    {
+     "name": "Zamorak mix(2)",
+     "quantity": "1",
+     "rarity": "7.5/95.11",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Rune chainbody",
+     "quantity": "8 (noted)",
+     "rarity": "5/95.11",
+     "rolls": null
+    },
+    {
+     "name": "Battlestaff",
+     "quantity": "40 (noted)",
+     "rarity": "4/95.11",
+     "rolls": null
+    },
+    {
+     "name": "Rune platebody",
+     "quantity": "8 (noted)",
+     "rarity": "3/95.11",
+     "rolls": null
+    },
+    {
+     "name": "Dragon plateskirt",
+     "quantity": "1",
+     "rarity": "2/95.11",
+     "rolls": null
+    },
+    {
+     "name": "Dragon platelegs",
+     "quantity": "1",
+     "rarity": "2/95.11",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes",
+   "version": null,
+   "drops": [
+    {
+     "name": "Blood rune",
+     "quantity": "400",
+     "rarity": "3/95.11",
+     "rolls": null
+    },
+    {
+     "name": "Law rune",
+     "quantity": "150",
+     "rarity": "3/95.11",
+     "rolls": null
+    },
+    {
+     "name": "Smoke rune",
+     "quantity": "350",
+     "rarity": "2/95.11",
+     "rolls": null
+    },
+    {
+     "name": "Soul rune",
+     "quantity": "500",
+     "rarity": "2/95.11",
+     "rolls": null
+    },
+    {
+     "name": "Soul rune",
+     "quantity": "1000",
+     "rarity": "2/95.11",
+     "rolls": null
+    },
+    {
+     "name": "Fire rune",
+     "quantity": "40000",
+     "rarity": "1/95.11",
+     "rolls": null
+    },
+    {
+     "name": "Wrath rune",
+     "quantity": "800",
+     "rarity": "1/95.11",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Aether catalyst",
+     "quantity": "850",
+     "rarity": "7/95.11",
+     "rolls": null
+    },
+    {
+     "name": "Diabolic worms",
+     "quantity": "90",
+     "rarity": "7/95.11",
+     "rolls": null
+    },
+    {
+     "name": "Barrel of demonic tallow (full)",
+     "quantity": "1",
+     "rarity": "5/95.11",
+     "rolls": null
+    },
+    {
+     "name": "Chasm teleport scroll",
+     "quantity": "6",
+     "rarity": "4/95.11",
+     "rolls": null
+    },
+    {
+     "name": "Emerald",
+     "quantity": "40 (noted)",
+     "rarity": "3/95.11",
+     "rolls": null
+    },
+    {
+     "name": "Ruby",
+     "quantity": "40 (noted)",
+     "rarity": "3/95.11",
+     "rolls": null
+    },
+    {
+     "name": "Diamond",
+     "quantity": "40 (noted)",
+     "rarity": "3/95.11",
+     "rolls": null
+    },
+    {
+     "name": "Onyx bolt tips",
+     "quantity": "150",
+     "rarity": "1/95.11",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Junk",
+   "version": "Junk",
+   "drops": [
+    {
+     "name": "Cabbage",
+     "quantity": "1",
+     "rarity": "3/11",
+     "rolls": null
+    },
+    {
+     "name": "Black bead",
+     "quantity": "1",
+     "rarity": "3/11",
+     "rolls": null
+    },
+    {
+     "name": "Spinach roll",
+     "quantity": "1",
+     "rarity": "3/11",
+     "rolls": null
+    },
+    {
+     "name": "Demon dung",
+     "quantity": "1",
+     "rarity": "2/11",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Yami",
+     "quantity": "1",
+     "rarity": "1/2500",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Contract",
+   "version": "Contract",
+   "drops": [
+    {
+     "name": "Aether catalyst",
+     "quantity": "2000",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Diabolic worms",
+     "quantity": "250",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Oathplate shards",
+     "quantity": "45",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Oathplate helm",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Oathplate chest",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Oathplate legs",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Soulflame horn",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Contract of Forfeit Breath",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Purifying sigil (top)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Contract of Glyphic Attenuation",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Purifying sigil (bottom)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Contract of Sensory Clouding",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Purifying sigil (left)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Contract of Divine Severance",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Purifying sigil (right)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Contract of Bloodied Blows",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Purifying sigil (middle)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Contract of Familiar Acquisition",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Yami",
+     "quantity": "1",
+     "rarity": "1/100",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

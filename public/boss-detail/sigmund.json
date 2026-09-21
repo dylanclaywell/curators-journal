@@ -1,0 +1,20 @@
+{
+ "id": "sigmund",
+ "name": "Sigmund",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Sigmund",
+ "overview": [],
+ "tables": [
+  {
+   "section": "Pickpocketing",
+   "version": null,
+   "drops": [
+    {
+     "name": "Key (The Lost Tribe)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

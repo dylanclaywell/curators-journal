@@ -1,0 +1,37 @@
+{
+ "id": "demonic-brutus",
+ "name": "Demonic Brutus",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Demonic_Brutus",
+ "overview": [
+  "Unlike Brutus, Demonic Brutus' basic melee attack can hit through Protect from Melee, with a max hit of 4. He cannot be killed as part of a cow slayer task, and is immune to stat drains and enchanted bolt effects. Additionally, despite his name, Demonic Brutus is not classified as a demon.",
+  "After three basic attacks, Brutus will use one of two special attacks —Demonic Stomp and Demonic Charge; which one he chooses initially is random, but it will alternate between the two special attacks afterward for the remainder of the fight. If the player happens to deal more than ~100 damage at the start of the fight, there is a chance of Demonic Brutus starting his special attack after only two basic attacks. The first attack has a chance of starting either West or South of the player. If West, all special attacks throughout the fight will start either to the West or East of the player, swapping after every use of Demonic Charge. If South, then the same mechanics apply, but instead swapping between North and South of the player instead.",
+  "The player will have a few ticks to move out of the way of each special attack, but this reaction time is shortened upon Brutus reaching 500 (66.6%) health. Brutus and his ghosts will normally attack in a clockwise pattern during special attacks, but will move in a counter-clockwise pattern upon reaching 250 (33.3%) health instead during both phase 1 and 2.",
+  "Once Brutus' health reaches 0, he will exclaim and heal himself by 487 hitpoints to begin phase 2 of the fight, which is near-identical to the first, except now every special attack is accompanied by four projectiles which land on the player whenever each ghost attacks. The first three projectiles are always magic-melee-ranged, with the fourth being random."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Brutus slippers",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Beef",
+     "quantity": "1",
+     "rarity": "1/400",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

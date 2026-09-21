@@ -1,0 +1,254 @@
+{
+ "id": "nex",
+ "name": "Nex",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Nex",
+ "overview": [
+  "Nex spawns in her chamber shortly after a player or team of players pass through the ancient barrier within the Ancient Prison. She has very high hitpoints and deals relatively high damage even through protection prayers, so fighting her in a team is effectively a requirement.",
+  "The fight consists of five distinct phases based on the Ancient Magicks, with Nex using smoke, shadow, blood, and ice magic, before entering an empowered final state. Nex attacks with all three forms of combat, but is limited to two per phase; melee and magic for every phase other than shadow, which uses melee and ranged instead. Each phase makes use of different mechanics to keep challengers on their feet unless they wish to die a swift death.",
+  "After Nex has lost 20% of her maximum health, the mage responsible for empowering Nex can be attacked and must be killed in order to progress to the next phase. In the final phase, Nex will use the Ruinous Powers - Soul Split and Deflect Melee, before using no curses and alternating her overhead after every four attacks made. Upon reaching 0 health, Nex will activate Wrath in a last-ditch attempt to take down her opponents, which can be easily avoided by running away.",
+  "Like other God Wars Dungeon bosses, there is an altar to restore prayer in the back wall of the room with a cooldown of 10 minutes. Uniquely, if the player is wearing an eligible Zarosian item, the altar will also restore health, run energy and special attack energy.",
+  "*Fumus (Magic, Smoke) – Attackable at 2720 hitpoints *Umbra (Magic, Shadow) – Attackable at 2040 hitpoints *Cruor (Magic, Blood) – Attackable at 1360 hitpoints *Glacies (Magic, Ice) – Attackable at 680 hitpoints"
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Big bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Uniques",
+   "version": null,
+   "drops": [
+    {
+     "name": "Ancient hilt",
+     "quantity": "1",
+     "rarity": "1/516",
+     "rolls": null
+    },
+    {
+     "name": "Nihil horn",
+     "quantity": "1",
+     "rarity": "1/258",
+     "rolls": null
+    },
+    {
+     "name": "Torva full helm (damaged)",
+     "quantity": "1",
+     "rarity": "1/258",
+     "rolls": null
+    },
+    {
+     "name": "Torva platebody (damaged)",
+     "quantity": "1",
+     "rarity": "1/258",
+     "rolls": null
+    },
+    {
+     "name": "Torva platelegs (damaged)",
+     "quantity": "1",
+     "rarity": "1/258",
+     "rolls": null
+    },
+    {
+     "name": "Zaryte vambraces",
+     "quantity": "1",
+     "rarity": "1/172",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": null,
+   "drops": [
+    {
+     "name": "Air rune",
+     "quantity": "123-10000",
+     "rarity": "Uncommon",
+     "rolls": null
+    },
+    {
+     "name": "Fire rune",
+     "quantity": "1-10000",
+     "rarity": "Uncommon",
+     "rolls": null
+    },
+    {
+     "name": "Blood rune",
+     "quantity": "84-876",
+     "rarity": "Common",
+     "rolls": null
+    },
+    {
+     "name": "Death rune",
+     "quantity": "85-986",
+     "rarity": "Common",
+     "rolls": null
+    },
+    {
+     "name": "Water rune",
+     "quantity": "193-10000",
+     "rarity": "Uncommon",
+     "rolls": null
+    },
+    {
+     "name": "Soul rune",
+     "quantity": "86-592",
+     "rarity": "Common",
+     "rolls": null
+    },
+    {
+     "name": "Dragon bolts (unf)",
+     "quantity": "12-283",
+     "rarity": "Common",
+     "rolls": null
+    },
+    {
+     "name": "Onyx bolts (e)",
+     "quantity": "11-29",
+     "rarity": "Uncommon",
+     "rolls": null
+    },
+    {
+     "name": "Steel cannonball",
+     "quantity": "42-2252",
+     "rarity": "Common",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Resources",
+   "version": null,
+   "drops": [
+    {
+     "name": "Air orb",
+     "quantity": "6-100 (noted)",
+     "rarity": "Common",
+     "rolls": null
+    },
+    {
+     "name": "Coal",
+     "quantity": "23-2354(noted)",
+     "rarity": "Uncommon",
+     "rolls": null
+    },
+    {
+     "name": "Runite ore",
+     "quantity": "2-30 (noted)",
+     "rarity": "Uncommon",
+     "rolls": null
+    },
+    {
+     "name": "Uncut ruby",
+     "quantity": "3-80 (noted)",
+     "rarity": "Common",
+     "rolls": null
+    },
+    {
+     "name": "Uncut diamond",
+     "quantity": "3-64 (noted)",
+     "rarity": "Common",
+     "rolls": null
+    },
+    {
+     "name": "Wine of Zamorak",
+     "quantity": "4-64 (noted)",
+     "rarity": "Common",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Consumables",
+   "version": null,
+   "drops": [
+    {
+     "name": "Shark",
+     "quantity": "10",
+     "rarity": "Common",
+     "rolls": null
+    },
+    {
+     "name": "Prayer potion(4)",
+     "quantity": "3",
+     "rarity": "Common",
+     "rolls": null
+    },
+    {
+     "name": "Saradomin brew(4)",
+     "quantity": "1-10",
+     "rarity": "Common",
+     "rolls": null
+    },
+    {
+     "name": "Super restore(4)",
+     "quantity": "1-5",
+     "rarity": "Common",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Blood essence",
+     "quantity": "1-2",
+     "rarity": "1/82",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "8539-26748",
+     "rarity": "Uncommon",
+     "rolls": null
+    },
+    {
+     "name": "Rune sword",
+     "quantity": "1",
+     "rarity": "1/209",
+     "rolls": null
+    },
+    {
+     "name": "Ecumenical key shard",
+     "quantity": "6-39",
+     "rarity": "Common",
+     "rolls": null
+    },
+    {
+     "name": "Nihil shard",
+     "quantity": "80-85",
+     "rarity": "5/82",
+     "rolls": null
+    },
+    {
+     "name": "Nihil shard",
+     "quantity": "85-95",
+     "rarity": "8/209",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Nexling",
+     "quantity": "1",
+     "rarity": "1/500",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

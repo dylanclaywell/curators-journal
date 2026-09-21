@@ -1,0 +1,27 @@
+{
+ "id": "fareed",
+ "name": "Fareed",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Fareed",
+ "overview": [
+  "Fareed has high melee Defence, and can only otherwise be damaged with Water spells or any kind of Ranged weapon. Any ammunition used on Fareed besides ice arrows will drop beneath Fareed as ashes, bypassing the effect of Ava's devices. Even when using ice arrows, Ava's devices are rendered completely ineffective, with used ice arrows appearing beneath him.",
+  "Due to Fareed's disarming ability, it is advised players who lack the ice gloves to use Water spells as they do not require a weapon to be equipped.",
+  "Protect from Melee is strongly advised if fighting Fareed close up as he can hit up to 40 with melee (this is lowered slightly to 37 if ice gloves are worn). He can also use an inaccurate melee-distance Magic attack which hits up to around 20. If Protect from Melee is used in conjunction with high Magic defence armour (dragonhide armour/Karils), Fareed will hit very little on the player.",
+  "For players who cannot use Protect from Melee, the use of Snare/Entangle and attacking Fareed with their strongest Water spell from a distance is recommended.",
+  "Players who opt to use Magic must use Water spells to harm him.",
+  "It is possible to kill Fareed without ice gloves while using Ranged or Magic (with a weapon) so long as the player keeps their distance from him. However, this is not possible for melee users as players who use melee will have their weapon unequipped since they are in close distance; using melee to kill him without ice gloves is NOT RECOMMENDED."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Ashes",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

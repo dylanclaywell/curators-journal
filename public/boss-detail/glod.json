@@ -1,0 +1,62 @@
+{
+ "id": "glod",
+ "name": "Glod",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Glod",
+ "overview": [],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Big bones",
+     "quantity": "2",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Uncut sapphire",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Uncut ruby",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Watering can(4)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Golden goblin",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Long bone",
+     "quantity": "1",
+     "rarity": "1/400",
+     "rolls": null
+    },
+    {
+     "name": "Curved bone",
+     "quantity": "1",
+     "rarity": "1/5012.5",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

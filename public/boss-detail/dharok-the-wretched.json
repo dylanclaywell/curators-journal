@@ -1,0 +1,20 @@
+{
+ "id": "dharok-the-wretched",
+ "name": "Dharok the Wretched",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Dharok_the_Wretched",
+ "overview": [],
+ "tables": [
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

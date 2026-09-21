@@ -1,0 +1,64 @@
+{
+ "id": "tekton",
+ "name": "Tekton",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Tekton",
+ "overview": [
+  "Tekton is seen working with his magnetic anvil. As soon as someone gets near him, he will notice them and begin the fight.",
+  "Tekton is immune to Range and takes 80% reduced Magic damage. He is also immune to binding effects, should the spell somehow land on him.",
+  "The first elder maul or dragon warhammer special that makes contact with Tekton will always land as a damaging successful hit. If multiple specials land on the same tick, it will only apply to one of the attacks. After the first successful hit, further specials will act as normal. If the special from an elder maul or dragon warhammer fails to hit, it will still drain 5% of his Defence. A bandos godsword that fails to land will drain 10 Defence levels instead.",
+  "Tekton will walk to a player until he makes contact with them, after which he will stop moving and enter a combat stance. Tekton will turn into a solid NPC, meaning it is not possible to walk under him. He will proceed to attack with melee, attacking both the area in front of him and to his right simultaneously. If multiple players are surrounding Tekton, he will randomly change direction, so all players should ideally attack from the same direction to avoid the chance of getting hit.",
+  "After a short duration of fighting, or if Tekton is unable to scan anyone in melee range on his next attack, he will stop and return to the anvil, slowly repairing himself for small amounts of health (roughly 1.11 to 1.33%) every few ticks. At the same time, sparks will fly from the lava in the chamber, with all players getting targeted by two sparks. These sparks have a 3x3 AoE and getting hit by them will deal moderate damage, even if from another player, so it is important to avoid them. Once Tekton finishes repairing himself (around ~10 or so seconds), he will stop, enter an enraged form and attempt to walk to a player to enter his combat stance again. In his enraged form, Tekton's max hit and defence bonuses increase, so it is important to continue avoiding his attacks as necessary. The enraged stance will only last briefly before he returns to normal, which in turn drops all bonuses from the enraged form.",
+  "Tekton regenerate his stats at a rate of 1 per 15 ticks, faster than the standard rate of 1 per 100 ticks.",
+  "Due to Tekton being the first room in Challenge Mode and Full Layout raids, both can be ideal places to practice as the boss mechanics can be unforgiving to small mistakes."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Tekton's journal",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Stinkhorn mushroom",
+     "quantity": "5",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Overload (+)(4)",
+     "quantity": "2",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Prayer enhance (+)(4)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Revitalisation (+)(4)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Onyx",
+     "quantity": "1",
+     "rarity": "1/450",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

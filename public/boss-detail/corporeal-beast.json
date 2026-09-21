@@ -1,0 +1,245 @@
+{
+ "id": "corporeal-beast",
+ "name": "Corporeal Beast",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Corporeal_Beast",
+ "overview": [
+  "The Corporeal Beast has a 50% damage reduction against any weapon that is not a Corpbane weapon on stab attack style. Although magic attacks also deal full damage, they are generally very inaccurate against the boss. Protect from Magic does not fully block its magic attacks; it only reduces the damage by 33%. The Corporeal Beast has very high accuracy and damage and attacks mostly with Magic.",
+  "While fighting the Corporeal Beast, there is a chance that the dark energy core will spawn. This creature leaches Hitpoints from any players adjacent to it to heal the Corporeal Beast and jumps to players if none are adjacent, and it can be significantly weakened by poisoning it. The Corporeal Beast also rapidly regenerates health when there are no players in the room."
+ ],
+ "tables": [
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Mystic robe top",
+     "quantity": "1",
+     "rarity": "18/512",
+     "rolls": null
+    },
+    {
+     "name": "Mystic robe bottom",
+     "quantity": "1",
+     "rarity": "18/512",
+     "rolls": null
+    },
+    {
+     "name": "Mystic air staff",
+     "quantity": "1",
+     "rarity": "12/512",
+     "rolls": null
+    },
+    {
+     "name": "Mystic water staff",
+     "quantity": "1",
+     "rarity": "12/512",
+     "rolls": null
+    },
+    {
+     "name": "Mystic earth staff",
+     "quantity": "1",
+     "rarity": "12/512",
+     "rolls": null
+    },
+    {
+     "name": "Mystic fire staff",
+     "quantity": "1",
+     "rarity": "12/512",
+     "rolls": null
+    },
+    {
+     "name": "Spirit shield",
+     "quantity": "1",
+     "rarity": "8/512",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": null,
+   "drops": [
+    {
+     "name": "Soul rune",
+     "quantity": "250",
+     "rarity": "32/512",
+     "rolls": null
+    },
+    {
+     "name": "Runite bolts",
+     "quantity": "250",
+     "rarity": "24/512",
+     "rolls": null
+    },
+    {
+     "name": "Death rune",
+     "quantity": "300",
+     "rarity": "22/512",
+     "rolls": null
+    },
+    {
+     "name": "Onyx bolts (e)",
+     "quantity": "175",
+     "rarity": "20/512",
+     "rolls": null
+    },
+    {
+     "name": "Steel cannonball",
+     "quantity": "2000",
+     "rarity": "17/512",
+     "rolls": null
+    },
+    {
+     "name": "Adamant arrow",
+     "quantity": "750",
+     "rarity": "17/512",
+     "rolls": null
+    },
+    {
+     "name": "Law rune",
+     "quantity": "250",
+     "rarity": "17/512",
+     "rolls": null
+    },
+    {
+     "name": "Cosmic rune",
+     "quantity": "500",
+     "rarity": "17/512",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Resources",
+   "version": null,
+   "drops": [
+    {
+     "name": "Raw shark",
+     "quantity": "70 (noted)",
+     "rarity": "21/512",
+     "rolls": null
+    },
+    {
+     "name": "Pure essence",
+     "quantity": "2500 (noted)",
+     "rarity": "21/512",
+     "rolls": null
+    },
+    {
+     "name": "Adamantite bar",
+     "quantity": "35 (noted)",
+     "rarity": "18/512",
+     "rolls": null
+    },
+    {
+     "name": "Green dragonhide",
+     "quantity": "100 (noted)",
+     "rarity": "18/512",
+     "rolls": null
+    },
+    {
+     "name": "Adamantite ore",
+     "quantity": "125 (noted)",
+     "rarity": "17/512",
+     "rolls": null
+    },
+    {
+     "name": "Runite ore",
+     "quantity": "20 (noted)",
+     "rarity": "12/512",
+     "rolls": null
+    },
+    {
+     "name": "Teak plank",
+     "quantity": "100 (noted)",
+     "rarity": "12/512",
+     "rolls": null
+    },
+    {
+     "name": "Mahogany logs",
+     "quantity": "150 (noted)",
+     "rarity": "12/512",
+     "rolls": null
+    },
+    {
+     "name": "Magic logs",
+     "quantity": "75 (noted)",
+     "rarity": "12/512",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Tuna potato",
+     "quantity": "30",
+     "rarity": "20/512",
+     "rolls": null
+    },
+    {
+     "name": "White berries",
+     "quantity": "120 (noted)",
+     "rarity": "17/512",
+     "rolls": null
+    },
+    {
+     "name": "Goat horn",
+     "quantity": "120 (noted)",
+     "rarity": "17/512",
+     "rolls": null
+    },
+    {
+     "name": "Watermelon seed",
+     "quantity": "24",
+     "rarity": "15/512",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "20000-50000",
+     "rarity": "12/512",
+     "rolls": null
+    },
+    {
+     "name": "Antidote++(4)",
+     "quantity": "40 (noted)",
+     "rarity": "10/512",
+     "rolls": null
+    },
+    {
+     "name": "Ranarr seed",
+     "quantity": "10",
+     "rarity": "5/512",
+     "rolls": null
+    },
+    {
+     "name": "Holy elixir",
+     "quantity": "1",
+     "rarity": "3/512",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Jar of Spirits",
+     "quantity": "1",
+     "rarity": "1/1000",
+     "rolls": null
+    },
+    {
+     "name": "Pet dark core",
+     "quantity": "1",
+     "rarity": "1/5000",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,373 @@
+{
+ "id": "zulrah",
+ "name": "Zulrah",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Zulrah",
+ "overview": [
+  "The shrine is a small U-shaped island with two pillars in the middle corners, and Zulrah swims in the swampy water around the island throughout the fight. It cannot be reached with melee (with the exception of halberds). Damage at Zulrah is capped at 50, with any hits greater than this amount dealing 45-50 damage instead.",
+  "Zulrah periodically switches forms, distinguishable by its colour, that have varying resistance to Ranged and Magic. In turn, Zulrah attacks with Ranged and Magic, as well as an avoidable Melee attack where it targets the player with its tail, depending on its form. It can also summon snakelings, smaller versions of itself, on the platform to attack the player, along with toxic clouds that deal rapid damage if they stand in one.",
+  "Zulrah and its snakelings inflict venom with their attacks, an enhanced version of poison that increases its damage the longer it has affected the player, starting at 6 damage per hit and increasing up to 20. Standard poison protection will only reduce venom to regular poison and will not grant any immunity; anti-venom, anti-venom+, extended anti-venom+, or wearing a serpentine helm are much more effective for eliminating and preventing venom.",
+  "Zulrah periodically changes forms by diving into the swamp and resurfacing somewhere else. It may spawn snakelings and toxic clouds in any form.",
+  "*When Zulrah is green, it attacks with Ranged. It is weak to Magic. **At approximately 2 minutes, Zulrah will be in its green form and attack with alternating Ranged and Magic attacks (colloquially called \"Jad phase\"). **If the fight takes a long time (3+ minutes), it is possible for Zulrah to be in its green form and attack unpredictably with Ranged and Magic. *When Zulrah is blue, it attacks with Ranged and Magic. It is weak to Ranged. Due to the Magic attacks being more common and more accurate, it is recommended to use Protect from Magic. Zulrah can attack with Ranged up to five times in succession. *When Zulrah is red, it uses a typeless attack wherein it swings its tail at the player's position, which can be avoided by moving two tiles away; if it hits, it will deal heavy damage and stun the player. It is more resistant to damage in this phase than in the other two forms, but Magic is typically more effective than Ranged.",
+  "The forms and when and where Zulrah spawns snakelings and toxic clouds are predictable: there are four possible patterns for the fight that dictate what it will do next. Further information can be read on the strategy article.",
+  "Damage is calculated on animation/attack generation not when projectile hits you.",
+  "Upon death at Zulrah, all items which would normally be lost are held by the priestess at the Zul-Andra dock, who acts as an Item Retrieval Service. Items held by the priestess are permanently lost if the player dies an unsafe death before reclaiming them. Some specific anomalies may occur with some items.",
+  "Players who have defeated Zulrah fewer than 50 times can obtain their items free of charge; afterwards, they must pay 100,000 coins each time they die to reclaim their items. Ultimate Iron players are unaffected by this regardless of their kill count; they will continue to reclaim their items from the priestess for free, without use of that chest menu.",
+  "Completion of the elite Western Provinces Diary grants the player one free daily resurrection at Zulrah which restores all stats and allows the player to continue the fight from the current point if they drop to 0 hitpoints. This does not count as a death for purposes such as losing hardcore ironman status as it is considered a \"safe\" death. In order to benefit from this perk again, the player must log in after the daily reset time."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Zulrah's scales",
+     "quantity": "100-299",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Uniques",
+   "version": null,
+   "drops": [
+    {
+     "name": "Tanzanite fang",
+     "quantity": "1",
+     "rarity": "1/1024",
+     "rolls": 2
+    },
+    {
+     "name": "Magic fang",
+     "quantity": "1",
+     "rarity": "1/1024",
+     "rolls": 2
+    },
+    {
+     "name": "Serpentine visage",
+     "quantity": "1",
+     "rarity": "1/1024",
+     "rolls": 2
+    },
+    {
+     "name": "Uncut onyx",
+     "quantity": "1",
+     "rarity": "1/1024",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Mutagens",
+   "version": null,
+   "drops": [
+    {
+     "name": "Flax",
+     "quantity": "1000 (noted)",
+     "rarity": "10/249",
+     "rolls": 2
+    },
+    {
+     "name": "Tanzanite mutagen",
+     "quantity": "1",
+     "rarity": "1/13107",
+     "rolls": 2
+    },
+    {
+     "name": "Magma mutagen",
+     "quantity": "1",
+     "rarity": "1/13107",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Battlestaff",
+     "quantity": "10 (noted)",
+     "rarity": "10/249",
+     "rolls": 2
+    },
+    {
+     "name": "Dragon med helm",
+     "quantity": "1",
+     "rarity": "2/249",
+     "rolls": 2
+    },
+    {
+     "name": "Dragon halberd",
+     "quantity": "1",
+     "rarity": "2/249",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Runes",
+   "version": null,
+   "drops": [
+    {
+     "name": "Death rune",
+     "quantity": "250",
+     "rarity": "12/249",
+     "rolls": 2
+    },
+    {
+     "name": "Law rune",
+     "quantity": "200",
+     "rarity": "12/249",
+     "rolls": 2
+    },
+    {
+     "name": "Chaos rune",
+     "quantity": "400",
+     "rarity": "12/249",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Herbs",
+   "version": null,
+   "drops": [
+    {
+     "name": "Snapdragon",
+     "quantity": "10 (noted)",
+     "rarity": "2/249",
+     "rolls": 2
+    },
+    {
+     "name": "Dwarf weed",
+     "quantity": "30 (noted)",
+     "rarity": "2/249",
+     "rolls": 2
+    },
+    {
+     "name": "Toadflax",
+     "quantity": "25 (noted)",
+     "rarity": "2/249",
+     "rolls": 2
+    },
+    {
+     "name": "Torstol",
+     "quantity": "10 (noted)",
+     "rarity": "2/249",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Seeds",
+   "version": null,
+   "drops": [
+    {
+     "name": "Palm tree seed",
+     "quantity": "1",
+     "rarity": "6/249",
+     "rolls": 2
+    },
+    {
+     "name": "Papaya tree seed",
+     "quantity": "3",
+     "rarity": "6/249",
+     "rolls": 2
+    },
+    {
+     "name": "Calquat tree seed",
+     "quantity": "2",
+     "rarity": "6/249",
+     "rolls": 2
+    },
+    {
+     "name": "Magic seed",
+     "quantity": "1",
+     "rarity": "4/249",
+     "rolls": 2
+    },
+    {
+     "name": "Toadflax seed",
+     "quantity": "2",
+     "rarity": "2/249",
+     "rolls": 2
+    },
+    {
+     "name": "Snapdragon seed",
+     "quantity": "1",
+     "rarity": "2/249",
+     "rolls": 2
+    },
+    {
+     "name": "Dwarf weed seed",
+     "quantity": "2",
+     "rarity": "2/249",
+     "rolls": 2
+    },
+    {
+     "name": "Torstol seed",
+     "quantity": "1",
+     "rarity": "2/249",
+     "rolls": 2
+    },
+    {
+     "name": "Spirit seed",
+     "quantity": "1",
+     "rarity": "1/249",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Resources",
+   "version": null,
+   "drops": [
+    {
+     "name": "Snakeskin",
+     "quantity": "35 (noted)",
+     "rarity": "11/249",
+     "rolls": 2
+    },
+    {
+     "name": "Runite ore",
+     "quantity": "2 (noted)",
+     "rarity": "11/249",
+     "rolls": 2
+    },
+    {
+     "name": "Pure essence",
+     "quantity": "1500 (noted)",
+     "rarity": "10/249",
+     "rolls": 2
+    },
+    {
+     "name": "Yew logs",
+     "quantity": "35 (noted)",
+     "rarity": "10/249",
+     "rolls": 2
+    },
+    {
+     "name": "Adamantite bar",
+     "quantity": "20 (noted)",
+     "rarity": "8/249",
+     "rolls": 2
+    },
+    {
+     "name": "Coal",
+     "quantity": "200 (noted)",
+     "rarity": "8/249",
+     "rolls": 2
+    },
+    {
+     "name": "Dragon bones",
+     "quantity": "12 (noted)",
+     "rarity": "8/249",
+     "rolls": 2
+    },
+    {
+     "name": "Mahogany logs",
+     "quantity": "50 (noted)",
+     "rarity": "8/249",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Shark drop table",
+   "version": null,
+   "drops": [
+    {
+     "name": "Raw shark",
+     "quantity": "35 (noted)",
+     "rarity": "4.5/249",
+     "rolls": 2
+    },
+    {
+     "name": "Shark lure",
+     "quantity": "70",
+     "rarity": "4.5/249",
+     "rolls": 2
+    },
+    {
+     "name": "Manta ray",
+     "quantity": "35 (noted)",
+     "rarity": "3/249",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Zul-andra teleport",
+     "quantity": "4",
+     "rarity": "15/249",
+     "rolls": 2
+    },
+    {
+     "name": "Antidote++(4)",
+     "quantity": "10 (noted)",
+     "rarity": "9/249",
+     "rolls": 2
+    },
+    {
+     "name": "Dragonstone bolt tips",
+     "quantity": "12",
+     "rarity": "8/249",
+     "rolls": 2
+    },
+    {
+     "name": "Grapes",
+     "quantity": "250 (noted)",
+     "rarity": "6/249",
+     "rolls": 2
+    },
+    {
+     "name": "Coconut",
+     "quantity": "20 (noted)",
+     "rarity": "6/249",
+     "rolls": 2
+    },
+    {
+     "name": "Swamp tar",
+     "quantity": "1000",
+     "rarity": "5/249",
+     "rolls": 2
+    },
+    {
+     "name": "Zulrah's scales",
+     "quantity": "500",
+     "rarity": "5/249",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Jar of Swamp",
+     "quantity": "1",
+     "rarity": "1/3000",
+     "rolls": null
+    },
+    {
+     "name": "Pet Snakeling",
+     "quantity": "1",
+     "rarity": "1/4000",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

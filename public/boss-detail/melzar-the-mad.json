@@ -1,0 +1,26 @@
+{
+ "id": "melzar-the-mad",
+ "name": "Melzar the Mad",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Melzar_the_Mad",
+ "overview": [],
+ "tables": [
+  {
+   "section": "Drops",
+   "version": null,
+   "drops": [
+    {
+     "name": "Bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Key (magenta)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

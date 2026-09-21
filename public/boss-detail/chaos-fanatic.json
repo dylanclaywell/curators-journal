@@ -1,0 +1,230 @@
+{
+ "id": "chaos-fanatic",
+ "name": "Chaos Fanatic",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Chaos_Fanatic",
+ "overview": [
+  "The Chaos Fanatic is located in single-way combat, meaning the player will be safe from player killers while in active combat with the boss.",
+  "He is weakest to Ranged attacks, particularly from standard ranged weapons. His main attack is a basic red-coloured Magic projectile with a max hit of 31, from which Protect from Magic negates all damage. He additionally has two special attacks.",
+  "For his first special attack, he will periodically cast an unavoidable green projectile that disarms the player. This special attack can be entirely negated by ensuring that the inventory is full at all times. This can be achieved by only using food that leaves behind an item, such as the summer pie, along with disabling potion smashing in the gameplay settings.",
+  "For his second special attack, he will periodically cast three slow-moving green projectiles toward the player which explode on impact with the ground. One of them always targets the tile the player is standing on when it's launched, and may be easily avoided by moving a small distance in any direction. Unlike the crazy and deranged archaeologists, this attack is not preceded by a specific voice line, though it is generally easier to avoid due to its slow speed and inaccuracy.",
+  "The explosion attack is always followed by a 12-attack cooldown during which he can only launch the standard red attacks, so players are free to look away from the screen for 24 ticks (14.4 seconds) after each explosion. Following the cooldown, and at the beginning of the fight, there is a 10/15 chance for him to launch a standard red attack, 4/15 to launch an explosion, and 1/15 to launch the disarming attack."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Pre-roll",
+   "version": null,
+   "drops": [
+    {
+     "name": "Odium shard 1",
+     "quantity": "1",
+     "rarity": "1/256",
+     "rolls": null
+    },
+    {
+     "name": "Malediction shard 1",
+     "quantity": "1",
+     "rarity": "1/256",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Battlestaff",
+     "quantity": "5 (noted)",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Splitbark body",
+     "quantity": "1",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Splitbark legs",
+     "quantity": "1",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Zamorak monk top",
+     "quantity": "1",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Zamorak monk bottom",
+     "quantity": "1",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Ancient staff",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes",
+   "version": null,
+   "drops": [
+    {
+     "name": "Fire rune",
+     "quantity": "250",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Smoke rune",
+     "quantity": "30",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Chaos rune",
+     "quantity": "175",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Blood rune",
+     "quantity": "50",
+     "rarity": "4/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Consumables",
+   "version": null,
+   "drops": [
+    {
+     "name": "Monkfish",
+     "quantity": "3",
+     "rarity": "8/128",
+     "rolls": null
+    },
+    {
+     "name": "Shark",
+     "quantity": "1",
+     "rarity": "8/128",
+     "rolls": null
+    },
+    {
+     "name": "Prayer potion(4)",
+     "quantity": "1",
+     "rarity": "8/128",
+     "rolls": null
+    },
+    {
+     "name": "Anchovy pizza",
+     "quantity": "8 (noted)",
+     "rarity": "4/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "499-3998",
+     "rarity": "18/128",
+     "rolls": null
+    },
+    {
+     "name": "Grimy lantadyme",
+     "quantity": "4 (noted)",
+     "rarity": "8/128",
+     "rolls": null
+    },
+    {
+     "name": "Ring of life",
+     "quantity": "1",
+     "rarity": "7/128",
+     "rolls": null
+    },
+    {
+     "name": "Chaos talisman",
+     "quantity": "1",
+     "rarity": "6/128",
+     "rolls": null
+    },
+    {
+     "name": "Wine of Zamorak",
+     "quantity": "10 (noted)",
+     "rarity": "6/128",
+     "rolls": null
+    },
+    {
+     "name": "Uncut emerald",
+     "quantity": "6 (noted)",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Uncut sapphire",
+     "quantity": "4 (noted)",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Sinister key",
+     "quantity": "1",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Pure essence",
+     "quantity": "250 (noted)",
+     "rarity": "2/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Looting bag",
+     "quantity": "1",
+     "rarity": "1/3",
+     "rolls": null
+    },
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Pet chaos elemental",
+     "quantity": "1",
+     "rarity": "1/1000",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

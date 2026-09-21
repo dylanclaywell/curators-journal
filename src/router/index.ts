@@ -39,6 +39,20 @@ const router = createRouter({
       meta: { panelId: 'queue' },
       props: true,
     },
+    // Boss detail, drilled into from the Bosses panel. Same pattern as quest
+    // detail: not a registry panel, but `meta.panelId` names where it was
+    // reached from so the tab bar stays lit and back goes somewhere real.
+    //
+    // Note this path and the drop-table assets are deliberately in different
+    // namespaces — the data lives at `/boss-detail/<id>.json`, not `/bosses/`, or
+    // the service worker's runtime rule would intercept navigations here.
+    {
+      path: '/bosses/:id',
+      name: 'boss-detail',
+      component: () => import('@/views/BossDetailView.vue'),
+      meta: { panelId: 'bosses' },
+      props: true,
+    },
     // Diaries are a mode inside the Quests panel, not a panel of their own
     // (slice 6e, variant B — a fifth tab cost every other tab its label). The
     // mode lives in the path for the same reason quest detail's origin does:

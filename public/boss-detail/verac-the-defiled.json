@@ -1,0 +1,20 @@
+{
+ "id": "verac-the-defiled",
+ "name": "Verac the Defiled",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Verac_the_Defiled",
+ "overview": [],
+ "tables": [
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

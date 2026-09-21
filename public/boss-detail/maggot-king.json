@@ -1,0 +1,260 @@
+{
+ "id": "maggot-king",
+ "name": "Maggot King",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Maggot_King",
+ "overview": [],
+ "tables": [
+  {
+   "section": "Drops (take-eggs)",
+   "version": "Take-eggs",
+   "drops": [
+    {
+     "name": "Nothing",
+     "quantity": null,
+     "rarity": "Common",
+     "rolls": null
+    },
+    {
+     "name": "Maggot egg (base)",
+     "quantity": "1",
+     "rarity": "300/1500",
+     "rolls": null
+    },
+    {
+     "name": "Maggot egg (sickly)",
+     "quantity": "1",
+     "rarity": "150/1500",
+     "rolls": null
+    },
+    {
+     "name": "Maggot egg (warm)",
+     "quantity": "1",
+     "rarity": "33/1500",
+     "rolls": null
+    },
+    {
+     "name": "Stymphike tartare",
+     "quantity": "2-4",
+     "rarity": "Uncommon",
+     "rolls": null
+    },
+    {
+     "name": "Dull ancient medal",
+     "quantity": "1",
+     "rarity": "Uncommon",
+     "rolls": null
+    },
+    {
+     "name": "Maggot egg (pulsating)",
+     "quantity": "1",
+     "rarity": "6/1500",
+     "rolls": null
+    },
+    {
+     "name": "Maggot egg (wriggling)",
+     "quantity": "1",
+     "rarity": "3/1500",
+     "rolls": null
+    },
+    {
+     "name": "Maggot egg (writhing)",
+     "quantity": "1",
+     "rarity": "1/1500",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Pre-roll",
+   "version": null,
+   "drops": [
+    {
+     "name": "Elder venator fang",
+     "quantity": "1",
+     "rarity": "1/340",
+     "rolls": null
+    },
+    {
+     "name": "Crimson kisten",
+     "quantity": "1",
+     "rarity": "1/520",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Supplies",
+   "version": null,
+   "drops": [
+    {
+     "name": "Stymphike tartare",
+     "quantity": "2-4",
+     "rarity": "41/159",
+     "rolls": null
+    },
+    {
+     "name": "Dull ancient medal",
+     "quantity": "1",
+     "rarity": "41/159",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Resources",
+   "version": null,
+   "drops": [
+    {
+     "name": "Uncut ruby",
+     "quantity": "10-13 (noted)",
+     "rarity": "15/159",
+     "rolls": null
+    },
+    {
+     "name": "Stymphike feather",
+     "quantity": "51-74",
+     "rarity": "10/159",
+     "rolls": null
+    },
+    {
+     "name": "Mort myre fungus",
+     "quantity": "50-76 (noted)",
+     "rarity": "10/159",
+     "rolls": null
+    },
+    {
+     "name": "Letvek",
+     "quantity": "23-34",
+     "rarity": "10/159",
+     "rolls": null
+    },
+    {
+     "name": "Runite ore",
+     "quantity": "12-15 (noted)",
+     "rarity": "5/159",
+     "rolls": null
+    },
+    {
+     "name": "Blood sac",
+     "quantity": "8-11",
+     "rarity": "5/159",
+     "rolls": null
+    },
+    {
+     "name": "Gold ore",
+     "quantity": "24-32 (noted)",
+     "rarity": "5/159",
+     "rolls": null
+    },
+    {
+     "name": "Mithril ore",
+     "quantity": "36-41 (noted)",
+     "rarity": "5/159",
+     "rolls": null
+    },
+    {
+     "name": "Adamantite ore",
+     "quantity": "30-40 (noted)",
+     "rarity": "10/159",
+     "rolls": null
+    },
+    {
+     "name": "Orikalkum gravel",
+     "quantity": "4-5",
+     "rarity": "4/159",
+     "rolls": null
+    },
+    {
+     "name": "Venator fang",
+     "quantity": "112-179",
+     "rarity": "2/159",
+     "rolls": null
+    },
+    {
+     "name": "Venator tooth",
+     "quantity": "178-219",
+     "rarity": "2/159",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tarnished items",
+   "version": null,
+   "drops": [
+    {
+     "name": "Tarnished spear",
+     "quantity": "1",
+     "rarity": "12/159",
+     "rolls": null
+    },
+    {
+     "name": "Tarnished ring",
+     "quantity": "1",
+     "rarity": "6/159",
+     "rolls": null
+    },
+    {
+     "name": "Tarnished bracelet",
+     "quantity": "1",
+     "rarity": "3/159",
+     "rolls": null
+    },
+    {
+     "name": "Tarnished necklace",
+     "quantity": "1",
+     "rarity": "3/159",
+     "rolls": null
+    },
+    {
+     "name": "Tarnished amulet",
+     "quantity": "1",
+     "rarity": "3/159",
+     "rolls": null
+    },
+    {
+     "name": "Tarnished battleaxe",
+     "quantity": "1",
+     "rarity": "2/159",
+     "rolls": null
+    },
+    {
+     "name": "Tarnished longsword",
+     "quantity": "1",
+     "rarity": "2/159",
+     "rolls": null
+    },
+    {
+     "name": "Tarnished halberd",
+     "quantity": "1",
+     "rarity": "2/159",
+     "rolls": null
+    },
+    {
+     "name": "Tarnished 2h sword",
+     "quantity": "1",
+     "rarity": "2/159",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Maggot marquess",
+     "quantity": "1",
+     "rarity": "1/3500",
+     "rolls": null
+    },
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,309 @@
+{
+ "id": "hespori",
+ "name": "Hespori",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Hespori",
+ "overview": [
+  "The Hespori is surrounded by four flower buds that keep it invulnerable while it attacks the player. These buds open three times during the fight: on initiation of the fight, when the Hespori has 66%, and when the Hespori has 33% health remaining. Each bud has 10 hitpoints but will die in one hit from any weapon.",
+  "The Hespori has a ranged attack, a magic attack, and a special attack:",
+  "Throws green spores that hit twice with a max hit of 8+8 (reduced to 2+2 with Protect from Missiles).",
+  "A green wave with a max hit of 14 (reduced to 3 with Protect from Magic).",
+  "Hespori has low slash Defence, making slash weapons the best option. At least level 60 melee stats, a dragon scimitar, and high Ranged defence or Strength bonus equipment is recommended. A special attack weapon such as a dragon dagger can be used to quickly deal damage.",
+  "For players with lower melee combat stats, a viable option is to use fire spells, as they will have double accuracy and damage due to Hespori's 100% weakness to this element. A minimum Magic level of 59 for Fire Blast, level 40 Prayer for Protect from Missiles, and good magic attack gear such as Mystic robes or better are recommended, due to Hespori's high magical defence.",
+  "Bring high healing food, antipoison, melee stat boosts, and optionally a Ranged weapon, such as darts or a charged blowpipe to quickly kill Hespori's flowers. Some players may wish to save potions and instead catch one of the stat boosting butterflies outside the guild. A Prayer potion may be required if the fight lasts too long.",
+  "A hespori seed, spade, and seed dibber (if the Farming portion of Barbarian Training has not been completed) are required to plant a new Hespori after the previous Hespori has been defeated and dug up.",
+  "Before waking up the Hespori, boost, get poison immunity and equip a Ranged weapon. With high Ranged Defence armour, turn on Protect from Magic, otherwise use Protect from Missiles if using higher Magic Defence armour. Also use melee stat boosting Prayers if available.",
+  "Wake up the Hespori, and attack the first round of flowers with Ranged. Swap to a special attack weapon and use the special attacks on Hespori. Switch back to the main slash weapon if the next round of flowers were not activated. Kill the flowers with ranged. If the fight lasts longer than 30-40 seconds, the player will be rooted in place and must escape the vines by clicking to move or attack 7 times. Attack the Hespori until the flowers are active again. Switch to Ranged and kill them again. Finish off Hespori.",
+  "Clear the Hespori patch to receive its drops.",
+  "Hespori is immune to the ring of recoil."
+ ],
+ "tables": [
+  {
+   "section": "Anima seeds",
+   "version": null,
+   "drops": [
+    {
+     "name": "Attas seed",
+     "quantity": "1-2",
+     "rarity": "1/3",
+     "rolls": null
+    },
+    {
+     "name": "Iasor seed",
+     "quantity": "1-2",
+     "rarity": "1/3",
+     "rolls": null
+    },
+    {
+     "name": "Kronos seed",
+     "quantity": "1-2",
+     "rarity": "1/3",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Pre-roll",
+   "version": null,
+   "drops": [
+    {
+     "name": "Bottomless compost bucket",
+     "quantity": "1",
+     "rarity": "1/35",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Allotment seeds",
+   "version": null,
+   "drops": [
+    {
+     "name": "Watermelon seed",
+     "quantity": "10-20",
+     "rarity": "2/80",
+     "rolls": null
+    },
+    {
+     "name": "Snape grass seed",
+     "quantity": "6-16",
+     "rarity": "2/80",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Flower seeds",
+   "version": null,
+   "drops": [
+    {
+     "name": "White lily seed",
+     "quantity": "8-18",
+     "rarity": "5/80",
+     "rolls": null
+    },
+    {
+     "name": "Limpwurt seed",
+     "quantity": "6-14",
+     "rarity": "2/80",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Hop seeds",
+   "version": null,
+   "drops": [
+    {
+     "name": "Wildblood seed",
+     "quantity": "10-20",
+     "rarity": "2/80",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Bush seeds",
+   "version": null,
+   "drops": [
+    {
+     "name": "Whiteberry seed",
+     "quantity": "10-16",
+     "rarity": "2/80",
+     "rolls": null
+    },
+    {
+     "name": "Poison ivy seed",
+     "quantity": "8-16",
+     "rarity": "2/80",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Herb seeds",
+   "version": null,
+   "drops": [
+    {
+     "name": "Irit seed",
+     "quantity": "2-8",
+     "rarity": "3/80",
+     "rolls": null
+    },
+    {
+     "name": "Avantoe seed",
+     "quantity": "2-5",
+     "rarity": "3/80",
+     "rolls": null
+    },
+    {
+     "name": "Kwuarm seed",
+     "quantity": "2-5",
+     "rarity": "3/80",
+     "rolls": null
+    },
+    {
+     "name": "Toadflax seed",
+     "quantity": "2-5",
+     "rarity": "3/80",
+     "rolls": null
+    },
+    {
+     "name": "Cadantine seed",
+     "quantity": "2-5",
+     "rarity": "3/80",
+     "rolls": null
+    },
+    {
+     "name": "Lantadyme seed",
+     "quantity": "2-5",
+     "rarity": "3/80",
+     "rolls": null
+    },
+    {
+     "name": "Dwarf weed seed",
+     "quantity": "2-5",
+     "rarity": "3/80",
+     "rolls": null
+    },
+    {
+     "name": "Ranarr seed",
+     "quantity": "1-2",
+     "rarity": "2/80",
+     "rolls": null
+    },
+    {
+     "name": "Snapdragon seed",
+     "quantity": "1",
+     "rarity": "2/80",
+     "rolls": null
+    },
+    {
+     "name": "Torstol seed",
+     "quantity": "1",
+     "rarity": "2/80",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tree seeds",
+   "version": null,
+   "drops": [
+    {
+     "name": "Maple seed",
+     "quantity": "2-4",
+     "rarity": "4/80",
+     "rolls": null
+    },
+    {
+     "name": "Willow seed",
+     "quantity": "2-5",
+     "rarity": "3/80",
+     "rolls": null
+    },
+    {
+     "name": "Yew seed",
+     "quantity": "1",
+     "rarity": "2/80",
+     "rolls": null
+    },
+    {
+     "name": "Magic seed",
+     "quantity": "1",
+     "rarity": "1/80",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Fruit tree seeds",
+   "version": null,
+   "drops": [
+    {
+     "name": "Pineapple seed",
+     "quantity": "3-6",
+     "rarity": "3/80",
+     "rolls": null
+    },
+    {
+     "name": "Papaya tree seed",
+     "quantity": "1-3",
+     "rarity": "3/80",
+     "rolls": null
+    },
+    {
+     "name": "Palm tree seed",
+     "quantity": "1-3",
+     "rarity": "3/80",
+     "rolls": null
+    },
+    {
+     "name": "Dragonfruit tree seed",
+     "quantity": "1",
+     "rarity": "2/80",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Special seeds",
+   "version": null,
+   "drops": [
+    {
+     "name": "Teak seed",
+     "quantity": "2-5",
+     "rarity": "4/80",
+     "rolls": null
+    },
+    {
+     "name": "Mahogany seed",
+     "quantity": "1-3",
+     "rarity": "3/80",
+     "rolls": null
+    },
+    {
+     "name": "Cactus seed",
+     "quantity": "4-14",
+     "rarity": "2/80",
+     "rolls": null
+    },
+    {
+     "name": "Potato cactus seed",
+     "quantity": "4-14",
+     "rarity": "2/80",
+     "rolls": null
+    },
+    {
+     "name": "Celastrus seed",
+     "quantity": "1",
+     "rarity": "2/80",
+     "rolls": null
+    },
+    {
+     "name": "Spirit seed",
+     "quantity": "1",
+     "rarity": "1/80",
+     "rolls": null
+    },
+    {
+     "name": "Redwood tree seed",
+     "quantity": "1",
+     "rarity": "1/80",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Tangleroot",
+     "quantity": "1",
+     "rarity": "1/5375",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

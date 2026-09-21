@@ -1,0 +1,164 @@
+{
+ "id": "lunar-chest",
+ "name": "Lunar Chest",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Lunar_Chest",
+ "overview": [],
+ "tables": [
+  {
+   "section": "Uniques",
+   "version": null,
+   "drops": [
+    {
+     "name": "Eclipse atlatl",
+     "quantity": "1",
+     "rarity": "1/224",
+     "rolls": null
+    },
+    {
+     "name": "Eclipse Moon helm",
+     "quantity": "1",
+     "rarity": "1/224",
+     "rolls": null
+    },
+    {
+     "name": "Eclipse Moon chestplate",
+     "quantity": "1",
+     "rarity": "1/224",
+     "rolls": null
+    },
+    {
+     "name": "Eclipse Moon tassets",
+     "quantity": "1",
+     "rarity": "1/224",
+     "rolls": null
+    },
+    {
+     "name": "Dual macuahuitl",
+     "quantity": "1",
+     "rarity": "1/224",
+     "rolls": null
+    },
+    {
+     "name": "Blood Moon helm",
+     "quantity": "1",
+     "rarity": "1/224",
+     "rolls": null
+    },
+    {
+     "name": "Blood Moon chestplate",
+     "quantity": "1",
+     "rarity": "1/224",
+     "rolls": null
+    },
+    {
+     "name": "Blood Moon tassets",
+     "quantity": "1",
+     "rarity": "1/224",
+     "rolls": null
+    },
+    {
+     "name": "Blue Moon spear",
+     "quantity": "1",
+     "rarity": "1/224",
+     "rolls": null
+    },
+    {
+     "name": "Blue Moon helm",
+     "quantity": "1",
+     "rarity": "1/224",
+     "rolls": null
+    },
+    {
+     "name": "Blue Moon chestplate",
+     "quantity": "1",
+     "rarity": "1/224",
+     "rolls": null
+    },
+    {
+     "name": "Blue Moon tassets",
+     "quantity": "1",
+     "rarity": "1/224",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Standard loot",
+   "version": null,
+   "drops": [
+    {
+     "name": "Atlatl dart",
+     "quantity": "72-120",
+     "rarity": "5/30",
+     "rolls": 6
+    },
+    {
+     "name": "Blessed bone shards",
+     "quantity": "160-179",
+     "rarity": "2/30",
+     "rolls": 6
+    },
+    {
+     "name": "Wyrmling bones",
+     "quantity": "42-54 (noted)",
+     "rarity": "1/30",
+     "rolls": 6
+    },
+    {
+     "name": "Sun-kissed bones",
+     "quantity": "6-12 (noted)",
+     "rarity": "3/30",
+     "rolls": 6
+    },
+    {
+     "name": "Swamp tar",
+     "quantity": "79-119",
+     "rarity": "4/30",
+     "rolls": 6
+    },
+    {
+     "name": "Water orb",
+     "quantity": "30-45 (noted)",
+     "rarity": "2/30",
+     "rolls": 6
+    },
+    {
+     "name": "Supercompost",
+     "quantity": "6-12 (noted)",
+     "rarity": "3/30",
+     "rolls": 6
+    },
+    {
+     "name": "Soft clay",
+     "quantity": "15-25 (noted)",
+     "rarity": "3/30",
+     "rolls": 6
+    },
+    {
+     "name": "Grimy harralander",
+     "quantity": "12-18 (noted)",
+     "rarity": "3/30",
+     "rolls": 6
+    },
+    {
+     "name": "Grimy irit leaf",
+     "quantity": "12-18 (noted)",
+     "rarity": "1/30",
+     "rolls": 6
+    },
+    {
+     "name": "Maple seed",
+     "quantity": "1-2",
+     "rarity": "2/30",
+     "rolls": 6
+    },
+    {
+     "name": "Yew seed",
+     "quantity": "1",
+     "rarity": "1/30",
+     "rolls": 6
+    }
+   ]
+  }
+ ]
+}

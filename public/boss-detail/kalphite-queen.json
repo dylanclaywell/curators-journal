@@ -1,0 +1,357 @@
+{
+ "id": "kalphite-queen",
+ "name": "Kalphite Queen",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Kalphite_Queen",
+ "overview": [
+  "The Kalphite Queen has a combat level of 333. Each form has 255 Hitpoints, and her Ranged and Magic attacks have 100% accuracy. She may also use a decently accurate melee attack.",
+  "Each of her attacks has a max hit of 31. Her Ranged attacks consist of her shooting barbed spines from her abdomen. Her Ranged attacks will drain 1 prayer point (which may be reduced by spectral spirit shield). If there are players close to the person being targeted with this attack they will also be hit. To avoid this, players can stand on opposite sides of the Kalphite Queen. Her Magic attack bounces from player to player.",
+  "In addition to her highly accurate attacks, the Kalphite Queen also makes use of overhead Protection prayers. However, unlike other prayer-using monsters (such as Sigmund), these do not provide full immunity, but rather improved defence against them. The first form will simultaneously have Protect from Magic and Protect from Missiles active, while the second form will only have Protect from Melee active. While it's possible to kill the Queen with one combat style, it is recommended to bring two for an easier fight.",
+  "When the first form is killed, it takes 20 game ticks (12 seconds) for the transition into the second airborne form. During this transformation, an animation can be seen where Kalphite Queen legs fall to the ground while the Kalphite Queen sheds her exoskeleton.",
+  "If the second form stays alive for over 20 minutes, she will revert to the first form and retain the second form's remaining hitpoints. When the first form is killed again, a second form with full health will emerge, akin to Vet'ion.",
+  "If stat-draining special attacks are used on her first form, the stat reductions will carry over to the second form."
+ ],
+ "tables": [
+  {
+   "section": "Consumables",
+   "version": null,
+   "drops": [
+    {
+     "name": "Monkfish",
+     "quantity": "3",
+     "rarity": "1/9",
+     "rolls": null
+    },
+    {
+     "name": "Shark",
+     "quantity": "2",
+     "rarity": "1/9",
+     "rolls": null
+    },
+    {
+     "name": "Dark crab",
+     "quantity": "2",
+     "rarity": "1/9",
+     "rolls": null
+    },
+    {
+     "name": "Saradomin brew(4)",
+     "quantity": "1",
+     "rarity": "1/9",
+     "rolls": null
+    },
+    {
+     "name": "Prayer potion(4)",
+     "quantity": "2",
+     "rarity": "1/9",
+     "rolls": null
+    },
+    {
+     "name": "Super restore(4)",
+     "quantity": "1",
+     "rarity": "1/9",
+     "rolls": null
+    },
+    {
+     "name": "Super combat potion(2)",
+     "quantity": "1",
+     "rarity": "1/9",
+     "rolls": null
+    },
+    {
+     "name": "Ranging potion(3)",
+     "quantity": "1",
+     "rarity": "1/9",
+     "rolls": null
+    },
+    {
+     "name": "Superantipoison(2)",
+     "quantity": "1",
+     "rarity": "1/9",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Battlestaff",
+     "quantity": "10 (noted)",
+     "rarity": "5/126",
+     "rolls": null
+    },
+    {
+     "name": "Rune chainbody",
+     "quantity": "1",
+     "rarity": "4/126",
+     "rolls": null
+    },
+    {
+     "name": "Red d'hide body",
+     "quantity": "1",
+     "rarity": "4/126",
+     "rolls": null
+    },
+    {
+     "name": "Rune knife(p++)",
+     "quantity": "25",
+     "rarity": "4/126",
+     "rolls": null
+    },
+    {
+     "name": "Lava battlestaff",
+     "quantity": "1",
+     "rarity": "2/126",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": null,
+   "drops": [
+    {
+     "name": "Death rune",
+     "quantity": "150",
+     "rarity": "6/126",
+     "rolls": null
+    },
+    {
+     "name": "Blood rune",
+     "quantity": "100",
+     "rarity": "6/126",
+     "rolls": null
+    },
+    {
+     "name": "Mithril arrow",
+     "quantity": "500",
+     "rarity": "5/126",
+     "rolls": null
+    },
+    {
+     "name": "Rune arrow",
+     "quantity": "250",
+     "rarity": "3/126",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Herbs",
+   "version": null,
+   "drops": [
+    {
+     "name": "Grimy toadflax",
+     "quantity": "25 (noted)",
+     "rarity": "2/126",
+     "rolls": null
+    },
+    {
+     "name": "Grimy ranarr weed",
+     "quantity": "25 (noted)",
+     "rarity": "2/126",
+     "rolls": null
+    },
+    {
+     "name": "Grimy snapdragon",
+     "quantity": "25 (noted)",
+     "rarity": "2/126",
+     "rolls": null
+    },
+    {
+     "name": "Grimy torstol",
+     "quantity": "25 (noted)",
+     "rarity": "2/126",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Seeds",
+   "version": null,
+   "drops": [
+    {
+     "name": "Torstol seed",
+     "quantity": "2",
+     "rarity": "4/126",
+     "rolls": null
+    },
+    {
+     "name": "Watermelon seed",
+     "quantity": "25",
+     "rarity": "3/126",
+     "rolls": null
+    },
+    {
+     "name": "Papaya tree seed",
+     "quantity": "2",
+     "rarity": "3/126",
+     "rolls": null
+    },
+    {
+     "name": "Palm tree seed",
+     "quantity": "2",
+     "rarity": "3/126",
+     "rolls": null
+    },
+    {
+     "name": "Magic seed",
+     "quantity": "2",
+     "rarity": "3/126",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Resources",
+   "version": null,
+   "drops": [
+    {
+     "name": "Runite bar",
+     "quantity": "3 (noted)",
+     "rarity": "5/126",
+     "rolls": null
+    },
+    {
+     "name": "Bucket of sand",
+     "quantity": "100 (noted)",
+     "rarity": "4/126",
+     "rolls": null
+    },
+    {
+     "name": "Gold ore",
+     "quantity": "250 (noted)",
+     "rarity": "4/126",
+     "rolls": null
+    },
+    {
+     "name": "Magic logs",
+     "quantity": "60 (noted)",
+     "rarity": "4/126",
+     "rolls": null
+    },
+    {
+     "name": "Uncut emerald",
+     "quantity": "25 (noted)",
+     "rarity": "3/126",
+     "rolls": null
+    },
+    {
+     "name": "Uncut ruby",
+     "quantity": "25 (noted)",
+     "rarity": "3/126",
+     "rolls": null
+    },
+    {
+     "name": "Uncut diamond",
+     "quantity": "25 (noted)",
+     "rarity": "3/126",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Wine of Zamorak",
+     "quantity": "60 (noted)",
+     "rarity": "10/126",
+     "rolls": null
+    },
+    {
+     "name": "Potato cactus",
+     "quantity": "100 (noted)",
+     "rarity": "8/126",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "15000-20000",
+     "rarity": "5/126",
+     "rolls": null
+    },
+    {
+     "name": "Grapes",
+     "quantity": "100 (noted)",
+     "rarity": "5/126",
+     "rolls": null
+    },
+    {
+     "name": "Weapon poison(++)",
+     "quantity": "5 (noted)",
+     "rarity": "5/126",
+     "rolls": null
+    },
+    {
+     "name": "Cactus spine",
+     "quantity": "10 (noted)",
+     "rarity": "3/126",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Kq head (tattered)",
+     "quantity": "1",
+     "rarity": "Once",
+     "rolls": null
+    },
+    {
+     "name": "Ensouled kalphite head",
+     "quantity": "1",
+     "rarity": "1/20",
+     "rolls": null
+    },
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Kq head",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Dragon chainbody",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Dragon 2h sword",
+     "quantity": "1",
+     "rarity": "1/256",
+     "rolls": null
+    },
+    {
+     "name": "Dragon pickaxe",
+     "quantity": "1",
+     "rarity": "1/400",
+     "rolls": null
+    },
+    {
+     "name": "Jar of Sand",
+     "quantity": "1",
+     "rarity": "1/2000",
+     "rolls": null
+    },
+    {
+     "name": "Kalphite Princess",
+     "quantity": "1",
+     "rarity": "1/3000",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

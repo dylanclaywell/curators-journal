@@ -1,0 +1,11 @@
+{
+ "id": "barrelchest",
+ "name": "Barrelchest",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Barrelchest",
+ "overview": [
+  "It has two attack styles. If in melee range, it attacks with its anchor and deactivates all prayers and drains prayer points. If the player is outside of melee range, it performs an attack in which it slams its anchor to the ground, triggering an earthquake that can inflict up to 25 damage. However, it will not use its ranged attack if the player is safespotting Barrelchest.",
+  "Using ranged or magic is a highly effective method for defeating Barrelchest and significantly reduces the risk of death during the fight. Due to Barrelchest's relatively lower magic defence, attacking with magic is recommended for a faster fight. Once the fight starts, walk back out of the door you entered and re-enter the room, but don't move anywhere; the spot you will be standing in serves as a safespot and you will not receive any damage from this point on.",
+  "If pursuing the melee method, Protect from Melee is highly advised as Barrelchest's attacks deactivate and drain prayers. Using quick-prayers is recommended to reactivate prayers swiftly. Due to its high offensive melee stats, it is recommended to wear armour that provides high melee defence, preferably against crushing attacks. Barrelchest also drains your attack and defence. Lower level players are advised to use a super defence potion, have a prayer potion on standby, and high healing foods. Fast melee weapons such as the dragon dagger's special attack and the abyssal whip are effective."
+ ],
+ "tables": []
+}

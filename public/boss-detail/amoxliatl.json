@@ -1,0 +1,214 @@
+{
+ "id": "amoxliatl",
+ "name": "Amoxliatl",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Amoxliatl",
+ "overview": [
+  "Amoxliatl uses three different attacks throughout the fight. Her standard attack summons ice spikes around the arena. Their initial damage can be mitigated with Protect from Magic but spikes formed afterwards deal typeless damage. An icy pool will form in the tile the player was on before the attack; standing on one will deal moderate damage every tick. Her two special attacks include disabling prayers before launching an icicle that can be negated with Protect from Magic, and launching several unstable ice blocks near the player that create 3x3 icy pools if not destroyed. These ice blocks if left to explode will heal Amoxliatl."
+ ],
+ "tables": [
+  {
+   "section": "Frozen tears",
+   "version": "Post-quest",
+   "drops": [
+    {
+     "name": "Frozen tear",
+     "quantity": "2-4",
+     "rarity": "6/10",
+     "rolls": null
+    },
+    {
+     "name": "Frozen tear",
+     "quantity": "5-10",
+     "rarity": "3/10",
+     "rolls": null
+    },
+    {
+     "name": "Frozen tear",
+     "quantity": "10-20",
+     "rarity": "1/10",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": "Post-quest",
+   "drops": [
+    {
+     "name": "Rune mace",
+     "quantity": "1",
+     "rarity": "2/58",
+     "rolls": 2
+    },
+    {
+     "name": "Rune pickaxe",
+     "quantity": "1",
+     "rarity": "2/58",
+     "rolls": 2
+    },
+    {
+     "name": "Rune platebody",
+     "quantity": "1",
+     "rarity": "1/58",
+     "rolls": 2
+    },
+    {
+     "name": "Rune platelegs",
+     "quantity": "1",
+     "rarity": "1/58",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": "Post-quest",
+   "drops": [
+    {
+     "name": "Water rune",
+     "quantity": "200-400",
+     "rarity": "5/58",
+     "rolls": 2
+    },
+    {
+     "name": "Chaos rune",
+     "quantity": "30-60",
+     "rarity": "4/58",
+     "rolls": 2
+    },
+    {
+     "name": "Death rune",
+     "quantity": "20-40",
+     "rarity": "4/58",
+     "rolls": 2
+    },
+    {
+     "name": "Blood rune",
+     "quantity": "15-30",
+     "rarity": "4/58",
+     "rolls": 2
+    },
+    {
+     "name": "Soul rune",
+     "quantity": "30-45",
+     "rarity": "4/58",
+     "rolls": 2
+    },
+    {
+     "name": "Nature rune",
+     "quantity": "30-60",
+     "rarity": "4/58",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": "Post-quest",
+   "drops": [
+    {
+     "name": "Coal",
+     "quantity": "20-30 (noted)",
+     "rarity": "5/58",
+     "rolls": 2
+    },
+    {
+     "name": "Gold ore",
+     "quantity": "20-30 (noted)",
+     "rarity": "5/58",
+     "rolls": 2
+    },
+    {
+     "name": "Adamantite ore",
+     "quantity": "5-10 (noted)",
+     "rarity": "4/58",
+     "rolls": 2
+    },
+    {
+     "name": "Prayer potion(3)",
+     "quantity": "1",
+     "rarity": "2/58",
+     "rolls": 2
+    },
+    {
+     "name": "Runite ore",
+     "quantity": "1 (noted)",
+     "rarity": "2/58",
+     "rolls": 2
+    },
+    {
+     "name": "Blessed bone shards",
+     "quantity": "60-100",
+     "rarity": "2/58",
+     "rolls": 2
+    },
+    {
+     "name": "Water orb",
+     "quantity": "10-20 (noted)",
+     "rarity": "2/58",
+     "rolls": 2
+    },
+    {
+     "name": "Water talisman",
+     "quantity": "1",
+     "rarity": "2/58",
+     "rolls": 2
+    },
+    {
+     "name": "Huasca seed",
+     "quantity": "1",
+     "rarity": "1/58",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": "Post-quest",
+   "drops": [
+    {
+     "name": "Clue scroll (elite)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Reward casket (elite)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Pendant of Ates (inert)",
+     "quantity": "1",
+     "rarity": "1/25",
+     "rolls": null
+    },
+    {
+     "name": "Glacial temotli",
+     "quantity": "1",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Tooth half of key (moon key)",
+     "quantity": "1",
+     "rarity": "1/125",
+     "rolls": null
+    },
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Moxi",
+     "quantity": "1",
+     "rarity": "1/3000",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

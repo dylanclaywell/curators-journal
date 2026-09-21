@@ -1,0 +1,20 @@
+{
+ "id": "ahrim-the-blighted",
+ "name": "Ahrim the Blighted",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Ahrim_the_Blighted",
+ "overview": [],
+ "tables": [
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

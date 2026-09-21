@@ -1,0 +1,276 @@
+{
+ "id": "abyssal-sire",
+ "name": "Abyssal Sire",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Abyssal_Sire",
+ "overview": [
+  "As with all demons, the Sire is susceptible to the effects of demonbane weapons. Having auto-retaliate turned off is highly recommended in order to avoid attacking the spawns.",
+  "The fight consists of three phases: *In the first phase players must kill the Sire's four respiratory systems in the corners of the room, which each grant 50 Slayer experience when killed. The Sire can be disoriented by using Shadow spells on the Ancient spellbook, or by dealing 75 damage to it with Ranged or Magic, temporarily disabling the tentacles protecting the respiratory systems. It will attack by either spawning poisonous fumes underneath the player, dealing rapid damage in a 3x3 AoE that can inflict poison starting at 8 damage, or launching spawns from its mouth, which attack with ranged or melee. If ignored, the spawn will mature into stronger scion. *At the start of the second phase, the Sire gets off its throne to attack the player. Damage dealt to the Sire while it is transitioning between phases is reduced by 50%. Its standard melee attacks can hit up to 66, which is reduced to 26 by using Protect from Melee. It has an attack range of three, but standing more than two tiles away from it will result in it either launching spawns or spawning poisonous fumes. Likewise, attacking it from more than two tiles away will cause it to forcibly teleport the player next to it before retaliating with portal energy, which deals high damage if not avoided. *When the Sire gets below 210 health, it will walk to the middle of the room and stop moving. It no longer attacks with melee, instead creating many spawns and summoning a miasma pool under the player every few seconds, which must be avoided. When the Sire gets below 140 health, it will teleport the player next to itself and trigger a highly damaging area-of-effect attack; the damage can be avoided by running directly away from the Sire (at least 2 tiles) as soon as the player is teleported.",
+  "When the Sire dies, any spawns and scions it summoned will die off alongside it, though it is possible to get hit from a dying minion. The Sire respawns immediately."
+ ],
+ "tables": [
+  {
+   "section": "Pre-roll",
+   "version": null,
+   "drops": [
+    {
+     "name": "Unsired",
+     "quantity": "1",
+     "rarity": "1/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Abyssal ashes",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Battlestaff",
+     "quantity": "10 (noted)",
+     "rarity": "6/139",
+     "rolls": null
+    },
+    {
+     "name": "Rune full helm",
+     "quantity": "3 (noted)",
+     "rarity": "4/139",
+     "rolls": null
+    },
+    {
+     "name": "Mystic lava staff",
+     "quantity": "2 (noted)",
+     "rarity": "4/139",
+     "rolls": null
+    },
+    {
+     "name": "Rune sword",
+     "quantity": "3 (noted)",
+     "rarity": "4/139",
+     "rolls": null
+    },
+    {
+     "name": "Rune platebody",
+     "quantity": "2 (noted)",
+     "rarity": "4/139",
+     "rolls": null
+    },
+    {
+     "name": "Rune kiteshield",
+     "quantity": "2 (noted)",
+     "rarity": "3/139",
+     "rolls": null
+    },
+    {
+     "name": "Mystic air staff",
+     "quantity": "2 (noted)",
+     "rarity": "2/139",
+     "rolls": null
+    },
+    {
+     "name": "Air battlestaff",
+     "quantity": "6 (noted)",
+     "rarity": "2/139",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": null,
+   "drops": [
+    {
+     "name": "Blood rune",
+     "quantity": "190-210",
+     "rarity": "5/139",
+     "rolls": null
+    },
+    {
+     "name": "Death rune",
+     "quantity": "330-370",
+     "rarity": "5/139",
+     "rolls": null
+    },
+    {
+     "name": "Law rune",
+     "quantity": "250",
+     "rarity": "5/139",
+     "rolls": null
+    },
+    {
+     "name": "Soul rune",
+     "quantity": "225-275",
+     "rarity": "5/139",
+     "rolls": null
+    },
+    {
+     "name": "Cosmic rune",
+     "quantity": "350",
+     "rarity": "4/139",
+     "rolls": null
+    },
+    {
+     "name": "Steel cannonball",
+     "quantity": "300",
+     "rarity": "4/139",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Herbs",
+   "version": null,
+   "drops": [
+    {
+     "name": "Grimy kwuarm",
+     "quantity": "25 (noted)",
+     "rarity": "25/2224",
+     "rolls": null
+    },
+    {
+     "name": "Grimy dwarf weed",
+     "quantity": "25 (noted)",
+     "rarity": "20/2224",
+     "rolls": null
+    },
+    {
+     "name": "Grimy cadantine",
+     "quantity": "25 (noted)",
+     "rarity": "20/2224",
+     "rolls": null
+    },
+    {
+     "name": "Grimy lantadyme",
+     "quantity": "25 (noted)",
+     "rarity": "15/2224",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Materials",
+   "version": null,
+   "drops": [
+    {
+     "name": "Earth orb",
+     "quantity": "47-53 (noted)",
+     "rarity": "5/139",
+     "rolls": null
+    },
+    {
+     "name": "Pure essence",
+     "quantity": "600 (noted)",
+     "rarity": "5/139",
+     "rolls": null
+    },
+    {
+     "name": "Magic logs",
+     "quantity": "50-70 (noted)",
+     "rarity": "5/139",
+     "rolls": null
+    },
+    {
+     "name": "Uncut diamond",
+     "quantity": "15 (noted)",
+     "rarity": "5/139",
+     "rolls": null
+    },
+    {
+     "name": "Coal",
+     "quantity": "380-420 (noted)",
+     "rarity": "4/139",
+     "rolls": null
+    },
+    {
+     "name": "Runite ore",
+     "quantity": "6 (noted)",
+     "rarity": "4/139",
+     "rolls": null
+    },
+    {
+     "name": "Onyx bolt tips",
+     "quantity": "10",
+     "rarity": "3/139",
+     "rolls": null
+    },
+    {
+     "name": "Runite bar",
+     "quantity": "5 (noted)",
+     "rarity": "2/139",
+     "rolls": null
+    },
+    {
+     "name": "Aether catalyst",
+     "quantity": "220-270",
+     "rarity": "2/139",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "48000-52000",
+     "rarity": "11/139",
+     "rolls": null
+    },
+    {
+     "name": "Chilli potato",
+     "quantity": "10",
+     "rarity": "7/139",
+     "rolls": null
+    },
+    {
+     "name": "Super restore(4)",
+     "quantity": "4",
+     "rarity": "5/139",
+     "rolls": null
+    },
+    {
+     "name": "Binding necklace",
+     "quantity": "25 (noted)",
+     "rarity": "4/139",
+     "rolls": null
+    },
+    {
+     "name": "Saradomin brew(3)",
+     "quantity": "6",
+     "rarity": "2/139",
+     "rolls": null
+    },
+    {
+     "name": "Jug of water",
+     "quantity": "250-350 (noted)",
+     "rarity": "2/139",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

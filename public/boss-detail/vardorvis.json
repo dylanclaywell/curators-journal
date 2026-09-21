@@ -1,0 +1,296 @@
+{
+ "id": "vardorvis",
+ "name": "Vardorvis",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Vardorvis",
+ "overview": [
+  "Vardorvis uses a standard melee attack, which is reduced by roughly ~75% when Protect from Melee is active; regardless, he will heal for 50% of the damage inflicted, rounded down. Unlike the other members of the Forgotten Four, who use their special attacks in a rather slow and predictable manner, Vardorvis uses them at random. Some of these attacks are additionally extended the lower his health is, making the fight more hectic.",
+  "In addition, Vardorvis' Strength and Defence levels scale linearly with his remaining hitpoints; as his health falls, his Defence level lowers while his Strength level rises, increasing the potency of his auto-attacks, though making him easier to hit. (The amount of defence reduction at any given amount of damage dealt can be calculated usingdefence reduction = round(0.1021*damage dealt - 0.2075) - [https://imgur.com/a/ppJmNOl source]) Vardorvis' mechanics are adjusted accordingly as his health lowers.",
+  "Vardorvis uses the following special attacks: * Swinging Axes: The Strangler's vines will swing up to three axes within the arena. Getting hit with this attack will deal up to 35 damage, and incur a damage-over-time \"bleed\" effect in which the player takes 3 bleed damage 5 times (more than 5 times if the player moves while bleeding). The bleed will persist even through teleportation. Using Protect from Melee will reduce the axes' initial hit by 50%, but will not reduce damage from the bleed. * Strangle: Vardorvis will strike his arm into the ground and entangle the player in tendrils. Several spores will appear at the centre of the game screen, and the player must destroy them all within five seconds, otherwise the tendrils will tighten and deal high damage. * Head Gaze: The Strangler's vines will use Vardorvis' Head to launch a single green projectile. If this projectile is not blocked with Protect from Missiles, it will disable overhead protection prayers and drain the player's prayer points by 10. Vardorvis will not melee while the projectile is in the air, and will take exactly two ticks to melee the player once the projectile has hit. Failing to react properly to a projectile can lead to a chain reaction that often kills inexperienced players due to the panicked prayer swapping that ensues. If you do not react to the projectile in time, immediately turn Protect Melee back on (he will always melee next), watch your feet (as he can use Darting Spikes at random), and heal back up. ** It is difficult, however if you are quick enough you can \"tag-all\" Vardorvis' Head (if on the RuneLite client) to more conveniently see when it pops out of the ground. His head is coded as a separate NPC, and will take on a different tag colour if you manage to assign it, though the timing window is very small. * Darting Spikes: Vardorvis will dart around the player, causing cracks to appear. Vines will then erupt from them, dealing up to 25 damage if caught in one and healing him for half the amount. Vardorvis can dart up to three times. A crack will always appear under the player on the first dart unless they are standing by the edges of the arena. Vardorvis will launch a singular spike at the player if he is somehow unable to attack them.",
+  "Upon reaching 33% of his health, Vardorvis will enter an enrage phase, significantly increasing the frequency of his special attacks.",
+  "Vardorvis respawns after 10 seconds upon dying."
+ ],
+ "tables": [
+  {
+   "section": "Uniques",
+   "version": null,
+   "drops": [
+    {
+     "name": "Ultor vestige",
+     "quantity": "1",
+     "rarity": "1/1088",
+     "rolls": null
+    },
+    {
+     "name": "Chromium ingot",
+     "quantity": "1",
+     "rarity": "3/1088",
+     "rolls": null
+    },
+    {
+     "name": "Executioner's axe head",
+     "quantity": "1",
+     "rarity": "1/1088",
+     "rolls": null
+    },
+    {
+     "name": "Virtus mask",
+     "quantity": "1",
+     "rarity": "1/3264",
+     "rolls": null
+    },
+    {
+     "name": "Virtus robe top",
+     "quantity": "1",
+     "rarity": "1/3264",
+     "rolls": null
+    },
+    {
+     "name": "Virtus robe bottom",
+     "quantity": "1",
+     "rarity": "1/3264",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Secondary uniques",
+   "version": null,
+   "drops": [
+    {
+     "name": "Strangled tablet",
+     "quantity": "1",
+     "rarity": "1/25.5",
+     "rolls": null
+    },
+    {
+     "name": "Awakener's orb",
+     "quantity": "1",
+     "rarity": "1/80.6",
+     "rolls": null
+    },
+    {
+     "name": "Blood quartz",
+     "quantity": "1",
+     "rarity": "1/204.0",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Supplies",
+   "version": null,
+   "drops": [
+    {
+     "name": "Tuna potato",
+     "quantity": "3-4",
+     "rarity": "1/5.3",
+     "rolls": null
+    },
+    {
+     "name": "Prayer potion(3)",
+     "quantity": "1",
+     "rarity": "1/5.3",
+     "rolls": null
+    },
+    {
+     "name": "Super combat potion(2)",
+     "quantity": "1",
+     "rarity": "1/5.3",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Resources",
+   "version": null,
+   "drops": [
+    {
+     "name": "Pure essence",
+     "quantity": "120,180 (noted)",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Iron ore",
+     "quantity": "38,57 (noted)",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Silver ore",
+     "quantity": "38,57 (noted)",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Coal",
+     "quantity": "130,195 (noted)",
+     "rarity": "8/100",
+     "rolls": null
+    },
+    {
+     "name": "Mithril ore",
+     "quantity": "38,57 (noted)",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Adamantite ore",
+     "quantity": "45,67 (noted)",
+     "rarity": "8/100",
+     "rolls": null
+    },
+    {
+     "name": "Runite ore",
+     "quantity": "18,27 (noted)",
+     "rarity": "2/100",
+     "rolls": null
+    },
+    {
+     "name": "Sapphire",
+     "quantity": "17,25 (noted)",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Emerald",
+     "quantity": "17,25 (noted)",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Ruby",
+     "quantity": "17,25 (noted)",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Uncut ruby",
+     "quantity": "25,37 (noted)",
+     "rarity": "5/100",
+     "rolls": null
+    },
+    {
+     "name": "Uncut diamond",
+     "quantity": "25,37 (noted)",
+     "rarity": "5/100",
+     "rolls": null
+    },
+    {
+     "name": "Rune javelin tips",
+     "quantity": "36,54",
+     "rarity": "8/100",
+     "rolls": null
+    },
+    {
+     "name": "Dragon javelin tips",
+     "quantity": "36,54",
+     "rarity": "8/100",
+     "rolls": null
+    },
+    {
+     "name": "Dragon dart tip",
+     "quantity": "100,150",
+     "rarity": "2/100",
+     "rolls": null
+    },
+    {
+     "name": "Raw shark",
+     "quantity": "200,300 (noted)",
+     "rarity": "1/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": null,
+   "drops": [
+    {
+     "name": "Bronze javelin",
+     "quantity": "42,63",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Mithril javelin",
+     "quantity": "42,63",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Adamant javelin",
+     "quantity": "42,63",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Onyx bolts (e)",
+     "quantity": "60,90",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Mind rune",
+     "quantity": "120,180",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Fire rune",
+     "quantity": "120,180",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Lava rune",
+     "quantity": "200,300",
+     "rarity": "8/100",
+     "rolls": null
+    },
+    {
+     "name": "Blood rune",
+     "quantity": "200,300",
+     "rarity": "8/100",
+     "rolls": null
+    },
+    {
+     "name": "Soul rune",
+     "quantity": "400,600",
+     "rarity": "2/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Temple key (Desert Treasure II)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Ancient blood ornament kit",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Butch",
+     "quantity": "1",
+     "rarity": "1/3000",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

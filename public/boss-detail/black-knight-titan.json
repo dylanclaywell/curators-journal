@@ -1,0 +1,212 @@
+{
+ "id": "black-knight-titan",
+ "name": "Black Knight Titan",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Black_Knight_Titan",
+ "overview": [],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Iron dagger",
+     "quantity": "1",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Iron full helm",
+     "quantity": "1",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Iron kiteshield",
+     "quantity": "1",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Steel longsword",
+     "quantity": "1",
+     "rarity": "2/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": null,
+   "drops": [
+    {
+     "name": "Iron arrow",
+     "quantity": "3",
+     "rarity": "6/128",
+     "rolls": null
+    },
+    {
+     "name": "Fire rune",
+     "quantity": "15",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Water rune",
+     "quantity": "7",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Law rune",
+     "quantity": "2",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Steel arrow",
+     "quantity": "10",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Mind rune",
+     "quantity": "3",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Cosmic rune",
+     "quantity": "2",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Nature rune",
+     "quantity": "6",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Chaos rune",
+     "quantity": "2",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Death rune",
+     "quantity": "2",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Coins",
+   "version": null,
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "38",
+     "rarity": "14/128",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "52",
+     "rarity": "10/128",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "15",
+     "rarity": "8/128",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "8",
+     "rarity": "6/128",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "88",
+     "rarity": "2/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Limpwurt root",
+     "quantity": "1",
+     "rarity": "11/128",
+     "rolls": null
+    },
+    {
+     "name": "Beer",
+     "quantity": "1",
+     "rarity": "6/128",
+     "rolls": null
+    },
+    {
+     "name": "Body talisman",
+     "quantity": "1",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Nothing",
+     "quantity": null,
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Giant key",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Key (medium)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Ensouled giant head",
+     "quantity": "1",
+     "rarity": "1/25",
+     "rolls": null
+    },
+    {
+     "name": "Giant champion scroll",
+     "quantity": "1",
+     "rarity": "1/5000",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

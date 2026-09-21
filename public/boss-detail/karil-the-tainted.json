@@ -1,0 +1,20 @@
+{
+ "id": "karil-the-tainted",
+ "name": "Karil the Tainted",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Karil_the_Tainted",
+ "overview": [],
+ "tables": [
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,176 @@
+{
+ "id": "giant-sea-snake",
+ "name": "Giant Sea Snake",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Giant_Sea_Snake",
+ "overview": [],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Big bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": null,
+   "drops": [
+    {
+     "name": "Water rune",
+     "quantity": "15",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Mist rune",
+     "quantity": "1",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Broad arrows",
+     "quantity": "4",
+     "rarity": "2/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Coins",
+   "version": null,
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "44",
+     "rarity": "41/128",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "32",
+     "rarity": "11/128",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "24",
+     "rarity": "9/128",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "23",
+     "rarity": "7/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Adamant dart tip",
+     "quantity": "2",
+     "rarity": "10/128",
+     "rolls": null
+    },
+    {
+     "name": "Fishing bait",
+     "quantity": "50",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Pearl bolt tips",
+     "quantity": "3",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Water orb",
+     "quantity": "1",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Raw bass",
+     "quantity": "2",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Raw lobster",
+     "quantity": "1",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Seaweed",
+     "quantity": "5",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Edible seaweed",
+     "quantity": "5",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Casket",
+     "quantity": "1",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Oyster pearl",
+     "quantity": "2",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Oyster pearls",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Heavy box",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Long bone",
+     "quantity": "1",
+     "rarity": "1/400",
+     "rolls": null
+    },
+    {
+     "name": "Curved bone",
+     "quantity": "1",
+     "rarity": "1/5012.5",
+     "rolls": null
+    },
+    {
+     "name": "Water sapphire",
+     "quantity": "1",
+     "rarity": "1/64",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

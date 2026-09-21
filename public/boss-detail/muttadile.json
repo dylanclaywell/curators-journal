@@ -1,0 +1,80 @@
+{
+ "id": "muttadile",
+ "name": "Muttadile",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Muttadile",
+ "overview": [
+  "The two muttadiles that reside in the chamber are present upon entering; a small one is on the ground and the large one is lurking in the water. The bosses are fairly notorious for constantly walking towards and away from players.",
+  "A meat tree is also present in the chamber which both muttadiles will start to eat from upon reaching ~50% of their health, eating up to 50% of their health (100% total) if triggered and will eat from the tree a maximum of three times, after which they will no longer attempt to heal from it. If the muttadile is unable to eat from the tree after ~15 or so seconds, they will give up.",
+  "The team also has the option of chopping the tree down in which an axe is required and the team's Woodcutting level determines its health. Each player's Woodcutting level also determines their accuracy rate and damage dealt to the tree; the axe's type does not matter. As such, having higher Woodcutting levels makes the fight significantly smoother. A bronze axe spawn is present in the room for players to take.",
+  "The small muttadile attacks with both Melee and Ranged. While this smaller muttadile is alive, the larger one will stay submerged in the water, where it is unattackable and attacks players with erratic Magic that covers the entire chamber. Each player that is within line-of-sight of the submerged muttadile has a 1/3 chance of being targeted by these attacks. The smaller muttadile prioritises Ranged from a distance, but due to the bosses' habit of walking in and out of melee distance, it may end up walking straight to the player or out of sight depending on layout. If it is within melee distance of a target, it will prioritise Melee instead of Ranged.",
+  "When the smaller muttadile dies, the larger one emerges from the water and starts attacking the players in the room; it is still capable of attacking as it emerges. Apart from having higher stats and using all three forms of combat, this larger muttadile will also perform a stomp attack if anyone is within melee range, dealing massive damage to everyone in melee range, which can hit 50% more than the large muttadile's Melee attack. For this reason, it is advised to stay outside of its melee range at all times, especially in scaled raids where the stomp can potentially cause instant death. Various safespots are available depending on the layout and how it tries to walk towards players. Like the smaller muttadile, it prioritises Ranged from a distance and Melee up close. When attacking from a distance, the large muttadile will stay on one combat style for a minimum of three auto-attacks."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Big bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Houndmaster's diary",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Overload (+)(4)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Prayer enhance (+)(4)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Xeric's aid (+)(4)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Revitalisation (+)(4)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Stinkhorn mushroom",
+     "quantity": "1-3",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Long bone",
+     "quantity": "1",
+     "rarity": "1/400",
+     "rolls": null
+    },
+    {
+     "name": "Curved bone",
+     "quantity": "1",
+     "rarity": "1/5012.5",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

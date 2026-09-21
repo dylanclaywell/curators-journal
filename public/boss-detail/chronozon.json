@@ -1,0 +1,42 @@
+{
+ "id": "chronozon",
+ "name": "Chronozon",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Chronozon",
+ "overview": [
+  "It is recommended to bring any method of curing poison before encountering Chronozon, because players will have to pass an area filled with poison spiders that may attack you before you reach Chronozon. Chronozon is unique in that it has to be hit with each of the 4 elemental blast spells, Wind Blast, Water Blast, Earth Blast and Fire Blast. A message will appear in the chatbox, saying \"Chronozon weakens\" to confirm that the spell has been made effective.",
+  "Once all 4 elemental spells have been cast on Chronozon, players may do as they wish to defeat him. Since he only uses Melee, continuing to mage him or ranging him is an easy way to finish him off, as there is a safespot in the area. Melee can also be used, but keep in mind that while he has no particular defences against any melee styles, his defence level is fairly high.",
+  "Once defeated, it will instantly drop the crest part onto the floor."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Vile ashes",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Crest part (Johnathon)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Looting bag",
+     "quantity": "1",
+     "rarity": "1/3",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

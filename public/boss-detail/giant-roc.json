@@ -1,0 +1,48 @@
+{
+ "id": "giant-roc",
+ "name": "Giant Roc",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Giant_Roc",
+ "overview": [
+  "It uses both Melee and Ranged attacks, which hit up to 14 and 20 hitpoints respectively. Players are highly recommended to activate the prayer Protect from Missiles when fighting this creature. My Arm will also attack the bird, but his attacks only tend to hit 1 to 3, so the player should not rely on this. Players should beware, as this monster can easily kill those who come unprepared. A one-click teleport is highly recommended.",
+  "During battle, the Giant Roc will frequently buffet the player with its wings, knocking them backwards and damaging and stunning them for a short time. This can be countered by standing against a rock or wall, but the attack will still stun. Although the Roc has high magic defence, its magic level is 1 and it's weak to air spells, meaning that it is still possible to hit it hard with spells like Iban blast, Wind Blast or Wind Wave.",
+  "Players can usually only land a few hits on the Roc before it blows them back, making it fairly hard to fight. If players do not wish to melee the Roc up close, then they can try ranging the Roc with their backs to the wall or behind the farming patch.",
+  "The Giant Roc will destroy a dwarf multicannon if a player uses one.",
+  "There are two safespots for mages and rangers. One on the far end of the mountainside, where the ladder is, and the other north of My Arm, the goutweed patch and the rocks where the Troll Stronghold herb patch later becomes available. By positioning yourself correctly, the Roc's massive size will make it unable to pass the torch that is between it and the ladder or My Arm, the goutweed patch and rocks, meaning that it cannot come close enough to melee you. Combine this with protect from missiles and the only thing you have to worry about is the Roc's buffeting wings, making this fight not nearly as difficult as usual.",
+  "Pure/Low defence/No protection prayers tactic:",
+  "Hide yourself behind the goutweed to protect yourself from the Giant Roc's melee attack. Similarly, the small rocky outcrop next to the goutweed is a total safezone if you need to heal etc. The Roc's ranged attack is dodgeable, but requires a good rhythm which is messed up every time the Roc pushes you around.",
+  "Just keep strafing forwards and backwards every time in between the ranged attacks (with run on) and shoot twice in between strafes with a shortbow, or cast one spell. This will make the Roc's rocks fall behind you, which makes you not take any damage whatsover.",
+  "The buffeting wings will still damage you however, so remember to eat whenever necessary (best to eat while stunned since you can't move anyway)."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Big bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Long bone",
+     "quantity": "1",
+     "rarity": "1/400",
+     "rolls": null
+    },
+    {
+     "name": "Curved bone",
+     "quantity": "1",
+     "rarity": "1/5012.5",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

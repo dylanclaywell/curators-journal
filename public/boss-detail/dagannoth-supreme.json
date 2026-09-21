@@ -1,0 +1,239 @@
+{
+ "id": "dagannoth-supreme",
+ "name": "Dagannoth Supreme",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Dagannoth_Supreme",
+ "overview": [
+  "Dagannoth Supreme is most weak to melee attacks. The best weapons to use primarily are the abyssal whip or tentacle due to its high Strength bonus and fast attack rate, the Saradomin godsword for its special attack, accuracy, and Strength bonus, and Guthan's warspear, which should only be used in conjunction with the rest of Guthan's armour set to heal. If a player does not possess a Saradomin godsword or Crystal halberd, a Dragon dagger is a good alternative special attack weapon.",
+  "The biggest threat when killing Dagannoth Supreme is that Dagannoth Prime may respawn while killing Supreme. To save yourself from Prime's hard-hitting magical attacks, turn on Protect from Magic. You can either stick around or leave up the ladder. Another possible threat is that Dagannoth Rex may respawn instead of Prime. If this happens and you are a mage, distract him again like in first wave. However, the mage should feel no inclination to kill Rex; just lure him away. Another strategy is to make use of Entangle or ice spells to deal with Rex."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Dagannoth bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Dagannoth hide",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Mithril knife",
+     "quantity": "25-50",
+     "rarity": "10/128",
+     "rolls": null
+    },
+    {
+     "name": "Red d'hide vambraces",
+     "quantity": "1",
+     "rarity": "7/128",
+     "rolls": null
+    },
+    {
+     "name": "Rune thrownaxe",
+     "quantity": "5-10",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Adamant dart",
+     "quantity": "10-25",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Iron knife",
+     "quantity": "200-500",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Steel knife",
+     "quantity": "50-150",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Fremennik blade",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Fremennik shield",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Fremennik helm",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Seercull",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Dragon axe",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Archer helm",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Spined body",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Spined chaps",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Archers ring",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Ammunition",
+   "version": null,
+   "drops": [
+    {
+     "name": "Steel arrow",
+     "quantity": "50-250",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Runite bolts",
+     "quantity": "2-12",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Iron arrow",
+     "quantity": "200-700",
+     "rarity": "4/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "500-1110",
+     "rarity": "10/128",
+     "rolls": null
+    },
+    {
+     "name": "Oyster pearls",
+     "quantity": "1",
+     "rarity": "6/128",
+     "rolls": null
+    },
+    {
+     "name": "Opal bolt tips",
+     "quantity": "10-30",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Shark",
+     "quantity": "5",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Yew logs",
+     "quantity": "50-150 (noted)",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Grimy ranarr weed",
+     "quantity": "1",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Maple logs",
+     "quantity": "15-65 (noted)",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Runite limbs",
+     "quantity": "1",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Feather",
+     "quantity": "250-500",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Dagannoth ribs",
+     "quantity": "1",
+     "rarity": "1/4",
+     "rolls": null
+    },
+    {
+     "name": "Ensouled dagannoth head",
+     "quantity": "1",
+     "rarity": "1/20",
+     "rolls": null
+    },
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Pet Dagannoth Supreme",
+     "quantity": "1",
+     "rarity": "1/5000",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

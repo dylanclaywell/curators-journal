@@ -1,0 +1,17 @@
+{
+ "id": "chambers-of-xeric",
+ "name": "Chambers of Xeric",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Chambers_of_Xeric",
+ "overview": [
+  "The Chambers of Xeric uses a unique party finding system to help determine how strong the team is. The raid can be started with just one player or up to 100 at a time. Players in smaller groups can also scale the raid without having to rely on others to fill in the actual slots. The stats of the enemies in the raid will likewise scale accordingly to the team size, while the skill requirements are based on the team's overall skilling levels. The layout of the raid is determined by the leader's selection; small, large and full-sized raids.",
+  "To start a raid, the leader must create a team. This \"team\" is the leader's chat-channel, which other players may join by manually typing in the channel's name. Additionally, the leader must register on the recruitment board. Once everyone is ready, the leader should enter the chambers, where a starting room is located. The raid officially starts once the leader starts the raid; when that happens, all the mechanics will be calculated and no one may join the instance if they were not in by the time the raid started. If the leader leaves by any means, the next leader will be whoever has the highest rank in the Clan Chat, with a minimum rank of recruit; if no suitable rank is found, everyone is thrown out of the instance.",
+  "The entrance room contains a bank chest to allow players to adjust their inventories accordingly to whatever rooms are generated in the raid. Players will not be able to drop items before the raid starts, and the bank chest will be closed shut once the raid begins.",
+  "There are three floors in each raid: two floors of pre-combat/skilling rooms, and the third floor houses the final boss and is always static in every layout. Energy wells are found in scavenger rooms, resource rooms and the final room in the first two floors, which fully replenish run energy when interacted with.",
+  "In normal raids, a floor will consist of both a starting and exit room, one resource room, one or two scavenger rooms, and two or three combat and/or skilling rooms. In the event that two scavenger rooms are in a single floor, one of these will always use the large layout with a skilling obstacle inside it. These floors will either consist of seven or eight rooms.",
+  "If large raids are toggled, the floors will be entirely filled with eight rooms, and each floor will consist of both a starting and exit room, one resource room, one scavenger room, and four combat and/or skilling rooms. Duplicate skilling rooms are enabled in large raids, meaning that it is possible to get two tightrope rooms in the same raid.",
+  "If full raids are toggled, the layout is the same as in challenge mode.",
+  "Challenge Mode is a \"hard\" version of the existing Chambers of Xeric, which can be toggled on. All combat and puzzle rooms are featured in challenge mode, and all enemies' stats and health (barring the Great Olm, who only has increased stats) are increased. Unlike normal mode, the layout is always static, and with all puzzle and combat rooms being featured, players must clear through four floors of enemies rather than three.",
+  "Completion of the mode in a specific time frame can yield metamorphic dust to reskin an olmlet, and twisted ancestral colour kit to recolour ancestral robes. Cosmetic capes are awarded at specific clear milestones."
+ ],
+ "tables": []
+}

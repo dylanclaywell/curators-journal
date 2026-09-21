@@ -1,0 +1,27 @@
+{
+ "id": "koschei-the-deathless",
+ "name": "Koschei the deathless",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Koschei_the_deathless",
+ "overview": [
+  "Koschei's combat level is not shown; however, he will get progressively stronger and his attacks faster each time he is defeated. His max hits are 3 in his first form, 5 in his second, and 7 in his third. Although the fourth form is difficult, with 255 Hitpoints, it is not impossible to defeat him; if he is defeated, he will disappear in a puff of smoke, and the player will be rewarded with a Fremennik blade.",
+  "A ring of recoil can be an aid in killing the fourth form. When he hits, he always hits for 1 Hitpoint, but at a rate of 1 hit every 0.6 seconds, and due to the rounding-up of the ring of recoil, would always hit him back for 1 at the same attack rate. Note, however, that a player would have to bring several rings of recoil, because each can only reflect 40 Hitpoints. If the only source of damage dealt is from the ring of recoil, he will despawn and cause a reset on the fight instead of moving onto the next form.",
+  "Low-levelled players may find his third and fourth form rather difficult, so defensive jewellery like the gnome amulet or a combat bracelet is strongly advised, for it will provide a little protection (do not wear a ring of life, or you will most likely have to start over again if your Hitpoints get too low). It is possible to flinch Koschei by standing on either the south or north tile of one of the torches in the room while Koschei is east or west of the same torch. Koschei should stay on the same tile for each of his phases.",
+  "There are certain safespots in Koschei's basement, such as the pillars of fire, or the many chasms in the ground. Players need only run quickly over to one side of a hole, and because Koschei only moves at a walking speed, players should be at one end of a hole long before he reaches the other end. However, do not stay in a safespot for too long, or Koschei will disappear and you will have to fight him all over again. It is also strongly advised that players bring high-healing food, such as monkfish or sharks, as in his third and fourth form he hits progressively harder and quicker. Additionally, if you take too long fighting Koschei (10 minutes in the same phase), he will simply disappear and you will have to start the challenge all over again. To succeed in the fight, you merely need to get him to his fourth form. Losing to his fourth form will not actually kill the player; a small cutscene ends the fight when you are about to lose to the fourth form.",
+  "It is possible to bring certain weapons into Koschei's chamber: Treasure Trails caskets can be brought into the arena, and may yield weapons and/or armour. The mystery box may also be brought into the arena. Bear in mind that items cannot be dropped inside the arena, so if your inventory is full and you must make space in it to pick up the rewards from the casket that will have dropped to the ground, you will have to eat food to make that space. It has not yet been tested whether trying to make inventory space by climbing the ladder back up, dropping items outside and coming back down will make the dropped rewards disappear.",
+  "Dying to any of his forms are safe deaths (including for Hardcore ironmen), though players must die to his fourth form (or defeat it) to get the vote. Only Hardcore group ironmen need to be concerned about dying to the first three forms, as dying to the fourth form is a scripted safe death."
+ ],
+ "tables": [
+  {
+   "section": "Drops",
+   "version": null,
+   "drops": [
+    {
+     "name": "Fremennik blade",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

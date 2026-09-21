@@ -1,0 +1,20 @@
+{
+ "id": "guthan-the-infested",
+ "name": "Guthan the Infested",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Guthan_the_Infested",
+ "overview": [],
+ "tables": [
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "id": "damis",
+ "name": "Damis",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Damis",
+ "overview": [
+  "to safespot Damis.]] Much harder than mid-level quest bosses like Arrg, Damis has higher Defence against melee and Ranged, so it is recommended to use Magic. Iban's staff, trident of the seas, or trident of the swamp are all effective options. Protect from Melee will mitigate all damage from Damis, however, his second form has higher stats, attacks faster, and drains Prayer rapidly when within melee distance.",
+  "The best method to defeat Damis is by safespotting him, get the aggression of a bat or giant rat found nearby and lure Damis behind alongside the other aggressive monsters. Only the bat and giant rats will prevent Damis and the other aggressive monsters from pathing to the player. An alternative method to using the bat or giant rat is to use the assistance of another player to block Damis' path. Using a binding spell such as Snare or Entangle on Damis or other monsters in the area may also be helpful.",
+  "If the player is struggling to safe spot Damis, they can bring a lot of prayer potions and use protect from melee to fight him directly. The prayer drain effect makes it difficult to melee Damis in a multi-combat zone because of damage from other aggressive monsters. By engaging Damis alone, it may be possible to rely on high-healing food to reclaim hit points instead of prayer potions to protect from damage."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Shadow diamond",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

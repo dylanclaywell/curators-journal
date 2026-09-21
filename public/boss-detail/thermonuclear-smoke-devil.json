@@ -1,0 +1,326 @@
+{
+ "id": "thermonuclear-smoke-devil",
+ "name": "Thermonuclear smoke devil",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Thermonuclear_smoke_devil",
+ "overview": [],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Ashes",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Pre-roll",
+   "version": null,
+   "drops": [
+    {
+     "name": "Occult necklace",
+     "quantity": "1",
+     "rarity": "1/350",
+     "rolls": null
+    },
+    {
+     "name": "Smoke battlestaff",
+     "quantity": "1",
+     "rarity": "1/512",
+     "rolls": null
+    },
+    {
+     "name": "Dragon chainbody",
+     "quantity": "1",
+     "rarity": "1/2000",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Rune dagger",
+     "quantity": "1",
+     "rarity": "5/107",
+     "rolls": null
+    },
+    {
+     "name": "Rune chainbody",
+     "quantity": "1",
+     "rarity": "4/107",
+     "rolls": null
+    },
+    {
+     "name": "Red d'hide body",
+     "quantity": "1",
+     "rarity": "3/107",
+     "rolls": null
+    },
+    {
+     "name": "Rune battleaxe",
+     "quantity": "1",
+     "rarity": "3/107",
+     "rolls": null
+    },
+    {
+     "name": "Mystic air staff",
+     "quantity": "1",
+     "rarity": "3/107",
+     "rolls": null
+    },
+    {
+     "name": "Mystic fire staff",
+     "quantity": "1",
+     "rarity": "3/107",
+     "rolls": null
+    },
+    {
+     "name": "Rune scimitar",
+     "quantity": "1",
+     "rarity": "2/107",
+     "rolls": null
+    },
+    {
+     "name": "Rune knife(p++)",
+     "quantity": "50",
+     "rarity": "1/107",
+     "rolls": null
+    },
+    {
+     "name": "Dragon scimitar",
+     "quantity": "1",
+     "rarity": "1/107",
+     "rolls": null
+    },
+    {
+     "name": "Ancient staff",
+     "quantity": "1",
+     "rarity": "1/107",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": null,
+   "drops": [
+    {
+     "name": "Smoke rune",
+     "quantity": "100",
+     "rarity": "10/107",
+     "rolls": null
+    },
+    {
+     "name": "Air rune",
+     "quantity": "300",
+     "rarity": "8/107",
+     "rolls": null
+    },
+    {
+     "name": "Soul rune",
+     "quantity": "100",
+     "rarity": "8/107",
+     "rolls": null
+    },
+    {
+     "name": "Rune arrow",
+     "quantity": "100",
+     "rarity": "2/107",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Consumables",
+   "version": null,
+   "drops": [
+    {
+     "name": "Ugthanki kebab",
+     "quantity": "3",
+     "rarity": "1/107",
+     "rolls": null
+    },
+    {
+     "name": "Tuna potato",
+     "quantity": "3",
+     "rarity": "3/107",
+     "rolls": null
+    },
+    {
+     "name": "Sanfew serum(4)",
+     "quantity": "2",
+     "rarity": "3/107",
+     "rolls": null
+    },
+    {
+     "name": "Prayer potion(4)",
+     "quantity": "2",
+     "rarity": "1/107",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Resources",
+   "version": null,
+   "drops": [
+    {
+     "name": "Pure essence",
+     "quantity": "300 (noted)",
+     "rarity": "2/107",
+     "rolls": null
+    },
+    {
+     "name": "Molten glass",
+     "quantity": "100 (noted)",
+     "rarity": "2/107",
+     "rolls": null
+    },
+    {
+     "name": "Mithril bar",
+     "quantity": "20 (noted)",
+     "rarity": "2/107",
+     "rolls": null
+    },
+    {
+     "name": "Magic logs",
+     "quantity": "20 (noted)",
+     "rarity": "2/107",
+     "rolls": null
+    },
+    {
+     "name": "Gold ore",
+     "quantity": "200 (noted)",
+     "rarity": "2/107",
+     "rolls": null
+    },
+    {
+     "name": "Diamond",
+     "quantity": "10 (noted)",
+     "rarity": "1/107",
+     "rolls": null
+    },
+    {
+     "name": "Raw shark",
+     "quantity": "30 (noted)",
+     "rarity": "5/856",
+     "rolls": null
+    },
+    {
+     "name": "Shark lure",
+     "quantity": "60",
+     "rarity": "3/856",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "10000-19999",
+     "rarity": "15/107",
+     "rolls": null
+    },
+    {
+     "name": "Tinderbox",
+     "quantity": "1",
+     "rarity": "1/107",
+     "rolls": null
+    },
+    {
+     "name": "Fire talisman",
+     "quantity": "1",
+     "rarity": "1/107",
+     "rolls": null
+    },
+    {
+     "name": "Goat horn",
+     "quantity": "50 (noted)",
+     "rarity": "2/107",
+     "rolls": null
+    },
+    {
+     "name": "Grimy toadflax",
+     "quantity": "15 (noted)",
+     "rarity": "2/107",
+     "rolls": null
+    },
+    {
+     "name": "Onyx bolt tips",
+     "quantity": "12",
+     "rarity": "2/107",
+     "rolls": null
+    },
+    {
+     "name": "Snapdragon seed",
+     "quantity": "2",
+     "rarity": "2/107",
+     "rolls": null
+    },
+    {
+     "name": "Ranarr seed",
+     "quantity": "2",
+     "rarity": "2/107",
+     "rolls": null
+    },
+    {
+     "name": "Grapes",
+     "quantity": "100 (noted)",
+     "rarity": "1/107",
+     "rolls": null
+    },
+    {
+     "name": "Magic seed",
+     "quantity": "1",
+     "rarity": "1/107",
+     "rolls": null
+    },
+    {
+     "name": "Dragonstone ring",
+     "quantity": "1",
+     "rarity": "1/107",
+     "rolls": null
+    },
+    {
+     "name": "Crystal key",
+     "quantity": "1",
+     "rarity": "1/107",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Jar of Smoke",
+     "quantity": "1",
+     "rarity": "1/2000",
+     "rolls": null
+    },
+    {
+     "name": "Pet Smoke Devil",
+     "quantity": "1",
+     "rarity": "1/3000",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

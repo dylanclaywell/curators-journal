@@ -1,0 +1,31 @@
+{
+ "id": "kamil",
+ "name": "Kamil",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Kamil",
+ "overview": [
+  "Kamil attacks with both magic and melee. His magic attack is weak but accurate, encasing the player in ice for a short time and preventing eating or teleporting. His melee attack is much stronger, so it is advised to use Protect from Melee, and wear armour that defends well against Magic while fighting him. Players should also bring good food to heal from the repeated magic damage, as well as super restores to counter the freezing environment and restore Prayer.",
+  "If Kamil is not in melee range, he will use his magic attack very often, effectively keeping the player stunned for the majority of the fight. Therefore, players with Protect from Melee should stay in melee range while fighting him, regardless of which attack style they are using.",
+  "Kamil is weak to fire spells, but is immune to all other magic damage and effects, including Iban Blast, powered staves, Flames of Zamorak, bind, snare, and entangle. Players using magic are advised to use a fire spell that is well below their current Magic level, as otherwise, they will constantly need to drink restore potions to keep casting. Players who have completed Family Crest will find the chaos gauntlets useful here, as the gauntlets raise the max hit of Fire Bolt to 16.",
+  "Ranged is also effective against Kamil. Additionally, Kamil is also considered an ice warrior in regards to Slayer tasks; if the player has ice warriors as their current task, a Black mask (i) or equivalent would provide a damage bonus against him, making melee more viable."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Chocolate cake",
+     "quantity": "2",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Super restore(4)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

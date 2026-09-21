@@ -1,0 +1,224 @@
+{
+ "id": "crazy-archaeologist",
+ "name": "Crazy archaeologist",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Crazy_archaeologist",
+ "overview": [
+  "The crazy archaeologist is located in single-way combat, meaning the player will be safe from player killers while in active combat with the boss.",
+  "He attacks primarily with Ranged, only using Melee if the player is next to him. Protect from Ranged and Protect from Melee will nullify each respective attack.",
+  "Periodically, he will yell before launching a special attack, throwing three books in an arc towards the player that explode in a 3x3 area. After exploding, one of the books will split into two more books on impact, with these also exploding nearby after a delay. This attack can deal large amounts of burst damage if not avoided!",
+  "Fighting from a distance will prevent him from using any melee attacks, allowing the use of Protect from Ranged to nullify all damage from his basic attacks, as well as giving the player more time to move away from his special attack.",
+  "Magic is particularly effective against the boss, as despite his high base Magic defence, he has a negligible Magic level; Magic defence is primarily based on one's Magic level."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Pre-roll",
+   "version": null,
+   "drops": [
+    {
+     "name": "Odium shard 2",
+     "quantity": "1",
+     "rarity": "1/256",
+     "rolls": null
+    },
+    {
+     "name": "Malediction shard 2",
+     "quantity": "1",
+     "rarity": "1/256",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Amulet of power",
+     "quantity": "1",
+     "rarity": "7/128",
+     "rolls": null
+    },
+    {
+     "name": "Rune crossbow",
+     "quantity": "2",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Red d'hide body",
+     "quantity": "1",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Rune knife",
+     "quantity": "10",
+     "rarity": "4/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": null,
+   "drops": [
+    {
+     "name": "Mud rune",
+     "quantity": "30",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Steel cannonball",
+     "quantity": "150",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Dragon arrow",
+     "quantity": "75",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Consumables",
+   "version": null,
+   "drops": [
+    {
+     "name": "Shark",
+     "quantity": "1",
+     "rarity": "8/128",
+     "rolls": null
+    },
+    {
+     "name": "Potato with cheese",
+     "quantity": "3",
+     "rarity": "8/128",
+     "rolls": null
+    },
+    {
+     "name": "Prayer potion(4)",
+     "quantity": "1",
+     "rarity": "8/128",
+     "rolls": null
+    },
+    {
+     "name": "Anchovy pizza",
+     "quantity": "8 (noted)",
+     "rarity": "4/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "499-3998",
+     "rarity": "18/128",
+     "rolls": null
+    },
+    {
+     "name": "Grimy dwarf weed",
+     "quantity": "4 (noted)",
+     "rarity": "8/128",
+     "rolls": null
+    },
+    {
+     "name": "White berries",
+     "quantity": "10 (noted)",
+     "rarity": "6/128",
+     "rolls": null
+    },
+    {
+     "name": "Silver ore",
+     "quantity": "40 (noted)",
+     "rarity": "6/128",
+     "rolls": null
+    },
+    {
+     "name": "Uncut emerald",
+     "quantity": "6 (noted)",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Uncut sapphire",
+     "quantity": "4 (noted)",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Red dragonhide",
+     "quantity": "10 (noted)",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Rusty sword",
+     "quantity": "1",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Muddy key",
+     "quantity": "1",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Onyx bolt tips",
+     "quantity": "12",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Long bone",
+     "quantity": "1",
+     "rarity": "2/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Looting bag",
+     "quantity": "1",
+     "rarity": "1/3",
+     "rolls": null
+    },
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Fedora",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

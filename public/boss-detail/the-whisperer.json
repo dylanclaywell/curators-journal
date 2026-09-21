@@ -1,0 +1,297 @@
+{
+ "id": "the-whisperer",
+ "name": "The Whisperer",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/The_Whisperer",
+ "overview": [
+  "The player must bring the blackstone fragment to initiate the fight, as parts of the fight will require the player to enter the Shadow Realm; without it, the player will refuse to fight her. She spawns as an Odd Figure, which while aggressive is not able to attack; disturbing her will cause her to fully emerge and attack.",
+  "During the fight, the player must maintain their sanity levels, which starts at 100%. This will decrease whenever the player is in the Shadow Realm or gets hit by her special attacks in varying amounts. This will restore slowly over time while the player is in the actual realm, at a rate of 3% every few seconds. If this value fully depletes, the player will go insane and die in a few seconds if they do not leave.",
+  "The Whisperer's regular attack involves shooting three projectiles per attack in either Ranged or Magic. The ranged shots are purple barbs, while the magic shots are blue orbs. Protection prayers will fully block the attacks, and they will deal damage upon impact. The pattern of these projectiles will change depending on how far into the fight the player is. After each regular attack, four shadow tentacles will surface four tiles from the player in an \"X\" formation, converging on the tile they were on when they first appeared. Getting hit by this will deal 20 damage and drain sanity by 20%, regardless of how many shadow tentacles actually hit them. If the player is standing next to or under her, she will utilise a melee attack that hits twice, with the second hit dealing the same as the first and is only partially reduced by prayer.",
+  "The Whisperer will follow one of two special attack rotations each kill. She will queue up a special attack upon reaching 80%, 55% and 30% of her health on the next attack she makes, should her health fall below this threshold. These special attacks generally require the player to enter the Shadow Realm in order to stop them. Failing to deal with the special attack in time generally incurs heavy damage and drains significant sanity.",
+  "Her attack patterns will also change after every special attack; after the first special attack, she will start attacking with two projectiles of one style and one of the other. After the second special attack, she will begin utilising a \"+\" tentacle pattern alongside the \"X\" pattern. Finally, after the third special attack, she will alternate between both combat styles.",
+  "Upon reaching 0 health, the Whisperer will heal 140 hitpoints and pull the player into the Shadow Realm. She will always start the phase off with a ranged attack, sending out two attacks and then switching to magic. She will continue to flip combat styles every two attacks, and a single tentacle will appear for every attack she makes."
+ ],
+ "tables": [
+  {
+   "section": "Uniques",
+   "version": null,
+   "drops": [
+    {
+     "name": "Bellator vestige",
+     "quantity": "1",
+     "rarity": "1/512",
+     "rolls": null
+    },
+    {
+     "name": "Chromium ingot",
+     "quantity": "1",
+     "rarity": "3/512",
+     "rolls": null
+    },
+    {
+     "name": "Siren's staff",
+     "quantity": "1",
+     "rarity": "1/512",
+     "rolls": null
+    },
+    {
+     "name": "Virtus mask",
+     "quantity": "1",
+     "rarity": "1/1536",
+     "rolls": null
+    },
+    {
+     "name": "Virtus robe top",
+     "quantity": "1",
+     "rarity": "1/1536",
+     "rolls": null
+    },
+    {
+     "name": "Virtus robe bottom",
+     "quantity": "1",
+     "rarity": "1/1536",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Secondary uniques",
+   "version": null,
+   "drops": [
+    {
+     "name": "Sirenic tablet",
+     "quantity": "1",
+     "rarity": "1/26.2",
+     "rolls": null
+    },
+    {
+     "name": "Awakener's orb",
+     "quantity": "1",
+     "rarity": "1/34.5",
+     "rolls": null
+    },
+    {
+     "name": "Shadow quartz",
+     "quantity": "1",
+     "rarity": "1/209.3",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Supplies",
+   "version": null,
+   "drops": [
+    {
+     "name": "Ancient brew(2)",
+     "quantity": "1",
+     "rarity": "1/5.5",
+     "rolls": null
+    },
+    {
+     "name": "Prayer potion(3)",
+     "quantity": "1",
+     "rarity": "1/5.5",
+     "rolls": null
+    },
+    {
+     "name": "Manta ray",
+     "quantity": "3-4",
+     "rarity": "1/5.5",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Bronze longsword",
+     "quantity": "16,24 (noted)",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Mithril longsword",
+     "quantity": "7,10 (noted)",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Adamant longsword",
+     "quantity": "9,14 (noted)",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Battlestaff",
+     "quantity": "70,105 (noted)",
+     "rarity": "2/100",
+     "rolls": null
+    },
+    {
+     "name": "Dragon plateskirt",
+     "quantity": "7,10",
+     "rarity": "1/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Resources",
+   "version": null,
+   "drops": [
+    {
+     "name": "Pure essence",
+     "quantity": "280; 420 (noted)",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Iron ore",
+     "quantity": "88,133 (noted)",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Coal",
+     "quantity": "303,455 (noted)",
+     "rarity": "8/100",
+     "rolls": null
+    },
+    {
+     "name": "Gold ore",
+     "quantity": "88,133 (noted)",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Mithril ore",
+     "quantity": "88,133 (noted)",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Adamantite ore",
+     "quantity": "105,157 (noted)",
+     "rarity": "8/100",
+     "rolls": null
+    },
+    {
+     "name": "Runite ore",
+     "quantity": "42,63 (noted)",
+     "rarity": "2/100",
+     "rolls": null
+    },
+    {
+     "name": "Sapphire",
+     "quantity": "39,59 (noted)",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Emerald",
+     "quantity": "39,59 (noted)",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Ruby",
+     "quantity": "39,59 (noted)",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Uncut ruby",
+     "quantity": "58,87 (noted)",
+     "rarity": "5/100",
+     "rolls": null
+    },
+    {
+     "name": "Uncut diamond",
+     "quantity": "58,87 (noted)",
+     "rarity": "5/100",
+     "rolls": null
+    },
+    {
+     "name": "Dragon javelin tips",
+     "quantity": "84,126",
+     "rarity": "8/100",
+     "rolls": null
+    },
+    {
+     "name": "Runite bolts (unf)",
+     "quantity": "84,126",
+     "rarity": "8/100",
+     "rolls": null
+    },
+    {
+     "name": "Raw monkfish",
+     "quantity": "700,1050 (noted)",
+     "rarity": "1/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": null,
+   "drops": [
+    {
+     "name": "Water rune",
+     "quantity": "280,420",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Steam rune",
+     "quantity": "466,700",
+     "rarity": "8/100",
+     "rolls": null
+    },
+    {
+     "name": "Chaos rune",
+     "quantity": "140,210",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Death rune",
+     "quantity": "466,700",
+     "rarity": "8/100",
+     "rolls": null
+    },
+    {
+     "name": "Soul rune",
+     "quantity": "933,1400",
+     "rarity": "2/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Ancient blood ornament kit",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Wisp",
+     "quantity": "1",
+     "rarity": "1/2000",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

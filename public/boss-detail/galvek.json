@@ -1,0 +1,11 @@
+{
+ "id": "galvek",
+ "name": "Galvek",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Galvek",
+ "overview": [
+  "Galvek has 1,200 health and four phases, with each phase consisting of 300 Hitpoints. Galvek can attack with all three forms of combat. If player is outside of melee range, he may use a blue attack that pulls the player closer. Defence lowering attacks work against Galvek, but he will reset his Defence to its original level after every phase. Thralls cannot be summoned during the fight, and he is immune to reflect damage.",
+  "Similarly to Vorkath, Galvek can throw a special dragonfire ball in the air which lands on the player's position at the time of firing. This will instantly kill the player if they do not move away from it. Standing next to it will deal 50% as much damage. Antifire effects do not work against the special one-hit attack.",
+  "Galvek can utilise two other types of normal dragonfire; a pink variant that disables prayers on impact, and a normal orange variant. Using a super antifire potion in combination with the Anti-dragon shield will nullify all damage from his orange and pink dragonfire attacks as seen in the table below."
+ ],
+ "tables": []
+}

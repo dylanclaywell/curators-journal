@@ -1,0 +1,436 @@
+{
+ "id": "the-mimic",
+ "name": "The Mimic",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/The_Mimic",
+ "overview": [
+  "With the right strategy, The Mimic is very easy to defeat for any high-level player. However, at combat stats around 70, The Mimic can pose a real challenge.",
+  "Always use Protect from Melee, move around the room when the Mimic throws sweets, and ignore the spawned Third Age minions. Use stat-boosting potions and prayers as well.",
+  "* The quickest way to slay The Mimic is to bring dragon claws or a dragon dagger with full melee gear, then after using the two/four special attacks, switch into a full magic setup with a powered staff. With high melee stats and Piety, you can switch to a whip or better and kill the boss before minions even spawn. * Alternatively, using magic, The Mimic can be frozen using ice spells or Entangle evading the melee attack completely. Powered staves can then be used to quickly kill The Mimic. * Although The Mimic is weak to Magic, players can also opt to use Ranged with a toxic blowpipe.",
+  "The Mimic has three different attacks:",
+  "* Melee attack: The Mimic can hit you with a normal melee attack if you are standing beside it.",
+  "* Candy Attack: The Mimic throws six candies at you. If you fail to step out of the way, you will receive about 10 damage. Three candies are purple, and there is one red, one blue, and one green candy. The red, blue, and green candies spawn the Third Age Warrior, Third Age Mage, and Third Age Ranger respectively. There is no benefit to killing them as they drop nothing and, when killed, they instantly respawn when another candy attack occurs.",
+  "* Stomp Attack: Sometimes, The Mimic will step one tile forward onto you. Alternatively, this attack is activated when you walk under The Mimic. For every tick (0.6 seconds) that you stand under The Mimic, you will receive damage. The damage scales as follows: 1-1-1-2-2-2-3-... and so on, capping out at 6 damage. Simply step away from The Mimic to stop and reset the damage counter."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": "Elite",
+   "drops": [
+    {
+     "name": "Mahogany plank",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Pre-roll",
+   "version": "Elite",
+   "drops": [
+    {
+     "name": "Ring of 3rd Age",
+     "quantity": "1",
+     "rarity": "6/250",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age full helmet",
+     "quantity": "1",
+     "rarity": "1/5750",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age platebody",
+     "quantity": "1",
+     "rarity": "1/5750",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age platelegs",
+     "quantity": "1",
+     "rarity": "1/5750",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age plateskirt",
+     "quantity": "1",
+     "rarity": "1/5750",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age kiteshield",
+     "quantity": "1",
+     "rarity": "1/5750",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age range coif",
+     "quantity": "1",
+     "rarity": "1/5750",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age range top",
+     "quantity": "1",
+     "rarity": "1/5750",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age range legs",
+     "quantity": "1",
+     "rarity": "1/5750",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age vambraces",
+     "quantity": "1",
+     "rarity": "1/5750",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age mage hat",
+     "quantity": "1",
+     "rarity": "1/5750",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age robe top",
+     "quantity": "1",
+     "rarity": "1/5750",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age robe",
+     "quantity": "1",
+     "rarity": "1/5750",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age amulet",
+     "quantity": "1",
+     "rarity": "1/5750",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age longsword",
+     "quantity": "1",
+     "rarity": "1/5750",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age bow",
+     "quantity": "1",
+     "rarity": "1/5750",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age wand",
+     "quantity": "1",
+     "rarity": "1/5750",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age cloak",
+     "quantity": "1",
+     "rarity": "1/5750",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age druidic robe top",
+     "quantity": "1",
+     "rarity": "1/5750",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age druidic robe bottoms",
+     "quantity": "1",
+     "rarity": "1/5750",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age druidic cloak",
+     "quantity": "1",
+     "rarity": "1/5750",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age druidic staff",
+     "quantity": "1",
+     "rarity": "1/5750",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age pickaxe",
+     "quantity": "1",
+     "rarity": "1/5750",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age axe",
+     "quantity": "1",
+     "rarity": "1/5750",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Main drops",
+   "version": "Elite",
+   "drops": [
+    {
+     "name": "Death rune",
+     "quantity": "120-600",
+     "rarity": "243/1250",
+     "rolls": null
+    },
+    {
+     "name": "Blood rune",
+     "quantity": "100-500",
+     "rarity": "243/1250",
+     "rolls": null
+    },
+    {
+     "name": "Grimy ranarr weed",
+     "quantity": "5-25 (noted)",
+     "rarity": "243/1250",
+     "rolls": null
+    },
+    {
+     "name": "Wine of Zamorak",
+     "quantity": "5-25 (noted)",
+     "rarity": "243/1250",
+     "rolls": null
+    },
+    {
+     "name": "Raw manta ray",
+     "quantity": "3-15 (noted)",
+     "rarity": "243/1250",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": "Elite",
+   "drops": [
+    {
+     "name": "Mimic scroll case",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "100%",
+   "version": "Master",
+   "drops": [
+    {
+     "name": "Mahogany plank",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Pre-roll",
+   "version": "Master",
+   "drops": [
+    {
+     "name": "Ring of 3rd Age",
+     "quantity": "1",
+     "rarity": "6/228",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age full helmet",
+     "quantity": "1",
+     "rarity": "1/5244",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age platebody",
+     "quantity": "1",
+     "rarity": "1/5244",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age platelegs",
+     "quantity": "1",
+     "rarity": "1/5244",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age plateskirt",
+     "quantity": "1",
+     "rarity": "1/5244",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age kiteshield",
+     "quantity": "1",
+     "rarity": "1/5244",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age range coif",
+     "quantity": "1",
+     "rarity": "1/5244",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age range top",
+     "quantity": "1",
+     "rarity": "1/5244",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age range legs",
+     "quantity": "1",
+     "rarity": "1/5244",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age vambraces",
+     "quantity": "1",
+     "rarity": "1/5244",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age mage hat",
+     "quantity": "1",
+     "rarity": "1/5244",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age robe top",
+     "quantity": "1",
+     "rarity": "1/5244",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age robe",
+     "quantity": "1",
+     "rarity": "1/5244",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age amulet",
+     "quantity": "1",
+     "rarity": "1/5244",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age longsword",
+     "quantity": "1",
+     "rarity": "1/5244",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age bow",
+     "quantity": "1",
+     "rarity": "1/5244",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age wand",
+     "quantity": "1",
+     "rarity": "1/5244",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age cloak",
+     "quantity": "1",
+     "rarity": "1/5244",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age druidic robe top",
+     "quantity": "1",
+     "rarity": "1/5244",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age druidic robe bottoms",
+     "quantity": "1",
+     "rarity": "1/5244",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age druidic cloak",
+     "quantity": "1",
+     "rarity": "1/5244",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age druidic staff",
+     "quantity": "1",
+     "rarity": "1/5244",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age pickaxe",
+     "quantity": "1",
+     "rarity": "1/5244",
+     "rolls": null
+    },
+    {
+     "name": "3rd Age axe",
+     "quantity": "1",
+     "rarity": "1/5244",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Main drops",
+   "version": "Master",
+   "drops": [
+    {
+     "name": "Death rune",
+     "quantity": "100-600",
+     "rarity": "221/1140",
+     "rolls": null
+    },
+    {
+     "name": "Blood rune",
+     "quantity": "83-500",
+     "rarity": "221/1140",
+     "rolls": null
+    },
+    {
+     "name": "Grimy ranarr weed",
+     "quantity": "4-25 (noted)",
+     "rarity": "221/1140",
+     "rolls": null
+    },
+    {
+     "name": "Wine of Zamorak",
+     "quantity": "4-25 (noted)",
+     "rarity": "221/1140",
+     "rolls": null
+    },
+    {
+     "name": "Raw manta ray",
+     "quantity": "2-15 (noted)",
+     "rarity": "221/1140",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": "Master",
+   "drops": [
+    {
+     "name": "Mimic scroll case",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

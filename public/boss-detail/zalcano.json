@@ -1,0 +1,192 @@
+{
+ "id": "zalcano",
+ "name": "Zalcano",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Zalcano",
+ "overview": [
+  "While the player is inside the prison, Zalcano has six different attacks that the player must watch out for as they attempt to take on the stone demon. Each of the attacks are performed at random intervals throughout the fight.",
+  "*Zalcano will stomp on the ground, causing boulders to fall from the ceiling. These are easily avoided by stepping at least one tile away. Boulders can be easily spotted by watching out for the falling pebbles/dirt, which will be followed by the falling boulder. It is also easy to know which tile they are falling onto by the location of their shadow on the ground. When demonic symbols are summoned, they may obscure the shadow, making the attack more difficult to notice. Players who are hit by these can take 40+ damage. *Zalcano will summon blue and orange demonic symbols. If a player is standing on a blue demonic symbol when attacking Zalcano with imbued tephra, it will increase the player's damage by 50%. The orange demonic symbols, however, should be avoided: These will damage the player as well as reduce their run energy if they pass through it or stand in it. After the first three ticks upon spawning, they deal increasing damage every tick (maxing in the low 20s) if a player stands within them and can very quickly kill players that are not paying attention. *Zalcano will summon a golem on the edge of the prison. If the golem reaches her, it will restore her armour's health based on the health of the golem. If the golem is at full health, it will restore 50 hitpoints towards her armour. It is possible for a player to hurt the golem with the imbued tephra. The golem will also drop 16-24 imbued tephra when killed. *Zalcano will fire a red ball of energy at the current glowing red rock formation to deactivate it, changing its location. If a player is standing within 1 tile of the rock formation when this happens, they will take 21+ damage. These can be avoided by walking away from the rock. *After Zalcano has fallen and players have caused her damage, she will rise again. If any players are standing next to her while this occurs, she will create a shock wave that pushes them back, causing the player small amounts of damage and briefly stunning them. Additionally, when she rises she will destroy all of the imbued tephra in the room. *Zalcano will randomly hit all players within the prison with a barrage of small pebbles. These are not avoidable, but players will only take a few hitpoints worth of damage.",
+  "Players will also get damaged if they stand under Zalcano when she has fallen. Damage rate is much less than an orange symbol, dealing around 3-10 damage per tick, and the danger persists until Zalcano begins to rise again."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Crystal shard",
+     "quantity": "1-3",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Infernal ashes",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes",
+   "version": null,
+   "drops": [
+    {
+     "name": "Blood rune",
+     "quantity": "64-480",
+     "rarity": "1/36",
+     "rolls": null
+    },
+    {
+     "name": "Cosmic rune",
+     "quantity": "295-926",
+     "rarity": "1/36",
+     "rolls": null
+    },
+    {
+     "name": "Death rune",
+     "quantity": "201-832",
+     "rarity": "1/36",
+     "rolls": null
+    },
+    {
+     "name": "Law rune",
+     "quantity": "166-790",
+     "rarity": "1/36",
+     "rolls": null
+    },
+    {
+     "name": "Soul rune",
+     "quantity": "47-392",
+     "rarity": "1/36",
+     "rolls": null
+    },
+    {
+     "name": "Nature rune",
+     "quantity": "1-937",
+     "rarity": "1/36",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Materials",
+   "version": null,
+   "drops": [
+    {
+     "name": "Silver ore",
+     "quantity": "86-800 (noted)",
+     "rarity": "3/36",
+     "rolls": null
+    },
+    {
+     "name": "Coal",
+     "quantity": "169-1052 (noted)",
+     "rarity": "1/36",
+     "rolls": null
+    },
+    {
+     "name": "Mithril ore",
+     "quantity": "56-469 (noted)",
+     "rarity": "2/36",
+     "rolls": null
+    },
+    {
+     "name": "Adamantite ore",
+     "quantity": "51-343 (noted)",
+     "rarity": "2/36",
+     "rolls": null
+    },
+    {
+     "name": "Runite ore",
+     "quantity": "3-31 (noted)",
+     "rarity": "2/36",
+     "rolls": null
+    },
+    {
+     "name": "Gold ore",
+     "quantity": "86-756 (noted)",
+     "rarity": "3/36",
+     "rolls": null
+    },
+    {
+     "name": "Steel bar",
+     "quantity": "16-699 (noted)",
+     "rarity": "3/36",
+     "rolls": null
+    },
+    {
+     "name": "Mithril bar",
+     "quantity": "53-501 (noted)",
+     "rarity": "3/36",
+     "rolls": null
+    },
+    {
+     "name": "Adamantite bar",
+     "quantity": "13-111 (noted)",
+     "rarity": "2/36",
+     "rolls": null
+    },
+    {
+     "name": "Runite bar",
+     "quantity": "3-27 (noted)",
+     "rarity": "2/36",
+     "rolls": null
+    },
+    {
+     "name": "Uncut diamond",
+     "quantity": "2-21 (noted)",
+     "rarity": "2/36",
+     "rolls": null
+    },
+    {
+     "name": "Uncut dragonstone",
+     "quantity": "1-12 (noted)",
+     "rarity": "2/36",
+     "rolls": null
+    },
+    {
+     "name": "Onyx bolt tips",
+     "quantity": "1-45",
+     "rarity": "2/36",
+     "rolls": null
+    },
+    {
+     "name": "Pure essence",
+     "quantity": "784-5500 (noted)",
+     "rarity": "1/36",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Crystal tool seed",
+     "quantity": "1",
+     "rarity": "39/8000",
+     "rolls": null
+    },
+    {
+     "name": "Zalcano shard",
+     "quantity": "1",
+     "rarity": "1/750",
+     "rolls": null
+    },
+    {
+     "name": "Smolcano",
+     "quantity": "1",
+     "rarity": "1/2250",
+     "rolls": null
+    },
+    {
+     "name": "Uncut onyx",
+     "quantity": "1",
+     "rarity": "1/8000",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

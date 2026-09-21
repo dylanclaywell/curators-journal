@@ -1,0 +1,11 @@
+{
+ "id": "royal-titans",
+ "name": "Royal Titans",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Royal_Titans",
+ "overview": [
+  "The fight is intended to be fought by two players with a combat level of at least 90 with emphasis on gear switches; while players may solo them, the fight is much quicker with a partner. When solo, an additional player can join the instance and into a fight as long as one of the Titans has not lost more than 25% of their hitpoints.",
+  "During the fight, Eldric and Branda will harmlessly \"fight\" each other, conjuring spells. This can either summon a row of flames or ice that restrict movement, or they may summon three respective elemental beings; these attack the player, rather than each other. The giants will periodically walk one tile towards the arena, where players may attack them with melee; if they are out of the arena bounds, they must be attacked with ranged or magic. They can continue casting spells while next to the arena, or they may alternatively stomp at each other, dealing melee damage in a 3x5 AoE in front of them that can be fully blocked with Protect from Melee.",
+  "When one of the giants reaches 35% HP (~210 hitpoints) or less, both will teleport onto the arena and become static for the rest of the encounter. They will periodically cast an arena-wide spell (with the safe tile at the converging point), dealing moderate damage if the safe spot is not stood on. They will continue to conjure elementals and use melee, which now affects the entire arena. If one of the giants is subdued before the other is, the remaining giant will proceed to focus on the team, with their melee attack now piercing protection prayers and the safe spot for their arena-wide spell being as far away as possible from them. This makes it important to defeat both giants in quick succession."
+ ],
+ "tables": []
+}

@@ -1,0 +1,54 @@
+{
+ "id": "vasa-nistirio",
+ "name": "Vasa Nistirio",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Vasa_Nistirio",
+ "overview": [
+  "Vasa Nistirio is initially seen as a pile of rocks. Upon approaching the pile, he will animate himself and start the fight. He will also raise a purple flame at the entrance, which will damage players who pass through it. The fight begins with his special attack.",
+  "Vasa will teleport all players within the arena, including those outside if they are standing next to the magical fire. Teleported players will either be placed next to him (always the case in solo encounters) or by the arena walls. He will then charge up an attack, during which he cannot be attacked by any player, and the teleported player(s) will be stunned and be unable to activate any prayers. In groups, Vasa will try to divide them into equal amounts; e.g four players in the arena during teleport means that two will teleport next to him and the other two by the edge). Projectiles will fall from Vasa, which will explode and damage all players next to him.",
+  "The amount of damage inflicted is equal to the accumulated hitpoints of all players teleported next to him; in solo encounters, this is always the player's current hitpoints - 5; e.g at 94 hitpoints, the blast would deal 89 damage. In group encounters, players who are teleported away from Vasa can further divide the damage up by running next to him. If these running players have Protect from Magic enabled, they will not take any damage.",
+  "For teams, the player with the least amount of Hitpoints should initiate the battle and stand next to him; then, teammates should cross the flame and use Protect from Magic next to him once the low-health player initiates the battle. After his magical attack, players can switch to Protect from Missiles. When running through Vasa Nistirio, players should pray Protect from Melee. If the team has overloads, using them before entering the room is a good idea. Solo players will have to take the special attack's full effect (at the start of the fight as well as any consequent times), but they can start the room with lower health to avoid getting killed after the attack or use Vengeance to rebound large amounts of damage back.",
+  "Vasa throws boulders as a standard ranged attack to any players within 8 tiles of him but not underneath, in which he applies rapid stomp damage of up to 8 damage per tick. The boulders are fairly accurate and can hit hard, so using Protect from Missiles will reduce their accuracy and strength. After a teleport attack, Vasa will activate one of the four crystals in the corners of the room and walk his way over to it. Once he reaches it, he becomes invulnerable to damage as he siphons it, \"healing\" 1% every 2 ticks and restoring (10% + 1) Defence. The glowing crystals are immune to ranged, take 66% less damage from magic and are highly resistant to crush and slash attacks, making stab the best option.",
+  "When Vasa reaches a Glowing crystal for the first time, a 40 second, 66- or 67-tick timer begins. This timer only counts down while the glowing crystal is active. When no glowing crystals are active, the timer is paused. When this timer reaches zero, Vasa immediately leaves the glowing crystal and proceeds to the centre of the room to use his special attack again.",
+  "If the team disables the Glowing crystal in time, the healing will be negated; otherwise, he will heal in full for the amount he had siphoned. If the team does not disable the crystal in time, Vasa will deactivate it himself and return to the centre for a teleport attack.",
+  "Vasa regenerate its stats at a rate of 1 per 10 ticks, faster than the standard rate of 1 per 100 ticks.",
+  "Vasa is not considered undead, so he is not affected by the salve amulet or Crumble Undead."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Nistirio's manifesto",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Overload (+)(4)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Endarkened juice",
+     "quantity": "5",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Xeric's aid (+)(4)",
+     "quantity": "2",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Twisted (+)(4)",
+     "quantity": "2",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

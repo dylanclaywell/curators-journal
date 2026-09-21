@@ -1,0 +1,248 @@
+{
+ "id": "skotizo",
+ "name": "Skotizo",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Skotizo",
+ "overview": [],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Infernal ashes",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Ancient shards",
+   "version": null,
+   "drops": [
+    {
+     "name": "Ancient shard",
+     "quantity": "1",
+     "rarity": "75/100",
+     "rolls": null
+    },
+    {
+     "name": "Ancient shard",
+     "quantity": "2",
+     "rarity": "15/100",
+     "rolls": null
+    },
+    {
+     "name": "Ancient shard",
+     "quantity": "3",
+     "rarity": "5/100",
+     "rolls": null
+    },
+    {
+     "name": "Ancient shard",
+     "quantity": "4",
+     "rarity": "4/100",
+     "rolls": null
+    },
+    {
+     "name": "Ancient shard",
+     "quantity": "5",
+     "rarity": "1/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Gemstones",
+   "version": null,
+   "drops": [
+    {
+     "name": "Uncut dragonstone",
+     "quantity": "10 (noted)",
+     "rarity": "9/1000",
+     "rolls": null
+    },
+    {
+     "name": "Uncut onyx",
+     "quantity": "1",
+     "rarity": "1/1000",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Rune platebody",
+     "quantity": "3 (noted)",
+     "rarity": "7/100",
+     "rolls": null
+    },
+    {
+     "name": "Rune platelegs",
+     "quantity": "3 (noted)",
+     "rarity": "7/100",
+     "rolls": null
+    },
+    {
+     "name": "Rune plateskirt",
+     "quantity": "3 (noted)",
+     "rarity": "7/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes",
+   "version": null,
+   "drops": [
+    {
+     "name": "Death rune",
+     "quantity": "500",
+     "rarity": "7/100",
+     "rolls": null
+    },
+    {
+     "name": "Soul rune",
+     "quantity": "450",
+     "rarity": "7/100",
+     "rolls": null
+    },
+    {
+     "name": "Blood rune",
+     "quantity": "450",
+     "rarity": "7/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Resources",
+   "version": null,
+   "drops": [
+    {
+     "name": "Adamantite ore",
+     "quantity": "75 (noted)",
+     "rarity": "7/100",
+     "rolls": null
+    },
+    {
+     "name": "Grimy snapdragon",
+     "quantity": "20 (noted)",
+     "rarity": "7/100",
+     "rolls": null
+    },
+    {
+     "name": "Grimy torstol",
+     "quantity": "20 (noted)",
+     "rarity": "7/100",
+     "rolls": null
+    },
+    {
+     "name": "Raw anglerfish",
+     "quantity": "60 (noted)",
+     "rarity": "7/100",
+     "rolls": null
+    },
+    {
+     "name": "Runite bar",
+     "quantity": "20 (noted)",
+     "rarity": "7/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Mahogany plank",
+     "quantity": "150 (noted)",
+     "rarity": "7/100",
+     "rolls": null
+    },
+    {
+     "name": "Battlestaff",
+     "quantity": "25 (noted)",
+     "rarity": "7/100",
+     "rolls": null
+    },
+    {
+     "name": "Onyx bolt tips",
+     "quantity": "40",
+     "rarity": "7/100",
+     "rolls": null
+    },
+    {
+     "name": "Shield left half",
+     "quantity": "1",
+     "rarity": "1/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Ensouled demon head",
+     "quantity": "1",
+     "rarity": "1/10",
+     "rolls": null
+    },
+    {
+     "name": "Dark claw",
+     "quantity": "1",
+     "rarity": "1/25",
+     "rolls": null
+    },
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Skotos",
+     "quantity": "1",
+     "rarity": "1/65",
+     "rolls": null
+    },
+    {
+     "name": "Dark totem base",
+     "quantity": "1",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Dark totem middle",
+     "quantity": "1",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Dark totem top",
+     "quantity": "1",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Dark totem",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Jar of Darkness",
+     "quantity": "1",
+     "rarity": "1/200",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "id": "count-draynor",
+ "name": "Count Draynor",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Count_Draynor",
+ "overview": [
+  "The health recovery rate of Count Draynor is very high – about twenty times the rate of ordinary monsters. To balance his health regeneration, fighting him provides greatly reduced Combat experience. Garlic does not affect this health regeneration; rather, when the Count is at full health it deals 10 damage, reduces his attack and strength by 10 levels, and reduces his defence by 40 levels. The garlic effect happens on auto-attack delay, so it will happen when using any melee combat but if using magic you must autocast spells with a staff to trigger it - manually casting spells will not work. Garlic will also increase all damage you deal by 1. The effect of garlic will wear off after 30 seconds.",
+  "Count Draynor can be harmed with ordinary weapons, but cannot be killed by them. Once his health is low enough, players must drive a stake through his heart using a hammer in order to deal the final blow. If a player does not use the hammer and stake, he will heal to full health when his health points are low. Once the effect ends, low-level characters may struggle to surpass the high regeneration of the Count.",
+  "Due to Count Draynor's lack of magic defence, Wind Strike is quite effective, especially upon reaching level 13 Magic for maximum damage. If players decide to kill him with magic, players should be advised to not wear metal armour until they come in to use the stake for the kill as they have substantial negative magic accuracy. With full magic gear, a level 9 mage can kill him by bringing about 10 pieces of tuna, depending on luck."
+ ],
+ "tables": []
+}

@@ -1,0 +1,197 @@
+{
+ "id": "general-graardor",
+ "name": "General Graardor",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/General_Graardor",
+ "overview": [
+  "Like other God Wars Dungeon bosses, Graardor roams around a rectangular room with his bodyguards until a player enters, attacking them on sight. He attacks primarily with melee (2/3 chance), and his bodyguards use a different combat style each. Graardor may also use a ranged attack (1/3 chance) where he slams the ground, hitting all players in the room which has an equal chance to hit between 15-35 upon successfully hitting the player. Despite it being a Ranged attack, Graardor can only use it if he is within melee range of his current target. If there are no players in his chamber, his health and stats will be reset.",
+  "*Sergeant Strongstack (Melee) *Sergeant Steelwill (Magic) *Sergeant Grimspike (Ranged)"
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Big bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Frozen key piece (Bandos)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Uniques",
+   "version": null,
+   "drops": [
+    {
+     "name": "Bandos chestplate",
+     "quantity": "1",
+     "rarity": "1/381",
+     "rolls": null
+    },
+    {
+     "name": "Bandos tassets",
+     "quantity": "1",
+     "rarity": "1/381",
+     "rolls": null
+    },
+    {
+     "name": "Bandos boots",
+     "quantity": "1",
+     "rarity": "1/381",
+     "rolls": null
+    },
+    {
+     "name": "Bandos hilt",
+     "quantity": "1",
+     "rarity": "1/508",
+     "rolls": null
+    },
+    {
+     "name": "Godsword shard 1",
+     "quantity": "1",
+     "rarity": "1/762",
+     "rolls": null
+    },
+    {
+     "name": "Godsword shard 2",
+     "quantity": "1",
+     "rarity": "1/762",
+     "rolls": null
+    },
+    {
+     "name": "Godsword shard 3",
+     "quantity": "1",
+     "rarity": "1/762",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Rune longsword",
+     "quantity": "1",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Rune 2h sword",
+     "quantity": "1",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Rune platebody",
+     "quantity": "1",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Rune pickaxe",
+     "quantity": "1",
+     "rarity": "6/127",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "19500-20000",
+     "rarity": "31.7/127",
+     "rolls": null
+    },
+    {
+     "name": "Grimy snapdragon",
+     "quantity": "3 (noted)",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Snapdragon seed",
+     "quantity": "1",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Super restore(4)",
+     "quantity": "3",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Adamantite ore",
+     "quantity": "15-20 (noted)",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Coal",
+     "quantity": "115-120 (noted)",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Magic logs",
+     "quantity": "15-20 (noted)",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Nature rune",
+     "quantity": "65-70",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "20100-20600",
+     "rarity": "1.25/127",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Long bone",
+     "quantity": "1",
+     "rarity": "1/400",
+     "rolls": null
+    },
+    {
+     "name": "Pet General Graardor",
+     "quantity": "1",
+     "rarity": "1/5000",
+     "rolls": null
+    },
+    {
+     "name": "Curved bone",
+     "quantity": "1",
+     "rarity": "1/5012.5",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

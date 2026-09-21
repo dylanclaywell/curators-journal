@@ -1,0 +1,216 @@
+{
+ "id": "kreearra",
+ "name": "Kree'arra",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Kree'arra",
+ "overview": [
+  "Like other God Wars Dungeon bosses, Kree'arra roams around a rectangular room with his bodyguards until a player enters, attacking them on sight. He attacks primarily with Ranged, and his bodyguards use a different combat style each. However, if no one is targeting Kree'arra, he will fly up to players to use Melee attacks as well. If all players leave, his health and stats will be reset.",
+  "Like other Armadylean followers in the God Wars Dungeon, he and his bodyguards cannot be attacked with Melee, except when using Halberds or Salamanders. This restriction includes Magic-based special attacks from melee weapons, such as the Voidwaker.",
+  "*Flight Kilisa (Melee) *Wingman Skree (Magic) *Flockleader Geerin (Ranged)"
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Big bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Feather",
+     "quantity": "1-16",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Frozen key piece (Armadyl)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Uniques",
+   "version": null,
+   "drops": [
+    {
+     "name": "Armadyl helmet",
+     "quantity": "1",
+     "rarity": "1/381",
+     "rolls": null
+    },
+    {
+     "name": "Armadyl chestplate",
+     "quantity": "1",
+     "rarity": "1/381",
+     "rolls": null
+    },
+    {
+     "name": "Armadyl chainskirt",
+     "quantity": "1",
+     "rarity": "1/381",
+     "rolls": null
+    },
+    {
+     "name": "Armadyl hilt",
+     "quantity": "1",
+     "rarity": "1/508",
+     "rolls": null
+    },
+    {
+     "name": "Godsword shard 1",
+     "quantity": "1",
+     "rarity": "1/762",
+     "rolls": null
+    },
+    {
+     "name": "Godsword shard 2",
+     "quantity": "1",
+     "rarity": "1/762",
+     "rolls": null
+    },
+    {
+     "name": "Godsword shard 3",
+     "quantity": "1",
+     "rarity": "1/762",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Black d'hide body",
+     "quantity": "1",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Rune crossbow",
+     "quantity": "1",
+     "rarity": "8/127",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": null,
+   "drops": [
+    {
+     "name": "Mind rune",
+     "quantity": "586-601",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Rune arrow",
+     "quantity": "100-105",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Runite bolts",
+     "quantity": "20-25",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Dragonstone bolts (e)",
+     "quantity": "5-10",
+     "rarity": "8/127",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "19500-20000",
+     "rarity": "43.7/127",
+     "rolls": null
+    },
+    {
+     "name": "Ranging potion(3)",
+     "quantity": "3",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Super defence(3)",
+     "quantity": "3",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Grimy dwarf weed",
+     "quantity": "8-13 (noted)",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Dwarf weed seed",
+     "quantity": "2",
+     "rarity": "8/127",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "20500-21000",
+     "rarity": "1.25/127",
+     "rolls": null
+    },
+    {
+     "name": "Crystal key",
+     "quantity": "1",
+     "rarity": "1/127",
+     "rolls": null
+    },
+    {
+     "name": "Yew seed",
+     "quantity": "1",
+     "rarity": "1/127",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Long bone",
+     "quantity": "1",
+     "rarity": "1/400",
+     "rolls": null
+    },
+    {
+     "name": "Pet Kree'arra",
+     "quantity": "1",
+     "rarity": "1/5000",
+     "rolls": null
+    },
+    {
+     "name": "Curved bone",
+     "quantity": "1",
+     "rarity": "1/5012.5",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

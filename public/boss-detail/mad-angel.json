@@ -1,0 +1,221 @@
+{
+ "id": "mad-angel",
+ "name": "Mad Angel",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Mad_Angel",
+ "overview": [
+  "The Mad Angel attacks primarily with melee, and is weak to golembane weapons; Protect from Melee will reduce the max hit of its standard attacks from 31 to 5. After three standard attacks, it will perform a special attack.",
+  "Upon reaching 350 Hitpoints (~45%), the Mad Angel will enter the enrage phase at the next available opportunity, denoted by a overhead message. During this phase, its special attacks are performed quicker, requiring quicker reaction times to counter them. Additionally, it will use all three of its specials consecutively at the start of this phase. * Sweep attack - The Mad Angel stands still, drawing its sword back to either the left or the right. After a few seconds, it will cleave the area towards the side where the player was, as well as the side it drew the sword back from. In order to dodge the cleave, the player must run to the side of the boss opposite the sword or behind it. If an attack is successfully dodged to the side (not behind it), the player's next attack will be 100% accurate and have its minimum hit raised to 50% of their maximum hit. Protect from Melee will reduce the damage from being caught in this attack by ~50%. * Blast attack - The Mad Angel launches a ball of light towards a destination tile, indicated with a looming shadow on the floor. If it reaches this destination, it will explode and deal 30+ damage to the entire arena. Standing on the destination tile will instead bounce the ball of light back to boss, dealing 18-22 damage to it. The Mad Angel continues to perform its standard attack during this sequence. The explosion's damage can be reduced by ~50% with Protect from Magic, however it is possible for a standard attack to land during the same tick. * Smite attack - The Mad Angel brings the sword towards its chest, then begins charging a lightning attack that must be protected from with Protect from Magic. Simply having the prayer overhead will reduce the damage by ~75%, but activating the prayer at the same tick that the lightning strikes will fully negate the damage, as well as guarantee a maximum hit for the next attack. The timing to perfectly negate the attack requires that the player click on Protect from Magic after the attack begins charging, when the blue crackling first becomes visible. Players may also react to a visual cue, by activating the prayer when the boss's wings flap slightly once fully extended. 1-tick prayer flicking will ensure the damage is negated entirely, and guarantees the max hit. ** During the enrage phase, the boss will perform three strikes. The first attack can be countered normally, with the second strike occurring after the first, and the third occurring after the second."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Granite dust",
+     "quantity": "25-35",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Sunstone crystal",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Pre-roll",
+   "version": null,
+   "drops": [
+    {
+     "name": "Ardeaglais teleport",
+     "quantity": "2",
+     "rarity": "1/25",
+     "rolls": null
+    },
+    {
+     "name": "Hallowfell",
+     "quantity": "1",
+     "rarity": "1/127",
+     "rolls": null
+    },
+    {
+     "name": "Jar of Light",
+     "quantity": "1",
+     "rarity": "1/1000",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Rune kiteshield",
+     "quantity": "1",
+     "rarity": "12/150",
+     "rolls": null
+    },
+    {
+     "name": "Rune full helm",
+     "quantity": "1",
+     "rarity": "12/150",
+     "rolls": null
+    },
+    {
+     "name": "Adamant longsword",
+     "quantity": "1",
+     "rarity": "6/150",
+     "rolls": null
+    },
+    {
+     "name": "Dragon med helm",
+     "quantity": "1",
+     "rarity": "2/150",
+     "rolls": null
+    },
+    {
+     "name": "Dragon battleaxe",
+     "quantity": "1",
+     "rarity": "2/150",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": null,
+   "drops": [
+    {
+     "name": "Steel cannonball",
+     "quantity": "90-100",
+     "rarity": "16/150",
+     "rolls": null
+    },
+    {
+     "name": "Law rune",
+     "quantity": "28-30",
+     "rarity": "12/150",
+     "rolls": null
+    },
+    {
+     "name": "Nature rune",
+     "quantity": "20-25",
+     "rarity": "8/150",
+     "rolls": null
+    },
+    {
+     "name": "Death rune",
+     "quantity": "40-50",
+     "rarity": "8/150",
+     "rolls": null
+    },
+    {
+     "name": "Air rune",
+     "quantity": "110-120",
+     "rarity": "4/150",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Supply batch",
+   "version": null,
+   "drops": [
+    {
+     "name": "Shark",
+     "quantity": "2",
+     "rarity": "8/150",
+     "rolls": null
+    },
+    {
+     "name": "Yellowfin",
+     "quantity": "2",
+     "rarity": "8/150",
+     "rolls": null
+    },
+    {
+     "name": "Prayer potion(2)",
+     "quantity": "1",
+     "rarity": "16/150",
+     "rolls": null
+    },
+    {
+     "name": "Super combat potion(1)",
+     "quantity": "1",
+     "rarity": "16/150",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Prayer potion(4)",
+     "quantity": "1",
+     "rarity": "12/150",
+     "rolls": null
+    },
+    {
+     "name": "Super combat potion(3)",
+     "quantity": "2-3 (noted)",
+     "rarity": "8/150",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "8000-10000",
+     "rarity": "8/150",
+     "rolls": null
+    },
+    {
+     "name": "Raw monkfish",
+     "quantity": "18-22 (noted)",
+     "rarity": "8/150",
+     "rolls": null
+    },
+    {
+     "name": "Emerald",
+     "quantity": "7-8 (noted)",
+     "rarity": "6/150",
+     "rolls": null
+    },
+    {
+     "name": "Sapphire",
+     "quantity": "7-8 (noted)",
+     "rarity": "6/150",
+     "rolls": null
+    },
+    {
+     "name": "Cupronickel bar",
+     "quantity": "1",
+     "rarity": "1/150",
+     "rolls": null
+    },
+    {
+     "name": "Papyrus",
+     "quantity": "1",
+     "rarity": "1/150",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Aggy",
+     "quantity": "1",
+     "rarity": "1/2000",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

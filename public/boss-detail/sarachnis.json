@@ -1,0 +1,349 @@
+{
+ "id": "sarachnis",
+ "name": "Sarachnis",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Sarachnis",
+ "overview": [
+  "Sarachnis attacks with melee when players are adjacent to her, and ranged when they are out of melee range; she also heals upon dealing damage. Her attacks are accurate and can hit up to 31, so it is important to pray against her attacks correctly. Every four attacks, she will bind the player with a web that deals no damage but prevents them from moving for a few seconds, and will then move somewhere else in the arena. The web's duration can be fully negated with aranea boots. Players should use Protect from Missiles when Sarachnis shoots the web to block her next ranged attack, then quickly close to melee range and switch back to Protect from Melee. If done perfectly, players will take no damage from her attacks.",
+  "When fighting Sarachnis with two or more players, she will only target one player after she moves. If the targeted player is out of melee range, she will use her ranged attack on everyone in the arena. If the targeted player moves within melee range, she will only attack the targeted player with melee.",
+  "At 66% and 33% health, Sarachnis will summon two Spawns of Sarachnis, an orange melee user on the west side of the room, and a blue magic user on the east side of the room. It is recommended to tank the hits from the melee spawn, and kill the magic spawn when it appears. While doing this, the player should pray ranged as Sarachnis' ranged attacks are more dangerous than the spawns. Alternatively, with 100+ magic defense, you can ignore the minions, and continue to damage the boss instead.",
+  "Upon Sarachnis' death, all her spawns will die as well. Sarachnis will then respawn in 10 seconds."
+ ],
+ "tables": [
+  {
+   "section": "Pre-roll",
+   "version": null,
+   "drops": [
+    {
+     "name": "Dragon med helm",
+     "quantity": "1",
+     "rarity": "2/384",
+     "rolls": null
+    },
+    {
+     "name": "Sarachnis cudgel",
+     "quantity": "1",
+     "rarity": "1/384",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Battlestaff",
+     "quantity": "8-10 (noted)",
+     "rarity": "2/100",
+     "rolls": null
+    },
+    {
+     "name": "Rune platebody",
+     "quantity": "1",
+     "rarity": "2/100",
+     "rolls": null
+    },
+    {
+     "name": "Rune med helm",
+     "quantity": "1",
+     "rarity": "2/100",
+     "rolls": null
+    },
+    {
+     "name": "Rune 2h sword",
+     "quantity": "1",
+     "rarity": "2/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": null,
+   "drops": [
+    {
+     "name": "Blood rune",
+     "quantity": "80-100",
+     "rarity": "5/100",
+     "rolls": null
+    },
+    {
+     "name": "Chaos rune",
+     "quantity": "175-200",
+     "rarity": "5/100",
+     "rolls": null
+    },
+    {
+     "name": "Cosmic rune",
+     "quantity": "125-150",
+     "rarity": "5/100",
+     "rolls": null
+    },
+    {
+     "name": "Death rune",
+     "quantity": "80-100",
+     "rarity": "5/100",
+     "rolls": null
+    },
+    {
+     "name": "Soul rune",
+     "quantity": "80-100",
+     "rarity": "5/100",
+     "rolls": null
+    },
+    {
+     "name": "Mithril arrow",
+     "quantity": "450-600",
+     "rarity": "2/100",
+     "rolls": null
+    },
+    {
+     "name": "Mithril bolts",
+     "quantity": "175-225",
+     "rarity": "2/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Seeds",
+   "version": null,
+   "drops": [
+    {
+     "name": "Maple seed",
+     "quantity": "2",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Papaya tree seed",
+     "quantity": "2",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Yew seed",
+     "quantity": "1",
+     "rarity": "1/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Herbs",
+   "version": null,
+   "drops": [
+    {
+     "name": "Grimy kwuarm",
+     "quantity": "10-15 (noted)",
+     "rarity": "15/800",
+     "rolls": null
+    },
+    {
+     "name": "Grimy dwarf weed",
+     "quantity": "10-15 (noted)",
+     "rarity": "12/800",
+     "rolls": null
+    },
+    {
+     "name": "Grimy cadantine",
+     "quantity": "10-15 (noted)",
+     "rarity": "12/800",
+     "rolls": null
+    },
+    {
+     "name": "Grimy avantoe",
+     "quantity": "5-10 (noted)",
+     "rarity": "10/800",
+     "rolls": null
+    },
+    {
+     "name": "Grimy lantadyme",
+     "quantity": "10-15 (noted)",
+     "rarity": "9/800",
+     "rolls": null
+    },
+    {
+     "name": "Grimy snapdragon",
+     "quantity": "5-10 (noted)",
+     "rarity": "8/800",
+     "rolls": null
+    },
+    {
+     "name": "Grimy ranarr weed",
+     "quantity": "5-10 (noted)",
+     "rarity": "8/800",
+     "rolls": null
+    },
+    {
+     "name": "Grimy torstol",
+     "quantity": "5-10 (noted)",
+     "rarity": "6/800",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Materials",
+   "version": null,
+   "drops": [
+    {
+     "name": "Mithril ore",
+     "quantity": "60-90 (noted)",
+     "rarity": "6/100",
+     "rolls": null
+    },
+    {
+     "name": "Red dragonhide",
+     "quantity": "15-25 (noted)",
+     "rarity": "5/100",
+     "rolls": null
+    },
+    {
+     "name": "Uncut sapphire",
+     "quantity": "20-30 (noted)",
+     "rarity": "4/100",
+     "rolls": null
+    },
+    {
+     "name": "Adamantite ore",
+     "quantity": "30-40 (noted)",
+     "rarity": "3/100",
+     "rolls": null
+    },
+    {
+     "name": "Uncut emerald",
+     "quantity": "20-30 (noted)",
+     "rarity": "3/100",
+     "rolls": null
+    },
+    {
+     "name": "Onyx bolt tips",
+     "quantity": "8-10",
+     "rarity": "2/100",
+     "rolls": null
+    },
+    {
+     "name": "Uncut ruby",
+     "quantity": "20-30 (noted)",
+     "rarity": "2/100",
+     "rolls": null
+    },
+    {
+     "name": "Runite ore",
+     "quantity": "4-6 (noted)",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Uncut diamond",
+     "quantity": "20-30 (noted)",
+     "rarity": "1/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "17000-25000",
+     "rarity": "6/100",
+     "rolls": null
+    },
+    {
+     "name": "Dragon bones",
+     "quantity": "10-15 (noted)",
+     "rarity": "5/100",
+     "rolls": null
+    },
+    {
+     "name": "Egg potato",
+     "quantity": "5-8",
+     "rarity": "5/100",
+     "rolls": null
+    },
+    {
+     "name": "Weapon poison(++)",
+     "quantity": "4-6 (noted)",
+     "rarity": "2/100",
+     "rolls": null
+    },
+    {
+     "name": "Crystal key",
+     "quantity": "1",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Spider carcass",
+     "quantity": "10 (noted)",
+     "rarity": "1/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Tattered moon page",
+     "quantity": "1",
+     "rarity": "1/5",
+     "rolls": null
+    },
+    {
+     "name": "Tattered sun page",
+     "quantity": "1",
+     "rarity": "1/5",
+     "rolls": null
+    },
+    {
+     "name": "Tattered temple page",
+     "quantity": "1",
+     "rarity": "1/5",
+     "rolls": null
+    },
+    {
+     "name": "Giant egg sac(full)",
+     "quantity": "1",
+     "rarity": "1/20",
+     "rolls": null
+    },
+    {
+     "name": "Grubby key",
+     "quantity": "1",
+     "rarity": "1/15",
+     "rolls": null
+    },
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Pristine spider silk",
+     "quantity": "1",
+     "rarity": "1/50",
+     "rolls": null
+    },
+    {
+     "name": "Jar of Eyes",
+     "quantity": "1",
+     "rarity": "1/2000",
+     "rolls": null
+    },
+    {
+     "name": "Sraracha",
+     "quantity": "1",
+     "rarity": "1/3000",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

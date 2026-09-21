@@ -1,0 +1,25 @@
+{
+ "id": "karamel",
+ "name": "Karamel",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Karamel",
+ "overview": [
+  "Karamel is weakest to magic. While not as accurate, ranged and melee are still effective. If using magic, be warned that Karamel's magic attack will drain your stats, potentially putting you below the level required to cast your spells. In addition to the stat drain, this attack will also briefly stun you and reduce your run and special attack energies to 0. The use of stat-restoring or boosting potions is highly recommended for this fight.",
+  "If you are a low level player, DO NOT underestimate her magic attacks, as they can hit rapid 7s. The best way to avoid damage is to run up into melee range, where she will prioritise using her ranged attack instead.",
+  "Note: The player cannot use Prayer in this boss fight or any other Recipe for Disaster boss fight.",
+  "Note: Although spells such as Iban Blast do not work on Kamil, they can be very effective versus Karamel."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Choc-ice",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

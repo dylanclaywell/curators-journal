@@ -1,0 +1,173 @@
+{
+ "id": "arrg",
+ "name": "Arrg",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Arrg",
+ "overview": [
+  "Arrg can be safespotted during the arena fight, in a similar fashion to Dad, by trapping him behind the mountain wall to the west and standing by the fence. This negates the need to use prayers and simply requires the player to tank the initial hits taken while moving to the safespot, as you start in the centre of the arena.",
+  "Players can use a combination of protect from melee and ranged, and negate damage by switching prayers as he switches attacks. This can be tricky, however, due to his 4-tick attack speed, his ability to penetrate prayers, and the lack of warning prior to him switching attacks."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Steel med helm",
+     "quantity": "1",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Black warhammer",
+     "quantity": "1",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Steel warhammer",
+     "quantity": "1",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Adamant med helm",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Adamant warhammer",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Mithril sq shield",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes",
+   "version": null,
+   "drops": [
+    {
+     "name": "Earth rune",
+     "quantity": "60",
+     "rarity": "8/128",
+     "rolls": null
+    },
+    {
+     "name": "Nature rune",
+     "quantity": "7",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Law rune",
+     "quantity": "2",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Earth rune",
+     "quantity": "45",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Earth rune",
+     "quantity": "25",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Materials",
+   "version": null,
+   "drops": [
+    {
+     "name": "Coal",
+     "quantity": "3 (noted)",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Raw mackerel",
+     "quantity": "3 (noted)",
+     "rarity": "2/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Coins",
+   "version": null,
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "35",
+     "rarity": "29/128",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "100",
+     "rarity": "10/128",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "8",
+     "rarity": "7/128",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "50",
+     "rarity": "6/128",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "250",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Troll bone",
+     "quantity": "1",
+     "rarity": "1/4",
+     "rolls": null
+    },
+    {
+     "name": "Ensouled troll head",
+     "quantity": "1",
+     "rarity": "1/45",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

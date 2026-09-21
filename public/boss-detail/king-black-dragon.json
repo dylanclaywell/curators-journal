@@ -1,0 +1,223 @@
+{
+ "id": "king-black-dragon",
+ "name": "King Black Dragon",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/King_Black_Dragon",
+ "overview": [
+  "Players should be prepared to fight as soon as they enter the lair, as the King Black Dragon is aggressive and may attack immediately from a distance.",
+  "The King Black Dragon uses melee and dragonfire, which is of a higher tier compared to those made by adult chromatic dragons. It makes use of four different breath attacks; normal dragonfire alongside three special dragonfire attacks; shock, ice, and poison. These special dragonfire attacks deal less damage than normal dragonfire, but require more tiers of protection to reduce its damage. Without any protection, the normal dragonfire can deal up to 65 damage and special dragonfire 50.",
+  "The special dragonfire attacks have a chance of applying a second effect on the player when it hits them. Shock dragonfire reduces all of the player's stats by two, poison dragonfire can inflict poison starting at 8 if not protected against, and ice dragonfire freezes the player for 10 ticks (6.0 seconds).",
+  "An anti-dragon shield in combination with an antifire potion will prevent his regular dragonfire damage, and reduce his special dragonfire damage to 10. For more information, see the relevant section on the strategy page."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Dragon bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Black dragonhide",
+     "quantity": "2",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Pre-roll",
+   "version": null,
+   "drops": [
+    {
+     "name": "Dragon pickaxe",
+     "quantity": "1",
+     "rarity": "1/1000",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Rune longsword",
+     "quantity": "1",
+     "rarity": "10/128",
+     "rolls": null
+    },
+    {
+     "name": "Adamant platebody",
+     "quantity": "1",
+     "rarity": "9/128",
+     "rolls": null
+    },
+    {
+     "name": "Adamant kiteshield",
+     "quantity": "1",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Dragon med helm",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": null,
+   "drops": [
+    {
+     "name": "Fire rune",
+     "quantity": "300",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Air rune",
+     "quantity": "300",
+     "rarity": "10/128",
+     "rolls": null
+    },
+    {
+     "name": "Iron arrow",
+     "quantity": "690",
+     "rarity": "10/128",
+     "rolls": null
+    },
+    {
+     "name": "Runite bolts",
+     "quantity": "10-20",
+     "rarity": "10/128",
+     "rolls": null
+    },
+    {
+     "name": "Law rune",
+     "quantity": "30",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Blood rune",
+     "quantity": "30",
+     "rarity": "5/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Resources",
+   "version": null,
+   "drops": [
+    {
+     "name": "Yew logs",
+     "quantity": "150 (noted)",
+     "rarity": "10/128",
+     "rolls": null
+    },
+    {
+     "name": "Adamantite bar",
+     "quantity": "3",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Runite bar",
+     "quantity": "1",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Gold ore",
+     "quantity": "100 (noted)",
+     "rarity": "2/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Amulet of power",
+     "quantity": "1",
+     "rarity": "7/128",
+     "rolls": null
+    },
+    {
+     "name": "Dragon arrowtips",
+     "quantity": "5-14",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Dragon dart tip",
+     "quantity": "5-14",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Dragon javelin tips",
+     "quantity": "15",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Runite limbs",
+     "quantity": "1",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Shark",
+     "quantity": "4",
+     "rarity": "4/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Key (elite)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Kbd heads",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Prince Black Dragon",
+     "quantity": "1",
+     "rarity": "1/3000",
+     "rolls": null
+    },
+    {
+     "name": "Draconic visage",
+     "quantity": "1",
+     "rarity": "1/5000",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

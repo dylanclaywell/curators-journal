@@ -1,0 +1,28 @@
+{
+ "id": "jungle-demon",
+ "name": "Jungle Demon",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Jungle_Demon",
+ "overview": [
+  "Bank in preparation for the Jungle Demon fight, and ensure you have full prayer points and health. When you are ready to fight, wear the sigil (you can do this from anywhere; no need to return to Ape Atoll), and you will be promptly teleported to the Jungle Demon's arena. Activate Protect from Magic before teleporting, and drink any necessary potions.",
+  "The easiest way to kill the Jungle Demon is to hide at the edge of the arena, waiting until the gnomes get him down to about 10 hitpoints. Afterwards, you can run out and finish it quickly. The Jungle Demon will regenerate to 20% of its full health if you do not deal the final blow. Note that the demon's melee attack can hit you even if you're two squares away, similar to a halberd; ensure you're three or more squares away to avoid it. Additionally, standing still once you are teleported to the arena will keep distance between you and the Demon, who will not move until you do, although it will still attack you with Magic.",
+  "For those without 37 Prayer, the above method is highly recommended. Be sure to equip high magic defence gear and farcast it using Ranged or Magic spells. Alternatively, a dragon dagger special attack can be used four times in a row, which is very likely to knock it out as well.",
+  "Those with 37 Prayer can simply attack the Jungle Demon from a distance by either using Ranged or Magic spells while using the Protect from Magic prayer.",
+  "Using a dwarf multicannon, fewer than twenty (20) steel cannonballs may be used, making the cannon the most effective way to kill the demon.",
+  "Although most demons are very weak to Magic, the Jungle Demon has a high magic level and high magic defence, so using Magic against it is not recommended. To avoid the demon continually healing when using magic, wait for the gnomes to get the demon to 15-20 hitpoints, then use Protect from Magic and run across the arena to another bridge. The gnomes won't follow, so you don't have to worry about the demon healing while your magic splashes.",
+  "Due to the demon attacking with both Magic and melee at close range, it is not recommended to use melee. Doing so would prohibit you from praying against all damage. If melee is however your only option, be sure to use a stab or crush weapon whilst praying protect from Magic, as the Jungle Demon has high slash defence."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Malicious ashes",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

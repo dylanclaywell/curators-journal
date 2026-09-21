@@ -133,57 +133,76 @@ const summary = computed(() => {
       </p>
 
       <ul class="m-0 flex flex-col gap-1.5 p-0">
-        <li
-          v-for="row in filtered"
-          :key="row.boss.id"
-          class="bevel-oak flex min-w-0 items-center gap-2 bg-brown-lt py-1.5 pl-3 pr-3"
-        >
-          <span class="flex min-w-0 flex-1 flex-col justify-center">
-            <span
-              class="block truncate text-[15px] font-bold leading-tight text-gold engraved"
-            >
-              {{ row.boss.name }}
-            </span>
-            <span class="flex items-center gap-1 text-[12px] text-parchment-3">
-              <span class="min-w-0 truncate">
-                <template v-if="row.boss.variantOf">Harder mode</template>
-                <template v-else-if="row.boss.versions[0]?.combatLevel">
-                  Combat {{ row.boss.versions[0].combatLevel }}
-                </template>
-                <template v-else>Boss</template>
-                <template v-if="!row.boss.members"> · F2P</template>
-                <template v-if="row.rank !== null">
-                  · rank
-                  <span class="nums">{{ row.rank.toLocaleString() }}</span>
-                </template>
+        <li v-for="row in filtered" :key="row.boss.id" class="flex">
+          <!-- One oak block that is entirely a link, so the whole row is the
+               target. Simpler than the quest rows, which need a stretched-link
+               because they carry an add-to-queue button as well. -->
+          <RouterLink
+            :to="`/bosses/${row.boss.id}`"
+            class="tap pressable bevel-oak flex min-w-0 flex-1 items-center gap-2 bg-brown-lt py-1.5 pl-3 pr-3 no-underline"
+          >
+            <span class="flex min-w-0 flex-1 flex-col justify-center">
+              <span
+                class="block truncate text-[15px] font-bold leading-tight text-gold engraved"
+              >
+                {{ row.boss.name }}
+              </span>
+              <span
+                class="flex items-center gap-1 text-[12px] text-parchment-3"
+              >
+                <span class="min-w-0 truncate">
+                  <template v-if="row.boss.variantOf">Harder mode</template>
+                  <template v-else-if="row.boss.versions[0]?.combatLevel">
+                    Combat {{ row.boss.versions[0].combatLevel }}
+                  </template>
+                  <template v-else>Boss</template>
+                  <template v-if="!row.boss.members"> · F2P</template>
+                  <template v-if="row.rank !== null">
+                    · rank
+                    <span class="nums">{{ row.rank.toLocaleString() }}</span>
+                  </template>
+                </span>
               </span>
             </span>
-          </span>
 
-          <!-- The three states, rendered as three different things.
+            <!-- The three states, rendered as three different things.
 
                Untracked is an em dash and a label, never a zero: the hiscores
                publish no count for this boss for anyone. Unscored genuinely is
                zero — every boss appears from the first kill — so it says 0
                rather than hedging. -->
-          <span class="flex shrink-0 flex-col items-end">
-            <template v-if="!row.tracked">
-              <span class="text-[15px] leading-tight text-parchment-3">—</span>
-              <span class="text-[11px] text-parchment-3">not counted</span>
-            </template>
-            <template v-else-if="!bosses.countsKnown">
-              <span class="text-[15px] leading-tight text-parchment-3">—</span>
-            </template>
-            <template v-else>
-              <span
-                class="nums text-[15px] font-bold leading-tight engraved"
-                :class="row.kills ? 'text-gold' : 'text-parchment-3'"
-              >
-                {{ (row.kills ?? 0).toLocaleString() }}
-              </span>
-              <span class="text-[11px] text-parchment-3">kills</span>
-            </template>
-          </span>
+            <span class="flex shrink-0 flex-col items-end">
+              <template v-if="!row.tracked">
+                <span class="text-[15px] leading-tight text-parchment-3"
+                  >—</span
+                >
+                <span class="text-[11px] text-parchment-3">not counted</span>
+              </template>
+              <template v-else-if="!bosses.countsKnown">
+                <span class="text-[15px] leading-tight text-parchment-3"
+                  >—</span
+                >
+              </template>
+              <template v-else>
+                <span
+                  class="nums text-[15px] font-bold leading-tight engraved"
+                  :class="row.kills ? 'text-gold' : 'text-parchment-3'"
+                >
+                  {{ (row.kills ?? 0).toLocaleString() }}
+                </span>
+                <span class="text-[11px] text-parchment-3">kills</span>
+              </template>
+            </span>
+
+            <!-- Decorative and inert, like the quest rows': a positioned
+                 sibling inside a link can otherwise swallow taps. -->
+            <AppIcon
+              name="chevron"
+              :size="12"
+              class="pointer-events-none ml-1 shrink-0 text-gold"
+              aria-hidden="true"
+            />
+          </RouterLink>
         </li>
       </ul>
     </template>

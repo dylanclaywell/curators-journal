@@ -1,0 +1,278 @@
+{
+ "id": "kraken",
+ "name": "Kraken",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Kraken",
+ "overview": [],
+ "tables": [
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Mystic water staff",
+     "quantity": "1",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Rune warhammer",
+     "quantity": "1",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Rune longsword",
+     "quantity": "1",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Mystic robe top",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Mystic robe bottom",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Trident of the Seas (full)",
+     "quantity": "1",
+     "rarity": "1/512",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes",
+   "version": null,
+   "drops": [
+    {
+     "name": "Water rune",
+     "quantity": "400",
+     "rarity": "10/128",
+     "rolls": null
+    },
+    {
+     "name": "Mist rune",
+     "quantity": "100",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Chaos rune",
+     "quantity": "200",
+     "rarity": "10/128",
+     "rolls": null
+    },
+    {
+     "name": "Death rune",
+     "quantity": "150",
+     "rarity": "10/128",
+     "rolls": null
+    },
+    {
+     "name": "Blood rune",
+     "quantity": "60",
+     "rarity": "10/128",
+     "rolls": null
+    },
+    {
+     "name": "Soul rune",
+     "quantity": "50",
+     "rarity": "7/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Seeds",
+   "version": null,
+   "drops": [
+    {
+     "name": "Watermelon seed",
+     "quantity": "24",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Torstol seed",
+     "quantity": "2",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Magic seed",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Materials",
+   "version": null,
+   "drops": [
+    {
+     "name": "Seaweed",
+     "quantity": "125 (noted)",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Battlestaff",
+     "quantity": "10 (noted)",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Unpowered orb",
+     "quantity": "50 (noted)",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Diamond",
+     "quantity": "8 (noted)",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Oak plank",
+     "quantity": "60 (noted)",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Runite bar",
+     "quantity": "2",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Raw shark",
+     "quantity": "50 (noted)",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Raw monkfish",
+     "quantity": "100 (noted)",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Grimy snapdragon",
+     "quantity": "6 (noted)",
+     "rarity": "2/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "10000-19999",
+     "rarity": "15/128",
+     "rolls": null
+    },
+    {
+     "name": "Shark",
+     "quantity": "5",
+     "rarity": "7/128",
+     "rolls": null
+    },
+    {
+     "name": "Pirate boots",
+     "quantity": "1",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Sanfew serum(4)",
+     "quantity": "2",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Edible seaweed",
+     "quantity": "5",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Harpoon",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Bucket",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Crystal key",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Rusty sword",
+     "quantity": "1",
+     "rarity": "1.75/128",
+     "rolls": null
+    },
+    {
+     "name": "Antidote++(4)",
+     "quantity": "2 (noted)",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Dragonstone ring",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Kraken tentacle",
+     "quantity": "1",
+     "rarity": "1/400",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Jar of Dirt",
+     "quantity": "1",
+     "rarity": "1/1000",
+     "rolls": null
+    },
+    {
+     "name": "Pet Kraken",
+     "quantity": "1",
+     "rarity": "1/3000",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

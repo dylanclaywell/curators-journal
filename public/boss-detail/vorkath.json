@@ -1,0 +1,343 @@
+{
+ "id": "vorkath",
+ "name": "Vorkath",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Vorkath",
+ "overview": [
+  "Vorkath is able to use all three combat styles, though it can't use melee unless the player is standing next to it, including diagonally across. Similarly to the King Black Dragon, it makes use of three dragonfire types; a standard dragonfire, a venomous dragonfire, and a prayer-disabling dragonfire, which is a higher tier of dragonfire and thus requires better protection to maximize damage mitigation. The final common attack is a fireball it launches high in the air that must be dodged; it will instantly kill regardless of the player's dragonfire protection if directly struck, or deal an immense amount of damage if next to it, which is similarly unaffected by dragonfire protection.",
+  "After six normal/dragonfire attacks, it will use one of two special attacks and alternate between them (i.e., it will use one after 6 regular attacks, then the other after 6 more, and so on):",
+  "*Freezing the player in place and summoning a Zombified Spawn that will approach the player and explode violently if not killed, dealing damage scaled to its health; at full health, it will deal 60 damage. Until the spawn is killed/explodes, Vorkath is immune to damage. *Launching acid pools around the area and rapidly spitting fireballs at the player that must be dodged or they will deal high damage. During this time, Vorkath has a flat 50% damage reduction.",
+  "Once Vorkath's health is depleted, it will return to its original unaggressive stance. It can immediately be reawoken for another battle."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": "Post-quest",
+   "drops": [
+    {
+     "name": "Superior dragon bones",
+     "quantity": "2",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Blue dragonhide",
+     "quantity": "2",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": "Post-quest",
+   "drops": [
+    {
+     "name": "Rune longsword",
+     "quantity": "2-3",
+     "rarity": "5/150",
+     "rolls": 2
+    },
+    {
+     "name": "Rune kiteshield",
+     "quantity": "2-3",
+     "rarity": "5/150",
+     "rolls": 2
+    },
+    {
+     "name": "Battlestaff",
+     "quantity": "5-15 (noted)",
+     "rarity": "4/150",
+     "rolls": 2
+    },
+    {
+     "name": "Dragon battleaxe",
+     "quantity": "1",
+     "rarity": "2/150",
+     "rolls": 2
+    },
+    {
+     "name": "Dragon longsword",
+     "quantity": "1",
+     "rarity": "2/150",
+     "rolls": 2
+    },
+    {
+     "name": "Dragon platelegs",
+     "quantity": "1",
+     "rarity": "2/150",
+     "rolls": 2
+    },
+    {
+     "name": "Dragon plateskirt",
+     "quantity": "1",
+     "rarity": "2/150",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Runes",
+   "version": "Post-quest",
+   "drops": [
+    {
+     "name": "Chaos rune",
+     "quantity": "250-350",
+     "rarity": "6/150",
+     "rolls": 2
+    },
+    {
+     "name": "Death rune",
+     "quantity": "200-300",
+     "rarity": "6/150",
+     "rolls": 2
+    },
+    {
+     "name": "Wrath rune",
+     "quantity": "30-60",
+     "rarity": "3/150",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Dragonhide",
+   "version": "Post-quest",
+   "drops": [
+    {
+     "name": "Blue dragonhide",
+     "quantity": "25-30 (noted)",
+     "rarity": "8/150",
+     "rolls": 2
+    },
+    {
+     "name": "Green dragonhide",
+     "quantity": "25-30 (noted)",
+     "rarity": "7/150",
+     "rolls": 2
+    },
+    {
+     "name": "Red dragonhide",
+     "quantity": "20-25 (noted)",
+     "rarity": "7/150",
+     "rolls": 2
+    },
+    {
+     "name": "Black dragonhide",
+     "quantity": "15-25 (noted)",
+     "rarity": "7/150",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Fletching materials",
+   "version": "Post-quest",
+   "drops": [
+    {
+     "name": "Dragon bolts (unf)",
+     "quantity": "50-100",
+     "rarity": "8/150",
+     "rolls": 2
+    },
+    {
+     "name": "Dragonstone bolt tips",
+     "quantity": "11-25",
+     "rarity": "5/150",
+     "rolls": 2
+    },
+    {
+     "name": "Onyx bolt tips",
+     "quantity": "5-10",
+     "rarity": "4/150",
+     "rolls": 2
+    },
+    {
+     "name": "Rune dart tip",
+     "quantity": "75-100",
+     "rarity": "3/150",
+     "rolls": 2
+    },
+    {
+     "name": "Dragon dart tip",
+     "quantity": "10-50",
+     "rarity": "6/150",
+     "rolls": 2
+    },
+    {
+     "name": "Dragon arrowtips",
+     "quantity": "25-50",
+     "rarity": "3/150",
+     "rolls": 2
+    },
+    {
+     "name": "Diamond bolt tips",
+     "quantity": "25-30",
+     "rarity": "25/2730",
+     "rolls": 2
+    },
+    {
+     "name": "Emerald bolt tips",
+     "quantity": "25-30",
+     "rarity": "20/2730",
+     "rolls": 2
+    },
+    {
+     "name": "Ruby bolt tips",
+     "quantity": "25-30",
+     "rarity": "20/2730",
+     "rolls": 2
+    },
+    {
+     "name": "Dragonstone bolt tips",
+     "quantity": "25-30",
+     "rarity": "14/2730",
+     "rolls": 2
+    },
+    {
+     "name": "Onyx bolt tips",
+     "quantity": "25-30",
+     "rarity": "7/2730",
+     "rolls": 2
+    },
+    {
+     "name": "Sapphire bolt tips",
+     "quantity": "25-30",
+     "rarity": "5/2730",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Shark drop table",
+   "version": "Post-quest",
+   "drops": [
+    {
+     "name": "Raw shark",
+     "quantity": "35-55 (noted)",
+     "rarity": "3/300",
+     "rolls": 2
+    },
+    {
+     "name": "Shark lure",
+     "quantity": "70-110",
+     "rarity": "3/300",
+     "rolls": 2
+    },
+    {
+     "name": "Manta ray",
+     "quantity": "35-55 (noted)",
+     "rarity": "2/300",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": "Post-quest",
+   "drops": [
+    {
+     "name": "Adamantite ore",
+     "quantity": "10-30 (noted)",
+     "rarity": "7/150",
+     "rolls": 2
+    },
+    {
+     "name": "Coins",
+     "quantity": "20000-80000",
+     "rarity": "5/150",
+     "rolls": 2
+    },
+    {
+     "name": "Grapes",
+     "quantity": "250-300 (noted)",
+     "rarity": "5/150",
+     "rolls": 2
+    },
+    {
+     "name": "Magic logs",
+     "quantity": "50 (noted)",
+     "rarity": "5/150",
+     "rolls": 2
+    },
+    {
+     "name": "Dragon bones",
+     "quantity": "15-20 (noted)",
+     "rarity": "4/150",
+     "rolls": 2
+    },
+    {
+     "name": "Diamond",
+     "quantity": "10-20 (noted)",
+     "rarity": "4/150",
+     "rolls": 2
+    },
+    {
+     "name": "Dragonstone",
+     "quantity": "2-3 (noted)",
+     "rarity": "3/150",
+     "rolls": 2
+    },
+    {
+     "name": "Wrath talisman",
+     "quantity": "1",
+     "rarity": "3/150",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": "Post-quest",
+   "drops": [
+    {
+     "name": "Scaly blue dragonhide",
+     "quantity": "1",
+     "rarity": "1/10",
+     "rolls": null
+    },
+    {
+     "name": "Vorkath's head",
+     "quantity": "1",
+     "rarity": "1/50",
+     "rolls": null
+    },
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Dragonbone necklace",
+     "quantity": "1",
+     "rarity": "1/1000",
+     "rolls": null
+    },
+    {
+     "name": "Jar of Decay",
+     "quantity": "1",
+     "rarity": "1/3000",
+     "rolls": null
+    },
+    {
+     "name": "Vorki",
+     "quantity": "1",
+     "rarity": "1/3000",
+     "rolls": null
+    },
+    {
+     "name": "Draconic visage",
+     "quantity": "1",
+     "rarity": "1/5000",
+     "rolls": null
+    },
+    {
+     "name": "Skeletal visage",
+     "quantity": "1",
+     "rarity": "1/5000",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

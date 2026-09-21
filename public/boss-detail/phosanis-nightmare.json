@@ -1,0 +1,284 @@
+{
+ "id": "phosanis-nightmare",
+ "name": "Phosani's Nightmare",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Phosani's_Nightmare",
+ "overview": [],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Big bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Inquisitor's and Nightmare staff table",
+   "version": null,
+   "drops": [
+    {
+     "name": "Nightmare staff",
+     "quantity": "1",
+     "rarity": "69/35000",
+     "rolls": null
+    },
+    {
+     "name": "Inquisitor's great helm",
+     "quantity": "1",
+     "rarity": "1/700",
+     "rolls": null
+    },
+    {
+     "name": "Inquisitor's hauberk",
+     "quantity": "1",
+     "rarity": "1/700",
+     "rolls": null
+    },
+    {
+     "name": "Inquisitor's plateskirt",
+     "quantity": "1",
+     "rarity": "1/700",
+     "rolls": null
+    },
+    {
+     "name": "Inquisitor's mace",
+     "quantity": "1",
+     "rarity": "31/35000",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Orb table",
+   "version": null,
+   "drops": [
+    {
+     "name": "Eldritch orb",
+     "quantity": "1",
+     "rarity": "1/1600",
+     "rolls": null
+    },
+    {
+     "name": "Harmonised orb",
+     "quantity": "1",
+     "rarity": "1/1600",
+     "rolls": null
+    },
+    {
+     "name": "Volatile orb",
+     "quantity": "1",
+     "rarity": "1/1600",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": null,
+   "drops": [
+    {
+     "name": "Cosmic rune",
+     "quantity": "247-420",
+     "rarity": "4/100",
+     "rolls": null
+    },
+    {
+     "name": "Nature rune",
+     "quantity": "165-305",
+     "rarity": "4/100",
+     "rolls": null
+    },
+    {
+     "name": "Death rune",
+     "quantity": "165-305",
+     "rarity": "4/100",
+     "rolls": null
+    },
+    {
+     "name": "Blood rune",
+     "quantity": "343-765",
+     "rarity": "4/100",
+     "rolls": null
+    },
+    {
+     "name": "Soul rune",
+     "quantity": "110-228",
+     "rarity": "4/100",
+     "rolls": null
+    },
+    {
+     "name": "Steel cannonball",
+     "quantity": "137-382",
+     "rarity": "4/100",
+     "rolls": null
+    },
+    {
+     "name": "Rune arrow",
+     "quantity": "412-957",
+     "rarity": "3/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Resources",
+   "version": null,
+   "drops": [
+    {
+     "name": "Mithril ore",
+     "quantity": "165-305 (noted)",
+     "rarity": "5/100",
+     "rolls": null
+    },
+    {
+     "name": "Coal",
+     "quantity": "220-458 (noted)",
+     "rarity": "4/100",
+     "rolls": null
+    },
+    {
+     "name": "Gold ore",
+     "quantity": "165-305 (noted)",
+     "rarity": "4/100",
+     "rolls": null
+    },
+    {
+     "name": "Adamantite ore",
+     "quantity": "40-95 (noted)",
+     "rarity": "4/100",
+     "rolls": null
+    },
+    {
+     "name": "Magic logs",
+     "quantity": "40-95 (noted)",
+     "rarity": "4/100",
+     "rolls": null
+    },
+    {
+     "name": "Grimy cadantine",
+     "quantity": "13-26 (noted)",
+     "rarity": "4/100",
+     "rolls": null
+    },
+    {
+     "name": "Grimy torstol",
+     "quantity": "13-26 (noted)",
+     "rarity": "4/100",
+     "rolls": null
+    },
+    {
+     "name": "Snapdragon seed",
+     "quantity": "5-10",
+     "rarity": "3/100",
+     "rolls": null
+    },
+    {
+     "name": "Uncut emerald",
+     "quantity": "33-75 (noted)",
+     "rarity": "3/100",
+     "rolls": null
+    },
+    {
+     "name": "Uncut ruby",
+     "quantity": "27-60 (noted)",
+     "rarity": "3/100",
+     "rolls": null
+    },
+    {
+     "name": "Runite ore",
+     "quantity": "11-26 (noted)",
+     "rarity": "2/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Consumables",
+   "version": null,
+   "drops": [
+    {
+     "name": "Bass",
+     "quantity": "16-29",
+     "rarity": "6/100",
+     "rolls": null
+    },
+    {
+     "name": "Shark",
+     "quantity": "13-26",
+     "rarity": "6/100",
+     "rolls": null
+    },
+    {
+     "name": "Prayer potion(3)",
+     "quantity": "8-15",
+     "rarity": "5/100",
+     "rolls": null
+    },
+    {
+     "name": "Sanfew serum(3)",
+     "quantity": "6-12",
+     "rarity": "5/100",
+     "rolls": null
+    },
+    {
+     "name": "Saradomin brew(3)",
+     "quantity": "8-15",
+     "rarity": "5/100",
+     "rolls": null
+    },
+    {
+     "name": "Zamorak brew(3)",
+     "quantity": "8-15",
+     "rarity": "5/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Coins",
+   "version": null,
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "41417-74500",
+     "rarity": "2/100",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Slepey tablet",
+     "quantity": "1",
+     "rarity": "1/25",
+     "rolls": null
+    },
+    {
+     "name": "Parasitic egg",
+     "quantity": "1",
+     "rarity": "1/200",
+     "rolls": null
+    },
+    {
+     "name": "Little Nightmare",
+     "quantity": "1",
+     "rarity": "1/1400",
+     "rolls": null
+    },
+    {
+     "name": "Jar of Dreams",
+     "quantity": "1",
+     "rarity": "1/4000",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

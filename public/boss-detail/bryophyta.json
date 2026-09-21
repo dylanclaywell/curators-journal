@@ -1,0 +1,425 @@
+{
+ "id": "bryophyta",
+ "name": "Bryophyta",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Bryophyta",
+ "overview": [
+  "To access Bryophyta's lair, players will need a knife or a slash weapon to cut through the web if approaching via the Varrock Sewers. Members with level 51 Agility can bypass this by using the agility shortcut near Vannaka in the Edgeville Dungeon. Alternatively, a charged Giantsoul amulet can teleport players directly outside the entrance to her lair.",
+  "Unlike Obor’s chambers, where he is confined in a small pit, players are taken directly to Bryophyta’s chambers, where she attacks on sight. It is recommended to activate Protect from Magic before entering, or immediately upon entry, before opening the gate.",
+  "In members' worlds, Bryophyta can poison players, starting at 8 damage; it is advisable to bring poison protection even when using protection prayers.",
+  "Throughout the fight, there is a 1/5 chance that Bryophyta may summon three growthlings that must be killed with either an axe or magic secateurs. Bryophyta is immune to all damage (except poison and venom) while they are alive. Although the blessed axe is a woodcutting axe, it will not work. If no item with the \"Axe\" attack type is brought, players can take a bronze axe from the pile of logs in the lair; other types of axes, such as battleaxes or the zombie axe, cannot be used to kill the growthlings. Bryophyta can only summon one batch of growthlings at a time, and there a cooldown of around 20 ticks between summons.",
+  "Free-to-play players should wear green d'hide armour for magic defence, along with a rune kiteshield and rune full helm for optimal protection against her attacks. God armours like Guthix armour offer a slight advantage with a +1 Prayer bonus per piece and are only marginally more expensive than rune armour. Offensively, a rune scimitar is recommended for its strength bonus. Players should have at least 50 strength, attack, and defence before attempting to fight Bryophyta.",
+  "Ranging Bryophyta is the best strategy for mid-level F2P players, with recommended stats of 60 Ranged, 40 Defence, and 37 Prayer. The ideal setup includes green d'hide armour, a coif, an amulet of power, and a maple shortbow with adamant arrows. Maintaining a safe distance is crucial, as she won’t move towards players and won’t use melee attacks if they are out of her reach. Using Protect from Magic will further minimise damage.",
+  "Bryophyta's 50% fire weakness makes magic highly viable in F2P. With at least 37 Prayer and 59 Magic, using Protect from Magic and Fire Blast offers the highest DPS for F2P players by a wide margin. As with the ranged strategy, keeping your distance is crucial. Best-in-slot magic gear with the Fire Staff is the recommended equipment.",
+  "Members players can kill her very quickly by utilizing powerful special attack weapons, such as Dragon Claws or a Voidwaker. With access to the Desert amulet 4 or a Restoration pool built in their player-owned house to restore special attack energy between kills, as well as a Giantsoul amulet to return back to her lair quickly, players can expect anywhere from 6-8 mossy keys per hour depending on efficiency."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": "Members",
+   "drops": [
+    {
+     "name": "Giant bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": "Members",
+   "drops": [
+    {
+     "name": "Black sq shield",
+     "quantity": "1",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Magic staff",
+     "quantity": "1",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Steel med helm",
+     "quantity": "1",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Mithril sword",
+     "quantity": "1",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Mithril spear",
+     "quantity": "1",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Steel kiteshield",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": "Members",
+   "drops": [
+    {
+     "name": "Law rune",
+     "quantity": "3",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Air rune",
+     "quantity": "18",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Earth rune",
+     "quantity": "27",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Chaos rune",
+     "quantity": "7",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Nature rune",
+     "quantity": "6",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Cosmic rune",
+     "quantity": "3",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Iron arrow",
+     "quantity": "15",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Steel arrow",
+     "quantity": "30",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Death rune",
+     "quantity": "3",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Blood rune",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Coins",
+   "version": "Members",
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "37",
+     "rarity": "19/128",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "2",
+     "rarity": "8/128",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "119",
+     "rarity": "10/128",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "300",
+     "rarity": "2/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": "Members",
+   "drops": [
+    {
+     "name": "Steel bar",
+     "quantity": "1",
+     "rarity": "6/128",
+     "rolls": null
+    },
+    {
+     "name": "Coal",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Spinach roll",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": "Members",
+   "drops": [
+    {
+     "name": "Moss giant bone",
+     "quantity": "1",
+     "rarity": "1/4",
+     "rolls": null
+    },
+    {
+     "name": "Ensouled giant head",
+     "quantity": "1",
+     "rarity": "1/24",
+     "rolls": null
+    },
+    {
+     "name": "Mossy key",
+     "quantity": "1",
+     "rarity": "1/16",
+     "rolls": null
+    },
+    {
+     "name": "Long bone",
+     "quantity": "1",
+     "rarity": "1/400",
+     "rolls": null
+    },
+    {
+     "name": "Giant champion scroll",
+     "quantity": "1",
+     "rarity": "1/5000",
+     "rolls": null
+    },
+    {
+     "name": "Curved bone",
+     "quantity": "1",
+     "rarity": "1/5012.5",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "100%",
+   "version": "Free-to-play",
+   "drops": [
+    {
+     "name": "Big bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": "Free-to-play",
+   "drops": [
+    {
+     "name": "Black sq shield",
+     "quantity": "1",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Magic staff",
+     "quantity": "1",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Steel med helm",
+     "quantity": "1",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Mithril sword",
+     "quantity": "1",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Steel kiteshield",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": "Free-to-play",
+   "drops": [
+    {
+     "name": "Law rune",
+     "quantity": "3",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Air rune",
+     "quantity": "18",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Earth rune",
+     "quantity": "27",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Chaos rune",
+     "quantity": "7",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Nature rune",
+     "quantity": "6",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Cosmic rune",
+     "quantity": "3",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Iron arrow",
+     "quantity": "15",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Steel arrow",
+     "quantity": "30",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Death rune",
+     "quantity": "3",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Coins",
+   "version": "Free-to-play",
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "10",
+     "rarity": "5/128",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "5",
+     "rarity": "35/128",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "37",
+     "rarity": "19/128",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "2",
+     "rarity": "11/128",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "119",
+     "rarity": "10/128",
+     "rolls": null
+    },
+    {
+     "name": "Coins",
+     "quantity": "300",
+     "rarity": "2/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": "Free-to-play",
+   "drops": [
+    {
+     "name": "Steel bar",
+     "quantity": "1",
+     "rarity": "6/128",
+     "rolls": null
+    },
+    {
+     "name": "Coal",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Spinach roll",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": "Free-to-play",
+   "drops": [
+    {
+     "name": "Clue scroll (beginner)",
+     "quantity": "1",
+     "rarity": "1/45",
+     "rolls": null
+    },
+    {
+     "name": "Mossy key",
+     "quantity": "1",
+     "rarity": "1/16",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

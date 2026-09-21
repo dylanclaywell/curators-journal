@@ -1,0 +1,86 @@
+{
+ "id": "theatre-of-blood-hard-mode",
+ "name": "Theatre of Blood/Hard Mode",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Theatre_of_Blood%2FHard_Mode",
+ "overview": [],
+ "tables": [
+  {
+   "section": "Uniques",
+   "version": null,
+   "drops": [
+    {
+     "name": "Avernic defender hilt",
+     "quantity": "1",
+     "rarity": "7/138.6",
+     "rolls": null
+    },
+    {
+     "name": "Ghrazi rapier",
+     "quantity": "1",
+     "rarity": "2/138.6",
+     "rolls": null
+    },
+    {
+     "name": "Sanguinesti staff (uncharged)",
+     "quantity": "1",
+     "rarity": "2/138.6",
+     "rolls": null
+    },
+    {
+     "name": "Justiciar faceguard",
+     "quantity": "1",
+     "rarity": "2/138.6",
+     "rolls": null
+    },
+    {
+     "name": "Justiciar chestguard",
+     "quantity": "1",
+     "rarity": "2/138.6",
+     "rolls": null
+    },
+    {
+     "name": "Justiciar legguards",
+     "quantity": "1",
+     "rarity": "2/138.6",
+     "rolls": null
+    },
+    {
+     "name": "Scythe of Vitur (uncharged)",
+     "quantity": "1",
+     "rarity": "1/138.6",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Sanguine dust",
+     "quantity": "1",
+     "rarity": "1/275",
+     "rolls": null
+    },
+    {
+     "name": "Sanguine ornament kit",
+     "quantity": "1",
+     "rarity": "1/150",
+     "rolls": null
+    },
+    {
+     "name": "Holy ornament kit",
+     "quantity": "1",
+     "rarity": "1/100",
+     "rolls": null
+    },
+    {
+     "name": "Lil' Zik",
+     "quantity": "1",
+     "rarity": "1/500",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

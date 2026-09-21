@@ -1,0 +1,32 @@
+{
+ "id": "slagilith",
+ "name": "Slagilith",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Slagilith",
+ "overview": [],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Adamantite ore",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Uncut diamond",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Uncut ruby",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

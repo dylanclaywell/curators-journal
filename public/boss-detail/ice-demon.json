@@ -1,0 +1,49 @@
+{
+ "id": "ice-demon",
+ "name": "Ice demon",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Ice_demon",
+ "overview": [
+  "The demon is initially standing in place protected by an ice storm, blocking the way deeper into the chambers. In order to dispel the ice storm, the braziers surrounding it must be lit, and kindling fuels them. There are plenty of trees outside the chamber it resides in to chop for tinder. Having a deposit chest built will greatly help for managing inventory space. Alternatively, players may drop some of their items and pick them up later, although it is recommended to only drop expendable items in the event the raid instance is closed (through a disconnection, for example).",
+  "Kindling is obtained through chopping trees in the corridor preceding ice demon. The amount of kindling received per swing is determined by the player's Woodcutting level, with every 12 levels granting the ability to receive another kindling: at level 1 Woodcutting, only one kindling can be received per swing, and at level 96 Woodcutting or higher, one to eight kindling can be received per swing. The experience gained from chopping scales to the amount of kindling chopped.",
+  "The depletion chance of a tree falling when cut is rolled as 1/X, where X is the greater value between: 2x number of players at the start of the raid, OR 3. In the ice demon room, multiply that value by 5. For example, in a raid that had 5 players, 2x number of players at the start of the raid is 2x5, i.e. 10. That's at least 3. So normally the chance of depletion is 1/10, but in the ice demon room it'd be 1/50. In a solo raid, 2x number of players at the start of the raid is 2x1, i.e. 2. We'd use 3 because that's greater. So normally the chance of depletion is 1/3, but in the ice demon room it'd be 1/15.",
+  "There are four braziers surrounding the demon. Kindling can be used to light these braziers to slowly dispel the ice storm. A player's Firemaking level affects their chance of successfully lighting a brazier, using the standard Firemaking skill roll with an 8% success chance at level 1, scaling to 78% at level 99.",
+  "Additionally, an icefiend occupies each brazier (one icefiend for each player in the team, capping at four icefiends). They do not move, but if the brazier next to them is lit, they will attempt to remove a charge from it every 3 to 4 ticks, with a 1/6 chance of succeeding.",
+  "Once the ice storm is dispelled, the icefiends will disappear and the demon will emerge from the storm to engage the team. It has two attacks; a snow boulder and Ice Burst. The demon will take overhead prayers into account when fighting them; if the target is using Protect from Missiles, it will only use the snow boulder attack. If Protect from Magic is used instead, it will only use Ice Burst. Both attacks are AoE with a 3x3 radius, so one can avoid attacks completely by moving a few spaces away from their spot. It is recommended to use Protect from Missiles, as the ice burst projectile is nearly impossible to spot and is much faster than the boulder.",
+  "The demon has low health compared to other monster puzzles, but compensates for this with high Defence and a damage reduction effect.",
+  "All damage dealt to the demon is reduced by 67%, except for fire spells (which deal 250% damage) and demonbane weapons (in which all demonbane modifiers are increased by 15%). Magic attacks are effective due to the demon's magic defence being calculated from its Defence level rather than Magic, unlike most monsters.",
+  "The ice demon regenerates its stats at the standard rate of 1 per 100 ticks.",
+  "It is recommended to use dragon warhammer or Bandos godsword special attacks to lower the demon's defences, unless using them in the following room is more advantageous (for example, against Tekton). The twisted bow hits well against the ice demon due to its high Magic level, but fire spells are still superior if the player can afford to bring it, but both are outclassed by Emberlight if the player is not using Fire Surge with a Harmonised Nightmare staff."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Fiendish ashes",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Stinkhorn mushroom",
+     "quantity": "7",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Endarkened juice",
+     "quantity": "7",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Cicely",
+     "quantity": "5",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

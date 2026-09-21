@@ -1,0 +1,68 @@
+{
+ "id": "tempoross",
+ "name": "Tempoross",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Tempoross",
+ "overview": [],
+ "tables": [
+  {
+   "section": "Unique rewards",
+   "version": null,
+   "drops": [
+    {
+     "name": "Spirit flakes",
+     "quantity": "32-64",
+     "rarity": "40/160",
+     "rolls": null
+    },
+    {
+     "name": "Casket (Reward pool)",
+     "quantity": "1",
+     "rarity": "8/160",
+     "rolls": null
+    },
+    {
+     "name": "Soaked page",
+     "quantity": "5-25",
+     "rarity": "149/8000",
+     "rolls": null
+    },
+    {
+     "name": "Fish barrel",
+     "quantity": "1",
+     "rarity": "1/400",
+     "rolls": null
+    },
+    {
+     "name": "Tackle box",
+     "quantity": "1",
+     "rarity": "1/400",
+     "rolls": null
+    },
+    {
+     "name": "Big harpoonfish",
+     "quantity": "1",
+     "rarity": "1/1600",
+     "rolls": null
+    },
+    {
+     "name": "Tome of Water (empty)",
+     "quantity": "1",
+     "rarity": "1/1600",
+     "rolls": null
+    },
+    {
+     "name": "Dragon harpoon",
+     "quantity": "1",
+     "rarity": "1/8000",
+     "rolls": null
+    },
+    {
+     "name": "Tiny tempor",
+     "quantity": "1",
+     "rarity": "1/8000",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

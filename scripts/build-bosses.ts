@@ -26,11 +26,18 @@
  *   npm run build:bosses -- --refresh  # re-fetch, ignoring the cache
  *   npm run build:bosses -- --check    # is the committed dataset stale?
  */
-import { mkdir, readFile, writeFile } from 'node:fs/promises'
+import { mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises'
 import { fileURLToPath } from 'node:url'
 
 import { OTHER_ACTIVITY_NAMES } from '../src/lib/bosses.ts'
-import type { Boss, BossDataset, BossVersion } from '../src/lib/types.ts'
+import type {
+  Boss,
+  BossDataset,
+  BossDrop,
+  BossDetail,
+  BossDropTable,
+  BossVersion,
+} from '../src/lib/types.ts'
 
 import {
   exitCodeFor,
@@ -297,12 +304,197 @@ function readVersions(params: Record<string, string>): BossVersion[] {
   return labels.map((label, i) => build(label, i + 1))
 }
 
+/**
+ * Sentinel for a value the wiki computes and we therefore cannot read.
+ *
+ * Distinct from "absent" so the build can count them, but both end up null in
+ * the data — see `readComputedValue`.
+ */
+const UNRESOLVED = Symbol('unresolved')
+
+let unresolvedRarities = 0
+
+/**
+ * A drop's quantity or rarity, or `UNRESOLVED` when the wiki computes it.
+ *
+ * **The failure this exists to prevent is a half-parsed number.** Some rarities
+ * are written as templates or parser functions — `{{Brimstone rarity|350}}`,
+ * or `1/{{#expr:180/(1999/2000*1999/2000*...) round 1}}` — and `plainText`
+ * strips those, which left 34 rows reading a bare `1/` and 47 reading nothing.
+ * A truncated fraction is worse than a blank: it looks like data, and a player
+ * would read `1/` as a rate.
+ *
+ * We do not try to evaluate them. `#expr` is a parser function and
+ * `{{Brimstone rarity}}` has semantics of its own; guessing that its first
+ * argument is the denominator would be inventing a number and presenting it as
+ * the wiki's. So anything still holding a template after stripping is reported
+ * as unknown, and the UI sends the reader to the page.
+ */
+function readComputedValue(
+  raw: string | undefined,
+): string | typeof UNRESOLVED {
+  if (!raw) return ''
+  if (raw.includes('{{')) return UNRESOLVED
+  return plainText(raw)
+}
+
+/**
+ * The drop tables on a page.
+ *
+ * Each is `{{DropsTableHead}}` … `{{DropsLine}}` × n … `{{DropsTableBottom}}`,
+ * under a `=== heading ===` that names the section. Both ends matter: the
+ * heading is how a reader tells the 100% drops from the rare table, and
+ * `dropversion` on the head is how Vorkath's two forms keep their own tables
+ * instead of being flattened into one list the player can't get.
+ *
+ * Scanned with the shared brace matcher rather than a regex, for the reason
+ * `templateBody` documents — nested templates inside a row would truncate a
+ * lazy match.
+ */
+function parseDropTables(wikitext: string): BossDropTable[] {
+  const tables: BossDropTable[] = []
+  let from = 0
+
+  for (;;) {
+    const head = findTemplate(wikitext, 'DropsTableHead', from)
+    if (!head) break
+
+    const end = wikitext.indexOf('{{DropsTableBottom', head.end)
+    // An unterminated table means the page is mid-edit or the template moved;
+    // stopping here is better than reading rows out of the next section.
+    const limit = end === -1 ? wikitext.length : end
+
+    const drops: BossDrop[] = []
+    let cursor = head.end
+    for (;;) {
+      const line = findTemplate(wikitext, 'DropsLine', cursor)
+      if (!line || line.start >= limit) break
+      cursor = line.end
+
+      const params = templateParams(line.body)
+      const name = plainText(params.name ?? '')
+      // A row with no name is a formatting artefact, not a drop.
+      if (!name) continue
+
+      const rarity = readComputedValue(params.rarity)
+      if (rarity === UNRESOLVED) unresolvedRarities++
+      const quantity = readComputedValue(params.quantity)
+
+      drops.push({
+        name,
+        // Both fall back to null the same way: a value the wiki computes is
+        // unknown to us, and an unknown is a blank rather than a stub.
+        quantity: quantity === UNRESOLVED ? null : quantity || null,
+        rarity: rarity === UNRESOLVED ? null : rarity || null,
+        rolls: params.rolls ? Number(params.rolls) || null : null,
+      })
+    }
+
+    if (drops.length) {
+      tables.push({
+        section: headingBefore(wikitext, head.start),
+        version: templateParams(head.body).dropversion
+          ? plainText(templateParams(head.body).dropversion)
+          : null,
+        drops,
+      })
+    }
+
+    from = limit + 1
+  }
+
+  return tables
+}
+
+/**
+ * Where the boss is. Two sources, and neither alone is enough.
+ *
+ * **Not `{{Infobox Monster}}`**, which has no such parameter — that mistake
+ * returned null for all 183 while 109 pages plainly had the field:
+ *
+ *   - `{{Infobox NPC}}` carries `location`. Vorkath's page is a
+ *     `{{Multi Infobox}}` whose second entry is the NPC box for its asleep
+ *     form, and that is what holds `|location = [[Ungael]]`.
+ *   - `{{LocLine}}` rows are the locations *table* most monsters use, one row
+ *     per spawn. Cerberus has no NPC infobox and lists `Cerberus' Lair` here.
+ *
+ * Reading only the infoboxes found 53 of 183. Both together is the honest
+ * answer, and the result is a list because the table really can hold several.
+ */
+function readLocations(wikitext: string): string[] {
+  const found: string[] = []
+
+  const add = (raw: string | undefined): void => {
+    if (!raw) return
+    const text = plainText(raw)
+    if (text && !found.includes(text)) found.push(text)
+  }
+
+  for (const template of ['Infobox', 'LocLine']) {
+    let from = 0
+    for (;;) {
+      const match = findTemplate(wikitext, template, from)
+      if (!match) break
+      from = match.end
+      add(templateParams(match.body).location)
+    }
+  }
+
+  return found
+}
+
+/**
+ * The "Fight overview" section, as paragraphs of plain prose.
+ *
+ * Four headings are accepted because the wiki uses all of them for the same
+ * thing. The section runs to the next top-level `==` heading, so its own
+ * subsections come along — which is wanted: a boss whose overview is split
+ * into phases would otherwise lose everything after the first.
+ *
+ * Lines that are only markup survive `plainText` as empty strings and are
+ * dropped here: file embeds, table syntax and bare templates are layout, not
+ * prose, and an empty paragraph renders as a gap nobody can explain.
+ */
+function parseOverview(wikitext: string): string[] {
+  const match =
+    /^\s*==\s*(?:Fight overview|Mechanics|Overview|Strategy)\s*==\s*$([\s\S]*?)(?=^\s*==[^=])/m.exec(
+      wikitext,
+    )
+  if (!match) return []
+
+  return match[1]
+    .split(/\n\s*\n/)
+    .map((para) =>
+      plainText(
+        para
+          // Table markup and file embeds are structure; keeping them would put
+          // `|-` and `File:Vorkath.png` in the middle of a sentence.
+          .replace(/^\s*[|!{].*$/gm, '')
+          .replace(/\[\[File:[^\]]*\]\]/g, '')
+          .replace(/^\s*===+.*$/gm, ''),
+      ),
+    )
+    .map((para) => para.trim())
+    .filter((para) => para.length > 20)
+}
+
+/** The nearest `== heading ==` above an offset, which names the section. */
+function headingBefore(wikitext: string, offset: number): string | null {
+  const before = wikitext.slice(0, offset)
+  const matches = [...before.matchAll(/^\s*(={2,6})\s*(.+?)\s*\1\s*$/gm)]
+  const last = matches.at(-1)
+  return last ? plainText(last[2]) : null
+}
+
 interface ParsedPage {
   title: string
   members: boolean
   examine: string | null
+  locations: string[]
   slayerCategories: string[]
   versions: BossVersion[]
+  dropTables: BossDropTable[]
+  overview: string[]
   /** False when the page carries no `{{Infobox Monster}}` at all. */
   hasInfobox: boolean
 }
@@ -326,8 +518,13 @@ function parsePage(page: CachedPage): ParsedPage {
       title: page.title,
       members: /\|\s*members\s*=\s*yes/i.test(page.wikitext),
       examine: null,
+      // Still worth reading: a page with no monster infobox (a raid, say) can
+      // carry an `{{Infobox NPC}}` or `{{Infobox Minigame}}` that has one.
+      locations: readLocations(page.wikitext),
       slayerCategories: [],
       versions: [],
+      dropTables: parseDropTables(page.wikitext),
+      overview: parseOverview(page.wikitext),
       hasInfobox: false,
     }
   }
@@ -359,7 +556,10 @@ function parsePage(page: CachedPage): ParsedPage {
     slayerCategories: splitList(params.cat).filter(
       (cat) => cat.toLowerCase() !== 'bosses',
     ),
+    locations: readLocations(page.wikitext),
     versions,
+    dropTables: parseDropTables(page.wikitext),
+    overview: parseOverview(page.wikitext),
     hasInfobox: true,
   }
 }
@@ -401,6 +601,7 @@ function buildBosses(
       )}`,
       members: page.members,
       examine: page.examine,
+      locations: page.locations,
       slayerCategories: page.slayerCategories,
       versions: page.versions,
     }
@@ -448,6 +649,80 @@ function buildBosses(
 }
 
 /* ----------------------------------------------------------------- emit */
+
+/**
+ * Writes `public/boss-detail/<id>.json` — drop tables and fight prose, for
+ * every boss that has either.
+ *
+ * The directory is not `bosses/`, because `/bosses/:id` is the detail route: a
+ * service-worker rule on `/bosses/` would intercept navigations to it. App
+ * routes and asset paths stay in separate namespaces.
+ *
+ * Served on demand rather than bundled, following the quest-guides precedent:
+ * the set is another `diaries.json` in weight, and a player reads one at a
+ * time. `vite.config.ts` keeps the directory out of the precache and gives it
+ * a stale-while-revalidate rule — drop that `globIgnores` and the `json` in
+ * `globPatterns` swallows every one of these silently.
+ *
+ * **Keyed by page, not by boss.** The two variants (`The Corrupted Gauntlet`,
+ * `Tombs of Amascut: Expert Mode`) share their parent's page and therefore its
+ * drop tables, so they get no file of their own and the store asks for
+ * `variantOf ?? id`. Writing a duplicate under each variant's id would be two
+ * copies that a later regeneration could leave disagreeing.
+ */
+async function emitDetail(
+  bosses: Boss[],
+  parsed: ParsedPage[],
+): Promise<{ files: number; drops: number; overviews: number }> {
+  const dir = `${root}public/boss-detail`
+  await mkdir(dir, { recursive: true })
+
+  const byTitle = new Map(parsed.map((page) => [page.title, page]))
+  const written = new Set<string>()
+  let drops = 0
+  let overviews = 0
+
+  for (const boss of bosses) {
+    // Variants read their parent's file; see above.
+    if (boss.variantOf !== null) continue
+    const page = byTitle.get(boss.page)
+    // A boss with neither drops nor prose gets no file at all, and the store
+    // records that as "asked, there is none" rather than re-requesting.
+    if (!page || (!page.dropTables.length && !page.overview.length)) continue
+
+    const payload: BossDetail = {
+      id: boss.id,
+      name: boss.name,
+      wikiUrl: boss.wikiUrl,
+      overview: page.overview,
+      tables: page.dropTables,
+    }
+    if (page.overview.length) overviews++
+    // Indented one space, matching `build-guides`: these land in the weekly
+    // drift PR and someone has to read that diff. Minified, each file is one
+    // line and a single changed rarity rewrites the whole thing. The extra
+    // bytes cost nothing served — whitespace is what gzip is best at.
+    await writeFile(
+      `${dir}/${boss.id}.json`,
+      JSON.stringify(payload, null, 1) + '\n',
+      'utf8',
+    )
+    written.add(`${boss.id}.json`)
+    drops += page.dropTables.reduce((n, table) => n + table.drops.length, 0)
+  }
+
+  // Sweep files for bosses that no longer exist, or that lost their tables.
+  // Without this a renamed boss leaves its old file behind forever, served to
+  // anyone who still has the URL and never regenerated.
+  for (const name of await readdir(dir)) {
+    if (name.endsWith('.json') && !written.has(name)) {
+      await rm(`${dir}/${name}`)
+      console.log(`  removed stale ${name}`)
+    }
+  }
+
+  return { files: written.size, drops, overviews }
+}
 
 async function emit(bosses: Boss[], pages: CachedPage[]): Promise<void> {
   const generatedAt = new Date().toISOString().slice(0, 10)
@@ -549,6 +824,7 @@ async function main() {
 
   const parsed = cache.pages.map(parsePage)
   const bosses = buildBosses(parsed, cache.hiscoreToPage)
+  const detailStats = await emitDetail(bosses, parsed)
 
   if (defects.length) {
     console.error(`\n${defects.length} defect(s):`)
@@ -560,6 +836,16 @@ async function main() {
   }
 
   await emit(bosses, cache.pages)
+  console.log(
+    `  ${detailStats.files} boss pages written to public/boss-detail ` +
+      `(${detailStats.drops} drop rows, ${detailStats.overviews} with fight prose)`,
+  )
+  // Reported rather than silent: these are rarities the wiki computes with a
+  // template, so they are expected and not a defect — but a jump in the number
+  // means a template changed shape and more rows went blank than should have.
+  console.log(
+    `  ${unresolvedRarities} rarities are wiki-computed and left unknown`,
+  )
 }
 
 main().catch((error: unknown) => {

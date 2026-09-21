@@ -1,0 +1,20 @@
+{
+ "id": "me",
+ "name": "Me",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Me",
+ "overview": [],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

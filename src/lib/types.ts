@@ -453,6 +453,14 @@ export interface Boss {
    */
   variantOf: string | null
   examine: string | null
+  /**
+   * Where it is. Empty when the wiki doesn't say in a structured way.
+   *
+   * A list rather than a string because the wiki genuinely lists several for
+   * some bosses — the `{{LocLine}}` rows are a table of spawns. Collapsing to
+   * the first would silently drop the others.
+   */
+  locations: string[]
   /** Slayer categories from the infobox's `cat`, e.g. "Hellhounds". */
   slayerCategories: string[]
   versions: BossVersion[]
@@ -463,6 +471,65 @@ export interface BossDataset {
   generatedAt: string
   sources: string[]
   bosses: Boss[]
+}
+
+/**
+ * One row of a drop table.
+ *
+ * Everything is a string because the wiki's own values are: quantity is
+ * "2-3" or "5-15 (noted)", rarity is "Always" or "5/150" or "1/1000". Parsing
+ * those into numbers would mean inventing a representation for ranges and
+ * noted quantities, and then rendering them back into the same strings.
+ */
+export interface BossDrop {
+  name: string
+  quantity: string | null
+  rarity: string | null
+  /** How many times the table is rolled for this item, when it says. */
+  rolls: number | null
+}
+
+/** A drop table: one section of one boss's drops. */
+export interface BossDropTable {
+  /** The wiki heading above it — "100%", "Weapons and armour", "Tertiary". */
+  section: string | null
+  /**
+   * Which version of the boss drops this, from `{{DropsTableHead|dropversion}}`.
+   * Vorkath's pre- and post-quest forms have different tables, so flattening
+   * these together would show a player drops they cannot get.
+   */
+  version: string | null
+  drops: BossDrop[]
+}
+
+/**
+ * Everything about one boss that is too big to bundle, served from
+ * `public/boss-detail/<id>.json`.
+ *
+ * Fetched on demand rather than bundled, following the quest-guides precedent:
+ * the set is another `diaries.json` of precache to ship every player 183 boss
+ * pages they read one at a time. See CLAUDE.md.
+ *
+ * Named for what it is rather than for its first occupant — it held only drop
+ * tables for about an hour, and a file called `drops` carrying fight prose is
+ * how a directory ends up lying about its contents.
+ */
+export interface BossDetail {
+  /** The boss id this belongs to. Checked on load — see the guides store. */
+  id: string
+  name: string
+  wikiUrl: string
+  /**
+   * The wiki's "Fight overview" section as paragraphs — what the boss does to
+   * you, in prose.
+   *
+   * Deliberately *not* the `<boss>/Strategies` subpage, which is 34–47 KB of
+   * gear setups and tables per boss and a different product entirely. This is
+   * the paragraph you want on a second screen mid-fight; that is a guide you
+   * read beforehand, and the wiki is better at it.
+   */
+  overview: string[]
+  tables: BossDropTable[]
 }
 
 /* ------------------------------------------------------------ quest guides */

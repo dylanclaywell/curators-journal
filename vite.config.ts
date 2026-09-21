@@ -70,7 +70,19 @@ export default defineConfig({
          * Without this they would be swept up by the `json` in the pattern
          * above, silently and with no warning anywhere.
          */
-        globIgnores: ['guides/**'],
+        /*
+         * `boss-detail/**` is here for the same reason as the guides: 147
+         * files of drop tables and fight prose, ~566 KB, read one boss at a
+         * time. Both directories must stay listed — this is one array, so
+         * adding a directory to `public/` and forgetting it here is silent.
+         *
+         * The directory is **not** `bosses/`, and that is load-bearing:
+         * `/bosses/:id` is the detail *route*. A runtime rule matching
+         * `/bosses/` would intercept navigations to it, and the navigation
+         * fallback would fight the data fetches. Keep app routes and asset
+         * paths in separate namespaces.
+         */
+        globIgnores: ['guides/**', 'boss-detail/**'],
         navigateFallbackDenylist: [/^\/api\//],
         runtimeCaching: [
           {
@@ -88,6 +100,19 @@ export default defineConfig({
               // Comfortably above the 204 that exist, so opening every quest in
               // the game never starts evicting guides the player is using.
               expiration: { maxEntries: 250, maxAgeSeconds: 60 * 60 * 24 * 90 },
+            },
+          },
+          {
+            // Drop tables, on the same terms as the guides above: replaced
+            // only by a deploy, so the cached copy is always right to serve
+            // and the background refresh stops it freezing at one version.
+            urlPattern: ({ url }) => url.pathname.startsWith('/boss-detail/'),
+            handler: 'StaleWhileRevalidate',
+            options: {
+              cacheName: 'boss-detail',
+              // Above the 123 that exist, with room for the list to grow —
+              // opening every boss in the game shouldn't start evicting.
+              expiration: { maxEntries: 200, maxAgeSeconds: 60 * 60 * 24 * 90 },
             },
           },
           {

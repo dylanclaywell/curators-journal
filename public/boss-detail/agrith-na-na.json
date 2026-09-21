@@ -1,0 +1,25 @@
+{
+ "id": "agrith-na-na",
+ "name": "Agrith-Na-Na",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Agrith-Na-Na",
+ "overview": [
+  "Using Ranged with black dragonhide armour, an archer helm, and a magic shortbow using rune arrows or a rune crossbow with diamond bolts (e) are recommended.",
+  "Melee can also be used, with crush defence armour and a dragon mace or abyssal whip, with a dragon dagger for special attacks. Using Magic is not recommended due to his magic level.",
+  "Low-level players can use Rings of recoil, and with low Defence can opt to attack and run repeatedly as he will attempt to get into melee range while his teleport wastes one of his attack cycles. Spam clicking away from him will allow him to land only one hit.",
+  "Note: The player cannot use Prayer in this boss fight or any other Recipe for Disaster boss fight."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Banana",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

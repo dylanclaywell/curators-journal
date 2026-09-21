@@ -1,0 +1,311 @@
+{
+ "id": "shellbane-gryphon",
+ "name": "Shellbane gryphon",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Shellbane_gryphon",
+ "overview": [
+  "Like normal gryphons, the shellbane gryphon is primarily weak to melee. A tortugan shield is required for the fight, otherwise the player will take heavy damage from its melee attacks.",
+  "The shellbane gryphon primarily attacks with melee, but also uses a ranged attack occasionally. It also has three special attacks: * Knockback - The boss will throw the player backwards, dealing up to 30 unavoidable damage. It is countered by having the player's equipped weight be ≥40kg, and then quickly counter-attacking when it attempts to use the attack. Note that the equipment stats screen shows total weight including inventory, not just equipped weight. The boss will prioritise using its other two special attacks if the player weighs ≥40kg. When stun shows above gryphon (orange birds), click on the gryphon to avoid damage. * Corrosive spit - An orange blob is launched, which corrodes the player's worn equipment if they do not move one tile away from where they stood. This will deal 3-12 damage 6 times over the course of. This can be interrupted by quickly unequipping all items. The amount of damage taken from each hitsplat is dependent on your ranged defence value. Having around ~125 range defence bonus will reduce the damage to 3 per splat. * Whirlwind - Whirlwinds begin to form at the player's current position every, up to a maximum of 5. These can stack and form a more powerful whirlwind, so it's recommended to move one tile every attack in order to avoid whirlwinds stacking and increasing their size resulting in less damage received. A max stack size 5 whirlwind will hit every square in the room for 50-70+ damage."
+ ],
+ "tables": [
+  {
+   "section": "Pre-roll",
+   "version": null,
+   "drops": [
+    {
+     "name": "Belle's folly (tarnished)",
+     "quantity": "1",
+     "rarity": "1/75",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Big bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Gryphon feather",
+     "quantity": "7-10",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons",
+   "version": null,
+   "drops": [
+    {
+     "name": "Rune claws",
+     "quantity": "1",
+     "rarity": "10/128",
+     "rolls": 2
+    },
+    {
+     "name": "Rune scimitar",
+     "quantity": "1",
+     "rarity": "8/128",
+     "rolls": 2
+    },
+    {
+     "name": "Adamant cannonball",
+     "quantity": "35-50",
+     "rarity": "8/128",
+     "rolls": 2
+    },
+    {
+     "name": "Rune cannonball",
+     "quantity": "20-30",
+     "rarity": "6/128",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Foods",
+   "version": null,
+   "drops": [
+    {
+     "name": "Raw swordfish",
+     "quantity": "1",
+     "rarity": "14/128",
+     "rolls": 2
+    },
+    {
+     "name": "Sweetcorn",
+     "quantity": "1",
+     "rarity": "10/128",
+     "rolls": 2
+    },
+    {
+     "name": "Watermelon",
+     "quantity": "1",
+     "rarity": "10/128",
+     "rolls": 2
+    },
+    {
+     "name": "Raw sea turtle",
+     "quantity": "1",
+     "rarity": "4/128",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Seeds and frags",
+   "version": null,
+   "drops": [
+    {
+     "name": "Potato seed",
+     "quantity": "1-4",
+     "rarity": null,
+     "rolls": 2
+    },
+    {
+     "name": "Onion seed",
+     "quantity": "1-3",
+     "rarity": null,
+     "rolls": 2
+    },
+    {
+     "name": "Cabbage seed",
+     "quantity": "1-3",
+     "rarity": null,
+     "rolls": 2
+    },
+    {
+     "name": "Tomato seed",
+     "quantity": "1-2",
+     "rarity": null,
+     "rolls": 2
+    },
+    {
+     "name": "Sweetcorn seed",
+     "quantity": "1-2",
+     "rarity": null,
+     "rolls": 2
+    },
+    {
+     "name": "Elkhorn frag",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": 2
+    },
+    {
+     "name": "Pillar frag",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": 2
+    },
+    {
+     "name": "Strawberry seed",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": 2
+    },
+    {
+     "name": "Watermelon seed",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": 2
+    },
+    {
+     "name": "Snape grass seed",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Herbs",
+   "version": null,
+   "drops": [
+    {
+     "name": "Grimy guam leaf",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": 2
+    },
+    {
+     "name": "Grimy marrentill",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": 2
+    },
+    {
+     "name": "Grimy tarromin",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": 2
+    },
+    {
+     "name": "Grimy harralander",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": 2
+    },
+    {
+     "name": "Grimy ranarr weed",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": 2
+    },
+    {
+     "name": "Grimy irit leaf",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": 2
+    },
+    {
+     "name": "Grimy avantoe",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": 2
+    },
+    {
+     "name": "Grimy kwuarm",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": 2
+    },
+    {
+     "name": "Grimy cadantine",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": 2
+    },
+    {
+     "name": "Grimy lantadyme",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": 2
+    },
+    {
+     "name": "Grimy dwarf weed",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Gryphon feather",
+     "quantity": "35-50",
+     "rarity": "11/128",
+     "rolls": 2
+    },
+    {
+     "name": "Shark lure",
+     "quantity": "3-5",
+     "rarity": "10/128",
+     "rolls": 2
+    },
+    {
+     "name": "Basket",
+     "quantity": "1",
+     "rarity": "3/128",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Clue scroll (elite)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Reward casket (elite)",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Long bone",
+     "quantity": "1",
+     "rarity": "1/400",
+     "rolls": null
+    },
+    {
+     "name": "Jar of Feathers",
+     "quantity": "1",
+     "rarity": "1/2000",
+     "rolls": null
+    },
+    {
+     "name": "Gull (pet)",
+     "quantity": "1",
+     "rarity": "1/3000",
+     "rolls": null
+    },
+    {
+     "name": "Curved bone",
+     "quantity": "1",
+     "rarity": "1/5012.5",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

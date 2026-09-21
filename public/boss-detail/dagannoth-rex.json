@@ -1,0 +1,288 @@
+{
+ "id": "dagannoth-rex",
+ "name": "Dagannoth Rex",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Dagannoth_Rex",
+ "overview": [
+  "Dagannoth Rex has an extremely low Magic Defence, so it is recommended to use Magic against him. Popular choices include Magic Dart, Iban Blast, powered staves, and Earth spells.",
+  "Due to his large size and the fact he uses melee attacks only, it is recommended to get him stuck on one of the ridges of the lair and safespot him (note that Spinolyps will still be constantly attacking while you're safespotting). Many players use high-level armour such as Barrows armour, which give high Defence bonuses while still being able to hit Rex constantly with spells due to his very low Magic Defence, even if their magic attack bonus is below zero. Players who use Guthan's are advised to heal themselves on the Spinolyps while waiting on respawns to help preserve food and potions.",
+  "If players venture too far out west to lure Dagannoth Rex, they risk attracting attention from both Dagannoth Prime and Dagannoth Supreme. Prime is the bigger threat since he wanders closer to the east and north-east. This can be avoided by staying in the south-eastern part of the arena, as Prime will rarely (if ever) go there, and attack Rex only when he's nearest to the east. Players should use caution even while in the safe area. Others may attempt to kill you with Dagannoth Prime's AOE attack."
+ ],
+ "tables": [
+  {
+   "section": "100%",
+   "version": null,
+   "drops": [
+    {
+     "name": "Dagannoth bones",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    },
+    {
+     "name": "Dagannoth hide",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Steel kiteshield",
+     "quantity": "1",
+     "rarity": "17/128",
+     "rolls": null
+    },
+    {
+     "name": "Mithril warhammer",
+     "quantity": "1",
+     "rarity": "11/128",
+     "rolls": null
+    },
+    {
+     "name": "Adamant axe",
+     "quantity": "1",
+     "rarity": "7/128",
+     "rolls": null
+    },
+    {
+     "name": "Steel platebody",
+     "quantity": "1",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Mithril pickaxe",
+     "quantity": "1",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Adamant platebody",
+     "quantity": "1",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Fremennik blade",
+     "quantity": "1",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Dragon axe",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Rune axe",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Fremennik shield",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Fremennik helm",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Mithril 2h sword",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Ring of life",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Rock-shell plate",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Rock-shell legs",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Berserker ring",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Warrior ring",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Potions",
+   "version": null,
+   "drops": [
+    {
+     "name": "Antifire potion(2)",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Prayer potion(2)",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Restore potion(2)",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Super attack(2)",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Super strength(2)",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Super defence(2)",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Zamorak brew(2)",
+     "quantity": "1",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Ores and bars",
+   "version": null,
+   "drops": [
+    {
+     "name": "Mithril ore",
+     "quantity": "25 (noted)",
+     "rarity": "10/128",
+     "rolls": null
+    },
+    {
+     "name": "Adamantite bar",
+     "quantity": "1",
+     "rarity": "3/128",
+     "rolls": null
+    },
+    {
+     "name": "Coal",
+     "quantity": "100 (noted)",
+     "rarity": "2/128",
+     "rolls": null
+    },
+    {
+     "name": "Iron ore",
+     "quantity": "150 (noted)",
+     "rarity": "1/128",
+     "rolls": null
+    },
+    {
+     "name": "Steel bar",
+     "quantity": "15-30 (noted)",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "100-1209",
+     "rarity": "10/128",
+     "rolls": null
+    },
+    {
+     "name": "Grimy ranarr weed",
+     "quantity": "1",
+     "rarity": "7/128",
+     "rolls": null
+    },
+    {
+     "name": "Bass",
+     "quantity": "5",
+     "rarity": "7/128",
+     "rolls": null
+    },
+    {
+     "name": "Swordfish",
+     "quantity": "5",
+     "rarity": "4/128",
+     "rolls": null
+    },
+    {
+     "name": "Shark",
+     "quantity": "5",
+     "rarity": "1/128",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Tertiary",
+   "version": null,
+   "drops": [
+    {
+     "name": "Dagannoth ribs",
+     "quantity": "1",
+     "rarity": "1/4",
+     "rolls": null
+    },
+    {
+     "name": "Ensouled dagannoth head",
+     "quantity": "1",
+     "rarity": "1/20",
+     "rolls": null
+    },
+    {
+     "name": "Brimstone key",
+     "quantity": "1",
+     "rarity": null,
+     "rolls": null
+    },
+    {
+     "name": "Pet Dagannoth Rex",
+     "quantity": "1",
+     "rarity": "1/5000",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

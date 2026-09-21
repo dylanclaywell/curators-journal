@@ -1,0 +1,30 @@
+{
+ "id": "pestilent-bloat",
+ "name": "Pestilent Bloat",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Pestilent_Bloat",
+ "overview": [
+  "The Bloat will walk around its room in a square as soon as the party enters the room. If any player is within its line of sight, the Bloat's flies will attack them, causing players to take rapid hits of 10-20 every tick until they are out of the Bloat's line of sight. This will spread to other players in the raid also and can therefore kill a party very quickly. Additionally, the Bloat receives 50% less damage (rounded down) while moving. Protect from Missiles reduces damage from the flies by 25%.",
+  "On the first walk after 39-47 game ticks (23.5 to 28.2 seconds), it will stop moving, allowing players to attack it and deal full damage. After 19.2 seconds, it will stomp the surrounding area, dealing 40-80 damage, though it can be tick eaten. After the stomp, it will stop moving after 34 to 42 ticks (20.4 to 25.2 seconds). If its Defence has been reduced, it will regenerate to full when it stomps. If a player is hit by a mutilated flesh, it will deal 30–50 damage and stun them temporarily. Falling flesh can be evaded beforehand by looking for their shadow on the floor, and will only occur when the boss walks around upon reaching 90% of its health in normal mode. If the Bloat turns or changes speed during the walk, Bloat cannot go down for another 5 ticks which can slightly extend the length of the walk if the turn or speed change occurs close to the end of the walking phase. Bloat can be eligible to turn every 32 ticks in regular mode.",
+  "Pestilent Bloat uses a custom implementation of the line of sight check for its attacks: rather than using one tile within the Bloat's 5x5 area as the reference point for these checks, all tiles on the side of the Bloat nearest to the player are checked for line of sight, and the attack is allowed to go through if any of them has an unobstructed view of the player.",
+  "The speed at which the Bloat moves depends on its health; up to 60.0%, it will always walk; between 40% and 60%, it will always run.",
+  "At 39.9% and lower, the Bloat will alternate between walking or running for every attack made on it regardless if it hits or not.",
+  "In Hard Mode, in addition to the previous mechanics, mutilated flesh will fall from the ceiling all of the time; starting as soon as the first player enters the room. It will continue to fall even when Bloat has stopped.",
+  "The Bloat is also more likely to change direction whilst moving, and can do so multiple times per rotation. Unlike regular mode, it is eligible to turn every 16 ticks in hard mode.",
+  "In Entry Mode, Bloat can scale down to 20% of its original Hitpoints when done in a solo party. The encounter is generally less punishing for mistakes due to its lower damage from flies and the stomp. This allows players the freedom to practice against the Theatre of Blood bosses without as much risk.",
+  "If a team wipes in Entry Mode, they will be taken back outside of the boss room and have unlimited attempts to fight the boss again. Hardcore ironmen will still lose their status upon death."
+ ],
+ "tables": [
+  {
+   "section": "Drops",
+   "version": null,
+   "drops": [
+    {
+     "name": "The Butcher",
+     "quantity": "1",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}

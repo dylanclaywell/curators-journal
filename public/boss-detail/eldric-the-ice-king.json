@@ -1,0 +1,272 @@
+{
+ "id": "eldric-the-ice-king",
+ "name": "Eldric the Ice King",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Eldric_the_Ice_King",
+ "overview": [],
+ "tables": [
+  {
+   "section": "100%",
+   "version": "Take pages",
+   "drops": [
+    {
+     "name": "Desiccated page",
+     "quantity": "10-19",
+     "rarity": "Always",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Pre-roll",
+   "version": null,
+   "drops": [
+    {
+     "name": "Ice element staff crown",
+     "quantity": "1",
+     "rarity": "1/75",
+     "rolls": null
+    },
+    {
+     "name": "Deadeye prayer scroll",
+     "quantity": "1",
+     "rarity": "1/75",
+     "rolls": null
+    },
+    {
+     "name": "Giantsoul amulet",
+     "quantity": "1",
+     "rarity": "1/16",
+     "rolls": null
+    }
+   ]
+  },
+  {
+   "section": "Weapons and armour",
+   "version": null,
+   "drops": [
+    {
+     "name": "Mystic water staff",
+     "quantity": "4 (noted)",
+     "rarity": "2/56",
+     "rolls": 2
+    },
+    {
+     "name": "Water battlestaff",
+     "quantity": "6 (noted)",
+     "rarity": "2/56",
+     "rolls": 2
+    },
+    {
+     "name": "Rune platelegs",
+     "quantity": "2",
+     "rarity": "2/56",
+     "rolls": 2
+    },
+    {
+     "name": "Rune sq shield",
+     "quantity": "2",
+     "rarity": "2/56",
+     "rolls": 2
+    },
+    {
+     "name": "Rune axe",
+     "quantity": "2",
+     "rarity": "2/56",
+     "rolls": 2
+    },
+    {
+     "name": "Rune pickaxe",
+     "quantity": "2",
+     "rarity": "1/56",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Runes and ammunition",
+   "version": null,
+   "drops": [
+    {
+     "name": "Water rune",
+     "quantity": "1500-3000",
+     "rarity": "2/56",
+     "rolls": 2
+    },
+    {
+     "name": "Chaos rune",
+     "quantity": "200-400",
+     "rarity": "2/56",
+     "rolls": 2
+    },
+    {
+     "name": "Death rune",
+     "quantity": "150-300",
+     "rarity": "2/56",
+     "rolls": 2
+    },
+    {
+     "name": "Nature rune",
+     "quantity": "100-150",
+     "rarity": "2/56",
+     "rolls": 2
+    },
+    {
+     "name": "Law rune",
+     "quantity": "100-150",
+     "rarity": "2/56",
+     "rolls": 2
+    },
+    {
+     "name": "Soul rune",
+     "quantity": "100-150",
+     "rarity": "2/56",
+     "rolls": 2
+    },
+    {
+     "name": "Blood rune",
+     "quantity": "100-150",
+     "rarity": "2/56",
+     "rolls": 2
+    },
+    {
+     "name": "Rune arrow",
+     "quantity": "100-300",
+     "rarity": "2/56",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Materials",
+   "version": null,
+   "drops": [
+    {
+     "name": "Coal",
+     "quantity": "280-320 (noted)",
+     "rarity": "2/56",
+     "rolls": 2
+    },
+    {
+     "name": "Gold ore",
+     "quantity": "60-100 (noted)",
+     "rarity": "2/56",
+     "rolls": 2
+    },
+    {
+     "name": "Water orb",
+     "quantity": "20-40 (noted)",
+     "rarity": "2/56",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Herb seeds",
+   "version": null,
+   "drops": [
+    {
+     "name": "Avantoe seed",
+     "quantity": "4",
+     "rarity": "2/56",
+     "rolls": 2
+    },
+    {
+     "name": "Cadantine seed",
+     "quantity": "4",
+     "rarity": "2/56",
+     "rolls": 2
+    },
+    {
+     "name": "Dwarf weed seed",
+     "quantity": "3",
+     "rarity": "2/56",
+     "rolls": 2
+    },
+    {
+     "name": "Irit seed",
+     "quantity": "4",
+     "rarity": "2/56",
+     "rolls": 2
+    },
+    {
+     "name": "Kwuarm seed",
+     "quantity": "4",
+     "rarity": "2/56",
+     "rolls": 2
+    },
+    {
+     "name": "Lantadyme seed",
+     "quantity": "4",
+     "rarity": "2/56",
+     "rolls": 2
+    },
+    {
+     "name": "Ranarr seed",
+     "quantity": "4",
+     "rarity": "2/56",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Tree seeds",
+   "version": null,
+   "drops": [
+    {
+     "name": "Maple seed",
+     "quantity": "4-6",
+     "rarity": "1/56",
+     "rolls": 2
+    },
+    {
+     "name": "Palm tree seed",
+     "quantity": "2",
+     "rarity": "1/56",
+     "rolls": 2
+    },
+    {
+     "name": "Yew seed",
+     "quantity": "2",
+     "rarity": "1/56",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Other",
+   "version": null,
+   "drops": [
+    {
+     "name": "Coins",
+     "quantity": "10000-30000",
+     "rarity": "2/56",
+     "rolls": 2
+    },
+    {
+     "name": "Prayer potion(4)",
+     "quantity": "2-4",
+     "rarity": "2/56",
+     "rolls": 2
+    },
+    {
+     "name": "Desiccated page",
+     "quantity": "6-24",
+     "rarity": "2/56",
+     "rolls": 2
+    }
+   ]
+  },
+  {
+   "section": "Tertiary drops",
+   "version": null,
+   "drops": [
+    {
+     "name": "Bran",
+     "quantity": "1",
+     "rarity": "1/3000",
+     "rolls": null
+    }
+   ]
+  }
+ ]
+}
