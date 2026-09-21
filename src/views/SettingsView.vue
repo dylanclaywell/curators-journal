@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import { computed, onMounted, onUnmounted, ref } from 'vue'
+import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
 import AppIcon from '@/components/AppIcon.vue'
 import { createBackup, parseBackup } from '@/lib/backup'
+import { isAccountHash } from '@/lib/sync'
 import { useQuestsStore } from '@/stores/quests'
 import { useDiariesStore } from '@/stores/diaries'
 import { useSyncStore } from '@/stores/sync'
@@ -111,6 +112,45 @@ function exportBackup() {
  * silently dropping them is how that drift stays invisible.
  */
 const syncedCount = computed(() => Object.keys(quests.syncedProgress).length)
+
+/*
+ * The account hash is edited as a draft and only written on Save.
+ *
+ * It used to bind straight to the store, so every keystroke overwrote the
+ * saved value — a slip while typing lost a nineteen-digit number that can only
+ * be got back from RuneLite, and left the previous account's snapshot cached
+ * against a half-typed hash. The draft is plain component state on purpose:
+ * leaving the panel or reloading discards it, which is the "undo".
+ *
+ * It re-syncs whenever the saved value changes underneath it — hydration
+ * finishing, a backup import, a `/sync` link — so it never shows a stale one.
+ */
+const hashDraft = ref('')
+watch(
+  () => sync.accountHash,
+  (saved) => {
+    hashDraft.value = saved
+  },
+  { immediate: true },
+)
+
+const draftHash = computed(() => hashDraft.value.trim())
+const hashChanged = computed(() => draftHash.value !== sync.accountHash)
+/** Empty is allowed — it is how a hash is cleared — anything else must be one. */
+const hashInvalid = computed(
+  () => draftHash.value !== '' && !isAccountHash(draftHash.value),
+)
+const canSaveHash = computed(
+  () => sync.hydrated && hashChanged.value && !hashInvalid.value,
+)
+
+function saveHash() {
+  if (!canSaveHash.value) return
+  sync.setAccountHash(draftHash.value)
+  // The old snapshot is gone, so fetch the new account's rather than leaving
+  // the panel empty until the player thinks to press Refresh.
+  void sync.refresh()
+}
 
 const lastSynced = computed(() => {
   const at = sync.snapshot?.receivedAt
@@ -224,22 +264,41 @@ async function onImportFileChosen(event: Event) {
         shows you.
       </p>
 
-      <label class="flex flex-col gap-1">
-        <span class="text-[15px] font-bold">Account hash</span>
-        <!-- Monospace and numeric: it's a nineteen-digit number read off
-             another screen, which is exactly when a transposed digit hides. -->
-        <input
-          v-model="sync.accountHash"
-          type="text"
-          inputmode="numeric"
-          autocapitalize="none"
-          autocomplete="off"
-          spellcheck="false"
-          maxlength="20"
-          placeholder="1234567890123456789"
-          class="tap bevel-in bg-parchment-2 px-2 font-mono text-[16px] text-ink placeholder:text-ink-soft/60"
-        />
-      </label>
+      <!-- A form so Enter (or the keyboard's Go) saves. Nothing is written
+           until it does: the field edits a draft, and Save is enabled only
+           once the draft is a valid hash that differs from the saved one. -->
+      <form class="flex flex-col gap-1" @submit.prevent="saveHash">
+        <label for="account-hash" class="text-[15px] font-bold">
+          Account hash
+        </label>
+        <div class="flex gap-2">
+          <!-- Monospace and numeric: it's a nineteen-digit number read off
+               another screen, which is exactly when a transposed digit hides. -->
+          <input
+            id="account-hash"
+            v-model="hashDraft"
+            :aria-invalid="hashInvalid"
+            type="text"
+            inputmode="numeric"
+            autocapitalize="none"
+            autocomplete="off"
+            spellcheck="false"
+            maxlength="20"
+            placeholder="1234567890123456789"
+            class="tap bevel-in min-w-0 flex-1 bg-parchment-2 px-2 font-mono text-[16px] text-ink placeholder:text-ink-soft/60"
+          />
+          <button
+            type="submit"
+            :disabled="!canSaveHash"
+            class="tap pressable bevel-oak flex items-center justify-center bg-brown px-4 font-bold text-gold engraved disabled:opacity-50"
+          >
+            Save
+          </button>
+        </div>
+        <p v-if="hashInvalid" class="m-0 text-[15px] text-todo">
+          An account hash is digits only, up to 20 of them.
+        </p>
+      </form>
 
       <label
         class="tap pressable-parchment bevel-in flex items-center gap-2 bg-parchment-2 px-2"

@@ -121,6 +121,19 @@ export const useSyncStore = defineStore('sync', () => {
     await refresh()
   }
 
+  /**
+   * Replaces the account hash the way a deliberate change should: the cached
+   * snapshot belongs to whoever the old hash was, so a different hash drops it
+   * rather than showing someone else's data until the next fetch. Writing
+   * `accountHash` directly skips that, which is what typing into the settings
+   * field used to do on every keystroke.
+   */
+  function setAccountHash(hash: string): void {
+    if (hash === accountHash.value) return
+    accountHash.value = hash
+    clearSnapshot()
+  }
+
   /** Forgets the cached snapshot without touching what the player entered. */
   function clearSnapshot(): void {
     snapshot.value = null
@@ -138,6 +151,7 @@ export const useSyncStore = defineStore('sync', () => {
     hydrated,
     refresh,
     ensureLoaded,
+    setAccountHash,
     clearSnapshot,
   }
 })
