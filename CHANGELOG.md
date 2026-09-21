@@ -1,5 +1,29 @@
 # Changelog
 
+## [0.10.0](https://github.com/dylanclaywell/curators-journal/compare/curators-journal-v0.9.0...curators-journal-v0.10.0) (2026-09-21)
+
+
+### Features
+
+* **diaries:** lock synced tiers and report them in settings ([3af48d8](https://github.com/dylanclaywell/curators-journal/commit/3af48d86b5a54e5149b8437da04b85c0141022a8))
+* **diaries:** merge synced tiers into the task record ([b69334e](https://github.com/dylanclaywell/curators-journal/commit/b69334ee9ad997ce5344662cf5c9cd3413037d15))
+* **settings:** save the account hash explicitly ([29e8777](https://github.com/dylanclaywell/curators-journal/commit/29e8777cacc710fd006dc757ee278932de1fa620))
+* **sync:** accept an account hash from a /sync link ([2aa7b94](https://github.com/dylanclaywell/curators-journal/commit/2aa7b9482205357e16d9626879e1ca6013eb5392))
+* **sync:** add clipboard paste and copy for the account hash ([b0c3d54](https://github.com/dylanclaywell/curators-journal/commit/b0c3d544e32296f3aa4ce1819f9bab886ede335a))
+* **sync:** add diary tiers to the snapshot contract ([1737cca](https://github.com/dylanclaywell/curators-journal/commit/1737cca5a124e671f89833ef9e510f67e1633f89))
+* **sync:** lead with copy in a browser tab and explain why ([c87e7cb](https://github.com/dylanclaywell/curators-journal/commit/c87e7cb31b06e4e92eb6ef797e5895e5811cde92))
+* **worker:** store diary tiers in the sync snapshot ([89175f2](https://github.com/dylanclaywell/curators-journal/commit/89175f23fceeac1902781f80a8f1f578973cbc1d))
+
+
+### Bug Fixes
+
+* **quests:** lock progress options the snapshot already outranks ([ea12779](https://github.com/dylanclaywell/curators-journal/commit/ea12779579924128be47997a73f8cfa202353a02))
+
+
+### Refactors
+
+* **sync:** share one account hash validator ([0586149](https://github.com/dylanclaywell/curators-journal/commit/05861498c80b9ea3f797b1e9bdd1d25f795361b1))
+
 ## [0.9.0](https://github.com/dylanclaywell/curators-journal/compare/curators-journal-v0.8.0...curators-journal-v0.9.0) (2026-09-18)
 
 
