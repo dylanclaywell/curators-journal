@@ -158,9 +158,10 @@ body {
  * Tab bar sizing is the one place panel count and rail width collide. Three
  * stages, in order of how cramped things get:
  *
- *   1. roomy      — icon over label
- *   2. under 22rem or 5+ tabs — icon only, label moves to the accessible name
- *   3. genuinely out of room  — the strip scrolls horizontally
+ *   1. roomy                     — icon over label
+ *   2. under ~76px of rail per tab — icon only, label moves to the
+ *                                    accessible name
+ *   3. genuinely out of room       — the strip scrolls horizontally
  *
  * Tabs may shrink but never below 52px, which keeps the 44px touch target
  * intact with padding to spare; past that the overflow scrolls instead of
@@ -197,15 +198,39 @@ body {
   min-height: 64px;
 }
 
+/*
+ * Labels drop when there is no longer ~76px of rail per tab — one rule per
+ * count, because the count is what turns a rail width into a per-tab width and
+ * CSS can't do that arithmetic. The thresholds are just 76px × count, rounded
+ * up to a rem: 4 → 22rem (the historical number, kept), 5 → 24rem, 6 → 29rem.
+ *
+ * This replaces a flat "5+ tabs means icon-only at every width", which was the
+ * crude proxy CLAUDE.md always warned it was. It charged the docked iPad —
+ * ~820px of rail, where five labels fit with room to spare — for a constraint
+ * that only exists at the 375px phone floor. Adding the Bosses panel is what
+ * made that bill come due.
+ *
+ * Seven or more is unconditional: at the floor that is 53px per tab, already
+ * against the 52px min-width, so the strip is scrolling (stage 3) and a label
+ * has nowhere to go. The plugin system makes the count unbounded, so this is
+ * the catch-all rather than an enumeration that quietly runs out.
+ */
 @container rail (max-width: 22rem) {
   .tab-label {
     display: none;
   }
 }
-
-/* Five or more tabs can't carry labels at the 375px floor: a label needs
-   roughly 76px, so four fit and six do not. */
-.tab-strip:has(.tab:nth-child(5)) .tab-label {
+@container rail (max-width: 24rem) {
+  .tab-strip:has(.tab:nth-child(5)) .tab-label {
+    display: none;
+  }
+}
+@container rail (max-width: 29rem) {
+  .tab-strip:has(.tab:nth-child(6)) .tab-label {
+    display: none;
+  }
+}
+.tab-strip:has(.tab:nth-child(7)) .tab-label {
   display: none;
 }
 

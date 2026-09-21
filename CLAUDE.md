@@ -331,14 +331,23 @@ Panel count and rail width collide here, and the plugin system will make panel
 count unbounded. Don't "fix" a cramped tab bar by shrinking targets:
 
 1. Roomy — icon over label.
-2. Under 22rem, **or** five or more tabs — icon only. The label moves to
-   `aria-label`, so a tab that drops its text keeps its meaning.
+2. Under ~76px of rail per tab — icon only. The label moves to `aria-label`, so
+   a tab that drops its text keeps its meaning.
 3. Genuinely out of room — the strip scrolls horizontally. Tabs shrink to a
    52px floor and then overflow rather than crushing further.
 
-The count threshold is a crude proxy — the real constraint is the longest label,
-not how many there are. At the 375px floor a label needs ~76px, so four fit and
-six don't. Revisit it against real labels rather than trusting the number.
+**Stage 2 is width-per-tab, not a tab count.** A label needs ~76px, so the
+threshold is 76px × count, written as one `@container rail (max-width: …)` rule
+per count in `style.css` — 4 → 22rem, 5 → 24rem, 6 → 29rem, and 7+
+unconditional, since by then the strip is already scrolling. CSS can't divide a
+container width by a child count, which is the only reason this is enumerated
+rather than computed.
+
+It used to be a flat "five or more tabs means icon-only", and that proxy was
+wrong in the direction that mattered: it charged the docked iPad (~820px of
+rail, where five labels fit easily) for a constraint that only bites at the
+375px phone floor. Adding a fifth panel is what exposed it. If the count grows
+past six, extend the ladder rather than reaching for the flat rule again.
 
 Open work: in the wide-and-shallow docked case this bar is the wrong shape
 entirely, since it spends scarce vertical space to save abundant horizontal

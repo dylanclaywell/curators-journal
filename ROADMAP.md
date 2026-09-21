@@ -1324,9 +1324,11 @@ Starting points to check before designing, none of them verified:
 - **Bundle weight.** Boss drop tables would be another dataset. Follow the
   quest guides precedent (served from `public/`, fetched on demand) unless it
   is small, and weigh it against the precache before adding.
-- **Tab count.** A boss panel would be a fifth tab and flip the tab bar to
-  icon-only, per the four-label limit in Phase 4. Decide whether it earns a
-  tab or lives inside Stats.
+- **Tab count — settled: it gets a tab.** A fifth tab used to flip the whole
+  bar to icon-only, which is what made this a real question. It no longer does:
+  stage 2 of the tab bar is now width-per-tab (76px × count) rather than a flat
+  count, so five labels survive on the docked iPad and collapse only at the
+  375px phone floor. See CLAUDE.md.
 
 ## Ideas banked for Phase 4
 
