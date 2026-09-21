@@ -144,6 +144,38 @@ const canSaveHash = computed(
   () => sync.hydrated && hashChanged.value && !hashInvalid.value,
 )
 
+/*
+ * Paste from the clipboard, for the hash the plugin's QR page copied.
+ *
+ * It fills the draft and stops there. Saving stays a separate, deliberate tap,
+ * so a clipboard that held the wrong thing costs a glance at the field rather
+ * than a replaced hash. What came off the clipboard is never echoed in a
+ * message: it can be anything the player last copied.
+ *
+ * Hidden where the browser can't read the clipboard at all, rather than shown
+ * and failing. Where it can, iOS asks for permission on each paste, so a denial
+ * lands in the catch and is not treated as a bug.
+ */
+const canPaste =
+  typeof navigator !== 'undefined' &&
+  typeof navigator.clipboard?.readText === 'function'
+const pasteMessage = ref<string | null>(null)
+
+async function pasteHash() {
+  pasteMessage.value = null
+  try {
+    const text = (await navigator.clipboard.readText()).trim()
+    if (!isAccountHash(text)) {
+      pasteMessage.value = "The clipboard doesn't hold an account hash."
+      return
+    }
+    hashDraft.value = text
+  } catch {
+    pasteMessage.value =
+      "Couldn't read the clipboard. Paste into the field by hand."
+  }
+}
+
 function saveHash() {
   if (!canSaveHash.value) return
   sync.setAccountHash(draftHash.value)
@@ -299,6 +331,22 @@ async function onImportFileChosen(event: Event) {
           An account hash is digits only, up to 20 of them.
         </p>
       </form>
+
+      <!-- Its own row rather than beside Save: at the 375px floor a second
+           button would squeeze the field below a full nineteen digits. Outside
+           the form so it can never be what Enter submits. -->
+      <template v-if="canPaste">
+        <button
+          type="button"
+          class="tap pressable bevel-oak flex items-center justify-center bg-brown-lt px-3 font-bold text-parchment-3"
+          @click="pasteHash"
+        >
+          Paste from clipboard
+        </button>
+        <p v-if="pasteMessage" class="m-0 text-[15px] text-todo">
+          {{ pasteMessage }}
+        </p>
+      </template>
 
       <label
         class="tap pressable-parchment bevel-in flex items-center gap-2 bg-parchment-2 px-2"

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, watch } from 'vue'
+import { computed, onUnmounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { isAccountHash } from '@/lib/sync'
 import { useSyncStore } from '@/stores/sync'
@@ -59,6 +59,40 @@ watch(
   { immediate: true },
 )
 
+/*
+ * Copy, for when this page opened in the browser rather than the installed app.
+ *
+ * A scanned code opens in the browser, and the installed app may keep its own
+ * data, so linking here would set the hash in the wrong place. Copying it lets
+ * the player paste into the app's Settings instead — a clipboard is shared
+ * between the two even where storage is not.
+ *
+ * Hidden where the browser can't write to it, and the hint is hidden inside
+ * the installed app, where there is nowhere else to go.
+ */
+const canCopy =
+  typeof navigator !== 'undefined' &&
+  typeof navigator.clipboard?.writeText === 'function'
+const inBrowser =
+  typeof window !== 'undefined' &&
+  !window.matchMedia('(display-mode: standalone)').matches
+const copyState = ref<'idle' | 'copied' | 'failed'>('idle')
+let copyTimer: ReturnType<typeof setTimeout> | undefined
+
+async function copy(): Promise<void> {
+  if (!candidate.value) return
+  clearTimeout(copyTimer)
+  try {
+    await navigator.clipboard.writeText(candidate.value)
+    copyState.value = 'copied'
+  } catch {
+    copyState.value = 'failed'
+  }
+  copyTimer = setTimeout(() => (copyState.value = 'idle'), 2500)
+}
+
+onUnmounted(() => clearTimeout(copyTimer))
+
 function link(): void {
   if (!candidate.value) return
   sync.accountHash = candidate.value
@@ -107,11 +141,33 @@ function cancel(): void {
         plugin's panel.
       </p>
 
-      <div
-        class="bevel-in bg-parchment-2 px-2 py-2 font-mono text-[16px] break-all"
-      >
-        {{ candidate }}
+      <div class="flex gap-2">
+        <div
+          class="bevel-in min-w-0 flex-1 bg-parchment-2 px-2 py-2 font-mono text-[16px] break-all"
+        >
+          {{ candidate }}
+        </div>
+        <button
+          v-if="canCopy"
+          type="button"
+          class="tap pressable bevel-oak flex w-20 shrink-0 items-center justify-center bg-brown-lt px-2 font-bold text-parchment-3"
+          @click="copy"
+        >
+          {{
+            copyState === 'copied'
+              ? 'Copied'
+              : copyState === 'failed'
+                ? 'Failed'
+                : 'Copy'
+          }}
+        </button>
       </div>
+
+      <p v-if="inBrowser" class="m-0 max-w-[52ch] text-[15px] text-ink-soft">
+        Using the installed app? It keeps its own data, separate from this
+        browser, so linking here won't link it. Copy the hash, open the app, and
+        paste it into Settings there.
+      </p>
 
       <p v-if="replacing" class="m-0 max-w-[52ch] text-[15px] text-doing">
         This replaces the hash currently set,
