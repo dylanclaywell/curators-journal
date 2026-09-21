@@ -3,8 +3,10 @@
  * failures worth testing are the ones where a plausible number ends up against
  * the wrong name, or where "we don't know" is rendered as "zero":
  *
- *   - the three states (untracked / tracked-but-unranked / ranked) must stay
- *     apart, including the real zero the live hiscores return;
+ *   - the three states (untracked / tracked-but-unscored / scored) must stay
+ *     apart, including the real zero the live hiscores return, and `scored`
+ *     must not be confused with having a rank — the hiscores publish a score
+ *     from the first kill but a rank only after about five;
  *   - a boss the hiscores don't track must still appear, because 112 of the
  *     183 only exist as reference;
  *   - an activity name nothing accounts for must be reported, since that is
@@ -66,19 +68,20 @@ describe('buildBossRows', () => {
     )
     const byName = new Map(rows.map((row) => [row.boss.name, row]))
 
-    // Tracked, but this player published no count: unknown, not zero.
+    // Tracked, no score: zero kills. Every boss appears from the first kill,
+    // so this is an answer rather than a gap.
     expect(byName.get('Zulrah')).toMatchObject({
       kills: null,
-      ranked: false,
+      scored: false,
       tracked: true,
     })
     // A published zero. The live hiscores really do return this.
-    expect(byName.get('Brutus')).toMatchObject({ kills: 0, ranked: true })
-    expect(byName.get('Vorkath')).toMatchObject({ kills: 12, ranked: true })
+    expect(byName.get('Brutus')).toMatchObject({ kills: 0, scored: true })
+    expect(byName.get('Vorkath')).toMatchObject({ kills: 12, scored: true })
     // Not tracked at all: no count exists for anyone, anywhere.
     expect(byName.get('Akkha')).toMatchObject({
       kills: null,
-      ranked: false,
+      scored: false,
       tracked: false,
     })
   })
@@ -86,7 +89,7 @@ describe('buildBossRows', () => {
   it('keeps bosses the response said nothing about', () => {
     const rows = buildBossRows([boss('Zulrah', 'Zulrah')], [])
     expect(rows).toHaveLength(1)
-    expect(rows[0]).toMatchObject({ kills: null, ranked: false, tracked: true })
+    expect(rows[0]).toMatchObject({ kills: null, scored: false, tracked: true })
   })
 
   it('ignores activity rows that are not bosses', () => {
@@ -115,13 +118,13 @@ describe('sortByKills', () => {
       buildBossRows(
         [
           boss('Untracked', null),
-          boss('Unranked', 'Unranked'),
+          boss('NeverKilled', 'NeverKilled'),
           boss('Zero', 'Zero'),
           boss('Many', 'Many'),
           boss('Few', 'Few'),
         ],
         [
-          entry('Unranked', null),
+          entry('NeverKilled', null),
           entry('Zero', 0),
           entry('Many', 900, 5),
           entry('Few', 3, 900),
@@ -132,7 +135,7 @@ describe('sortByKills', () => {
       'Many',
       'Few',
       'Zero',
-      'Unranked',
+      'NeverKilled',
       'Untracked',
     ])
   })
@@ -203,14 +206,14 @@ describe('bossTotals', () => {
           boss('Many', 'Many'),
           boss('Few', 'Few'),
           boss('Zero', 'Zero'),
-          boss('Unranked', 'Unranked'),
+          boss('NeverKilled', 'NeverKilled'),
           boss('Untracked', null),
         ],
         [
           entry('Many', 900, 5),
           entry('Few', 3, 900),
           entry('Zero', 0),
-          entry('Unranked', null),
+          entry('NeverKilled', null),
         ],
       ),
     )

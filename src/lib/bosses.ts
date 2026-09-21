@@ -2,7 +2,7 @@
  * Joining hiscore kill counts onto the boss dataset.
  *
  * Pure: no DOM, no network. The dataset itself is generated
- * (`scripts/build-bosses.ts` → `src/data/bosses.json`) and this file does not
+ * (`scripts/build-bosses.ts` -> `src/data/bosses.json`) and this file does not
  * import it — callers pass it in, so the ~144 KB of JSON stays behind the
  * store's dynamic import and out of the entry chunk.
  *
@@ -60,34 +60,45 @@ export const OTHER_ACTIVITY_NAMES: readonly string[] = [
 /**
  * A boss with whatever the hiscores say about the player's kills.
  *
- * There are **three states and they are not interchangeable**, which is what
- * this type exists to keep straight:
+ * **Score and rank are different things, and conflating them is the trap.**
+ * The wiki is explicit: a score means the player has recorded kills, while a
+ * rank "is only assigned once that kill count is high enough relative to other
+ * players", which typically takes 5 kills. So a player can have a score and no
+ * rank, and the live response does exactly that — `Brutus` comes back
+ * `rank: -1, score: 0`. `scored` is therefore named for the hiscores' own
+ * field, not for the leaderboard.
  *
- *   tracked false            → the hiscores publish no count for this boss at
- *                              all, and for most of them no count exists
- *                              anywhere: Akkha is a room inside Tombs of
- *                              Amascut, Agrith Naar is killed once in a quest.
- *                              112 of the 183 bosses are in this state.
- *   tracked, not ranked      → a count exists but this player isn't on the
- *                              board. That means *unknown*, not zero — Jagex
- *                              publishes nothing below its rank cutoff, so a
- *                              player with a handful of kills can look exactly
- *                              like one with none.
- *   tracked, ranked          → `kills` is real, and may legitimately be 0. The
- *                              live response returns `rank -1, score 0` for
- *                              `Brutus`, `Mad Angel` and `Maggot King`.
+ * Three states, not interchangeable:
  *
- * Rendering any two of those the same way states something the hiscores never
- * said.
+ *   tracked false      the hiscores publish no count for this boss at all,
+ *                      and for most of them no count exists anywhere: Akkha
+ *                      is a room inside Tombs of Amascut, Agrith Naar is
+ *                      killed once in a quest. 112 of the 183 are here, and
+ *                      no third-party API fills the gap (measured — see
+ *                      ROADMAP.md Phase 7).
+ *   tracked, unscored  **zero kills.** Every boss and activity now appears
+ *                      from the first kill, so an absent score is a real
+ *                      answer rather than a gap. This was not always true:
+ *                      Jagex set the minimum to 50 when boss hiscores
+ *                      launched in 2019 and lowered it in stages, so older
+ *                      notes claiming "unranked means unknown" describe a
+ *                      version of the hiscores that no longer exists.
+ *   tracked, scored    `kills` is real and may legitimately be 0.
+ *
+ * `rank` is independent of all three and is null far more often than `kills`
+ * is — that is normal, not missing data.
  */
 export interface BossRow {
   boss: Boss
-  /** Kill count, or null when none is published. */
+  /** Kill count, or null when the player has never killed this boss. */
   kills: number | null
-  /** Hiscore position, or null when unranked. */
+  /**
+   * Leaderboard position, or null when the player has kills but not enough to
+   * place. Null here says nothing about whether `kills` is known.
+   */
   rank: number | null
-  /** True when the hiscores published a count — including a count of zero. */
-  ranked: boolean
+  /** True when the hiscores publish a Score — so, from the first kill. */
+  scored: boolean
   /** True when the hiscores track this boss for anyone at all. */
   tracked: boolean
 }
@@ -113,14 +124,14 @@ export function buildBossRows(
       boss,
       kills,
       rank: entry?.rank ?? null,
-      ranked: kills !== null,
+      scored: kills !== null,
       tracked: boss.hiscoreName !== null,
     }
   })
 }
 
 /**
- * Most-killed first, then tracked-but-unranked, then the untracked.
+ * Most-killed first, then the never-killed, then the untracked.
  *
  * The three groups sort in descending order of how much the hiscores know, so
  * the rows that answer "what have I killed" come first and the reference-only
@@ -128,12 +139,12 @@ export function buildBossRows(
  * group, so the order is stable rather than dependent on dataset order.
  */
 export function sortByKills(rows: readonly BossRow[]): BossRow[] {
-  const group = (row: BossRow): number => (row.ranked ? 0 : row.tracked ? 1 : 2)
+  const group = (row: BossRow): number => (row.scored ? 0 : row.tracked ? 1 : 2)
 
   return [...rows].sort((a, b) => {
     const groups = group(a) - group(b)
     if (groups !== 0) return groups
-    if (a.ranked && b.ranked && a.kills !== b.kills)
+    if (a.scored && b.scored && a.kills !== b.kills)
       return (b.kills ?? 0) - (a.kills ?? 0)
     return a.boss.name.localeCompare(b.boss.name)
   })
