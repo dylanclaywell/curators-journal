@@ -20,6 +20,7 @@
       "slayerCategories": [
         "Abyssal Demons"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Phase 1",
@@ -82,6 +83,7 @@
       "examine": "A summoned demon.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -109,6 +111,7 @@
       "examine": "Big, scary, angry and a good source of energy.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -138,6 +141,12 @@
         "Ancient Vault"
       ],
       "slayerCategories": [],
+      "questAppearances": [
+        {
+          "id": "desert-treasure-ii-the-fallen-empire",
+          "name": "Desert Treasure II - The Fallen Empire"
+        }
+      ],
       "versions": [
         {
           "label": null,
@@ -164,6 +173,7 @@
       "examine": "A manifestation of vengeance.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -196,6 +206,7 @@
       "slayerCategories": [
         "Hydras"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Serpentine",
@@ -266,6 +277,7 @@
       "slayerCategories": [
         "Lesser Nagua"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Post-quest",
@@ -309,6 +321,7 @@
         "Araxytes",
         "Spiders"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": "In combat",
@@ -353,6 +366,7 @@
       "slayerCategories": [
         "Trolls"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -384,6 +398,7 @@
       "slayerCategories": [
         "Bears"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -412,6 +427,7 @@
       "examine": "It is the avatar of the Arzinian Being of Bordanzan, representing magic.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Invincible",
@@ -462,6 +478,7 @@
       "examine": "It is the avatar of the Arzinian Being of Bordanzan, representing ranging.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Invincible",
@@ -512,6 +529,7 @@
       "examine": "It is the avatar of the Arzinian Being of Bordanzan, representing strength.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Invincible",
@@ -564,6 +582,12 @@
         "Dondakan's mine"
       ],
       "slayerCategories": [],
+      "questAppearances": [
+        {
+          "id": "between-a-rock",
+          "name": "Between a Rock..."
+        }
+      ],
       "versions": []
     },
     {
@@ -577,6 +601,7 @@
       "examine": "A big ol' monke.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -604,6 +629,7 @@
       "examine": "It's trying to mash you flat! Less examine, more fight!",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -633,6 +659,7 @@
         "East of Mort'ton"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": []
     },
     {
@@ -646,6 +673,7 @@
       "examine": null,
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": []
     },
     {
@@ -669,6 +697,7 @@
       "slayerCategories": [
         "Black Demons"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Level 172",
@@ -731,6 +760,7 @@
       "examine": "An animated clay statue.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -759,6 +789,7 @@
         "Fisher Realm"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -787,6 +818,7 @@
         "Neypotzli - Blood Moon chamber"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -815,6 +847,7 @@
         "Neypotzli - Blue Moon chamber"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -841,6 +874,7 @@
       "examine": null,
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": []
     },
     {
@@ -854,6 +888,7 @@
       "examine": null,
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": []
     },
     {
@@ -871,6 +906,7 @@
       "slayerCategories": [
         "Hellhounds"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -897,6 +933,7 @@
       "examine": "Big, mean, dead doggy.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -927,6 +964,7 @@
       "slayerCategories": [
         "Fire Giants"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -957,6 +995,7 @@
       "slayerCategories": [
         "Cows"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -987,6 +1026,7 @@
       "slayerCategories": [
         "Moss Giants"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -1018,6 +1058,7 @@
       "slayerCategories": [
         "Bears"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -1048,6 +1089,7 @@
       "slayerCategories": [
         "Skeletons"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Normal",
@@ -1092,6 +1134,7 @@
       "slayerCategories": [
         "Hellhounds"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -1122,6 +1165,7 @@
         "Mount Quidamortem"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": []
     },
     {
@@ -1135,6 +1179,7 @@
       "examine": null,
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": []
     },
     {
@@ -1150,6 +1195,7 @@
         "West of the Rogues' Castle"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -1180,6 +1226,7 @@
         "West of the Lava Maze"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -1208,6 +1255,7 @@
         "Edgeville Dungeon (Wilderness)"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -1236,6 +1284,7 @@
         "God Wars Dungeon (Saradomin boss room)"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -1266,6 +1315,7 @@
         "Corporeal Beast's Lair (Ironman only)"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -1293,6 +1343,7 @@
       "examine": "A deadly predator formed from crystal.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -1322,6 +1373,7 @@
       "slayerCategories": [
         "Vampyres"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -1350,6 +1402,7 @@
         "Ruins (west)"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -1377,6 +1430,7 @@
       "examine": "A deadly predator formed from crystal.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -1406,6 +1460,7 @@
         "Culinaromancer's Realm (Recipe for Disaster)"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -1437,6 +1492,7 @@
       "slayerCategories": [
         "Trolls"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -1465,6 +1521,7 @@
         "Waterbirth Island Dungeon"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": []
     },
     {
@@ -1480,6 +1537,7 @@
       "slayerCategories": [
         "Dagannoth"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -1512,6 +1570,7 @@
       "slayerCategories": [
         "Dagannoth"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -1543,6 +1602,7 @@
       "slayerCategories": [
         "Dagannoth"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -1574,6 +1634,7 @@
       "slayerCategories": [
         "Dagannoth"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -1600,6 +1661,7 @@
       "examine": "The warrior of darkness.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "First form",
@@ -1640,6 +1702,7 @@
       "slayerCategories": [
         "Gargoyles"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -1670,6 +1733,12 @@
         "Varrock Stone Circle"
       ],
       "slayerCategories": [],
+      "questAppearances": [
+        {
+          "id": "demon-slayer",
+          "name": "Demon Slayer"
+        }
+      ],
       "versions": [
         {
           "label": null,
@@ -1696,6 +1765,7 @@
       "examine": "Doesn't look particularly happy.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Brutus",
@@ -1736,6 +1806,7 @@
         "Fossil Island &ndash; South end of the Tar Swamp"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -1763,6 +1834,7 @@
       "examine": "Bad for your teeth...and the rest of your body too.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -1792,6 +1864,7 @@
       "slayerCategories": [
         "Vampyres"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -1822,6 +1895,12 @@
         "Ancient Vault"
       ],
       "slayerCategories": [],
+      "questAppearances": [
+        {
+          "id": "desert-treasure-ii-the-fallen-empire",
+          "name": "Desert Treasure II - The Fallen Empire"
+        }
+      ],
       "versions": [
         {
           "label": null,
@@ -1848,6 +1927,7 @@
       "examine": "A demonic digger.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Delve 1",
@@ -1990,6 +2070,7 @@
         "Ghorrock Prison - Asylum"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Awake",
@@ -2045,6 +2126,7 @@
       "slayerCategories": [
         "Gargoyles"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": "First form",
@@ -2086,6 +2168,7 @@
         "Neypotzli - Eclipse Moon chamber"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Regular",
@@ -2128,6 +2211,7 @@
       "slayerCategories": [
         "Ice Giants"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -2156,6 +2240,7 @@
         "Tombs of Amascut"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Active",
@@ -2202,6 +2287,7 @@
       "slayerCategories": [
         "Green Dragons"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -2230,6 +2316,7 @@
       "examine": "The pun was intended.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -2256,6 +2343,7 @@
       "examine": "Zamorak's warrior of fire.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -2283,6 +2371,7 @@
       "examine": "Will give you a beating as well as indigestion.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -2312,6 +2401,7 @@
         "Burgh De Rott General store"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -2340,6 +2430,12 @@
         "Cutscene-only"
       ],
       "slayerCategories": [],
+      "questAppearances": [
+        {
+          "id": "dragon-slayer-ii",
+          "name": "Dragon Slayer II"
+        }
+      ],
       "versions": [
         {
           "label": "Fire",
@@ -2414,6 +2510,7 @@
       "examine": "Deadly AND fruity!",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -2444,6 +2541,7 @@
         "Tlati Rainforest"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -2472,6 +2570,7 @@
         "God Wars Dungeon (Bandos boss room)"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -2501,6 +2600,12 @@
         "Fremennik Province"
       ],
       "slayerCategories": [],
+      "questAppearances": [
+        {
+          "id": "the-generals-shadow",
+          "name": "The General's Shadow"
+        }
+      ],
       "versions": [
         {
           "label": null,
@@ -2529,6 +2634,7 @@
         "Mole Hole (Under Falador Park)"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -2557,6 +2663,7 @@
       "slayerCategories": [
         "Birds"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -2586,6 +2693,7 @@
       "slayerCategories": [
         "Scabarites"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -2615,6 +2723,7 @@
       "slayerCategories": [
         "Sea Snakes"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -2642,6 +2751,7 @@
       "examine": "A cloud giant.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -2670,6 +2780,20 @@
         "Tree Gnome Stronghold"
       ],
       "slayerCategories": [],
+      "questAppearances": [
+        {
+          "id": "the-grand-tree",
+          "name": "The Grand Tree"
+        },
+        {
+          "id": "monkey-madness-i",
+          "name": "Monkey Madness I"
+        },
+        {
+          "id": "monkey-madness-ii",
+          "name": "Monkey Madness II"
+        }
+      ],
       "versions": [
         {
           "label": null,
@@ -2698,6 +2822,7 @@
       "examine": "Ferocious. It's unnerving.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Head (Normal)",
@@ -2738,6 +2863,7 @@
       "examine": "An animated clay statue.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -2766,6 +2892,7 @@
         "Slayer Tower"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": []
     },
     {
@@ -2781,6 +2908,12 @@
         "Ancient Vault"
       ],
       "slayerCategories": [],
+      "questAppearances": [
+        {
+          "id": "desert-treasure-ii-the-fallen-empire",
+          "name": "Desert Treasure II - The Fallen Empire"
+        }
+      ],
       "versions": [
         {
           "label": null,
@@ -2807,6 +2940,7 @@
       "examine": "A big angry plant.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -2834,6 +2968,7 @@
       "examine": "Lord of the Icefiends.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Normal",
@@ -2876,6 +3011,7 @@
       "slayerCategories": [
         "Trolls"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -2906,6 +3042,7 @@
       "slayerCategories": [
         "Greater Demons"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -2933,6 +3070,7 @@
       "examine": "A Greater Jungle Demon. A magical aura emanates from its hide.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -2964,6 +3102,7 @@
       "slayerCategories": [
         "Greater Demons"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -2995,6 +3134,7 @@
       "slayerCategories": [
         "Kalphite"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Crawling",
@@ -3039,6 +3179,7 @@
       "slayerCategories": [
         "Ice Warriors"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -3066,6 +3207,7 @@
       "examine": "Pure evil lightly whipped with a juicy cherry on top.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -3095,6 +3237,12 @@
         "Ancient Vault"
       ],
       "slayerCategories": [],
+      "questAppearances": [
+        {
+          "id": "desert-treasure-ii-the-fallen-empire",
+          "name": "Desert Treasure II - The Fallen Empire"
+        }
+      ],
       "versions": [
         {
           "label": null,
@@ -3123,6 +3271,7 @@
         "Tombs of Amascut"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -3153,6 +3302,7 @@
       "slayerCategories": [
         "Black Dragons"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -3180,6 +3330,16 @@
       "examine": "Your challenge awaits!",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [
+        {
+          "id": "dragon-slayer-ii",
+          "name": "Dragon Slayer II"
+        },
+        {
+          "id": "the-fremennik-exiles",
+          "name": "The Fremennik Exiles"
+        }
+      ],
       "versions": [
         {
           "label": null,
@@ -3210,6 +3370,7 @@
       "slayerCategories": [
         "Cave Kraken"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Whirlpool",
@@ -3252,6 +3413,7 @@
       "slayerCategories": [
         "Aviansie"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -3282,6 +3444,16 @@
         "Castle Drakan"
       ],
       "slayerCategories": [],
+      "questAppearances": [
+        {
+          "id": "sins-of-the-father",
+          "name": "Sins of the Father"
+        },
+        {
+          "id": "the-blood-moon-rises",
+          "name": "The Blood Moon Rises"
+        }
+      ],
       "versions": [
         {
           "label": null,
@@ -3310,6 +3482,7 @@
         "Neypotzli"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": []
     },
     {
@@ -3325,6 +3498,7 @@
         "Ardeaglais"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Quest",
@@ -3367,6 +3541,7 @@
         "Vampyrium"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Far",
@@ -3425,6 +3600,7 @@
         "Dream World"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Type A",
@@ -3465,6 +3641,7 @@
         "Melzar's Maze Basement"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -3492,6 +3669,7 @@
       "examine": null,
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": []
     },
     {
@@ -3507,6 +3685,7 @@
         "Neypotzli"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": []
     },
     {
@@ -3522,6 +3701,7 @@
         "Glarial's Tomb"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -3549,6 +3729,7 @@
       "examine": "A mutated guardian of Xeric.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Small",
@@ -3617,6 +3798,7 @@
       "examine": "Even the gods fear her.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -3647,6 +3829,12 @@
         "Viyeldi Caves"
       ],
       "slayerCategories": [],
+      "questAppearances": [
+        {
+          "id": "legends-quest",
+          "name": "Legends' Quest"
+        }
+      ],
       "versions": [
         {
           "label": null,
@@ -3674,6 +3862,7 @@
       "examine": "One of Verzik's rather large pets.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Entry",
@@ -3734,6 +3923,7 @@
       "slayerCategories": [
         "Hill Giants"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -3761,6 +3951,7 @@
       "examine": "Run away! Run away!",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -3789,6 +3980,7 @@
       "examine": "An infinite mass of decay and death.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Entry",
@@ -3841,6 +4033,7 @@
         "Ghorrock Dungeon"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Ranged",
@@ -3920,6 +4113,7 @@
         "Sisterhood Sanctuary"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -3951,6 +4145,7 @@
         "Revenants",
         "Ghosts"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -3980,6 +4175,7 @@
         "Asgarnian Ice Dungeon"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": []
     },
     {
@@ -3997,6 +4193,7 @@
       "slayerCategories": [
         "Chaos Druids"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -4027,6 +4224,7 @@
       "slayerCategories": [
         "Spiders"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -4058,6 +4256,7 @@
       "slayerCategories": [
         "Scorpions"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -4088,6 +4287,7 @@
       "slayerCategories": [
         "Rats"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Solo",
@@ -4130,6 +4330,7 @@
       "examine": "The mother of all sea trolls!",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -4159,6 +4360,7 @@
       "slayerCategories": [
         "Gryphons"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -4189,6 +4391,12 @@
         "H.A.M. Hideout"
       ],
       "slayerCategories": [],
+      "questAppearances": [
+        {
+          "id": "the-lost-tribe",
+          "name": "The Lost Tribe"
+        }
+      ],
       "versions": [
         {
           "label": null,
@@ -4215,6 +4423,7 @@
       "examine": "A warrior blessed by Saradomin.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -4244,6 +4453,7 @@
         "Keep Le Faye (Instanced)"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -4275,6 +4485,7 @@
         "Black Demons",
         "Greater Demons"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -4304,6 +4515,12 @@
         "Goblin Cave"
       ],
       "slayerCategories": [],
+      "questAppearances": [
+        {
+          "id": "one-small-favour",
+          "name": "One Small Favour"
+        }
+      ],
       "versions": [
         {
           "label": null,
@@ -4332,6 +4549,7 @@
       "slayerCategories": [
         "Zombies"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -4361,6 +4579,12 @@
         "Witchaven Dungeon"
       ],
       "slayerCategories": [],
+      "questAppearances": [
+        {
+          "id": "the-slug-menace",
+          "name": "The Slug Menace"
+        }
+      ],
       "versions": [
         {
           "label": null,
@@ -4389,6 +4613,7 @@
         "Fortis Colosseum"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -4415,6 +4640,7 @@
       "examine": "An intruder from the Shadow Realm, corrupted through haemalchemy.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Entry",
@@ -4470,6 +4696,7 @@
       "slayerCategories": [
         "Spiders"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -4500,6 +4727,7 @@
         "Tarn's Lair"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -4527,6 +4755,7 @@
       "examine": null,
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Normal",
@@ -4599,6 +4828,7 @@
         "Tempoross Cove"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": []
     },
     {
@@ -4614,6 +4844,7 @@
         "Prifddinas"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": []
     },
     {
@@ -4627,6 +4858,7 @@
       "examine": "A fearful spirit of the drowned.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -4653,6 +4885,7 @@
       "examine": "Can you endure long enough?",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -4681,6 +4914,7 @@
         "Prifddinas"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": []
     },
     {
@@ -4696,6 +4930,7 @@
         "The Darkfrost"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Normal",
@@ -4754,6 +4989,12 @@
         "Dream World"
       ],
       "slayerCategories": [],
+      "questAppearances": [
+        {
+          "id": "dream-mentor",
+          "name": "Dream Mentor"
+        }
+      ],
       "versions": [
         {
           "label": null,
@@ -4782,6 +5023,7 @@
         "Dream World (Dream Mentor)"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -4811,6 +5053,7 @@
         "The Scar"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Post-quest",
@@ -4867,6 +5110,7 @@
       "examine": "This is the fate of those who cross the vampyres.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Entry Mode",
@@ -4953,6 +5197,7 @@
       "examine": "Oh great, it's a casket that's come to life.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -4982,6 +5227,7 @@
         "Sisterhood Sanctuary"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -5010,6 +5256,7 @@
       "examine": "Can you bring yourself to hurt another?",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -5038,6 +5285,7 @@
         "Lassar Undercity - Sunken Cathedral"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Post-quest",
@@ -5090,6 +5338,7 @@
         "Ver Sinhaza"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": []
     },
     {
@@ -5103,6 +5352,7 @@
       "examine": null,
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": []
     },
     {
@@ -5120,6 +5370,7 @@
       "slayerCategories": [
         "Smoke Devils"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -5148,6 +5399,12 @@
         "Tolna's rift"
       ],
       "slayerCategories": [],
+      "questAppearances": [
+        {
+          "id": "a-souls-bane",
+          "name": "A Soul's Bane"
+        }
+      ],
       "versions": [
         {
           "label": null,
@@ -5177,6 +5434,7 @@
         "Jaltevas Pyramid"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": []
     },
     {
@@ -5192,6 +5450,7 @@
         "Jaltevas Pyramid"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": []
     },
     {
@@ -5207,6 +5466,12 @@
         "Ancient Vault"
       ],
       "slayerCategories": [],
+      "questAppearances": [
+        {
+          "id": "desert-treasure-ii-the-fallen-empire",
+          "name": "Desert Treasure II - The Fallen Empire"
+        }
+      ],
       "versions": [
         {
           "label": null,
@@ -5235,6 +5500,7 @@
       "slayerCategories": [
         "Ghosts"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -5265,6 +5531,12 @@
       "slayerCategories": [
         "Ghosts"
       ],
+      "questAppearances": [
+        {
+          "id": "haunted-mine",
+          "name": "Haunted Mine"
+        }
+      ],
       "versions": [
         {
           "label": null,
@@ -5294,6 +5566,7 @@
         "Tombs of Amascut"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Active",
@@ -5338,6 +5611,7 @@
       "slayerCategories": [
         "TzHaar"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Normal",
@@ -5380,6 +5654,7 @@
       "slayerCategories": [
         "TzHaar"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -5412,6 +5687,12 @@
       "slayerCategories": [
         "Skeletons"
       ],
+      "questAppearances": [
+        {
+          "id": "olafs-quest",
+          "name": "Olaf's Quest"
+        }
+      ],
       "versions": [
         {
           "label": null,
@@ -5438,6 +5719,7 @@
       "examine": "Formerly a member of Xeric's elite tactical unit.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Magic",
@@ -5538,6 +5820,7 @@
         "The Stranglewood - Ritual Site"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Post-quest",
@@ -5588,6 +5871,7 @@
       "examine": "A former High Priest, fused with the rock and bound to the dark crystals.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Normal",
@@ -5632,6 +5916,7 @@
       "slayerCategories": [
         "Spiders"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -5662,6 +5947,12 @@
         "Ancient Vault"
       ],
       "slayerCategories": [],
+      "questAppearances": [
+        {
+          "id": "desert-treasure-ii-the-fallen-empire",
+          "name": "Desert Treasure II - The Fallen Empire"
+        }
+      ],
       "versions": [
         {
           "label": null,
@@ -5690,6 +5981,7 @@
         "Ver Sinhaza"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Phase 1",
@@ -5744,6 +6036,7 @@
       "examine": "Queen of the Abyssal Vespine. Her lifeforce is sustained by her connection to the Abyss.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Normal",
@@ -5786,6 +6079,7 @@
       "slayerCategories": [
         "Skeletons"
       ],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Normal",
@@ -5831,6 +6125,12 @@
         "Blue Dragons",
         "Zombies"
       ],
+      "questAppearances": [
+        {
+          "id": "dragon-slayer-ii",
+          "name": "Dragon Slayer II"
+        }
+      ],
       "versions": [
         {
           "label": "Post-quest",
@@ -5875,6 +6175,7 @@
       "examine": "An animated clay statue.",
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -5903,6 +6204,7 @@
         "Prison north of the Wintertodt Camp"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": []
     },
     {
@@ -5916,6 +6218,7 @@
       "examine": null,
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": []
     },
     {
@@ -5931,6 +6234,12 @@
         "Lizardman Temple"
       ],
       "slayerCategories": [],
+      "questAppearances": [
+        {
+          "id": "a-kingdom-divided",
+          "name": "A Kingdom Divided"
+        }
+      ],
       "versions": [
         {
           "label": null,
@@ -5959,6 +6268,7 @@
         "Theatre of Blood"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": null,
@@ -5988,6 +6298,7 @@
         "Yama's Domain"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Normal",
@@ -6032,6 +6343,7 @@
         "Volcanic caverns beneath Prifddinas"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Armoured",
@@ -6070,6 +6382,7 @@
         "Tombs of Amascut"
       ],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Normal",
@@ -6112,6 +6425,7 @@
       "examine": null,
       "locations": [],
       "slayerCategories": [],
+      "questAppearances": [],
       "versions": [
         {
           "label": "Serpentine",

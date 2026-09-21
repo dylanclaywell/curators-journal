@@ -1,0 +1,153 @@
+{
+  "generatedAt": "2026-09-21",
+  "byQuest": {
+    "a-kingdom-divided": [
+      {
+        "id": "xamphur",
+        "name": "Xamphur"
+      }
+    ],
+    "a-souls-bane": [
+      {
+        "id": "tolna",
+        "name": "Tolna"
+      }
+    ],
+    "between-a-rock": [
+      {
+        "id": "arzinian-being-of-bordanzan",
+        "name": "Arzinian Being of Bordanzan"
+      }
+    ],
+    "demon-slayer": [
+      {
+        "id": "delrith",
+        "name": "Delrith"
+      }
+    ],
+    "desert-treasure-ii-the-fallen-empire": [
+      {
+        "id": "ahrim-the-blighted",
+        "name": "Ahrim the Blighted"
+      },
+      {
+        "id": "dharok-the-wretched",
+        "name": "Dharok the Wretched"
+      },
+      {
+        "id": "guthan-the-infested",
+        "name": "Guthan the Infested"
+      },
+      {
+        "id": "karil-the-tainted",
+        "name": "Karil the Tainted"
+      },
+      {
+        "id": "torag-the-corrupted",
+        "name": "Torag the Corrupted"
+      },
+      {
+        "id": "verac-the-defiled",
+        "name": "Verac the Defiled"
+      }
+    ],
+    "dragon-slayer-ii": [
+      {
+        "id": "galvek",
+        "name": "Galvek"
+      },
+      {
+        "id": "koschei-the-deathless",
+        "name": "Koschei the deathless"
+      },
+      {
+        "id": "vorkath",
+        "name": "Vorkath"
+      }
+    ],
+    "dream-mentor": [
+      {
+        "id": "the-illusive",
+        "name": "The Illusive"
+      }
+    ],
+    "haunted-mine": [
+      {
+        "id": "treus-dayth",
+        "name": "Treus Dayth"
+      }
+    ],
+    "legends-quest": [
+      {
+        "id": "nezikchened",
+        "name": "Nezikchened"
+      }
+    ],
+    "monkey-madness-i": [
+      {
+        "id": "glough",
+        "name": "Glough"
+      }
+    ],
+    "monkey-madness-ii": [
+      {
+        "id": "glough",
+        "name": "Glough"
+      }
+    ],
+    "olafs-quest": [
+      {
+        "id": "ulfric",
+        "name": "Ulfric"
+      }
+    ],
+    "one-small-favour": [
+      {
+        "id": "slagilith",
+        "name": "Slagilith"
+      }
+    ],
+    "sins-of-the-father": [
+      {
+        "id": "lowerniel-drakan",
+        "name": "Lowerniel Drakan"
+      }
+    ],
+    "the-blood-moon-rises": [
+      {
+        "id": "lowerniel-drakan",
+        "name": "Lowerniel Drakan"
+      }
+    ],
+    "the-fremennik-exiles": [
+      {
+        "id": "koschei-the-deathless",
+        "name": "Koschei the deathless"
+      }
+    ],
+    "the-generals-shadow": [
+      {
+        "id": "general-khazard",
+        "name": "General Khazard"
+      }
+    ],
+    "the-grand-tree": [
+      {
+        "id": "glough",
+        "name": "Glough"
+      }
+    ],
+    "the-lost-tribe": [
+      {
+        "id": "sigmund",
+        "name": "Sigmund"
+      }
+    ],
+    "the-slug-menace": [
+      {
+        "id": "slug-prince",
+        "name": "Slug Prince"
+      }
+    ]
+  }
+}

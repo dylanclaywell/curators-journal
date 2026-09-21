@@ -1309,7 +1309,7 @@ bosses Jagex publishes them for, and stats, requirements and drop tables for all
 | 7c    | `scripts/build-bosses.ts` → `src/data/bosses.json`, 183 bosses (`a6f79a4`)                    | done  |
 | 7d    | The `/bosses` panel: registry entry, store with a dynamic import, the list (`75a4619`)        | done  |
 | 7e    | Boss detail view; drops, fight prose and locations → `public/boss-detail/<id>.json`           | done  |
-| 7f    | Requirements from the quest-links oracle, **as links to quest detail**; `check:drift`; docs   | next  |
+| 7f    | `check:drift` wiring; "Appears in" quest links; requirements ruled out on evidence            | done  |
 | 7g    | Items: `/items/:id`, GE prices via the banked Worker proxy, "needed for" from `quests.json`   | —     |
 
 **The wiki is the spine and the hiscores decorate it** — the opposite of quests
@@ -1437,6 +1437,40 @@ Amascut`. They have their own counts and no page of their own, so they carry
   members against the hiscores' 71, and 8 of 21 probed hiscore names don't
   match a wiki page title. Either source alone is wrong; the union is the
   dataset.
+
+**Ruled out — boss requirements cannot be derived.** 7f set out to generate
+"what you need to fight this" from the quest links on each boss page. That was
+based on a biased sample: the bosses I checked first (Vorkath, Zulrah, Nex, The
+Gauntlet) were ones I already knew to be quest-gated, so every hit looked like
+a confirmation. Measured across all 181 pages it falls apart — three sources,
+all rejected:
+
+| Source                          | Coverage   | Why not                                                                                                                                       |
+| ------------------------------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| `[[Quest]]` links on the page   | 125 of 181 | Wrong at scale: Barrows wants five quests it doesn't need; Dagannoth Rex picks up `Rag and Bone Man II`, a quest that _wants dagannoth bones_ |
+| A version label that is a quest | 1 of 183   | Only Vorkath                                                                                                                                  |
+| Infobox `\|quest=`              | 27 pages   | Means "appears in", not "requires" — and carries a bare "No"                                                                                  |
+
+The wiki simply does not state access requirements in a structured way, and
+`|update =` (which named Song of the Elves for The Gauntlet) is release notes,
+not a gate. Plausible-and-wrong is the worst outcome available here, so
+nothing is generated. **If requirements are wanted, they are hand-entered in
+the lock and the links become a checker rather than a source** — the same
+"cross-check, not source" split as `Module:Questreq/data`.
+
+What shipped instead is `questAppearances`, from the one precise field: 23 of
+183 bosses, labelled **"Appears in"** and linked to quest detail. It carries
+the quest's name beside its id, denormalised so the boss panel needn't pull
+the 474 KB quest dataset to render link text.
+
+**The link runs both ways**, because it is the same fact read from either end:
+`build-bosses` also emits `src/data/quest-bosses.json`, the inverse index, and
+quest detail shows the bosses fought in it (20 of 214 quests; Dragon Slayer II
+gets Galvek, Koschei and Vorkath). Its own 2.8 KB file rather than derived in
+the app — quest detail is the only consumer and loading `bosses.json` there
+would spend 91 KB on a handful of links — and not merged into `quests.json`,
+since `build-quests` runs first and knows nothing about bosses. Both
+directions use the same raised-plate treatment so they read as one idea.
 
 **Open — the rank cutoff.** Jagex publishes no count below some threshold, and
 we don't know what it is. If a 3-kill Zulrah is simply absent from the response,

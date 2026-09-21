@@ -230,7 +230,12 @@ isn't this id's JSON means there is none. The id check matters as much as the
 parse — a fallback returning some other valid JSON would otherwise render as
 another boss's drop table.
 
-**Regenerate quests first, then diaries, then guides.** `build-diaries` resolves
+**Regenerate quests first, then diaries, then guides, then bosses.**
+`build-bosses` resolves each boss's `questAppearances` against `quests.json`,
+so it shares the dependency below; it is last because it is the only generator
+that also reaches a _second_ host (the hiscores, for the activity names), and
+a Jagex outage shouldn't stop work that would otherwise have succeeded.
+`build-diaries` resolves
 every diary prerequisite against `quests.json` and fails loud on one it can't
 find, so running it against a stale quest list turns a renamed quest into a
 failed diary build. `build-guides` reads both the ids and the canonical page
@@ -476,9 +481,10 @@ block so that it reads the generators' exit codes against the constants they
 are defined with instead of re-encoding them as numbers in YAML, and so that it
 is type-checked, linted and runnable by hand. Without `--open-pr` it reports
 and writes nothing, which is what makes it safe to run locally. It drives all
-three generators from one `GENERATORS` list and stages `GENERATED_PATHS` —
+four generators from one `GENERATORS` list and stages `GENERATED_PATHS` —
 adding a generator means adding it to both, or the refresh PR carries a lock
-file claiming a change it doesn't contain.
+file claiming a change it doesn't contain. `GENERATED_PATHS` currently covers
+`src/data`, `public/guides` and `public/boss-detail`.
 
 Quick guides churn far harder than requirements do, so expect this PR to be
 mostly walkthrough prose. That does not make the tick worth more: the guides

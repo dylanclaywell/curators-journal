@@ -215,6 +215,35 @@ onUnmounted(() => {
       “{{ boss.examine }}”
     </p>
 
+    <!-- "Appears in", never "Requires": the wiki field says where the NPC
+         turns up, which for a quest boss is a fight you have during it rather
+         than a gate you pass first.
+
+         Its own box rather than a row inside About, because it is the one
+         thing on this page you can go *to* — and it stays inside the app,
+         which is the whole reason it's worth making obvious. `bg-parchment`
+         on a `parchment` body, so the box reads as a raised plate of the same
+         material rather than a sunken field like the rows below. -->
+    <RouterLink
+      v-for="quest in boss.questAppearances"
+      :key="quest.id"
+      :to="`/quests/${quest.id}`"
+      class="tap pressable-parchment bevel flex items-center justify-between gap-3 bg-parchment px-3 no-underline"
+    >
+      <span class="flex min-w-0 items-baseline gap-2">
+        <span class="shrink-0 text-[13px] text-ink-soft">Appears in</span>
+        <span class="min-w-0 truncate text-[15px] font-bold text-ink">
+          {{ quest.name }}
+        </span>
+      </span>
+      <AppIcon
+        name="chevron"
+        :size="12"
+        class="shrink-0 text-ink-soft"
+        aria-hidden="true"
+      />
+    </RouterLink>
+
     <!-- Facts about the boss itself, labelled and in the same flat rows the
          stats and drops use. -->
     <section class="flex flex-col">

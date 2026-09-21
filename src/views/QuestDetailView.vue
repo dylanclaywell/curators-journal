@@ -10,6 +10,7 @@ import type { QuestProgress } from '@/lib/quests'
 import type { SkillRequirement } from '@/lib/types'
 import { panelById } from '@/panels/registry'
 import { useGuidesStore } from '@/stores/guides'
+import { useQuestBossesStore } from '@/stores/questBosses'
 import { useQuestsStore } from '@/stores/quests'
 
 /*
@@ -22,7 +23,17 @@ const props = defineProps<{ id: string }>()
 
 const quests = useQuestsStore()
 const guides = useGuidesStore()
-onMounted(() => void quests.ensureReady())
+/*
+ * The bosses fought in this quest — its own 2.8 KB index rather than the boss
+ * dataset, which would be 91 KB to render at most a handful of links here.
+ */
+const questBosses = useQuestBossesStore()
+onMounted(() => {
+  void quests.ensureReady()
+  void questBosses.ensureIndex()
+})
+
+const bossesHere = computed(() => questBosses.forQuest(props.id))
 
 const quest = computed(() => quests.index.byId.get(props.id))
 const status = computed(() =>
@@ -314,6 +325,33 @@ function statusStripeClass(id: string): string {
           Start: {{ quest.startPoint }}
         </p>
       </section>
+
+      <!-- The bosses you meet in this quest, the mirror of the boss page's
+           "Appears in". Same raised-plate treatment, so the two directions of
+           the same link look like the same thing.
+
+           "Fight in this quest" rather than "Requires": the wiki field says
+           where the NPC turns up, and for most of these that is a fight during
+           the quest rather than a prerequisite. 20 of 214 quests have any. -->
+      <RouterLink
+        v-for="boss in bossesHere"
+        :key="boss.id"
+        :to="`/bosses/${boss.id}`"
+        class="tap pressable-parchment bevel flex items-center justify-between gap-3 bg-parchment px-3 no-underline"
+      >
+        <span class="flex min-w-0 items-baseline gap-2">
+          <span class="shrink-0 text-[13px] text-ink-soft">Boss</span>
+          <span class="min-w-0 truncate text-[15px] font-bold text-ink">
+            {{ boss.name }}
+          </span>
+        </span>
+        <AppIcon
+          name="chevron"
+          :size="12"
+          class="shrink-0 text-ink-soft"
+          aria-hidden="true"
+        />
+      </RouterLink>
 
       <!-- Direct selection, not the single-tap cycle the list row was built
            for: here there's room to show all three states and choose one,

@@ -463,7 +463,37 @@ export interface Boss {
   locations: string[]
   /** Slayer categories from the infobox's `cat`, e.g. "Hellhounds". */
   slayerCategories: string[]
+  /**
+   * Quest ids this boss **appears in**, from the infobox's `quest` field.
+   *
+   * Deliberately not "requires". The field says where the NPC turns up —
+   * Delrith in Demon Slayer, Sigmund in The Lost Tribe — which is usually a
+   * quest you fight them during rather than a gate you must pass first.
+   *
+   * There is no reliable source for "what do I need to fight this", and three
+   * were measured before settling for this one; see ROADMAP.md Phase 7.
+   *
+   * Carries the name alongside the id, denormalised on purpose: the boss panel
+   * would otherwise have to pull in the 474 KB quest dataset to render a
+   * link's text, which is a bad trade for 23 bosses' worth of strings. The id
+   * is the link target and stays the join key.
+   */
+  questAppearances: { id: string; name: string }[]
   versions: BossVersion[]
+}
+
+/**
+ * `questAppearances` inverted: quest id -> the bosses that appear in it.
+ *
+ * Emitted by `build-bosses` as its own small file (20 quests, a few KB) rather
+ * than derived in the app, because the only consumer is quest detail and
+ * loading `bosses.json` there would cost 91 KB to render three links. It is
+ * also not merged into `quests.json`: `build-quests` runs first and knows
+ * nothing about bosses, so writing it there would invert the dependency.
+ */
+export interface QuestBossIndex {
+  generatedAt: string
+  byQuest: Record<string, { id: string; name: string }[]>
 }
 
 /** Generated artifact shape for src/data/bosses.json. */

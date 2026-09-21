@@ -31,24 +31,40 @@ const TITLE = 'chore: refresh the generated datasets from the wiki'
 /**
  * The generators, in the order they must run.
  *
- * Order is load-bearing twice over: `build-diaries` resolves every diary
- * prerequisite against `quests.json`, and `build-guides` reads both the quest
- * ids and the canonical page titles out of `quests.sources.json`. Run either
- * against a stale quest list and a renamed quest becomes a failed diary build
- * or a silently missing guide.
+ * Order is load-bearing three times over: `build-diaries` resolves every diary
+ * prerequisite against `quests.json`, `build-guides` reads both the quest ids
+ * and the canonical page titles out of `quests.sources.json`, and
+ * `build-bosses` resolves each boss's quest requirements against `quests.json`
+ * too. Run any of them against a stale quest list and a renamed quest becomes
+ * a failed diary build, a silently missing guide, or a boss requirement that
+ * quietly stops resolving.
+ *
+ * `build-bosses` is last because it is the only one that also reaches a
+ * *second* host — it reads the hiscores for the activity names — so putting it
+ * behind the three wiki-only generators keeps a Jagex outage from stopping
+ * work that would otherwise have succeeded.
  */
-const GENERATORS = ['build-quests.ts', 'build-diaries.ts', 'build-guides.ts']
+const GENERATORS = [
+  'build-quests.ts',
+  'build-diaries.ts',
+  'build-guides.ts',
+  'build-bosses.ts',
+]
 
 /**
  * Everything a regeneration may rewrite, for staging and for the "did anything
  * change" test.
  *
- * `public/guides` is here and not only `src/data` because the guides are served
- * as static assets rather than bundled — left out, the refresh PR would carry
- * the revision-id lock saying the guides had changed while carrying none of the
- * changed guides.
+ * `public/guides` and `public/boss-detail` are here and not only `src/data`
+ * because both are served as static assets rather than bundled — left out, the
+ * refresh PR would carry the revision-id lock saying they had changed while
+ * carrying none of the changed files.
+ *
+ * Adding a generator means adding its output here as well. The two lists are
+ * separate on purpose (one is what to run, one is what to stage) and that is
+ * exactly what makes forgetting the second one silent.
  */
-const GENERATED_PATHS = ['src/data', 'public/guides']
+const GENERATED_PATHS = ['src/data', 'public/guides', 'public/boss-detail']
 
 /** GitHub renders these as annotations; harmless noise anywhere else. */
 const notice = (message: string) => console.log(`::notice::${message}`)

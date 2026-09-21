@@ -37,6 +37,8 @@ import type {
   BossDetail,
   BossDropTable,
   BossVersion,
+  QuestBossIndex,
+  QuestDataset,
 } from '../src/lib/types.ts'
 
 import {
@@ -407,6 +409,51 @@ function parseDropTables(wikitext: string): BossDropTable[] {
 }
 
 /**
+ * Quests this boss appears in, as ids, from the infobox's `quest` field.
+ *
+ * **"Appears in", not "requires", and the distinction is the whole point.**
+ * There is no reliable source for what you need in order to fight a boss, and
+ * three candidates were measured before settling here:
+ *
+ *   - Mining `[[Quest]]` links off the page hits 125 of 181 and is wrong at
+ *     scale: Barrows comes back wanting five quests it does not need, and
+ *     Dagannoth Rex picks up `Rag and Bone Man II` — a quest that wants
+ *     dagannoth bones, not a gate. Plausible and wrong is the worst outcome
+ *     available.
+ *   - Version labels that are a quest name: exactly one across the dataset.
+ *   - This field: 27 pages, and it means where the NPC turns up.
+ *
+ * So the data says what it can support and the UI labels it that way. Values
+ * are read as link *targets* (`[[A|B]]` → `A`), because that is the page name
+ * the quest dataset is keyed on, and anything that doesn't resolve to a known
+ * quest is dropped — the field also carries things like a bare "No".
+ */
+function readQuestAppearances(
+  wikitext: string,
+  questIdByName: Map<string, string>,
+): { id: string; name: string }[] {
+  const found: { id: string; name: string }[] = []
+
+  let from = 0
+  for (;;) {
+    const infobox = findTemplate(wikitext, 'Infobox', from)
+    if (!infobox) break
+    from = infobox.end
+
+    const raw = templateParams(infobox.body).quest
+    if (!raw) continue
+
+    for (const match of raw.matchAll(/\[\[([^\]|#]+)/g)) {
+      const name = match[1].trim()
+      const id = questIdByName.get(name)
+      if (id && !found.some((q) => q.id === id)) found.push({ id, name })
+    }
+  }
+
+  return found
+}
+
+/**
  * Where the boss is. Two sources, and neither alone is enough.
  *
  * **Not `{{Infobox Monster}}`**, which has no such parameter — that mistake
@@ -492,6 +539,7 @@ interface ParsedPage {
   examine: string | null
   locations: string[]
   slayerCategories: string[]
+  questAppearances: { id: string; name: string }[]
   versions: BossVersion[]
   dropTables: BossDropTable[]
   overview: string[]
@@ -508,7 +556,10 @@ interface ParsedPage {
  * versions and are reported as a count, not as errors — the distinction being
  * that an expected absence should not train anyone to ignore the defect list.
  */
-function parsePage(page: CachedPage): ParsedPage {
+function parsePage(
+  page: CachedPage,
+  questIdByName: Map<string, string>,
+): ParsedPage {
   const match =
     findTemplate(page.wikitext, 'Infobox Monster') ??
     findTemplate(page.wikitext, 'Infobox monster')
@@ -522,6 +573,7 @@ function parsePage(page: CachedPage): ParsedPage {
       // carry an `{{Infobox NPC}}` or `{{Infobox Minigame}}` that has one.
       locations: readLocations(page.wikitext),
       slayerCategories: [],
+      questAppearances: readQuestAppearances(page.wikitext, questIdByName),
       versions: [],
       dropTables: parseDropTables(page.wikitext),
       overview: parseOverview(page.wikitext),
@@ -553,6 +605,7 @@ function parsePage(page: CachedPage): ParsedPage {
     title: page.title,
     members: boolOrFalse(params.members),
     examine: params.examine ? plainText(params.examine) : null,
+    questAppearances: readQuestAppearances(page.wikitext, questIdByName),
     slayerCategories: splitList(params.cat).filter(
       (cat) => cat.toLowerCase() !== 'bosses',
     ),
@@ -603,6 +656,7 @@ function buildBosses(
       examine: page.examine,
       locations: page.locations,
       slayerCategories: page.slayerCategories,
+      questAppearances: page.questAppearances,
       versions: page.versions,
     }
 
@@ -724,6 +778,44 @@ async function emitDetail(
   return { files: written.size, drops, overviews }
 }
 
+/**
+ * The inverse of `questAppearances`: quest id -> bosses that appear in it.
+ *
+ * Its own file so quest detail can link back to bosses without loading the
+ * 91 KB boss dataset for three links. Variants are skipped — The Corrupted
+ * Gauntlet and its parent would otherwise both appear under the same quest.
+ */
+async function emitQuestBosses(bosses: Boss[]): Promise<number> {
+  const byQuest: Record<string, { id: string; name: string }[]> = {}
+
+  for (const boss of bosses) {
+    if (boss.variantOf !== null) continue
+    for (const quest of boss.questAppearances) {
+      const list = (byQuest[quest.id] ??= [])
+      if (!list.some((b) => b.id === boss.id))
+        list.push({ id: boss.id, name: boss.name })
+    }
+  }
+
+  // Sorted so a regeneration that changes nothing produces no diff.
+  const sorted: QuestBossIndex['byQuest'] = {}
+  for (const questId of Object.keys(byQuest).sort()) {
+    sorted[questId] = byQuest[questId].sort((a, b) =>
+      a.name.localeCompare(b.name),
+    )
+  }
+
+  const index: QuestBossIndex = {
+    generatedAt: new Date().toISOString().slice(0, 10),
+    byQuest: sorted,
+  }
+  await writeFile(
+    `${dataDir}/quest-bosses.json`,
+    JSON.stringify(index, null, 2) + '\n',
+  )
+  return Object.keys(sorted).length
+}
+
 async function emit(bosses: Boss[], pages: CachedPage[]): Promise<void> {
   const generatedAt = new Date().toISOString().slice(0, 10)
 
@@ -822,9 +914,24 @@ async function main() {
     )
   }
 
-  const parsed = cache.pages.map(parsePage)
+  /*
+   * Quest names resolve to ids against the committed quest dataset, which is
+   * why `check-dataset-drift.ts` runs this generator after `build-quests`. A
+   * name the dataset doesn't know is dropped rather than guessed at — the
+   * field carries non-quest values too, including a literal "No".
+   */
+  const quests = JSON.parse(
+    await readFile(`${dataDir}/quests.json`, 'utf8'),
+  ) as QuestDataset
+  const questIdByName = new Map(quests.quests.map((q) => [q.name, q.id]))
+  console.log(
+    `resolving quest appearances against ${questIdByName.size} quests`,
+  )
+
+  const parsed = cache.pages.map((page) => parsePage(page, questIdByName))
   const bosses = buildBosses(parsed, cache.hiscoreToPage)
   const detailStats = await emitDetail(bosses, parsed)
+  const questsWithBosses = await emitQuestBosses(bosses)
 
   if (defects.length) {
     console.error(`\n${defects.length} defect(s):`)
@@ -836,6 +943,7 @@ async function main() {
   }
 
   await emit(bosses, cache.pages)
+  console.log(`  ${questsWithBosses} quests link back to a boss`)
   console.log(
     `  ${detailStats.files} boss pages written to public/boss-detail ` +
       `(${detailStats.drops} drop rows, ${detailStats.overviews} with fight prose)`,
