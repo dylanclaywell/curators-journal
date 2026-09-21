@@ -39,6 +39,17 @@ const router = createRouter({
       meta: { panelId: 'queue' },
       props: true,
     },
+    // Where the plugin's QR code lands: `/sync?hash=…`. Not a panel and never in
+    // the tab bar; it borrows Settings' identity so the header and tab
+    // highlight read as Settings, which is where it always ends up. A client
+    // route only — the Worker is never invoked for it (`run_worker_first`
+    // covers `/api/*`), and `/api/sync` is a different path entirely.
+    {
+      path: '/sync',
+      name: 'sync-link',
+      component: () => import('@/views/SyncLinkView.vue'),
+      meta: { panelId: 'settings' },
+    },
     // The Settings panel was /about until it was renamed. An installed PWA
     // relaunches on the URL it was killed holding, so this has to outlive the
     // rename rather than fall through to the catch-all and open the Queue.
