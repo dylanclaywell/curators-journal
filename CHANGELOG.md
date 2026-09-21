@@ -1,5 +1,31 @@
 # Changelog
 
+## [0.11.0](https://github.com/dylanclaywell/curators-journal/compare/curators-journal-v0.10.0...curators-journal-v0.11.0) (2026-09-21)
+
+
+### Features
+
+* **bosses:** add boss detail with drops, fight prose and locations ([f9a7a46](https://github.com/dylanclaywell/curators-journal/commit/f9a7a466fc0199138ee46bb245bad190e59f1e3e))
+* **bosses:** add the Bosses panel ([75a4619](https://github.com/dylanclaywell/curators-journal/commit/75a461998ff29b8952ab383cad3b56d75cce9ade))
+* **bosses:** classify hiscore activities and build the boss list ([47c1196](https://github.com/dylanclaywell/curators-journal/commit/47c11967fc5b9dd70c622643b55ed983fced5b2c))
+* **bosses:** generate the boss dataset from the wiki and the hiscores ([a6f79a4](https://github.com/dylanclaywell/curators-journal/commit/a6f79a485023817b57d5b79cbdde6fcf1595e7b9))
+* **bosses:** refresh bosses weekly, and link them to quests both ways ([a6d6f10](https://github.com/dylanclaywell/curators-journal/commit/a6d6f108d412ecee074c1fe7192bb7ff03c25a27))
+* **diaries:** settle 6e on a mode inside Quests, with the mode in the path ([07a6f38](https://github.com/dylanclaywell/curators-journal/commit/07a6f3804cf693168ada5ffe16d1c4aad061c54a))
+* **items:** add src/data/items.json, trimmed to the items our drops name ([85ffbad](https://github.com/dylanclaywell/curators-journal/commit/85ffbad3dabd5f9c34a2551a50c01ab940b7d594))
+* **prices:** add /api/prices, a Worker proxy for Grand Exchange prices ([8fbf4f6](https://github.com/dylanclaywell/curators-journal/commit/8fbf4f611d6215b2295c2bb09199ca6ef12dca6c))
+
+
+### Bug Fixes
+
+* **settings:** name every wiki-derived dataset in the credits ([58c0d9c](https://github.com/dylanclaywell/curators-journal/commit/58c0d9cdc73c55e6c1109f6780c16ebbabcba955))
+* **shell:** collapse tab labels by width per tab, not by tab count ([da5b7aa](https://github.com/dylanclaywell/curators-journal/commit/da5b7aa8a0771ac29d2fed96fabf501cb35d5428))
+
+
+### Refactors
+
+* **bosses:** drop the hand-written list for the generated dataset ([6772e3d](https://github.com/dylanclaywell/curators-journal/commit/6772e3d960094181450b0e329f76f89e8cd2b0c0))
+* **bosses:** rename ranked to scored, since they are different things ([6d5eb70](https://github.com/dylanclaywell/curators-journal/commit/6d5eb706cc5ef07b0c6a5b809574fb6be4afbff6))
+
 ## [0.10.0](https://github.com/dylanclaywell/curators-journal/compare/curators-journal-v0.9.0...curators-journal-v0.10.0) (2026-09-21)
 
 
