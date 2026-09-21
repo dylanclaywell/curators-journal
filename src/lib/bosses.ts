@@ -1,35 +1,38 @@
 /**
- * Boss kill counts, read out of the hiscores activity array.
+ * Joining hiscore kill counts onto the boss dataset.
  *
- * Pure: no DOM, no network. The one piece of data here is a classification of
- * hiscore *activity names* — which of them are bosses and which are the clue,
- * minigame and points rows that share the same array.
+ * Pure: no DOM, no network. The dataset itself is generated
+ * (`scripts/build-bosses.ts` → `src/data/bosses.json`) and this file does not
+ * import it — callers pass it in, so the ~144 KB of JSON stays behind the
+ * store's dynamic import and out of the entry chunk.
  *
- * Nothing in this file is fetched or generated. Unlike quests and diaries, the
- * source here is the hiscores response itself, which the app already fetches,
- * caches and refreshes for the skills grid. A boss panel is a display problem
- * on data we have, not a new dataset — see ROADMAP.md Phase 7.
+ * **Names are the join key. Ids are not.** The hiscores' boss block is ordered
+ * roughly alphabetically, so Jagex inserts new bosses in the middle and
+ * renumbers everything after them — `Amoxliatl` sits between `Alchemical
+ * Hydra` and `Araxxor` and pushed 68 rows along by one. Matching on position
+ * would attribute one boss's kills to another after any release, which is the
+ * worst failure available here: plausible numbers against the wrong name.
  *
- * **Names are the join key. Ids are not.** The boss block is ordered roughly
- * alphabetically, so Jagex inserts new bosses in the middle and renumbers
- * everything after them — `Amoxliatl` sits at id 22, between `Alchemical
- * Hydra` and `Araxxor`, and pushed all 68 rows below it along by one. Matching
- * on id would silently attribute one boss's kills to another after any
- * release, which is the worst failure this file could have: plausible numbers
- * against the wrong name. So the lists below are names, the lookup is by name,
- * and a persisted id never appears anywhere.
+ * This file used to carry the boss list by hand. It doesn't any more — the
+ * generator resolves the hiscores' own names against the wiki, so the list
+ * refreshes with the dataset instead of waiting for someone to notice. What
+ * survives is the arithmetic and the three-state honesty below.
  */
-import type { ActivityEntry } from './types'
+import type { ActivityEntry, Boss } from './types'
 
 /**
- * The non-boss rows: points, clues, minigames and ranks. Kept as an explicit
- * list rather than inferred, because the *only* way to notice that Jagex added
- * something is to find a name that is in neither list — see
- * `unclassifiedActivities`. An "everything we don't recognise is a boss" rule
- * would swallow a new clue tier and show it as a boss with a kill count.
+ * The hiscore activity rows that are not bosses: points, clues, minigames and
+ * ranks.
+ *
+ * The one hand-maintained list left, and it earns its place by being the thing
+ * the generator *subtracts*: everything in the activities array that isn't
+ * here is treated as a boss and must resolve to a wiki page, so a newly
+ * released boss needs no edit anywhere. The failure direction is deliberate —
+ * a new non-boss row (another clue tier, say) fails to resolve and becomes a
+ * defect a human reads, rather than silently joining the boss list.
  *
  * Verified against a live `index_lite.json` response on 2026-09-21: 91
- * activities, these 20 first, the 71 bosses after them.
+ * activities, these 20 and 71 bosses.
  */
 export const OTHER_ACTIVITY_NAMES: readonly string[] = [
   'Grid Points',
@@ -55,195 +58,123 @@ export const OTHER_ACTIVITY_NAMES: readonly string[] = [
 ]
 
 /**
- * The boss block, in the response's own order.
+ * A boss with whatever the hiscores say about the player's kills.
  *
- * "Boss" here means "Jagex files it in the boss section of the hiscores",
- * which is the only definition that can be checked against anything. It is
- * looser than the word usually is in game: Barrows and Lunar Chests are chest
- * counts, the raids are team encounters counted per completion, and Tempoross,
- * Wintertodt, Zalcano and Hespori are skilling content. They are all in the
- * block, they are all things a player has a count of, and inventing our own
- * stricter line would mean hiding rows the hiscores show.
- */
-export const BOSS_NAMES: readonly string[] = [
-  'Abyssal Sire',
-  'Alchemical Hydra',
-  'Amoxliatl',
-  'Araxxor',
-  'Artio',
-  'Barrows Chests',
-  'Brutus',
-  'Bryophyta',
-  'Callisto',
-  "Calvar'ion",
-  'Cerberus',
-  'Chambers of Xeric',
-  'Chambers of Xeric: Challenge Mode',
-  'Chaos Elemental',
-  'Chaos Fanatic',
-  'Commander Zilyana',
-  'Corporeal Beast',
-  'Crazy Archaeologist',
-  'Dagannoth Prime',
-  'Dagannoth Rex',
-  'Dagannoth Supreme',
-  'Deranged Archaeologist',
-  'Doom of Mokhaiotl',
-  'Duke Sucellus',
-  'General Graardor',
-  'Giant Mole',
-  'Grotesque Guardians',
-  'Hespori',
-  'Kalphite Queen',
-  'King Black Dragon',
-  'Kraken',
-  "Kree'Arra",
-  "K'ril Tsutsaroth",
-  'Lunar Chests',
-  'Mad Angel',
-  'Maggot King',
-  'Mimic',
-  'Nex',
-  'Nightmare',
-  "Phosani's Nightmare",
-  'Obor',
-  'Phantom Muspah',
-  'Sarachnis',
-  'Scorpia',
-  'Scurrius',
-  'Shellbane Gryphon',
-  'Skotizo',
-  'Sol Heredit',
-  'Spindel',
-  'Tempoross',
-  'The Gauntlet',
-  'The Corrupted Gauntlet',
-  'The Hueycoatl',
-  'The Leviathan',
-  'The Royal Titans',
-  'The Whisperer',
-  'Theatre of Blood',
-  'Theatre of Blood: Hard Mode',
-  'Thermonuclear Smoke Devil',
-  'Tombs of Amascut',
-  'Tombs of Amascut: Expert Mode',
-  'TzKal-Zuk',
-  'TzTok-Jad',
-  'Vardorvis',
-  'Venenatis',
-  "Vet'ion",
-  'Vorkath',
-  'Wintertodt',
-  'Yama',
-  'Zalcano',
-  'Zulrah',
-]
-
-const BOSS_SET = new Set(BOSS_NAMES)
-const OTHER_SET = new Set(OTHER_ACTIVITY_NAMES)
-
-export type ActivityKind = 'boss' | 'other' | 'unknown'
-
-export function classifyActivity(name: string): ActivityKind {
-  if (BOSS_SET.has(name)) return 'boss'
-  if (OTHER_SET.has(name)) return 'other'
-  return 'unknown'
-}
-
-/**
- * A boss row ready to render.
+ * There are **three states and they are not interchangeable**, which is what
+ * this type exists to keep straight:
  *
- * `kills` and `rank` are both nullable and they are **not** interchangeable,
- * which is the subtlety this whole type exists to carry. The hiscores
- * distinguish three states, and the response really does contain all three:
+ *   tracked false            → the hiscores publish no count for this boss at
+ *                              all, and for most of them no count exists
+ *                              anywhere: Akkha is a room inside Tombs of
+ *                              Amascut, Agrith Naar is killed once in a quest.
+ *                              112 of the 183 bosses are in this state.
+ *   tracked, not ranked      → a count exists but this player isn't on the
+ *                              board. That means *unknown*, not zero — Jagex
+ *                              publishes nothing below its rank cutoff, so a
+ *                              player with a handful of kills can look exactly
+ *                              like one with none.
+ *   tracked, ranked          → `kills` is real, and may legitimately be 0. The
+ *                              live response returns `rank -1, score 0` for
+ *                              `Brutus`, `Mad Angel` and `Maggot King`.
  *
- *   rank -1, score -1  → unranked. No count published at all.
- *   rank -1, score  0  → on the board, zero kills. Observed on `Brutus`,
- *                        `Mad Angel` and `Maggot King`.
- *   rank  n, score  k  → ranked, k kills.
- *
- * Rendering the first two identically as "0" would state something the
- * hiscores never said. Unranked means *unknown*, not zero — Jagex publishes no
- * count below its rank cutoff, so a player with a handful of kills can look
- * exactly like one with none.
+ * Rendering any two of those the same way states something the hiscores never
+ * said.
  */
 export interface BossRow {
-  name: string
-  /** Kill count, or null when the hiscores publish none for this player. */
+  boss: Boss
+  /** Kill count, or null when none is published. */
   kills: number | null
   /** Hiscore position, or null when unranked. */
   rank: number | null
   /** True when the hiscores published a count — including a count of zero. */
   ranked: boolean
+  /** True when the hiscores track this boss for anyone at all. */
+  tracked: boolean
 }
 
 /**
- * Every boss we know about, whether or not the response carried a row for it.
+ * Every boss in the dataset, with kill counts joined on by hiscore name.
  *
- * A boss missing from the response comes back unranked rather than being
- * dropped, so the list has a stable length and a stable membership regardless
- * of account type or what Jagex returned. A row the response carries but we
- * don't classify is *not* here — it is reported separately, by
- * `unclassifiedActivities`, so new content surfaces as a finding instead of
- * quietly appearing in the list unstyled and unsorted.
+ * Nothing is dropped: a boss the hiscores don't track still appears, because
+ * the list is a reference as well as a tracker and 112 of the entries only
+ * exist in the first sense.
  */
-export function buildBossRows(activities: readonly ActivityEntry[]): BossRow[] {
+export function buildBossRows(
+  bosses: readonly Boss[],
+  activities: readonly ActivityEntry[],
+): BossRow[] {
   const byName = new Map<string, ActivityEntry>()
   for (const entry of activities) byName.set(entry.name, entry)
 
-  return BOSS_NAMES.map((name) => {
-    const entry = byName.get(name)
+  return bosses.map((boss) => {
+    const entry = boss.hiscoreName ? byName.get(boss.hiscoreName) : undefined
     const kills = entry?.score ?? null
     return {
-      name,
+      boss,
       kills,
       rank: entry?.rank ?? null,
       ranked: kills !== null,
+      tracked: boss.hiscoreName !== null,
     }
   })
 }
 
 /**
- * Most-killed first, unranked last, alphabetical within a tie.
+ * Most-killed first, then tracked-but-unranked, then the untracked.
  *
- * Unranked rows sort to the bottom rather than to zero: they are unknown, not
- * empty, and a "boss I have never touched" and a "boss below the rank cutoff"
- * both belong out of the way of the list's actual answer.
+ * The three groups sort in descending order of how much the hiscores know, so
+ * the rows that answer "what have I killed" come first and the reference-only
+ * entries settle at the bottom without being hidden. Alphabetical within a
+ * group, so the order is stable rather than dependent on dataset order.
  */
 export function sortByKills(rows: readonly BossRow[]): BossRow[] {
+  const group = (row: BossRow): number => (row.ranked ? 0 : row.tracked ? 1 : 2)
+
   return [...rows].sort((a, b) => {
-    if (a.ranked !== b.ranked) return a.ranked ? -1 : 1
-    if (a.kills !== b.kills) return (b.kills ?? 0) - (a.kills ?? 0)
-    return a.name.localeCompare(b.name)
+    const groups = group(a) - group(b)
+    if (groups !== 0) return groups
+    if (a.ranked && b.ranked && a.kills !== b.kills)
+      return (b.kills ?? 0) - (a.kills ?? 0)
+    return a.boss.name.localeCompare(b.boss.name)
   })
 }
 
+/** Plain alphabetical, for browsing the list as a reference. */
+export function sortByName(rows: readonly BossRow[]): BossRow[] {
+  return [...rows].sort((a, b) => a.boss.name.localeCompare(b.boss.name))
+}
+
 /**
- * Activity names the response carried that neither list knows about.
+ * Activity names the hiscores returned that nothing accounts for.
  *
- * This is the drift report, and it is the reason the non-boss names are
- * enumerated above. A new boss is added to the hiscores the day it releases;
- * without this it would be invisible to us forever, because a list built by
- * hand has no other way to learn that it is out of date. Same role as the
- * diary store's `syncUnknownTierIds`: surface the disagreement rather than
- * absorb it.
+ * The drift report, and the reason `OTHER_ACTIVITY_NAMES` is enumerated. A
+ * boss released today appears in the hiscores immediately and in our dataset
+ * only after `build:bosses` runs, so this is what stands between that gap and
+ * silence. Same role as the diary store's `syncUnknownTierIds`: surface the
+ * disagreement rather than absorb it.
  *
- * Expect this to be empty. When it isn't, add the name to `BOSS_NAMES` or
- * `OTHER_ACTIVITY_NAMES` — a judgement about which, not a mechanical fix.
+ * Expect it to be empty. When it isn't, run `npm run build:bosses -- --refresh`.
  */
 export function unclassifiedActivities(
   activities: readonly ActivityEntry[],
+  bosses: readonly Boss[],
 ): string[] {
+  const known = new Set<string>(OTHER_ACTIVITY_NAMES)
+  for (const boss of bosses) {
+    if (boss.hiscoreName) known.add(boss.hiscoreName)
+  }
   return activities
     .map((entry) => entry.name)
-    .filter((name) => classifyActivity(name) === 'unknown')
+    .filter((name) => !known.has(name))
 }
 
 /** Headline counts for the panel's summary line. */
 export interface BossTotals {
   /** Bosses with a published count above zero. */
   killed: number
-  /** Bosses in the list, published or not. */
+  /** Bosses the hiscores publish a count for at all. */
+  tracked: number
+  /** Bosses in the list, tracked or not. */
   total: number
   /** Sum of every published kill count. */
   kills: number
@@ -251,10 +182,12 @@ export interface BossTotals {
 
 export function bossTotals(rows: readonly BossRow[]): BossTotals {
   let killed = 0
+  let tracked = 0
   let kills = 0
   for (const row of rows) {
+    if (row.tracked) tracked++
     if (row.kills && row.kills > 0) killed++
     kills += row.kills ?? 0
   }
-  return { killed, total: rows.length, kills }
+  return { killed, tracked, total: rows.length, kills }
 }

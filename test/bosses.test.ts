@@ -1,27 +1,33 @@
 /**
- * The boss list reads someone else's array, so the failures worth testing are
- * the ones where a plausible-looking number ends up against the wrong name, or
- * where "we don't know" is rendered as "zero":
+ * The boss list joins someone else's array onto a generated dataset, so the
+ * failures worth testing are the ones where a plausible number ends up against
+ * the wrong name, or where "we don't know" is rendered as "zero":
  *
- *   - unranked (score -1) must not collapse into a real zero (score 0), which
- *     the live hiscores really do return for some bosses;
- *   - a boss missing from the response must still appear, so the list doesn't
- *     change length with the account type;
- *   - a name we don't classify must be reported, not absorbed — that report is
- *     the only way a hand-maintained list learns Jagex shipped a boss;
- *   - the two name lists must not overlap or the classification is ambiguous.
+ *   - the three states (untracked / tracked-but-unranked / ranked) must stay
+ *     apart, including the real zero the live hiscores return;
+ *   - a boss the hiscores don't track must still appear, because 112 of the
+ *     183 only exist as reference;
+ *   - an activity name nothing accounts for must be reported, since that is
+ *     the only signal that a boss shipped since the dataset was generated.
+ *
+ * The last block checks the committed dataset itself. Those are invariants the
+ * generator promises and the UI relies on — unique ids, variants pointing at a
+ * real parent, every hiscore row placed — and they are cheap to assert here
+ * and expensive to notice in a panel.
  */
 import { describe, expect, it } from 'vitest'
 import {
-  BOSS_NAMES,
   OTHER_ACTIVITY_NAMES,
   bossTotals,
   buildBossRows,
-  classifyActivity,
   sortByKills,
+  sortByName,
   unclassifiedActivities,
 } from '../src/lib/bosses'
-import type { ActivityEntry } from '../src/lib/types'
+import dataset from '../src/data/bosses.json' with { type: 'json' }
+import type { ActivityEntry, Boss, BossDataset } from '../src/lib/types'
+
+const bosses = (dataset as BossDataset).bosses
 
 /** Mirrors the parser's output: null for the -1 the hiscores send. */
 const entry = (
@@ -30,131 +36,230 @@ const entry = (
   rank: number | null = null,
 ): ActivityEntry => ({ name, score, rank })
 
-describe('the name lists', () => {
-  it('do not overlap', () => {
-    const others = new Set(OTHER_ACTIVITY_NAMES)
-    expect(BOSS_NAMES.filter((name) => others.has(name))).toEqual([])
-  })
-
-  it('contain no duplicates', () => {
-    expect(new Set(BOSS_NAMES).size).toBe(BOSS_NAMES.length)
-    expect(new Set(OTHER_ACTIVITY_NAMES).size).toBe(OTHER_ACTIVITY_NAMES.length)
-  })
-
-  it('match the 91 activities the live response carried', () => {
-    expect(BOSS_NAMES.length + OTHER_ACTIVITY_NAMES.length).toBe(91)
-  })
-
-  it('classify each list correctly, and nothing else', () => {
-    expect(classifyActivity('Zulrah')).toBe('boss')
-    expect(classifyActivity('Clue Scrolls (all)')).toBe('other')
-    expect(classifyActivity('Some Boss Released Tomorrow')).toBe('unknown')
-  })
-
-  it('classifies by exact name, so punctuation is load-bearing', () => {
-    expect(classifyActivity("K'ril Tsutsaroth")).toBe('boss')
-    expect(classifyActivity('Kril Tsutsaroth')).toBe('unknown')
-  })
+const boss = (name: string, hiscoreName: string | null): Boss => ({
+  id: name.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
+  name,
+  page: name,
+  wikiUrl: `https://oldschool.runescape.wiki/w/${name}`,
+  members: true,
+  hiscoreName,
+  variantOf: null,
+  examine: null,
+  slayerCategories: [],
+  versions: [],
 })
 
 describe('buildBossRows', () => {
-  it('keeps unranked and zero apart', () => {
-    const rows = buildBossRows([
-      entry('Zulrah', null, null),
-      entry('Brutus', 0, null),
-      entry('Vorkath', 12, 40000),
-    ])
-    const byName = new Map(rows.map((row) => [row.name, row]))
+  it('keeps the three states apart', () => {
+    const rows = buildBossRows(
+      [
+        boss('Zulrah', 'Zulrah'),
+        boss('Brutus', 'Brutus'),
+        boss('Vorkath', 'Vorkath'),
+        boss('Akkha', null),
+      ],
+      [
+        entry('Zulrah', null, null),
+        entry('Brutus', 0, null),
+        entry('Vorkath', 12, 40000),
+      ],
+    )
+    const byName = new Map(rows.map((row) => [row.boss.name, row]))
 
-    // Unranked: no count was published, which is not a count of zero.
-    expect(byName.get('Zulrah')).toMatchObject({ kills: null, ranked: false })
-    // Published zero: the hiscores really do return this.
-    expect(byName.get('Brutus')).toMatchObject({ kills: 0, ranked: true })
-    expect(byName.get('Vorkath')).toMatchObject({ kills: 12, ranked: true })
-  })
-
-  it('includes bosses the response left out entirely', () => {
-    const rows = buildBossRows([entry('Vorkath', 12, 40000)])
-    expect(rows).toHaveLength(BOSS_NAMES.length)
-    expect(rows.find((row) => row.name === 'Zulrah')).toMatchObject({
+    // Tracked, but this player published no count: unknown, not zero.
+    expect(byName.get('Zulrah')).toMatchObject({
       kills: null,
       ranked: false,
+      tracked: true,
+    })
+    // A published zero. The live hiscores really do return this.
+    expect(byName.get('Brutus')).toMatchObject({ kills: 0, ranked: true })
+    expect(byName.get('Vorkath')).toMatchObject({ kills: 12, ranked: true })
+    // Not tracked at all: no count exists for anyone, anywhere.
+    expect(byName.get('Akkha')).toMatchObject({
+      kills: null,
+      ranked: false,
+      tracked: false,
     })
   })
 
-  it('ignores rows it does not classify as bosses', () => {
-    const rows = buildBossRows([
-      entry('Clue Scrolls (all)', 22, 1141204),
-      entry('Some Boss Released Tomorrow', 5, 1),
-    ])
-    expect(rows.map((row) => row.name)).not.toContain('Clue Scrolls (all)')
-    expect(rows.map((row) => row.name)).not.toContain(
-      'Some Boss Released Tomorrow',
+  it('keeps bosses the response said nothing about', () => {
+    const rows = buildBossRows([boss('Zulrah', 'Zulrah')], [])
+    expect(rows).toHaveLength(1)
+    expect(rows[0]).toMatchObject({ kills: null, ranked: false, tracked: true })
+  })
+
+  it('ignores activity rows that are not bosses', () => {
+    const rows = buildBossRows(
+      [boss('Zulrah', 'Zulrah')],
+      [entry('Clue Scrolls (all)', 22, 1141204), entry('Zulrah', 3, 900)],
     )
+    expect(rows).toHaveLength(1)
+    expect(rows[0].kills).toBe(3)
+  })
+
+  it('joins on the hiscore name, not the boss name', () => {
+    // The hiscores file Barrows under "Barrows Chests"; the wiki page is
+    // "Barrows". Joining on the display name would lose the count.
+    const rows = buildBossRows(
+      [boss('Barrows', 'Barrows Chests')],
+      [entry('Barrows Chests', 41, 500000)],
+    )
+    expect(rows[0].kills).toBe(41)
   })
 })
 
 describe('sortByKills', () => {
-  it('puts the most-killed first and the unranked last', () => {
-    const rows = sortByKills([
-      { name: 'Unranked', kills: null, rank: null, ranked: false },
-      { name: 'Zero', kills: 0, rank: null, ranked: true },
-      { name: 'Many', kills: 900, rank: 5, ranked: true },
-      { name: 'Few', kills: 3, rank: 900, ranked: true },
-    ])
-    expect(rows.map((row) => row.name)).toEqual([
+  it('orders by how much the hiscores know, then by kills', () => {
+    const rows = sortByKills(
+      buildBossRows(
+        [
+          boss('Untracked', null),
+          boss('Unranked', 'Unranked'),
+          boss('Zero', 'Zero'),
+          boss('Many', 'Many'),
+          boss('Few', 'Few'),
+        ],
+        [
+          entry('Unranked', null),
+          entry('Zero', 0),
+          entry('Many', 900, 5),
+          entry('Few', 3, 900),
+        ],
+      ),
+    )
+    expect(rows.map((row) => row.boss.name)).toEqual([
       'Many',
       'Few',
       'Zero',
       'Unranked',
+      'Untracked',
     ])
   })
 
-  it('breaks ties alphabetically rather than by input order', () => {
-    const rows = sortByKills([
-      { name: 'Zulrah', kills: 10, rank: 1, ranked: true },
-      { name: 'Araxxor', kills: 10, rank: 2, ranked: true },
-    ])
-    expect(rows.map((row) => row.name)).toEqual(['Araxxor', 'Zulrah'])
+  it('breaks ties alphabetically rather than by dataset order', () => {
+    const rows = sortByKills(
+      buildBossRows(
+        [boss('Zulrah', 'Zulrah'), boss('Araxxor', 'Araxxor')],
+        [entry('Zulrah', 10, 1), entry('Araxxor', 10, 2)],
+      ),
+    )
+    expect(rows.map((row) => row.boss.name)).toEqual(['Araxxor', 'Zulrah'])
   })
 
   it('does not mutate its input', () => {
-    const input = [
-      { name: 'Araxxor', kills: 1, rank: 1, ranked: true },
-      { name: 'Zulrah', kills: 9, rank: 1, ranked: true },
-    ]
-    sortByKills(input)
-    expect(input.map((row) => row.name)).toEqual(['Araxxor', 'Zulrah'])
+    const rows = buildBossRows(
+      [boss('Zulrah', 'Zulrah'), boss('Araxxor', 'Araxxor')],
+      [entry('Zulrah', 10, 1)],
+    )
+    sortByKills(rows)
+    expect(rows.map((row) => row.boss.name)).toEqual(['Zulrah', 'Araxxor'])
+  })
+})
+
+describe('sortByName', () => {
+  it('ignores kill counts entirely', () => {
+    const rows = sortByName(
+      buildBossRows(
+        [boss('Zulrah', 'Zulrah'), boss('Araxxor', null)],
+        [entry('Zulrah', 999, 1)],
+      ),
+    )
+    expect(rows.map((row) => row.boss.name)).toEqual(['Araxxor', 'Zulrah'])
   })
 })
 
 describe('unclassifiedActivities', () => {
-  it('reports names in neither list', () => {
+  it('reports names nothing accounts for', () => {
     expect(
-      unclassifiedActivities([
-        entry('Zulrah', 5),
-        entry('Clue Scrolls (all)', 22),
-        entry('Some Boss Released Tomorrow', null),
-      ]),
+      unclassifiedActivities(
+        [
+          entry('Zulrah', 5),
+          entry('Clue Scrolls (all)', 22),
+          entry('Some Boss Released Tomorrow', null),
+        ],
+        [boss('Zulrah', 'Zulrah')],
+      ),
     ).toEqual(['Some Boss Released Tomorrow'])
   })
 
-  it('is empty for a response carrying only known names', () => {
-    const activities = [...BOSS_NAMES, ...OTHER_ACTIVITY_NAMES].map((name) =>
-      entry(name, null),
-    )
-    expect(unclassifiedActivities(activities)).toEqual([])
+  it('is empty for the live activity names the dataset was built from', () => {
+    const live = [
+      ...OTHER_ACTIVITY_NAMES,
+      ...bosses
+        .map((b) => b.hiscoreName)
+        .filter((n): n is string => n !== null),
+    ].map((name) => entry(name, null))
+
+    expect(unclassifiedActivities(live, bosses)).toEqual([])
   })
 })
 
 describe('bossTotals', () => {
-  it('counts only bosses with kills, and sums published counts', () => {
-    const totals = bossTotals([
-      { name: 'Many', kills: 900, rank: 5, ranked: true },
-      { name: 'Few', kills: 3, rank: 900, ranked: true },
-      { name: 'Zero', kills: 0, rank: null, ranked: true },
-      { name: 'Unranked', kills: null, rank: null, ranked: false },
-    ])
-    expect(totals).toEqual({ killed: 2, total: 4, kills: 903 })
+  it('separates tracked from killed', () => {
+    const totals = bossTotals(
+      buildBossRows(
+        [
+          boss('Many', 'Many'),
+          boss('Few', 'Few'),
+          boss('Zero', 'Zero'),
+          boss('Unranked', 'Unranked'),
+          boss('Untracked', null),
+        ],
+        [
+          entry('Many', 900, 5),
+          entry('Few', 3, 900),
+          entry('Zero', 0),
+          entry('Unranked', null),
+        ],
+      ),
+    )
+    expect(totals).toEqual({ killed: 2, tracked: 4, total: 5, kills: 903 })
+  })
+})
+
+describe('the committed dataset', () => {
+  it('accounts for all 91 hiscore activities', () => {
+    // The tripwire the old hand-written list provided: 71 boss rows plus the
+    // 20 non-boss rows is the whole activities array. If Jagex adds one, this
+    // is where it shows up.
+    const tracked = bosses.filter((b) => b.hiscoreName !== null)
+    expect(tracked).toHaveLength(71)
+    expect(tracked.length + OTHER_ACTIVITY_NAMES.length).toBe(91)
+  })
+
+  it('has unique ids', () => {
+    const ids = bosses.map((b) => b.id)
+    expect(new Set(ids).size).toBe(ids.length)
+  })
+
+  it('has unique hiscore names, so no count lands twice', () => {
+    const names = bosses
+      .map((b) => b.hiscoreName)
+      .filter((n): n is string => n !== null)
+    expect(new Set(names).size).toBe(names.length)
+  })
+
+  it('points every variant at a boss that exists', () => {
+    const ids = new Set(bosses.map((b) => b.id))
+    for (const b of bosses) {
+      if (b.variantOf === null) continue
+      expect(ids.has(b.variantOf), `${b.id} -> ${b.variantOf}`).toBe(true)
+    }
+  })
+
+  it('gives every variant its own hiscore count', () => {
+    // A variant exists *because* the hiscores count it separately from the
+    // page it shares. One without a count would just be a duplicate row.
+    for (const b of bosses) {
+      if (b.variantOf === null) continue
+      expect(b.hiscoreName, b.id).not.toBeNull()
+    }
+  })
+
+  it('carries both of Vorkath’s versions rather than picking one', () => {
+    const vorkath = bosses.find((b) => b.id === 'vorkath')
+    expect(vorkath?.versions).toHaveLength(2)
+    expect(vorkath?.versions.map((v) => v.combatLevel)).toEqual([732, 392])
   })
 })
