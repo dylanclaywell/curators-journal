@@ -241,14 +241,21 @@ function summarise(status?: DiaryTierStatus): string {
                    put between states — only the bevel and colour move — so the
                    button keeps saying what it does rather than what has
                    happened. -->
+              <!-- Disabled for a tier the snapshot reports complete: clearing
+                   it would edit a local record that never held those tasks and
+                   the tier would stay checked. The store refuses too; this is
+                   what stops it looking like a button that doesn't work. -->
               <button
                 type="button"
+                :disabled="diaries.isTierSynced(tier.id)"
                 :aria-label="
-                  diaries.progressOf(tier.id) === 'done'
-                    ? `Clear all ${tier.tier} tasks`
-                    : `Check all ${tier.tier} tasks`
+                  diaries.isTierSynced(tier.id)
+                    ? `${tier.tier} was synced from RuneLite`
+                    : diaries.progressOf(tier.id) === 'done'
+                      ? `Clear all ${tier.tier} tasks`
+                      : `Check all ${tier.tier} tasks`
                 "
-                class="tap pressable bevel-oak flex w-11 shrink-0 items-center justify-center"
+                class="tap pressable bevel-oak flex w-11 shrink-0 items-center justify-center disabled:opacity-50"
                 :class="
                   diaries.progressOf(tier.id) === 'done'
                     ? 'bevel-oak-in bg-brown text-gold'
@@ -262,6 +269,16 @@ function summarise(status?: DiaryTierStatus): string {
 
             <span class="nums text-[12px] text-parchment-3">
               {{ summarise(status) }}
+            </span>
+
+            <!-- Says why the controls are disabled. Text rather than a glyph:
+                 the padlock in this list already means "requirements unmet",
+                 and one icon should not carry two meanings. -->
+            <span
+              v-if="diaries.isTierSynced(tier.id)"
+              class="text-[12px] text-parchment-3/80"
+            >
+              Synced from RuneLite. Turn off merging in Settings to change it.
             </span>
 
             <!-- The claim gate, stated separately from eligibility: the tasks
@@ -297,6 +314,7 @@ function summarise(status?: DiaryTierStatus): string {
                       ? 'text-parchment-3/60'
                       : 'text-parchment-2'
                   "
+                  :disabled="diaries.isTaskSynced(task.id)"
                   @click="diaries.toggleTask(task.id)"
                 >
                   <span

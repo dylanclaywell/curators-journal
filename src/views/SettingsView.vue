@@ -41,6 +41,11 @@ onMounted(() => {
   // sending 19 quests that do not exist. Panels ask a store for what they
   // need rather than relying on another panel having been opened first.
   void quests.ensureReady()
+  // The same for diary tiers: with no dataset there is no index to check
+  // synced tier ids against, so the count would read zero and drift could
+  // never be reported. It is a lazy chunk, and precached, so this costs a
+  // cache read rather than a network fetch once the app is installed.
+  void diaries.ensureDataset()
   window.addEventListener('resize', measure)
   // iOS reports interface-driven size changes here rather than on `resize`.
   window.visualViewport?.addEventListener('resize', measure)
@@ -214,8 +219,9 @@ async function onImportFileChosen(event: Event) {
       <h2 class="m-0 font-display text-[19px] leading-tight">RuneLite sync</h2>
 
       <p class="m-0 max-w-[52ch] text-[15px] text-ink-soft">
-        The companion plugin can send your quest state here, so you don't have
-        to enter it by hand. Paste the account hash it shows you.
+        The companion plugin can send your quest and achievement diary state
+        here, so you don't have to enter it by hand. Paste the account hash it
+        shows you.
       </p>
 
       <label class="flex flex-col gap-1">
@@ -239,13 +245,16 @@ async function onImportFileChosen(event: Event) {
         class="tap pressable-parchment bevel-in flex items-center gap-2 bg-parchment-2 px-2"
       >
         <input v-model="sync.mergeEnabled" type="checkbox" class="size-4" />
-        <span class="text-[15px] font-bold">Merge synced quests</span>
+        <span class="text-[15px] font-bold">
+          Merge synced quests and diaries
+        </span>
       </label>
 
       <p class="m-0 max-w-[52ch] text-[15px] text-ink-soft">
-        Merging only ever marks a quest further along, never back, and nothing
-        synced is written to your own record — so turning this off restores
-        exactly what you entered.
+        Merging only ever marks a quest or diary tier further along, never back,
+        and nothing synced is written to your own record — so turning this off
+        restores exactly what you entered. Diaries sync a whole tier at a time;
+        the game doesn't expose individual tasks.
       </p>
 
       <div class="flex gap-2">
@@ -266,8 +275,10 @@ async function onImportFileChosen(event: Event) {
 
       <p v-else-if="lastSynced" class="m-0 text-[15px] text-ink-soft">
         <span class="nums">{{ syncedCount }}</span>
-        quest<span v-if="syncedCount !== 1">s</span> synced, last updated
-        {{ lastSynced }}.
+        quest<span v-if="syncedCount !== 1">s</span> and
+        <span class="nums">{{ diaries.syncedTiers.length }}</span>
+        diary tier<span v-if="diaries.syncedTiers.length !== 1">s</span> synced,
+        last updated {{ lastSynced }}.
       </p>
 
       <!-- Drift, not an error: the plugin named a quest this dataset has no
@@ -279,6 +290,21 @@ async function onImportFileChosen(event: Event) {
         <span class="nums">{{ quests.syncUnknownIds.length }}</span>
         synced quest<span v-if="quests.syncUnknownIds.length !== 1">s</span>
         aren't in this app's quest list and were ignored.
+      </p>
+
+      <!-- The same drift report for diary tiers: the plugin sent a tier id
+           this dataset has no entry for, so build:diaries is out of step. -->
+      <p
+        v-if="diaries.syncUnknownTierIds.length"
+        class="m-0 max-w-[52ch] text-[15px] text-doing"
+      >
+        <span class="nums">{{ diaries.syncUnknownTierIds.length }}</span>
+        <template v-if="diaries.syncUnknownTierIds.length === 1">
+          synced diary tier isn't in this app's diary list and was ignored.
+        </template>
+        <template v-else>
+          synced diary tiers aren't in this app's diary list and were ignored.
+        </template>
       </p>
     </section>
 
