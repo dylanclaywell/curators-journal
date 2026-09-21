@@ -5,6 +5,7 @@
  * panels read data through them, never directly. Keeping this next to its only
  * callers makes that rule visible rather than aspirational.
  */
+import type { PricesResult } from '@/lib/prices'
 import type { SyncFetchResult } from '@/lib/sync'
 import type { AccountType, HiscoresResult } from '@/lib/types'
 
@@ -35,6 +36,39 @@ export async function fetchHiscores(
   } catch {
     // A body that isn't JSON means something between us and the route
     // intervened — a captive portal, or a stale service worker serving HTML.
+    return {
+      ok: false,
+      error: 'upstream_error',
+      message: `Unreadable response (${response.status}).`,
+    }
+  }
+}
+
+/**
+ * Reads Grand Exchange prices for a set of item ids.
+ *
+ * Same contract as the hiscores: failure is a value, and `offline` is the one
+ * case this has to invent. Note that an id missing from a successful result is
+ * an answer — the GE has no price for it — and not a gap to retry; see
+ * `PricesResult`.
+ */
+export async function fetchPrices(
+  ids: readonly number[],
+): Promise<PricesResult> {
+  if (ids.length === 0) return { ok: true, fetchedAt: Date.now(), prices: {} }
+
+  const params = new URLSearchParams({ ids: ids.join(',') })
+
+  let response: Response
+  try {
+    response = await fetch(`/api/prices?${params}`)
+  } catch {
+    return { ok: false, error: 'offline', message: 'No connection.' }
+  }
+
+  try {
+    return (await response.json()) as PricesResult
+  } catch {
     return {
       ok: false,
       error: 'upstream_error',

@@ -1210,7 +1210,7 @@ what made the swap this small.
 
 ## Phase 8: items and prices
 
-**Sketched 2026-09-21, nothing built.** Comes out of Phase 7: a drop table
+**Started 2026-09-21; 8a is built.** Comes out of Phase 7: a drop table
 answers "what does it give", and the next two questions are "what's it worth"
 and "where else do I get it". Both are joins the wiki can't do for you, which
 is the test for whether something belongs in this app at all.
@@ -1218,13 +1218,13 @@ is the test for whether something belongs in this app at all.
 It also absorbs the banked "Later — prices panel": that was always the same
 Worker-proxy shape, and the item work needs the proxy anyway.
 
-| Slice | Contents                                                                                 |
-| ----- | ---------------------------------------------------------------------------------------- |
-| 8a    | `/api/prices` — Worker proxy for `/latest` only, same shape as the hiscores route        |
-| 8b    | `src/data/items.json` from `/mapping`, fetched **at build time**, trimmed to what we use |
-| 8c    | Item → bosses index, inverted from the drop tables we already own                        |
-| 8d    | `/items/:id` detail; drop rows link to it                                                |
-| 8e    | A prices surface of its own, if 8d doesn't already answer the question                   |
+| Slice | Contents                                                                                 | State |
+| ----- | ---------------------------------------------------------------------------------------- | ----- |
+| 8a    | `/api/prices` — Worker proxy for `/latest` only, same shape as the hiscores route        | done  |
+| 8b    | `src/data/items.json` from `/mapping`, fetched **at build time**, trimmed to what we use |       |
+| 8c    | Item → bosses index, inverted from the drop tables we already own                        |       |
+| 8d    | `/items/:id` detail; drop rows link to it                                                |       |
+| 8e    | A prices surface of its own, if 8d doesn't already answer the question                   |       |
 
 **`prices.runescape.wiki/api/v1/osrs/mapping` is a genuine item dataset, free.**
 4662 entries, each with `id`, `name`, `examine`, `members`, `highalch`,
@@ -1279,6 +1279,44 @@ requirements one phase earlier, from the same cause: prose with no contract.
 **What replaces it is 8c** — which bosses drop an item is structured, ours
 already, and answers the neighbouring question honestly.
 
+**8a as built: the route takes ids, and that was the whole design.**
+`/latest` measured 343 KB across 4537 items, so answering `/api/prices` with the
+document was never on — a drop table wants a dozen prices and this is a PWA on a
+phone. `?ids=` is a comma-separated list, validated strictly and capped at 200,
+which is wider than the widest drop table and narrow enough that the endpoint
+can't be used to reassemble the dataset request by request. That is what the
+build-time item dataset (8b) is for.
+
+**One cache entry holds the document, not one per id set.** Keying the cache on
+the ids asked for would make the upstream request count scale with how many
+distinct drop tables get opened, which is backwards — every one of them wants
+the same 343 KB. Caching the document instead pins us to one request a minute
+however the app reads it, and the per-id filtering is free.
+
+**A missing id inside `ok: true` is the answer, not a gap.** This is the data
+half of the untradeables question below: `ok: true` means we heard from the
+source, and an absent id is the source saying there is no price. Callers must
+not retry it or render it as loading. `high` and `low` are separately nullable
+too — 2 of 4537 entries have no `high`, 12 have no `low` — and the times are
+carried rather than dropped because a price without its age invites planning
+around it: item 26247's last trade was October 2021.
+
+Times are converted to epoch **milliseconds** at parse and the fields are named
+`highTimeMs` / `lowTimeMs`. The upstream publishes seconds, and one object
+carrying `fetchedAt` in ms beside a `highTime` in seconds is how a date renders
+in 1970.
+
+**Two things about the test harness, learned here and costly to relearn:**
+
+- **`fetchMock` is gone in `@cloudflare/vitest-pool-workers` 0.22.** Every
+  example on the web still imports it from `cloudflare:test`. Stub the global
+  `fetch` instead — the `main` worker runs in the test isolate, which the
+  package's own types say on `SELF`.
+- **The Cache API is real under the test runtime**, not the no-op the hiscores
+  route's comment assumes. It is shared across a file, so the first success
+  answered every failure case and they all passed with a 200 until
+  `prices-route.test.ts` started evicting the key in `beforeEach`.
+
 **Open questions for the phase:**
 
 - **2525 drop rows becoming links changes the page.** Internal links cost no
@@ -1291,9 +1329,11 @@ max-age=60`, so 60s is the freshness they intend and the Worker's TTL should
   match it rather than being guessed. Same number as the hiscores route, for a
   better reason — there it is pinned to an unmeasured recompute interval, here
   the upstream states it.
-- **Untradeables need a shape.** A third of drop names have no GE entry, and
-  "no price" has to read as a fact about the item rather than a failure to
-  load — the same distinction the boss panel draws for kill counts.
+- **Untradeables need a shape — the UI half.** A third of drop names have no GE
+  entry, and "no price" has to read as a fact about the item rather than a
+  failure to load — the same distinction the boss panel draws for kill counts.
+  8a settled this in the data (an absent id inside a successful result is the
+  answer); how it renders is still open.
 
 ## Open questions
 

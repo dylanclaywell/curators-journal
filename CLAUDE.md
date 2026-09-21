@@ -74,11 +74,19 @@ and `tsconfig.node.json` both include `src/lib` with no exclusions and would
 try to compile a colocated test as Worker source. Nothing in `test/` is
 covered by `npm run typecheck`.
 
-Three things worth knowing, since examples on the web predate them:
+Five things worth knowing, since examples on the web predate them:
 
 - **`defineWorkersConfig` and the `/config` subpath are gone** as of 0.22,
   replaced by a `cloudflareTest()` Vite plugin used from a normal
   `defineConfig`.
+- **`fetchMock` is gone as of 0.22 too**, and every example still imports it
+  from `cloudflare:test`. To stand in for an upstream, stub the global `fetch`:
+  the `main` worker runs in the test isolate, so a global mock reaches the
+  handler. `test/prices-route.test.ts` is the pattern.
+- **The Cache API is real here, and shared across a test file.** So a route
+  that caches will answer later tests in the same file from the first one's
+  response — which is how `/api/prices`' failure cases all passed with a 200
+  until the test evicted the key in `beforeEach`. Evict it if the route caches.
 - **Storage is isolated per test _file_, not per test.** Files run concurrently
   and each gets its own storage, but tests inside one file share a database —
   so `test/setup.ts` empties the tables before each test, or the suite quietly

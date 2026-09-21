@@ -13,6 +13,7 @@
  */
 
 import { handleHiscores } from './routes/hiscores'
+import { handlePrices } from './routes/prices'
 import { handleSync } from './routes/sync'
 
 export interface Env {
@@ -45,6 +46,8 @@ export default {
     switch (url.pathname) {
       case '/api/hiscores':
         return handleHiscores(request, ctx)
+      case '/api/prices':
+        return handlePrices(request, ctx)
       case '/api/sync':
         return handleSync(request, env)
       default:
