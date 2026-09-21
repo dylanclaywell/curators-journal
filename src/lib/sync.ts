@@ -54,6 +54,19 @@ const ID_PATTERN = /^[a-z0-9-]+$/
  */
 const ACCOUNT_HASH_PATTERN = /^\d{1,20}$/
 
+/**
+ * The one definition of a well-formed account hash, for everything that
+ * accepts one: the snapshot validator, the Worker's read route, and the
+ * `/sync?hash=` link the plugin's QR code opens. It was written out twice
+ * before, and a link handler that accepted something the API then rejected
+ * would only fail after the player had confirmed it.
+ *
+ * Shape only — a hash that passes may belong to nobody.
+ */
+export function isAccountHash(value: unknown): value is string {
+  return typeof value === 'string' && ACCOUNT_HASH_PATTERN.test(value)
+}
+
 const PROGRESS_STATES: ReadonlySet<string> = new Set([
   'todo',
   'doing',
@@ -131,10 +144,7 @@ export function parseSyncSnapshot(raw: unknown): SyncParseResult {
     )
   }
 
-  if (
-    typeof obj.accountHash !== 'string' ||
-    !ACCOUNT_HASH_PATTERN.test(obj.accountHash)
-  ) {
+  if (!isAccountHash(obj.accountHash)) {
     return fail('Snapshot has a missing or invalid account hash.')
   }
 

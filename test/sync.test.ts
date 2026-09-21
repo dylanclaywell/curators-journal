@@ -6,6 +6,7 @@
  */
 import { describe, expect, it } from 'vitest'
 import {
+  isAccountHash,
   isBelowSynced,
   mergeProgress,
   parseStoredSnapshot,
@@ -92,6 +93,27 @@ describe('parseSyncSnapshot', () => {
     const result = parseSyncSnapshot({ ...valid, accountHash: '-1' })
     expect(result.ok).toBe(false)
     if (!result.ok) expect(result.error).toMatch(/account hash/i)
+  })
+})
+
+describe('isAccountHash', () => {
+  it.each(['1', '1234567890', '12345678901234567890'])('accepts %s', (v) => {
+    expect(isAccountHash(v)).toBe(true)
+  })
+
+  it.each([
+    ['empty', ''],
+    ['logged-out sentinel', '-1'],
+    ['non-numeric', 'abc'],
+    ['padded with a space', ' 123'],
+    ['trailing newline', '123\n'],
+    ['decimal', '1.5'],
+    ['too long', '1'.repeat(21)],
+    ['a number rather than a string', 1234567890],
+    ['null', null],
+    ['undefined', undefined],
+  ])('rejects %s', (_label, value) => {
+    expect(isAccountHash(value)).toBe(false)
   })
 })
 

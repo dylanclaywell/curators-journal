@@ -19,6 +19,7 @@
  * row rather than accumulate rows.
  */
 import {
+  isAccountHash,
   parseStoredSnapshot,
   parseSyncSnapshot,
   type SyncError,
@@ -35,9 +36,6 @@ import type { Env } from '../index'
  * an order of magnitude under this.
  */
 const MAX_BODY_BYTES = 64 * 1024
-
-/** `getAccountHash()` as a decimal string — the same rule the validator uses. */
-const ACCOUNT_HASH_PATTERN = /^\d{1,20}$/
 
 function json(
   result: SyncFetchResult | SyncWriteResult,
@@ -65,7 +63,7 @@ interface SnapshotRow {
 
 async function readSnapshot(request: Request, env: Env): Promise<Response> {
   const hash = new URL(request.url).searchParams.get('hash') ?? ''
-  if (!ACCOUNT_HASH_PATTERN.test(hash)) {
+  if (!isAccountHash(hash)) {
     return fail('invalid_request', 'That is not an account hash.', 400)
   }
 
