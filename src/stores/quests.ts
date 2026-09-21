@@ -12,7 +12,7 @@ import {
   type SkillLevels,
 } from '@/lib/quests'
 import type { Quest, QuestDataset } from '@/lib/types'
-import { mergeProgress, reconcileSnapshot } from '@/lib/sync'
+import { isBelowSynced, mergeProgress, reconcileSnapshot } from '@/lib/sync'
 import { useHiscoresStore } from './hiscores'
 import { useSettingsStore } from './settings'
 import { useSyncStore } from './sync'
@@ -213,7 +213,23 @@ export const useQuestsStore = defineStore('quests', () => {
     return progressOf(id) !== localProgressOf(id)
   }
 
+  /** What the snapshot alone says, ignoring the player's own record. */
+  function syncedProgressOf(id: string): QuestProgress {
+    return syncedProgress.value[id] ?? 'todo'
+  }
+
+  /**
+   * True when choosing `state` would change nothing on screen because the
+   * snapshot already outranks it. The detail view disables those options;
+   * `setProgress` refuses them too, so no caller can quietly write a value the
+   * merge will override.
+   */
+  function isProgressLocked(id: string, state: QuestProgress): boolean {
+    return isBelowSynced(state, syncedProgressOf(id))
+  }
+
   function setProgress(id: string, state: QuestProgress): void {
+    if (isProgressLocked(id, state)) return
     if (state === 'todo') {
       // Delete rather than store the default, so the object stays a record of
       // what was done rather than a row per quest.
@@ -324,6 +340,8 @@ export const useQuestsStore = defineStore('quests', () => {
     progressOf,
     localProgressOf,
     isSynced,
+    syncedProgressOf,
+    isProgressLocked,
     setProgress,
     cycleProgress,
     isGoal,

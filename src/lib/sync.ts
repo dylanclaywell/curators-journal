@@ -306,6 +306,23 @@ export function mergeProgress(
   return merged
 }
 
+/**
+ * True when the snapshot already outranks `option`, so choosing it would leave
+ * the displayed state exactly where it was.
+ *
+ * Because the merge takes the maximum, the player can advance a quest past what
+ * was synced but never below it. Offering the lower options anyway edits a
+ * local record the display then ignores — a control that appears not to work.
+ * This is the rule for which ones to withhold. Equal is not outranked: picking
+ * the synced state itself is harmless and lets the player pin it locally.
+ */
+export function isBelowSynced(
+  option: QuestProgress,
+  synced: QuestProgress,
+): boolean {
+  return RANK[option] < RANK[synced]
+}
+
 /** Why a sync request was refused. Mirrors `HiscoresResult`'s error union. */
 export type SyncError =
   | 'invalid_request'

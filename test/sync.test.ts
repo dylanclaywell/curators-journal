@@ -6,6 +6,7 @@
  */
 import { describe, expect, it } from 'vitest'
 import {
+  isBelowSynced,
   mergeProgress,
   parseStoredSnapshot,
   parseSyncSnapshot,
@@ -222,6 +223,44 @@ describe('reconcileTiers', () => {
       tiers: [],
       unknownIds: [],
     })
+  })
+})
+
+describe('isBelowSynced', () => {
+  // The options the merge would silently override: picking one edits the
+  // local record and the display doesn't move.
+  it('locks every option below a synced done', () => {
+    expect(isBelowSynced('todo', 'done')).toBe(true)
+    expect(isBelowSynced('doing', 'done')).toBe(true)
+  })
+
+  it('leaves the synced state itself and anything above it open', () => {
+    expect(isBelowSynced('done', 'done')).toBe(false)
+    expect(isBelowSynced('doing', 'doing')).toBe(false)
+    expect(isBelowSynced('done', 'doing')).toBe(false)
+  })
+
+  it('locks only todo below a synced doing', () => {
+    expect(isBelowSynced('todo', 'doing')).toBe(true)
+  })
+
+  it('locks nothing when the snapshot says nothing', () => {
+    for (const option of ['todo', 'doing', 'done'] as const) {
+      expect(isBelowSynced(option, 'todo')).toBe(false)
+    }
+  })
+
+  // Agrees with the merge: an option is locked exactly when choosing it could
+  // not change the merged result.
+  it('matches mergeProgress for every pair', () => {
+    const states = ['todo', 'doing', 'done'] as const
+    for (const synced of states) {
+      for (const option of states) {
+        const shown = mergeProgress({ q: option }, { q: synced }).q
+        const changesDisplay = shown === option
+        expect(isBelowSynced(option, synced)).toBe(!changesDisplay)
+      }
+    }
   })
 })
 

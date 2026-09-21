@@ -202,6 +202,17 @@ const PROGRESS_OPTIONS: { value: QuestProgress; label: string }[] = [
 ]
 
 /**
+ * The snapshot's state for this quest, when it says anything. `todo` is the
+ * absence of an entry, so there is nothing to explain and nothing is locked.
+ */
+const syncedLabel = computed(() => {
+  if (!quest.value) return null
+  const synced = quests.syncedProgressOf(quest.value.id)
+  if (synced === 'todo') return null
+  return PROGRESS_OPTIONS.find((opt) => opt.value === synced)?.label ?? null
+})
+
+/**
  * `null` means unknown, not zero — the whole reason `evaluateQuest` reports
  * `have: null` instead of defaulting it. A skill missing from `quests.levels`
  * only happens when there's no snapshot at all (every ranked *and* unranked
@@ -314,17 +325,24 @@ function statusStripeClass(id: string): string {
             v-for="opt in PROGRESS_OPTIONS"
             :key="opt.value"
             type="button"
-            class="tap pressable bevel-oak flex-1 px-3 text-[13px] font-bold"
+            class="tap pressable bevel-oak flex-1 px-3 text-[13px] font-bold disabled:opacity-50"
             :class="
               status?.progress === opt.value
                 ? 'bevel-oak-in bg-brown text-gold engraved'
                 : 'bg-brown-lt text-parchment-3'
             "
+            :disabled="quests.isProgressLocked(quest.id, opt.value)"
             @click="quests.setProgress(quest.id, opt.value)"
           >
             {{ opt.label }}
           </button>
         </div>
+        <!-- Says why some options are greyed out. Without it a disabled
+             button is just a control that stopped working. -->
+        <p v-if="syncedLabel" class="m-0 text-[13px] text-ink-soft">
+          Synced from RuneLite as {{ syncedLabel }}. Turn off merging in
+          Settings to change it.
+        </p>
       </section>
 
       <!-- Queueing belongs here, not only on the list row it landed on in 4c.
