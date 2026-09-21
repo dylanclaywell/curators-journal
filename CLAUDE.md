@@ -158,11 +158,20 @@ stay free of DOM and Node APIs.
 
 **Everything third-party goes through the Worker.** Not optional:
 
-| Source                          | Why it can't be called from the browser                                  |
-| ------------------------------- | ------------------------------------------------------------------------ |
-| `secure.runescape.com` hiscores | No CORS headers                                                          |
-| `prices.runescape.wiki`         | Wants a descriptive `User-Agent`; that's a forbidden header in `fetch()` |
-| `oldschool.runescape.wiki`      | CORS works with `origin=*`, but same UA etiquette                        |
+| Source                          | Why it doesn't get called from the browser                               | Kind      |
+| ------------------------------- | ------------------------------------------------------------------------ | --------- |
+| `secure.runescape.com` hiscores | No CORS headers — the request simply fails                               | can't     |
+| `prices.runescape.wiki`         | Wants a descriptive `User-Agent`; that's a forbidden header in `fetch()` | shouldn't |
+| `oldschool.runescape.wiki`      | CORS works with `origin=*`, but same UA etiquette                        | shouldn't |
+
+**The two kinds are not the same strength and it's worth knowing which you're
+holding.** Only the hiscores are impossible from a browser. Both wiki hosts
+send `access-control-allow-origin: *` (measured), so a direct call would
+_work_ — and would ship a request the operator explicitly asked not to
+receive, since a browser cannot set `User-Agent` at all. The Worker is how we
+comply, not how we make it function. Shared edge caching is a second benefit
+rather than the reason: both wiki hosts sit behind Cloudflare themselves, so
+direct calls would hit their CDN rather than their origin.
 
 **`sync.runescape.wiki` is off limits.** WikiSync is a RuneLite plugin that
 publishes a player's quest state, achievement diary tiers, levels and combat

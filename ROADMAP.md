@@ -63,9 +63,9 @@ are a mode inside the Quests panel, not a tab of their own.
 | 5 — RuneLite sync               | half  | Web + Worker side done (5a–5c); the plugin itself (5d–5f) not started          |
 | 5+ — Diary sync and linking     | done  | Web side of 5g–5k: diary tiers on the pipe, locked rows, `/sync?hash=` link    |
 | 6 — Achievement diaries         | done  | Dataset, engine, store, UI. 6e settled: a mode inside Quests, mode in the path |
-| 7 — Bosses                      | half  | 7a–7c built: tab bar, the join, the dataset. Panel (7d) and drops (7e) to come |
+| 7 — Bosses                      | done  | 7a–7f: tab bar, the join, dataset, panel, detail, weekly refresh + quest links |
+| 8 — Items and prices            | —     | Sketched only. Worker price proxy, item dataset, item → bosses; absorbs below  |
 | Later — ironman requirements    | —     | Currently dropped entirely; see below                                          |
-| Later — prices panel            | —     | `prices.runescape.wiki`, same Worker-proxy shape                               |
 | Later — wide-and-shallow layout | —     | Tabs to a left strip when short and wide; see CLAUDE.md                        |
 | Later — plugin manifests        | —     | The panel registry is already the seam                                         |
 
@@ -326,11 +326,12 @@ the docked case is exactly where the queue matters most.
 
 Consequences worth holding onto:
 
-- **Four tabs is the label limit.** `.tab-strip:has(.tab:nth-child(5))` already
-  drops every label at five, so Queue · Quests · Stats · About keeps its labels
-  and the banked prices panel would silently flip the bar to icon-only. That's
-  self-enforcing, not a thing to remember — but decide whether prices eventually
-  earns a tab or lives inside Stats.
+- ~~**Four tabs is the label limit.**~~ True when written, and superseded in
+  7a: stage 2 is now width-per-tab (76px × count) rather than a flat
+  `:has(.tab:nth-child(5))`, so five labels survive on the docked iPad and
+  collapse only at the 375px phone floor. The question it raised — does a
+  panel earn a tab or live inside another — is still the right one to ask;
+  diaries answered "inside Quests" and bosses answered "its own tab".
 - **Icons:** `scroll` for Queue, `openBook` for Quests. Both game-icons, and
   distinguishable at 20px, which matters once labels go. Note the row then mixes
   two packs — game-icons on the 512 grid beside Phosphor's `chart` and `gear` on
@@ -1207,6 +1208,93 @@ off. Switching modes navigates with `replace`, so toggling doesn't stack
 history. `DiaryList.vue` is unchanged — being separate from either view is
 what made the swap this small.
 
+## Phase 8: items and prices
+
+**Sketched 2026-09-21, nothing built.** Comes out of Phase 7: a drop table
+answers "what does it give", and the next two questions are "what's it worth"
+and "where else do I get it". Both are joins the wiki can't do for you, which
+is the test for whether something belongs in this app at all.
+
+It also absorbs the banked "Later — prices panel": that was always the same
+Worker-proxy shape, and the item work needs the proxy anyway.
+
+| Slice | Contents                                                                                 |
+| ----- | ---------------------------------------------------------------------------------------- |
+| 8a    | `/api/prices` — Worker proxy for `/latest` only, same shape as the hiscores route        |
+| 8b    | `src/data/items.json` from `/mapping`, fetched **at build time**, trimmed to what we use |
+| 8c    | Item → bosses index, inverted from the drop tables we already own                        |
+| 8d    | `/items/:id` detail; drop rows link to it                                                |
+| 8e    | A prices surface of its own, if 8d doesn't already answer the question                   |
+
+**`prices.runescape.wiki/api/v1/osrs/mapping` is a genuine item dataset, free.**
+4662 entries, each with `id`, `name`, `examine`, `members`, `highalch`,
+`lowalch`, `limit`, `value`, `icon` — no wiki scraping, no parsing, no
+`{{Infobox Item}}`. Note the `icon` field is a Jagex sprite and **NOTICE.md's
+"don't add more Jagex assets casually" applies** — the dataset can carry the
+field without the app rendering it.
+
+**Only `/latest` is proxied, and the proxy is elective here — unlike the
+hiscores.** Measured 2026-09-21:
+
+- **CORS is open**: `access-control-allow-origin: *`. A browser _could_ call
+  this directly, which is not true of the hiscores, where the Worker is the
+  only way to reach them at all.
+- **The reason to proxy anyway is the User-Agent.** The wiki asks callers to
+  identify themselves so a misbehaving client can be contacted, and
+  `User-Agent` is a forbidden header in `fetch()` — a browser silently drops
+  it. A direct call cannot comply, by construction.
+- **The load argument is weaker than it looks.** Their response carries
+  `cache-control: public, must-revalidate, max-age=60` and came back
+  `cf-cache-status: HIT`; they are behind Cloudflare themselves, so direct
+  calls would hit their CDN rather than their origin. Proxying still cuts
+  requests-to-them, but it is not rescuing a fragile service.
+- **`/mapping` needs no proxy at all.** It is static, so it is fetched at
+  build time into the committed dataset and never requested at runtime — the
+  same reasoning that keeps quests and diaries out of the network path.
+
+**The item join works, measured:** 657 of the 893 distinct names in our drop
+tables resolve to a GE item id by name (case makes no difference — it was
+checked). The other 236 are overwhelmingly untradeable — pets (`Baron`,
+`Baby Mole`), quest and unique items (`Ancient shard`, `Blood quartz`) — so
+they have no price to show, and the failure mode is a blank rather than a
+wrong number. Trimming the mapping to items we actually reference keeps this
+well under the datasets that already exist.
+
+**Ruled out before starting: "needed for" from `quests.json`.** The appeal was
+"this drop is wanted by quest X", but `itemsRequired` is **free prose**, not
+item names — 1294 lines like "At least 12 nails of any kind (Note: nails may
+bend!)". Matching item names into it finds 825 of those lines and is wrong in
+ways name-matching cannot see:
+
+- `"Knife or a slash weapon (except abyssal whip, abyssal tentacle…)"` matches
+  **Abyssal whip**, which the line explicitly excludes.
+- `"Thread. Not required if using costume needle."` matches Needle and Thread
+  in a sentence saying they are conditional.
+- `"Fur, bear fur, grey wolf fur, fox fur, or jaguar fur"` matches three items
+  that are alternatives, not a list.
+
+Negation, conditionals and disjunction each invert or soften the claim and
+none are visible to a substring match. This is the same failure as boss
+requirements one phase earlier, from the same cause: prose with no contract.
+**What replaces it is 8c** — which bosses drop an item is structured, ours
+already, and answers the neighbouring question honestly.
+
+**Open questions for the phase:**
+
+- **2525 drop rows becoming links changes the page.** Internal links cost no
+  app exit, but every one still takes `.tap` and its 44px floor. Linking only
+  rows that resolve to an item may be the answer; decide against the rendered
+  page, not in the abstract.
+- ~~**Price freshness has no obvious cadence.**~~ Answered by asking the
+  source: `/latest` returns `cache-control: public, must-revalidate,
+max-age=60`, so 60s is the freshness they intend and the Worker's TTL should
+  match it rather than being guessed. Same number as the hiscores route, for a
+  better reason — there it is pinned to an unmeasured recompute interval, here
+  the upstream states it.
+- **Untradeables need a shape.** A third of drop names have no GE entry, and
+  "no price" has to read as a fact about the item rather than a failure to
+  load — the same distinction the boss panel draws for kill counts.
+
 ## Open questions
 
 1. **How often do the hiscores actually recompute?** Unmeasured, and it's the
@@ -1310,7 +1398,6 @@ bosses Jagex publishes them for, and stats, requirements and drop tables for all
 | 7d    | The `/bosses` panel: registry entry, store with a dynamic import, the list (`75a4619`)        | done  |
 | 7e    | Boss detail view; drops, fight prose and locations → `public/boss-detail/<id>.json`           | done  |
 | 7f    | `check:drift` wiring; "Appears in" quest links; requirements ruled out on evidence            | done  |
-| 7g    | Items: `/items/:id`, GE prices via the banked Worker proxy, "needed for" from `quests.json`   | —     |
 
 **The wiki is the spine and the hiscores decorate it** — the opposite of quests
 and diaries, and deliberate. The hiscores publish counts for 71 bosses; the
