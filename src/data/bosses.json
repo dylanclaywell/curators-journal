@@ -1,0 +1,5741 @@
+{
+  "generatedAt": "2026-09-21",
+  "sources": [
+    "https://oldschool.runescape.wiki/w/Category:Bosses (boss pages, CC BY-NC-SA 3.0)",
+    "https://secure.runescape.com/m=hiscore_oldschool/index_lite.json (activity names)"
+  ],
+  "bosses": [
+    {
+      "id": "abyssal-sire",
+      "name": "Abyssal Sire",
+      "hiscoreName": "Abyssal Sire",
+      "variantOf": null,
+      "page": "Abyssal Sire",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Abyssal_Sire",
+      "members": true,
+      "examine": null,
+      "slayerCategories": [
+        "Abyssal Demons"
+      ],
+      "versions": [
+        {
+          "label": "Phase 1",
+          "combatLevel": 350,
+          "hitpoints": 425,
+          "maxHit": "66 (Melee), 96 (with explosion)",
+          "attackStyles": [
+            "Melee"
+          ],
+          "attackSpeed": 7,
+          "slayerLevel": 85,
+          "slayerXp": 478
+        },
+        {
+          "label": "Phase 2",
+          "combatLevel": 350,
+          "hitpoints": 425,
+          "maxHit": "66 (Melee), 96 (with explosion)",
+          "attackStyles": [
+            "Melee"
+          ],
+          "attackSpeed": 7,
+          "slayerLevel": 85,
+          "slayerXp": 478
+        },
+        {
+          "label": "Phase 3 (stage 1)",
+          "combatLevel": 350,
+          "hitpoints": 425,
+          "maxHit": "66 (Melee), 96 (with explosion)",
+          "attackStyles": [
+            "Melee"
+          ],
+          "attackSpeed": 7,
+          "slayerLevel": 85,
+          "slayerXp": 478
+        },
+        {
+          "label": "Phase 3 (stage 2)",
+          "combatLevel": 350,
+          "hitpoints": 425,
+          "maxHit": "66 (Melee), 96 (with explosion)",
+          "attackStyles": [
+            "Melee"
+          ],
+          "attackSpeed": 7,
+          "slayerLevel": 85,
+          "slayerXp": 478
+        }
+      ]
+    },
+    {
+      "id": "agrith-naar",
+      "name": "Agrith Naar",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Agrith Naar",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Agrith_Naar",
+      "members": true,
+      "examine": "A summoned demon.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 100,
+          "hitpoints": 95,
+          "maxHit": "10 (Crush), 10 (Magic)",
+          "attackStyles": [
+            "Crush",
+            "Magic"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "agrith-na-na",
+      "name": "Agrith-Na-Na",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Agrith-Na-Na",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Agrith-Na-Na",
+      "members": true,
+      "examine": "Big, scary, angry and a good source of energy.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 146,
+          "hitpoints": 200,
+          "maxHit": "16",
+          "attackStyles": [
+            "Crush",
+            "Magic"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "ahrim-the-blighted",
+      "name": "Ahrim the Blighted",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Ahrim the Blighted",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Ahrim_the_Blighted",
+      "members": true,
+      "examine": "A vengeful spirit corrupted by dark magic.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 98,
+          "hitpoints": 100,
+          "maxHit": "20",
+          "attackStyles": [
+            "Magic"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": 102.5
+        }
+      ]
+    },
+    {
+      "id": "akkha",
+      "name": "Akkha",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Akkha",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Akkha",
+      "members": true,
+      "examine": "A manifestation of vengeance.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 337,
+          "hitpoints": 400,
+          "maxHit": "55",
+          "attackStyles": [
+            "Slash",
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "alchemical-hydra",
+      "name": "Alchemical Hydra",
+      "hiscoreName": "Alchemical Hydra",
+      "variantOf": null,
+      "page": "Alchemical Hydra",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Alchemical_Hydra",
+      "members": true,
+      "examine": "A ferocious Alchemical Hydra!",
+      "slayerCategories": [
+        "Hydras"
+      ],
+      "versions": [
+        {
+          "label": "Serpentine",
+          "combatLevel": 426,
+          "hitpoints": 1100,
+          "maxHit": "17x2 (default), 26x2 (empowered)",
+          "attackStyles": [
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": 95,
+          "slayerXp": 1320
+        },
+        {
+          "label": "Electric",
+          "combatLevel": 426,
+          "hitpoints": 1100,
+          "maxHit": "35 (default), 26x2 (empowered)",
+          "attackStyles": [
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": 95,
+          "slayerXp": 1320
+        },
+        {
+          "label": "Fire",
+          "combatLevel": 426,
+          "hitpoints": 1100,
+          "maxHit": "35 (default), 52 (empowered)",
+          "attackStyles": [
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": 95,
+          "slayerXp": 1320
+        },
+        {
+          "label": "Extinguished",
+          "combatLevel": 426,
+          "hitpoints": 1100,
+          "maxHit": "55",
+          "attackStyles": [
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": 95,
+          "slayerXp": 1320
+        }
+      ]
+    },
+    {
+      "id": "amoxliatl",
+      "name": "Amoxliatl",
+      "hiscoreName": "Amoxliatl",
+      "variantOf": null,
+      "page": "Amoxliatl",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Amoxliatl",
+      "members": true,
+      "examine": "A powerful frost nagua.",
+      "slayerCategories": [
+        "Lesser Nagua"
+      ],
+      "versions": [
+        {
+          "label": "Post-quest",
+          "combatLevel": 263,
+          "hitpoints": 520,
+          "maxHit": "22 (standard)34 (Icicle Crash)",
+          "attackStyles": [
+            "Magic"
+          ],
+          "attackSpeed": 8,
+          "slayerLevel": 48,
+          "slayerXp": 546
+        },
+        {
+          "label": "Quest",
+          "combatLevel": 226,
+          "hitpoints": 400,
+          "maxHit": "16 (standard)? (Icicle Crash)",
+          "attackStyles": [
+            "Magic"
+          ],
+          "attackSpeed": 8,
+          "slayerLevel": 48,
+          "slayerXp": 420
+        }
+      ]
+    },
+    {
+      "id": "araxxor",
+      "name": "Araxxor",
+      "hiscoreName": "Araxxor",
+      "variantOf": null,
+      "page": "Araxxor",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Araxxor",
+      "members": true,
+      "examine": "A seriously scary spider.",
+      "slayerCategories": [
+        "Araxytes",
+        "Spiders"
+      ],
+      "versions": [
+        {
+          "label": "In combat",
+          "combatLevel": 890,
+          "hitpoints": 1020,
+          "maxHit": "38 (melee) 21 (magic) 34 (ranged)",
+          "attackStyles": [
+            "Crush",
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": 92,
+          "slayerXp": 1708
+        },
+        {
+          "label": "Enraged",
+          "combatLevel": 890,
+          "hitpoints": 1020,
+          "maxHit": "38 (melee) 21 (magic) 34 (ranged)",
+          "attackStyles": [
+            "All"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": 92,
+          "slayerXp": 1708
+        }
+      ]
+    },
+    {
+      "id": "arrg",
+      "name": "Arrg",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Arrg",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Arrg",
+      "members": true,
+      "examine": "A massive, scary-looking troll.",
+      "slayerCategories": [
+        "Trolls"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 113,
+          "hitpoints": 140,
+          "maxHit": "38 (melee), 30 (ranged)",
+          "attackStyles": [
+            "Slash",
+            "Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 150.5
+        }
+      ]
+    },
+    {
+      "id": "artio",
+      "name": "Artio",
+      "hiscoreName": "Artio",
+      "variantOf": null,
+      "page": "Artio",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Artio",
+      "members": true,
+      "examine": "She looks mad that her forest has died.",
+      "slayerCategories": [
+        "Bears"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 320,
+          "hitpoints": 450,
+          "maxHit": "35 (Crush), 50 (Magic), 17 (Ranged)",
+          "attackStyles": [
+            "Crush",
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": 518
+        }
+      ]
+    },
+    {
+      "id": "arzinian-avatar-of-magic",
+      "name": "Arzinian Avatar of Magic",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Arzinian Avatar of Magic",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Arzinian_Avatar_of_Magic",
+      "members": true,
+      "examine": "It is the avatar of the Arzinian Being of Bordanzan, representing magic.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Invincible",
+          "combatLevel": null,
+          "hitpoints": 200,
+          "maxHit": "15",
+          "attackStyles": [
+            "Magic"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Level 125",
+          "combatLevel": 125,
+          "hitpoints": 100,
+          "maxHit": "13",
+          "attackStyles": [
+            "Magic"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Level 75",
+          "combatLevel": 75,
+          "hitpoints": 70,
+          "maxHit": "8",
+          "attackStyles": [
+            "Magic"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "arzinian-avatar-of-ranging",
+      "name": "Arzinian Avatar of Ranging",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Arzinian Avatar of Ranging",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Arzinian_Avatar_of_Ranging",
+      "members": true,
+      "examine": "It is the avatar of the Arzinian Being of Bordanzan, representing ranging.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Invincible",
+          "combatLevel": null,
+          "hitpoints": 200,
+          "maxHit": "17",
+          "attackStyles": [
+            "Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Level 125",
+          "combatLevel": 125,
+          "hitpoints": 100,
+          "maxHit": "14",
+          "attackStyles": [
+            "Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Level 75",
+          "combatLevel": 75,
+          "hitpoints": 70,
+          "maxHit": "9",
+          "attackStyles": [
+            "Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "arzinian-avatar-of-strength",
+      "name": "Arzinian Avatar of Strength",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Arzinian Avatar of Strength",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Arzinian_Avatar_of_Strength",
+      "members": true,
+      "examine": "It is the avatar of the Arzinian Being of Bordanzan, representing strength.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Invincible",
+          "combatLevel": null,
+          "hitpoints": 200,
+          "maxHit": "14",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Level 125",
+          "combatLevel": 125,
+          "hitpoints": 100,
+          "maxHit": "11",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Level 75",
+          "combatLevel": 75,
+          "hitpoints": 70,
+          "maxHit": "7",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "arzinian-being-of-bordanzan",
+      "name": "Arzinian Being of Bordanzan",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Arzinian Being of Bordanzan",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Arzinian_Being_of_Bordanzan",
+      "members": true,
+      "examine": null,
+      "slayerCategories": [],
+      "versions": []
+    },
+    {
+      "id": "ba-ba",
+      "name": "Ba-Ba",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Ba-Ba",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Ba-Ba",
+      "members": true,
+      "examine": "A big ol' monke.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 359,
+          "hitpoints": 380,
+          "maxHit": "24",
+          "attackStyles": [
+            "Crush",
+            "Ranged"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "barrelchest",
+      "name": "Barrelchest",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Barrelchest",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Barrelchest",
+      "members": true,
+      "examine": "It's trying to mash you flat! Less examine, more fight!",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 190,
+          "hitpoints": 134,
+          "maxHit": "35",
+          "attackStyles": [
+            "Crush",
+            "Ranged"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "barrows",
+      "name": "Barrows",
+      "hiscoreName": "Barrows Chests",
+      "variantOf": null,
+      "page": "Barrows",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Barrows",
+      "members": true,
+      "examine": null,
+      "slayerCategories": [],
+      "versions": []
+    },
+    {
+      "id": "barrows-brothers",
+      "name": "Barrows brothers",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Barrows brothers",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Barrows_brothers",
+      "members": false,
+      "examine": null,
+      "slayerCategories": [],
+      "versions": []
+    },
+    {
+      "id": "black-demon",
+      "name": "Black demon",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Black demon",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Black_demon",
+      "members": true,
+      "examine": "A big, scary, jet-black demon.",
+      "slayerCategories": [
+        "Black Demons"
+      ],
+      "versions": [
+        {
+          "label": "Level 172",
+          "combatLevel": 172,
+          "hitpoints": 157,
+          "maxHit": "16",
+          "attackStyles": [
+            "Slash"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 157
+        },
+        {
+          "label": "Level 178",
+          "combatLevel": 178,
+          "hitpoints": 160,
+          "maxHit": "16",
+          "attackStyles": [
+            "Slash"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 160
+        },
+        {
+          "label": "Level 184",
+          "combatLevel": 184,
+          "hitpoints": 170,
+          "maxHit": "17",
+          "attackStyles": [
+            "Slash"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 170
+        },
+        {
+          "label": "Level 188",
+          "combatLevel": 188,
+          "hitpoints": 200,
+          "maxHit": "17",
+          "attackStyles": [
+            "Slash"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 200
+        }
+      ]
+    },
+    {
+      "id": "black-golem",
+      "name": "Black golem",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Black golem",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Black_golem",
+      "members": true,
+      "examine": "An animated clay statue.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 75,
+          "hitpoints": 80,
+          "maxHit": "4",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "black-knight-titan",
+      "name": "Black Knight Titan",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Black Knight Titan",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Black_Knight_Titan",
+      "members": true,
+      "examine": "He looks mean and powerful.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 120,
+          "hitpoints": 142,
+          "maxHit": "15",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 7,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "blood-moon",
+      "name": "Blood Moon",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Blood Moon",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Blood_Moon",
+      "members": true,
+      "examine": "The terrifying embodiment of a blood moon.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 329,
+          "hitpoints": 500,
+          "maxHit": "32 total [4+8+20]",
+          "attackStyles": [
+            "Typeless slash"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "blue-moon",
+      "name": "Blue Moon",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Blue Moon",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Blue_Moon",
+      "members": true,
+      "examine": "The icy embodiment of a blue moon.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 329,
+          "hitpoints": 500,
+          "maxHit": "32 total [4+8+20]",
+          "attackStyles": [
+            "Typeless slash"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "boss",
+      "name": "Boss",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Boss",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Boss",
+      "members": false,
+      "examine": null,
+      "slayerCategories": [],
+      "versions": []
+    },
+    {
+      "id": "boss-kill-count",
+      "name": "Boss kill count",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Boss kill count",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Boss_kill_count",
+      "members": false,
+      "examine": null,
+      "slayerCategories": [],
+      "versions": []
+    },
+    {
+      "id": "bouncer",
+      "name": "Bouncer",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Bouncer",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Bouncer",
+      "members": true,
+      "examine": "Postie Pete's worst nightmare.",
+      "slayerCategories": [
+        "Hellhounds"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 137,
+          "hitpoints": 116,
+          "maxHit": "13",
+          "attackStyles": [
+            "Stab"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 116
+        }
+      ]
+    },
+    {
+      "id": "bouncer-ghost",
+      "name": "Bouncer (ghost)",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Bouncer (ghost)",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Bouncer_(ghost)",
+      "members": true,
+      "examine": "Big, mean, dead doggy.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 160,
+          "hitpoints": 120,
+          "maxHit": "15",
+          "attackStyles": [
+            "Stab"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "branda-the-fire-queen",
+      "name": "Branda the Fire Queen",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Branda the Fire Queen",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Branda_the_Fire_Queen",
+      "members": true,
+      "examine": "Wields the primal force of fire. Majestic and fearsome.",
+      "slayerCategories": [
+        "Fire Giants"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 350,
+          "hitpoints": 600,
+          "maxHit": "26 (Melee), 12 (Wall)",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 7,
+          "slayerLevel": null,
+          "slayerXp": 735
+        }
+      ]
+    },
+    {
+      "id": "brutus",
+      "name": "Brutus",
+      "hiscoreName": "Brutus",
+      "variantOf": null,
+      "page": "Brutus",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Brutus",
+      "members": false,
+      "examine": "Doesn't skip leg day.",
+      "slayerCategories": [
+        "Cows"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 30,
+          "hitpoints": 58,
+          "maxHit": "3 (melee), 19 (special)",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": 116
+        }
+      ]
+    },
+    {
+      "id": "bryophyta",
+      "name": "Bryophyta",
+      "hiscoreName": "Bryophyta",
+      "variantOf": null,
+      "page": "Bryophyta",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Bryophyta",
+      "members": false,
+      "examine": "This is what organic growth looks like!",
+      "slayerCategories": [
+        "Moss Giants"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 128,
+          "hitpoints": 115,
+          "maxHit": "16 (Melee), 10 (Magic)",
+          "attackStyles": [
+            "Crush",
+            "Magic"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": 115
+        }
+      ]
+    },
+    {
+      "id": "callisto",
+      "name": "Callisto",
+      "hiscoreName": "Callisto",
+      "variantOf": null,
+      "page": "Callisto",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Callisto",
+      "members": true,
+      "examine": "I wouldn't want to eat his Porridge.",
+      "slayerCategories": [
+        "Bears"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 470,
+          "hitpoints": 1000,
+          "maxHit": "55 (Crush), 31 (Ranged), 50 (Special)",
+          "attackStyles": [
+            "Crush",
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 1300
+        }
+      ]
+    },
+    {
+      "id": "calvarion",
+      "name": "Calvar'ion",
+      "hiscoreName": "Calvar'ion",
+      "variantOf": null,
+      "page": "Calvar'ion",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Calvar'ion",
+      "members": true,
+      "examine": null,
+      "slayerCategories": [
+        "Skeletons"
+      ],
+      "versions": [
+        {
+          "label": "Normal",
+          "combatLevel": 264,
+          "hitpoints": 150,
+          "maxHit": "26",
+          "attackStyles": [
+            "Slash",
+            "Magic"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": 322.5
+        },
+        {
+          "label": "Enraged",
+          "combatLevel": 264,
+          "hitpoints": 150,
+          "maxHit": "26",
+          "attackStyles": [
+            "Slash",
+            "Magic"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": 322.5
+        }
+      ]
+    },
+    {
+      "id": "cerberus",
+      "name": "Cerberus",
+      "hiscoreName": "Cerberus",
+      "variantOf": null,
+      "page": "Cerberus",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Cerberus",
+      "members": true,
+      "examine": "A three-headed gigantic hound. Guardian of the River of Souls.",
+      "slayerCategories": [
+        "Hellhounds"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 318,
+          "hitpoints": 600,
+          "maxHit": "23",
+          "attackStyles": [
+            "Stab",
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": 91,
+          "slayerXp": 690
+        }
+      ]
+    },
+    {
+      "id": "chambers-of-xeric",
+      "name": "Chambers of Xeric",
+      "hiscoreName": "Chambers of Xeric",
+      "variantOf": null,
+      "page": "Chambers of Xeric",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Chambers_of_Xeric",
+      "members": true,
+      "examine": null,
+      "slayerCategories": [],
+      "versions": []
+    },
+    {
+      "id": "chambers-of-xeric-challenge-mode",
+      "name": "Chambers of Xeric/Challenge Mode",
+      "hiscoreName": "Chambers of Xeric: Challenge Mode",
+      "variantOf": null,
+      "page": "Chambers of Xeric/Challenge Mode",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Chambers_of_Xeric%2FChallenge_Mode",
+      "members": false,
+      "examine": null,
+      "slayerCategories": [],
+      "versions": []
+    },
+    {
+      "id": "chaos-elemental",
+      "name": "Chaos Elemental",
+      "hiscoreName": "Chaos Elemental",
+      "variantOf": null,
+      "page": "Chaos Elemental",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Chaos_Elemental",
+      "members": true,
+      "examine": "pUre A cHaOs of crEatuRe!",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 305,
+          "hitpoints": 250,
+          "maxHit": "28",
+          "attackStyles": [
+            "Magic",
+            "Ranged",
+            "Melee (Crush?)"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 268.75
+        }
+      ]
+    },
+    {
+      "id": "chaos-fanatic",
+      "name": "Chaos Fanatic",
+      "hiscoreName": "Chaos Fanatic",
+      "variantOf": null,
+      "page": "Chaos Fanatic",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Chaos_Fanatic",
+      "members": true,
+      "examine": "Someone should get out of the lab once in a while...",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 202,
+          "hitpoints": 225,
+          "maxHit": "21 (Magic attack) 31 (Special attack)",
+          "attackStyles": [
+            "Ranged magic"
+          ],
+          "attackSpeed": 2,
+          "slayerLevel": null,
+          "slayerXp": 253
+        }
+      ]
+    },
+    {
+      "id": "chronozon",
+      "name": "Chronozon",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Chronozon",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Chronozon",
+      "members": true,
+      "examine": "Chronozon the blood demon.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 170,
+          "hitpoints": 60,
+          "maxHit": "18",
+          "attackStyles": [
+            "Slash"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "commander-zilyana",
+      "name": "Commander Zilyana",
+      "hiscoreName": "Commander Zilyana",
+      "variantOf": null,
+      "page": "Commander Zilyana",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Commander_Zilyana",
+      "members": true,
+      "examine": "Commander of Saradomin's forces.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 596,
+          "hitpoints": 255,
+          "maxHit": "27 (melee), 20 (magic)",
+          "attackStyles": [
+            "Crush",
+            "Magic"
+          ],
+          "attackSpeed": 2,
+          "slayerLevel": null,
+          "slayerXp": 350
+        }
+      ]
+    },
+    {
+      "id": "corporeal-beast",
+      "name": "Corporeal Beast",
+      "hiscoreName": "Corporeal Beast",
+      "variantOf": null,
+      "page": "Corporeal Beast",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Corporeal_Beast",
+      "members": true,
+      "examine": "A vision of supernatural horror.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 785,
+          "hitpoints": 2000,
+          "maxHit": "33 (Melee), 65 (Magic), 51 (Stomp)",
+          "attackStyles": [
+            "Crush",
+            "Magic"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "corrupted-hunllef",
+      "name": "Corrupted Hunllef",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Corrupted Hunllef",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Corrupted_Hunllef",
+      "members": true,
+      "examine": "A deadly predator formed from crystal.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 894,
+          "hitpoints": 1000,
+          "maxHit": "68",
+          "attackStyles": [
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "count-draynor",
+      "name": "Count Draynor",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Count Draynor",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Count_Draynor",
+      "members": false,
+      "examine": "Stop looking and run!",
+      "slayerCategories": [
+        "Vampyres"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 34,
+          "hitpoints": 35,
+          "maxHit": "3",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 0.8
+        }
+      ]
+    },
+    {
+      "id": "crazy-archaeologist",
+      "name": "Crazy archaeologist",
+      "hiscoreName": "Crazy Archaeologist",
+      "variantOf": null,
+      "page": "Crazy archaeologist",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Crazy_archaeologist",
+      "members": true,
+      "examine": "When academics go bad...",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 204,
+          "hitpoints": 225,
+          "maxHit": "14 (standard), 24 (special)",
+          "attackStyles": [
+            "Ranged",
+            "Crush"
+          ],
+          "attackSpeed": 3,
+          "slayerLevel": null,
+          "slayerXp": 275
+        }
+      ]
+    },
+    {
+      "id": "crystalline-hunllef",
+      "name": "Crystalline Hunllef",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Crystalline Hunllef",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Crystalline_Hunllef",
+      "members": true,
+      "examine": "A deadly predator formed from crystal.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 674,
+          "hitpoints": 600,
+          "maxHit": "50+",
+          "attackStyles": [
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "culinaromancer",
+      "name": "Culinaromancer",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Culinaromancer",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Culinaromancer",
+      "members": true,
+      "examine": "A demented evil wizard who specialises in food spells.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 75,
+          "hitpoints": 150,
+          "maxHit": "25 (Magic), 11 (Crush)",
+          "attackStyles": [
+            "Melee",
+            "Magic"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "dad",
+      "name": "Dad",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Dad",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Dad",
+      "members": true,
+      "examine": "An unusually large troll.",
+      "slayerCategories": [
+        "Trolls"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 101,
+          "hitpoints": 120,
+          "maxHit": "27",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 8,
+          "slayerLevel": null,
+          "slayerXp": 126
+        }
+      ]
+    },
+    {
+      "id": "dagannoth-kings",
+      "name": "Dagannoth Kings",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Dagannoth Kings",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Dagannoth_Kings",
+      "members": true,
+      "examine": null,
+      "slayerCategories": [],
+      "versions": []
+    },
+    {
+      "id": "dagannoth-mother",
+      "name": "Dagannoth mother",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Dagannoth mother",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Dagannoth_mother",
+      "members": true,
+      "examine": "A horror from the ocean depths...",
+      "slayerCategories": [
+        "Dagannoth"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 100,
+          "hitpoints": 120,
+          "maxHit": "9 (Melee), 12×2 (Ranged)",
+          "attackStyles": [
+            "Melee",
+            "Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 126
+        }
+      ]
+    },
+    {
+      "id": "dagannoth-prime",
+      "name": "Dagannoth Prime",
+      "hiscoreName": "Dagannoth Prime",
+      "variantOf": null,
+      "page": "Dagannoth Prime",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Dagannoth_Prime",
+      "members": true,
+      "examine": "A legendary dagannoth king, rumoured to fly on the North winds.",
+      "slayerCategories": [
+        "Dagannoth"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 303,
+          "hitpoints": 255,
+          "maxHit": "50",
+          "attackStyles": [
+            "Magic"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 331.4
+        }
+      ]
+    },
+    {
+      "id": "dagannoth-rex",
+      "name": "Dagannoth Rex",
+      "hiscoreName": "Dagannoth Rex",
+      "variantOf": null,
+      "page": "Dagannoth Rex",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Dagannoth_Rex",
+      "members": true,
+      "examine": "Firstborn of the legendary dagannoth kings.",
+      "slayerCategories": [
+        "Dagannoth"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 303,
+          "hitpoints": 255,
+          "maxHit": "26",
+          "attackStyles": [
+            "Slash"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 331.4
+        }
+      ]
+    },
+    {
+      "id": "dagannoth-supreme",
+      "name": "Dagannoth Supreme",
+      "hiscoreName": "Dagannoth Supreme",
+      "variantOf": null,
+      "page": "Dagannoth Supreme",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Dagannoth_Supreme",
+      "members": true,
+      "examine": "The dagannoth king responsible for the death of the Bukalla.",
+      "slayerCategories": [
+        "Dagannoth"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 303,
+          "hitpoints": 255,
+          "maxHit": "30",
+          "attackStyles": [
+            "Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 255
+        }
+      ]
+    },
+    {
+      "id": "damis",
+      "name": "Damis",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Damis",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Damis",
+      "members": true,
+      "examine": "The warrior of darkness.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "First form",
+          "combatLevel": 103,
+          "hitpoints": 90,
+          "maxHit": "22",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Second form",
+          "combatLevel": 174,
+          "hitpoints": 200,
+          "maxHit": "28",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 3,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "dawn",
+      "name": "Dawn",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Dawn",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Dawn",
+      "members": true,
+      "examine": "The Guardian of Dawn, she's alive!The crack of Dawn. (upon death)",
+      "slayerCategories": [
+        "Gargoyles"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 228,
+          "hitpoints": 450,
+          "maxHit": "15",
+          "attackStyles": [
+            "Slash",
+            "Ranged",
+            "Magic (special)"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": 75,
+          "slayerXp": 0
+        }
+      ]
+    },
+    {
+      "id": "delrith",
+      "name": "Delrith",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Delrith",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Delrith",
+      "members": false,
+      "examine": "A freshly summoned demon.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 27,
+          "hitpoints": 7,
+          "maxHit": "3",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "demonic-brutus",
+      "name": "Demonic Brutus",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Demonic Brutus",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Demonic_Brutus",
+      "members": true,
+      "examine": "Doesn't look particularly happy.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Brutus",
+          "combatLevel": 1224,
+          "hitpoints": 750,
+          "maxHit": "43 (Melee), 56+ (Special)",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Ghost",
+          "combatLevel": 1224,
+          "hitpoints": 750,
+          "maxHit": "43 (Melee), 56+ (Special)",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "deranged-archaeologist",
+      "name": "Deranged archaeologist",
+      "hiscoreName": "Deranged Archaeologist",
+      "variantOf": null,
+      "page": "Deranged archaeologist",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Deranged_archaeologist",
+      "members": true,
+      "examine": "He's seen things that people wouldn't believe.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 276,
+          "hitpoints": 200,
+          "maxHit": "25 (melee), 25 (range), 56 (special direct hit), 18+ (special indirect hit)",
+          "attackStyles": [
+            "Ranged",
+            "Crush"
+          ],
+          "attackSpeed": 3,
+          "slayerLevel": null,
+          "slayerXp": 275
+        }
+      ]
+    },
+    {
+      "id": "dessourt",
+      "name": "Dessourt",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Dessourt",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Dessourt",
+      "members": true,
+      "examine": "Bad for your teeth...and the rest of your body too.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 121,
+          "hitpoints": 130,
+          "maxHit": "19",
+          "attackStyles": [
+            "Crush",
+            "Magic"
+          ],
+          "attackSpeed": 3,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "dessous",
+      "name": "Dessous",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Dessous",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Dessous",
+      "members": true,
+      "examine": "A vampyre warrior of Zamorak.",
+      "slayerCategories": [
+        "Vampyres"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 139,
+          "hitpoints": 200,
+          "maxHit": "19 (Melee), 5 (Magic), 5 (Ranged)",
+          "attackStyles": [
+            "Crush",
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 3,
+          "slayerLevel": null,
+          "slayerXp": 220
+        }
+      ]
+    },
+    {
+      "id": "dharok-the-wretched",
+      "name": "Dharok the Wretched",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Dharok the Wretched",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Dharok_the_Wretched",
+      "members": true,
+      "examine": "A vengeful spirit corrupted by dark magic.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 115,
+          "hitpoints": 100,
+          "maxHit": "29 (normal), 57 (at 1 Hitpoints)",
+          "attackStyles": [
+            "Slash"
+          ],
+          "attackSpeed": 7,
+          "slayerLevel": null,
+          "slayerXp": 115
+        }
+      ]
+    },
+    {
+      "id": "doom-of-mokhaiotl",
+      "name": "Doom of Mokhaiotl",
+      "hiscoreName": "Doom of Mokhaiotl",
+      "variantOf": null,
+      "page": "Doom of Mokhaiotl",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Doom_of_Mokhaiotl",
+      "members": true,
+      "examine": "A demonic digger.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Delve 1",
+          "combatLevel": 558,
+          "hitpoints": 525,
+          "maxHit": "47 60 (charge)",
+          "attackStyles": [
+            "Melee",
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Delve 2",
+          "combatLevel": 608,
+          "hitpoints": 550,
+          "maxHit": "50 60 (charge)",
+          "attackStyles": [
+            "Melee",
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Delve 3",
+          "combatLevel": 658,
+          "hitpoints": 575,
+          "maxHit": "50 80 (charge)",
+          "attackStyles": [
+            "Melee",
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Delve 4",
+          "combatLevel": 708,
+          "hitpoints": 600,
+          "maxHit": "80 (charge)",
+          "attackStyles": [
+            "Melee",
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Delve 5",
+          "combatLevel": 758,
+          "hitpoints": 625,
+          "maxHit": "53 80 (charge)",
+          "attackStyles": [
+            "Melee",
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Delve 6",
+          "combatLevel": 808,
+          "hitpoints": 650,
+          "maxHit": "99 (charge)",
+          "attackStyles": [
+            "Melee",
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Delve 7",
+          "combatLevel": 858,
+          "hitpoints": 650,
+          "maxHit": "57 99 (charge)",
+          "attackStyles": [
+            "Melee",
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Delve 8",
+          "combatLevel": 908,
+          "hitpoints": 675,
+          "maxHit": "65 99 (charge)",
+          "attackStyles": [
+            "Melee",
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Deep Delve",
+          "combatLevel": 908,
+          "hitpoints": 625,
+          "maxHit": "65 99 (charge)",
+          "attackStyles": [
+            "Melee",
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "duke-sucellus",
+      "name": "Duke Sucellus",
+      "hiscoreName": "Duke Sucellus",
+      "variantOf": null,
+      "page": "Duke Sucellus",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Duke_Sucellus",
+      "members": true,
+      "examine": null,
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Awake",
+          "combatLevel": 758,
+          "hitpoints": 485,
+          "maxHit": "56 (Melee), 48 (Magic), 101 (Gaze)",
+          "attackStyles": [
+            "Magic",
+            "Crush"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": 305
+        },
+        {
+          "label": "Asleep",
+          "combatLevel": 758,
+          "hitpoints": 485,
+          "maxHit": "56 (Melee), 48 (Magic), 101 (Gaze)",
+          "attackStyles": [
+            "Magic",
+            "Crush"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": 305
+        },
+        {
+          "label": "Defeated",
+          "combatLevel": 758,
+          "hitpoints": 485,
+          "maxHit": "56 (Melee), 48 (Magic), 101 (Gaze)",
+          "attackStyles": [
+            "Magic",
+            "Crush"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": 305
+        }
+      ]
+    },
+    {
+      "id": "dusk",
+      "name": "Dusk",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Dusk",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Dusk",
+      "members": true,
+      "examine": null,
+      "slayerCategories": [
+        "Gargoyles"
+      ],
+      "versions": [
+        {
+          "label": "First form",
+          "combatLevel": 248,
+          "hitpoints": 450,
+          "maxHit": "15 (melee) 33 (special attack)",
+          "attackStyles": [
+            "Slash"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": 75,
+          "slayerXp": 1350
+        },
+        {
+          "label": "Second form",
+          "combatLevel": 328,
+          "hitpoints": 450,
+          "maxHit": "26 (melee) 15x2 (ranged) 65 (special attack)",
+          "attackStyles": [
+            "Slash",
+            "Ranged"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": 75,
+          "slayerXp": 1350
+        }
+      ]
+    },
+    {
+      "id": "eclipse-moon",
+      "name": "Eclipse Moon",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Eclipse Moon",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Eclipse_Moon",
+      "members": true,
+      "examine": "The blinding embodiment of an eclipse.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Regular",
+          "combatLevel": 329,
+          "hitpoints": 500,
+          "maxHit": "32 total [4+8+20]",
+          "attackStyles": [
+            "Typeless slash"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Clone",
+          "combatLevel": 329,
+          "hitpoints": 500,
+          "maxHit": "32 total [4+8+20]",
+          "attackStyles": [
+            "Typeless slash"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "eldric-the-ice-king",
+      "name": "Eldric the Ice King",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Eldric the Ice King",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Eldric_the_Ice_King",
+      "members": true,
+      "examine": "Wields the primal force of ice. Kingly and formidable.",
+      "slayerCategories": [
+        "Ice Giants"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 350,
+          "hitpoints": 600,
+          "maxHit": "26 (Melee), 12 (Wall)",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 7,
+          "slayerLevel": null,
+          "slayerXp": 735
+        }
+      ]
+    },
+    {
+      "id": "elidinis-warden",
+      "name": "Elidinis' Warden",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Elidinis' Warden",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Elidinis'_Warden",
+      "members": true,
+      "examine": "An ancient automaton imbued with the power of Elidinis.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Active",
+          "combatLevel": 489,
+          "hitpoints": 140,
+          "maxHit": "20",
+          "attackStyles": [
+            "Melee",
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": 7,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Core-ejected",
+          "combatLevel": 489,
+          "hitpoints": 4500,
+          "maxHit": "20",
+          "attackStyles": [
+            "Melee",
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": 7,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "elvarg",
+      "name": "Elvarg",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Elvarg",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Elvarg",
+      "members": false,
+      "examine": "Roar! A dragon!",
+      "slayerCategories": [
+        "Green Dragons"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 83,
+          "hitpoints": 80,
+          "maxHit": "8 (Slash), 70 (Dragonfire), 10 (with anti-dragon shield)",
+          "attackStyles": [
+            "Slash",
+            "Magic",
+            "Dragonfire"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 80
+        }
+      ]
+    },
+    {
+      "id": "evil-spirit",
+      "name": "Evil spirit",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Evil spirit",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Evil_spirit",
+      "members": true,
+      "examine": "The pun was intended.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 150,
+          "hitpoints": 90,
+          "maxHit": "28",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "fareed",
+      "name": "Fareed",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Fareed",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Fareed",
+      "members": true,
+      "examine": "Zamorak's warrior of fire.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 167,
+          "hitpoints": 130,
+          "maxHit": "37, 40 (without Ice gloves)",
+          "attackStyles": [
+            "Slash",
+            "Magic"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "flambeed",
+      "name": "Flambeed",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Flambeed",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Flambeed",
+      "members": true,
+      "examine": "Will give you a beating as well as indigestion.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 149,
+          "hitpoints": 210,
+          "maxHit": "25",
+          "attackStyles": [
+            "Crush",
+            "Magic"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "gadderanks",
+      "name": "Gadderanks",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Gadderanks",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Gadderanks",
+      "members": true,
+      "examine": "A human working for the vampyres.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 35,
+          "hitpoints": 20,
+          "maxHit": "3",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "galvek",
+      "name": "Galvek",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Galvek",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Galvek",
+      "members": true,
+      "examine": null,
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Fire",
+          "combatLevel": 608,
+          "hitpoints": 1200,
+          "maxHit": "28 (Ranged), 28 (Slash), 28 (Magic), 121 (Dragonfire)",
+          "attackStyles": [
+            "Slash",
+            "Ranged",
+            "Magic",
+            "Dragonfire"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Air",
+          "combatLevel": 608,
+          "hitpoints": 1200,
+          "maxHit": "28 (Ranged), 28 (Slash), 28 (Magic), 121 (Dragonfire)",
+          "attackStyles": [
+            "Slash",
+            "Ranged",
+            "Magic",
+            "Dragonfire"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Water",
+          "combatLevel": 608,
+          "hitpoints": 1200,
+          "maxHit": "28 (Ranged), 28 (Slash), 28 (Magic), 121 (Dragonfire; Tsunami)",
+          "attackStyles": [
+            "Slash",
+            "Ranged",
+            "Magic",
+            "Dragonfire"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Earth",
+          "combatLevel": 608,
+          "hitpoints": 1200,
+          "maxHit": "28 (Ranged), 28 (Slash), 28 (Magic), 121 (Dragonfire; Fire traps; Tsunami)",
+          "attackStyles": [
+            "Slash",
+            "Ranged",
+            "Magic",
+            "Dragonfire"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "gelatinnoth-mother",
+      "name": "Gelatinnoth Mother",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Gelatinnoth Mother",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Gelatinnoth_Mother",
+      "members": true,
+      "examine": "Deadly AND fruity!",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 130,
+          "hitpoints": 240,
+          "maxHit": "9 (melee), 20x2 (ranged/magic)",
+          "attackStyles": [
+            "Ranged",
+            "Magic",
+            "Stab"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "gemstone-crab",
+      "name": "Gemstone Crab",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Gemstone Crab",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Gemstone_Crab",
+      "members": true,
+      "examine": "The shiniest crustacean this side of the shoreline.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 160,
+          "hitpoints": null,
+          "maxHit": "1",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 7,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "general-graardor",
+      "name": "General Graardor",
+      "hiscoreName": "General Graardor",
+      "variantOf": null,
+      "page": "General Graardor",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/General_Graardor",
+      "members": true,
+      "examine": "A huge war chief.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 624,
+          "hitpoints": 255,
+          "maxHit": "60 (melee), 35 (ranged)",
+          "attackStyles": [
+            "Crush",
+            "Ranged"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": 338
+        }
+      ]
+    },
+    {
+      "id": "general-khazard",
+      "name": "General Khazard",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "General Khazard",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/General_Khazard",
+      "members": true,
+      "examine": "He looks really nasty. Smells bad too.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 142,
+          "hitpoints": 170,
+          "maxHit": "9",
+          "attackStyles": [
+            "Slash"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "giant-mole",
+      "name": "Giant Mole",
+      "hiscoreName": "Giant Mole",
+      "variantOf": null,
+      "page": "Giant Mole",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Giant_Mole",
+      "members": true,
+      "examine": "Holy Mole-y!",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 230,
+          "hitpoints": 200,
+          "maxHit": "21",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 215
+        }
+      ]
+    },
+    {
+      "id": "giant-roc",
+      "name": "Giant Roc",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Giant Roc",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Giant_Roc",
+      "members": true,
+      "examine": "A very, very large mountain-dwelling bird.",
+      "slayerCategories": [
+        "Birds"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 172,
+          "hitpoints": 250,
+          "maxHit": "14 (Melee), 20 (Ranged)",
+          "attackStyles": [
+            "Crush",
+            "Ranged"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": 250
+        }
+      ]
+    },
+    {
+      "id": "giant-scarab",
+      "name": "Giant Scarab",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Giant Scarab",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Giant_Scarab",
+      "members": true,
+      "examine": "A huge scarab.",
+      "slayerCategories": [
+        "Scabarites"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 191,
+          "hitpoints": 130,
+          "maxHit": "20",
+          "attackStyles": [
+            "Stab",
+            "Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 137
+        }
+      ]
+    },
+    {
+      "id": "giant-sea-snake",
+      "name": "Giant Sea Snake",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Giant Sea Snake",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Giant_Sea_Snake",
+      "members": true,
+      "examine": "A big snake that lives in the sea. How did it get in here?",
+      "slayerCategories": [
+        "Sea Snakes"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 149,
+          "hitpoints": 100,
+          "maxHit": "14",
+          "attackStyles": [
+            "Crush",
+            "Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": 40,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "glod",
+      "name": "Glod",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Glod",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Glod",
+      "members": true,
+      "examine": "A cloud giant.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 138,
+          "hitpoints": 160,
+          "maxHit": "25",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "glough",
+      "name": "Glough",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Glough",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Glough",
+      "members": true,
+      "examine": "A gnome consumed by his own wrath.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 431,
+          "hitpoints": 575,
+          "maxHit": "61",
+          "attackStyles": [
+            "Crush",
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "great-olm",
+      "name": "Great Olm",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Great Olm",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Great_Olm",
+      "members": true,
+      "examine": "Ferocious. It's unnerving.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Head (Normal)",
+          "combatLevel": 1043,
+          "hitpoints": 800,
+          "maxHit": "27 28 29 (phase 4)",
+          "attackStyles": [
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Head (Challenge Mode)",
+          "combatLevel": 1043,
+          "hitpoints": 800,
+          "maxHit": "38 (phases 1 and 2) 39 41 (phase 4)",
+          "attackStyles": [
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "grey-golem",
+      "name": "Grey golem",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Grey golem",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Grey_golem",
+      "members": true,
+      "examine": "An animated clay statue.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 75,
+          "hitpoints": 80,
+          "maxHit": "4",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "grotesque-guardians",
+      "name": "Grotesque Guardians",
+      "hiscoreName": "Grotesque Guardians",
+      "variantOf": null,
+      "page": "Grotesque Guardians",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Grotesque_Guardians",
+      "members": true,
+      "examine": null,
+      "slayerCategories": [],
+      "versions": []
+    },
+    {
+      "id": "guthan-the-infested",
+      "name": "Guthan the Infested",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Guthan the Infested",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Guthan_the_Infested",
+      "members": true,
+      "examine": "A vengeful spirit corrupted by dark magic.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 115,
+          "hitpoints": 100,
+          "maxHit": "24",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": 115
+        }
+      ]
+    },
+    {
+      "id": "hespori",
+      "name": "Hespori",
+      "hiscoreName": "Hespori",
+      "variantOf": null,
+      "page": "Hespori",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Hespori",
+      "members": true,
+      "examine": "A big angry plant.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 284,
+          "hitpoints": 300,
+          "maxHit": "8x2 (Ranged), 14 (Magic), 40+ (special)",
+          "attackStyles": [
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "ice-demon",
+      "name": "Ice demon",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Ice demon",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Ice_demon",
+      "members": true,
+      "examine": "Lord of the Icefiends.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Normal",
+          "combatLevel": null,
+          "hitpoints": 140,
+          "maxHit": "Varies",
+          "attackStyles": [
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": 3,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Challenge Mode",
+          "combatLevel": null,
+          "hitpoints": 210,
+          "maxHit": "Varies",
+          "attackStyles": [
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": 3,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "ice-troll-king",
+      "name": "Ice Troll King",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Ice Troll King",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Ice_Troll_King",
+      "members": true,
+      "examine": "Normal: An impressive-looking troll. Dead: Not so impressive anymore! Decapitated: Even less impressive!",
+      "slayerCategories": [
+        "Trolls"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 122,
+          "hitpoints": 150,
+          "maxHit": "21 (melee), 16 (special), 11 (Magic), 7 (Ranged)",
+          "attackStyles": [
+            "Crush",
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 161
+        }
+      ]
+    },
+    {
+      "id": "judge-of-yama-a-kingdom-divided",
+      "name": "Judge of Yama (A Kingdom Divided)",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Judge of Yama (A Kingdom Divided)",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Judge_of_Yama_(A_Kingdom_Divided)",
+      "members": true,
+      "examine": "In the name of Yama, you will be judged.",
+      "slayerCategories": [
+        "Greater Demons"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 168,
+          "hitpoints": 260,
+          "maxHit": "12",
+          "attackStyles": [
+            "Magic (Fire Waves)",
+            "Melee"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 266.5
+        }
+      ]
+    },
+    {
+      "id": "jungle-demon",
+      "name": "Jungle Demon",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Jungle Demon",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Jungle_Demon",
+      "members": true,
+      "examine": "A Greater Jungle Demon. A magical aura emanates from its hide.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 195,
+          "hitpoints": 170,
+          "maxHit": "32",
+          "attackStyles": [
+            "Slash",
+            "Magic"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "kril-tsutsaroth",
+      "name": "K'ril Tsutsaroth",
+      "hiscoreName": "K'ril Tsutsaroth",
+      "variantOf": null,
+      "page": "K'ril Tsutsaroth",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/K'ril_Tsutsaroth",
+      "members": true,
+      "examine": "A servant of the god Zamorak.",
+      "slayerCategories": [
+        "Greater Demons"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 650,
+          "hitpoints": 255,
+          "maxHit": "30 (magic), 46 (melee), 49 (special attack)",
+          "attackStyles": [
+            "Slash",
+            "Magic"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": 350.5
+        }
+      ]
+    },
+    {
+      "id": "kalphite-queen",
+      "name": "Kalphite Queen",
+      "hiscoreName": "Kalphite Queen",
+      "variantOf": null,
+      "page": "Kalphite Queen",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Kalphite_Queen",
+      "members": true,
+      "examine": "I don't think insect repellent will work...",
+      "slayerCategories": [
+        "Kalphite"
+      ],
+      "versions": [
+        {
+          "label": "Crawling",
+          "combatLevel": 333,
+          "hitpoints": 255,
+          "maxHit": "31",
+          "attackStyles": [
+            "Stab",
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 535.4
+        },
+        {
+          "label": "Airborne",
+          "combatLevel": 333,
+          "hitpoints": 255,
+          "maxHit": "31",
+          "attackStyles": [
+            "Stab",
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 535.4
+        }
+      ]
+    },
+    {
+      "id": "kamil",
+      "name": "Kamil",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Kamil",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Kamil",
+      "members": true,
+      "examine": "Ice warrior.",
+      "slayerCategories": [
+        "Ice Warriors"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 154,
+          "hitpoints": 130,
+          "maxHit": "23 (Melee), 5x2 (Magic)",
+          "attackStyles": [
+            "Melee",
+            "Magic"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 146
+        }
+      ]
+    },
+    {
+      "id": "karamel",
+      "name": "Karamel",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Karamel",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Karamel",
+      "members": true,
+      "examine": "Pure evil lightly whipped with a juicy cherry on top.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 136,
+          "hitpoints": 250,
+          "maxHit": "7x2 (Magic), 20 (Ranged)",
+          "attackStyles": [
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 3,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "karil-the-tainted",
+      "name": "Karil the Tainted",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Karil the Tainted",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Karil_the_Tainted",
+      "members": true,
+      "examine": "A vengeful spirit corrupted by dark magic.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 98,
+          "hitpoints": 100,
+          "maxHit": "20",
+          "attackStyles": [
+            "Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 100
+        }
+      ]
+    },
+    {
+      "id": "kephri",
+      "name": "Kephri",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Kephri",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Kephri",
+      "members": true,
+      "examine": "The cursed mother.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 341,
+          "hitpoints": 80,
+          "maxHit": "24",
+          "attackStyles": [
+            "Magic"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "king-black-dragon",
+      "name": "King Black Dragon",
+      "hiscoreName": "King Black Dragon",
+      "variantOf": null,
+      "page": "King Black Dragon",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/King_Black_Dragon",
+      "members": true,
+      "examine": "One of the biggest, meanest dragons around.",
+      "slayerCategories": [
+        "Black Dragons"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 276,
+          "hitpoints": 240,
+          "maxHit": "25 (Melee), 65 (Dragonfire)",
+          "attackStyles": [
+            "Stab",
+            "Dragonfire"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 258
+        }
+      ]
+    },
+    {
+      "id": "koschei-the-deathless",
+      "name": "Koschei the deathless",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Koschei the deathless",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Koschei_the_deathless",
+      "members": true,
+      "examine": "Your challenge awaits!",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": null,
+          "hitpoints": 30,
+          "maxHit": "3",
+          "attackStyles": [
+            "Slash"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "kraken",
+      "name": "Kraken",
+      "hiscoreName": "Kraken",
+      "variantOf": null,
+      "page": "Kraken",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Kraken",
+      "members": true,
+      "examine": null,
+      "slayerCategories": [
+        "Cave Kraken"
+      ],
+      "versions": [
+        {
+          "label": "Whirlpool",
+          "combatLevel": null,
+          "hitpoints": 255,
+          "maxHit": "28",
+          "attackStyles": [
+            "Magic (100% prayer penetration)"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": 87,
+          "slayerXp": 255
+        },
+        {
+          "label": "Kraken",
+          "combatLevel": 291,
+          "hitpoints": 255,
+          "maxHit": "28",
+          "attackStyles": [
+            "Magic (100% prayer penetration)"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": 87,
+          "slayerXp": 255
+        }
+      ]
+    },
+    {
+      "id": "kreearra",
+      "name": "Kree'arra",
+      "hiscoreName": "Kree'Arra",
+      "variantOf": null,
+      "page": "Kree'arra",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Kree'arra",
+      "members": true,
+      "examine": "Graceful avatar of Armadyl.",
+      "slayerCategories": [
+        "Aviansie"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 580,
+          "hitpoints": 255,
+          "maxHit": "69 (Ranged), 21 (Magic), 25 (Melee)",
+          "attackStyles": [
+            "Ranged",
+            "Ranged magic",
+            "Magical melee"
+          ],
+          "attackSpeed": 3,
+          "slayerLevel": null,
+          "slayerXp": 357
+        }
+      ]
+    },
+    {
+      "id": "lowerniel-drakan",
+      "name": "Lowerniel Drakan",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Lowerniel Drakan",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Lowerniel_Drakan",
+      "members": true,
+      "examine": "The ruler of Morytania and the Lord of Vampyrium, untethered.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 1063,
+          "hitpoints": 3000,
+          "maxHit": "69",
+          "attackStyles": [
+            "Stab"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "lunar-chest",
+      "name": "Lunar Chest",
+      "hiscoreName": "Lunar Chests",
+      "variantOf": null,
+      "page": "Lunar Chest",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Lunar_Chest",
+      "members": true,
+      "examine": null,
+      "slayerCategories": [],
+      "versions": []
+    },
+    {
+      "id": "mad-angel",
+      "name": "Mad Angel",
+      "hiscoreName": "Mad Angel",
+      "variantOf": null,
+      "page": "Mad Angel",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Mad_Angel",
+      "members": true,
+      "examine": "O Lord, she approaches!",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Quest",
+          "combatLevel": 270,
+          "hitpoints": 565,
+          "maxHit": "31",
+          "attackStyles": [
+            "Melee",
+            "Magic"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Post-quest",
+          "combatLevel": 588,
+          "hitpoints": 755,
+          "maxHit": "31",
+          "attackStyles": [
+            "Melee",
+            "Magic"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "maggot-king",
+      "name": "Maggot King",
+      "hiscoreName": "Maggot King",
+      "variantOf": null,
+      "page": "Maggot King",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Maggot_King",
+      "members": true,
+      "examine": "An unthinkable horror brought to life by Vampyrium's brutality.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Far",
+          "combatLevel": 741,
+          "hitpoints": 1500,
+          "maxHit": "46 (Magic / Ranged),~55 (Melee lunge)",
+          "attackStyles": [
+            "Ranged",
+            "Magic",
+            "Melee"
+          ],
+          "attackSpeed": null,
+          "slayerLevel": null,
+          "slayerXp": 3675
+        },
+        {
+          "label": "Nearby",
+          "combatLevel": 741,
+          "hitpoints": 1500,
+          "maxHit": "46 (Magic / Ranged),~55 (Melee lunge)",
+          "attackStyles": [
+            "Ranged",
+            "Magic",
+            "Melee"
+          ],
+          "attackSpeed": null,
+          "slayerLevel": null,
+          "slayerXp": 3675
+        },
+        {
+          "label": "Roaring",
+          "combatLevel": 741,
+          "hitpoints": 1500,
+          "maxHit": "46 (Magic / Ranged),~55 (Melee lunge)",
+          "attackStyles": [
+            "Ranged",
+            "Magic",
+            "Melee"
+          ],
+          "attackSpeed": null,
+          "slayerLevel": null,
+          "slayerXp": 3675
+        }
+      ]
+    },
+    {
+      "id": "me",
+      "name": "Me",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Me",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Me",
+      "members": true,
+      "examine": "It's like looking in the mirror.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Type A",
+          "combatLevel": 79,
+          "hitpoints": 45,
+          "maxHit": "9",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Type B",
+          "combatLevel": 79,
+          "hitpoints": 45,
+          "maxHit": "9",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "melzar-the-mad",
+      "name": "Melzar the Mad",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Melzar the Mad",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Melzar_the_Mad",
+      "members": false,
+      "examine": "He looks totally insane!",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 43,
+          "hitpoints": 44,
+          "maxHit": "5",
+          "attackStyles": [
+            "Magic",
+            "Crush"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "mimic",
+      "name": "Mimic",
+      "hiscoreName": "Mimic",
+      "variantOf": null,
+      "page": "Mimic",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Mimic",
+      "members": true,
+      "examine": null,
+      "slayerCategories": [],
+      "versions": []
+    },
+    {
+      "id": "moons-of-peril",
+      "name": "Moons of Peril",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Moons of Peril",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Moons_of_Peril",
+      "members": true,
+      "examine": null,
+      "slayerCategories": [],
+      "versions": []
+    },
+    {
+      "id": "moss-guardian",
+      "name": "Moss Guardian",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Moss Guardian",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Moss_Guardian",
+      "members": true,
+      "examine": "Bigger than your average moss giant.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 84,
+          "hitpoints": 120,
+          "maxHit": "14",
+          "attackStyles": [
+            "Crush",
+            "Magical melee"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": 120
+        }
+      ]
+    },
+    {
+      "id": "muttadile",
+      "name": "Muttadile",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Muttadile",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Muttadile",
+      "members": true,
+      "examine": "A mutated guardian of Xeric.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Small",
+          "combatLevel": null,
+          "hitpoints": 250,
+          "maxHit": "28 (Melee), 30 (Ranged)",
+          "attackStyles": [
+            "Melee",
+            "Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Large",
+          "combatLevel": null,
+          "hitpoints": 250,
+          "maxHit": "72 (Stomp), 48 (Melee), 45 (Ranged), 23 (Magic)",
+          "attackStyles": [
+            "Melee",
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Small (Challenge Mode)",
+          "combatLevel": null,
+          "hitpoints": 375,
+          "maxHit": "41 (Melee), 44 (Ranged)",
+          "attackStyles": [
+            "Melee",
+            "Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Large (Challenge Mode)",
+          "combatLevel": null,
+          "hitpoints": 375,
+          "maxHit": "106 (Stomp), 71 (Melee), 67 (Ranged), 34 (Magic)",
+          "attackStyles": [
+            "Melee",
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "nex",
+      "name": "Nex",
+      "hiscoreName": "Nex",
+      "variantOf": null,
+      "page": "Nex",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Nex",
+      "members": true,
+      "examine": "Even the gods fear her.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 1001,
+          "hitpoints": 3400,
+          "maxHit": "33 (Magic), 60 (Ranged), 27 (Melee), 50 (Smoke Dash), 50 (Shadow Smash), 80 (Blood Sacrifice), 60 (Containment), 75 (Ice Prison)",
+          "attackStyles": [
+            "Magic",
+            "Ranged",
+            "Crush"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "nezikchened",
+      "name": "Nezikchened",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Nezikchened",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Nezikchened",
+      "members": true,
+      "examine": "An ancient, powerful demon of the underworld.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 187,
+          "hitpoints": 150,
+          "maxHit": "18 (Melee & Magic), ~20 (Dark Dagger)",
+          "attackStyles": [
+            "Slash",
+            "Magic"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "nylocas-vasilias",
+      "name": "Nylocas Vasilias",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Nylocas Vasilias",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Nylocas_Vasilias",
+      "members": true,
+      "examine": "One of Verzik's rather large pets.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Entry",
+          "combatLevel": 301,
+          "hitpoints": 1440,
+          "maxHit": "24",
+          "attackStyles": [
+            "Stab",
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Normal",
+          "combatLevel": 800,
+          "hitpoints": 2500,
+          "maxHit": "70",
+          "attackStyles": [
+            "Stab",
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Hard",
+          "combatLevel": 800,
+          "hitpoints": 2500,
+          "maxHit": "105",
+          "attackStyles": [
+            "Stab",
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "obor",
+      "name": "Obor",
+      "hiscoreName": "Obor",
+      "variantOf": null,
+      "page": "Obor",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Obor",
+      "members": false,
+      "examine": "He looks very dangerous.",
+      "slayerCategories": [
+        "Hill Giants"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 106,
+          "hitpoints": 120,
+          "maxHit": "22 (Melee), 26 (Ranged)",
+          "attackStyles": [
+            "Crush",
+            "Ranged"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": 129
+        }
+      ]
+    },
+    {
+      "id": "penance-queen",
+      "name": "Penance Queen",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Penance Queen",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Penance_Queen",
+      "members": true,
+      "examine": "Run away! Run away!",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 209,
+          "hitpoints": 250,
+          "maxHit": "13 (Ranged), 5 (Melee)",
+          "attackStyles": [
+            "Melee",
+            "Single",
+            "multi-target Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "pestilent-bloat",
+      "name": "Pestilent Bloat",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Pestilent Bloat",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Pestilent_Bloat",
+      "members": true,
+      "examine": "An infinite mass of decay and death.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Entry",
+          "combatLevel": 312,
+          "hitpoints": 1280,
+          "maxHit": "8 (Flies), 40 (Stomp)",
+          "attackStyles": [
+            "Ranged"
+          ],
+          "attackSpeed": 1,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Normal",
+          "combatLevel": 870,
+          "hitpoints": 2000,
+          "maxHit": "20 (Flies), 80 (Stomp)",
+          "attackStyles": [
+            "Ranged"
+          ],
+          "attackSpeed": 1,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Hard",
+          "combatLevel": 1044,
+          "hitpoints": 2400,
+          "maxHit": "20 (Flies), 80 (Stomp)",
+          "attackStyles": [
+            "Ranged"
+          ],
+          "attackSpeed": 1,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "phantom-muspah",
+      "name": "Phantom Muspah",
+      "hiscoreName": "Phantom Muspah",
+      "variantOf": null,
+      "page": "Phantom Muspah",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Phantom_Muspah",
+      "members": true,
+      "examine": "Imagination gone wild.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Ranged",
+          "combatLevel": 741,
+          "hitpoints": 850,
+          "maxHit": "61 (Ranged), 72 (Magic)",
+          "attackStyles": [
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": 1763.7
+        },
+        {
+          "label": "Melee",
+          "combatLevel": 741,
+          "hitpoints": 850,
+          "maxHit": "34",
+          "attackStyles": [
+            "Stab"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": 1763.7
+        },
+        {
+          "label": "Teleporting",
+          "combatLevel": 741,
+          "hitpoints": 850,
+          "maxHit": "20 (Lightning cloud)",
+          "attackStyles": [
+            "Typeless"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": 1763.7
+        },
+        {
+          "label": "Shielded",
+          "combatLevel": 741,
+          "hitpoints": 75,
+          "maxHit": "72 (Ranged), 79 (Magic), 80 (Shockwave)",
+          "attackStyles": [
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": 1763.7
+        },
+        {
+          "label": "Post-shield",
+          "combatLevel": 741,
+          "hitpoints": 850,
+          "maxHit": "72 (Ranged), 79 (Magic)",
+          "attackStyles": [
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": 1763.7
+        }
+      ]
+    },
+    {
+      "id": "phosanis-nightmare",
+      "name": "Phosani's Nightmare",
+      "hiscoreName": "Phosani's Nightmare",
+      "variantOf": null,
+      "page": "Phosani's Nightmare",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Phosani's_Nightmare",
+      "members": true,
+      "examine": "Sweet dreams are most definitely not made of this.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 1024,
+          "hitpoints": 3200,
+          "maxHit": "73 (melee), 80 (magic/ranged), ~85 (dash)",
+          "attackStyles": [
+            "Slash",
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "revenant-maledictus",
+      "name": "Revenant maledictus",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Revenant maledictus",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Revenant_maledictus",
+      "members": true,
+      "examine": "One ghost to rule them all.",
+      "slayerCategories": [
+        "Revenants",
+        "Ghosts"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 397,
+          "hitpoints": 1250,
+          "maxHit": "30",
+          "attackStyles": [
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": 920
+        }
+      ]
+    },
+    {
+      "id": "royal-titans",
+      "name": "Royal Titans",
+      "hiscoreName": "The Royal Titans",
+      "variantOf": null,
+      "page": "Royal Titans",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Royal_Titans",
+      "members": true,
+      "examine": null,
+      "slayerCategories": [],
+      "versions": []
+    },
+    {
+      "id": "salarin-the-twisted",
+      "name": "Salarin the twisted",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Salarin the twisted",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Salarin_the_twisted",
+      "members": true,
+      "examine": "Twisted by name, twisted by nature.",
+      "slayerCategories": [
+        "Chaos Druids"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 70,
+          "hitpoints": 70,
+          "maxHit": "7",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 70
+        }
+      ]
+    },
+    {
+      "id": "sarachnis",
+      "name": "Sarachnis",
+      "hiscoreName": "Sarachnis",
+      "variantOf": null,
+      "page": "Sarachnis",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Sarachnis",
+      "members": true,
+      "examine": "I'm going to need a really big newspaper...",
+      "slayerCategories": [
+        "Spiders"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 318,
+          "hitpoints": 400,
+          "maxHit": "31",
+          "attackStyles": [
+            "Melee",
+            "Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 430
+        }
+      ]
+    },
+    {
+      "id": "scorpia",
+      "name": "Scorpia",
+      "hiscoreName": "Scorpia",
+      "variantOf": null,
+      "page": "Scorpia",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Scorpia",
+      "members": true,
+      "examine": "Queen of the Scorpions.",
+      "slayerCategories": [
+        "Scorpions"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 225,
+          "hitpoints": 200,
+          "maxHit": "16",
+          "attackStyles": [
+            "Stab"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 260
+        }
+      ]
+    },
+    {
+      "id": "scurrius",
+      "name": "Scurrius",
+      "hiscoreName": "Scurrius",
+      "variantOf": null,
+      "page": "Scurrius",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Scurrius",
+      "members": true,
+      "examine": "You're never more than six feet away from one.",
+      "slayerCategories": [
+        "Rats"
+      ],
+      "versions": [
+        {
+          "label": "Solo",
+          "combatLevel": 200,
+          "hitpoints": 500,
+          "maxHit": "13 (Melee), 8 (Magic), 7 (Ranged), 22 (Rockfall)",
+          "attackStyles": [
+            "Magic",
+            "Ranged",
+            "Melee"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 600
+        },
+        {
+          "label": "Group",
+          "combatLevel": 250,
+          "hitpoints": 1500,
+          "maxHit": "13 (Melee), 14 (Magic), 13 (Ranged), 24 (Rockfall)",
+          "attackStyles": [
+            "Magic",
+            "Ranged",
+            "Melee"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 2137.5
+        }
+      ]
+    },
+    {
+      "id": "sea-troll-queen",
+      "name": "Sea Troll Queen",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Sea Troll Queen",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Sea_Troll_Queen",
+      "members": true,
+      "examine": "The mother of all sea trolls!",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 170,
+          "hitpoints": 200,
+          "maxHit": "16 (Melee), 37 (Magic), 254 (on Wise Old Man)",
+          "attackStyles": [
+            "Crush",
+            "Magic"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "shellbane-gryphon",
+      "name": "Shellbane gryphon",
+      "hiscoreName": "Shellbane Gryphon",
+      "variantOf": null,
+      "page": "Shellbane gryphon",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Shellbane_gryphon",
+      "members": true,
+      "examine": "A calamity to all tortugan-kind.",
+      "slayerCategories": [
+        "Gryphons"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 235,
+          "hitpoints": 400,
+          "maxHit": "22 64 (whirlwinds) 30 (knockback)",
+          "attackStyles": [
+            "Melee",
+            "Ranged"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": 51,
+          "slayerXp": 400
+        }
+      ]
+    },
+    {
+      "id": "sigmund",
+      "name": "Sigmund",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Sigmund",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Sigmund",
+      "members": true,
+      "examine": "Former adviser to the Duke of Lumbridge.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 50,
+          "hitpoints": 60,
+          "maxHit": "5",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "sir-leye",
+      "name": "Sir Leye",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Sir Leye",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Sir_Leye",
+      "members": true,
+      "examine": "A warrior blessed by Saradomin.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 20,
+          "hitpoints": 20,
+          "maxHit": "3",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "sir-mordred",
+      "name": "Sir Mordred",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Sir Mordred",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Sir_Mordred",
+      "members": true,
+      "examine": "Leader of the Renegade Knights.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 39,
+          "hitpoints": 38,
+          "maxHit": "5",
+          "attackStyles": [
+            "Slash"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "skotizo",
+      "name": "Skotizo",
+      "hiscoreName": "Skotizo",
+      "variantOf": null,
+      "page": "Skotizo",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Skotizo",
+      "members": true,
+      "examine": "A darkly altared demon.",
+      "slayerCategories": [
+        "Black Demons",
+        "Greater Demons"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 321,
+          "hitpoints": 450,
+          "maxHit": "38",
+          "attackStyles": [
+            "Stab",
+            "Magic"
+          ],
+          "attackSpeed": null,
+          "slayerLevel": null,
+          "slayerXp": 618.5
+        }
+      ]
+    },
+    {
+      "id": "slagilith",
+      "name": "Slagilith",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Slagilith",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Slagilith",
+      "members": true,
+      "examine": "This monster totally rocks!",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 92,
+          "hitpoints": 60,
+          "maxHit": "13",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "slash-bash",
+      "name": "Slash Bash",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Slash Bash",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Slash_Bash",
+      "members": true,
+      "examine": "A powerful looking Zogre.",
+      "slayerCategories": [
+        "Zombies"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 111,
+          "hitpoints": 100,
+          "maxHit": "13",
+          "attackStyles": [
+            "Ranged",
+            "Crush"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": 100
+        }
+      ]
+    },
+    {
+      "id": "slug-prince",
+      "name": "Slug Prince",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Slug Prince",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Slug_Prince",
+      "members": true,
+      "examine": "A child of aquatic evil.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 62,
+          "hitpoints": 70,
+          "maxHit": "6",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "sol-heredit",
+      "name": "Sol Heredit",
+      "hiscoreName": "Sol Heredit",
+      "variantOf": null,
+      "page": "Sol Heredit",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Sol_Heredit",
+      "members": true,
+      "examine": "Its stompin' time!",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 1563,
+          "hitpoints": 1500,
+          "maxHit": "44 (Typeless AOE), 44 (Grapple), 15-25-35 (Triple Parry 1), 15-30-45 (Triple Parry 2)",
+          "attackStyles": [
+            "Various"
+          ],
+          "attackSpeed": null,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "sotetseg",
+      "name": "Sotetseg",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Sotetseg",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Sotetseg",
+      "members": true,
+      "examine": "An intruder from the Shadow Realm, corrupted through haemalchemy.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Entry",
+          "combatLevel": 336,
+          "hitpoints": 2240,
+          "maxHit": "20 (Melee), 22 (Ranged), 22 (Magic)",
+          "attackStyles": [
+            "Crush",
+            "Magic"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Normal",
+          "combatLevel": 995,
+          "hitpoints": 4000,
+          "maxHit": "45 (Melee), 50 (Ranged), 50 (Magic)",
+          "attackStyles": [
+            "Crush",
+            "Magic"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Hard",
+          "combatLevel": 1195,
+          "hitpoints": 4000,
+          "maxHit": "45 (Melee), 50 (Ranged), 50 (Magic)",
+          "attackStyles": [
+            "Crush",
+            "Magic"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "spindel",
+      "name": "Spindel",
+      "hiscoreName": "Spindel",
+      "variantOf": null,
+      "page": "Spindel",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Spindel",
+      "members": true,
+      "examine": "I wonder if it's venomous...",
+      "slayerCategories": [
+        "Spiders"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 302,
+          "hitpoints": 515,
+          "maxHit": "14 (Melee), 31 (Ranged), 24 (Magic)",
+          "attackStyles": [
+            "Stab",
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 541
+        }
+      ]
+    },
+    {
+      "id": "tarn",
+      "name": "Tarn",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Tarn",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Tarn",
+      "members": true,
+      "examine": "I preferred him when he was human.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 69,
+          "hitpoints": 80,
+          "maxHit": "9",
+          "attackStyles": [
+            "Crush",
+            "Magic"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": 40,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "tekton",
+      "name": "Tekton",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Tekton",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Tekton",
+      "members": true,
+      "examine": null,
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Normal",
+          "combatLevel": null,
+          "hitpoints": 300,
+          "maxHit": "52",
+          "attackStyles": [
+            "Stab",
+            "Slash",
+            "Crush"
+          ],
+          "attackSpeed": 3,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Enraged",
+          "combatLevel": null,
+          "hitpoints": 300,
+          "maxHit": "59",
+          "attackStyles": [
+            "Stab",
+            "Slash",
+            "Crush"
+          ],
+          "attackSpeed": 3,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Normal (Challenge Mode)",
+          "combatLevel": null,
+          "hitpoints": 450,
+          "maxHit": "78",
+          "attackStyles": [
+            "Stab",
+            "Slash",
+            "Crush"
+          ],
+          "attackSpeed": 3,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Enraged (Challenge Mode)",
+          "combatLevel": null,
+          "hitpoints": 450,
+          "maxHit": "87",
+          "attackStyles": [
+            "Stab",
+            "Slash",
+            "Crush"
+          ],
+          "attackSpeed": 3,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "tempoross",
+      "name": "Tempoross",
+      "hiscoreName": "Tempoross",
+      "variantOf": null,
+      "page": "Tempoross",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Tempoross",
+      "members": true,
+      "examine": null,
+      "slayerCategories": [],
+      "versions": []
+    },
+    {
+      "id": "the-corrupted-gauntlet",
+      "name": "The Corrupted Gauntlet",
+      "hiscoreName": "The Corrupted Gauntlet",
+      "variantOf": "the-gauntlet",
+      "page": "The Gauntlet",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Gauntlet",
+      "members": true,
+      "examine": null,
+      "slayerCategories": [],
+      "versions": []
+    },
+    {
+      "id": "the-draugen",
+      "name": "The Draugen",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "The Draugen",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Draugen",
+      "members": true,
+      "examine": "A fearful spirit of the drowned.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 69,
+          "hitpoints": 60,
+          "maxHit": "7",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "the-everlasting",
+      "name": "The Everlasting",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "The Everlasting",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Everlasting",
+      "members": true,
+      "examine": "Can you endure long enough?",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 223,
+          "hitpoints": 230,
+          "maxHit": "24",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "the-gauntlet",
+      "name": "The Gauntlet",
+      "hiscoreName": "The Gauntlet",
+      "variantOf": null,
+      "page": "The Gauntlet",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Gauntlet",
+      "members": true,
+      "examine": null,
+      "slayerCategories": [],
+      "versions": []
+    },
+    {
+      "id": "the-hueycoatl",
+      "name": "The Hueycoatl",
+      "hiscoreName": "The Hueycoatl",
+      "variantOf": null,
+      "page": "The Hueycoatl",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Hueycoatl",
+      "members": true,
+      "examine": null,
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Normal",
+          "combatLevel": 642,
+          "hitpoints": 2500,
+          "maxHit": "14",
+          "attackStyles": [
+            "Melee",
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": null,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Shielded",
+          "combatLevel": 642,
+          "hitpoints": 2500,
+          "maxHit": "14",
+          "attackStyles": [
+            "Melee",
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": null,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Defeated",
+          "combatLevel": 642,
+          "hitpoints": 2500,
+          "maxHit": "14",
+          "attackStyles": [
+            "Melee",
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": null,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "the-illusive",
+      "name": "The Illusive",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "The Illusive",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Illusive",
+      "members": true,
+      "examine": "What if you don't know how to win?",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 108,
+          "hitpoints": 144,
+          "maxHit": "8",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "the-inadequacy",
+      "name": "The Inadequacy",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "The Inadequacy",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Inadequacy",
+      "members": true,
+      "examine": "Are you good enough to fight?",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 343,
+          "hitpoints": 180,
+          "maxHit": "18 (Melee), 20+ (Ranged)",
+          "attackStyles": [
+            "Crush",
+            "Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "the-leviathan",
+      "name": "The Leviathan",
+      "hiscoreName": "The Leviathan",
+      "variantOf": null,
+      "page": "The Leviathan",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Leviathan",
+      "members": true,
+      "examine": "An unfathomably huge sea creature.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Post-quest",
+          "combatLevel": 798,
+          "hitpoints": 900,
+          "maxHit": "50 (Melee orb & Bite), 24 (Ranged orb), 32 (Magic orb), 60 (Smoke Blast)",
+          "attackStyles": [
+            "Melee",
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": null,
+          "slayerLevel": null,
+          "slayerXp": 1777.4
+        },
+        {
+          "label": "Awakened",
+          "combatLevel": 1157,
+          "hitpoints": 2700,
+          "maxHit": "86 (Melee orb & Bite), 41 (Ranged orb), 55 (Magic orb), 75 (Smoke Blast)",
+          "attackStyles": [
+            "Melee",
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": null,
+          "slayerLevel": null,
+          "slayerXp": 2700
+        },
+        {
+          "label": "Quest",
+          "combatLevel": 593,
+          "hitpoints": 720,
+          "maxHit": "34 (Melee orb & Bite), 16 (Ranged orb), 22 (Magic orb), 41+ (Smoke Blast)",
+          "attackStyles": [
+            "Melee",
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": null,
+          "slayerLevel": null,
+          "slayerXp": 720
+        }
+      ]
+    },
+    {
+      "id": "the-maiden-of-sugadinti",
+      "name": "The Maiden of Sugadinti",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "The Maiden of Sugadinti",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Maiden_of_Sugadinti",
+      "members": true,
+      "examine": "This is the fate of those who cross the vampyres.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Entry Mode",
+          "combatLevel": 324,
+          "hitpoints": 2000,
+          "maxHit": "18",
+          "attackStyles": [
+            "Magic"
+          ],
+          "attackSpeed": 10,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Normal",
+          "combatLevel": 940,
+          "hitpoints": 3500,
+          "maxHit": "36",
+          "attackStyles": [
+            "Magic"
+          ],
+          "attackSpeed": 10,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Hard Mode",
+          "combatLevel": 1128,
+          "hitpoints": 3500,
+          "maxHit": "36",
+          "attackStyles": [
+            "Magic"
+          ],
+          "attackSpeed": 10,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "70% Health",
+          "combatLevel": 940,
+          "hitpoints": 2450,
+          "maxHit": "36",
+          "attackStyles": [
+            "Magic"
+          ],
+          "attackSpeed": 10,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "50% Health",
+          "combatLevel": 940,
+          "hitpoints": 1750,
+          "maxHit": "36",
+          "attackStyles": [
+            "Magic"
+          ],
+          "attackSpeed": 10,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "30% Health",
+          "combatLevel": 940,
+          "hitpoints": 1050,
+          "maxHit": "36",
+          "attackStyles": [
+            "Magic"
+          ],
+          "attackSpeed": 10,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "the-mimic",
+      "name": "The Mimic",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "The Mimic",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Mimic",
+      "members": true,
+      "examine": "Oh great, it's a casket that's come to life.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 186,
+          "hitpoints": 230,
+          "maxHit": "23",
+          "attackStyles": [
+            "Crush",
+            "Magic"
+          ],
+          "attackSpeed": 3,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "the-nightmare",
+      "name": "The Nightmare",
+      "hiscoreName": "Nightmare",
+      "variantOf": null,
+      "page": "The Nightmare",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Nightmare",
+      "members": true,
+      "examine": "Sweet dreams are most definitely not made of this.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 814,
+          "hitpoints": 2400,
+          "maxHit": "50/60 (Melee), 33/39 (Ranged and Magic), Increased by 20% if using incorrect protection prayer",
+          "attackStyles": [
+            "Slash",
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "the-untouchable",
+      "name": "The Untouchable",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "The Untouchable",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Untouchable",
+      "members": true,
+      "examine": "Can you bring yourself to hurt another?",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 274,
+          "hitpoints": 90,
+          "maxHit": "26",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "the-whisperer",
+      "name": "The Whisperer",
+      "hiscoreName": "The Whisperer",
+      "variantOf": null,
+      "page": "The Whisperer",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Whisperer",
+      "members": true,
+      "examine": "Dare you face the shadows?",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Post-quest",
+          "combatLevel": 791,
+          "hitpoints": 900,
+          "maxHit": "42 (x2) (Melee), 40 (Ranged), 36 (Magic), 45 (Screech), 50 (Soul Siphon)",
+          "attackStyles": [
+            "All"
+          ],
+          "attackSpeed": 10,
+          "slayerLevel": null,
+          "slayerXp": 900
+        },
+        {
+          "label": "Awakened",
+          "combatLevel": 1146,
+          "hitpoints": 2700,
+          "maxHit": "70+ (x2) (Melee), 53 (Ranged), 45 (Magic), 70 (Screech), 75 (Soul Siphon)",
+          "attackStyles": [
+            "All"
+          ],
+          "attackSpeed": 10,
+          "slayerLevel": null,
+          "slayerXp": 2700
+        },
+        {
+          "label": "Quest",
+          "combatLevel": 587,
+          "hitpoints": 660,
+          "maxHit": "30 (x2) (Melee), 28 (Ranged), 26 (Magic), 45 (Screech), 50 (Soul Siphon)",
+          "attackStyles": [
+            "All"
+          ],
+          "attackSpeed": 10,
+          "slayerLevel": null,
+          "slayerXp": 660
+        }
+      ]
+    },
+    {
+      "id": "theatre-of-blood",
+      "name": "Theatre of Blood",
+      "hiscoreName": "Theatre of Blood",
+      "variantOf": null,
+      "page": "Theatre of Blood",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Theatre_of_Blood",
+      "members": true,
+      "examine": null,
+      "slayerCategories": [],
+      "versions": []
+    },
+    {
+      "id": "theatre-of-blood-hard-mode",
+      "name": "Theatre of Blood/Hard Mode",
+      "hiscoreName": "Theatre of Blood: Hard Mode",
+      "variantOf": null,
+      "page": "Theatre of Blood/Hard Mode",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Theatre_of_Blood%2FHard_Mode",
+      "members": false,
+      "examine": null,
+      "slayerCategories": [],
+      "versions": []
+    },
+    {
+      "id": "thermonuclear-smoke-devil",
+      "name": "Thermonuclear smoke devil",
+      "hiscoreName": "Thermonuclear Smoke Devil",
+      "variantOf": null,
+      "page": "Thermonuclear smoke devil",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Thermonuclear_smoke_devil",
+      "members": true,
+      "examine": "Woah.",
+      "slayerCategories": [
+        "Smoke Devils"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 301,
+          "hitpoints": 240,
+          "maxHit": "8",
+          "attackStyles": [
+            "Magical ranged (100% prayer penetration)"
+          ],
+          "attackSpeed": 2,
+          "slayerLevel": 93,
+          "slayerXp": 240
+        }
+      ]
+    },
+    {
+      "id": "tolna",
+      "name": "Tolna",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Tolna",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Tolna",
+      "members": true,
+      "examine": "Is that really Tolna?",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 46,
+          "hitpoints": 37,
+          "maxHit": "5",
+          "attackStyles": [
+            "Slash",
+            "Ranged"
+          ],
+          "attackSpeed": null,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "tombs-of-amascut",
+      "name": "Tombs of Amascut",
+      "hiscoreName": "Tombs of Amascut",
+      "variantOf": null,
+      "page": "Tombs of Amascut",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Tombs_of_Amascut",
+      "members": true,
+      "examine": null,
+      "slayerCategories": [],
+      "versions": []
+    },
+    {
+      "id": "tombs-of-amascut-expert-mode",
+      "name": "Tombs of Amascut: Expert Mode",
+      "hiscoreName": "Tombs of Amascut: Expert Mode",
+      "variantOf": "tombs-of-amascut",
+      "page": "Tombs of Amascut",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Tombs_of_Amascut",
+      "members": true,
+      "examine": null,
+      "slayerCategories": [],
+      "versions": []
+    },
+    {
+      "id": "torag-the-corrupted",
+      "name": "Torag the Corrupted",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Torag the Corrupted",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Torag_the_Corrupted",
+      "members": true,
+      "examine": "A vengeful spirit corrupted by dark magic.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 115,
+          "hitpoints": 100,
+          "maxHit": "23",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": 112.5
+        }
+      ]
+    },
+    {
+      "id": "tree-spirit-lost-city",
+      "name": "Tree spirit (Lost City)",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Tree spirit (Lost City)",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Tree_spirit_(Lost_City)",
+      "members": true,
+      "examine": "Guardian of the dramen tree.",
+      "slayerCategories": [
+        "Ghosts"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 101,
+          "hitpoints": 85,
+          "maxHit": "10",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 85
+        }
+      ]
+    },
+    {
+      "id": "treus-dayth",
+      "name": "Treus Dayth",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Treus Dayth",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Treus_Dayth",
+      "members": true,
+      "examine": "Eeek! A big ghost!",
+      "slayerCategories": [
+        "Ghosts"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 95,
+          "hitpoints": 100,
+          "maxHit": "15 (Ranged), 8 (Crush)",
+          "attackStyles": [
+            "Ranged",
+            "Crush"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 100
+        }
+      ]
+    },
+    {
+      "id": "tumekens-warden",
+      "name": "Tumeken's Warden",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Tumeken's Warden",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Tumeken's_Warden",
+      "members": true,
+      "examine": "An ancient automaton imbued with the power of Tumeken.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Active",
+          "combatLevel": 489,
+          "hitpoints": 140,
+          "maxHit": "22",
+          "attackStyles": [
+            "Melee",
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": 8,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Core-ejected",
+          "combatLevel": 489,
+          "hitpoints": 4500,
+          "maxHit": "22",
+          "attackStyles": [
+            "Melee",
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": 8,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "tzkal-zuk",
+      "name": "TzKal-Zuk",
+      "hiscoreName": "TzKal-Zuk",
+      "variantOf": null,
+      "page": "TzKal-Zuk",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/TzKal-Zuk",
+      "members": true,
+      "examine": "An ancient adversary to the TzHaar.",
+      "slayerCategories": [
+        "TzHaar"
+      ],
+      "versions": [
+        {
+          "label": "Normal",
+          "combatLevel": 1400,
+          "hitpoints": 1200,
+          "maxHit": "148&thinsp;",
+          "attackStyles": [
+            "Typeless Magic",
+            "Typeless Ranged"
+          ],
+          "attackSpeed": 10,
+          "slayerLevel": null,
+          "slayerXp": 101890
+        },
+        {
+          "label": "Enraged",
+          "combatLevel": 1400,
+          "hitpoints": 1200,
+          "maxHit": "148&thinsp;",
+          "attackStyles": [
+            "Typeless Magic",
+            "Typeless Ranged"
+          ],
+          "attackSpeed": 7,
+          "slayerLevel": null,
+          "slayerXp": 101890
+        }
+      ]
+    },
+    {
+      "id": "tztok-jad",
+      "name": "TzTok-Jad",
+      "hiscoreName": "TzTok-Jad",
+      "variantOf": null,
+      "page": "TzTok-Jad",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/TzTok-Jad",
+      "members": true,
+      "examine": "This is going to hurt...",
+      "slayerCategories": [
+        "TzHaar"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 702,
+          "hitpoints": 250,
+          "maxHit": "97 (Melee), 97 (Ranged), 95 (Magic)",
+          "attackStyles": [
+            "Stab",
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 8,
+          "slayerLevel": null,
+          "slayerXp": 25250
+        }
+      ]
+    },
+    {
+      "id": "ulfric",
+      "name": "Ulfric",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Ulfric",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Ulfric",
+      "members": true,
+      "examine": "What could be worse than an angry, undead Fremennik?",
+      "slayerCategories": [
+        "Skeletons"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 100,
+          "hitpoints": 60,
+          "maxHit": "11",
+          "attackStyles": [
+            "Slash"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 60
+        }
+      ]
+    },
+    {
+      "id": "vanguard",
+      "name": "Vanguard",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Vanguard",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Vanguard",
+      "members": true,
+      "examine": "Formerly a member of Xeric's elite tactical unit.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Magic",
+          "combatLevel": null,
+          "hitpoints": 180,
+          "maxHit": "22",
+          "attackStyles": [
+            "Magic"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Melee",
+          "combatLevel": null,
+          "hitpoints": 180,
+          "maxHit": "18",
+          "attackStyles": [
+            "Melee"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Ranged",
+          "combatLevel": null,
+          "hitpoints": 180,
+          "maxHit": "22",
+          "attackStyles": [
+            "Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Magic (Challenge Mode)",
+          "combatLevel": null,
+          "hitpoints": 280,
+          "maxHit": "33",
+          "attackStyles": [
+            "Magic"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Melee (Challenge Mode)",
+          "combatLevel": null,
+          "hitpoints": 280,
+          "maxHit": "27",
+          "attackStyles": [
+            "Melee"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Ranged (Challenge Mode)",
+          "combatLevel": null,
+          "hitpoints": 280,
+          "maxHit": "33",
+          "attackStyles": [
+            "Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Moving",
+          "combatLevel": null,
+          "hitpoints": null,
+          "maxHit": null,
+          "attackStyles": [
+            "None"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "vardorvis",
+      "name": "Vardorvis",
+      "hiscoreName": "Vardorvis",
+      "variantOf": null,
+      "page": "Vardorvis",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Vardorvis",
+      "members": true,
+      "examine": "How does he suck blood now?",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Post-quest",
+          "combatLevel": 784,
+          "hitpoints": 700,
+          "maxHit": "32-43 (Melee), 35 (axes)",
+          "attackStyles": [
+            "Slash"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": 1085
+        },
+        {
+          "label": "Awakened",
+          "combatLevel": 1136,
+          "hitpoints": 1400,
+          "maxHit": "46-61 (Melee), 96 (axes)",
+          "attackStyles": [
+            "Slash"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": 1400
+        },
+        {
+          "label": "Quest",
+          "combatLevel": 572,
+          "hitpoints": 500,
+          "maxHit": "30-37 (Melee), ?? (axes)",
+          "attackStyles": [
+            "Slash"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": 500
+        }
+      ]
+    },
+    {
+      "id": "vasa-nistirio",
+      "name": "Vasa Nistirio",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Vasa Nistirio",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Vasa_Nistirio",
+      "members": true,
+      "examine": "A former High Priest, fused with the rock and bound to the dark crystals.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Normal",
+          "combatLevel": null,
+          "hitpoints": 300,
+          "maxHit": "Varies",
+          "attackStyles": [
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 3,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Challenge Mode",
+          "combatLevel": null,
+          "hitpoints": 450,
+          "maxHit": "Varies",
+          "attackStyles": [
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 3,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "venenatis",
+      "name": "Venenatis",
+      "hiscoreName": "Venenatis",
+      "variantOf": null,
+      "page": "Venenatis",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Venenatis",
+      "members": true,
+      "examine": "That'll get your arachnophobia going...",
+      "slayerCategories": [
+        "Spiders"
+      ],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 464,
+          "hitpoints": 850,
+          "maxHit": "21 (Melee), 35 (Ranged), 30 (Magic)",
+          "attackStyles": [
+            "Stab",
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": 956.2
+        }
+      ]
+    },
+    {
+      "id": "verac-the-defiled",
+      "name": "Verac the Defiled",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Verac the Defiled",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Verac_the_Defiled",
+      "members": true,
+      "examine": "A vengeful spirit corrupted by dark magic.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 115,
+          "hitpoints": 100,
+          "maxHit": "23 (Stab), 15 (Protect from Melee)",
+          "attackStyles": [
+            "Stab"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": 112.5
+        }
+      ]
+    },
+    {
+      "id": "verzik-vitur",
+      "name": "Verzik Vitur",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Verzik Vitur",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Verzik_Vitur",
+      "members": true,
+      "examine": "There's something very disconcerting about her.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Phase 1",
+          "combatLevel": 425,
+          "hitpoints": 1200,
+          "maxHit": "60",
+          "attackStyles": [
+            "Magic"
+          ],
+          "attackSpeed": 14,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Phase 2",
+          "combatLevel": 488,
+          "hitpoints": 1600,
+          "maxHit": "16, 16 (bounce), ~34 (bounce after standing underneath)",
+          "attackStyles": [
+            "Crush",
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Phase 3",
+          "combatLevel": 512,
+          "hitpoints": 2400,
+          "maxHit": "36 (melee), 20 (magic), 20 (ranged)",
+          "attackStyles": [
+            "Typeless Crush",
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 7,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "vespula",
+      "name": "Vespula",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Vespula",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Vespula",
+      "members": true,
+      "examine": "Queen of the Abyssal Vespine. Her lifeforce is sustained by her connection to the Abyss.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Normal",
+          "combatLevel": null,
+          "hitpoints": 200,
+          "maxHit": "14 (Ranged), 8 (Stomp), 20 (Sting)",
+          "attackStyles": [
+            "Ranged Typeless"
+          ],
+          "attackSpeed": 3,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Challenge Mode",
+          "combatLevel": null,
+          "hitpoints": 288,
+          "maxHit": null,
+          "attackStyles": [
+            "Ranged Typeless"
+          ],
+          "attackSpeed": 3,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "vetion",
+      "name": "Vet'ion",
+      "hiscoreName": "Vet'ion",
+      "variantOf": null,
+      "page": "Vet'ion",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Vet'ion",
+      "members": true,
+      "examine": null,
+      "slayerCategories": [
+        "Skeletons"
+      ],
+      "versions": [
+        {
+          "label": "Normal",
+          "combatLevel": 454,
+          "hitpoints": 255,
+          "maxHit": "44",
+          "attackStyles": [
+            "Slash",
+            "Magic"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": 624
+        },
+        {
+          "label": "Enraged",
+          "combatLevel": 454,
+          "hitpoints": 255,
+          "maxHit": "44",
+          "attackStyles": [
+            "Slash",
+            "Magic"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": 322
+        }
+      ]
+    },
+    {
+      "id": "vorkath",
+      "name": "Vorkath",
+      "hiscoreName": "Vorkath",
+      "variantOf": null,
+      "page": "Vorkath",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Vorkath",
+      "members": true,
+      "examine": "This won't be fun.",
+      "slayerCategories": [
+        "Blue Dragons",
+        "Zombies"
+      ],
+      "versions": [
+        {
+          "label": "Post-quest",
+          "combatLevel": 732,
+          "hitpoints": 750,
+          "maxHit": "30 (Magic), 32 (Ranged), 32 (Melee), 80 (Dragonfire), 121 (Dragonfire Bomb/Special), 41 (Rapid Fire/Special)",
+          "attackStyles": [
+            "Slash",
+            "Magic",
+            "Ranged",
+            "Dragonfire"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": 750
+        },
+        {
+          "label": "Dragon Slayer II",
+          "combatLevel": 392,
+          "hitpoints": 460,
+          "maxHit": "30 (Magic), 28 (Ranged), 32 (Melee), 72 (Dragonfire), 121 (Dragonfire Bomb/Special)",
+          "attackStyles": [
+            "Slash",
+            "Magic",
+            "Ranged",
+            "Dragonfire"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": 460
+        }
+      ]
+    },
+    {
+      "id": "white-golem",
+      "name": "White golem",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "White golem",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/White_golem",
+      "members": true,
+      "examine": "An animated clay statue.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 75,
+          "hitpoints": 80,
+          "maxHit": "4",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "wintertodt",
+      "name": "Wintertodt",
+      "hiscoreName": "Wintertodt",
+      "variantOf": null,
+      "page": "Wintertodt",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Wintertodt",
+      "members": true,
+      "examine": null,
+      "slayerCategories": [],
+      "versions": []
+    },
+    {
+      "id": "wrathmaw",
+      "name": "Wrathmaw",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Wrathmaw",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Wrathmaw",
+      "members": false,
+      "examine": null,
+      "slayerCategories": [],
+      "versions": []
+    },
+    {
+      "id": "xamphur",
+      "name": "Xamphur",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Xamphur",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Xamphur",
+      "members": true,
+      "examine": "If evil had a look, this would be it.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 239,
+          "hitpoints": 450,
+          "maxHit": "18",
+          "attackStyles": [
+            "Magic"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "xarpus",
+      "name": "Xarpus",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Xarpus",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Xarpus",
+      "members": true,
+      "examine": "King of the yarasa.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 331,
+          "hitpoints": 3400,
+          "maxHit": "6 (38+ recoil)",
+          "attackStyles": [
+            "Typeless Ranged",
+            "Poison"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "yama",
+      "name": "Yama",
+      "hiscoreName": "Yama",
+      "variantOf": null,
+      "page": "Yama",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Yama",
+      "members": true,
+      "examine": "A demon of quite obviously fathomable power. The vicious grin rarely leaves his face.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Normal",
+          "combatLevel": 1238,
+          "hitpoints": 2500,
+          "maxHit": "46 (auto-attacks), 162 (Meteor Strike), 80 (Shadow Stomp)",
+          "attackStyles": [
+            "Melee (Slash)",
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": 8,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Phase 3",
+          "combatLevel": 1238,
+          "hitpoints": 2500,
+          "maxHit": "46 (auto-attacks), 162 (Meteor Strike), 80 (Shadow Stomp)",
+          "attackStyles": [
+            "Melee (Slash)",
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": 7,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "zalcano",
+      "name": "Zalcano",
+      "hiscoreName": "Zalcano",
+      "variantOf": null,
+      "page": "Zalcano",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Zalcano",
+      "members": true,
+      "examine": "A former demon of Zamorak that has been turned to stone.",
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Armoured",
+          "combatLevel": 336,
+          "hitpoints": 300,
+          "maxHit": "53",
+          "attackStyles": [
+            "Various"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Weakened",
+          "combatLevel": 336,
+          "hitpoints": 1000,
+          "maxHit": "N/A",
+          "attackStyles": [],
+          "attackSpeed": null,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "zebak",
+      "name": "Zebak",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Zebak",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Zebak",
+      "members": true,
+      "examine": null,
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Normal",
+          "combatLevel": 371,
+          "hitpoints": 580,
+          "maxHit": "38 (Melee), 16 (Magic), 16 (Ranged)",
+          "attackStyles": [
+            "Melee",
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": 7,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Enraged",
+          "combatLevel": 371,
+          "hitpoints": 580,
+          "maxHit": "38 (Melee), 16 (Magic), 16 (Ranged)",
+          "attackStyles": [
+            "Melee",
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "zulrah",
+      "name": "Zulrah",
+      "hiscoreName": "Zulrah",
+      "variantOf": null,
+      "page": "Zulrah",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Zulrah",
+      "members": true,
+      "examine": null,
+      "slayerCategories": [],
+      "versions": [
+        {
+          "label": "Serpentine",
+          "combatLevel": 725,
+          "hitpoints": 500,
+          "maxHit": "41",
+          "attackStyles": [
+            "Ranged"
+          ],
+          "attackSpeed": 3,
+          "slayerLevel": null,
+          "slayerXp": 500
+        },
+        {
+          "label": "Magma",
+          "combatLevel": 725,
+          "hitpoints": 500,
+          "maxHit": "30",
+          "attackStyles": [
+            "Typeless"
+          ],
+          "attackSpeed": 3,
+          "slayerLevel": null,
+          "slayerXp": 500
+        },
+        {
+          "label": "Tanzanite",
+          "combatLevel": 725,
+          "hitpoints": 500,
+          "maxHit": "41",
+          "attackStyles": [
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 3,
+          "slayerLevel": null,
+          "slayerXp": 500
+        }
+      ]
+    }
+  ]
+}

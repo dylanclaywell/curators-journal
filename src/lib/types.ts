@@ -391,6 +391,80 @@ export interface DiaryDataset {
   diaries: Diary[]
 }
 
+/* ------------------------------------------------------------------ bosses */
+
+/**
+ * One statistical version of a boss.
+ *
+ * Bosses are versioned far more often than quests or diaries are: Vorkath has
+ * a pre- and post-Dragon Slayer II form plus an Awakened variant, and the wiki
+ * encodes that as parallel `combat1`/`combat2` parameters inside one
+ * `{{Infobox Monster}}`. Flattening those to "the" combat level would state a
+ * number the wiki never states, and picking version 1 silently is worse — it
+ * looks right. So every version is carried and the UI names which one it is
+ * showing.
+ */
+export interface BossVersion {
+  /** The wiki's own label, e.g. "Post-quest". Null when there is only one. */
+  label: string | null
+  combatLevel: number | null
+  hitpoints: number | null
+  /**
+   * Free text, not a number: the wiki writes "30 (Magic), 32 (Ranged), 80
+   * (Dragonfire)" and the breakdown is the useful part.
+   */
+  maxHit: string | null
+  attackStyles: string[]
+  attackSpeed: number | null
+  slayerLevel: number | null
+  slayerXp: number | null
+}
+
+/**
+ * A boss, from the wiki — whether or not the hiscores count it.
+ *
+ * The wiki is the spine here, which is the opposite of how quests and diaries
+ * work and deliberately so. The hiscores publish kill counts for 71 bosses;
+ * the wiki documents ~173. The extra ~100 (raid rooms like Akkha, quest bosses
+ * like Agrith Naar) have drops and requirements worth reading and no kill
+ * count that exists anywhere — not in a third-party API, not in the game. So
+ * `hiscoreName` is nullable, and a null means "no count is published for this
+ * boss", which the UI must not render as zero.
+ */
+export interface Boss {
+  /** Slug of the wiki title, or of the hiscore name for a variant. */
+  id: string
+  name: string
+  /** Canonical wiki page title. Several bosses may share one. */
+  page: string
+  wikiUrl: string
+  members: boolean
+  /**
+   * The hiscores' own spelling, when they publish a count for this boss. This
+   * is the join key for kill counts — never an id, since the hiscores'
+   * activity block is alphabetical and renumbers on every release.
+   */
+  hiscoreName: string | null
+  /**
+   * Set when this entry is a harder mode of another that shares its page —
+   * Tombs of Amascut: Expert Mode, The Corrupted Gauntlet. They have their own
+   * kill counts but no page of their own, so they are separate entries
+   * pointing at the same prose rather than one entry with two counts.
+   */
+  variantOf: string | null
+  examine: string | null
+  /** Slayer categories from the infobox's `cat`, e.g. "Hellhounds". */
+  slayerCategories: string[]
+  versions: BossVersion[]
+}
+
+/** Generated artifact shape for src/data/bosses.json. */
+export interface BossDataset {
+  generatedAt: string
+  sources: string[]
+  bosses: Boss[]
+}
+
 /* ------------------------------------------------------------ quest guides */
 
 /**

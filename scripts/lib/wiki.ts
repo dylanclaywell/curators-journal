@@ -165,6 +165,97 @@ export async function pagesEmbedding(template: string): Promise<string[]> {
   return titles
 }
 
+/**
+ * Every mainspace page in a category, following continuations.
+ *
+ * Category membership is an editorial judgement rather than a template, so
+ * this is a softer inventory than `pagesEmbedding` — a page joins or leaves a
+ * category when someone decides it should. That is tolerable when the
+ * generator treats the result as a list to reconcile rather than as truth; see
+ * how `build-bosses.ts` unions it with the hiscores' own boss rows instead of
+ * trusting either side alone.
+ */
+export async function pagesInCategory(category: string): Promise<string[]> {
+  const titles: string[] = []
+  let continueFrom: string | undefined
+
+  do {
+    const body = (await api({
+      action: 'query',
+      list: 'categorymembers',
+      cmtitle: category,
+      cmnamespace: '0',
+      cmlimit: '500',
+      ...(continueFrom ? { cmcontinue: continueFrom } : {}),
+    })) as {
+      query?: { categorymembers?: { title: string }[] }
+      continue?: { cmcontinue?: string }
+    }
+
+    for (const page of body.query?.categorymembers ?? [])
+      titles.push(page.title)
+    continueFrom = body.continue?.cmcontinue
+  } while (continueFrom)
+
+  if (!titles.length)
+    throw new Error(`${category} has no pages — has it been renamed?`)
+  return titles
+}
+
+/**
+ * Resolves titles through redirects, reporting what each one became.
+ *
+ * This is how the hiscores' names are joined to wiki pages without a
+ * hand-maintained mapping table: the wiki already keeps redirects for most of
+ * the spellings Jagex uses (`Kree'Arra` → `Kree'arra`, `Nightmare` → `The
+ * Nightmare`), so asking it to resolve them *is* the mapping. 70 of the 71
+ * boss rows resolve this way; the exception is handled by the caller, loudly.
+ */
+export async function resolveTitles(
+  titles: string[],
+): Promise<{ resolved: Map<string, string>; missing: string[] }> {
+  const resolved = new Map<string, string>()
+  const missing: string[] = []
+
+  for (let i = 0; i < titles.length; i += BATCH_SIZE) {
+    const batch = titles.slice(i, i + BATCH_SIZE)
+    const body = (await api({
+      action: 'query',
+      redirects: '1',
+      titles: batch.join('|'),
+    })) as {
+      query?: {
+        redirects?: { from: string; to: string }[]
+        normalized?: { from: string; to: string }[]
+        pages?: { title: string; missing?: boolean }[]
+      }
+    }
+
+    // `normalized` first (whitespace and case of the first letter), then
+    // `redirects` — the API applies them in that order and chaining them the
+    // other way round loses the link between the name we asked for and the
+    // page we got.
+    const step = new Map<string, string>()
+    for (const n of body.query?.normalized ?? []) step.set(n.from, n.to)
+    const redirect = new Map<string, string>()
+    for (const r of body.query?.redirects ?? []) redirect.set(r.from, r.to)
+    const present = new Set(
+      (body.query?.pages ?? [])
+        .filter((page) => !page.missing)
+        .map((page) => page.title),
+    )
+
+    for (const asked of batch) {
+      const normalized = step.get(asked) ?? asked
+      const final = redirect.get(normalized) ?? normalized
+      if (present.has(final)) resolved.set(asked, final)
+      else missing.push(asked)
+    }
+  }
+
+  return { resolved, missing }
+}
+
 /** Current wikitext for many titles, batched to respect the API's limits. */
 export async function fetchWikitext(
   titles: string[],
