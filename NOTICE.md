@@ -87,11 +87,84 @@ glyphs on a 16px grid. Substituting generic fantasy icons was tried and rejected
 they are drawn for large display, turn to mush at grid size, and carry none of
 the recognition that makes the real icons work.
 
-### Quest and skill data
+### Generated datasets — `src/data/*.json`
 
-Sourced from the [OSRS Wiki](https://oldschool.runescape.wiki), whose text
-content is licensed
-**[CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/)**.
+`quests.json`, `diaries.json` and `bosses.json` are generated from the
+[OSRS Wiki](https://oldschool.runescape.wiki), whose text content is licensed
+**[CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/)**. They
+are **parsed and restructured**, not copied verbatim — each carries a `sources`
+array naming the pages it was built from, and the generators are in `scripts/`.
+
+**Copyright protects expression, not facts,** so these files engage the licence
+unevenly, and it is worth knowing which part of a file is which:
+
+- A skill requirement, a quest prerequisite, a boss's combat level or hitpoints
+  is a **fact about the game**. It cannot be copyrighted however it is written
+  down, and it would be identical if we had measured it ourselves in-game.
+- A quest `description`, a diary task's wording, a `notes` line or a reward
+  description is **the wiki's prose**, condensed by its editors.
+- Selection and arrangement — which bosses are in a list, in what order — carries
+  thin protection of its own, independent of the entries.
+
+So `bosses.json` is mostly facts with short `examine` strings; `quests.json` and
+`diaries.json` carry real prose alongside their facts; and `public/guides/*.json`
+is prose almost end to end, which is why it has its own section below.
+
+**These files are CC BY-NC-SA 3.0. They are not Apache-2.0.** The `LICENSE` at
+the root of this repository covers our own source code and does not — cannot —
+extend to wiki-derived content: we have no right to relicense someone else's
+work under permissive terms. The two licences coexist in one repository the way
+the guides and the code do, and for the same reason the boundary is kept
+visible: generated data lives in `src/data/` and `public/guides/`, never inlined
+into a component.
+
+Practically, for this project and for forks:
+
+- **BY** — every quest, diary and boss entry carries a `wikiUrl`, and the app
+  links it. Attribution must reach the reader, not just this file.
+- **NC** — a free personal tool is fine. Anything with revenue is not, and this
+  is the **stricter of the two reasons not to monetise**: the Jagex position
+  below is a judgement about a gap in a policy, whereas this is a licence term
+  with a copyright holder behind it.
+- **SA** — a derivative of these files stays under CC BY-NC-SA 3.0. Publishing a
+  modified `quests.json` under a permissive licence is the failure mode to
+  avoid.
+
+Uploading this repository to a public host is redistribution, which the licence
+permits on exactly these terms. What it does not permit is redistributing the
+data while claiming a licence we don't hold — which is why the split above is
+spelled out rather than left to the root `LICENSE` to imply.
+
+#### If running it ever costs money
+
+**The decision is that it stays free, and that includes donations.** Not a
+default — a choice, made deliberately, and stricter than the licence strictly
+requires: Creative Commons' own guidance is that NC turns on use "primarily
+intended for commercial advantage or private monetary compensation", and pure
+cost recovery sits in a grey area rather than being plainly barred. The grey
+area is not somewhere this project goes.
+
+So if it ever outgrows Cloudflare's free tier, the options are **retire it** or
+**ask for explicit permission** — not "take donations and re-read the licence
+charitably".
+
+Two things to know before starting that conversation:
+
+1. **Jagex's permission alone would not be enough.** These are two independent
+   rights. The Fan Content Policy governs the game IP; CC BY-NC-SA governs the
+   wiki's prose that `src/data/` and `public/guides/` are built from. Only
+   Weird Gloop can waive the NC term. The alternative is stripping the
+   wiki-derived prose and shipping only the facts, which is a real option — it
+   is roughly what `bosses.json` already is.
+2. **Explicit arrangements have precedent.** RuneLite operates as a sanctioned
+   third-party client although §6.1.2 prohibits third-party clients, and the
+   OSRS Wiki is Jagex's officially partnered wiki. Both were negotiated
+   individually rather than falling out of a published policy. Whether either
+   covers revenue is not something this file claims to know.
+
+The architecture already assumes this. `run_worker_first: ["/api/*"]` means
+browser navigations never wake the Worker, and the hiscores route caches for
+60s, so cost scales with API calls rather than with readers.
 
 ### Quest walkthroughs
 
@@ -99,28 +172,24 @@ content is licensed
 wiki's `<quest>/Quick guide` pages, and this is the one place where that licence
 does real work rather than sitting in the background.
 
-**Requirements are facts; a walkthrough is authored prose.** Skill levels and
-prerequisites can't be copyrighted however they're written down, so
-`quests.json` barely engages CC BY-NC-SA. A walkthrough is somebody's writing,
-condensed and sequenced by them, and shipping it is straightforward
-redistribution. All three letters therefore apply:
+A walkthrough is **authored prose end to end** — somebody's writing, condensed
+and sequenced by them — so shipping it is straightforward redistribution rather
+than the mixed case above. Everything in the previous section applies, and
+applies at full strength: each guide carries the `sourceUrl` of the page it came
+from and the app shows it with the walkthrough; the guides stay CC BY-NC-SA 3.0
+and do not become Apache-2.0 by living here, just as our code does not become
+CC BY-NC-SA by sitting beside them.
 
-- **BY** — each guide carries the `sourceUrl` of the page it came from, and the
-  app shows it with the walkthrough. Attribution has to reach the reader, not
-  just this file.
-- **NC** — fine for a free personal tool, and a hard stop on anything else.
-  Together with the Jagex reasoning above, **this is the second independent
-  reason not to monetise any of this**, and the stricter one: the Jagex question
-  is a judgement call, this is a licence term.
-- **SA** — the guides stay CC BY-NC-SA 3.0. They do **not** become Apache-2.0
-  by living in this repository, and our own code does not become CC BY-NC-SA by
-  sitting beside them.
+It is also why the guides are a separate generated directory rather than being
+merged into `quests.json` or inlined into a component. The boundary between our
+code and the wiki's prose has to stay something you can point at — the moment a
+walkthrough is pasted into a `.vue` file, the two licences are arguing about the
+same file.
 
-That last point is why the guides are a separate generated directory of data
-files rather than being merged into `quests.json` or inlined into a component.
-The boundary between our code and the wiki's prose has to stay something you
-can point at — the moment a walkthrough is pasted into a `.vue` file, the two
-licences are arguing about the same file.
+(An earlier version of this section said `quests.json` "barely engages"
+CC BY-NC-SA because requirements are facts. That was true when it held only
+requirements, and stopped being true in slice 4g, which added quest
+descriptions, notes and rewards. The per-file breakdown above replaces it.)
 
 **For forks:** the same split as the skill icons, from the other direction. The
 guides _are_ committed here, so this repository redistributes wiki prose
