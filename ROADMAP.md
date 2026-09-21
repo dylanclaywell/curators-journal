@@ -63,9 +63,9 @@ are a mode inside the Quests panel, not a tab of their own.
 | 5 — RuneLite sync               | half  | Web + Worker side done (5a–5c); the plugin itself (5d–5f) not started          |
 | 5+ — Diary sync and linking     | done  | Web side of 5g–5k: diary tiers on the pipe, locked rows, `/sync?hash=` link    |
 | 6 — Achievement diaries         | done  | Dataset, engine, store, UI. 6e settled: a mode inside Quests, mode in the path |
+| 7 — Bosses                      | half  | 7a–7c built: tab bar, the join, the dataset. Panel (7d) and drops (7e) to come |
 | Later — ironman requirements    | —     | Currently dropped entirely; see below                                          |
 | Later — prices panel            | —     | `prices.runescape.wiki`, same Worker-proxy shape                               |
-| Later — boss tracking           | —     | Player boss list: kill counts, drops. See "Banked: boss tracking"              |
 | Later — wide-and-shallow layout | —     | Tabs to a left strip when short and wide; see CLAUDE.md                        |
 | Later — plugin manifests        | —     | The panel registry is already the seam                                         |
 
@@ -1296,39 +1296,115 @@ The ~15/min figure is a community estimate, with IP-block risk on bulk requests.
 See [NOTICE.md](NOTICE.md), which covers the licensing position, its limits, and
 what must not change.
 
-## Banked: boss tracking
+## Phase 7: bosses
 
-Wanted: a **boss list** with the player's kill counts, drops and similar —
-another "what have I done" surface alongside quests and diaries. Nothing
-built and nothing decided; this is here so it isn't forgotten.
+A boss list that is **both a tracker and a reference**: kill counts for the 71
+bosses Jagex publishes them for, and stats, requirements and drop tables for all
+~183 the wiki documents. Started 2026-09-21; 7a–7c are built.
 
-Starting points to check before designing, none of them verified:
+| Slice | Contents                                                                                      | State |
+| ----- | --------------------------------------------------------------------------------------------- | ----- |
+| 7a    | Tab bar stage 2 by width-per-tab, so a fifth tab doesn't strip every label (`da5b7aa`)        | done  |
+| 7b    | `src/lib/bosses.ts`: the join, the three states, sorting, drift report (`47c1196`, `6772e3d`) | done  |
+| 7c    | `scripts/build-bosses.ts` → `src/data/bosses.json`, 183 bosses (`a6f79a4`)                    | done  |
+| 7d    | The `/bosses` panel: registry entry, store with a dynamic import, the list                    | next  |
+| 7e    | Drop tables → `public/bosses/<id>.json` fetched on demand, plus the boss detail view          | —     |
+| 7f    | Requirements from the quest-links oracle; **wire `build:bosses` into `check:drift`**; docs    | —     |
 
-- **Kill counts probably come from the hiscores we already fetch.**
-  CLAUDE.md notes `index_lite.json` returns skills _and activities_, and boss
-  kill counts are activities. If so this needs no new source and no plugin —
-  it is a display problem on data the Worker already proxies. Confirm which
-  bosses the response actually carries and how an unranked (0 KC) boss appears,
-  since hiscores rank cutoffs may hide low counts.
+**The wiki is the spine and the hiscores decorate it** — the opposite of quests
+and diaries, and deliberate. The hiscores publish counts for 71 bosses; the
+wiki documents ~173 in `Category:Bosses`. The other ~100 (Akkha, Agrith Naar,
+raid rooms, quest bosses) have drops and requirements worth reading and no kill
+count that exists **anywhere**.
+
+**That was measured, not assumed** (2026-09-21), because "surely some API has
+this" is the obvious next question and deserves a real answer:
+
+| Source         | Bosses | Beyond the hiscores?                                         |
+| -------------- | ------ | ------------------------------------------------------------ |
+| Jagex hiscores | 71     | —                                                            |
+| Wise Old Man   | 71     | none — identical set                                         |
+| TempleOSRS     | 86\*   | none — all respellings (`KreeArra`, `Clue_all`, `Vetion`, …) |
+
+\* non-skill keys, which include the clue and minigame rows too. Neither
+service carries `Akkha` or `Agrith Naar`. Both are hiscore scrapers: they add
+_history_ — gains over time, efficient hours bossed — and not one boss Jagex
+doesn't publish. CrystalMathLabs is the same shape and mostly skills.
+
+So the only routes to a count Jagex doesn't publish are our own RuneLite plugin
+(Phase 5), or **collectionlog.net**, which takes uploads from a RuneLite plugin
+and genuinely does hold counts the hiscores lack. The latter is the same
+ethical shape as WikiSync — players install a plugin to share data for one
+purpose and a third party helps itself — and it would only cover players using
+that one plugin. Read their terms before considering it, and expect the answer
+to be no. WikiSync itself publishes exactly this shape and is off limits; see
+CLAUDE.md.
+
+**The join needs no hand-maintained mapping table**, which was the objection
+that nearly sent this the other way. The wiki already keeps redirects for
+almost every spelling the hiscores use (`Kree'Arra` → `Kree'arra`, `Nightmare`
+→ `The Nightmare`, `The Royal Titans` → `Royal Titans`), so resolving the
+hiscore names through the API _is_ the mapping: 70 of 71 land on a page by
+themselves. `Barrows Chests` is the only exception and is the sole entry in
+`EXCEPTIONS`. A name that stops resolving becomes a defect rather than a boss
+that quietly disappears.
+
+**Decisions, and why they aren't obvious from the code:**
+
+- **Names join, ids never do.** The hiscores' boss block is alphabetical, so
+  Jagex inserts new bosses mid-list and renumbers everything after them —
+  `Amoxliatl` shifted 68 rows by one. An id-keyed join would put one boss's
+  kills against another's name after any release: plausible numbers, wrong
+  boss, nothing to notice it by.
+- **Three states, not two.** Untracked (no count exists for anyone) /
+  tracked-but-unranked (a count exists, this player isn't on the board) /
+  ranked (a real number, possibly 0 — the live response returns `rank -1,
+score 0` for `Brutus`, `Mad Angel` and `Maggot King`). Rendering any two the
+  same way asserts something the hiscores never said.
+- **Variants are separate entries sharing a page.** `The Corrupted Gauntlet`
+  resolves to `The Gauntlet`, `Tombs of Amascut: Expert Mode` to `Tombs of
+Amascut`. They have their own counts and no page of their own, so they carry
+  `variantOf` rather than being merged or dropped.
+- **Versioned infoboxes are emitted whole.** Vorkath is `{{Multi Infobox}}`
+  with `version1 = Post-quest` / `version2 = Dragon Slayer II` and paired
+  `combat1`/`combat2`. Picking one silently is the failure mode; both ship and
+  the UI names which is which.
+- **`OTHER_ACTIVITY_NAMES` is the only hand list left**, and it is subtracted
+  rather than matched: anything in the activities array that isn't one of those
+  20 rows is treated as a boss and must resolve. So a new boss needs no edit
+  anywhere, and a new _non-boss_ row fails loudly instead of joining the list.
 - **Kill counts are fetched, not hand-entered** — the "fetched, read-only"
-  class with skill levels, not the precious one. So no merge question arises,
-  and the freshness constraints in "Freshness and rate limits" apply as they do
-  to the skills grid.
-- **Drops are a different problem.** The hiscores carry no drop data. A
-  boss's _drop table_ is static wiki data (same shape argument as quests: a
-  committed, diffable dataset, never fetched at runtime); which drops the
-  player has _received_ is not exposed anywhere we can read, short of the
-  collection log via the plugin. That is ranked #3 under "What to sync next"
-  and lower value than diaries by the freshness test — collection log entries
-  are monotonic, so it passes it, just less urgently.
-- **Bundle weight.** Boss drop tables would be another dataset. Follow the
-  quest guides precedent (served from `public/`, fetched on demand) unless it
-  is small, and weigh it against the precache before adding.
+  class alongside skill levels, never the precious one. No merge question
+  arises and the freshness constraints are the skills grid's.
+- **Drop tables follow the guides precedent.** `{{DropsLine}}` parses cleanly
+  (27–49 per boss, ~200 KB for the set), which is another `diaries.json` in
+  weight — so `public/bosses/`, fetched on demand, not precached. Which drops
+  the player has _received_ is collection-log data and needs the plugin.
 - **Tab count — settled: it gets a tab.** A fifth tab used to flip the whole
-  bar to icon-only, which is what made this a real question. It no longer does:
-  stage 2 of the tab bar is now width-per-tab (76px × count) rather than a flat
-  count, so five labels survive on the docked iPad and collapse only at the
-  375px phone floor. See CLAUDE.md.
+  bar to icon-only, which is what made this a question at all. 7a replaced that
+  with width-per-tab, so five labels survive on the docked iPad and collapse
+  only at the 375px phone floor.
+
+**Dead ends worth keeping:**
+
+- **A hand-written boss list** (`BOSS_NAMES`, 71 strings). It shipped in 7b and
+  was deleted in `6772e3d` one slice later, once 7c's dataset made it a second
+  list that could disagree with the first. It earned its keep by proving the
+  join before the generator existed — but "generated, or a checker that can
+  detect staleness" is the standard here, and a bare list is neither.
+- **Generating the boss list from the wiki alone.** `Category:Bosses` has 173
+  members against the hiscores' 71, and 8 of 21 probed hiscore names don't
+  match a wiki page title. Either source alone is wrong; the union is the
+  dataset.
+
+**Open — the rank cutoff.** Jagex publishes no count below some threshold, and
+we don't know what it is. If a 3-kill Zulrah is simply absent from the response,
+then "not ranked" in the UI silently means "somewhere between 0 and the cutoff",
+and the copy has to say that rather than implying zero. Unmeasured because the
+reference account (Lynx Titan) has no small counts to read — every row is either
+a large number or absent. Settle it against an account with a known small kill
+count, or by walking the public ranking tables to their last page and reading
+the lowest published score.
 
 ## Ideas banked for Phase 4
 
