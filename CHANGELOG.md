@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.12.0](https://github.com/dylanclaywell/curators-journal/compare/curators-journal-v0.11.0...curators-journal-v0.12.0) (2026-09-22)
+
+
+### Features
+
+* **items:** add item-bosses.json, the drop tables inverted by item ([9594001](https://github.com/dylanclaywell/curators-journal/commit/9594001a6044a5c1e0495b5b0e6e1d145a324d99))
+
 ## [0.11.0](https://github.com/dylanclaywell/curators-journal/compare/curators-journal-v0.10.0...curators-journal-v0.11.0) (2026-09-21)
 
 
