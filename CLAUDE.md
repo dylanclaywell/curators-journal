@@ -62,9 +62,12 @@ npm run lint           # eslint --fix   (lint:check = no fix)
 npm run format         # prettier --write   (format:check = verify)
 npm run build:icons    # rasterize public/icons/icon.svg -> PWA/iOS PNGs
 npm run build:icon-set # regenerate src/lib/icons.ts from the vendored packs
+npm run build:quests   # regenerate src/data/quests.json (+ quests.sources.json lock)
+npm run build:diaries  # regenerate src/data/diaries.json
 npm run build:guides   # regenerate public/guides/*.json from the wiki's quick guides
 npm run build:bosses   # regenerate src/data/bosses.json + public/boss-detail/*.json
 npm run build:items    # regenerate src/data/items.json + item-bosses.json
+npm run check:drift    # have the sources moved? (-- --open-pr to regenerate and raise one)
 npx wrangler d1 migrations apply curators-journal --local   # once per clone, and after a new migration
 ```
 
@@ -234,7 +237,7 @@ at 34–47 KB of gear setups and tables each, roughly 4 MB across the set. That
 is a guide you read beforehand and the wiki is better at it; this is the
 paragraph you want on a second screen mid-fight.
 
-The directory is `drops/`, **not** `bosses/`, and that is load-bearing:
+The directory is `boss-detail/`, **not** `bosses/`, and that is load-bearing:
 `/bosses/:id` is the boss detail route. A service-worker rule matching
 `/bosses/` would intercept navigations to it. Keep app routes and asset paths in
 separate namespaces.
@@ -242,7 +245,7 @@ separate namespaces.
 Both directories share a trap worth knowing before debugging one: **a missing
 file does not 404.** `not_found_handling: "single-page-application"` makes every
 unmatched path return `200 text/html` — the app's own `index.html`. So
-`stores/guides.ts` and `stores/drops.ts` classify by _what answered_, not by
+`stores/guides.ts` and `stores/bossDetail.ts` classify by _what answered_, not by
 status: a rejected `fetch` is a real failure worth retrying, while a body that
 isn't this id's JSON means there is none. The id check matters as much as the
 parse — a fallback returning some other valid JSON would otherwise render as
@@ -323,7 +326,7 @@ twice once, and the two copies disagreed.
 - `src/data/bosses.json` (~91 KB built, ~14 KB gzipped) must too, via
   `useBossesStore().ensureDataset()`. The smallest of the three because it is
   mostly facts — no walkthrough prose, and drop tables are deliberately not in
-  it (they go to `public/bosses/`, per the guides precedent).
+  it (they go to `public/boss-detail/`, per the guides precedent).
 - localForage must too, which is why stores that persist are only reached from
   lazily-loaded panels, and why `App.vue`'s refresh handler imports its stores
   inside the function.

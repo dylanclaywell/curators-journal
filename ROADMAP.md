@@ -1596,7 +1596,7 @@ Amascut`. They have their own counts and no page of their own, so they carry
   123 files, 2525 rows, 219 KB — another `diaries.json` in weight, so
   `public/boss-detail/`, fetched on demand, not precached. Which drops the player has
   _received_ is collection-log data and needs the plugin.
-- **The drops directory is `drops/`, not `bosses/`.** `/bosses/:id` is the
+- **The drops directory is `boss-detail/`, not `bosses/`.** `/bosses/:id` is the
   detail route, and a service-worker runtime rule on `/bosses/` would intercept
   navigations to it. Caught while writing the rule rather than in testing,
   which is luck — app routes and asset paths belong in separate namespaces by
