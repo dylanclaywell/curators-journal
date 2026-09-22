@@ -1,5 +1,11 @@
 /**
- * Generates src/data/items.json from the wiki's Grand Exchange item mapping.
+ * Generates src/data/items.json and src/data/item-bosses.json.
+ *
+ * Two files from two sources: the item facts come from the wiki's Grand
+ * Exchange mapping, and the index inverting "which bosses drop this" comes from
+ * the drop tables in `public/boss-detail/` that `build-bosses` already wrote.
+ * One generator because they share a join — the drop tables name items, the
+ * mapping has ids, and `normalizeItemName` is what connects them.
  *
  * The one generator in this repo with no parser worth the name.
  * `prices.runescape.wiki/api/v1/osrs/mapping` is a genuine structured dataset —
@@ -27,16 +33,27 @@
  * than assumed, because it is someone else's dataset and it is one duplicate
  * away from attaching a plausible price to the wrong item.
  *
+ * **The index is one entry per drop row, not per boss**, which is the finding
+ * that shaped it: 115 (item, boss) pairs appear more than once and not one is a
+ * true duplicate — 92 differ by boss version, 14 by table section, 9 are
+ * quantity tiers of the same drop. Collapsing them would invent a rate or throw
+ * most of the answer away. See `ItemDropSource`.
+ *
  * Depends on `public/boss-detail/` existing, so it runs after `build-bosses`.
  *
  *   npm run build:items            # fetch and write
- *   npm run build:items -- --check # is the committed dataset stale?
+ *   npm run build:items -- --check # is either file stale?
  */
 import { readdir, readFile, writeFile } from 'node:fs/promises'
 import { fileURLToPath } from 'node:url'
 
 import { normalizeItemName } from '../src/lib/items.ts'
-import type { Item, ItemDataset } from '../src/lib/items.ts'
+import type {
+  Item,
+  ItemBossIndex,
+  ItemDataset,
+  ItemDropSource,
+} from '../src/lib/items.ts'
 import type { BossDetail } from '../src/lib/types.ts'
 
 import { exitCodeFor, WikiUnreachableError } from './lib/wiki.ts'
@@ -96,13 +113,16 @@ async function fetchMapping(): Promise<MappingEntry[]> {
 /* ------------------------------------------------------------------- trim */
 
 /**
- * Every distinct item name our drop tables mention.
+ * Every boss's drop tables, read once and used twice — for the trim below and
+ * for the inverted index.
  *
- * Read from `public/boss-detail/` rather than from a list here: the drop tables
- * are the only consumer, so deriving the trim from them means a boss added in a
- * later regeneration brings its items with it and nobody has to remember.
+ * `public/boss-detail/` rather than a list here: the drop tables are the only
+ * consumer, so deriving both from them means a boss added in a later
+ * regeneration brings its items with it and nobody has to remember. Sorted so
+ * the index's own order is stable across runs and a regeneration diff shows
+ * only what changed.
  */
-async function referencedNames(): Promise<Set<string>> {
+async function readBossDetail(): Promise<BossDetail[]> {
   const files = (await readdir(detailDir)).filter((f) => f.endsWith('.json'))
   if (!files.length) {
     throw new Error(
@@ -111,16 +131,72 @@ async function referencedNames(): Promise<Set<string>> {
     )
   }
 
-  const names = new Set<string>()
+  const details: BossDetail[] = []
   for (const file of files) {
-    const detail = JSON.parse(
-      await readFile(`${detailDir}/${file}`, 'utf8'),
-    ) as BossDetail
+    details.push(
+      JSON.parse(await readFile(`${detailDir}/${file}`, 'utf8')) as BossDetail,
+    )
+  }
+  return details.sort((a, b) => a.name.localeCompare(b.name))
+}
+
+/** Every distinct item name our drop tables mention. */
+function referencedNames(details: BossDetail[]): Set<string> {
+  const names = new Set<string>()
+  for (const detail of details) {
     for (const table of detail.tables) {
       for (const drop of table.drops) names.add(drop.name)
     }
   }
   return names
+}
+
+/**
+ * The drop tables inverted: item id -> every row that yields it.
+ *
+ * **Deliberately not deduplicated to one row per boss.** 115 (item, boss) pairs
+ * appear more than once and none is a true duplicate — they differ by boss
+ * version, by table section, or by quantity tier. See `ItemDropSource`.
+ *
+ * `section` is the one field from the source row that is dropped: it is the
+ * wiki's grouping *within a boss's page* ("Tertiary", "Weapons and armour"),
+ * which carries structure there and none at all on an item page.
+ */
+function buildIndex(
+  details: BossDetail[],
+  itemByName: Map<string, MappingEntry>,
+): ItemBossIndex {
+  const byItem: Record<string, ItemDropSource[]> = {}
+
+  for (const detail of details) {
+    for (const table of detail.tables) {
+      for (const drop of table.drops) {
+        const entry = itemByName.get(normalizeItemName(drop.name))
+        if (!entry) continue
+
+        const source: ItemDropSource = { id: detail.id, name: detail.name }
+        if (drop.rarity !== null) source.rarity = drop.rarity
+        if (drop.quantity !== null) source.quantity = drop.quantity
+        if (table.version !== null) source.version = table.version
+        if (drop.rolls !== null) source.rolls = drop.rolls
+
+        ;(byItem[String(entry.id)] ??= []).push(source)
+      }
+    }
+  }
+
+  // Item ids ascending, to match items.json and keep the diff readable. The
+  // rows within one item stay in the wiki's own table order, which is the only
+  // thing distinguishing a boss's quantity tiers from one another.
+  const sorted: Record<string, ItemDropSource[]> = {}
+  for (const id of Object.keys(byItem).sort((a, b) => Number(a) - Number(b))) {
+    sorted[id] = byItem[id]!
+  }
+
+  return {
+    generatedAt: new Date().toISOString().slice(0, 10),
+    byItem: sorted,
+  }
 }
 
 /**
@@ -171,6 +247,7 @@ function toItem(entry: MappingEntry): Item {
 
 async function build(): Promise<{
   dataset: ItemDataset
+  index: ItemBossIndex
   names: number
   unmatched: string[]
 }> {
@@ -178,16 +255,17 @@ async function build(): Promise<{
   const mapping = await fetchMapping()
   console.log(`  ${mapping.length} items`)
 
-  const index = indexByName(mapping)
+  const byName = indexByName(mapping)
 
-  console.log('reading the names our drop tables use')
-  const names = await referencedNames()
-  console.log(`  ${names.size} distinct names`)
+  console.log('reading the drop tables')
+  const details = await readBossDetail()
+  const names = referencedNames(details)
+  console.log(`  ${details.length} bosses, ${names.size} distinct item names`)
 
   const kept = new Map<number, Item>()
   const unmatched: string[] = []
   for (const name of names) {
-    const entry = index.get(normalizeItemName(name))
+    const entry = byName.get(normalizeItemName(name))
     if (!entry) {
       unmatched.push(name)
       continue
@@ -204,6 +282,7 @@ async function build(): Promise<{
       omitted: mapping.length - items.length,
       items,
     },
+    index: buildIndex(details, byName),
     names: names.size,
     unmatched,
   }
@@ -212,18 +291,17 @@ async function build(): Promise<{
 /* ----------------------------------------------------------------- output */
 
 /** Everything but `generatedAt`, which moves on every run and means nothing. */
-const comparable = (dataset: ItemDataset): string =>
+const comparable = (dataset: ItemDataset, index: ItemBossIndex): string =>
   JSON.stringify({
     omitted: dataset.omitted,
     sources: dataset.sources,
     items: dataset.items,
+    byItem: index.byItem,
   })
 
-async function readCommitted(): Promise<ItemDataset | null> {
+async function readJson<T>(name: string): Promise<T | null> {
   try {
-    return JSON.parse(
-      await readFile(`${dataDir}/items.json`, 'utf8'),
-    ) as ItemDataset
+    return JSON.parse(await readFile(`${dataDir}/${name}`, 'utf8')) as T
   } catch {
     return null
   }
@@ -238,19 +316,22 @@ async function readCommitted(): Promise<ItemDataset | null> {
  * catches a changed *value* and not merely a changed source.
  */
 async function checkForDrift(): Promise<number> {
-  const committed = await readCommitted()
-  if (!committed) {
-    console.log('src/data/items.json does not exist yet')
+  const committed = await readJson<ItemDataset>('items.json')
+  const committedIndex = await readJson<ItemBossIndex>('item-bosses.json')
+  if (!committed || !committedIndex) {
+    console.log('src/data/items.json or item-bosses.json does not exist yet')
     return 1
   }
 
-  const { dataset } = await build()
+  const { dataset, index } = await build()
 
   console.log(`generated: ${committed.generatedAt}`)
-  console.log(`items: ${committed.items.length}`)
+  console.log(
+    `items: ${committed.items.length}, indexed: ${Object.keys(committedIndex.byItem).length}`,
+  )
 
-  if (comparable(dataset) === comparable(committed)) {
-    console.log('the dataset matches the item mapping')
+  if (comparable(dataset, index) === comparable(committed, committedIndex)) {
+    console.log('the dataset matches the item mapping and the drop tables')
     return 0
   }
 
@@ -262,14 +343,24 @@ async function checkForDrift(): Promise<number> {
     ([id, item]) =>
       before.has(id) && JSON.stringify(before.get(id)) !== JSON.stringify(item),
   )
+  // Counted separately: the drop tables can move without the mapping moving,
+  // and then every item above is identical while the index is stale.
+  const reindexed = [...after.keys()].filter(
+    (id) =>
+      JSON.stringify(committedIndex.byItem[String(id)]) !==
+      JSON.stringify(index.byItem[String(id)]),
+  )
 
   console.log(
-    `changed: ${added.length} added, ${gone.length} gone, ${changed.length} edited`,
+    `changed: ${added.length} added, ${gone.length} gone, ` +
+      `${changed.length} edited, ${reindexed.length} with different drop rows`,
   )
   for (const id of added.slice(0, 10)) console.log(`  + ${after.get(id)!.name}`)
   for (const id of gone.slice(0, 10)) console.log(`  - ${before.get(id)!.name}`)
   for (const [, item] of changed.slice(0, 10)) console.log(`  ~ ${item.name}`)
-  console.log('\nthe dataset is behind the item mapping. Regenerate with:')
+  for (const id of reindexed.slice(0, 10))
+    console.log(`  drops ~ ${after.get(id)?.name ?? id}`)
+  console.log('\nthe dataset is behind its sources. Regenerate with:')
   console.log('  npm run build:items')
   return 1
 }
@@ -285,15 +376,23 @@ async function main() {
     return
   }
 
-  const { dataset, names, unmatched } = await build()
+  const { dataset, index, names, unmatched } = await build()
 
   await writeFile(
     `${dataDir}/items.json`,
     JSON.stringify(dataset, null, 2) + '\n',
   )
+  await writeFile(
+    `${dataDir}/item-bosses.json`,
+    JSON.stringify(index, null, 2) + '\n',
+  )
 
+  const rows = Object.values(index.byItem).reduce((n, v) => n + v.length, 0)
   console.log(
     `\nwrote ${dataset.items.length} items (${dataset.omitted} omitted)`,
+  )
+  console.log(
+    `  ${rows} drop rows indexed across ${Object.keys(index.byItem).length} items`,
   )
   /*
    * Reported, never a defect. These are overwhelmingly untradeable — pets,

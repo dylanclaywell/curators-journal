@@ -1210,7 +1210,7 @@ what made the swap this small.
 
 ## Phase 8: items and prices
 
-**Started 2026-09-21; 8a and 8b are built.** Comes out of Phase 7: a drop table
+**Started 2026-09-21; 8a–8c are built.** Comes out of Phase 7: a drop table
 answers "what does it give", and the next two questions are "what's it worth"
 and "where else do I get it". Both are joins the wiki can't do for you, which
 is the test for whether something belongs in this app at all.
@@ -1222,7 +1222,7 @@ Worker-proxy shape, and the item work needs the proxy anyway.
 | ----- | ---------------------------------------------------------------------------------------- | ----- |
 | 8a    | `/api/prices` — Worker proxy for `/latest` only, same shape as the hiscores route        | done  |
 | 8b    | `src/data/items.json` from `/mapping`, fetched **at build time**, trimmed to what we use | done  |
-| 8c    | Item → bosses index, inverted from the drop tables we already own                        |       |
+| 8c    | Item → bosses index, inverted from the drop tables we already own                        | done  |
 | 8d    | `/items/:id` detail; drop rows link to it                                                |       |
 | 8e    | A prices surface of its own, if 8d doesn't already answer the question                   |       |
 
@@ -1364,7 +1364,46 @@ absent, so it can only come back on purpose.
 Still owed from this slice: `items.json` has no consumer yet, so it is not in
 CLAUDE.md's bundle-invariant list. **Add it there when 8d imports it**, via an
 `ensureDataset()` dynamic import like the other three — 97 KB in the entry chunk
-is exactly the mistake that list exists to catch.
+is exactly the mistake that list exists to catch. `item-bosses.json` needs the
+same treatment and the same grep.
+
+**8c as built: the whole slice turned on one measurement.** Inverting 2525 drop
+rows looked like a `groupBy`, and the first question — do any (item, boss) pairs
+repeat — decided the shape. **115 pairs repeat, and not one is a true
+duplicate:**
+
+| Why it repeats             | Pairs | Example                                                        |
+| -------------------------- | ----- | -------------------------------------------------------------- |
+| Different boss version     | 92    | Black demon: Rune med helm 1/128, or 1/74 in the Slayer Cave   |
+| Different table section    | 14    | Araxxor lists Araxyte venom sac under Supplies and under Other |
+| Quantity tiers of one drop | 9     | Arrg rolls Earth runes 60 at 8/128, 45 at 1/128, 25 at 1/128   |
+
+So `item-bosses.json` is **one entry per drop row, not per boss**. Deduplicating
+to a boss would have to pick a rate, and there is no honest way to pick one —
+the same objection that left wiki-computed rarities unknown in Phase 7. It also
+forces `rarity` and `quantity` into the index: without them Arrg appears three
+times with nothing distinguishing the rows, which reads as our bug rather than
+as three rolls. `version` earns its place for the 92; `section` does not travel,
+because it is the wiki's grouping _within a boss's page_ and means nothing on an
+item page.
+
+**2022 of 2525 rows resolve to an item**, 18 KB gzipped across 657 items, median
+1 boss per item and 44 at the top (Death rune). Its own file rather than a field
+on `items.json`, following `quest-bosses.json`: the boss page needs the items to
+build links and has no use for the index.
+
+**It restates rarities that also live in `public/boss-detail/`.** A real cost,
+and taken deliberately — the alternative is item detail fetching 44 boss files
+to answer "where else do I get Death runes". This is not the `variantOf` trap
+(two files a regeneration could leave disagreeing) because one run of one
+generator writes both from one parse.
+
+Fields are optional rather than nullable here, which breaks with the other
+datasets on purpose: at 2022 instances a repeated `"rarity": null` is weight,
+and `QuestItemLine` already omits `heading` and `depth` for the same reason. A
+test asserts the nulls stay out, and another asserts every boss id in the index
+resolves against `bosses.json` — those are `/bosses/:id` link targets, and the
+SPA fallback turns a dead one into a 200 rather than a 404.
 
 **Open questions for the phase:**
 

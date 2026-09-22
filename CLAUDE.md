@@ -64,7 +64,7 @@ npm run build:icons    # rasterize public/icons/icon.svg -> PWA/iOS PNGs
 npm run build:icon-set # regenerate src/lib/icons.ts from the vendored packs
 npm run build:guides   # regenerate public/guides/*.json from the wiki's quick guides
 npm run build:bosses   # regenerate src/data/bosses.json + public/boss-detail/*.json
-npm run build:items    # regenerate src/data/items.json from the GE item mapping
+npm run build:items    # regenerate src/data/items.json + item-bosses.json
 npx wrangler d1 migrations apply curators-journal --local   # once per clone, and after a new migration
 ```
 
@@ -265,6 +265,24 @@ rather than picking one; `normalizeItemName` lives in `src/lib/items.ts` so the
 generator's trim and the app's lookup cannot fold names differently. The `icon`
 field is deliberately dropped — it names a Jagex sprite, and NOTICE.md's
 position is that those are considered decisions, not defaults.
+
+**`src/data/item-bosses.json` is the drop tables inverted**, written by the same
+generator: item id → the rows that yield it, 2022 rows across 657 items, 18 KB
+gzipped. It is **one entry per drop row, not per boss**, and that is measured
+rather than stylistic — 115 (item, boss) pairs appear more than once and none is
+a true duplicate. 92 differ by boss version (Black demon drops a Rune med helm
+at 1/128 normally and 1/74 in the Wilderness Slayer Cave), 14 by table section,
+and 9 are quantity tiers of one drop (Arrg rolls Earth runes as 60 at 8/128, 45
+at 1/128, 25 at 1/128). Deduplicating to one row per boss would invent a rate or
+discard most of the answer, so it carries `rarity`, `quantity` and `version` —
+without those an item page lists Arrg three times with nothing to tell the rows
+apart. It restates rarities that also live in `public/boss-detail/`, which is
+accepted: the alternative is item detail fetching 44 boss files to say where
+Death runes come from, and one run of one generator writes both.
+
+Its own file rather than a field on `items.json`, following `quest-bosses.json`:
+the boss page needs `items.json` to turn drop rows into links and has no use for
+the index.
 
 **Regenerate quests first, then diaries, then guides, then bosses, then items.**
 `build-bosses` resolves each boss's `questAppearances` against `quests.json`,

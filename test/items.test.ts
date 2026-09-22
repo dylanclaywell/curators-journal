@@ -20,10 +20,15 @@ import {
   indexItemsByName,
   normalizeItemName,
 } from '../src/lib/items'
-import type { Item, ItemDataset } from '../src/lib/items'
+import type { Item, ItemBossIndex, ItemDataset } from '../src/lib/items'
+import type { BossDataset } from '../src/lib/types'
 import dataset from '../src/data/items.json' with { type: 'json' }
+import indexFile from '../src/data/item-bosses.json' with { type: 'json' }
+import bossData from '../src/data/bosses.json' with { type: 'json' }
 
 const items = (dataset as ItemDataset).items
+const byItem = (indexFile as ItemBossIndex).byItem
+const bosses = (bossData as BossDataset).bosses
 
 const item = (id: number, name: string): Item => ({
   id,
@@ -101,5 +106,57 @@ describe('the committed item dataset', () => {
     // NOTICE.md: every Jagex asset is a considered decision. A field arriving
     // here by a generator edit is how one would stop being considered.
     for (const i of items) expect(i).not.toHaveProperty('icon')
+  })
+})
+
+describe('the committed item → bosses index', () => {
+  const rows = Object.values(byItem).flat()
+
+  it('indexes every item, since the trim came from the drop tables', () => {
+    // The two files are built from one pass over the same names, so an item
+    // present in one and absent from the other means the join fell apart.
+    expect(Object.keys(byItem).sort()).toEqual(
+      items.map((i) => String(i.id)).sort(),
+    )
+  })
+
+  it('never lists an item with no sources', () => {
+    for (const [id, sources] of Object.entries(byItem))
+      expect(sources.length, `item ${id}`).toBeGreaterThan(0)
+  })
+
+  it('points every source at a boss that exists', () => {
+    // These ids are `/bosses/:id` link targets. One that does not resolve is a
+    // dead link from item detail, and the SPA fallback makes it a 200.
+    const known = new Set(bosses.map((b) => b.id))
+    for (const row of rows) expect(known.has(row.id), row.id).toBe(true)
+  })
+
+  it('never repeats an identical row for one boss', () => {
+    /*
+     * The index deliberately keeps several rows per (item, boss) — versions,
+     * sections and quantity tiers are genuinely different drops. What must not
+     * happen is two rows a reader cannot tell apart, which would render as the
+     * same boss listed twice for no reason. Measured at build time: 115 pairs
+     * repeat and none is a true duplicate.
+     */
+    for (const [id, sources] of Object.entries(byItem)) {
+      const signatures = sources.map((s) => JSON.stringify(s))
+      expect(new Set(signatures).size, `item ${id}`).toBe(signatures.length)
+    }
+  })
+
+  it('omits an unknown rarity rather than carrying null', () => {
+    // 81 rarities are wiki-computed and left unknown (Phase 7). A null here
+    // would serialise into every one of the 2022 rows for nothing.
+    for (const row of rows) {
+      for (const field of ['rarity', 'quantity', 'version', 'rolls'] as const) {
+        expect(row[field]).not.toBeNull()
+      }
+    }
+  })
+
+  it('denormalises the boss name so item detail needs no boss dataset', () => {
+    for (const row of rows) expect(row.name.length).toBeGreaterThan(0)
   })
 })

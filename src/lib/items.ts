@@ -44,6 +44,72 @@ export interface Item {
   value: number | null
 }
 
+/**
+ * One drop-table row that yields an item, flattened out of a boss's tables.
+ *
+ * **One entry per row, not per boss**, and that is the finding that shaped this
+ * index. 115 (item, boss) pairs appear in more than one row, and *none* of them
+ * is a true duplicate: 92 differ by boss version (Black demon drops a Rune med
+ * helm at 1/128 normally and 1/74 in the Wilderness Slayer Cave), 14 differ by
+ * table section, and 9 are quantity tiers of the same drop (Arrg rolls Earth
+ * runes as 60 at 8/128, 45 at 1/128 and 25 at 1/128). Collapsing them to one
+ * boss would either invent a rate or throw two thirds of the answer away.
+ *
+ * Which is also why `rarity` and `quantity` are carried rather than left to the
+ * boss page: without them, an item page lists Arrg three times with nothing to
+ * tell the rows apart, which reads as a bug in us rather than as three rolls.
+ *
+ * Fields are optional rather than nullable, unlike the rest of the datasets.
+ * This is the one shape with 2022 instances, where `"rarity": null` repeated is
+ * measurable weight; `QuestItemLine` omits `heading` and `depth` for the same
+ * reason.
+ */
+export interface ItemDropSource {
+  /** Boss id — the parameter of the `/bosses/:id` route. */
+  id: string
+  /**
+   * Denormalised on purpose, exactly as `Boss.questAppearances` carries quest
+   * names: item detail would otherwise pull in the 91 KB boss dataset to render
+   * a link's text. The id is the link target and stays the join key.
+   */
+  name: string
+  /**
+   * The wiki's own string — "1/128", "Always", "5/150" — never a number. Absent
+   * when the wiki computes it with a template and the generator left it
+   * unknown rather than half-parsing it; see ROADMAP.md Phase 7.
+   */
+  rarity?: string
+  /** Also the wiki's own string: "2-4", "21 (noted)", "1;2". */
+  quantity?: string
+  /**
+   * Which version of the boss drops it — "Post-quest", "Wilderness Slayer
+   * Cave". This is what makes the 92 version-differing rows legible instead of
+   * looking like the same drop listed twice at two rates.
+   */
+  version?: string
+  /** How many times the table is rolled for this item, when the wiki says. */
+  rolls?: number
+}
+
+/**
+ * The drop tables inverted: item id -> the drop rows that yield it.
+ *
+ * Its own file rather than a field on `ItemDataset`, following
+ * `quest-bosses.json`: the boss page needs `items.json` to turn drop rows into
+ * links and has no use for this, so folding them would cost it ~15 KB gzipped
+ * to render nothing.
+ *
+ * It restates rarities that also live in `public/boss-detail/`, which is a real
+ * cost and a considered one — the alternative is item detail fetching 44 boss
+ * files to show where Death runes come from. Both are written by one run of
+ * `build-items.ts` from one parse, so they cannot drift apart on their own.
+ */
+export interface ItemBossIndex {
+  generatedAt: string
+  /** Keyed by item id as a decimal string, because JSON keys are strings. */
+  byItem: Record<string, ItemDropSource[]>
+}
+
 /** Generated artifact shape for src/data/items.json. */
 export interface ItemDataset {
   /** ISO date the dataset was generated, shown in settings. */
