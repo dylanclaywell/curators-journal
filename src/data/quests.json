@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18",
+  "generatedAt": "2026-09-24",
   "sources": [
     "https://oldschool.runescape.wiki/ (quest pages, CC BY-NC-SA 3.0)",
     "https://oldschool.runescape.wiki/w/Module:Questreq/data (cross-check)"
@@ -11047,7 +11047,7 @@
           "text": "A teleport crystal"
         },
         {
-          "text": "Lots of food, prayer potions (20 doses at 61 prayer), and stamina potions (12+ doses). Summer pies provide an excellent source of food, since they boost 5 Agility levels, restore 10% run energy, and give 22 health per pie. Alternatively, stackable purple sweets, which restore 10% run energy and 2 health, may be used. An explorer's ring can be brought along as well, which can restore 50% run energy, twice a day. (Note: If using protection prayers in the temple, food will only be needed for the agility obstacle in the first and fifth puzzles)"
+          "text": "Lots of food, prayer potions (20 doses at 61 prayer), and stamina potions (12+ doses). Summer pies provide an excellent source of food, since they boost 5 Agility levels, restore 10% run energy, and give 22 health per pie. Alternatively, stackable purple sweets, which restore 10% run energy and 2 health, may be used. An explorer's ring can be brought along as well, which can restore 50% run energy multiple times a day, depending on diary progress. (Note: If using protection prayers in the temple, food will only be needed for the agility obstacle in the first and fifth puzzles)"
         },
         {
           "text": "High Prayer bonus armour (e.g. proselyte or initiate armour, a god book, a holy symbol or dragonbone necklace or bonecrusher necklace, a god blessing, a broodoo shield)."
@@ -12703,7 +12703,7 @@
       ],
       "itemsRequired": [
         {
-          "text": "Any type of cat or hellcat (for most of the quest, a cat with a high successful rat catch rate is recommended, and overgrown cats cannot be used there -- during the Hooknosed Jack part of the quest, any cat with strong combat stats is recommended)"
+          "text": "Any type of cat or hellcat (a cat with a high successful rat catch rate is recommended. Overgrown cats are unable to catch rats and cannot be used during the first two sections of the quest, though they may be used during the King rat fight. Any cat with strong combat stats is recommended)"
         },
         {
           "text": "4 cheese (or 4 Poisoned cheese)"
@@ -14994,7 +14994,7 @@
       "startPoint": "Talk to Father Reen south of Al Kharid bank.",
       "kills": [
         {
-          "text": "Agrith-Naar (level 100)"
+          "text": "Agrith-Naar (level 100, can be flinched with melee)"
         }
       ],
       "rewards": [
@@ -15531,9 +15531,6 @@
         },
         {
           "text": "Damien Leucurte (level 204)"
-        },
-        {
-          "text": "Vampyre Juvenile (level 122)"
         },
         {
           "text": "Vanstrom Klause (level 459)"
@@ -19395,7 +19392,7 @@
           "text": "Access to The Graveyard"
         },
         {
-          "text": "A new high-level Agility course offering the fastest rates of marks of grace in the game"
+          "text": "A new Agility 60 Agility course offering the fastest rates of marks of grace in the game"
         }
       ],
       "wikiUrl": "https://oldschool.runescape.wiki/w/The_Graveyard"
