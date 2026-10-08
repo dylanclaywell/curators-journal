@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18",
+  "generatedAt": "2026-10-08",
   "sources": [
     "https://oldschool.runescape.wiki/ (quest pages, CC BY-NC-SA 3.0)",
     "https://oldschool.runescape.wiki/w/Module:Questreq/data (cross-check)"
@@ -401,7 +401,7 @@
           "text": "Thread. Not required if using costume needle."
         },
         {
-          "text": "Fur, bear fur, grey wolf fur, fox fur, or jaguar fur. Can be purchased from Baraek for 20 coins in Varrock Square."
+          "text": "Fur you can use; Fur, bear fur, grey wolf fur, fox fur, or jaguar fur. Some furs can be purchased from Baraek for 20 coins in Varrock Square (Fur, Bear Fur, Grey Wolf Fur)."
         },
         {
           "text": "Grain. Can be picked from the nearby wheat field north of the Cooks' Guild."
@@ -413,6 +413,9 @@
         },
         {
           "text": "200 coins if adopting a dog after completion of the quest."
+        },
+        {
+          "text": "A teleport to the Cooks Guild - skills necklace for fast access to Gertrude"
         }
       ],
       "description": [
@@ -1678,6 +1681,9 @@
         },
         {
           "text": "Access to the Tombs of Amascut"
+        },
+        {
+          "text": "Access to Menaphos (upcoming)"
         },
         {
           "text": "A Keris partisan. (If your inventory was full, you may claim one for free from Selim in front of Al Kharid Palace.)"
@@ -6029,6 +6035,32 @@
       "wikiUrl": "https://oldschool.runescape.wiki/w/Fairytale_II_-_Cure_a_Queen"
     },
     {
+      "id": "fairytale-iii-nexus-of-power",
+      "name": "Fairytale III - Nexus of Power",
+      "difficulty": "Master",
+      "length": null,
+      "questPoints": 0,
+      "members": true,
+      "miniquest": false,
+      "group": "Fairytale",
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "itemsRequired": [],
+      "itemsRecommended": [],
+      "description": [
+        "The Fairy Godfather is scheming, gathering his minions in a bid to snatch the powerful artifact used by the fairies to establish the Fairy ring network; the Nexus. With the power of teleportation at his fingertips, what will be left to stop him and an army of orcs from expanding their dominion and raiding all of Gielinor?",
+        "That would be you.",
+        "You'll need to assemble a crack team of experts, made up of old friends and new, ready to take on a heist for the ages and steal the Nexus before the Fairy Godfather. It won't be easy as the Nexus is heavily guarded, but there's nothing that can't be solved with a little ingenuity and a large amount of brute force!"
+      ],
+      "startPoint": "",
+      "kills": [],
+      "rewards": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Fairytale_III_-_Nexus_of_Power"
+    },
+    {
       "id": "fallen-from-grace",
       "name": "Fallen From Grace",
       "difficulty": "Experienced",
@@ -6476,6 +6508,28 @@
         }
       ],
       "wikiUrl": "https://oldschool.runescape.wiki/w/Fishing_Contest"
+    },
+    {
+      "id": "fools-gold",
+      "name": "Fool's Gold",
+      "difficulty": "Master",
+      "length": null,
+      "questPoints": 0,
+      "members": true,
+      "miniquest": false,
+      "group": "Kharidian",
+      "requirements": {
+        "skills": [],
+        "quests": []
+      },
+      "notes": [],
+      "itemsRequired": [],
+      "itemsRecommended": [],
+      "description": [],
+      "startPoint": "",
+      "kills": [],
+      "rewards": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Fool's_Gold"
     },
     {
       "id": "forgettable-tale",
@@ -10404,7 +10458,7 @@
           "text": "Energy-restoring items such as the explorer's ring along with energy and stamina potions"
         },
         {
-          "text": "Prayer potions"
+          "text": "Prayer potions (note that the Temple of Marimbo contains two Gorilla Statue that can be prayed at to restore prayer if lack of prayer potions is a concern)"
         },
         {
           "text": "A knife for free healing, as there are pineapple plants around Ape Atoll"
@@ -10654,7 +10708,7 @@
           "text": "A Royal seed pod, which provides unlimited teleports to the Grand Tree (up to level 30 Wilderness)."
         },
         {
-          "text": "Access to the Crash Site Cavern containing demonic gorillas."
+          "text": "Access to the Crash Site Cavern containing demonic gorillas, who drop zenyte shard needed for zenyte jewelry."
         },
         {
           "text": "Access to a new maniacal monkey hunting area where Glough's laboratory used to be in Kruk's Dungeon."
@@ -11047,7 +11101,7 @@
           "text": "A teleport crystal"
         },
         {
-          "text": "Lots of food, prayer potions (20 doses at 61 prayer), and stamina potions (12+ doses). Summer pies provide an excellent source of food, since they boost 5 Agility levels, restore 10% run energy, and give 22 health per pie. Alternatively, stackable purple sweets, which restore 10% run energy and 2 health, may be used. An explorer's ring can be brought along as well, which can restore 50% run energy, twice a day. (Note: If using protection prayers in the temple, food will only be needed for the agility obstacle in the first and fifth puzzles)"
+          "text": "Lots of food, prayer potions (20 doses at 61 prayer), and stamina potions (12+ doses). Summer pies provide an excellent source of food, since they boost 5 Agility levels, restore 10% run energy, and give 22 health per pie. Alternatively, stackable purple sweets, which restore 10% run energy and 2 health, may be used. An explorer's ring can be brought along as well, which can restore 50% run energy multiple times a day, depending on diary progress. (Note: If using protection prayers in the temple, food will only be needed for the agility obstacle in the first and fifth puzzles)"
         },
         {
           "text": "High Prayer bonus armour (e.g. proselyte or initiate armour, a god book, a holy symbol or dragonbone necklace or bonecrusher necklace, a god blessing, a broodoo shield)."
@@ -12703,7 +12757,7 @@
       ],
       "itemsRequired": [
         {
-          "text": "Any type of cat or hellcat (for most of the quest, a cat with a high successful rat catch rate is recommended, and overgrown cats cannot be used there -- during the Hooknosed Jack part of the quest, any cat with strong combat stats is recommended)"
+          "text": "Any type of cat or hellcat (a cat with a high successful rat catch rate is recommended. Overgrown cats are unable to catch rats and cannot be used during the first two sections of the quest, though they may be used during the King rat fight. Any cat with strong combat stats is recommended)"
         },
         {
           "text": "4 cheese (or 4 Poisoned cheese)"
@@ -14994,7 +15048,7 @@
       "startPoint": "Talk to Father Reen south of Al Kharid bank.",
       "kills": [
         {
-          "text": "Agrith-Naar (level 100)"
+          "text": "Agrith-Naar (level 100, can be flinched with melee)"
         }
       ],
       "rewards": [
@@ -15531,9 +15585,6 @@
         },
         {
           "text": "Damien Leucurte (level 204)"
-        },
-        {
-          "text": "Vampyre Juvenile (level 122)"
         },
         {
           "text": "Vanstrom Klause (level 459)"
@@ -16777,10 +16828,10 @@
           "text": "Combat 45"
         },
         {
-          "text": "Prayer 43 and prayer potions for protection prayers"
+          "text": "Prayer 37 and prayer potions for Protect from Magic (43 may also be helpful for Protect from Melee)"
         },
         {
-          "text": "Food if low level or without Protect from Melee and Protect from Magic"
+          "text": "Food if low level or without Protect from Magic or Protect from Melee"
         },
         {
           "text": "Ranged armour"
@@ -17163,7 +17214,7 @@
           "text": "Several level 98 Webbed-winged Crows"
         },
         {
-          "text": "A level 200 Venator (as well as a few more optional ones)"
+          "text": "A level 195 Venator (as well as a few more optional ones)"
         },
         {
           "text": "Four Ancient feral vyres"
@@ -17216,7 +17267,7 @@
           "text": "The vyres of Morytania will now be tolerant to the player, and Darkmeyer services can be used without utilising a vyre noble outfit. This is unlocked before the final fight with Lowerniel."
         },
         {
-          "text": "The Vyrewatch can bring players to the Meiyerditch mine upon request, and players can leave without needing to mine 15 daeyalt ore or wearing the outfit to leave the mines.",
+          "text": "The Vyrewatch can bring players to the Meiyerditch mine upon request, and players can leave without needing to mine 15 daeyalt ore or wear the vyre noble outfit.",
           "depth": 1
         },
         {
@@ -17225,6 +17276,55 @@
         }
       ],
       "wikiUrl": "https://oldschool.runescape.wiki/w/The_Blood_Moon_Rises"
+    },
+    {
+      "id": "the-chosen-commander",
+      "name": "The Chosen Commander",
+      "difficulty": "Master",
+      "length": null,
+      "questPoints": 0,
+      "members": true,
+      "miniquest": false,
+      "group": "Dorgeshuun",
+      "requirements": {
+        "skills": [
+          {
+            "skill": "Agility",
+            "level": 58,
+            "boostable": null,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Strength",
+            "level": 46,
+            "boostable": null,
+            "requiredToStart": null
+          },
+          {
+            "skill": "Thieving",
+            "level": 54,
+            "boostable": null,
+            "requiredToStart": null
+          }
+        ],
+        "quests": [
+          {
+            "id": "land-of-the-goblins",
+            "completion": "finished"
+          }
+        ]
+      },
+      "notes": [],
+      "itemsRequired": [],
+      "itemsRecommended": [],
+      "description": [
+        "Zanik is missing, her fate unknown. Captain Undak, leader of the Dorgeshuun Guard, believes that a new H.A.M. plot is in progress, and the only person he can call on for help is the human adventurer who has saved the city before.",
+        "But there are more forces at play than Captain Undak realises. Goblin prophecy will be fulfilled, the destiny of the Chosen Commander will be revealed, and Dorgesh-Kaan will face its darkest hour."
+      ],
+      "startPoint": "",
+      "kills": [],
+      "rewards": [],
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Chosen_Commander"
     },
     {
       "id": "the-corsair-curse",
@@ -17559,7 +17659,7 @@
           "text": "Cup of tea (can be stolen from the Varrock tea stall) or nettle tea or cup of tea (nettle)"
         },
         {
-          "text": "2 ropes"
+          "text": "2 ropes (can be pickpocketed from the digsite workman)"
         },
         {
           "text": "Opal or uncut opal (small chance to acquire while panning for a quest item)"
@@ -18273,6 +18373,9 @@
         },
         {
           "text": "Enchanted lyre, Fremennik sea boots, or other means to return to Rellekka"
+        },
+        {
+          "text": "Slayer ring, or a means of accessing the fairy ring network"
         }
       ],
       "description": [
@@ -19012,7 +19115,7 @@
           "text": "Stamina or energy potions"
         },
         {
-          "text": "About 10 of each of the following items in your bank, which may or may not be necessary for the timed delivery tasks;"
+          "text": "You will be required to deliver 3-5 of the ores and bars below at random during timed delivery tasks. It is recommended to have 10 of each for the fastest approach. It is possible to complete without higher level ores or bars, but may be more time consuming."
         },
         {
           "text": "Clay (not soft clay)",
@@ -19395,7 +19498,7 @@
           "text": "Access to The Graveyard"
         },
         {
-          "text": "A new high-level Agility course offering the fastest rates of marks of grace in the game"
+          "text": "A new Agility 65 Agility course offering the fastest rates of marks of grace in the game"
         }
       ],
       "wikiUrl": "https://oldschool.runescape.wiki/w/The_Graveyard"
@@ -22353,6 +22456,9 @@
         },
         {
           "text": "The broav, if kept"
+        },
+        {
+          "text": "Access to The Fractured Archive raid"
         }
       ],
       "wikiUrl": "https://oldschool.runescape.wiki/w/While_Guthix_Sleeps"
@@ -22571,7 +22677,7 @@
           "text": "Combat equipment to defeat Slash Bash, who takes reduced damage from all sources other than:"
         },
         {
-          "text": "Any tier of brutal arrows with a comp ogre bow, which deals full damage",
+          "text": "Any tier of brutal arrows with a ogre bow or comp ogre bow, which deals full damage",
           "depth": 1
         },
         {
