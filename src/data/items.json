@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-22",
+  "generatedAt": "2026-10-15",
   "sources": [
     "https://prices.runescape.wiki/api/v1/osrs/mapping (Grand Exchange item mapping)"
   ],
-  "omitted": 4005,
+  "omitted": 4006,
   "items": [
     {
       "id": 2,
@@ -6522,7 +6522,7 @@
       "members": true,
       "highalch": 102000,
       "lowalch": 68000,
-      "limit": null,
+      "limit": 4500,
       "value": 170000
     },
     {
