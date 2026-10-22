@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21",
+  "generatedAt": "2026-10-22",
   "sources": [
     "https://oldschool.runescape.wiki/w/Category:Bosses (boss pages, CC BY-NC-SA 3.0)",
     "https://secure.runescape.com/m=hiscore_oldschool/index_lite.json (activity names)"
@@ -4900,6 +4900,22 @@
           "slayerXp": null
         }
       ]
+    },
+    {
+      "id": "the-fractured-archive",
+      "name": "The Fractured Archive",
+      "hiscoreName": "The Fractured Archive",
+      "variantOf": null,
+      "page": "The Fractured Archive",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Fractured_Archive",
+      "members": true,
+      "examine": null,
+      "locations": [
+        "Ancient Guthixian Temple"
+      ],
+      "slayerCategories": [],
+      "questAppearances": [],
+      "versions": []
     },
     {
       "id": "the-gauntlet",
