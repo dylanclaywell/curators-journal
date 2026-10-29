@@ -1,0 +1,15 @@
+{
+ "id": "the-fractured-archive",
+ "name": "The Fractured Archive",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/The_Fractured_Archive",
+ "overview": [
+  "The Fractured Archive is a pseudo-linear raid. There are eight bosses, however only five of these will be fought per raid, with the first and final bosses being encountered in every run. After defeating the first boss, the Archive Guardian, the player can select one of two doors to the side leading to a different boss encounter. When each boss is defeated, players are returned to this room to select their next boss. This means that some bosses can be avoided.",
+  "All bosses' hitpoints scale to the amount of players present in the raid, with the minimum scaling being set to two players if the player enters alone.",
+  "This mode is not currently available upon release, however this mode is planned to be released sometime afterwards.",
+  "Unique to the raid is the ability to challenge the bosses on practice mode, which is similar to Theatre of Blood's Entry Mode. However, unlike the Theatre where players have to fight towards a particular boss and its mechanics are scaled down, the Fractured Archive's practice mode provides the boss as-is, and players can even set the boss' phase before starting. In order to access these features once the mode is released, players must have encountered the boss at least once. Likewise, starting the fight at a particular phase requires the player to have encountered it at least once in an actual raid. Supplies are refunded and friends can be brought along in practice mode.",
+  "Following the raid's release, if the entire team is killed, they will lose all unprotected items and will be ejected from the raid, and have a gravestone located outside the entrance. Players can pay up to to reclaim their items, the same as dying under normal circumstances. Death costs will be reduced by 75% until the player has cleared the raid 5 times.",
+  "Deaths within The Fractured Archives are not considered 'safe' deaths. If you are a Hardcore iron or Hardcore group iron player, you will lose your status on death inside the archive.",
+  "It was initially stated that in the weeks after release, deaths would not fully wipe the raid and players would be given some supplies to attempt the fight again, similar to the Tombs of Amascut's non-limited death runs. However, Jagex has since stated that they are not planning on moving forward with this system, and will instead opt into the traditional wiping system of Theatre of Blood."
+ ],
+ "tables": []
+}

@@ -4,7 +4,7 @@
  "wikiUrl": "https://oldschool.runescape.wiki/w/Tombs_of_Amascut",
  "overview": [
   "The Tombs of Amascut can be completed in a group of 1-8 players. In group encounters, the 2nd-3rd member will add 90% of the base health of bosses each, while the 4th and beyond will add 60% each.",
-  "It is not possible to cast standard spellbook utility spells inside the raid (with the exception of Telekinetic Grab), although utility spells from the Lunar spellbook do work.",
+  "It is not possible to cast standard spellbook utility spells inside the raid (with the exception of Telekinetic Grab and Monster Inspect), although utility spells from the Lunar spellbook do work.",
   "The Tombs of Amascut comprise four paths, each one themed after one of Tumeken's avatars: Apmeken, Crondis, Het, and Scabaras. Each path consists of a challenge section followed by a boss. These can be taken on in any order the player(s) choose to do so. If path levelling is active, the order in which the bosses are killed may matter; otherwise, there is not much of a difference.",
   "Once all four paths are completed, the lower level where the final boss fight takes place becomes accessible. The fight consists of two enemies, Elidinis' Warden and Tumeken's Warden, though the player can select which boss they may face in phases 2/3 respectively by disrupting their energy flow. The warden with the most disruption is fought in the next phase, leaving the other one to be fought in the final phase.",
   "File:Tombs of Amascut - Fighting Akkha.png|Akkha, the Guardian of Het. File:Tombs of Amascut - Fighting Ba-Ba.png|Ba-Ba, the Guardian of Apmeken. File:Tombs of Amascut - Fighting Kephri.png|Kephri, the Guardian of Scabaras. File:Tombs of Amascut - Fighting Zebak.png|Zebak, the Guardian of Crondis. File:Tombs of Amascut - fighting Elidinis' Warden.png|Elidinis' Warden, part 1 of the final boss. File:Tombs of Amascut - fighting Tumeken's Warden.png|Tumeken's Warden, part 2 of the final boss.",
@@ -45,9 +45,10 @@
   "By default, players may die any number of times if the team does not have a limited attempt invocation enabled. If one of these invocations are enabled, however, then an attempt is counted once the entire team dies during a challenge. Additionally, the team will have to restart the room they have all died in, with previous progress being saved and being given honey locusts should the \"On a Diet\" invocation be inactive.",
   "If the entire team is killed and there are no more limited attempts left, players will lose all unprotected items and will be ejected from the raid. Items are reclaimed via Item Retrieval Service; unlike other retrieval services where players pay a lower fee, players can pay up to to reclaim their items, the same as dying under normal circumstances.",
   "If players die a second time without reclaiming the items from the storage, they will be permanently lost, unless the death occurs within a minigame deemed safe, such as Pest Control.",
-  "Dying in the Tombs of Amascut is a dangerous death - Hardcore Ironmen who die within the tomb will lose their Hardcore status.",
+  "All deaths within the Tombs of Amascut will result in the loss of Hardcore Ironman status.",
   "A disconnect or logout while not inside a safe area such as the nexus of the tomb will count as a death inside the tombs.",
-  "A failure to reconnect to a party after a disconnect from an unsafe area (e.g. due to logging in on the wrong world) will always result in a dangerous death for Hardcore Ironmen, and all items stored inside an item retrieval service (deathbank) will be lost if death invocations are enabled."
+  "A failure to reconnect to a party after a disconnect from an unsafe area (e.g. due to logging in on the wrong world) will always result in a dangerous death for Hardcore Ironmen, and all items stored inside an item retrieval service (deathbank) will be lost if death invocations are enabled.",
+  "If death invocations are not enabled, dying within the Tombs will not lead to the loss of items in any other Item Retrieval Service."
  ],
  "tables": []
 }
