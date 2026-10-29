@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21",
+  "generatedAt": "2026-10-29",
   "sources": [
     "https://oldschool.runescape.wiki/w/Category:Bosses (boss pages, CC BY-NC-SA 3.0)",
     "https://secure.runescape.com/m=hiscore_oldschool/index_lite.json (activity names)"
@@ -348,6 +348,45 @@
           "attackSpeed": 4,
           "slayerLevel": 92,
           "slayerXp": 1708
+        }
+      ]
+    },
+    {
+      "id": "archive-guardian",
+      "name": "Archive Guardian",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Archive Guardian",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Archive_Guardian",
+      "members": true,
+      "examine": "A manifestation of vengeance.",
+      "locations": [],
+      "slayerCategories": [],
+      "questAppearances": [],
+      "versions": [
+        {
+          "label": "Flying",
+          "combatLevel": 984,
+          "hitpoints": 550,
+          "maxHit": "25, 99+ (laser beam)",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Grounded",
+          "combatLevel": 984,
+          "hitpoints": 550,
+          "maxHit": "25, 99+ (laser beam)",
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": null
         }
       ]
     },
@@ -858,6 +897,33 @@
             "Typeless slash"
           ],
           "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "bork",
+      "name": "Bork",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Bork",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Bork",
+      "members": true,
+      "examine": "In fact a very large ork.",
+      "locations": [],
+      "slayerCategories": [],
+      "questAppearances": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 871,
+          "hitpoints": 1500,
+          "maxHit": null,
+          "attackStyles": [
+            "Crush"
+          ],
+          "attackSpeed": 7,
           "slayerLevel": null,
           "slayerXp": null
         }
@@ -1651,6 +1717,69 @@
       ]
     },
     {
+      "id": "dagonhai-elder",
+      "name": "Dagon'hai Elder",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Dagon'hai Elder",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Dagon'hai_Elder",
+      "members": true,
+      "examine": "An elder of the Dagon'hai.",
+      "locations": [],
+      "slayerCategories": [],
+      "questAppearances": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 427,
+          "hitpoints": 640,
+          "maxHit": null,
+          "attackStyles": [
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "dagonhai-monk",
+      "name": "Dagon'hai Monk",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Dagon'hai Monk",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Dagon'hai_Monk",
+      "members": true,
+      "examine": "A monk of the Dagon'hai",
+      "locations": [],
+      "slayerCategories": [],
+      "questAppearances": [],
+      "versions": [
+        {
+          "label": "Staff",
+          "combatLevel": 427,
+          "hitpoints": 640,
+          "maxHit": null,
+          "attackStyles": [],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Book",
+          "combatLevel": 427,
+          "hitpoints": 640,
+          "maxHit": null,
+          "attackStyles": [],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
       "id": "damis",
       "name": "Damis",
       "hiscoreName": null,
@@ -2058,6 +2187,34 @@
       ]
     },
     {
+      "id": "dreadnoth-the-jellied",
+      "name": "Dreadnoth the Jellied",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Dreadnoth the Jellied",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Dreadnoth_the_Jellied",
+      "members": true,
+      "examine": "Need to safely store a partially summoned demon? Try jelly.",
+      "locations": [],
+      "slayerCategories": [],
+      "questAppearances": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 888,
+          "hitpoints": 2100,
+          "maxHit": "45",
+          "attackStyles": [
+            "Melee",
+            "Ranged"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
       "id": "duke-sucellus",
       "name": "Duke Sucellus",
       "hiscoreName": "Duke Sucellus",
@@ -2327,6 +2484,34 @@
             "Crush"
           ],
           "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "ezekiel",
+      "name": "Ezekiel",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Ezekiel",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Ezekiel",
+      "members": true,
+      "examine": "A powerful Saradominist justiciar.",
+      "locations": [],
+      "slayerCategories": [],
+      "questAppearances": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 984,
+          "hitpoints": 3000,
+          "maxHit": "77",
+          "attackStyles": [
+            "Magic",
+            "Melee"
+          ],
+          "attackSpeed": 5,
           "slayerLevel": null,
           "slayerXp": null
         }
@@ -3673,6 +3858,34 @@
       "versions": []
     },
     {
+      "id": "moia",
+      "name": "Moia",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Moia",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Moia",
+      "members": true,
+      "examine": "A powerful necromancer.",
+      "locations": [],
+      "slayerCategories": [],
+      "questAppearances": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 1064,
+          "hitpoints": 785,
+          "maxHit": null,
+          "attackStyles": [
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
       "id": "moons-of-peril",
       "name": "Moons of Peril",
       "hiscoreName": null,
@@ -3937,6 +4150,62 @@
           "attackSpeed": 6,
           "slayerLevel": null,
           "slayerXp": 129
+        }
+      ]
+    },
+    {
+      "id": "ocellus",
+      "name": "Ocellus",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Ocellus",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Ocellus",
+      "members": true,
+      "examine": null,
+      "locations": [
+        "The Fractured Archive"
+      ],
+      "slayerCategories": [],
+      "questAppearances": [],
+      "versions": [
+        {
+          "label": "Phase 1",
+          "combatLevel": 1121,
+          "hitpoints": 2500,
+          "maxHit": "24",
+          "attackStyles": [
+            "Magic",
+            "Ranged"
+          ],
+          "attackSpeed": 5,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Phase 2",
+          "combatLevel": 0,
+          "hitpoints": 1000,
+          "maxHit": "24",
+          "attackStyles": [
+            "Magic"
+          ],
+          "attackSpeed": 0,
+          "slayerLevel": null,
+          "slayerXp": null
+        },
+        {
+          "label": "Phase 3",
+          "combatLevel": 1601,
+          "hitpoints": 5250,
+          "maxHit": "24",
+          "attackStyles": [
+            "Magic",
+            "Melee",
+            "Ranged"
+          ],
+          "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
         }
       ]
     },
@@ -4902,6 +5171,22 @@
       ]
     },
     {
+      "id": "the-fractured-archive",
+      "name": "The Fractured Archive",
+      "hiscoreName": "The Fractured Archive",
+      "variantOf": null,
+      "page": "The Fractured Archive",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Fractured_Archive",
+      "members": true,
+      "examine": null,
+      "locations": [
+        "Chasm of Tears"
+      ],
+      "slayerCategories": [],
+      "questAppearances": [],
+      "versions": []
+    },
+    {
       "id": "the-gauntlet",
       "name": "The Gauntlet",
       "hiscoreName": "The Gauntlet",
@@ -5240,6 +5525,34 @@
             "Magic"
           ],
           "attackSpeed": 6,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "the-smorks",
+      "name": "The Smorks",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "The Smorks",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/The_Smorks",
+      "members": true,
+      "examine": "They clearly idolize Bork, copying his moniker.",
+      "locations": [],
+      "slayerCategories": [],
+      "questAppearances": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 640,
+          "hitpoints": 600,
+          "maxHit": null,
+          "attackStyles": [
+            "Ranged",
+            "Magic"
+          ],
+          "attackSpeed": 7,
           "slayerLevel": null,
           "slayerXp": null
         }
@@ -6278,6 +6591,35 @@
           "attackStyles": [
             "Typeless Ranged",
             "Poison"
+          ],
+          "attackSpeed": 4,
+          "slayerLevel": null,
+          "slayerXp": null
+        }
+      ]
+    },
+    {
+      "id": "xarth",
+      "name": "Xarth",
+      "hiscoreName": null,
+      "variantOf": null,
+      "page": "Xarth",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Xarth",
+      "members": true,
+      "examine": "A tormented demon that has long mastered its eternal burning.",
+      "locations": [],
+      "slayerCategories": [],
+      "questAppearances": [],
+      "versions": [
+        {
+          "label": null,
+          "combatLevel": 912,
+          "hitpoints": 2600,
+          "maxHit": null,
+          "attackStyles": [
+            "Magic",
+            "Ranged",
+            "Melee"
           ],
           "attackSpeed": 4,
           "slayerLevel": null,
