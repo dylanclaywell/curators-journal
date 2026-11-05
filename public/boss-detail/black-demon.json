@@ -21,7 +21,7 @@
    "version": "Regular",
    "drops": [
     {
-     "name": "Black sword",
+     "name": "Black shortsword",
      "quantity": "1",
      "rarity": "4/128",
      "rolls": null
@@ -231,7 +231,7 @@
    "version": "Wilderness Slayer Cave",
    "drops": [
     {
-     "name": "Rune sword",
+     "name": "Rune shortsword",
      "quantity": "1",
      "rarity": "4/74",
      "rolls": null

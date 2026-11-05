@@ -5,7 +5,10 @@
  "overview": [
   "As a delve boss, pursuing the Doom of Mokhaiotl into deeper delve levels will increase the difficulty of the fight, up to delve level 8. In its most basic form (delve level 1), the Doom attacks with ranged and magic similar to that of the Leviathan; orbs from a distance, with blue being magic and green being ranged, blocked by praying before impact and a melee attack if directly next to it. Additionally, it will also use a rock throw attack which disables protection prayers upon shattering, then launching a magic or ranged projectile. Around a minute into the fight, it will then prepare a shockwave attack that the player must counter by making use of the volatile earth around the area.",
   "As the player descends down the burrow hole, the Doom of Mokhaiotl's health slightly increases; the rest of its stats stay the same. Additionally, new mechanics are added and existing mechanics are enhanced upon, making the fight more challenging. After clearing delve 8, the player is awarded a \"deep delve\" count, and players can continue descending further down. These subsequent levels are level 8 in theory, though the Doom's health is reduced to 625 and hazards from previous levels continue to persist which practically make it more difficult.",
-  "Similar to Yama, players who die fighting the Doom are sent back to the lobby area instead of their respawn point, where their graves are also located. Players will have their reclamation fee reduced by 75% until they have 20 total delves, after which the standard death cost will apply."
+  "Dying results in the player being sent back to the lobby area instead of their respawn point, unlike most other bosses. Their grave is also located there. All unprotected items are moved to the grave, and any items left on the ground will be lost. The delve level is reset to 1, and all drops from that run are lost.",
+  "Players will have their reclamation fee reduced by 75% until they have completed 20 delves, after which the standard death cost will apply.",
+  "Dying at the Doom of Mokhaiotl causes the contents of an Item Retrieval Service to be lost.",
+  "Dying at the Doom of Mokhaiotl is always a dangerous death, and results in Hardcore Ironman players losing their Hardcore status and Hardcore Group Ironman players losing a life."
  ],
  "tables": [
   {

@@ -1,0 +1,71 @@
+{
+ "id": "mudfoots-big-adventure",
+ "generatedAt": "2026-11-05",
+ "sourceUrl": "https://oldschool.runescape.wiki/w/Mudfoot's_Big_Adventure%2FQuick_guide",
+ "sections": [
+  {
+   "title": null,
+   "notes": [],
+   "steps": [
+    {
+     "text": "Talk to Captain Harlan by the Lumbridge general store, north of the castle.",
+     "chat": [
+      "1. Do you need help with anything?",
+      "1. Yes."
+     ]
+    },
+    {
+     "text": "Talk to Mudfoot on the other side of the River Lum, by the building just south of the cow field."
+    },
+    {
+     "text": "Return to the general store and 'Confront' (left click) the outlaw roaming outside to start a cutscene."
+    },
+    {
+     "text": "Head north along the road until you reach the chicken field and talk to Mudfoot again, south of the Lumbridge windmill."
+    },
+    {
+     "text": "You may optionally talk to Captain Harlan first to claim a bronze shortsword and wooden shield.",
+     "depth": 1
+    },
+    {
+     "text": "Kill the ranger outlaw."
+    },
+    {
+     "text": "You may choose to pick up shortbow and arrows for the next fight.",
+     "depth": 1
+    },
+    {
+     "text": "Confront the mage outlaw to the south by the H.A.M hideout."
+    },
+    {
+     "text": "You may choose to pick up runes and the staff for the next fight.",
+     "depth": 1
+    },
+    {
+     "text": "Head to the Lumbridge graveyard to the south-east with Magic or Ranged gear and kill the final outlaw, who will pray Protect from Melee during the fight."
+    },
+    {
+     "text": "If you leave the fight area, you will need to retrieve Mudfoot from outside the H.A.M hideout before returning.",
+     "depth": 1
+    },
+    {
+     "text": "It is possible to run around the graveyard until the outlaw aggros onto Mudfoot, for very low level players looking to avoid damage.",
+     "depth": 1
+    },
+    {
+     "text": "The outlaw will only activate Protect from Melee after your initial hit, which is capped at 6 for melee damage. Through the use of poisoned weapons, you can use this to kill the outlaw without the use of Magic or Ranged.",
+     "depth": 1
+    },
+    {
+     "text": "Return to Captain Harlan and tell him the thieves have been dealt with.",
+     "chat": [
+      "1. All of those thieves have been dealt with."
+     ]
+    },
+    {
+     "text": "Congratulations, quest complete!"
+    }
+   ]
+  }
+ ]
+}
