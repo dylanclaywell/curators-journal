@@ -11,7 +11,12 @@
   "If large raids are toggled, the floors will be entirely filled with eight rooms, and each floor will consist of both a starting and exit room, one resource room, one scavenger room, and four combat and/or skilling rooms. Duplicate skilling rooms are enabled in large raids, meaning that it is possible to get two tightrope rooms in the same raid.",
   "If full raids are toggled, the layout is the same as in challenge mode.",
   "Challenge Mode is a \"hard\" version of the existing Chambers of Xeric, which can be toggled on. All combat and puzzle rooms are featured in challenge mode, and all enemies' stats and health (barring the Great Olm, who only has increased stats) are increased. Unlike normal mode, the layout is always static, and with all puzzle and combat rooms being featured, players must clear through four floors of enemies rather than three.",
-  "Completion of the mode in a specific time frame can yield metamorphic dust to reskin an olmlet, and twisted ancestral colour kit to recolour ancestral robes. Cosmetic capes are awarded at specific clear milestones."
+  "Completion of the mode in a specific time frame can yield metamorphic dust to reskin an olmlet, and twisted ancestral colour kit to recolour ancestral robes. Cosmetic capes are awarded at specific clear milestones.",
+  "Dying results in the player being returned to the start of the previous floor. The player will drop all raid-only items upon death; for example, if the player died with 10 Xeric's aid (+), those potions are dropped immediately upon dying. Other items that can be found, such as a hammer, will not be dropped upon death.",
+  "There is no monetary penalty for dying within the raid, and a death never causes a player to be ejected from the raid.",
+  "Dying in the Chambers of Xeric does not cause the contents of an Item Retrieval Service to be lost.",
+  "Dying in the Chambers of Xeric does not result in Hardcore Ironman players losing their Hardcore status. However, it does result in Hardcore Group Ironman players losing a life.",
+  "All forms of teleportation out of the raid are blocked other than escape crystals, although the raid can also be exited through leaving the friends chat it is organised in, or logging out until the raid party has all left."
  ],
  "tables": []
 }

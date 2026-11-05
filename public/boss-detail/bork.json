@@ -1,0 +1,10 @@
+{
+ "id": "bork",
+ "name": "Bork",
+ "wikiUrl": "https://oldschool.runescape.wiki/w/Bork",
+ "overview": [
+  "Bork's Defence level of 300 can be reduced to a minimum of 180 (300 \\times 0.6 = 180).",
+  "Bork's flat armour and magic resistance scale with the Smorks' remaining health, starting at 8 flat armour and 0 magic resistance at 100% health, and adding 2 flat armour and magic resistance every 25% damage the Smorks take."
+ ],
+ "tables": []
+}

@@ -8,7 +8,11 @@
   "When in melee range (including diagonally across) and a few other select tiles, Sucellus will raise his arms, causing icicles to spike up from the ground and follow up with a slam attack. The slam attack is significantly more powerful than the icicles and will deal heavy damage. Protect from Melee reduces the icicles' damage by 50% and the slam by ~26%. If the player is outside of melee range and not on those other select tiles, Sucellus will spit a magical cluster of energy that also deals high damage (but less than the slam) even through Protect from Magic.",
   "Every five auto-attacks, Sucellus will gaze at the player, revealing the massive eye in his mouth. The player must hide behind a pillar to avoid his gaze; failing to do so will result in extreme amounts of damage being taken, often enough to kill them in a single hit. After the first sequence of attacks, Sucellus will begin to spit gas from his mouth at the vent closest to the player. He will do this once every five auto-attacks above 75% of his hitpoints, decreasing to four auto-attacks between 26-74% of his hitpoints.",
   "Upon reaching 25% of his health, Sucellus will enter an enrage phase, increasing his attack speed from 5 (3.0 seconds) to 4 (2.4 seconds) and the gas flare cooldown decreases to three auto-attacks. The rest of his mechanics remain unaffected.",
-  "After the Duke is defeated, he remains 'dead' for a few seconds and his drops appear in front of him, before beginning to sleep again."
+  "After the Duke is defeated, he remains 'dead' for a few seconds and his drops appear in front of him, before beginning to sleep again.",
+  "Dying results in all unprotected items being moved to a grave outside the instance. Any items left on the ground will be lost.",
+  "Players will have their reclamation fee reduced by 75% until they have 5 successful kills, after which the standard death cost will apply.",
+  "Dying at Duke Sucellus causes the contents of an Item Retrieval Service to be lost.",
+  "Dying at Duke Sucellus is a dangerous death, and results in Hardcore Ironman players losing their Hardcore status and Hardcore Group Ironman players losing a life."
  ],
  "tables": [
   {

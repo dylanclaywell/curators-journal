@@ -6,7 +6,10 @@
   "Players should be prepared to fight as soon as they enter the lair, as the King Black Dragon is aggressive and may attack immediately from a distance.",
   "The King Black Dragon uses melee and dragonfire, which is of a higher tier compared to those made by adult chromatic dragons. It makes use of four different breath attacks; normal dragonfire alongside three special dragonfire attacks; shock, ice, and poison. These special dragonfire attacks deal less damage than normal dragonfire, but require more tiers of protection to reduce its damage. Without any protection, the normal dragonfire can deal up to 65 damage and special dragonfire 50.",
   "The special dragonfire attacks have a chance of applying a second effect on the player when it hits them. Shock dragonfire reduces all of the player's stats by two, poison dragonfire can inflict poison starting at 8 if not protected against, and ice dragonfire freezes the player for 10 ticks (6.0 seconds).",
-  "An anti-dragon shield in combination with an antifire potion will prevent his regular dragonfire damage, and reduce his special dragonfire damage to 10. For more information, see the relevant section on the strategy page."
+  "An anti-dragon shield in combination with an antifire potion will prevent his regular dragonfire damage, and reduce his special dragonfire damage to 10. For more information, see the relevant section on the strategy page. Dying results in different outcomes dependent on if the player was in an instance. Within an instance, all unprotected items will be moved to a grave outside the instance, in the Wilderness itself. Any items left on the ground will be lost.",
+  "In the main lair, the gravestone will be located where the player died.",
+  "Dying at the King Black Dragon causes the contents of an Item Retrieval Service to be lost.",
+  "Dying at the King Black Dragon is a dangerous death, and results in Hardcore Ironman players losing their Hardcore status and Hardcore Group Ironman players losing a life."
  ],
  "tables": [
   {

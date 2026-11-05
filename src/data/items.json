@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-22",
+  "generatedAt": "2026-11-05",
   "sources": [
     "https://prices.runescape.wiki/api/v1/osrs/mapping (Grand Exchange item mapping)"
   ],
-  "omitted": 4005,
+  "omitted": 4018,
   "items": [
     {
       "id": 2,
@@ -1547,8 +1547,8 @@
     },
     {
       "id": 1283,
-      "name": "Black sword",
-      "examine": "A razor sharp sword.",
+      "name": "Black shortsword",
+      "examine": "A razor sharp shortsword.",
       "members": false,
       "highalch": 374,
       "lowalch": 249,
@@ -1557,8 +1557,8 @@
     },
     {
       "id": 1285,
-      "name": "Mithril sword",
-      "examine": "A razor sharp sword.",
+      "name": "Mithril shortsword",
+      "examine": "A razor sharp shortsword.",
       "members": false,
       "highalch": 507,
       "lowalch": 338,
@@ -1567,8 +1567,8 @@
     },
     {
       "id": 1289,
-      "name": "Rune sword",
-      "examine": "A razor sharp sword.",
+      "name": "Rune shortsword",
+      "examine": "A razor sharp shortsword.",
       "members": false,
       "highalch": 12480,
       "lowalch": 8320,
@@ -6522,7 +6522,7 @@
       "members": true,
       "highalch": 102000,
       "lowalch": 68000,
-      "limit": null,
+      "limit": 4500,
       "value": 170000
     },
     {
